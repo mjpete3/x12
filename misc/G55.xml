@@ -1,0 +1,60 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G55.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G55" comment="To provide physical characteristics relative to a consumer unit">
+  <Field name="ProductServiceIdQualifier1" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId1" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier2" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="Height" type="double" required="y" min="1" max="8" comment="Vertical dimension of an object measured when the object is in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode1" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Width" type="double" required="y" min="1" max="8" comment="Shorter measurement of the two horizontal dimensions measured with the object in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode2" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Length" type="double" required="y" min="1" max="8" comment="Largest horizontal dimension of an object measured when the object is in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode3" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Volume" type="double" required="y" min="1" max="8" comment="Value of volumetric measure"/>
+  <Field name="UnitOrBasisForMeasurementCode4" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+  <Field name="Size" type="double" required="y" min="1" max="8" comment="Size of supplier units in pack"/>
+  <Field name="UnitOrBasisForMeasurementCode5" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="CashRegisterItemDescription1" required="y" min="1" max="20" comment="The cash register description of an item"/>
+  <Field name="CashRegisterItemDescription2" required="y" min="1" max="20" comment="The cash register description of an item"/>
+  <Field name="CouponFamilyCode" required="y" min="3" max="3" comment="A code assigned by the vendor to a single item or to families of consumer items that can be used by in-store scanners in conjunction with a UPC coupon value code for instant credit when the proper item has been purchased"/>
+  <Field name="DatedProductNumberOfDays" type="long" required="y" min="1" max="4" comment="Used to designate the number of days open dated product must 'sell by' from date of manufacture"/>
+  <Field name="DepositValue" type="double" required="y" min="1" max="8" comment="To designate the value for returnable containers"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="Color" required="y" min="1" max="10" comment="Free-form description of color"/>
+  <Field name="UnitWeight1" type="double" required="y" min="1" max="8" comment="Numeric value of weight per unit"/>
+  <Field name="WeightQualifier1" required="y" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+  <Field name="WeightUnitCode1" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="UnitWeight2" type="double" required="y" min="1" max="8" comment="Numeric value of weight per unit"/>
+  <Field name="WeightQualifier2" required="y" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+  <Field name="WeightUnitCode2" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="ProductServiceIdQualifier3" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId3" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="FreeFormDescription" required="y" min="1" max="45" comment="Free-form descriptive text"/>
+  <Field name="InnerPack" type="long" required="y" min="1" max="6" comment="The number of eaches per inner container"/>
+  <Field name="PackagingCode" required="y" min="3" max="5" validation="T103.2" comment="Code identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required"/>
+</Segment>

@@ -1,0 +1,55 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T83.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T83">
+  <Entry name="1" value="Middle States Association of Colleges and Schools, Commission on Higher Education"/>
+  <Entry name="2" value="Middle States Association of Colleges and Schools, Commission on Secondary Schools"/>
+  <Entry name="3" value="New England Association of Schools and Colleges, Commission on Institutions of Higher Education"/>
+  <Entry name="4" value="New England Association of Schools and Colleges, Commission on Vocational, Technical, Career Institutions"/>
+  <Entry name="5" value="North Central Association of Colleges and Schools, Commission on Institutions of Higher Education"/>
+  <Entry name="6" value="North Central Association of Colleges and Schools, Commission on Schools"/>
+  <Entry name="7" value="Northwest Association of Schools and Colleges, Commission on Colleges"/>
+  <Entry name="8" value="Southern Association of Colleges and Schools, Commission on Colleges"/>
+  <Entry name="9" value="Western Association of Schools and Colleges, Accrediting Commission for Community and Junior Colleges"/>
+  <Entry name="A" value="Commission for Accreditation for Rehabilitation Facilities (CARF)"/>
+  <Entry name="B" value="Joint Commission on Accreditation of Health Organizations (JCAHO)"/>
+  <Entry name="C" value="Commercial - Motor Vehicle"/>
+  <Entry name="D" value="Driver License - Motor Vehicle"/>
+  <Entry name="E" value="Office of Export Administration"/>
+  <Entry name="F" value="Federal Aviation Administration (FAA)"/>
+  <Entry name="G" value="Department of Agriculture - Tobacco, Seeds &amp; Plants"/>
+  <Entry name="H" value="National Committee for Quality Assurance (NCQA)"/>
+  <Entry name="I" value="Department of the Interior - U.S. Endangered Native Fish and Wildlife and Migratory Birds"/>
+  <Entry name="J" value="Department of Justice - Narcotics and Dangerous Drugs"/>
+  <Entry name="K" value="Utilization Review Accreditation Commission (URAC)"/>
+  <Entry name="L" value="US Customs Service - Automated Export System"/>
+  <Entry name="M" value="Maritime Administration - Watercraft (Other Than Vessels of War), Vessels Exported for Scrapping, Dismantling, Dismembering, or Destroying the Hulls Thereof (Also Controlled by Office of Export Administration)"/>
+  <Entry name="N" value="Nuclear Regulatory Commission - Commodities Subject to the Atomic Energy Act"/>
+  <Entry name="P" value="Federal Power Commission - Natural Gas and Electric Energy"/>
+  <Entry name="S" value="Department of State - Arms, Ammunition, Implements of War; Vessels of War"/>
+  <Entry name="T" value="Department of Treasury - Gold"/>
+  <Entry name="10" value="Western Association of Schools and Colleges, Accrediting Commission for Schools"/>
+  <Entry name="11" value="Western Association of Schools and Colleges, Accrediting Commission for Senior Colleges and Universities"/>
+</Table>

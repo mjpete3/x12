@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: EFI.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="EFI" comment="To provide basic information about the electronic format of the interchange data">
+  <Field name="SecurityLevelCode" min="2" max="2" validation="T786" comment="Code indicating the level of confidentiality assigned by the sender to the information following"/>
+  <Field name="FreeFormMessageText" required="y" min="1" max="264" comment="Free-form message text"/>
+  <Field name="SecurityTechniqueCode" required="y" min="2" max="2" validation="T797" comment="Code indicating that this element will be used to tell an EDI translator program which security technique to use"/>
+  <Field name="VersionIdentifier1" required="y" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="ProgramIdentifier" required="y" min="1" max="30" comment="Identifies the name of the software program from which the technical data originates"/>
+  <Field name="VersionIdentifier2" required="y" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="InterchangeFormat" required="y" min="1" max="30" comment="Industry or proprietary standard used to identify the format of the data"/>
+  <Field name="VersionIdentifier3" required="y" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="CompressionTechnique" required="y" min="1" max="30" comment="Identifies the digital data compression means and the type"/>
+  <Field name="DrawingSheetSizeCode" required="y" min="2" max="2" validation="T789" comment="Code indicating the drawing size and orientation of a technical drawing as specified and described in the current version of standards ANSI Y14.1 and ISO 5457 (E); see the listed ANSI and ISO standards for the maximum lengths for rolled sheets *"/>
+  <Field name="FileName" required="y" min="1" max="64" comment="Name assigned or declared for a file or used by a program to identify a file; exact format of the name depends on the computer operating system being used; name also may be known as the file's &quot;data set name&quot;"/>
+  <Field name="BlockType" required="y" min="1" max="4" comment="Organization of a data block such as fixed length, variable length, spanned, etc. Synonym for &quot;data format&quot;"/>
+  <Field name="RecordLength" type="double" required="y" min="1" max="15" comment="Quantity of characters or bytes in a record. Synonyms are &quot;logical record length&quot; and &quot;record size&quot;"/>
+  <Field name="BlockLength" type="double" required="y" min="1" max="5" comment="Quantity of data elements in a block, usually specified in units such as records, words or characters; synonym for &quot;block size&quot;"/>
+  <Field name="VersionIdentifier4" required="y" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="FilterIdCode" required="y" min="3" max="3" validation="T1570" comment="Code specifying the type of filter used to convert data code values"/>
+</Segment>

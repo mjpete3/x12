@@ -1,0 +1,191 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T737.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T737">
+  <Entry name="9L" value="Ninth Layer"/>
+  <Entry name="AA" value="Meter reading-beginning actual/ending actual"/>
+  <Entry name="AB" value="Average Balance"/>
+  <Entry name="AC" value="Maximum Balance"/>
+  <Entry name="AD" value="Serving Specifications"/>
+  <Entry name="AE" value="Meter reading-beginning actual/ending estimated"/>
+  <Entry name="AF" value="Actual Total"/>
+  <Entry name="AG" value="Compliance Total"/>
+  <Entry name="AH" value="Gross Compliance Total"/>
+  <Entry name="AI" value="Net Compliance Total"/>
+  <Entry name="AJ" value="Effectiveness"/>
+  <Entry name="AK" value="Penetration"/>
+  <Entry name="AL" value="Exposure"/>
+  <Entry name="AM" value="Capacity"/>
+  <Entry name="AN" value="Work"/>
+  <Entry name="AO" value="Account Opened Period"/>
+  <Entry name="AP" value="Apartments"/>
+  <Entry name="AQ" value="Amount Owes"/>
+  <Entry name="AR" value="Annual Result"/>
+  <Entry name="AS" value="Modified Exposure"/>
+  <Entry name="AT" value="Pro Rata Factor"/>
+  <Entry name="AU" value="Sample"/>
+  <Entry name="AV" value="Average Reading"/>
+  <Entry name="AW" value="Relative Humidity"/>
+  <Entry name="BA" value="Base Point"/>
+  <Entry name="BB" value="Bank Balance"/>
+  <Entry name="BC" value="Billed Actual"/>
+  <Entry name="BD" value="Billed Dimensions"/>
+  <Entry name="BL" value="Bundle Limitation"/>
+  <Entry name="BM" value="Base Metal"/>
+  <Entry name="BN" value="Billed Minimum"/>
+  <Entry name="BO" value="Meter Reading as Billed"/>
+  <Entry name="BP" value="Bearing Piece Limitation"/>
+  <Entry name="BR" value="Billed History"/>
+  <Entry name="BT" value="Batch Limits"/>
+  <Entry name="BZ" value="Batten Size"/>
+  <Entry name="C1" value="Conformance Property Status"/>
+  <Entry name="CA" value="Coating"/>
+  <Entry name="CB" value="Condominium"/>
+  <Entry name="CC" value="Cooperative"/>
+  <Entry name="CF" value="Conversion Factor"/>
+  <Entry name="CG" value="Average Owing"/>
+  <Entry name="CH" value="Chemistry"/>
+  <Entry name="CJ" value="Current Balance"/>
+  <Entry name="CK" value="Discounted Checks"/>
+  <Entry name="CL" value="Drafts"/>
+  <Entry name="CM" value="Commercial"/>
+  <Entry name="CN" value="Core Notch Dimensions"/>
+  <Entry name="CO" value="Concentration"/>
+  <Entry name="CP" value="Letter of Credit Size"/>
+  <Entry name="CQ" value="Payment Orders"/>
+  <Entry name="CS" value="Core Size"/>
+  <Entry name="CT" value="Counts"/>
+  <Entry name="CU" value="Pledge Size"/>
+  <Entry name="CV" value="Cumulative Test Period"/>
+  <Entry name="CW" value="Promissory Notes in Force"/>
+  <Entry name="CY" value="Secured Amount"/>
+  <Entry name="DE" value="Defects"/>
+  <Entry name="DN" value="Dunnage Dimension"/>
+  <Entry name="DT" value="Dimensional Tolerance"/>
+  <Entry name="EA" value="Meter reading-beginning estimated/ending actual"/>
+  <Entry name="EE" value="Meter reading-beginning estimated/ending estimated"/>
+  <Entry name="EF" value="Evaluation Factors"/>
+  <Entry name="EL" value="Electrical Characteristics"/>
+  <Entry name="EN" value="Environmental Conditions"/>
+  <Entry name="FC" value="First of Campaign Result"/>
+  <Entry name="FD" value="Finished Dimensions"/>
+  <Entry name="FH" value="Radio Operations"/>
+  <Entry name="FJ" value="Antenna Characteristics"/>
+  <Entry name="FV" value="Firing Values"/>
+  <Entry name="FZ" value="File Size"/>
+  <Entry name="GC" value="Contractor Delivery Limitations"/>
+  <Entry name="GL" value="Guidelines"/>
+  <Entry name="GO" value="Government Ordering Limitations"/>
+  <Entry name="GP" value="Ordering Period Limitations"/>
+  <Entry name="HC" value="High Credit Average"/>
+  <Entry name="HR" value="Historical Result"/>
+  <Entry name="ID" value="Industrial"/>
+  <Entry name="IN" value="Incrustation"/>
+  <Entry name="IR" value="Interpolated Result"/>
+  <Entry name="LC" value="Limited Weight/Size Coils"/>
+  <Entry name="LD" value="Load Planning Dimensions"/>
+  <Entry name="LG" value="Loans Granted"/>
+  <Entry name="LL" value="Lift Limitation"/>
+  <Entry name="LM" value="Layer of Multiple Layered Product"/>
+  <Entry name="LP" value="Last Sold Period"/>
+  <Entry name="LS" value="Lot Status"/>
+  <Entry name="LT" value="Lot Limits"/>
+  <Entry name="MA" value="Accuracy"/>
+  <Entry name="MB" value="Activity Period Result"/>
+  <Entry name="MC" value="Average Daily Limit"/>
+  <Entry name="MD" value="Design Capacity"/>
+  <Entry name="ME" value="Map Scale"/>
+  <Entry name="MF" value="Maximum Daily Limit"/>
+  <Entry name="MP" value="Maturity Period"/>
+  <Entry name="MR" value="Base Material Result"/>
+  <Entry name="NC" value="Net Change"/>
+  <Entry name="NE" value="Neighborhood"/>
+  <Entry name="NX" value="Net Explosive Weight"/>
+  <Entry name="OD" value="Ordered Dimensions"/>
+  <Entry name="OG" value="Original"/>
+  <Entry name="OL" value="Order Limits"/>
+  <Entry name="OP" value="Other Property"/>
+  <Entry name="P1" value="Platform Limitation"/>
+  <Entry name="PA" value="Pallet Dimensions"/>
+  <Entry name="PB" value="Receivership Period"/>
+  <Entry name="PC" value="Parting Cut (Sawcut)"/>
+  <Entry name="PD" value="Physical Dimensions"/>
+  <Entry name="PI" value="Project Incomplete"/>
+  <Entry name="PJ" value="Project Complete"/>
+  <Entry name="PK" value="Package Dimensions"/>
+  <Entry name="PL" value="Package Limitations"/>
+  <Entry name="PM" value="Permitted"/>
+  <Entry name="PO" value="Position"/>
+  <Entry name="PR" value="Product Dimension Range Price Bracket"/>
+  <Entry name="PS" value="Product Characteristic Specification"/>
+  <Entry name="PT" value="Pretest Period"/>
+  <Entry name="PU" value="Planned Urban Development"/>
+  <Entry name="PY" value="Property"/>
+  <Entry name="QR" value="Quarterly Result"/>
+  <Entry name="QV" value="Quantity Variation"/>
+  <Entry name="R1" value="Opening Reading"/>
+  <Entry name="R2" value="Closing Reading"/>
+  <Entry name="RA" value="Reject Amount"/>
+  <Entry name="RG" value="Regulatory Limit"/>
+  <Entry name="RL" value="Receiving Facility Limitations"/>
+  <Entry name="RN" value="Lengths Limitation"/>
+  <Entry name="RO" value="Roll Limits"/>
+  <Entry name="RP" value="Relative Position"/>
+  <Entry name="RQ" value="Requested"/>
+  <Entry name="RS" value="Response Time"/>
+  <Entry name="RT" value="Replacement"/>
+  <Entry name="SA" value="Spacing/Margin"/>
+  <Entry name="SB" value="Single Family"/>
+  <Entry name="SC" value="Standard Industrial Classification (SIC) Code Size Standards"/>
+  <Entry name="SD" value="Shipped Dimensions"/>
+  <Entry name="SE" value="Property Specifications"/>
+  <Entry name="SF" value="Shelf Life"/>
+  <Entry name="SH" value="Shipping Tolerance"/>
+  <Entry name="SJ" value="Subject Phase"/>
+  <Entry name="SK" value="Skid Dimensions"/>
+  <Entry name="SL" value="Skid Limitations"/>
+  <Entry name="SM" value="Shade"/>
+  <Entry name="SP" value="Splices"/>
+  <Entry name="SR" value="Surface Roughness"/>
+  <Entry name="ST" value="Surface Treatment"/>
+  <Entry name="SU" value="Surface"/>
+  <Entry name="SZ" value="Subject Property"/>
+  <Entry name="TA" value="Two to Four Family"/>
+  <Entry name="TD" value="Splice Tape Dimensions"/>
+  <Entry name="TE" value="Temperature"/>
+  <Entry name="TI" value="Time"/>
+  <Entry name="TL" value="Transportation Equipment Limitations"/>
+  <Entry name="TO" value="Total Dimensions"/>
+  <Entry name="TP" value="Test Period"/>
+  <Entry name="TR" value="Test Results"/>
+  <Entry name="TS" value="Single Test Limits"/>
+  <Entry name="TT" value="This Type Property"/>
+  <Entry name="VT" value="Vacant"/>
+  <Entry name="WA" value="Waste Amount"/>
+  <Entry name="WR" value="Warranty"/>
+  <Entry name="WT" value="Weights"/>
+  <Entry name="ZA" value="Multi - Family"/>
+  <Entry name="ZP" value="Log Zero Point of Reference"/>
+</Table>

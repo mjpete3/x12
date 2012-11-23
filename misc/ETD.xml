@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ETD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="ETD" comment="To specify information relating to premium transportation">
+  <Field name="ExcessTransportationReasonCode" min="1" max="2" validation="T626" comment="Code identifying the reason for shipment via premium transportation rather than the normal mode of transportation"/>
+  <Field name="ExcessTransportationResponsibilityCode" min="1" max="1" validation="T627" comment="Code identifying the organization responsible for paying the premium transportation costs"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReturnableContainerFreightPaymentResponsibilityCode" required="y" min="1" max="2" validation="T743" comment="Code specifying the responsibility for the return freight costs incurred when returnable containers are shipped in a premium transportation"/>
+</Segment>

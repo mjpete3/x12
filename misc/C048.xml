@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: C048.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+
+<Composite name="C048" comment="To identify one or more uses of loan proceeds">
+  <Field name="UseOfProceedsCode1" min="2" max="2" validation="T1082" comment="Code specifying how proceeds will be used or why they are being requested"/>
+  <Field name="RefinanceTypeCode" required="y" min="2" max="2" validation="T1680" comment="Code specifying a type of refinance"/>
+  <Field name="UseOfProceedsCode2" required="y" min="2" max="2" validation="T1082" comment="Code specifying how proceeds will be used or why they are being requested"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+</Composite>

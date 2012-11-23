@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CDS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CDS" comment="To identify and describe a specific court case">
+  <Field name="CaseTypeCode" min="1" max="2" validation="T1008" comment="Code identifying a type of court case"/>
+  <Field name="AdministrationOfJusticeOrganizationTypeCode" min="1" max="2" validation="T1009" comment="Code identifying a type of organization or entity involved in the administration of justice"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="IdentificationCodeQualifier1" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode1" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="IdentificationCodeQualifier2" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode2" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="IdentificationCodeQualifier3" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode3" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+</Segment>

@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BA1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BA1" comment="To transmit identifying data for an export shipment">
+  <Field name="RelatedCompanyIndicationCode" min="1" max="1" validation="T645" comment="Code indicating parties to a transaction"/>
+  <Field name="ActionCode" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="TransportationMethodTypeCode" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="CountryCode1" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="ReferenceIdentification" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="PostalCode" required="y" min="3" max="15" comment="Code defining international postal zone code excluding punctuation and blanks (zip code for United States)"/>
+  <Field name="CountryCode2" required="y" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="Authority" required="y" min="1" max="20" comment="Name or code of authority for authorizing action or reservation"/>
+  <Field name="StandardCarrierAlphaCode" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="LocationIdentifier" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="VesselName" required="y" min="2" max="28" comment="Name of ship as documented in &quot;Lloyd's Register of Ships&quot;"/>
+</Segment>

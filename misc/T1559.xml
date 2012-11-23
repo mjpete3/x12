@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1559.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1559">
+  <Entry name="A" value="Antenna Warning"/>
+  <Entry name="B" value="Antenna Fatal"/>
+  <Entry name="C" value="Communication Warning"/>
+  <Entry name="D" value="Communication Fatal"/>
+  <Entry name="E" value="Intertrack Communication Failure Warning"/>
+  <Entry name="F" value="Intertrack Communication Failure Fatal"/>
+  <Entry name="G" value="Good"/>
+  <Entry name="H" value="Power Supply Failure"/>
+  <Entry name="I" value="Power Supply Fatal"/>
+  <Entry name="J" value="Power Supply Off"/>
+  <Entry name="K" value="Software Set-up Failure"/>
+  <Entry name="L" value="Available"/>
+  <Entry name="M" value="Multiple Processor"/>
+  <Entry name="O" value="Presence Loop Off"/>
+  <Entry name="Q" value="Presence Loop On"/>
+  <Entry name="R" value="Reader or Radio Frequency Warning"/>
+  <Entry name="S" value="Reader or Radio Frequency Fatal"/>
+  <Entry name="T" value="Transducer Warning"/>
+  <Entry name="U" value="Transducer Fatal"/>
+  <Entry name="V" value="Transducer Off"/>
+  <Entry name="X" value="External Detector Warning"/>
+  <Entry name="Y" value="External Detector Fatal"/>
+  <Entry name="Z" value="Security"/>
+</Table>

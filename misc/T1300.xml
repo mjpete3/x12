@@ -1,0 +1,1116 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1300.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1300">
+  <Entry name="A010" value="Absolute Minimum Charge"/>
+  <Entry name="A020" value="Access Charge - Federal"/>
+  <Entry name="A030" value="Access Charge - State"/>
+  <Entry name="A040" value="Access Charges"/>
+  <Entry name="A050" value="Account Number Correction Charge"/>
+  <Entry name="A060" value="Acid (Battery)"/>
+  <Entry name="A070" value="Acknowledgment of Delivery Fee (AOD)"/>
+  <Entry name="A080" value="Activation of Carnet"/>
+  <Entry name="A090" value="Ad Valorem"/>
+  <Entry name="A100" value="Add on - Destination"/>
+  <Entry name="A110" value="Add on - Origin"/>
+  <Entry name="A112" value="Add to Make Market Value"/>
+  <Entry name="A120" value="Additional Copies of Freight Bill"/>
+  <Entry name="A121" value="Additional Commercial Invoices"/>
+  <Entry name="A122" value="Additional Tariff Classifications"/>
+  <Entry name="A130" value="Additional Material"/>
+  <Entry name="A140" value="Address Correction"/>
+  <Entry name="A150" value="Adjustment for Maximum Charges Billing"/>
+  <Entry name="A160" value="Adjustment for Minimum Average Time Requirement Billing"/>
+  <Entry name="A170" value="Adjustments"/>
+  <Entry name="A172" value="Administrative"/>
+  <Entry name="A180" value="Advance Charges Handling"/>
+  <Entry name="A190" value="Advance Destination Amount"/>
+  <Entry name="A200" value="Advance Destination Fee"/>
+  <Entry name="A210" value="Advance Fee"/>
+  <Entry name="A220" value="Advance Lading Charge"/>
+  <Entry name="A230" value="Advance Origin Amount"/>
+  <Entry name="A240" value="Advance Origin Fee"/>
+  <Entry name="A250" value="Advances"/>
+  <Entry name="A260" value="Advertising Allowance"/>
+  <Entry name="A270" value="Affidavit"/>
+  <Entry name="A280" value="Agent Disbursement - Destination"/>
+  <Entry name="A290" value="Agent Disbursement - Origin"/>
+  <Entry name="A300" value="Air Export Certificate"/>
+  <Entry name="A310" value="Air Express Charge"/>
+  <Entry name="A320" value="Air Transportation Charge"/>
+  <Entry name="A330" value="Aircraft On Ground (AOG)"/>
+  <Entry name="A340" value="Airline Opening Fee"/>
+  <Entry name="A350" value="Airport Terminal Handling Charge"/>
+  <Entry name="A360" value="Alcoholic Beverage Report Charge"/>
+  <Entry name="A370" value="Allegheny County, PA Delivery Charge"/>
+  <Entry name="A380" value="Allowance Advance"/>
+  <Entry name="A390" value="Allowance for Consignment Merchandise"/>
+  <Entry name="A400" value="Allowance Non-performance"/>
+  <Entry name="A410" value="Alterations"/>
+  <Entry name="A420" value="Amending Export Documentation"/>
+  <Entry name="A430" value="Anneal/Heat (Steel or Glass Treatment)"/>
+  <Entry name="A440" value="Anodizing Charge"/>
+  <Entry name="A445" value="Anti-dumping Duty"/>
+  <Entry name="A450" value="Appointment (Notification)"/>
+  <Entry name="A460" value="Arbitrary (In Addition to Through Rates and Charges)"/>
+  <Entry name="A470" value="Art Work"/>
+  <Entry name="A480" value="Assembly"/>
+  <Entry name="A485" value="Assist Amount"/>
+  <Entry name="A490" value="Attachments to Bill of Lading Charge"/>
+  <Entry name="A500" value="Bad Debt"/>
+  <Entry name="A510" value="Banking Drafts"/>
+  <Entry name="A520" value="Base Charge"/>
+  <Entry name="A530" value="Basic Reorder Allowance"/>
+  <Entry name="A540" value="Beaming Charge"/>
+  <Entry name="A550" value="Bedding/Feeding/Disinfecting"/>
+  <Entry name="A555" value="Beef Fee"/>
+  <Entry name="A560" value="Beyond Charge"/>
+  <Entry name="A570" value="Beyond Freight Charges"/>
+  <Entry name="A580" value="Bill and Hold"/>
+  <Entry name="A590" value="Bill of Lading Attendancy"/>
+  <Entry name="A600" value="Bill of Lading Charge"/>
+  <Entry name="A610" value="Billed Demand"/>
+  <Entry name="A620" value="Black Lung Tax"/>
+  <Entry name="A630" value="Blocking and Bracing Charge"/>
+  <Entry name="A640" value="Blower Charge"/>
+  <Entry name="A650" value="Bobtail Charges"/>
+  <Entry name="A658" value="Bond Amount"/>
+  <Entry name="A660" value="Bond Charge"/>
+  <Entry name="A670" value="Bordeaux Arbitraries"/>
+  <Entry name="A680" value="Both-Flat"/>
+  <Entry name="A690" value="Break Bulk Surface Charge"/>
+  <Entry name="A691" value="Breakbulk Services"/>
+  <Entry name="A700" value="Bridge Toll"/>
+  <Entry name="A710" value="Broken Lot"/>
+  <Entry name="A720" value="Broken Package Charge"/>
+  <Entry name="A721" value="Brokerage"/>
+  <Entry name="A730" value="Brokerage or Duty"/>
+  <Entry name="A740" value="Bunker Surcharge"/>
+  <Entry name="A750" value="Burning"/>
+  <Entry name="A760" value="Buyer Hand Carry"/>
+  <Entry name="A770" value="Buyers Car Allowance"/>
+  <Entry name="A780" value="Cable Pressurization"/>
+  <Entry name="A790" value="Cables (sending of)"/>
+  <Entry name="A800" value="Call Tag"/>
+  <Entry name="A810" value="Camp Arbitrary"/>
+  <Entry name="A820" value="Canada Great Lakes Additionals"/>
+  <Entry name="A830" value="Canadian C.Q.Customs Clearance"/>
+  <Entry name="A840" value="Canadian Currency Exchange"/>
+  <Entry name="A850" value="Canadian Import Termination Fee"/>
+  <Entry name="A860" value="Canadian Reconsignment Fee"/>
+  <Entry name="A870" value="Canadian Remanifest Fee"/>
+  <Entry name="A880" value="Cancellation Charge"/>
+  <Entry name="A890" value="Cancelled Order, Heavy Duty Flatcar"/>
+  <Entry name="A900" value="Capping"/>
+  <Entry name="A910" value="Car Loading"/>
+  <Entry name="A920" value="Car Rental"/>
+  <Entry name="A930" value="Carrier Credit Allowance"/>
+  <Entry name="A940" value="Carrier Debit Allowance"/>
+  <Entry name="A950" value="Carrier Notification Charge"/>
+  <Entry name="A960" value="Carrier"/>
+  <Entry name="A970" value="Cartage Charge"/>
+  <Entry name="A980" value="Cartage"/>
+  <Entry name="A990" value="Cataloging Services"/>
+  <Entry name="ADOW" value="Payroll Additives, Overtime Labor"/>
+  <Entry name="ADRW" value="Payroll Additives, Straight Time Labor"/>
+  <Entry name="AFEE" value="Fee"/>
+  <Entry name="ALPT" value="Port Changes"/>
+  <Entry name="B000" value="Central Buy"/>
+  <Entry name="B010" value="Cents Off"/>
+  <Entry name="B015" value="Bop Sheet"/>
+  <Entry name="B020" value="Certificate of Conformance"/>
+  <Entry name="B030" value="Certificate of Origin"/>
+  <Entry name="B040" value="Certificate of Registration"/>
+  <Entry name="B050" value="Certification"/>
+  <Entry name="B060" value="Chain and Binders"/>
+  <Entry name="B070" value="Chamber of Commerce Service Charge"/>
+  <Entry name="B080" value="Change of Airbill - Service Fee"/>
+  <Entry name="B090" value="Charges Forward/Advance Charge"/>
+  <Entry name="B091" value="Charter Services"/>
+  <Entry name="B100" value="Chassis Transfer"/>
+  <Entry name="B110" value="Chemical Milling Charge"/>
+  <Entry name="B120" value="Chicago Loop Charge"/>
+  <Entry name="B130" value="Cigarette Stamping"/>
+  <Entry name="B140" value="City Delivery"/>
+  <Entry name="B150" value="City maintenance fee"/>
+  <Entry name="B160" value="City Pick-up"/>
+  <Entry name="B170" value="City Terminal Charge"/>
+  <Entry name="B180" value="Cleaning Charge"/>
+  <Entry name="B190" value="Closing &amp; Sealing"/>
+  <Entry name="B200" value="Co-manufacturing Discount"/>
+  <Entry name="B210" value="Co-op Credit"/>
+  <Entry name="B220" value="Coating (Dip, Rustproof, EDP)"/>
+  <Entry name="B230" value="COD Amount"/>
+  <Entry name="B240" value="COD Charges"/>
+  <Entry name="B250" value="Collect on Delivery Alteration Charge"/>
+  <Entry name="B260" value="Collect on Delivery Deletion Charge"/>
+  <Entry name="B270" value="Collect Surcharge"/>
+  <Entry name="B280" value="Combination Performance and Non-performance"/>
+  <Entry name="B290" value="Combination"/>
+  <Entry name="B300" value="Combine All Same Day Shipment"/>
+  <Entry name="B310" value="Commission Amount"/>
+  <Entry name="B320" value="Competitive Allowance"/>
+  <Entry name="B330" value="Competitive Car Allowance"/>
+  <Entry name="B340" value="Competitive Price"/>
+  <Entry name="B350" value="Compressor Charge"/>
+  <Entry name="B360" value="Concession Credit"/>
+  <Entry name="B370" value="Concession Money"/>
+  <Entry name="B380" value="Congestion Surcharge"/>
+  <Entry name="B390" value="Connect Charge"/>
+  <Entry name="B400" value="Conservation research fee"/>
+  <Entry name="B500" value="Consignee Unload"/>
+  <Entry name="B510" value="Consolidation"/>
+  <Entry name="B520" value="Constant Surveillance Service - Armed"/>
+  <Entry name="B530" value="Constant Surveillance Service"/>
+  <Entry name="B540" value="Consular Legalization Service"/>
+  <Entry name="B550" value="Consularization Fee"/>
+  <Entry name="B551" value="Consulting Service"/>
+  <Entry name="B555" value="Consumer Service Provider Charge"/>
+  <Entry name="B560" value="Container Allowance"/>
+  <Entry name="B570" value="Container Deposits"/>
+  <Entry name="B580" value="Container Destuffing"/>
+  <Entry name="B581" value="Container Discount"/>
+  <Entry name="B590" value="Container Leasing"/>
+  <Entry name="B600" value="Container Service Charge UK/EUR"/>
+  <Entry name="B610" value="Container Service Charge USA/Canada"/>
+  <Entry name="B620" value="Container Stuffing"/>
+  <Entry name="B630" value="Container/Trailer Allowance"/>
+  <Entry name="B650" value="Continuous Mileage"/>
+  <Entry name="B660" value="Contract Allowance"/>
+  <Entry name="B670" value="Contract Escalation"/>
+  <Entry name="B680" value="Contract Service Charge"/>
+  <Entry name="B690" value="Controlled Atmosphere"/>
+  <Entry name="B700" value="Converting"/>
+  <Entry name="B720" value="Cooperative Advertising/Merchandising Allowance (Performance)"/>
+  <Entry name="B730" value="Copy of Bill of Lading Charge"/>
+  <Entry name="B740" value="Copy of Delivery Receipt Charge"/>
+  <Entry name="B742" value="Copying"/>
+  <Entry name="B750" value="Core Charge"/>
+  <Entry name="B760" value="Cost Recovery Factor"/>
+  <Entry name="B770" value="Cost recovery/adjustment"/>
+  <Entry name="B775" value="Cotton Fee"/>
+  <Entry name="B780" value="Count and Recount"/>
+  <Entry name="B785" value="Coupon Reimbursement"/>
+  <Entry name="B787" value="Countervailing Duty"/>
+  <Entry name="B790" value="Crafting"/>
+  <Entry name="B791" value="Crating"/>
+  <Entry name="B800" value="Credit"/>
+  <Entry name="B801" value="Credit Card Processing Fee"/>
+  <Entry name="B802" value="Credit Card Processing Fee - Automated Dial-up Line"/>
+  <Entry name="B803" value="Credit Card Processing Fee - Leased Line"/>
+  <Entry name="B804" value="Credit Card Processing Fee - Fleet Cards"/>
+  <Entry name="B810" value="Currency Adjustment Factor"/>
+  <Entry name="B820" value="Currency Adjustment"/>
+  <Entry name="B830" value="Currency Discount"/>
+  <Entry name="B840" value="Customer Account Identification"/>
+  <Entry name="B850" value="Customer Equipment Allowance"/>
+  <Entry name="B860" value="Customs Broker Fee"/>
+  <Entry name="B870" value="Customs Charge"/>
+  <Entry name="B872" value="Customs Duty"/>
+  <Entry name="B880" value="Customs Entry"/>
+  <Entry name="B881" value="Customs Exam"/>
+  <Entry name="B890" value="Customs Formalities"/>
+  <Entry name="B900" value="Customs Invoice - Additional Page"/>
+  <Entry name="B910" value="Customs Invoice"/>
+  <Entry name="B911" value="Customs Penalty"/>
+  <Entry name="B920" value="Cut and Parallel"/>
+  <Entry name="B930" value="Cut"/>
+  <Entry name="B940" value="Cutting Charge"/>
+  <Entry name="B950" value="Damaged Merchandise"/>
+  <Entry name="B960" value="Data/Drawing Charge"/>
+  <Entry name="B970" value="De-Installation"/>
+  <Entry name="B980" value="Deadhead Mileage Charge"/>
+  <Entry name="B990" value="Deaf and Disabled Surcharge"/>
+  <Entry name="B992" value="Declared Value for Carriage"/>
+  <Entry name="B994" value="Declared Value for Customs"/>
+  <Entry name="B996" value="Declared Value for Insurance"/>
+  <Entry name="B998" value="Deduct to Make Market Value"/>
+  <Entry name="BU2T" value="Bunker Adjustment - 20 Foot Container"/>
+  <Entry name="BU4T" value="Bunker Adjustment - 40 Foot Container"/>
+  <Entry name="BUAT" value="Bunker Adjustment"/>
+  <Entry name="BURD" value="Burden, Overhead, or Allowance for Indirect Costs"/>
+  <Entry name="C000" value="Defective Allowance"/>
+  <Entry name="C010" value="Deficit Freight"/>
+  <Entry name="C020" value="Delay Furnishing Destination Weights"/>
+  <Entry name="C030" value="Delivery Surcharge"/>
+  <Entry name="C040" value="Delivery"/>
+  <Entry name="C050" value="Demand charge"/>
+  <Entry name="C060" value="Demurrage - Average Agreement"/>
+  <Entry name="C070" value="Demurrage - Special"/>
+  <Entry name="C080" value="Demurrage"/>
+  <Entry name="C090" value="Deposit Charges"/>
+  <Entry name="C100" value="Deposit in Lieu of Order"/>
+  <Entry name="C110" value="Deposit"/>
+  <Entry name="C120" value="Deramping"/>
+  <Entry name="C130" value="Derrick Charge"/>
+  <Entry name="C140" value="Designated Supplier Inspection"/>
+  <Entry name="C150" value="Destination Charge"/>
+  <Entry name="C160" value="Detention - Special Type Flat Car"/>
+  <Entry name="C170" value="Detention Loading"/>
+  <Entry name="C180" value="Detention of Power Units"/>
+  <Entry name="C190" value="Detention of Trailers"/>
+  <Entry name="C200" value="Detention Unloading"/>
+  <Entry name="C210" value="Determined Freight"/>
+  <Entry name="C220" value="Development Charge"/>
+  <Entry name="C230" value="Die Service Charge"/>
+  <Entry name="C231" value="Disbursement"/>
+  <Entry name="C240" value="Disconnect Charge"/>
+  <Entry name="C250" value="Discount - Drop Box/Convenience Ctr."/>
+  <Entry name="C260" value="Discount - Incentive"/>
+  <Entry name="C270" value="Discount - Multiple Shipment"/>
+  <Entry name="C280" value="Discount - Service Option (Delivery)"/>
+  <Entry name="C290" value="Discount - Service Option (Pickup)"/>
+  <Entry name="C300" value="Discount - Special"/>
+  <Entry name="C310" value="Discount"/>
+  <Entry name="C320" value="Display Allowance"/>
+  <Entry name="C330" value="Distribution Fee"/>
+  <Entry name="C340" value="Distribution Service"/>
+  <Entry name="C350" value="Distributor Discount/Allowance"/>
+  <Entry name="C360" value="Diversion and Reconsignment"/>
+  <Entry name="C370" value="Diversion Charge"/>
+  <Entry name="C380" value="Diversion to Air Charge"/>
+  <Entry name="C390" value="Dockage - Boat Detention"/>
+  <Entry name="C400" value="Documentation Charge"/>
+  <Entry name="C401" value="Document Handling"/>
+  <Entry name="C402" value="Door-to-Door"/>
+  <Entry name="C410" value="Dowel Pin Charge"/>
+  <Entry name="C420" value="Drayage"/>
+  <Entry name="C430" value="Drayage/Line Haul"/>
+  <Entry name="C440" value="Driver Assisted Unloading"/>
+  <Entry name="C450" value="Driver's Wages"/>
+  <Entry name="C460" value="Drop Dock"/>
+  <Entry name="C470" value="Drop Yard"/>
+  <Entry name="C480" value="Drum Cost"/>
+  <Entry name="C490" value="Drum Deposit"/>
+  <Entry name="C500" value="Drum Up Charge"/>
+  <Entry name="C510" value="Dry Ice"/>
+  <Entry name="C520" value="Dryer Charge"/>
+  <Entry name="C530" value="Duty Charge"/>
+  <Entry name="C531" value="Duty Drawback"/>
+  <Entry name="C540" value="Early Buy Allowance"/>
+  <Entry name="C550" value="Early Payment Allowance"/>
+  <Entry name="C560" value="Early Ship Allowance"/>
+  <Entry name="C570" value="Emergency Port Charge"/>
+  <Entry name="C580" value="Emergency Service"/>
+  <Entry name="C590" value="Emergency Surcharge"/>
+  <Entry name="C600" value="Empty Weighing Charge"/>
+  <Entry name="C610" value="Enclosure"/>
+  <Entry name="C630" value="Endorsement Fee"/>
+  <Entry name="C640" value="Energy charge"/>
+  <Entry name="C650" value="Energy Surcharge (Fuel Adjustment Factor)"/>
+  <Entry name="C660" value="Engineering Charge"/>
+  <Entry name="C670" value="Engraving"/>
+  <Entry name="C675" value="Entered Value"/>
+  <Entry name="C680" value="Environmental Protection Service"/>
+  <Entry name="C690" value="Escalation"/>
+  <Entry name="C700" value="Escort Service"/>
+  <Entry name="C710" value="Eur1 Presentation Fee"/>
+  <Entry name="C720" value="European Port Charges"/>
+  <Entry name="C730" value="Excess Mileage Charge"/>
+  <Entry name="C740" value="Excess Periods"/>
+  <Entry name="C750" value="Excess Value Fee"/>
+  <Entry name="C760" value="Excess Weight"/>
+  <Entry name="C770" value="Excessive Value Charge"/>
+  <Entry name="C780" value="Exchange Access Credit"/>
+  <Entry name="C790" value="Exclusive Use Of Equipment"/>
+  <Entry name="C800" value="Exclusive Use"/>
+  <Entry name="C810" value="Exhibition Delivery Charge"/>
+  <Entry name="C820" value="Exhibition Pickup Charge"/>
+  <Entry name="C830" value="Expanded Service"/>
+  <Entry name="C840" value="Expedited One Day Consular Service"/>
+  <Entry name="C850" value="Expedited Service Charge"/>
+  <Entry name="C860" value="Expedited Shipments"/>
+  <Entry name="C870" value="Expediting Fee"/>
+  <Entry name="C880" value="Expediting Premium"/>
+  <Entry name="C890" value="Export Customs Clearance"/>
+  <Entry name="C900" value="Export Declarations - Automated"/>
+  <Entry name="C910" value="Export Declarations - U.S. Shippers"/>
+  <Entry name="C920" value="Export License Application"/>
+  <Entry name="C930" value="Export Shipping Charge"/>
+  <Entry name="C940" value="Export/Import Charge"/>
+  <Entry name="C950" value="Extra Copies and Mailings"/>
+  <Entry name="C960" value="Extra Labor (Helper Service)"/>
+  <Entry name="C970" value="Extra Length"/>
+  <Entry name="C980" value="Extra Service - Counter-to-Counter"/>
+  <Entry name="C990" value="Fabrication Charge"/>
+  <Entry name="CA2T" value="Currency Adjustment - 20 Foot Container"/>
+  <Entry name="CA4T" value="Currency Adjustment - 40 Foot Container"/>
+  <Entry name="CFCT" value="Customs Fees - Container Level"/>
+  <Entry name="CFLT" value="Customs Fees - Lift Level"/>
+  <Entry name="CGTT" value="Cargo Taxes"/>
+  <Entry name="CLDT" value="Container Loss/Damage"/>
+  <Entry name="COMM" value="Communications Charges"/>
+  <Entry name="CRLT" value="Container Lease"/>
+  <Entry name="CTLT" value="Controlled Atmosphere"/>
+  <Entry name="CUFT" value="Currency Adjustment - Break Bulk"/>
+  <Entry name="D000" value="Facsimile Charges - Additional Pages"/>
+  <Entry name="D010" value="Facsimile Charges"/>
+  <Entry name="D015" value="Dunnage"/>
+  <Entry name="D020" value="Failed Lamp Panel Charge"/>
+  <Entry name="D025" value="Fax Pre-alert"/>
+  <Entry name="D030" value="Federal Transfer Surcharge"/>
+  <Entry name="D040" value="Finance Charge"/>
+  <Entry name="D050" value="First Article Charge"/>
+  <Entry name="D060" value="First Flight Out"/>
+  <Entry name="D070" value="Flat Rate"/>
+  <Entry name="D080" value="Floor Stock Protection"/>
+  <Entry name="D100" value="Food and Lodging"/>
+  <Entry name="D101" value="Foreign Office Advance"/>
+  <Entry name="D103" value="Foreign Customs Duty"/>
+  <Entry name="D110" value="Foreign Military Sales (FMS) Rental"/>
+  <Entry name="D120" value="Foreign Military Sales (FMS) Special Charge"/>
+  <Entry name="D130" value="Forwarding Agent Commission"/>
+  <Entry name="D140" value="Forwarding Charge"/>
+  <Entry name="D141" value="Forward Coupons"/>
+  <Entry name="D142" value="Capture Additional Data"/>
+  <Entry name="D143" value="Provide Name and Address"/>
+  <Entry name="D144" value="Provide Household Identifier"/>
+  <Entry name="D150" value="Franchise fee"/>
+  <Entry name="D160" value="Free Domicile Shipment Processing"/>
+  <Entry name="D170" value="Free Goods"/>
+  <Entry name="D180" value="Freight Based on Dollar Minimum"/>
+  <Entry name="D190" value="Freight Charges to Border"/>
+  <Entry name="D200" value="Freight Charges to Destination"/>
+  <Entry name="D210" value="Freight Equalization"/>
+  <Entry name="D220" value="Freight Passthrough"/>
+  <Entry name="D230" value="Freight Surcharge"/>
+  <Entry name="D240" value="Freight"/>
+  <Entry name="D242" value="Freight, International"/>
+  <Entry name="D244" value="Freight, International, U.S. Dollars"/>
+  <Entry name="D246" value="Freight, International, Non-U.S. Dollars"/>
+  <Entry name="D250" value="Freshness/Leaker Allowance"/>
+  <Entry name="D260" value="Fuel Charge"/>
+  <Entry name="D270" value="Fuel Surcharge"/>
+  <Entry name="D280" value="Full Service"/>
+  <Entry name="D290" value="Full Truckload Allowance"/>
+  <Entry name="D292" value="Fumigation"/>
+  <Entry name="D300" value="Garment District"/>
+  <Entry name="D301" value="Gateway Fee"/>
+  <Entry name="D310" value="Gas Pressure"/>
+  <Entry name="D320" value="Glaze"/>
+  <Entry name="D330" value="Gold Factor"/>
+  <Entry name="D340" value="Goods and Services Charge"/>
+  <Entry name="D350" value="Goods and Services Credit Allowance"/>
+  <Entry name="D360" value="Goods and Services Tax Charge"/>
+  <Entry name="D370" value="Government Inspection"/>
+  <Entry name="D380" value="Government Warehouse Fee - Destination"/>
+  <Entry name="D390" value="Government Warehouse Fee - Origin"/>
+  <Entry name="D400" value="Grain Doors"/>
+  <Entry name="D410" value="Grain Flow Charge"/>
+  <Entry name="D420" value="Grinding"/>
+  <Entry name="D430" value="Gross Receipts Surcharge"/>
+  <Entry name="D440" value="Groupage Discount"/>
+  <Entry name="D450" value="Grouped Items"/>
+  <Entry name="D460" value="Guaranteed Inspection Technical Service"/>
+  <Entry name="D470" value="Gulf Port Delivery Charge"/>
+  <Entry name="D480" value="Handling Charges on Distribution Freight Forwarded Beyond"/>
+  <Entry name="D490" value="Handling Freight At Positions Not Immediately Adjacent To Vehicle Charge"/>
+  <Entry name="D500" value="Handling"/>
+  <Entry name="D501" value="Harbor Maintenance Report"/>
+  <Entry name="D502" value="Harbor Maintenance Fee"/>
+  <Entry name="D510" value="Hauling and Hoisting to be Direct Billed"/>
+  <Entry name="D520" value="Hauling and Hoisting"/>
+  <Entry name="D530" value="Hazardous Cargo Charge"/>
+  <Entry name="D540" value="Hazardous Materials Handling Fee - Domestic"/>
+  <Entry name="D550" value="Hazardous Materials Handling Fee - International"/>
+  <Entry name="D560" value="Hazardous Storage"/>
+  <Entry name="D570" value="Heat in Transit Charges"/>
+  <Entry name="D580" value="Heat Treat Charge"/>
+  <Entry name="D590" value="Heavy Duty Flat Car Charge"/>
+  <Entry name="D600" value="Heavy Lift"/>
+  <Entry name="D610" value="High Security Red In-bond Seal Charge"/>
+  <Entry name="D620" value="Highway Interchange"/>
+  <Entry name="D630" value="Hointins and Hauling"/>
+  <Entry name="D640" value="Holding Charge"/>
+  <Entry name="D650" value="Home Line Freight Charge"/>
+  <Entry name="D655" value="Honey Fee"/>
+  <Entry name="D660" value="Hook-up charge"/>
+  <Entry name="D670" value="Hose Charge Special"/>
+  <Entry name="D680" value="Hose Charge"/>
+  <Entry name="D690" value="Household Goods Pick-up or Delivery"/>
+  <Entry name="D700" value="IATA Airbill Preparation"/>
+  <Entry name="D701" value="International Air Transport Association (IATA) Commission"/>
+  <Entry name="D710" value="IATA Fee"/>
+  <Entry name="D711" value="International Air Transport Association (IATA) Markup"/>
+  <Entry name="D720" value="Identification"/>
+  <Entry name="D730" value="Import Service Fee"/>
+  <Entry name="D740" value="In Transit Price Protection"/>
+  <Entry name="D750" value="Inbound Freight Charges"/>
+  <Entry name="D760" value="Income Freight (Manufacturing to Shipping Point)"/>
+  <Entry name="D770" value="Incorrect Billing Account Charge"/>
+  <Entry name="D780" value="Industry Price Allowance"/>
+  <Entry name="D790" value="Initial License Fee"/>
+  <Entry name="D800" value="Inland Transportation"/>
+  <Entry name="D810" value="Inside Cable Connectors"/>
+  <Entry name="D820" value="Inside Delivery"/>
+  <Entry name="D830" value="Inside Pick-up"/>
+  <Entry name="D840" value="Inspect at Destination"/>
+  <Entry name="D850" value="Inspect at Origin"/>
+  <Entry name="D870" value="Inspection"/>
+  <Entry name="D880" value="Installation &amp; Warranty"/>
+  <Entry name="D890" value="Installation and Training"/>
+  <Entry name="D900" value="Installation"/>
+  <Entry name="D910" value="Insulated Tank Charge"/>
+  <Entry name="D920" value="Insurance Fee"/>
+  <Entry name="D930" value="Insurance Placement Cost Charge"/>
+  <Entry name="D940" value="Insurance Premium"/>
+  <Entry name="D950" value="Insurance Provided by Lessee"/>
+  <Entry name="D960" value="Insurance Provided by Lessor"/>
+  <Entry name="D970" value="Insurance Surcharge"/>
+  <Entry name="D980" value="Insurance"/>
+  <Entry name="D990" value="Interdivision Profit"/>
+  <Entry name="D995" value="Interest Amount"/>
+  <Entry name="DCET" value="Damage to Carrier Equipment"/>
+  <Entry name="DCVT" value="Damage to Carrier Vessel"/>
+  <Entry name="DDZT" value="Drayage at Port of Debarkation (Rate Zone)"/>
+  <Entry name="DEZT" value="Drayage at Port of Embarkation (Rate Zone)"/>
+  <Entry name="DFDT" value="Keep From Freezing Percent Differential"/>
+  <Entry name="DGET" value="Damage to Government Equipment"/>
+  <Entry name="DOVT" value="Container Diversion"/>
+  <Entry name="DPDT" value="Drayage at Port of Debarkation"/>
+  <Entry name="DPET" value="Drayage at Port of Embarkation"/>
+  <Entry name="E000" value="Interest on refund"/>
+  <Entry name="E010" value="Interest on Security Deposit"/>
+  <Entry name="E020" value="Interim Use Permitted at Special Rate"/>
+  <Entry name="E022" value="International Courier"/>
+  <Entry name="E030" value="International Door-to-Door Handling Fee"/>
+  <Entry name="E040" value="Interplant Charge"/>
+  <Entry name="E050" value="Interstate/Highway Toll"/>
+  <Entry name="E060" value="Intra-plant Charge"/>
+  <Entry name="E063" value="Invoice Additional Amount"/>
+  <Entry name="E065" value="Invoice Adjustment"/>
+  <Entry name="E067" value="Invoice At-Cost Amount"/>
+  <Entry name="E068" value="Invoice Delivery Terms Amount"/>
+  <Entry name="E069" value="Invoice No-Charge Amount"/>
+  <Entry name="E070" value="Invoice Services"/>
+  <Entry name="E080" value="Invoice with Goods"/>
+  <Entry name="E090" value="Irish Arbitraries"/>
+  <Entry name="E100" value="Island Delivery Charge"/>
+  <Entry name="E110" value="Island Pick-Up Charge"/>
+  <Entry name="E120" value="Italian Release Charge"/>
+  <Entry name="E130" value="Item Percentage"/>
+  <Entry name="E140" value="Item-Unit"/>
+  <Entry name="E150" value="Koshering"/>
+  <Entry name="E160" value="Label Allowance"/>
+  <Entry name="E170" value="Labeling"/>
+  <Entry name="E180" value="Labor (Repair and Return Orders)"/>
+  <Entry name="E190" value="Labor Charges"/>
+  <Entry name="E191" value="Labor, Straight-time"/>
+  <Entry name="E192" value="Labor, Overtime"/>
+  <Entry name="E193" value="Labor, Premium Overtime"/>
+  <Entry name="E200" value="Labor Cost of Removal"/>
+  <Entry name="E210" value="Labor Service"/>
+  <Entry name="E220" value="Labor, Modify"/>
+  <Entry name="E230" value="Labor, No Trouble Found"/>
+  <Entry name="E240" value="Labor, Test and Calibrate"/>
+  <Entry name="E250" value="Lading Adjustment Charge"/>
+  <Entry name="E260" value="Lashing"/>
+  <Entry name="E270" value="Late Order Charge"/>
+  <Entry name="E280" value="Late Payment Charge"/>
+  <Entry name="E290" value="Layout/Design"/>
+  <Entry name="E300" value="Layover Charges"/>
+  <Entry name="E310" value="Lead Factor"/>
+  <Entry name="E320" value="Leaking Underground Storage Tax (LUST)"/>
+  <Entry name="E330" value="Lease Shortfall Consideration"/>
+  <Entry name="E340" value="Less Than Truckload (LTL) Charge"/>
+  <Entry name="E350" value="Letter of Credit Processing"/>
+  <Entry name="E360" value="License and Title"/>
+  <Entry name="E370" value="Lifeline Surcharge"/>
+  <Entry name="E380" value="Lift Gate (Truck) or Forklift Service at Pick-up/Delivery"/>
+  <Entry name="E381" value="Lime Fee"/>
+  <Entry name="E382" value="Liquidation Anti-Dumping Duty"/>
+  <Entry name="E384" value="Liquidation Countervailing Duty"/>
+  <Entry name="E386" value="Liquidation Tax Amount"/>
+  <Entry name="E388" value="Liquidation Total Due U.S. Customs Service (USCS)"/>
+  <Entry name="E389" value="Liquidation Total Fees"/>
+  <Entry name="E390" value="Load Weighing Charge"/>
+  <Entry name="E400" value="Loading (Labor Charges)"/>
+  <Entry name="E410" value="Loading"/>
+  <Entry name="E420" value="Loan Fee"/>
+  <Entry name="E430" value="Local Delivery/Drayage"/>
+  <Entry name="E440" value="Locomotive Delayed in Switching Service"/>
+  <Entry name="E450" value="Locomotive Under Own Power"/>
+  <Entry name="E460" value="Lot Charge"/>
+  <Entry name="E470" value="Lump Sum"/>
+  <Entry name="E480" value="Machining Charge"/>
+  <Entry name="E485" value="Mail Fee"/>
+  <Entry name="E490" value="Mail Invoice to Each Location"/>
+  <Entry name="E500" value="Mail Invoice"/>
+  <Entry name="E510" value="Mailing - Postage Cost"/>
+  <Entry name="E520" value="Mailing - Service Fee"/>
+  <Entry name="E530" value="Manifest Charge"/>
+  <Entry name="E540" value="Manufacturing"/>
+  <Entry name="E550" value="Market Development Funds"/>
+  <Entry name="E560" value="Marking or Tagging Charge"/>
+  <Entry name="E565" value="Markdown Allowance"/>
+  <Entry name="E570" value="Marriage Rule"/>
+  <Entry name="E580" value="Memo Returnable Container"/>
+  <Entry name="E585" value="Merchandise Processing Fee"/>
+  <Entry name="E590" value="Message Charge"/>
+  <Entry name="E600" value="Message Rate Adjustment"/>
+  <Entry name="E610" value="Messenger Service"/>
+  <Entry name="E620" value="Metals Surcharge"/>
+  <Entry name="E630" value="Meter Charge"/>
+  <Entry name="E640" value="Mileage Fee (For Repair and Return)"/>
+  <Entry name="E650" value="Mileage or Travel"/>
+  <Entry name="E660" value="Monthly Rental"/>
+  <Entry name="E670" value="Mount/Demount"/>
+  <Entry name="E680" value="Mounting"/>
+  <Entry name="E690" value="Municipal Surcharge"/>
+  <Entry name="E695" value="Mushroom Fee"/>
+  <Entry name="E700" value="N.H.D. Wharfage"/>
+  <Entry name="E710" value="New Discount"/>
+  <Entry name="E720" value="New Distribution Allowance"/>
+  <Entry name="E730" value="New Item Allowance"/>
+  <Entry name="E740" value="New Store Allowance"/>
+  <Entry name="E750" value="New Store Discount"/>
+  <Entry name="E760" value="New Warehouse Discount"/>
+  <Entry name="E770" value="New Warehouse"/>
+  <Entry name="E780" value="New York Delivery Charge"/>
+  <Entry name="E790" value="New York Pick-up Charge"/>
+  <Entry name="E800" value="No Return Credit Allowance"/>
+  <Entry name="E805" value="Non-Dutiable Charges"/>
+  <Entry name="E810" value="Non Generated Freight"/>
+  <Entry name="E820" value="Non-returnable Containers"/>
+  <Entry name="E830" value="Normal Pump Charge"/>
+  <Entry name="E840" value="Notarized Affidavit"/>
+  <Entry name="E850" value="Notify Consignee Before Delivery"/>
+  <Entry name="E860" value="Notify Consignee"/>
+  <Entry name="E870" value="Nozzle Charge"/>
+  <Entry name="E880" value="Ocean Charges - Hazardous"/>
+  <Entry name="E890" value="Ocean Freight"/>
+  <Entry name="E900" value="Offshore - Alaska/Hawaii"/>
+  <Entry name="E910" value="On Carriage"/>
+  <Entry name="E920" value="On Hand Service"/>
+  <Entry name="E930" value="One - Day Service"/>
+  <Entry name="E940" value="One Time Engineering Charge"/>
+  <Entry name="E950" value="One-Time License Fee"/>
+  <Entry name="E960" value="One-Time-Only Charge"/>
+  <Entry name="E970" value="Onetime Tooling"/>
+  <Entry name="E980" value="Operator Credit"/>
+  <Entry name="E990" value="Option Charge (Color Fabric Office Furniture)"/>
+  <Entry name="ENGA" value="Engineering Supplies"/>
+  <Entry name="EXLT" value="Extra Length Surcharge"/>
+  <Entry name="F000" value="Optional Charge"/>
+  <Entry name="F010" value="Optional Software Support for Operational Support Systems"/>
+  <Entry name="F020" value="Optional Software Support for Switching Systems"/>
+  <Entry name="F030" value="Order Notify Charge"/>
+  <Entry name="F040" value="Order-Flat"/>
+  <Entry name="F050" value="Other (See related description)"/>
+  <Entry name="F060" value="Other Accessorial Service Charge"/>
+  <Entry name="F061" value="Other Advances"/>
+  <Entry name="F062" value="Other Export Charges"/>
+  <Entry name="F063" value="Other Government Agency Declaration"/>
+  <Entry name="F065" value="Other Government Agency Exam"/>
+  <Entry name="F067" value="Other Import Charge"/>
+  <Entry name="F070" value="Out of Route Miles"/>
+  <Entry name="F080" value="Out of Zone Pick-up or Delivery"/>
+  <Entry name="F090" value="Outside Cable Connectors"/>
+  <Entry name="F100" value="Over Dimension"/>
+  <Entry name="F110" value="Overrun Charge"/>
+  <Entry name="F120" value="Oversized Premium"/>
+  <Entry name="F130" value="Overtime Loading"/>
+  <Entry name="F140" value="Pack Invoice with Shipment"/>
+  <Entry name="F150" value="Packaging Service"/>
+  <Entry name="F155" value="Packaging"/>
+  <Entry name="F160" value="Painting (Primer or Finish)"/>
+  <Entry name="F170" value="Pallet Exchange Charge"/>
+  <Entry name="F180" value="Pallet"/>
+  <Entry name="F190" value="Palletizing"/>
+  <Entry name="F200" value="Paralleling"/>
+  <Entry name="F210" value="Parish/County Sales Tax (only)"/>
+  <Entry name="F220" value="Passing Shippers Export Entry"/>
+  <Entry name="F225" value="Pecan Fee"/>
+  <Entry name="F230" value="Penalty Charge"/>
+  <Entry name="F240" value="Per Item Charge"/>
+  <Entry name="F250" value="Per Order Charge"/>
+  <Entry name="F260" value="Per Pound Charge"/>
+  <Entry name="F270" value="Percent of Product"/>
+  <Entry name="F271" value="Percent of Shipped Quantity that is Returnable"/>
+  <Entry name="F272" value="Percent of Shipment Value that is Returnable"/>
+  <Entry name="F280" value="Performance Allowance"/>
+  <Entry name="F290" value="Performance Award"/>
+  <Entry name="F300" value="Permit Charge"/>
+  <Entry name="F310" value="Permits Bonds Escort Attendant"/>
+  <Entry name="F320" value="Phosphatizing (Steel Treatment)"/>
+  <Entry name="F330" value="Pick-up and Delivery"/>
+  <Entry name="F340" value="Pick/Up"/>
+  <Entry name="F350" value="Pickle and Oil"/>
+  <Entry name="F360" value="Pickup - Out of Area"/>
+  <Entry name="F370" value="Pickup Surcharge"/>
+  <Entry name="F380" value="Pier Charges - Wharfage"/>
+  <Entry name="F390" value="Pier Charges Other Than Wharfage"/>
+  <Entry name="F400" value="Pier Pick-up and/or Delivery"/>
+  <Entry name="F401" value="Pier Unloading"/>
+  <Entry name="F410" value="Pilot Inspection"/>
+  <Entry name="F420" value="Placement and/or Removal Charge"/>
+  <Entry name="F430" value="Plating"/>
+  <Entry name="F440" value="Pole, Wood-service Charge"/>
+  <Entry name="F445" value="Pork Fee"/>
+  <Entry name="F450" value="Positioning at Origin"/>
+  <Entry name="F460" value="Postage"/>
+  <Entry name="F465" value="Potato Fee"/>
+  <Entry name="F470" value="Power Factor Adjustment"/>
+  <Entry name="F480" value="Pre-carriage Excess"/>
+  <Entry name="F490" value="Pre-carriage"/>
+  <Entry name="F500" value="Pre-Positioned Inventory Service"/>
+  <Entry name="F510" value="Precious Metal Content"/>
+  <Entry name="F520" value="Preloading Charge"/>
+  <Entry name="F530" value="Prelodge Charge"/>
+  <Entry name="F540" value="Premise Use"/>
+  <Entry name="F550" value="Premium Charge"/>
+  <Entry name="F560" value="Premium Transportation"/>
+  <Entry name="F570" value="Prepaid Usage Allowance"/>
+  <Entry name="F580" value="Preparation and Delivery"/>
+  <Entry name="F590" value="Preparation of Air Waybill - Origin"/>
+  <Entry name="F600" value="Preparation of Canadian Customs Invoice"/>
+  <Entry name="F610" value="Preparation of Commercial Invoice"/>
+  <Entry name="F620" value="Preparation of Export Entry"/>
+  <Entry name="F630" value="Preparation of Insurance Certificate"/>
+  <Entry name="F640" value="Preparation of U.S. Export Documentation"/>
+  <Entry name="F650" value="Preparation"/>
+  <Entry name="F660" value="Previous Billing"/>
+  <Entry name="F670" value="Price and Marketing Allowance"/>
+  <Entry name="F680" value="Price Deviation"/>
+  <Entry name="F690" value="Prior Balance"/>
+  <Entry name="F700" value="Prior Billing Amount"/>
+  <Entry name="F710" value="Prior Delivery Of Bill Charge"/>
+  <Entry name="F720" value="Prior Month Credit"/>
+  <Entry name="F730" value="Priority Service"/>
+  <Entry name="F740" value="Process in Transit Privilege"/>
+  <Entry name="F750" value="Processing Charge"/>
+  <Entry name="F760" value="Processing"/>
+  <Entry name="F765" value="Procurement Charge"/>
+  <Entry name="F770" value="Professional Fees"/>
+  <Entry name="F780" value="Proforma Invoice"/>
+  <Entry name="F790" value="Progress Payment Requirement"/>
+  <Entry name="F800" value="Promotional Allowance"/>
+  <Entry name="F810" value="Promotional Discount"/>
+  <Entry name="F820" value="Proof &amp; Composition"/>
+  <Entry name="F830" value="Proof of Delivery"/>
+  <Entry name="F840" value="Protective Service - Cold"/>
+  <Entry name="F850" value="Protective Service - Heat"/>
+  <Entry name="F860" value="Protective Service Charge"/>
+  <Entry name="F870" value="Pulling Eyes"/>
+  <Entry name="F880" value="Pump Air Charge"/>
+  <Entry name="F890" value="Pump Charge"/>
+  <Entry name="F900" value="Purchase Option"/>
+  <Entry name="F910" value="Quantity Discount"/>
+  <Entry name="F920" value="Quantity Surcharge"/>
+  <Entry name="F930" value="Equipment Manufacturer Restoration Audit"/>
+  <Entry name="F940" value="Ramping"/>
+  <Entry name="F950" value="Rate Code"/>
+  <Entry name="F955" value="Rate Reduction Bond"/>
+  <Entry name="F960" value="Re-Bill Charge"/>
+  <Entry name="F970" value="Rebate"/>
+  <Entry name="F980" value="Rebilled Drayage - Destination"/>
+  <Entry name="F990" value="Rebilled Drayage - Origin"/>
+  <Entry name="F991" value="Receiving"/>
+  <Entry name="FAKT" value="Barge Freight All Kinds Service"/>
+  <Entry name="FLST" value="Flatrack Surcharge"/>
+  <Entry name="G000" value="Recipient Address Correction"/>
+  <Entry name="G010" value="Reclamation, Federal"/>
+  <Entry name="G020" value="Reclamation, State"/>
+  <Entry name="G025" value="Reconciliation"/>
+  <Entry name="G030" value="Reconnect charge"/>
+  <Entry name="G040" value="Reconsign Consignee Charge"/>
+  <Entry name="G050" value="Reconsign Delivery Charge"/>
+  <Entry name="G060" value="Reconsignment Charge"/>
+  <Entry name="G070" value="Recoopering (at Owner's or Shipper's Expense)"/>
+  <Entry name="G080" value="Record/Filing"/>
+  <Entry name="G090" value="Recovery Fee"/>
+  <Entry name="G100" value="Recovery"/>
+  <Entry name="G110" value="Recrating/Recoopering - Destination"/>
+  <Entry name="G120" value="Recrating/Recoopering - Origin"/>
+  <Entry name="G130" value="Recurring Hardware Maintenance Charge"/>
+  <Entry name="G140" value="Recurring License Fee"/>
+  <Entry name="G150" value="Recurring Software Maintenance Charge"/>
+  <Entry name="G160" value="Redelivery"/>
+  <Entry name="G170" value="Redistribution Allowance"/>
+  <Entry name="G180" value="Reduction Prepalletized Cargo"/>
+  <Entry name="G190" value="Reel Cable"/>
+  <Entry name="G200" value="Reel Deposit"/>
+  <Entry name="G210" value="Reel"/>
+  <Entry name="G220" value="Refrigeration"/>
+  <Entry name="G230" value="Refrigeration/Mechanical Detention"/>
+  <Entry name="G240" value="Refund"/>
+  <Entry name="G250" value="Refurbishing Charge"/>
+  <Entry name="G260" value="Regain"/>
+  <Entry name="G270" value="Registration of Export for Reentry"/>
+  <Entry name="G280" value="Registration of Export Shipments"/>
+  <Entry name="G290" value="Regulatory Fee"/>
+  <Entry name="G300" value="Regulatory required refund"/>
+  <Entry name="G310" value="Reliability Charge"/>
+  <Entry name="G320" value="Relinquishment Charge"/>
+  <Entry name="G322" value="Reliquidation Anti-Dumping Duty"/>
+  <Entry name="G324" value="Reliquidation Countervailing Duty"/>
+  <Entry name="G326" value="Reliquidation Tax Amount"/>
+  <Entry name="G328" value="Reliquidation Total Due U.S. Customs Service (USCS)"/>
+  <Entry name="G329" value="Reliquidation Total Fees"/>
+  <Entry name="G330" value="Rental Charge"/>
+  <Entry name="G340" value="Rental Deduction"/>
+  <Entry name="G350" value="Rents and Leases"/>
+  <Entry name="G360" value="Repack Charge"/>
+  <Entry name="G370" value="Repair at Buyers Expense Charge"/>
+  <Entry name="G380" value="Repair at Customer Expense Charge"/>
+  <Entry name="G390" value="Repair at Government Expense Charge"/>
+  <Entry name="G400" value="Repair"/>
+  <Entry name="G410" value="Repickup"/>
+  <Entry name="G420" value="Request Via Canada"/>
+  <Entry name="G430" value="Research &amp; Development Fee"/>
+  <Entry name="G440" value="Resellers Discount"/>
+  <Entry name="G450" value="Residential Delivery"/>
+  <Entry name="G460" value="Residential Pick-up"/>
+  <Entry name="G470" value="Restocking Charge"/>
+  <Entry name="G480" value="Restricted Article Fee"/>
+  <Entry name="G490" value="Retainer"/>
+  <Entry name="G500" value="Return Cargo Charge"/>
+  <Entry name="G510" value="Returnable Container"/>
+  <Entry name="G520" value="Returned Load"/>
+  <Entry name="G530" value="Rework"/>
+  <Entry name="G540" value="Riding Attendant Charge"/>
+  <Entry name="G550" value="Rocky Mountain Bureau 583 Item 1100 Arbitrary Charge"/>
+  <Entry name="G560" value="Roll Out Adjustment"/>
+  <Entry name="G570" value="Roll Rebate"/>
+  <Entry name="G580" value="Royalties"/>
+  <Entry name="G590" value="Salvage"/>
+  <Entry name="G600" value="Same - Day Service"/>
+  <Entry name="G610" value="Saturday Delivery"/>
+  <Entry name="G620" value="Saturday Pick-up or Delivery Charge"/>
+  <Entry name="G630" value="Saturday Pick-Up"/>
+  <Entry name="G640" value="Scale Charge Unloading"/>
+  <Entry name="G650" value="Scale Charge"/>
+  <Entry name="G660" value="Scrap Allowance"/>
+  <Entry name="G670" value="Security Signature Service"/>
+  <Entry name="G680" value="Segregating (Sorting)"/>
+  <Entry name="G690" value="Select Charge"/>
+  <Entry name="G700" value="Self Unloader"/>
+  <Entry name="G710" value="Seller Hand Carry"/>
+  <Entry name="G720" value="Service Assistance Program Surcharge"/>
+  <Entry name="G730" value="Service Charge (with Cash Discount)"/>
+  <Entry name="G740" value="Service Charge"/>
+  <Entry name="G750" value="Service Upgrade"/>
+  <Entry name="G760" value="Set-up"/>
+  <Entry name="G770" value="Shearing"/>
+  <Entry name="G775" value="Sheep Fee"/>
+  <Entry name="G780" value="Ship to Stock Quality Audit"/>
+  <Entry name="G790" value="Shipper Load and Count"/>
+  <Entry name="G800" value="Shipper Load Carrier Count"/>
+  <Entry name="G810" value="Shipper Load Consignee Unload"/>
+  <Entry name="G820" value="Shipper Load"/>
+  <Entry name="G821" value="Shipping"/>
+  <Entry name="G830" value="Shipping and Handling"/>
+  <Entry name="G840" value="Shipside Pickup"/>
+  <Entry name="G850" value="Shotblasting"/>
+  <Entry name="G860" value="Shrink Allowance"/>
+  <Entry name="G870" value="Shrink-Wrap Charge"/>
+  <Entry name="G880" value="Shrinkage Allowance"/>
+  <Entry name="G890" value="Single Invoice Allowance"/>
+  <Entry name="G900" value="Single Pick-up"/>
+  <Entry name="G910" value="Single Shipment Fee"/>
+  <Entry name="G920" value="Sleeving"/>
+  <Entry name="G930" value="Slip Sheet Unloading Allowance"/>
+  <Entry name="G940" value="Slip Sheet, Rail"/>
+  <Entry name="G950" value="Slip Sheet, Truck"/>
+  <Entry name="G960" value="Slotting Allowance"/>
+  <Entry name="G970" value="Small Order Charge"/>
+  <Entry name="G980" value="Software Support Service"/>
+  <Entry name="G990" value="Source Inspection"/>
+  <Entry name="GMST" value="Garment Surcharge"/>
+  <Entry name="H000" value="Special Allowance"/>
+  <Entry name="H010" value="Special Buy"/>
+  <Entry name="H020" value="Special Circus Trains"/>
+  <Entry name="H030" value="Special Credit"/>
+  <Entry name="H040" value="Special Delivery"/>
+  <Entry name="H050" value="Special Detention Charge"/>
+  <Entry name="H060" value="Special Equipment Charge"/>
+  <Entry name="H070" value="Special Finish Charge"/>
+  <Entry name="H080" value="Special Freight Supplements"/>
+  <Entry name="H090" value="Special Handling"/>
+  <Entry name="H100" value="Special Mileage Movements"/>
+  <Entry name="H110" value="Special Packaging"/>
+  <Entry name="H120" value="Special Permits"/>
+  <Entry name="H130" value="Special Pickup"/>
+  <Entry name="H140" value="Special Pump Charge"/>
+  <Entry name="H150" value="Special Seal Charge"/>
+  <Entry name="H151" value="Special Services"/>
+  <Entry name="H160" value="Special Test Equipment Charge"/>
+  <Entry name="H170" value="Special Tooling Charge"/>
+  <Entry name="H180" value="Special Tooling rework charge"/>
+  <Entry name="H190" value="Special Train Movement"/>
+  <Entry name="H200" value="Special Use"/>
+  <Entry name="H210" value="Special Vehicle Rent"/>
+  <Entry name="H215" value="Specific Duty"/>
+  <Entry name="H220" value="Specification Review"/>
+  <Entry name="H230" value="Split Delivery"/>
+  <Entry name="H240" value="Split Pick-Up at Pier Charge"/>
+  <Entry name="H250" value="Split Pick-up"/>
+  <Entry name="H260" value="Spool Charge"/>
+  <Entry name="H270" value="Spotting of Trailer"/>
+  <Entry name="H280" value="Spreader Charge"/>
+  <Entry name="H290" value="Stamp Fee"/>
+  <Entry name="H300" value="Stamping"/>
+  <Entry name="H310" value="Standby Charge"/>
+  <Entry name="H320" value="State Motor Fuel"/>
+  <Entry name="H330" value="State Sales Charge"/>
+  <Entry name="H340" value="State Surcharge"/>
+  <Entry name="H350" value="State/Metropolitan Transit Authority Surcharge"/>
+  <Entry name="H360" value="Steaming Charge"/>
+  <Entry name="H370" value="Stenciling Charge"/>
+  <Entry name="H380" value="Stop-off at Pier Charge"/>
+  <Entry name="H390" value="Stop-off Charge"/>
+  <Entry name="H400" value="Stopcharge"/>
+  <Entry name="H410" value="Stopping in Transit"/>
+  <Entry name="H420" value="Storage in Transit"/>
+  <Entry name="H430" value="Storage"/>
+  <Entry name="H440" value="Straightening Charge"/>
+  <Entry name="H450" value="Strapping"/>
+  <Entry name="H460" value="Street lamps charge"/>
+  <Entry name="H470" value="Stripping, Sorting, and Consolidation"/>
+  <Entry name="H480" value="Subject to Cooperative Advertising Allowance"/>
+  <Entry name="H490" value="Subject To Tax On Resale"/>
+  <Entry name="H500" value="Sufferance Warehouse Charge (Export or Import)"/>
+  <Entry name="H505" value="Sugar Fee"/>
+  <Entry name="H507" value="Sum of Adds and Deducts to Make Market Value"/>
+  <Entry name="H510" value="Sunday or Holiday Pick-up or Delivery"/>
+  <Entry name="H520" value="Super Bag Charge"/>
+  <Entry name="H530" value="Supervisor Charge"/>
+  <Entry name="H535" value="Supplemental Duty"/>
+  <Entry name="H540" value="Supplemental Items"/>
+  <Entry name="H550" value="Surcharge"/>
+  <Entry name="H551" value="Surety Bond"/>
+  <Entry name="H560" value="Swell"/>
+  <Entry name="H570" value="Switch Charge"/>
+  <Entry name="H580" value="Switching Charge"/>
+  <Entry name="H590" value="Tank Car Allowance"/>
+  <Entry name="H600" value="Tank Rental"/>
+  <Entry name="H605" value="Tarping"/>
+  <Entry name="H610" value="Tax - Airport Tax, Destination"/>
+  <Entry name="H620" value="Tax - Airport Tax, Origin"/>
+  <Entry name="H625" value="Tax - Beverage Tax"/>
+  <Entry name="H630" value="Tax - City Sales Tax (Only)"/>
+  <Entry name="H640" value="Tax - Excise Tax - Destination"/>
+  <Entry name="H650" value="Tax - Excise Tax - Origin"/>
+  <Entry name="H660" value="Tax - Federal Excise Tax, FET"/>
+  <Entry name="H670" value="Tax - Federal Excise Tax, FET, on Tires"/>
+  <Entry name="H680" value="Tax - Governmental"/>
+  <Entry name="H690" value="Tax - Handling Charge Tax"/>
+  <Entry name="H700" value="Tax - Local Tax"/>
+  <Entry name="H710" value="Tax - Metropolitan Transit Tax"/>
+  <Entry name="H720" value="Tax - Regulatory Tax"/>
+  <Entry name="H730" value="Tax - Local Sales Tax"/>
+  <Entry name="H740" value="Tax - Sales and Use"/>
+  <Entry name="H750" value="Tax - Sales Tax (State and Local)"/>
+  <Entry name="H760" value="Tax - State Hazardous Substance"/>
+  <Entry name="H770" value="Tax - State Tax"/>
+  <Entry name="H780" value="Tax - Super Fund Excise Tax"/>
+  <Entry name="H790" value="Tax - Use Tax"/>
+  <Entry name="H800" value="Tax - Value Added Tax (VAT)"/>
+  <Entry name="H806" value="Tax Credit"/>
+  <Entry name="H810" value="Tax Liability - Amortized"/>
+  <Entry name="H820" value="Tax Liability - One Time"/>
+  <Entry name="H830" value="Tax on Miscellaneous Charges"/>
+  <Entry name="H840" value="Tax on Transportation"/>
+  <Entry name="H850" value="Tax"/>
+  <Entry name="H855" value="Tea Fee"/>
+  <Entry name="H860" value="Technology Exchange"/>
+  <Entry name="H870" value="Telegram Chargeback"/>
+  <Entry name="H880" value="Telephone - Destination"/>
+  <Entry name="H890" value="Telephone - Origin"/>
+  <Entry name="H900" value="Telephone Charge"/>
+  <Entry name="H910" value="Temperature Protection"/>
+  <Entry name="H920" value="Temporary Allowance"/>
+  <Entry name="H930" value="Temporary Voluntary Allowance"/>
+  <Entry name="H935" value="Tendered as Truckload"/>
+  <Entry name="H940" value="Terminal Charge"/>
+  <Entry name="H950" value="Terminal Differential"/>
+  <Entry name="H960" value="Terminal Service Fee"/>
+  <Entry name="H970" value="Terms Allowance"/>
+  <Entry name="H980" value="Test/Qualification Charge"/>
+  <Entry name="H990" value="Testing Services Charge"/>
+  <Entry name="HZDT" value="Hazardous Cargo on Deck"/>
+  <Entry name="I000" value="Testing"/>
+  <Entry name="I010" value="Third Party Allowance"/>
+  <Entry name="I020" value="Third Party Pallets"/>
+  <Entry name="I030" value="Throughput Allowance"/>
+  <Entry name="I040" value="Throughput Container Charge"/>
+  <Entry name="I050" value="Thruway Charge"/>
+  <Entry name="I060" value="Ticketing Service"/>
+  <Entry name="I070" value="Tobacco Products Report Charge"/>
+  <Entry name="I080" value="TOFC Service Charge"/>
+  <Entry name="I090" value="Tool Charge"/>
+  <Entry name="I100" value="Tooling Rework Charge"/>
+  <Entry name="I110" value="Tooling"/>
+  <Entry name="I120" value="Tools for Printing"/>
+  <Entry name="I130" value="Total Assessorial Charges"/>
+  <Entry name="I131" value="Total Fees"/>
+  <Entry name="I132" value="Total Invoice Amount"/>
+  <Entry name="I133" value="Total Due U.S. Customs Service (USCS)"/>
+  <Entry name="I134" value="Total Invoice Amount, U.S. Dollars"/>
+  <Entry name="I136" value="Total Invoice Amount, Non-U.S. Dollars"/>
+  <Entry name="I138" value="Total Material Invoice Amount"/>
+  <Entry name="I140" value="Tracing Inbound Via Other Carriers"/>
+  <Entry name="I150" value="Tracing Service Fee"/>
+  <Entry name="I160" value="Track Storage"/>
+  <Entry name="I170" value="Trade Discount"/>
+  <Entry name="I180" value="Trade In"/>
+  <Entry name="I190" value="Trailer Rental Charge"/>
+  <Entry name="I200" value="Transfer Charge"/>
+  <Entry name="I210" value="Transfer of Lading Charge"/>
+  <Entry name="I220" value="Transferred Charges"/>
+  <Entry name="I230" value="Transit"/>
+  <Entry name="I235" value="Transmission Charge"/>
+  <Entry name="I240" value="Transportation And Setup"/>
+  <Entry name="I250" value="Transportation Charge (Minimum Rate)"/>
+  <Entry name="I260" value="Transportation Direct Billing"/>
+  <Entry name="I270" value="Transportation Third Party Billing"/>
+  <Entry name="I280" value="Transportation Vendor Provided"/>
+  <Entry name="I290" value="Trimming Charge"/>
+  <Entry name="I300" value="Truck Detention"/>
+  <Entry name="I310" value="Truckload Discount"/>
+  <Entry name="I320" value="Turning Charge"/>
+  <Entry name="I330" value="Two - Day Service"/>
+  <Entry name="I340" value="Two Door Pick Up"/>
+  <Entry name="I350" value="U.S. Vehicles"/>
+  <Entry name="I360" value="Unabsorbed Switching"/>
+  <Entry name="I370" value="Unitized"/>
+  <Entry name="I380" value="Unloading (Labor Charges)"/>
+  <Entry name="I390" value="Unloading"/>
+  <Entry name="I400" value="Unloading/Reloading Charge"/>
+  <Entry name="I410" value="Unsaleable Merchandise Allowance"/>
+  <Entry name="I411" value="Unscheduled Fee"/>
+  <Entry name="I420" value="Up Charge"/>
+  <Entry name="I430" value="Usage Plan Detail Charge"/>
+  <Entry name="I431" value="U.S. Customs Service (USCS) Flat Assist Amount"/>
+  <Entry name="I432" value="U.S. Customs Service (USCS) Maximum Assist Amount"/>
+  <Entry name="I440" value="USDA Inspected, Stamping Certification"/>
+  <Entry name="I450" value="Use - Special Type Flat Car"/>
+  <Entry name="I460" value="Use Charge Tooling/Personnel"/>
+  <Entry name="I470" value="Valuation Fee"/>
+  <Entry name="I480" value="Vehicle Ordered but Not Used"/>
+  <Entry name="I490" value="Vehicle Prep Charge (Courtesy Delivery)"/>
+  <Entry name="I495" value="Vehicle Road Charge"/>
+  <Entry name="I500" value="Vendor Freight"/>
+  <Entry name="I510" value="Venting Instructions"/>
+  <Entry name="I520" value="Virgin Island Transfer Charge"/>
+  <Entry name="I530" value="Volume Discount"/>
+  <Entry name="I540" value="Voluntary Contribution Charge"/>
+  <Entry name="I550" value="Waiting Time"/>
+  <Entry name="I560" value="War Risk Surcharge"/>
+  <Entry name="I570" value="Warehouse"/>
+  <Entry name="I580" value="Warehousing"/>
+  <Entry name="I590" value="Warranties"/>
+  <Entry name="I595" value="Watermelon Fee"/>
+  <Entry name="I600" value="Waybill and Invoice Distribution"/>
+  <Entry name="I610" value="Weather Protection"/>
+  <Entry name="I620" value="Weight Verification Charge"/>
+  <Entry name="I630" value="Wharfage &amp; Handling"/>
+  <Entry name="I640" value="Wharfage Charge"/>
+  <Entry name="I650" value="Wide Area Telephone Service (WATS) Usage Credit"/>
+  <Entry name="I660" value="Will Call Charge"/>
+  <Entry name="I670" value="Written Proof of Delivery"/>
+  <Entry name="I680" value="X-ray Charge"/>
+  <Entry name="I690" value="Gratuity"/>
+  <Entry name="I700" value="Escrow"/>
+  <Entry name="I710" value="Payment"/>
+  <Entry name="I720" value="Direct Product Handling (DPC)"/>
+  <Entry name="I730" value="Price Adjustment Percent (PCT)"/>
+  <Entry name="I740" value="Post Damaged Handling (PDC)"/>
+  <Entry name="I750" value="Reclamation Center Handling (Chute)"/>
+  <Entry name="I760" value="Reclamation Shared Responsibility (SRS)"/>
+  <Entry name="I770" value="Mid-Tier Lottery Winners"/>
+  <Entry name="I780" value="Mid-Tier Lottery Cashing Bonus"/>
+  <Entry name="I790" value="Lottery Cross Redeemed"/>
+  <Entry name="I800" value="Low-Tier Lottery Winners"/>
+  <Entry name="I810" value="Low-Tier Lottery Cashing Bonus"/>
+  <Entry name="I820" value="Lottery Charge Back"/>
+  <Entry name="I830" value="Tote"/>
+  <Entry name="I840" value="Extra Hour Charges"/>
+  <Entry name="I850" value="Refused Delivery Charge"/>
+  <Entry name="I860" value="Reimbursement for Online Cashing Bonus"/>
+  <Entry name="I870" value="Reimbursement for Online Winners"/>
+  <Entry name="I880" value="Online Sales Bonus"/>
+  <Entry name="I890" value="Instant Sales Bonus"/>
+  <Entry name="IDCT" value="Improper Documentation"/>
+  <Entry name="LC2T" value="Land Currency Adjustment Factor - 20 Foot Container"/>
+  <Entry name="LC4T" value="Land Currency Adjustment Factor - 40 Foot Container"/>
+  <Entry name="LCLT" value="Percent Differential - Less Than Container"/>
+  <Entry name="LECT" value="Less Than Container"/>
+  <Entry name="LFDT" value="Linehaul from Port of Debarkation"/>
+  <Entry name="LMDT" value="Liner Terms at Port of Embarkation"/>
+  <Entry name="LNDT" value="Liner Terms at Port of Debarkation"/>
+  <Entry name="LPDT" value="Linehaul Percent Differential"/>
+  <Entry name="LQDT" value="Liquidated Damages"/>
+  <Entry name="LTET" value="Linehaul to Port of Embarkation"/>
+  <Entry name="MATT" value="Modified Atmosphere"/>
+  <Entry name="OCNT" value="Over Height Container"/>
+  <Entry name="OFFA" value="Office Supplies"/>
+  <Entry name="OODT" value="On Deck Break Bulk Differential"/>
+  <Entry name="OTHR" value="Other Miscellaneous Earning or Additive"/>
+  <Entry name="OWCT" value="Over Width Container"/>
+  <Entry name="PRST" value="Stuffing Charge"/>
+  <Entry name="PTAX" value="Payroll Taxes"/>
+  <Entry name="PVPT" value="Private Owned Vehicle Processing"/>
+  <Entry name="R020" value="Personal Property, Member"/>
+  <Entry name="R030" value="Personal Property, Spouse"/>
+  <Entry name="R040" value="Port Handling and Unloading"/>
+  <Entry name="R060" value="Packing, Crating, and Handling Charge"/>
+  <Entry name="R080" value="Packing, Crating, Handling, and Transportation Charge"/>
+  <Entry name="RDHT" value="Railhead Handling"/>
+  <Entry name="RFMT" value="Reefer Maintenance"/>
+  <Entry name="RPDT" value="Reefer Cargo Percent Differential"/>
+  <Entry name="RSTT" value="Respotting"/>
+  <Entry name="SFBT" value="Single Factor Origination/Destination"/>
+  <Entry name="SFDT" value="Single Factor Origination/Port of Debarkation"/>
+  <Entry name="SFET" value="Single Factor Port of Embarkation/Destination"/>
+  <Entry name="SSCT" value="Stripping, Sorting and Consolidation"/>
+  <Entry name="SSUT" value="Pole Lashing Equipment (PLE) Surcharge"/>
+  <Entry name="STDT" value="Stop-off at Destination"/>
+  <Entry name="STFT" value="Stuffing"/>
+  <Entry name="STOT" value="Stop-off at Origination"/>
+  <Entry name="TERT" value="Terminal Handling Charges"/>
+  <Entry name="VCLT" value="Van Cleaning"/>
+  <Entry name="WBBT" value="Wharfage - Breakbulk"/>
+  <Entry name="WCFT" value="Wharfage - Container"/>
+  <Entry name="WFTT" value="Wasted/Futile Trip"/>
+  <Entry name="WRBT" value="War Risk Crew Insurance"/>
+  <Entry name="WRIT" value="War Risk Insurance"/>
+  <Entry name="X001" value="Auto Towing"/>
+  <Entry name="X002" value="Late Return"/>
+  <Entry name="X003" value="One Way/Drop Off"/>
+  <Entry name="X004" value="Passenger Facility Charge"/>
+  <Entry name="X005" value="Lodging"/>
+  <Entry name="X006" value="Business Center"/>
+  <Entry name="X007" value="Gift Shop"/>
+  <Entry name="X008" value="Health Club"/>
+  <Entry name="X009" value="Laundry/Dry Cleaning"/>
+  <Entry name="X010" value="In-room Movie"/>
+  <Entry name="X011" value="In-room Mini-bar"/>
+  <Entry name="X012" value="Meals"/>
+  <Entry name="X013" value="Parking"/>
+  <Entry name="X014" value="Prepaid Amount"/>
+  <Entry name="X015" value="Liquor Charge"/>
+  <Entry name="ZZZZ" value="Mutually Defined"/>
+</Table>

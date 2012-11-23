@@ -1,0 +1,86 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T936.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T936">
+  <Entry name="01" value="Clear"/>
+  <Entry name="02" value="Hazy"/>
+  <Entry name="03" value="Excess"/>
+  <Entry name="04" value="Some"/>
+  <Entry name="05" value="Undetectable"/>
+  <Entry name="06" value="Trace"/>
+  <Entry name="07" value="Yes"/>
+  <Entry name="08" value="Closed"/>
+  <Entry name="09" value="Pass"/>
+  <Entry name="10" value="Present"/>
+  <Entry name="11" value="Gel"/>
+  <Entry name="12" value="OK"/>
+  <Entry name="13" value="Slight"/>
+  <Entry name="14" value="No Good"/>
+  <Entry name="15" value="Marginal"/>
+  <Entry name="16" value="Nil"/>
+  <Entry name="17" value="Oil Free"/>
+  <Entry name="18" value="Open"/>
+  <Entry name="19" value="Free"/>
+  <Entry name="20" value="No"/>
+  <Entry name="21" value="Checked"/>
+  <Entry name="22" value="Fail"/>
+  <Entry name="23" value="Absent"/>
+  <Entry name="24" value="Good"/>
+  <Entry name="25" value="Fair"/>
+  <Entry name="26" value="Poor"/>
+  <Entry name="27" value="Excellent"/>
+  <Entry name="28" value="Bright"/>
+  <Entry name="29" value="To Be Determined"/>
+  <Entry name="30" value="High"/>
+  <Entry name="31" value="Negative"/>
+  <Entry name="32" value="Partial"/>
+  <Entry name="33" value="Variable"/>
+  <Entry name="40" value="Balance"/>
+  <Entry name="41" value="Complete"/>
+  <Entry name="42" value="Low"/>
+  <Entry name="44" value="Not Applicable"/>
+  <Entry name="45" value="Not Determined"/>
+  <Entry name="46" value="Negligible"/>
+  <Entry name="48" value="Moderate"/>
+  <Entry name="49" value="Appreciable"/>
+  <Entry name="50" value="Not Available"/>
+  <Entry name="51" value="Conforming"/>
+  <Entry name="52" value="Non-conforming"/>
+  <Entry name="53" value="Probable Contamination"/>
+  <Entry name="54" value="Tentative Identification"/>
+  <Entry name="56" value="Detected; Not Quantified"/>
+  <Entry name="BA" value="Backer"/>
+  <Entry name="FL" value="Full"/>
+  <Entry name="NA" value="Not Analyzed"/>
+  <Entry name="ND" value="Not Detected"/>
+  <Entry name="NS" value="Not Sampled"/>
+  <Entry name="PR" value="Present and Not Counted"/>
+  <Entry name="Q1" value="First Quality"/>
+  <Entry name="Q2" value="Second Quality"/>
+  <Entry name="TA" value="Too Numerous to Count"/>
+  <Entry name="TB" value="New"/>
+  <Entry name="WS" value="Washcoat"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

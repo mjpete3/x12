@@ -1,0 +1,206 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T157.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T157">
+  <Entry name="2" value="Returned to Carrier's Terminal"/>
+  <Entry name="3" value="Returned to Shipper"/>
+  <Entry name="A" value="Arrived"/>
+  <Entry name="B" value="Bad Order (Inoperative or Damaged)"/>
+  <Entry name="C" value="Estimated To Depart Terminal Location"/>
+  <Entry name="D" value="Completed Unloading at Delivery Location"/>
+  <Entry name="E" value="Estimated to Arrive (En Route)"/>
+  <Entry name="F" value="In Flight"/>
+  <Entry name="G" value="Repaired and/or Released from Bad Order"/>
+  <Entry name="H" value="Equipment Shopped for Heavy Repair"/>
+  <Entry name="I" value="In-Gate"/>
+  <Entry name="J" value="Delivered to Connecting Line"/>
+  <Entry name="K" value="Arrived at Customs"/>
+  <Entry name="L" value="Loading"/>
+  <Entry name="N" value="No Paperwork Received with Shipment or Equipment"/>
+  <Entry name="O" value="Paperwork Received- Did Not Receive Shipment or Equipment"/>
+  <Entry name="P" value="Departed Terminal Location"/>
+  <Entry name="R" value="Received from Prior Carrier"/>
+  <Entry name="S" value="Spotted at Consignee's Location"/>
+  <Entry name="T" value="At Terminal; Intra-Terminal Movement"/>
+  <Entry name="U" value="Unloading"/>
+  <Entry name="V" value="Vessel Rehandle"/>
+  <Entry name="W" value="Released by Customer"/>
+  <Entry name="X" value="Removed from Customer Dock or Siding"/>
+  <Entry name="Y" value="Constructively Placed"/>
+  <Entry name="Z" value="Actually Placed"/>
+  <Entry name="A1" value="Agriculture Canada Hold"/>
+  <Entry name="A2" value="Agriculture Canada Released"/>
+  <Entry name="A3" value="Agriculture Canada Refused Entry"/>
+  <Entry name="A4" value="Agriculture Canada Conditional Release"/>
+  <Entry name="AA" value="Pick-up Appointment Date and Time"/>
+  <Entry name="AC" value="Awaiting Clearance"/>
+  <Entry name="AD" value="Delivery Appointment Date and Time"/>
+  <Entry name="AE" value="Loaded on Vessel"/>
+  <Entry name="AF" value="Departed Pickup Location"/>
+  <Entry name="AG" value="Estimated Delivery"/>
+  <Entry name="AH" value="Attempted Delivery"/>
+  <Entry name="AI" value="Shipment Has Been Reconsigned"/>
+  <Entry name="AJ" value="Tendered for Delivery"/>
+  <Entry name="AL" value="Loaded on Rail"/>
+  <Entry name="AM" value="Loaded on Truck"/>
+  <Entry name="AN" value="Delivered to Air Carrier"/>
+  <Entry name="AO" value="Loaded on Barge"/>
+  <Entry name="AP" value="Loaded on Feeder Vessel"/>
+  <Entry name="AR" value="Rail Arrival at Destination Intermodal Ramp"/>
+  <Entry name="AU" value="Shipment Available for Pickup"/>
+  <Entry name="AV" value="Available for Delivery"/>
+  <Entry name="AW" value="Awaiting Export"/>
+  <Entry name="BA" value="Set Off at Agent"/>
+  <Entry name="BC" value="Storage - in - Transit"/>
+  <Entry name="BD" value="Recommitted Delivery Date"/>
+  <Entry name="BE" value="Estimated Time of Arrival at Scheduled Pick-up Location"/>
+  <Entry name="BF" value="Booking Confirmed"/>
+  <Entry name="BR" value="Bill of Lading Released"/>
+  <Entry name="C1" value="Canada Customs Hold"/>
+  <Entry name="C2" value="Canada Customs Inspection Scheduled"/>
+  <Entry name="CA" value="Shipment Cancelled"/>
+  <Entry name="CB" value="Chassis Tie"/>
+  <Entry name="CC" value="Chassis Un-Tie"/>
+  <Entry name="CD" value="Received at Origin"/>
+  <Entry name="CI" value="Passing"/>
+  <Entry name="CO" value="Cargo Received at Contractual Place of Receipt"/>
+  <Entry name="CR" value="Carrier Release"/>
+  <Entry name="CS" value="Container Sealed"/>
+  <Entry name="CT" value="Customs Released"/>
+  <Entry name="CU" value="Carrier and Customs Release"/>
+  <Entry name="CV" value="Container Rehandled"/>
+  <Entry name="DA" value="Repair Authorization Requested"/>
+  <Entry name="DC" value="Unit Cleaned"/>
+  <Entry name="DN" value="Delivery Not Confirmed"/>
+  <Entry name="DO" value="Destination Stop-off"/>
+  <Entry name="DP" value="Unit Pre-Tripped"/>
+  <Entry name="DR" value="Repair Authorization Received"/>
+  <Entry name="DS" value="Damage Survey Requested"/>
+  <Entry name="DT" value="Damage Survey Completed"/>
+  <Entry name="EA" value="Estimate Approved"/>
+  <Entry name="EC" value="Empty Container Available for Pickup at Consignee Location"/>
+  <Entry name="ED" value="Early Delivery Appointment Date and/or Time"/>
+  <Entry name="EE" value="Empty Equipment Dispatched"/>
+  <Entry name="EI" value="Interchange Information Received"/>
+  <Entry name="EP" value="Early Pickup Appointment Date and/or Time"/>
+  <Entry name="ER" value="Estimate Received"/>
+  <Entry name="FP" value="Freight Paid"/>
+  <Entry name="FT" value="Free Time Expired"/>
+  <Entry name="GI" value="Terminal Gate Inspection"/>
+  <Entry name="GO" value="General Order"/>
+  <Entry name="HA" value="Held - Protective Service"/>
+  <Entry name="HE" value="Held-Awaiting Shipper's Export Document"/>
+  <Entry name="HF" value="Held-Awaiting Recount/Weight/Description"/>
+  <Entry name="HG" value="Held on Ground"/>
+  <Entry name="HH" value="Held-No Booking Number"/>
+  <Entry name="HI" value="Held-Title Clearance"/>
+  <Entry name="HR" value="Hold Released"/>
+  <Entry name="IB" value="U.S. Customs, In-bond Movement Authorized"/>
+  <Entry name="IR" value="Movement Type Changed from In-bond to Not In-bond"/>
+  <Entry name="LD" value="Late Delivery Appointment Date and/or Time"/>
+  <Entry name="LP" value="Late Pickup Appointment Date and/or Time"/>
+  <Entry name="MT" value="Empty Committed"/>
+  <Entry name="NC" value="Confirmation of Notification"/>
+  <Entry name="ND" value="Technical Charges Due"/>
+  <Entry name="NF" value="Free Time to Expire"/>
+  <Entry name="NH" value="No Hazardous Material Document Received"/>
+  <Entry name="NO" value="Ocean Charges Paid"/>
+  <Entry name="NP" value="Terminal Charges Paid"/>
+  <Entry name="NR" value="Shipment Information Not Received"/>
+  <Entry name="NS" value="No Seal on Load"/>
+  <Entry name="NT" value="Notification"/>
+  <Entry name="NU" value="Notification Refused"/>
+  <Entry name="OA" value="Out-Gate"/>
+  <Entry name="OB" value="Original Bill of Lading Received"/>
+  <Entry name="OF" value="Off-Hire Container"/>
+  <Entry name="OH" value="On Hand"/>
+  <Entry name="ON" value="On-Hire Container"/>
+  <Entry name="PA" value="US Custom Hold, Intensive Examination"/>
+  <Entry name="PB" value="US Custom Hold, Insufficient Paperwork"/>
+  <Entry name="PC" value="US Custom Hold, Discrepancy in Paperwork"/>
+  <Entry name="PD" value="US Custom Hold, Discrepancy in Piece Count"/>
+  <Entry name="PE" value="US Custom Hold, Hold by Coast Guard"/>
+  <Entry name="PF" value="US Custom Hold, Hold by F.B.I."/>
+  <Entry name="PG" value="US Custom Hold, Hold by Local Law Enforcement"/>
+  <Entry name="PH" value="US Custom Hold, Hold by Court Imposed Lien"/>
+  <Entry name="PI" value="US Custom Hold, Hold by Food and Drug"/>
+  <Entry name="PJ" value="US Custom Hold, Hold by Fish and Wildlife"/>
+  <Entry name="PK" value="US Custom Hold, Hold by Drug Enforcement"/>
+  <Entry name="PL" value="US Dept. Agr, Hold for Intensive Investigation"/>
+  <Entry name="PM" value="US Dept. Agr, Hold for Unregistered Producer"/>
+  <Entry name="PN" value="US Dept. Agr, Hold for Restricted Commodity"/>
+  <Entry name="PO" value="US Dept. Agr, Hold for Insect Infestation"/>
+  <Entry name="PP" value="US Dept. Agr, Hold for Bacterial Contamination"/>
+  <Entry name="PQ" value="U.S. Customs Hold at Place of Vessel Arrival"/>
+  <Entry name="PR" value="U.S. Customs Hold at In-Bond Destination"/>
+  <Entry name="PS" value="U.S. Department of Agriculture Hold at Place of Vessel Arrival"/>
+  <Entry name="PT" value="U.S. Department of Agriculture Hold at In-Bond Destination"/>
+  <Entry name="PU" value="Other U.S. Agency Hold at Place of Vessel Arrival"/>
+  <Entry name="PV" value="Other U.S. Agency Hold at In-Bond Destination"/>
+  <Entry name="PW" value="U.S. Department of Agriculture, Hold for Fumigation"/>
+  <Entry name="PX" value="U.S. Department of Agriculture, Hold for Inspection or Documentation Review"/>
+  <Entry name="RA" value="Pickup Appointment Requested"/>
+  <Entry name="RB" value="Delivery Appointment Requested"/>
+  <Entry name="RC" value="Reserve Container Against Booking"/>
+  <Entry name="RD" value="Return Container"/>
+  <Entry name="RI" value="Movement Type Changed from Not In-bond to In-bond"/>
+  <Entry name="RL" value="Rail Departure from Origin Intermodal Ramp"/>
+  <Entry name="RN" value="Renotification"/>
+  <Entry name="SA" value="Shipment Split"/>
+  <Entry name="SB" value="Shipment Consolidation"/>
+  <Entry name="SC" value="Seals Altered"/>
+  <Entry name="SD" value="Shipment Delayed"/>
+  <Entry name="SI" value="Receipt of Shipping Instructions"/>
+  <Entry name="SN" value="Shipment Not Authorized"/>
+  <Entry name="SS" value="Spotted at Sourcing Location"/>
+  <Entry name="TC" value="Held for Terminal Charges"/>
+  <Entry name="TM" value="Intra-Terminal Movement"/>
+  <Entry name="TO" value="Terminate to Owner"/>
+  <Entry name="UA" value="Unit - Leased to Connecting Line"/>
+  <Entry name="UB" value="Unit - Returned from Connecting Line"/>
+  <Entry name="UC" value="Unit - Shopped Held at Terminal"/>
+  <Entry name="UD" value="Unit - COFC/TOFC Service"/>
+  <Entry name="UE" value="Unit - Pickup/Delivery Service"/>
+  <Entry name="UP" value="Unable to Process Shipment"/>
+  <Entry name="UR" value="Unloaded from a Rail Car"/>
+  <Entry name="UV" value="Unloaded From Vessel"/>
+  <Entry name="UW" value="Intermodal Unit Weighed"/>
+  <Entry name="VA" value="Vessel Arrival"/>
+  <Entry name="VD" value="Vessel Departure"/>
+  <Entry name="WH" value="Weight Too Heavy - Highway"/>
+  <Entry name="WR" value="Weight Too Heavy - Rail"/>
+  <Entry name="X1" value="Arrived at Delivery Location"/>
+  <Entry name="X2" value="Estimated Time of Arrival at Consignee Location"/>
+  <Entry name="X3" value="Arrived at Pick-up Location"/>
+  <Entry name="X4" value="Arrived at Terminal Location"/>
+  <Entry name="X5" value="Arrived at Delivery Location Loading Dock"/>
+  <Entry name="X6" value="En Route to Delivery Location"/>
+  <Entry name="X7" value="En Route to Pick-up Location"/>
+  <Entry name="X8" value="Arrived at Pick-up Location Loading Dock"/>
+  <Entry name="X9" value="Delivery Appointment Secured"/>
+  <Entry name="XA" value="Pick-up Appointment Secured"/>
+  <Entry name="XB" value="Shipment Acknowledged"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

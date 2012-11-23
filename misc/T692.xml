@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T692.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T692">
+  <Entry name="1" value="Package Express"/>
+  <Entry name="2" value="Groups"/>
+  <Entry name="3" value="Ocean Roll-On, Roll-Off (RORO)"/>
+  <Entry name="4" value="Ocean Military Air"/>
+  <Entry name="5" value="Air, Small Package Carrier"/>
+  <Entry name="6" value="Intermodal (Personal Property)"/>
+  <Entry name="7" value="Military Sealift Command (MSC)"/>
+  <Entry name="8" value="Air Mobility Command (AMC)"/>
+  <Entry name="9" value="Local Delivery"/>
+  <Entry name="A" value="Bus"/>
+  <Entry name="B" value="Truck"/>
+  <Entry name="C" value="Truck - Rail - Truck"/>
+  <Entry name="D" value="Applies to deregulated (US ICC) carload rail, other than piggyback"/>
+  <Entry name="E" value="Rail"/>
+  <Entry name="F" value="Rail Trailer on Flat Car/Container on Flat Car (TOFC/COFC) Door-to-Door"/>
+  <Entry name="G" value="Rail Trailer on Flat Car/Container on Flat Car (TOFC/COFC) Plan 3"/>
+  <Entry name="H" value="Rail Trailer on Flat Car/Container on Flat Car (TOFC/COFC) Plan 4"/>
+  <Entry name="I" value="Applies to regulated intermodal traffic"/>
+  <Entry name="J" value="Air Freight"/>
+  <Entry name="K" value="Air Freight Forwarder"/>
+  <Entry name="L" value="Air Taxi"/>
+  <Entry name="M" value="Multimodal"/>
+  <Entry name="N" value="Surface Freight Forwarder"/>
+  <Entry name="O" value="Water"/>
+  <Entry name="P" value="Applied To Deregulated (US ICC) Piggyback"/>
+  <Entry name="Q" value="Shipper Agent"/>
+  <Entry name="R" value="Applies to regulated carload rail other than piggyback."/>
+  <Entry name="S" value="Driveaway Service"/>
+  <Entry name="T" value="Towaway Service"/>
+  <Entry name="U" value="Driveaway and Towaway Service"/>
+  <Entry name="V" value="Water/Pipeline Intermodal Movements"/>
+  <Entry name="W" value="Shipper Agent (Truck/Rail/Truck)"/>
+  <Entry name="Y" value="Pipeline"/>
+  <Entry name="Z" value="Shipper Association"/>
+</Table>

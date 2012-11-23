@@ -1,0 +1,196 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T560.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T560">
+  <Entry name="AA" value="Tank Wash Required"/>
+  <Entry name="AC" value="Acid (Battery)"/>
+  <Entry name="AD" value="Accept at Destination"/>
+  <Entry name="AF" value="Affidavit"/>
+  <Entry name="AG" value="Aircraft On Ground (AOG)"/>
+  <Entry name="AM" value="Administration"/>
+  <Entry name="AO" value="Accept at Origin"/>
+  <Entry name="BH" value="Buyer Hand Carry"/>
+  <Entry name="BI" value="Bill and Hold"/>
+  <Entry name="C1" value="Shipper Load and Count"/>
+  <Entry name="C2" value="Carrier Load and Count"/>
+  <Entry name="CA" value="Cataloging Services"/>
+  <Entry name="CC" value="Carrier Unload"/>
+  <Entry name="CD" value="COD Request"/>
+  <Entry name="CH" value="Cut and Parallel"/>
+  <Entry name="CI" value="Cut"/>
+  <Entry name="CM" value="Continuous Movement"/>
+  <Entry name="CN" value="Combination Performance and Non-performance"/>
+  <Entry name="CO" value="Cooperative Unloading"/>
+  <Entry name="CS" value="Cigarette Stamping"/>
+  <Entry name="CT" value="Count and Recount"/>
+  <Entry name="CU" value="Consignee Unload"/>
+  <Entry name="CY" value="Carry-in Service"/>
+  <Entry name="CZ" value="Cable Pressurization"/>
+  <Entry name="D1" value="One - Day Service"/>
+  <Entry name="D2" value="Two - Day Service"/>
+  <Entry name="DA" value="Delivery Acknowledgment"/>
+  <Entry name="DE" value="De-Installation"/>
+  <Entry name="DH" value="Drop and Hook Receiving"/>
+  <Entry name="DI" value="Die Service Charge"/>
+  <Entry name="DL" value="Delivery"/>
+  <Entry name="DS" value="Designated Supplier Inspection"/>
+  <Entry name="DV" value="Declared Value"/>
+  <Entry name="EG" value="Engraving"/>
+  <Entry name="EM" value="Emergency Service"/>
+  <Entry name="EN" value="Enclosure"/>
+  <Entry name="ER" value="Equipment Manufacturer Restoration Audit"/>
+  <Entry name="EU" value="Exclusive Use Of Equipment"/>
+  <Entry name="EX" value="Expedited Service"/>
+  <Entry name="F1" value="Full Service"/>
+  <Entry name="FG" value="Free Goods"/>
+  <Entry name="FS" value="Floor Stock Protection"/>
+  <Entry name="GI" value="Grouped Items"/>
+  <Entry name="GP" value="Gas Pressure"/>
+  <Entry name="GU" value="Guaranteed Inspection Technical Service"/>
+  <Entry name="H1" value="Temperature Protection"/>
+  <Entry name="HC" value="Handling Service"/>
+  <Entry name="HH" value="Hointins and Hauling"/>
+  <Entry name="HS" value="Hauling and Hoisting"/>
+  <Entry name="IC" value="Inside Cable Connectors"/>
+  <Entry name="ID" value="Inside Delivery"/>
+  <Entry name="IG" value="Invoice with Goods"/>
+  <Entry name="IK" value="Insurance Provided by Lessee"/>
+  <Entry name="IL" value="Insurance Provided by Lessor"/>
+  <Entry name="IM" value="Inspect at Destination"/>
+  <Entry name="IN" value="Insurance"/>
+  <Entry name="IO" value="Inspect at Origin"/>
+  <Entry name="IP" value="In-stock Merchandise"/>
+  <Entry name="IQ" value="Interim Use Permitted at Special Rate"/>
+  <Entry name="IR" value="Installation and Training"/>
+  <Entry name="IS" value="Invoice Services"/>
+  <Entry name="IT" value="In Transit Price Protection"/>
+  <Entry name="KO" value="Koshering"/>
+  <Entry name="L1" value="Shipper Load, Carrier Count"/>
+  <Entry name="LA" value="Labeling"/>
+  <Entry name="LL" value="Loading Service"/>
+  <Entry name="LS" value="Lease Shortfall Consideration"/>
+  <Entry name="MI" value="Mail Invoice"/>
+  <Entry name="ML" value="Mail Invoice to Each Location"/>
+  <Entry name="NC" value="Notify Consignee Before Delivery"/>
+  <Entry name="OA" value="Outside Cable Connectors"/>
+  <Entry name="ON" value="On-site Service"/>
+  <Entry name="OP" value="Oversized Package"/>
+  <Entry name="PA" value="Pack Invoice with Shipment"/>
+  <Entry name="PB" value="Previous Billing"/>
+  <Entry name="PC" value="Packaging Service"/>
+  <Entry name="PE" value="Pulling Eyes"/>
+  <Entry name="PF" value="Proof &amp; Composition"/>
+  <Entry name="PL" value="Palletizing"/>
+  <Entry name="PM" value="Perpetual Movement"/>
+  <Entry name="PO" value="Purchase Option"/>
+  <Entry name="PP" value="Progress Payment Requirement"/>
+  <Entry name="RD" value="Residential Delivery"/>
+  <Entry name="RE" value="Recall Service"/>
+  <Entry name="RM" value="Roundtrip Movement"/>
+  <Entry name="RP" value="Return Parts to Customer"/>
+  <Entry name="S1" value="Shipper Load, Consignee Unload"/>
+  <Entry name="S2" value="Slip Sheet, Truck"/>
+  <Entry name="S3" value="Seller Hand Carry"/>
+  <Entry name="SD" value="Shrinkage Allowance"/>
+  <Entry name="SG" value="Same - Day Service"/>
+  <Entry name="SH" value="Special Handling Service"/>
+  <Entry name="SJ" value="Subject To Tax On Resale"/>
+  <Entry name="SR" value="Slip Sheet, Rail"/>
+  <Entry name="SS" value="Tax Liability - One Time"/>
+  <Entry name="ST" value="Tax Liability - Amortized"/>
+  <Entry name="SU" value="Set-up"/>
+  <Entry name="SV" value="Service Center"/>
+  <Entry name="SW" value="Swell"/>
+  <Entry name="T1" value="Onetime Tooling"/>
+  <Entry name="TC" value="Ticketing Service"/>
+  <Entry name="TE" value="Tendered as Truckload"/>
+  <Entry name="TH" value="Technology Exchange"/>
+  <Entry name="TM" value="Consecutive Movement"/>
+  <Entry name="TO" value="Tooling"/>
+  <Entry name="UN" value="Unitized"/>
+  <Entry name="US" value="USDA Inspected, Stamping Certification"/>
+  <Entry name="V1" value="Drop Yard"/>
+  <Entry name="V2" value="Drop Dock"/>
+  <Entry name="WC" value="Will Call"/>
+  <Entry name="WH" value="Warehousing"/>
+  <Entry name="XP" value="Expanded Service"/>
+  <Entry name="XX" value="Third Party Pallets"/>
+  <Entry name="YY" value="Split Pickup"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="BOP" value="Bop Sheet"/>
+  <Entry name="PLI" value="Pilot Inspection"/>
+  <Entry name="PSF" value="Pickup Service Furnished"/>
+  <Entry name="SLP" value="Slip Sheet"/>
+  <Entry name="SPI" value="Specification Review"/>
+  <Entry name="A0010" value="Alterations"/>
+  <Entry name="A0020" value="Anneal/Heat (Steel or Glass Treatment)"/>
+  <Entry name="A0030" value="Art Work"/>
+  <Entry name="B0020" value="Black Lung Tax"/>
+  <Entry name="B0040" value="Burning"/>
+  <Entry name="C0012" value="Capping"/>
+  <Entry name="C0032" value="Coating (Dip, Rustproof, EDP)"/>
+  <Entry name="C0036" value="Certificate of Conformance"/>
+  <Entry name="C0038" value="Certificate of Origin"/>
+  <Entry name="D0020" value="Determined Freight"/>
+  <Entry name="D0024" value="Layout/Design"/>
+  <Entry name="D0031" value="Driver Assisted Unloading"/>
+  <Entry name="D0032" value="Driver Assisted Loading"/>
+  <Entry name="E0030" value="Exclusive use"/>
+  <Entry name="G0010" value="Grinding"/>
+  <Entry name="G0052" value="Government Inspection"/>
+  <Entry name="I0012" value="Installation"/>
+  <Entry name="I0013" value="Installation &amp; Warranty"/>
+  <Entry name="I0021" value="Inspection"/>
+  <Entry name="I0022" value="Identification"/>
+  <Entry name="M0010" value="Memo Returnable Container"/>
+  <Entry name="M0042" value="Mounting"/>
+  <Entry name="MNTAN" value="Annual Maintenance"/>
+  <Entry name="MNTMN" value="Monthly Maintenance"/>
+  <Entry name="MNTON" value="One-Time Maintenance"/>
+  <Entry name="N0020" value="Non-returnable Containers"/>
+  <Entry name="N0021" value="Non-Returnable"/>
+  <Entry name="N0032" value="Notarized Affidavit"/>
+  <Entry name="P0012" value="Painting (Primer or Finish)"/>
+  <Entry name="P0014" value="Phosphatizing (Steel Treatment)"/>
+  <Entry name="P0016" value="Pickle and Oil"/>
+  <Entry name="P0018" value="Plating"/>
+  <Entry name="P0022" value="Preparation"/>
+  <Entry name="R0072" value="Repair"/>
+  <Entry name="R0076" value="Returnable Container"/>
+  <Entry name="R0077" value="Returnable"/>
+  <Entry name="R0110" value="Rework"/>
+  <Entry name="S0014" value="Shearing"/>
+  <Entry name="S0016" value="Shotblasting"/>
+  <Entry name="S0022" value="Sleeving"/>
+  <Entry name="S0024" value="Ship to Stock Quality Audit"/>
+  <Entry name="S0050" value="Special Packaging"/>
+  <Entry name="S0052" value="Stamping"/>
+  <Entry name="S0054" value="Source Inspection"/>
+  <Entry name="S0056" value="Strapping"/>
+  <Entry name="S0080" value="Supplemental Items"/>
+  <Entry name="T0070" value="Tools for Printing"/>
+  <Entry name="W0010" value="Warranties"/>
+  <Entry name="X0010" value="Combine All Same Day Shipment"/>
+</Table>

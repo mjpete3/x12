@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ACK.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="ACK" comment="To acknowledge the ordered quantities and specify the ready date for a specific line item">
+  <Field name="LineItemStatusCode" min="2" max="2" validation="T668" comment="Code specifying the action taken by the seller on a line item requested by the buyer"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="DateTimeQualifier" required="y" min="3" max="3" validation="T374" comment="Code specifying type of date or time, or both date and time"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="RequestReferenceNumber" required="y" min="1" max="45" comment="Reference number or RFQ number to use to identify a particular transaction set and query (additional reference number or description which can be used with contract number)"/>
+  <Field name="ProductServiceIdQualifier1" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId1" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier2" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier3" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId3" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier4" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId4" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier5" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId5" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier6" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId6" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier7" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId7" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier8" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId8" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier9" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId9" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier10" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId10" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="AgencyQualifierCode" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="IndustryCode" required="y" min="1" max="30" comment="Code indicating a code from a specific industry code list"/>
+</Segment>

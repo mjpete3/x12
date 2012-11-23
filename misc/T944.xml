@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T944.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T944">
+  <Entry name="01" value="Longitudinal"/>
+  <Entry name="02" value="Transverse"/>
+  <Entry name="03" value="Radial"/>
+  <Entry name="04" value="Axial"/>
+  <Entry name="05" value="Forty-Five Degree"/>
+  <Entry name="06" value="Long Transverse"/>
+  <Entry name="07" value="Short Transverse"/>
+  <Entry name="08" value="Tangential"/>
+  <Entry name="09" value="Long Transverse/Longitudinal"/>
+  <Entry name="10" value="Long Transverse/Short Transverse"/>
+  <Entry name="11" value="Longitudinal/Long Transverse"/>
+  <Entry name="12" value="Longitudinal/Short Transverse"/>
+  <Entry name="13" value="Short Transverse/Longitudinal"/>
+  <Entry name="14" value="Short Transverse/Long Transverse"/>
+  <Entry name="15" value="Longitudinal/Transverse"/>
+  <Entry name="16" value="Shear"/>
+</Table>

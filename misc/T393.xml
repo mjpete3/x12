@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T393.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T393">
+  <Entry name="01" value="Not laden aboard per evidence from foreign shipper, or amended bill of lading"/>
+  <Entry name="02" value="Error in manifesting, not laden on this carrier. Laden on subsequent carrier for transportation to United States, per evidence in files"/>
+  <Entry name="03" value="Clerical error in manifesting per bill of lading in files"/>
+  <Entry name="04" value="Pilfered or prematurely landed prior to arrival in United States per signed statement of master or his agent or vessel log extract in our file"/>
+  <Entry name="05" value="Erroneously duplicated by another bill of lading on the same manifest"/>
+  <Entry name="06" value="Prematurely landed or overcarried to another United States port where proper disposition was made per evidence in our files"/>
+  <Entry name="07" value="Inadvertently retained on board and taken foreign per master's or his agent's statement, amended bill of lading, landing certificate, in our files"/>
+  <Entry name="08" value="Container stripped under Customs supervision; Foreign seals affixed abroad were intact, as per evidence in our files"/>
+  <Entry name="09" value="Merchandise apparently pilfered on dock while in custody of carrier"/>
+  <Entry name="10" value="Inadvertently delivered without customs release; Goods will be redelivered intact or duty and taxes will be paid by carrier"/>
+  <Entry name="11" value="Overage - Omitted from manifest through clerical error"/>
+  <Entry name="12" value="Overage - Manifested for discharge at another port and inadvertently discharged at this port"/>
+  <Entry name="13" value="Proper entry filed or place in general order per entry or general order number"/>
+  <Entry name="14" value="Merchandise inadvertently delivered to consignee without customs release; Merchandise will be redelivered intact or liquidated damages paid"/>
+  <Entry name="15" value="Merchandise cannot be located and has apparently been lost; Liquidated damages will be paid"/>
+  <Entry name="16" value="Error in quantity manifested at port of origin; Customs form 5931 will be filed at origin to correct in-bond entry; A copy will be delivered to this port within 90 days or duty and taxes will be paid"/>
+  <Entry name="17" value="Merchandise removed from original container and re-stuffed prior to moving in-bond"/>
+</Table>

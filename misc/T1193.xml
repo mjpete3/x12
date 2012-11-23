@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1193.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1193">
+  <Entry name="01" value="Research, Development, Test &amp; Evaluation (RDT&amp;E)"/>
+  <Entry name="02" value="Production"/>
+  <Entry name="03" value="Both RDT&amp;E and Production"/>
+  <Entry name="04" value="Other"/>
+  <Entry name="05" value="Procurement"/>
+  <Entry name="06" value="Advanced Design"/>
+  <Entry name="07" value="Full Scale Development"/>
+  <Entry name="08" value="Engineering and Manufacturing Development (EMD)"/>
+  <Entry name="11" value="Single Family"/>
+  <Entry name="13" value="Multifamily Construction"/>
+  <Entry name="14" value="Multifamily Project"/>
+  <Entry name="15" value="Single Family Serial Note"/>
+  <Entry name="20" value="Concept Exploration"/>
+  <Entry name="21" value="Demonstration Validation"/>
+  <Entry name="22" value="Deployment"/>
+  <Entry name="23" value="Low Rate Initial Production"/>
+  <Entry name="24" value="Multiple"/>
+  <Entry name="25" value="Single"/>
+  <Entry name="AQ" value="Adjustable Rate Mortgage with Off-Cycle Interest Charges"/>
+  <Entry name="AR" value="Adjustable Rate Mortgages"/>
+  <Entry name="AZ" value="Custom Adjustable Rate Mortgage"/>
+  <Entry name="BD" value="Buydowns"/>
+  <Entry name="CL" value="Construction Loan; Multifamily"/>
+  <Entry name="CS" value="Construction Loan with Split Interest Rate"/>
+  <Entry name="GA" value="Growing Equity Mortgage--Monthly Payments Increase 4% Annually Over the Life of the Loan"/>
+  <Entry name="GD" value="Growing Equity Mortgage--Monthly Payments Increase Annually at any Rate over the life of the Loan"/>
+  <Entry name="GP" value="Graduated Payment Mortgage--Monthly Payments Increase Annually for no more than the first 5 years of the Mortgage"/>
+  <Entry name="GT" value="Graduated Payment Mortgage--Monthly Payments Increase Annually for no more than the first 10 years of the Mortgage"/>
+  <Entry name="MH" value="Manufactured Housing"/>
+  <Entry name="PL" value="Project Loan; Multifamily"/>
+  <Entry name="PN" value="Project Loan with Non-Level Payments"/>
+  <Entry name="SF" value="Single Family Level Payment Mortgage"/>
+  <Entry name="SN" value="Serial Notes"/>
+  <Entry name="SP" value="Straight Pass-Through"/>
+</Table>

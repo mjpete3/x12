@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SMO.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SMO" comment="To identify the specific railroad operating facilities and characteristics for the station in the transaction">
+  <Field name="AutomobileRampFacilityCode" required="y" min="1" max="1" validation="T253" comment="Code identifying the type of automobile ramp facility"/>
+  <Field name="IntermodalFacilityCode" required="y" min="1" max="1" validation="T321" comment="Code identifying the type of intermodal loading and unloading facility"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="RailCarPlateSizeCode" required="y" min="1" max="1" validation="T511" comment="Code identifying the plate code which specifies the dimensions of a rail freight car that is the maximum size that can be handled at the station. (See Appendix A50 for source of specific measurements)"/>
+  <Field name="ImportExportCode" required="y" min="1" max="1" validation="T512" comment="Code identifying the type of foreign trade shipments handling capability"/>
+</Segment>

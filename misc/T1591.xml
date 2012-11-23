@@ -1,0 +1,159 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1591.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1591">
+  <Entry name="24" value="24-hour Endurance Snowmobile"/>
+  <Entry name="A1" value="Aviation Advertising"/>
+  <Entry name="A2" value="Aerial Application"/>
+  <Entry name="A3" value="Aviation Aerobatics"/>
+  <Entry name="A4" value="Air Ambulance"/>
+  <Entry name="A5" value="Air Taxi"/>
+  <Entry name="A7" value="Auto Stunt Driving"/>
+  <Entry name="A8" value="Abalone Diving"/>
+  <Entry name="A9" value="Aerobatic Skydiving"/>
+  <Entry name="AA" value="Auto Drag Racing"/>
+  <Entry name="AB" value="Aviation Ferrying"/>
+  <Entry name="AC" value="Aviation Firefighting"/>
+  <Entry name="AD" value="Auto Hill Climbing"/>
+  <Entry name="AE" value="Aviation Inspection"/>
+  <Entry name="AF" value="Aviation Instructional"/>
+  <Entry name="AH" value="Aviation Prospecting"/>
+  <Entry name="AI" value="Auto Road Rally"/>
+  <Entry name="B1" value="Business Aviation"/>
+  <Entry name="B2" value="Base Jumping"/>
+  <Entry name="B3" value="Boxing"/>
+  <Entry name="B4" value="Bungee Jumping"/>
+  <Entry name="B5" value="Banner Towing"/>
+  <Entry name="B6" value="Bush Flying"/>
+  <Entry name="C1" value="Championship Auto Racing"/>
+  <Entry name="C2" value="Certificated Route Air Carrier"/>
+  <Entry name="C3" value="Chartered Air Carrier"/>
+  <Entry name="C4" value="Commercial Aviation"/>
+  <Entry name="C5" value="Construction Helicopter"/>
+  <Entry name="C6" value="Corporate Aviation"/>
+  <Entry name="C7" value="Crew Member Aviation"/>
+  <Entry name="C8" value="Cross-country Aviation"/>
+  <Entry name="C9" value="Cross-country Motorcycle Racing"/>
+  <Entry name="CA" value="Cave Diving"/>
+  <Entry name="CB" value="Cross-country Snowmobile Racing"/>
+  <Entry name="CC" value="Cartography"/>
+  <Entry name="CD" value="Cliff Soaring"/>
+  <Entry name="D1" value="Demolition Derby"/>
+  <Entry name="D2" value="Demonstration Aviation"/>
+  <Entry name="DR" value="Driving"/>
+  <Entry name="E1" value="Endurance Racing Inboard"/>
+  <Entry name="E2" value="Experimental Skydiving"/>
+  <Entry name="F1" value="Flying"/>
+  <Entry name="F2" value="Figure 8 Demolition"/>
+  <Entry name="F3" value="Formula or Grand Prix Auto Racing"/>
+  <Entry name="F4" value="Forestry Aviation"/>
+  <Entry name="F5" value="Fire Fighting"/>
+  <Entry name="G1" value="Glider or Sailplane"/>
+  <Entry name="G2" value="Grand Prix Motorcycle Racing"/>
+  <Entry name="G3" value="Ground Skimming"/>
+  <Entry name="H1" value="Hot-air Ballooning"/>
+  <Entry name="H2" value="Hang Gliding"/>
+  <Entry name="H3" value="Hydroplane Racing Unlimited"/>
+  <Entry name="H4" value="Hydroplane Racing Inboard"/>
+  <Entry name="I1" value="International Racing (Auto)"/>
+  <Entry name="I2" value="Intermediate Junior Snowmobile Racing"/>
+  <Entry name="I3" value="Ice Diving"/>
+  <Entry name="I4" value="Iceboat Racing"/>
+  <Entry name="I5" value="Inboard Racing"/>
+  <Entry name="I6" value="Ice Climbing"/>
+  <Entry name="J1" value="Jet Car Racing"/>
+  <Entry name="J2" value="Judo"/>
+  <Entry name="K1" value="Kart Racing"/>
+  <Entry name="K2" value="Karate"/>
+  <Entry name="M1" value="Midget Racing"/>
+  <Entry name="M2" value="Military Flying"/>
+  <Entry name="M3" value="Modified Outboard Racing"/>
+  <Entry name="M4" value="Motorboat Racing"/>
+  <Entry name="M5" value="Modified Stock Motorcycle Racing"/>
+  <Entry name="M6" value="Motocross Racing"/>
+  <Entry name="M7" value="Mountain Climbing"/>
+  <Entry name="M8" value="Military Skydiving"/>
+  <Entry name="M9" value="Modified Stock Snowmobile Racing"/>
+  <Entry name="MA" value="Modified Snowmobile Racing"/>
+  <Entry name="MB" value="Motorcycle Acrobatics"/>
+  <Entry name="MC" value="Motorcycle Dirt Track Racing"/>
+  <Entry name="MD" value="Motorcycle Drag Racing"/>
+  <Entry name="ME" value="Motorcycle Enduro Racing"/>
+  <Entry name="MF" value="Motorcycle Hill Climbing"/>
+  <Entry name="MG" value="Motorcycle Ice Racing"/>
+  <Entry name="MH" value="Motorcycle Observed Trials"/>
+  <Entry name="MI" value="Motorcycle Road Racing"/>
+  <Entry name="MJ" value="Motorcycle Road Riding"/>
+  <Entry name="MK" value="Motorcycle Speed Record Trials"/>
+  <Entry name="ML" value="Motorcycle Speedway"/>
+  <Entry name="N1" value="Non-scheduled Flying"/>
+  <Entry name="O1" value="Off Road Auto Racing"/>
+  <Entry name="O2" value="Offshore Racing"/>
+  <Entry name="O3" value="Outboard Performance Craft Racing"/>
+  <Entry name="O4" value="Oval Sprint Snowmobile Racing"/>
+  <Entry name="O5" value="Other"/>
+  <Entry name="O6" value="Open Modified Snowmobile Racing"/>
+  <Entry name="P1" value="Passenger Aviation"/>
+  <Entry name="P2" value="Personal Aviation"/>
+  <Entry name="P3" value="Photographic Aviation"/>
+  <Entry name="P4" value="Pilot Aviation"/>
+  <Entry name="P5" value="Pleasure Aviation"/>
+  <Entry name="P6" value="Precision Flying"/>
+  <Entry name="P7" value="Private Flying"/>
+  <Entry name="P8" value="Parachuting"/>
+  <Entry name="P9" value="Professional Outboard Racing"/>
+  <Entry name="PA" value="Parakiting"/>
+  <Entry name="PB" value="Parasailing"/>
+  <Entry name="PC" value="Paraskiing"/>
+  <Entry name="R1" value="Rock Climbing"/>
+  <Entry name="R2" value="Rodeo"/>
+  <Entry name="R3" value="Ridge Soaring"/>
+  <Entry name="S1" value="Sports Car Racing"/>
+  <Entry name="S2" value="Sprint Car Racing"/>
+  <Entry name="S3" value="Stock Car Racing"/>
+  <Entry name="S4" value="Snowmobile Enduro Racing"/>
+  <Entry name="S5" value="Scheduled Flying"/>
+  <Entry name="S6" value="Sight Seeing Aviation"/>
+  <Entry name="S7" value="Student Flying"/>
+  <Entry name="S8" value="Stock Outboard Racing"/>
+  <Entry name="S9" value="Snowmobile Drag Racing"/>
+  <Entry name="SA" value="Stock Snowmobile Racing"/>
+  <Entry name="SB" value="Spear Fishing"/>
+  <Entry name="SC" value="Scuba Diving"/>
+  <Entry name="SD" value="Skydiving"/>
+  <Entry name="SE" value="Skydiving Accuracy"/>
+  <Entry name="SF" value="Skydiving Free-fall"/>
+  <Entry name="SG" value="Stunt Flying"/>
+  <Entry name="T1" value="Testing Aviation"/>
+  <Entry name="T2" value="Traffic Watch Aviation"/>
+  <Entry name="U1" value="Underwater Diving"/>
+  <Entry name="U2" value="Underwater Hard-hat Diving"/>
+  <Entry name="U3" value="Underwater Scuba Diving"/>
+  <Entry name="U4" value="Underwater Skin Diving"/>
+  <Entry name="W1" value="Water Skiing"/>
+  <Entry name="W2" value="Wrestling"/>
+  <Entry name="W3" value="Wreck or Salvage Diving"/>
+  <Entry name="W4" value="World Snowmobile Speed Record"/>
+</Table>

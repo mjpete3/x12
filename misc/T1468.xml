@@ -1,0 +1,64 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1468.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1468">
+  <Entry name="10" value="Vacation"/>
+  <Entry name="11" value="Paid Leave of Absence"/>
+  <Entry name="12" value="Unpaid Leave of Absence"/>
+  <Entry name="13" value="Lay off Permanent"/>
+  <Entry name="14" value="Lay off Temporary"/>
+  <Entry name="15" value="Personal Day Off"/>
+  <Entry name="16" value="Terminated"/>
+  <Entry name="17" value="Illness"/>
+  <Entry name="18" value="Injury"/>
+  <Entry name="19" value="Holiday"/>
+  <Entry name="D1" value="Discharged Failed to Meet Work Standards"/>
+  <Entry name="D2" value="Discharged Not Qualified"/>
+  <Entry name="F1" value="Failed to Report for Assignment"/>
+  <Entry name="F2" value="Fire, Flood or Natural Disaster"/>
+  <Entry name="L1" value="Lay Off Seasonal"/>
+  <Entry name="L2" value="Lay Off End of Assignment or Contract"/>
+  <Entry name="L3" value="Lay Off Reduced Hours or Partial Employment"/>
+  <Entry name="L4" value="Lay Off Workforce Reduction"/>
+  <Entry name="M1" value="Misconduct Insubordination"/>
+  <Entry name="M2" value="Misconduct Excessive Absence or Tardiness"/>
+  <Entry name="M3" value="Misconduct Violated Rules or Regulations"/>
+  <Entry name="M4" value="Misconduct Dishonesty"/>
+  <Entry name="M5" value="Misconduct Failure to Call or Show"/>
+  <Entry name="O1" value="Labor Dispute"/>
+  <Entry name="O2" value="No Record of Employment"/>
+  <Entry name="O3" value="Still Employed Part-time"/>
+  <Entry name="O4" value="Jury Duty"/>
+  <Entry name="O5" value="Company Relocation"/>
+  <Entry name="O6" value="Still Employed or No Separation"/>
+  <Entry name="O7" value="Other"/>
+  <Entry name="Q1" value="Quit"/>
+  <Entry name="R1" value="Refusal to Provide Service"/>
+  <Entry name="V1" value="Voluntary Accepted Another Job"/>
+  <Entry name="V2" value="Voluntary Personal or Not Job Related"/>
+  <Entry name="V3" value="Voluntary Left Area or Follow Spouse"/>
+  <Entry name="V4" value="Voluntary No Reason Given"/>
+  <Entry name="V5" value="Voluntary Educational Pursuits"/>
+</Table>

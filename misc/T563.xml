@@ -1,0 +1,83 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T563.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T563">
+  <Entry name="B" value="Back Order Only If New Item"/>
+  <Entry name="C" value="Consignment"/>
+  <Entry name="D" value="Bid Guarantee"/>
+  <Entry name="E" value="Equal Product Allowed"/>
+  <Entry name="F" value="Factory Ship"/>
+  <Entry name="K" value="Small Purchase Set Aside for Small Businesses"/>
+  <Entry name="N" value="No Back Order"/>
+  <Entry name="O" value="Back Order If Items Are Out of Stock or Not Yet Published"/>
+  <Entry name="P" value="Large Purchase, Set-Aside for Small Business"/>
+  <Entry name="Q" value="Small, Disadvantaged Business Set-Aside"/>
+  <Entry name="R" value="Combined Small, Disadvantaged Business and Labor Surplus Area Set-Aside"/>
+  <Entry name="S" value="Partial Labor Surplus Area Set Aside"/>
+  <Entry name="T" value="Small Business with Small, Disadvantaged Business Consideration Set-Aside"/>
+  <Entry name="W" value="Warehouse Ship"/>
+  <Entry name="Y" value="Back Order if Out of Stock"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="8A" value="Section (8a) Set-Aside"/>
+  <Entry name="AA" value="Add Quantity to Make Minimum Weight Requirement"/>
+  <Entry name="AB" value="Notify Prior to Shipment if Quantity Specified is not Available"/>
+  <Entry name="AI" value="Set-aside for American Indian-owned Business"/>
+  <Entry name="AS" value="Restricted to Approved Sources"/>
+  <Entry name="BC" value="Restricted to Historically Black College or University or Minority Institution"/>
+  <Entry name="BK" value="Ship Partial - Balance Back Order"/>
+  <Entry name="EI" value="Restricted to Educational Institutions"/>
+  <Entry name="FT" value="Ship Full Truck Only"/>
+  <Entry name="GS" value="Guaranteed Sale"/>
+  <Entry name="IP" value="Restricted to Industrial Preparedness Program Participants"/>
+  <Entry name="IS" value="Substitute Item Allowed"/>
+  <Entry name="LS" value="Labor Surplus Area Set-Aside"/>
+  <Entry name="MY" value="Multi-year Award"/>
+  <Entry name="NS" value="No Substitutes"/>
+  <Entry name="P2" value="Ship As Soon As Possible"/>
+  <Entry name="P3" value="May Preship"/>
+  <Entry name="P4" value="Do Not Preship"/>
+  <Entry name="QB" value="On Qualified Bidders List"/>
+  <Entry name="QE" value="Exclude Import Quota in First Cost"/>
+  <Entry name="QI" value="Include Import Quota in First Cost"/>
+  <Entry name="QM" value="On Qualified Manufacturers List"/>
+  <Entry name="QP" value="Restricted to Qualified Products List (QPL) Products"/>
+  <Entry name="SC" value="Ship Complete"/>
+  <Entry name="SE" value="Small Remaining Balance Cancellation Allowed"/>
+  <Entry name="SF" value="Ship Partial, Carload Lots Only"/>
+  <Entry name="SG" value="Small Remaining Balance Cancellation Not Allowed"/>
+  <Entry name="SI" value="Ship In-Place"/>
+  <Entry name="SP" value="Ship Partial, Balance Cancel"/>
+  <Entry name="SQ" value="Ship Partial, Item Qty Proportional To Total Order"/>
+  <Entry name="SS" value="Ship Per Schedule"/>
+  <Entry name="ST" value="Ship Partial, Truckload Lots Only"/>
+  <Entry name="SU" value="Ship Partial, Balance Substitute"/>
+  <Entry name="SV" value="Ship Per Release"/>
+  <Entry name="SW" value="Ship Per Release or Buyer Authorization"/>
+  <Entry name="UC" value="Restricted to U.S. and Canadian Sources"/>
+  <Entry name="UL" value="Other Unlisted Sales Condition"/>
+  <Entry name="UP" value="Unrestricted Procurement"/>
+  <Entry name="WY" value="Warranty"/>
+  <Entry name="YI" value="Restricted to Young Investigator Program"/>
+</Table>

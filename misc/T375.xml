@@ -1,0 +1,106 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T375.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T375">
+  <Entry name="1A" value="Domestic Motor Van Door-to-Door Interstate"/>
+  <Entry name="1B" value="Domestic Motor Van Door-to-Door Intrastate"/>
+  <Entry name="2A" value="Domestic Container Van Door-to-Door Interstate"/>
+  <Entry name="2B" value="Domestic Container Van Door-to-Door Intrastate"/>
+  <Entry name="B1" value="Unaccompanied Baggage for Domestic Commercial Air Transport"/>
+  <Entry name="B2" value="Unaccompanied Baggage for Domestic Transport Not Otherwise Identified"/>
+  <Entry name="B3" value="Unaccompanied Baggage for Intertheater Military Air Transport"/>
+  <Entry name="B4" value="Unaccompanied Baggage for Intratheater Military Water Transport"/>
+  <Entry name="B5" value="Unaccompanied Baggage for Intratheater Commercial Motor Transport"/>
+  <Entry name="BA" value="Unaccompanied Baggage for Domestic Commercial Motor Transport"/>
+  <Entry name="BB" value="Barge-to-Barge"/>
+  <Entry name="BC" value="Unaccompanied Baggage for Domestic Military Air Transport"/>
+  <Entry name="BD" value="Barge-to-Door"/>
+  <Entry name="BE" value="Unaccompanied Baggage for International Military Water Transport"/>
+  <Entry name="BF" value="Unaccompanied Baggage for International Commercial Air Transport"/>
+  <Entry name="BG" value="Unaccompanied Baggage for International Military Air Transport"/>
+  <Entry name="BH" value="Unaccompanied Baggage for International Transport Not Otherwise Identified"/>
+  <Entry name="BK" value="Unaccompanied Baggage for Intertheater Military Water Transport"/>
+  <Entry name="BL" value="Unaccompanied Baggage for Intertheater Commercial Air Transport"/>
+  <Entry name="BM" value="Barge-to-Motor"/>
+  <Entry name="BN" value="Unaccompanied Baggage for Intertheater Transport Not Otherwise Identified"/>
+  <Entry name="BO" value="Barge-to-Terminal"/>
+  <Entry name="BP" value="Barge-to-Pier"/>
+  <Entry name="BR" value="Barge-to-Rail"/>
+  <Entry name="BW" value="Unaccompanied Baggage for Intratheater Commercial Air Transport"/>
+  <Entry name="BX" value="Unaccompanied Baggage for Intratheater Military Air Transport"/>
+  <Entry name="BY" value="Unaccompanied Baggage for Intratheater Transport Not Otherwise Identified"/>
+  <Entry name="DB" value="Door-to-Barge"/>
+  <Entry name="DD" value="Door-to-Door"/>
+  <Entry name="DM" value="Door-to-Motor"/>
+  <Entry name="DO" value="Door-to-Terminal"/>
+  <Entry name="DP" value="Door-to-Pier"/>
+  <Entry name="DR" value="Door-to-Rail"/>
+  <Entry name="EC" value="Rate Applies for Economy Transportation Service"/>
+  <Entry name="H1" value="Household Goods for International Transport Not Otherwise Identified"/>
+  <Entry name="H2" value="Household Goods for Intratheater Military Water Transport"/>
+  <Entry name="HA" value="Household Goods for Domestic Commercial Motor Transport"/>
+  <Entry name="HB" value="Household Goods for Domestic Commercial Air Transport"/>
+  <Entry name="HC" value="Household Goods for Domestic Military Air Transport"/>
+  <Entry name="HD" value="Household Goods for Domestic Transport Not Otherwise Identified"/>
+  <Entry name="HE" value="Household Goods for International Military Water Transport"/>
+  <Entry name="HF" value="Household Goods for International Commercial Air Transport"/>
+  <Entry name="HG" value="Household Goods for International Military Air Transport"/>
+  <Entry name="HH" value="House-to-House"/>
+  <Entry name="HK" value="Household Goods for Intertheater Military Water Transport"/>
+  <Entry name="HL" value="Household Goods for Intertheater Commercial Air Transport"/>
+  <Entry name="HM" value="Household Goods for Intertheater Military Air Transport"/>
+  <Entry name="HN" value="Household Goods for Intertheater Transport Not Otherwise Identified"/>
+  <Entry name="HP" value="House-to-Pier"/>
+  <Entry name="HR" value="Household Goods for Intratheater Commercial Motor Transport"/>
+  <Entry name="HW" value="Household Goods for Intratheater Commercial Air Transport"/>
+  <Entry name="HX" value="Household Goods for Intratheater Military Air Transport"/>
+  <Entry name="HY" value="Household Goods for Intratheater Transport Not Otherwise Identified"/>
+  <Entry name="MB" value="Motor-to-Barge"/>
+  <Entry name="MD" value="Motor-to-Door"/>
+  <Entry name="ML" value="Rate applies for Mini-Landbridge"/>
+  <Entry name="MM" value="Motor-to-Motor"/>
+  <Entry name="MO" value="Motor-to-Terminal"/>
+  <Entry name="MP" value="Motor-to-Pier"/>
+  <Entry name="MR" value="Motor-to-Rail"/>
+  <Entry name="ND" value="Rate Applies for Next Day Transportation Service"/>
+  <Entry name="OC" value="Rate applies for Overland Common Point"/>
+  <Entry name="OD" value="Terminal-to-Door"/>
+  <Entry name="OM" value="Terminal-to-Motor"/>
+  <Entry name="OR" value="Terminal-to-Rail"/>
+  <Entry name="OT" value="Terminal-to-Inland"/>
+  <Entry name="OV" value="Rate Applies for Overnight Transportation Service"/>
+  <Entry name="PB" value="Pier-to-Barge"/>
+  <Entry name="PD" value="Pier-to-Door"/>
+  <Entry name="PH" value="Pier-to-House"/>
+  <Entry name="PM" value="Pier-to-Motor"/>
+  <Entry name="PP" value="Pier-to-Pier"/>
+  <Entry name="PR" value="Pier-to-Rail"/>
+  <Entry name="RB" value="Rail-to-Barge"/>
+  <Entry name="RD" value="Rail-to-Door"/>
+  <Entry name="RM" value="Rail-to-Motor"/>
+  <Entry name="RO" value="Rail-to-Terminal"/>
+  <Entry name="RP" value="Rail-to-Pier"/>
+  <Entry name="RR" value="Rail-to-Rail"/>
+</Table>

@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CTP.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CTP" comment="To specify pricing information">
+  <Field name="ClassOfTradeCode" required="y" min="2" max="2" validation="T687" comment="Code indicating class of trade"/>
+  <Field name="PriceIdentifierCode" required="y" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
+  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="PriceMultiplierQualifier" required="y" min="3" max="3" validation="T648" comment="Code indicating the type of price multiplier"/>
+  <Field name="Multiplier" type="double" required="y" min="1" max="10" comment="Value to be used as a multiplier to obtain a new value"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="BasisOfUnitPriceCode" required="y" min="2" max="2" validation="T639" comment="Code identifying the type of unit price for an item"/>
+  <Field name="ConditionValue" required="y" min="1" max="10" comment="Identifies rate restrictions or provisions"/>
+  <Field name="MultiplePriceQuantity" type="long" required="y" min="1" max="2" comment="Quantity of units for a given price, e.g., 3 for $10.00"/>
+</Segment>

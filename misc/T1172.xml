@@ -1,0 +1,109 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1172.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1172">
+  <Entry name="A1" value="Inappropriate Standard Repair Time Used"/>
+  <Entry name="A2" value="Date on Claim Different than Supporting Document"/>
+  <Entry name="A3" value="Submit as Field Service Claim"/>
+  <Entry name="A4" value="Missing Part Number"/>
+  <Entry name="A5" value="Must Submit Serial Number of Major Component"/>
+  <Entry name="A6" value="Submit as Product Improvement Claim"/>
+  <Entry name="AC" value="Amount Claimed Exceeds Authorization Amount"/>
+  <Entry name="CC" value="Claim Cancelled By Claimant"/>
+  <Entry name="CH" value="Core Charge Not Allowed"/>
+  <Entry name="CP" value="Claim Pending - Subject to Supplier Approval"/>
+  <Entry name="CS" value="Claim Submitted Too Late to Accept"/>
+  <Entry name="DC" value="Duplicate Charge"/>
+  <Entry name="DE" value="Deductible Exceeds Claimed Amount"/>
+  <Entry name="DI" value="Damages Caused by Improper Vehicle Operation"/>
+  <Entry name="DN" value="Discrepancy Not Noted on Delivery Receipt"/>
+  <Entry name="EF" value="Excess Freight Charges"/>
+  <Entry name="EL" value="Excess Lube Charges"/>
+  <Entry name="EW" value="Expired Warranty"/>
+  <Entry name="FC" value="File Claim Directly to Supplier"/>
+  <Entry name="HD" value="Handling Disallowed or Reduced"/>
+  <Entry name="IA" value="Incorrect Associate Account"/>
+  <Entry name="II" value="Invalid Standard Repair Time Used"/>
+  <Entry name="IL" value="Incorrect Labor Rate"/>
+  <Entry name="IR" value="Improper Repair Procedures"/>
+  <Entry name="IV" value="Invalid Vehicle Identification Number (VIN)"/>
+  <Entry name="LC" value="Lubricant Charge Not Allowed"/>
+  <Entry name="LD" value="Labor Disallowed"/>
+  <Entry name="LO" value="Labor Overlap"/>
+  <Entry name="MC" value="Mileage on Claim Different Than Supporting Document"/>
+  <Entry name="MH" value="Must Submit Model Number of Major Component"/>
+  <Entry name="NF" value="Need Fuel Tank Scrap Form"/>
+  <Entry name="OC" value="Other Charges Not Allowed"/>
+  <Entry name="OR" value="Only One Repair Allowed Per Section"/>
+  <Entry name="PB" value="Product Built to Spec"/>
+  <Entry name="PD" value="Part Damaged - Cannot Establish Defect"/>
+  <Entry name="PR" value="Photo Required - Resubmit Claim and Mail Photo"/>
+  <Entry name="RP" value="Replacement Part Information is Incorrect"/>
+  <Entry name="RT" value="Resubmit as Transporter Claim"/>
+  <Entry name="SA" value="Special Adjustment"/>
+  <Entry name="SM" value="Submit as Recall Claim"/>
+  <Entry name="SP" value="Submit as a Replacement Parts Claim"/>
+  <Entry name="SR" value="Storage Related Problem - Not Our Responsibility"/>
+  <Entry name="SW" value="Submit as Warranty Claim"/>
+  <Entry name="TC" value="Towing Charge Exceeds Warranty Allowance"/>
+  <Entry name="UR" value="Unauthorized Repair"/>
+  <Entry name="VB" value="Vehicle Not Built to Order"/>
+  <Entry name="VM" value="Vehicle Modification"/>
+  <Entry name="VU" value="Vehicle Already Paid Per Specified Claim"/>
+  <Entry name="WC" value="Wrong Causal Part Number"/>
+  <Entry name="WM" value="Wrong Part Number"/>
+  <Entry name="CDR" value="Customer Damage or Responsibility"/>
+  <Entry name="CMP" value="Customer Must Pay Deductible"/>
+  <Entry name="ELH" value="Excessive Labor Hours"/>
+  <Entry name="ELR" value="Excessive Labor Rate"/>
+  <Entry name="EPC" value="Excessive Part Cost"/>
+  <Entry name="ESC" value="Excessive Sublet Cost"/>
+  <Entry name="FRS" value="Factory Required Service"/>
+  <Entry name="FWC" value="Full Warranty Credit"/>
+  <Entry name="IIS" value="Insufficient Information Supplied"/>
+  <Entry name="IRS" value="Item Reported as Stolen"/>
+  <Entry name="IWS" value="Insufficient Warranty Information Supplied"/>
+  <Entry name="MAP" value="Manufacturer's Agreed Price"/>
+  <Entry name="MRA" value="Mileage Less Than Previously Stated"/>
+  <Entry name="NCR" value="No Charge Repair"/>
+  <Entry name="NDF" value="No Defect Found"/>
+  <Entry name="NEW" value="Not Eligible for Warranty"/>
+  <Entry name="NOP" value="Not Our Product"/>
+  <Entry name="NRI" value="Not a Recall Item"/>
+  <Entry name="NSB" value="Not a Service Bulletin Item"/>
+  <Entry name="NWR" value="No Warranty Record"/>
+  <Entry name="ODR" value="Original Equipment Manufacturer (OEM) or Manufacturer's Responsibility"/>
+  <Entry name="PNP" value="Part not Proper for Specified Repair"/>
+  <Entry name="PNR" value="Part or Documentation Not Returned or Received Within Time Limit"/>
+  <Entry name="PRD" value="Part Received Damaged Due to Dealer Poor Packaging"/>
+  <Entry name="PWA" value="Partial Warranty Approved"/>
+  <Entry name="RDP" value="Repair Description Does Not Agree With Product"/>
+  <Entry name="RDR" value="Repair Facility's Responsibility"/>
+  <Entry name="SUB" value="Submitted Too Late"/>
+  <Entry name="UPR" value="Unrelated To Previous Repair"/>
+  <Entry name="URF" value="Unauthorized Repair Facility"/>
+  <Entry name="VPW" value="Vehicle Previously Wrecked, System Not Warranted"/>
+  <Entry name="WBS" value="Warranted By Seller"/>
+</Table>

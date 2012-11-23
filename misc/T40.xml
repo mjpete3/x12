@@ -1,0 +1,164 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T40.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T40">
+  <Entry name="20" value="20 ft. IL Container (Open Top)"/>
+  <Entry name="2B" value="20 ft. IL Container (Closed Top)"/>
+  <Entry name="2D" value="Control Unit"/>
+  <Entry name="2E" value="Head-end Helper Unit"/>
+  <Entry name="2F" value="Roadrailer"/>
+  <Entry name="2G" value="Cut-in Helper"/>
+  <Entry name="2H" value="Rear-end Helper Unit"/>
+  <Entry name="40" value="40 ft. IL Container (Open Top)"/>
+  <Entry name="4B" value="40 ft. IL Container (Closed Top)"/>
+  <Entry name="AA" value="Air Ride Van"/>
+  <Entry name="AC" value="Closed Container"/>
+  <Entry name="AD" value="Flatbed Sliding Tandem"/>
+  <Entry name="AF" value="Air Freight (Break Bulk)"/>
+  <Entry name="AL" value="Container, Aluminum"/>
+  <Entry name="AP" value="Aircraft"/>
+  <Entry name="AT" value="Closed Container (Controlled Temperature)"/>
+  <Entry name="BC" value="Covered Barge"/>
+  <Entry name="BE" value="Bilevel Railcar Fully Open"/>
+  <Entry name="BF" value="Bilevel Railcar Fully Enclosed"/>
+  <Entry name="BG" value="Bogie"/>
+  <Entry name="BH" value="Bilevel Railcar Screened With Roof"/>
+  <Entry name="BJ" value="Bilevel Railcar Screened, No Roof"/>
+  <Entry name="BK" value="Container, Bulk"/>
+  <Entry name="BO" value="Barge Open"/>
+  <Entry name="BR" value="Barge"/>
+  <Entry name="BX" value="Boxcar"/>
+  <Entry name="CA" value="Caboose"/>
+  <Entry name="CB" value="Chassis, Gooseneck"/>
+  <Entry name="CC" value="Container resting on a Chassis"/>
+  <Entry name="CD" value="Container with Bag Hangers"/>
+  <Entry name="CG" value="Container, Tank (Gas)"/>
+  <Entry name="CH" value="Chassis"/>
+  <Entry name="CI" value="Container, Insulated"/>
+  <Entry name="CJ" value="Container, Insulated/Ventilated"/>
+  <Entry name="CK" value="Container, Heated/Insulated/Ventilated"/>
+  <Entry name="CL" value="Container (Closed Top - Length Unspecified)"/>
+  <Entry name="CM" value="Container, Open-Sided"/>
+  <Entry name="CN" value="Container"/>
+  <Entry name="CP" value="Coil Car Open"/>
+  <Entry name="CQ" value="Container, Tank (Food Grade-Liquid)"/>
+  <Entry name="CR" value="Coil-Car Covered"/>
+  <Entry name="CS" value="Container-Low Side Open Top"/>
+  <Entry name="CT" value="Container-High Side Open Top"/>
+  <Entry name="CU" value="Container (Open Top - Length Unspecified)"/>
+  <Entry name="CV" value="Closed Van"/>
+  <Entry name="CW" value="Container, Tank (Chemicals)"/>
+  <Entry name="CX" value="Container, Tank"/>
+  <Entry name="CZ" value="Refrigerated Container"/>
+  <Entry name="DD" value="Double-Drop Trailer"/>
+  <Entry name="DF" value="Container with Flush Doors"/>
+  <Entry name="DT" value="Drop Back Trailer"/>
+  <Entry name="DX" value="Boxcar, Damage Free Equipped"/>
+  <Entry name="ET" value="End of Train Device"/>
+  <Entry name="FF" value="Frozen Food Trailer"/>
+  <Entry name="FH" value="Flat Bed Trailer with Headboards"/>
+  <Entry name="FN" value="Flat Bed Trailer with No Headboards"/>
+  <Entry name="FP" value="Flatcar With Pedestal"/>
+  <Entry name="FR" value="Flat Bed Trailer - Removable Sides"/>
+  <Entry name="FS" value="Container with Floor Securing Rings"/>
+  <Entry name="FT" value="Flat Bed Trailer"/>
+  <Entry name="FX" value="Boxcar Cushion Under Frame OF"/>
+  <Entry name="GS" value="Generator Set"/>
+  <Entry name="HB" value="Container with Hangar Bars"/>
+  <Entry name="HC" value="Hopper Car (Covered)"/>
+  <Entry name="HO" value="Hopper Car (Open)"/>
+  <Entry name="HP" value="Hopper Car (Covered; Pneumatic Discharge)"/>
+  <Entry name="HT" value="Head of Train Device"/>
+  <Entry name="HV" value="High Cube Van"/>
+  <Entry name="HY" value="Hydrant-Cart"/>
+  <Entry name="ID" value="Idler Car"/>
+  <Entry name="IX" value="Boxcar (Insulated)"/>
+  <Entry name="LO" value="Locomotive"/>
+  <Entry name="LS" value="Half Height Flat Rack"/>
+  <Entry name="LU" value="Load/unload Device on Equipment"/>
+  <Entry name="NX" value="Boxcar (Interior Bulkheads)"/>
+  <Entry name="OB" value="Ocean Vessel (Break Bulk)"/>
+  <Entry name="OT" value="Open-top/flatbed trailer"/>
+  <Entry name="OV" value="Open Top Van"/>
+  <Entry name="PL" value="Container, Platform"/>
+  <Entry name="PP" value="Power Pack"/>
+  <Entry name="PT" value="Protected Trailer"/>
+  <Entry name="PU" value="Pick-up Truck"/>
+  <Entry name="RA" value="Fixed-Rack, Flat-Bed Trailer"/>
+  <Entry name="RC" value="Refrigerated (Reefer) Car"/>
+  <Entry name="RD" value="Fixed-Rack, Double Drop Trailer"/>
+  <Entry name="RE" value="Flat Car (End Bulkheads)"/>
+  <Entry name="RF" value="Flat Car"/>
+  <Entry name="RG" value="Gondola Covered"/>
+  <Entry name="RI" value="Gondola Car (Covered - Interior Bulkheads)"/>
+  <Entry name="RO" value="Gondola Car (Open)"/>
+  <Entry name="RR" value="Rail Car"/>
+  <Entry name="RS" value="Fixed-Rack, Single-Drop Trailer"/>
+  <Entry name="RT" value="Controlled Temperature Trailer (Reefer)"/>
+  <Entry name="SA" value="Saddle"/>
+  <Entry name="SC" value="Service Car"/>
+  <Entry name="SD" value="Single-Drop Trailer"/>
+  <Entry name="SK" value="Stack Car"/>
+  <Entry name="SL" value="Container, Steel"/>
+  <Entry name="SR" value="STAK-RAK"/>
+  <Entry name="SS" value="Container with Smooth Sides"/>
+  <Entry name="ST" value="Removable Side Trailer"/>
+  <Entry name="SV" value="Van - Special Inside Length, Width or Height Requirements"/>
+  <Entry name="TA" value="Trailer, Heated/Insulated/Ventilated"/>
+  <Entry name="TB" value="Trailer, Boat"/>
+  <Entry name="TC" value="Trailer, Car"/>
+  <Entry name="TF" value="Trailer, Dry Freight"/>
+  <Entry name="TG" value="Trailer, Tank (Gas)"/>
+  <Entry name="TH" value="Truck, Open Top High Side"/>
+  <Entry name="TI" value="Trailer, Insulated"/>
+  <Entry name="TJ" value="Trailer, Tank (Chemicals)"/>
+  <Entry name="TK" value="Trailer, Tank (Food Grade-Liquid)"/>
+  <Entry name="TL" value="Trailer (not otherwise specified)"/>
+  <Entry name="TM" value="Trailer, Insulated/Ventilated"/>
+  <Entry name="TN" value="Tank Car"/>
+  <Entry name="TO" value="Truck, Open Top"/>
+  <Entry name="TP" value="Trailer, Pneumatic"/>
+  <Entry name="TQ" value="Trailer, Electric Heat"/>
+  <Entry name="TR" value="Tractor"/>
+  <Entry name="TT" value="Telescoping Trailer"/>
+  <Entry name="TU" value="Truck, Open Top Low Side"/>
+  <Entry name="TV" value="Truck, Van"/>
+  <Entry name="TW" value="Trailer, Refrigerated"/>
+  <Entry name="UA" value="Trilevel Railcar 20 Feet"/>
+  <Entry name="UB" value="Trilevel Railcar Screened, Fully Enclosed"/>
+  <Entry name="UC" value="Trilevel Railcar Screened, With Roof"/>
+  <Entry name="UD" value="Trilevel Railcar Screened, No Roof"/>
+  <Entry name="UE" value="Trilevel Railcar Screened, With Doors, No Roof"/>
+  <Entry name="UL" value="Unit Load Device (ULD)"/>
+  <Entry name="UP" value="Container, Upgraded"/>
+  <Entry name="VA" value="Container, Vented"/>
+  <Entry name="VE" value="Vessel, Ocean"/>
+  <Entry name="VL" value="Vessel, Lake"/>
+  <Entry name="VR" value="Vessel, Ocean, Rollon-Rolloff"/>
+  <Entry name="VS" value="Vessel, Ocean, Lash"/>
+  <Entry name="VT" value="Vessel, Ocean, Containership"/>
+  <Entry name="WR" value="Container with Wavy or Ripple Sides"/>
+  <Entry name="WY" value="Railroad Maintenance of Way Car"/>
+</Table>

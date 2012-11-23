@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G45.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G45" comment="To provide information for a line item">
+  <Field name="UPCCaseCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) including two high order digits identifying the &quot;system&quot; (U.S. Grocery = 00, 06 or 07; U.S. Drug = 03); using the U.S. Grocery system, the next ten digits are: Manufacturer (5) Case Code (5)"/>
+  <Field name="UPCEanConsumerPackageCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) identifying the retail shelf unit; consists of 2 high order digits identifying the system (U.S. Grocery = 00, 06 or 07, U.S. Drug = 03); the next ten digits are manufacturer ID: 5, Item ID: 5"/>
+  <Field name="AllowanceOrChargeNumber" required="y" min="1" max="16" comment="The number assigned by a vendor referencing an allowance, promotion, deal or charge"/>
+  <Field name="ExceptionNumber" required="y" min="1" max="16" comment="A unique number identifying an exception or modification to an offered or existing promotion"/>
+  <Field name="ProductServiceIdQualifier1" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId1" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+  <Field name="Size" type="double" required="y" min="1" max="8" comment="Size of supplier units in pack"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="DateQualifier" required="y" min="2" max="2" validation="T432" comment="Code specifying type of date"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="InnerPack" type="long" required="y" min="1" max="6" comment="The number of eaches per inner container"/>
+  <Field name="AllowanceOrChargeRate" type="double" required="y" min="1" max="15" comment="Allowance or Charge Rate per Unit"/>
+  <Field name="ProductServiceIdQualifier2" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier3" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId3" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+</Segment>

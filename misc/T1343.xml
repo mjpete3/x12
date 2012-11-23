@@ -1,0 +1,74 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1343.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1343">
+  <Entry name="A" value="Anesthesia"/>
+  <Entry name="L" value="Livery"/>
+  <Entry name="O" value="Other"/>
+  <Entry name="P" value="Psychologist"/>
+  <Entry name="S" value="Surgery"/>
+  <Entry name="T" value="Transportation"/>
+  <Entry name="V" value="Vision"/>
+  <Entry name="AA" value="Alcohol Abuse"/>
+  <Entry name="AM" value="Ambulance"/>
+  <Entry name="AN" value="Anesthesia Nurse"/>
+  <Entry name="CF" value="Convalescent Care Facility"/>
+  <Entry name="CH" value="Chiropractic"/>
+  <Entry name="CS" value="Christian Science Practitioner"/>
+  <Entry name="DA" value="Drug Abuse"/>
+  <Entry name="DD" value="Dentist or Dental"/>
+  <Entry name="DM" value="Durable Medical Equipment Supplier"/>
+  <Entry name="DN" value="Denturist"/>
+  <Entry name="ER" value="Emergency Room"/>
+  <Entry name="HH" value="Home Health"/>
+  <Entry name="HS" value="Hospital"/>
+  <Entry name="IF" value="Intermediate Care Facility"/>
+  <Entry name="IL" value="Independent Lab"/>
+  <Entry name="LT" value="Long-term Care"/>
+  <Entry name="MD" value="Physician or Medical"/>
+  <Entry name="MF" value="Marriage Family and Child Counselor"/>
+  <Entry name="MH" value="Mental Health"/>
+  <Entry name="MI" value="Midwife"/>
+  <Entry name="MO" value="Mail Order Drug"/>
+  <Entry name="MS" value="Multiple Type of Service"/>
+  <Entry name="NM" value="Non-medical Provider"/>
+  <Entry name="NP" value="Nurse Practitioner"/>
+  <Entry name="NS" value="Nursing Service"/>
+  <Entry name="OC" value="Occupational Therapy"/>
+  <Entry name="OP" value="Optometrist"/>
+  <Entry name="OT" value="Optician"/>
+  <Entry name="OX" value="Oxygen"/>
+  <Entry name="PA" value="Physician's Assistant"/>
+  <Entry name="PD" value="Podiatry"/>
+  <Entry name="PE" value="Parental or Enteral (PEN)"/>
+  <Entry name="PF" value="Physician's Office-based Facility"/>
+  <Entry name="PS" value="Psychiatric Social Worker"/>
+  <Entry name="PT" value="Physical Therapy"/>
+  <Entry name="RX" value="Pharmacy or Drug"/>
+  <Entry name="SC" value="Screening"/>
+  <Entry name="SN" value="Skilled Nursing"/>
+  <Entry name="ST" value="Speech or Language Therapy"/>
+  <Entry name="TX" value="Taxi"/>
+</Table>

@@ -1,0 +1,288 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T479.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T479">
+  <Entry name="AA" value="Account Analysis (822)"/>
+  <Entry name="AB" value="Logistics Service Request (219)"/>
+  <Entry name="AC" value="Associated Data (102)"/>
+  <Entry name="AD" value="Individual Life, Annuity and Disability Application (267)"/>
+  <Entry name="AE" value="Premium Audit Request and Return (187)"/>
+  <Entry name="AF" value="Application for Admission to Educational Institutions (189)"/>
+  <Entry name="AG" value="Application Advice (824)"/>
+  <Entry name="AH" value="Logistics Service Response (220)"/>
+  <Entry name="AI" value="Automotive Inspection Detail (928)"/>
+  <Entry name="AK" value="Student Educational Record (Transcript) Acknowledgment (131)"/>
+  <Entry name="AL" value="Set Cancellation (998) and Application Acceptance/Rejection Advice (499)"/>
+  <Entry name="AM" value="Item Information Request (893)"/>
+  <Entry name="AN" value="Return Merchandise Authorization and Notification (180)"/>
+  <Entry name="AO" value="Income or Asset Offset (521)"/>
+  <Entry name="AP" value="Abandoned Property Filings (103)"/>
+  <Entry name="AQ" value="U.S. Customs Manifest (309)"/>
+  <Entry name="AR" value="Warehouse Stock Transfer Shipment Advice (943)"/>
+  <Entry name="AS" value="Transportation Appointment Schedule Information (163)"/>
+  <Entry name="AT" value="Animal Toxicological Data (249)"/>
+  <Entry name="AU" value="U.S. Customs Status Information (350)"/>
+  <Entry name="AV" value="U.S. Customs Carrier General Order Status (352)"/>
+  <Entry name="AW" value="Warehouse Inventory Adjustment Advice (947)"/>
+  <Entry name="AX" value="U.S. Customs Events Advisory Details (353)"/>
+  <Entry name="AY" value="U.S. Customs Automated Manifest Archive Status (354)"/>
+  <Entry name="AZ" value="U.S. Customs Acceptance/Rejection (355)"/>
+  <Entry name="BA" value="U.S. Customs Permit to Transfer Request (356)"/>
+  <Entry name="BB" value="U.S. Customs In-Bond Information (357)"/>
+  <Entry name="BC" value="Business Credit Report (155)"/>
+  <Entry name="BD" value="U.S. Customs Consist Information (358)"/>
+  <Entry name="BE" value="Benefit Enrollment and Maintenance (834)"/>
+  <Entry name="BF" value="Business Entity Filings (105)"/>
+  <Entry name="BL" value="Motor Carrier Bill of Lading (211)"/>
+  <Entry name="BS" value="Shipment and Billing Notice (857)"/>
+  <Entry name="CA" value="Purchase Order Change Acknowledgment/Request - Seller Initiated (865)"/>
+  <Entry name="CB" value="Unemployment Insurance Tax Claim or Charge Information (153)"/>
+  <Entry name="CC" value="Clauses and Provisions (504)"/>
+  <Entry name="CD" value="Credit/Debit Adjustment (812)"/>
+  <Entry name="CE" value="Cartage Work Assignment (222)"/>
+  <Entry name="CF" value="Corporate Financial Adjustment Information (844 and 849)"/>
+  <Entry name="CH" value="Car Handling Information (420)"/>
+  <Entry name="CI" value="Consolidated Service Invoice/Statement (811)"/>
+  <Entry name="CJ" value="Manufacturer Coupon Family Code Structure (877)"/>
+  <Entry name="CK" value="Manufacturer Coupon Redemption Detail (881)"/>
+  <Entry name="CL" value="Election Campaign and Lobbyist Reporting (113)"/>
+  <Entry name="CM" value="Component Parts Content (871)"/>
+  <Entry name="CN" value="Coupon Notification (887)"/>
+  <Entry name="CO" value="Cooperative Advertising Agreements (290)"/>
+  <Entry name="CP" value="Electronic Proposal Information (251, 805)"/>
+  <Entry name="CQ" value="Commodity Movement Services Response (874)"/>
+  <Entry name="CR" value="Rail Carhire Settlements (414)"/>
+  <Entry name="CS" value="Cryptographic Service Message (815)"/>
+  <Entry name="CT" value="Application Control Totals (831)"/>
+  <Entry name="CU" value="Commodity Movement Services (873)"/>
+  <Entry name="CV" value="Commercial Vehicle Safety and Credentials Information Exchange (285)"/>
+  <Entry name="CW" value="Educational Institution Record (133)"/>
+  <Entry name="D3" value="Contract Completion Status (567)"/>
+  <Entry name="D4" value="Contract Abstract (561)"/>
+  <Entry name="D5" value="Contract Payment Management Report (568)"/>
+  <Entry name="DA" value="Debit Authorization (828)"/>
+  <Entry name="DD" value="Shipment Delivery Discrepancy Information (854)"/>
+  <Entry name="DF" value="Market Development Fund Allocation (883)"/>
+  <Entry name="DI" value="Dealer Information (128)"/>
+  <Entry name="DM" value="Shipper's Car Order (422)"/>
+  <Entry name="DS" value="Data Status Tracking (242)"/>
+  <Entry name="DX" value="Direct Exchange Delivery and Return Information (894, 895)"/>
+  <Entry name="EC" value="Educational Course Inventory (188)"/>
+  <Entry name="ED" value="Student Educational Record (Transcript) (130)"/>
+  <Entry name="EI" value="Railroad Equipment Inquiry or Advice (456)"/>
+  <Entry name="EP" value="Environmental Compliance Reporting (179)"/>
+  <Entry name="ER" value="Revenue Receipts Statement (170)"/>
+  <Entry name="ES" value="Notice of Employment Status (540)"/>
+  <Entry name="EV" value="Railroad Event Report (451)"/>
+  <Entry name="EX" value="Excavation Communication (620)"/>
+  <Entry name="FA" value="Functional Acknowledgment (997)"/>
+  <Entry name="FB" value="Freight Invoice (859)"/>
+  <Entry name="FC" value="Court and Law Enforcement Information (175, 176)"/>
+  <Entry name="FG" value="Motor Carrier Loading and Route Guide (217)"/>
+  <Entry name="FH" value="Motor Carrier Tariff Information (218)"/>
+  <Entry name="FR" value="Financial Reporting (821, 827)"/>
+  <Entry name="FT" value="File Transfer (996)"/>
+  <Entry name="GB" value="Average Agreement Demurrage (423)"/>
+  <Entry name="GC" value="Damage Claim Transaction Sets (920, 924, 925, 926)"/>
+  <Entry name="GE" value="General Request, Response or Confirmation (814)"/>
+  <Entry name="GF" value="Response to a Load Tender (990)"/>
+  <Entry name="GL" value="Intermodal Group Loading Plan (715)"/>
+  <Entry name="GP" value="Grocery Products Invoice (880)"/>
+  <Entry name="GR" value="Statistical Government Information (152)"/>
+  <Entry name="GT" value="Grant or Assistance Application (194)"/>
+  <Entry name="HB" value="Eligibility, Coverage or Benefit Information (271)"/>
+  <Entry name="HC" value="Health Care Claim (837)"/>
+  <Entry name="HI" value="Health Care Services Review Information (278)"/>
+  <Entry name="HN" value="Health Care Claim Status Notification (277)"/>
+  <Entry name="HP" value="Health Care Claim Payment/Advice (835)"/>
+  <Entry name="HR" value="Health Care Claim Status Request (276)"/>
+  <Entry name="HS" value="Eligibility, Coverage or Benefit Inquiry (270)"/>
+  <Entry name="HU" value="Human Resource Information (132)"/>
+  <Entry name="HV" value="Health Care Benefit Coordination Verification (269)"/>
+  <Entry name="IA" value="Air Freight Details and Invoice (110, 980)"/>
+  <Entry name="IB" value="Inventory Inquiry/Advice (846)"/>
+  <Entry name="IC" value="Rail Advance Interchange Consist (418)"/>
+  <Entry name="ID" value="Insurance/Annuity Application Status (273)"/>
+  <Entry name="IE" value="Insurance Producer Administration (252)"/>
+  <Entry name="IF" value="Individual Insurance Policy and Client Information (111)"/>
+  <Entry name="IG" value="Direct Store Delivery Summary Information (882)"/>
+  <Entry name="IH" value="Commercial Vehicle Safety Reports (284)"/>
+  <Entry name="IJ" value="Report of Injury, Illness or Incident (148)"/>
+  <Entry name="IM" value="Motor Carrier Freight Details and Invoice (210, 980)"/>
+  <Entry name="IN" value="Invoice Information (810)"/>
+  <Entry name="IO" value="Ocean Shipment Billing Details (310, 312, 980)"/>
+  <Entry name="IR" value="Rail Carrier Freight Details and Invoice (410, 980)"/>
+  <Entry name="IS" value="Estimated Time of Arrival and Car Scheduling (421)"/>
+  <Entry name="JB" value="Joint Interest Billing and Operating Expense Statement (819)"/>
+  <Entry name="KM" value="Commercial Vehicle Credentials (286)"/>
+  <Entry name="LA" value="Federal Communications Commission (FCC) License Application (195)"/>
+  <Entry name="LB" value="Lockbox (823)"/>
+  <Entry name="LI" value="Locomotive Information (436)"/>
+  <Entry name="LN" value="Property and Casualty Loss Notification (272)"/>
+  <Entry name="LR" value="Logistics Reassignment (536)"/>
+  <Entry name="LS" value="Asset Schedule (851)"/>
+  <Entry name="LT" value="Student Loan Transfer and Status Verification (144)"/>
+  <Entry name="MA" value="Motor Carrier Summary Freight Bill Manifest (224)"/>
+  <Entry name="MC" value="Request for Motor Carrier Rate Proposal (107)"/>
+  <Entry name="MD" value="Department of Defense Inventory Management (527)"/>
+  <Entry name="ME" value="Mortgage Origination (198, 200, 201, 245, 261, 262, 263, 833, 872)"/>
+  <Entry name="MF" value="Market Development Fund Settlement (884)"/>
+  <Entry name="MG" value="Mortgage Servicing Transaction Sets (203, 206, 260, 264, 266)"/>
+  <Entry name="MH" value="Motor Carrier Rate Proposal (106)"/>
+  <Entry name="MI" value="Motor Carrier Shipment Status Inquiry (213)"/>
+  <Entry name="MJ" value="Secondary Mortgage Market Loan Delivery (202)"/>
+  <Entry name="MK" value="Response to a Motor Carrier Rate Proposal (108)"/>
+  <Entry name="MM" value="Medical Event Reporting (500)"/>
+  <Entry name="MN" value="Mortgage Note (205)"/>
+  <Entry name="MO" value="Maintenance Service Order (650)"/>
+  <Entry name="MP" value="Motion Picture Booking Confirmation (159)"/>
+  <Entry name="MQ" value="Consolidators Freight Bill and Invoice (223)"/>
+  <Entry name="MR" value="Multilevel Railcar Load Details (125)"/>
+  <Entry name="MS" value="Material Safety Data Sheet (848)"/>
+  <Entry name="MT" value="Electronic Form Structure (868)"/>
+  <Entry name="MV" value="Material Obligation Validation (517)"/>
+  <Entry name="MW" value="Rail Waybill Response (427)"/>
+  <Entry name="MX" value="Material Claim (847)"/>
+  <Entry name="MY" value="Response to a Cartage Work Assignment (225)"/>
+  <Entry name="MZ" value="Motor Carrier Package Status (240)"/>
+  <Entry name="NC" value="Nonconformance Report (842)"/>
+  <Entry name="NL" value="Name and Address Lists (101)"/>
+  <Entry name="NP" value="Notice of Power of Attorney (157)"/>
+  <Entry name="NR" value="Secured Receipt or Acknowledgment (993)"/>
+  <Entry name="NT" value="Notice of Tax Adjustment or Assessment (149)"/>
+  <Entry name="OC" value="Cargo Insurance Advice of Shipment (362)"/>
+  <Entry name="OG" value="Order Group - Grocery (875, 876)"/>
+  <Entry name="OR" value="Organizational Relationships (816)"/>
+  <Entry name="OW" value="Warehouse Shipping Order (940)"/>
+  <Entry name="PA" value="Price Authorization Acknowledgment/Status (845)"/>
+  <Entry name="PB" value="Railroad Parameter Trace Registration (455)"/>
+  <Entry name="PC" value="Purchase Order Change Request - Buyer Initiated (860)"/>
+  <Entry name="PD" value="Product Activity Data (852)"/>
+  <Entry name="PE" value="Periodic Compensation (256)"/>
+  <Entry name="PF" value="Annuity Activity (268)"/>
+  <Entry name="PG" value="Insurance Plan Description (100)"/>
+  <Entry name="PH" value="Pricing History (503)"/>
+  <Entry name="PI" value="Patient Information (275)"/>
+  <Entry name="PJ" value="Project Schedule Reporting (806)"/>
+  <Entry name="PK" value="Project Cost Reporting (839) and Contractor Cost Data Reporting (196)"/>
+  <Entry name="PL" value="Railroad Problem Log Inquiry or Advice (452)"/>
+  <Entry name="PN" value="Product Source Information (244)"/>
+  <Entry name="PO" value="Purchase Order (850)"/>
+  <Entry name="PQ" value="Property Damage Report (112)"/>
+  <Entry name="PR" value="Purchase Order Acknowledgment (855)"/>
+  <Entry name="PS" value="Planning Schedule with Release Capability (830)"/>
+  <Entry name="PT" value="Product Transfer and Resale Report (867)"/>
+  <Entry name="PU" value="Motor Carrier Shipment Pick-up Notification (216)"/>
+  <Entry name="PV" value="Purchase Order Shipment Management Document (250)"/>
+  <Entry name="PW" value="Healthcare Provider Information (274)"/>
+  <Entry name="PY" value="Payment Cancellation Request (829)"/>
+  <Entry name="QG" value="Product Information (878, 879, 888, 889, 896)"/>
+  <Entry name="QM" value="Transportation Carrier Shipment Status Message (214)"/>
+  <Entry name="QO" value="Ocean Shipment Status Information (313, 315)"/>
+  <Entry name="RA" value="Payment Order/Remittance Advice (820)"/>
+  <Entry name="RB" value="Railroad Clearance (470)"/>
+  <Entry name="RC" value="Receiving Advice/Acceptance Certificate (861)"/>
+  <Entry name="RD" value="Royalty Regulatory Report (185)"/>
+  <Entry name="RE" value="Warehouse Stock Receipt Advice (944)"/>
+  <Entry name="RF" value="Request for Routing Instructions (753)"/>
+  <Entry name="RG" value="Routing Instructions (754)"/>
+  <Entry name="RH" value="Railroad Reciprocal Switch File (433)"/>
+  <Entry name="RI" value="Routing and Carrier Instruction (853)"/>
+  <Entry name="RJ" value="Railroad Mark Register Update Activity (434)"/>
+  <Entry name="RK" value="Standard Transportation Commodity Code Master (435)"/>
+  <Entry name="RL" value="Rail Industrial Switch List (423)"/>
+  <Entry name="RM" value="Railroad Station Master File (431)"/>
+  <Entry name="RN" value="Requisition Transaction (511)"/>
+  <Entry name="RO" value="Ocean Booking Information (300, 301, 303)"/>
+  <Entry name="RP" value="Commission Sales Report (818)"/>
+  <Entry name="RQ" value="Request for Quotation (840) and Procurement Notices (836)"/>
+  <Entry name="RR" value="Response to Request For Quotation (843)"/>
+  <Entry name="RS" value="Order Status Information (869, 870)"/>
+  <Entry name="RT" value="Report of Test Results (863)"/>
+  <Entry name="RU" value="Railroad Retirement Activity (429)"/>
+  <Entry name="RV" value="Railroad Junctions and Interchanges Activity (437)"/>
+  <Entry name="RW" value="Rail Revenue Waybill (426)"/>
+  <Entry name="RX" value="Rail Deprescription (432)"/>
+  <Entry name="RY" value="Request for Student Educational Record (Transcript) (146)"/>
+  <Entry name="RZ" value="Response to Request for Student Educational Record (Transcript) (147)"/>
+  <Entry name="SA" value="Air Shipment Information (104)"/>
+  <Entry name="SB" value="Switch Rails (424)"/>
+  <Entry name="SC" value="Price/Sales Catalog (832)"/>
+  <Entry name="SD" value="Student Loan Pre-Claims and Claims (191)"/>
+  <Entry name="SE" value="Shipper's Export Declaration (601)"/>
+  <Entry name="SG" value="SG Receiving Advice - Grocery (885)"/>
+  <Entry name="SH" value="Ship Notice/Manifest (856)"/>
+  <Entry name="SI" value="Shipment Information (858)"/>
+  <Entry name="SJ" value="Transportation Automatic Equipment Identification (160)"/>
+  <Entry name="SL" value="Student Aid Origination Record (135, 139)"/>
+  <Entry name="SM" value="Motor Carrier Load Tender (204)"/>
+  <Entry name="SN" value="Rail Route File Maintenance (475)"/>
+  <Entry name="SO" value="Ocean Shipment Information (304, 309, 311, 317, 319,  322, 323, 324, 325, 350, 352, 353, 354, 355, 356, 357, 358, 361)"/>
+  <Entry name="SP" value="Specifications/Technical Information (841)"/>
+  <Entry name="SQ" value="Production Sequence (866)"/>
+  <Entry name="SR" value="Rail Carrier Shipment Information (404, 419)"/>
+  <Entry name="SS" value="Shipping Schedule (862)"/>
+  <Entry name="ST" value="Railroad Service Commitment Advice (453)"/>
+  <Entry name="SU" value="Account Assignment/Inquiry and Service/Status (248)"/>
+  <Entry name="SV" value="Student Enrollment Verification (190)"/>
+  <Entry name="SW" value="Warehouse Shipping Advice (945)"/>
+  <Entry name="TA" value="Electronic Filing of Tax Return Data Acknowledgment (151)"/>
+  <Entry name="TB" value="Trailer or Container Repair Billing (412)"/>
+  <Entry name="TD" value="Trading Partner Profile (838)"/>
+  <Entry name="TE" value="Tax or Fee Exemption Certification (283)"/>
+  <Entry name="TF" value="Electronic Filing of Tax Return Data (813)"/>
+  <Entry name="TI" value="Tax Information Exchange (826)"/>
+  <Entry name="TM" value="Motor Carrier Delivery Trailer Manifest (212)"/>
+  <Entry name="TN" value="Tax Rate Notification (150)"/>
+  <Entry name="TO" value="Real Estate Title Services (197, 199, 265)"/>
+  <Entry name="TP" value="Rail Rate Transactions (460, 463, 466, 468, 485, 486, 490, 492, 494)"/>
+  <Entry name="TR" value="Train Sheet (161)"/>
+  <Entry name="TS" value="Transportation Services Tender (602)"/>
+  <Entry name="TT" value="Education Testing Results Request and Report (138)"/>
+  <Entry name="TU" value="Trailer Usage Report (227)"/>
+  <Entry name="TX" value="Text Message (864)"/>
+  <Entry name="UA" value="Retail Account Characteristics (885)"/>
+  <Entry name="UB" value="Customer Call Reporting (886)"/>
+  <Entry name="UC" value="Secured Interest Filing (154)"/>
+  <Entry name="UD" value="Deduction Research Report (891)"/>
+  <Entry name="UI" value="Underwriting Information Services (255)"/>
+  <Entry name="UP" value="Motor Carrier Pick-up Manifest (215)"/>
+  <Entry name="UW" value="Insurance Underwriting Requirements Reporting (186)"/>
+  <Entry name="VA" value="Vehicle Application Advice (126)"/>
+  <Entry name="VB" value="Vehicle Baying Order (127)"/>
+  <Entry name="VC" value="Vehicle Shipping Order (120)"/>
+  <Entry name="VD" value="Vehicle Damage (124)"/>
+  <Entry name="VE" value="Vessel Content Details (109)"/>
+  <Entry name="VH" value="Vehicle Carrier Rate Update (129)"/>
+  <Entry name="VI" value="Voter Registration Information (280)"/>
+  <Entry name="VS" value="Vehicle Service (121)"/>
+  <Entry name="WA" value="Product Service Transaction Sets (140, 141, 142, 143)"/>
+  <Entry name="WB" value="Rail Carrier Waybill Interchange (417)"/>
+  <Entry name="WG" value="Vendor Performance Review (501)"/>
+  <Entry name="WI" value="Wage Determination (288)"/>
+  <Entry name="WL" value="Well Information (625)"/>
+  <Entry name="WR" value="Shipment Weights (440)"/>
+  <Entry name="WT" value="Rail Waybill Request (425)"/>
+</Table>

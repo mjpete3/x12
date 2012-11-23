@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SMS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SMS" comment="To identify the specific railroad carrier codes associated with the station">
+  <Field name="StandardCarrierAlphaCode1" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="FreightStationAccountingCode1" min="1" max="5" comment="Code (Freight Station Accounting) (AAR Managed Code for Locations)"/>
+  <Field name="Rule260JunctionCode" required="y" min="1" max="5" comment="Code indicating railroad interchange locations"/>
+  <Field name="PostalCode" required="y" min="3" max="15" comment="Code defining international postal zone code excluding punctuation and blanks (zip code for United States)"/>
+  <Field name="ReciprocalSwitchCode" required="y" min="1" max="1" validation="T674" comment="Code identifying the restriction of service being provided by the serving carrier"/>
+  <Field name="TimeCode" required="y" min="2" max="2" validation="T623" comment="Code identifying the time. In accordance with International Standards Organization standard 8601, time can be specified by a + or - and an indication in hours in relation to Universal Time Coordinate (UTC) time; since + is a restricted character, + and - are substituted by P and M in the codes that follow"/>
+  <Field name="LocationIdentifier1" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="LocationIdentifier2" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="IdentificationCode" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="StandardCarrierAlphaCode2" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="FreightStationAccountingCode2" required="y" min="1" max="5" comment="Code (Freight Station Accounting) (AAR Managed Code for Locations)"/>
+</Segment>

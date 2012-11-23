@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T808.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T808">
+  <Entry name="ADI" value="Additional Descriptive Information Not Required by Regulation but Desired to Accompany the Movement by the Shipper"/>
+  <Entry name="CAO" value="Cargo Airlift Only"/>
+  <Entry name="D13" value="DOT - 113, Do Not Bump or Cut Off Car While in Motion"/>
+  <Entry name="DRC" value="Damaged Car Number"/>
+  <Entry name="DWW" value="Dangerous When Wet"/>
+  <Entry name="EMS" value="Emergency Schedule (EMS) Page Number"/>
+  <Entry name="HOT" value="Identifies Products in a Heated Molten State"/>
+  <Entry name="HZC" value="Hazardous Substance Constituents"/>
+  <Entry name="INH" value="Inhalation Hazard"/>
+  <Entry name="LQY" value="Limited Quantity"/>
+  <Entry name="MFA" value="Medical First Aid Guide (MFAG) Page Number"/>
+  <Entry name="MOS" value="Maximum Operating Speed"/>
+  <Entry name="MPI" value="Marine Pollutant"/>
+  <Entry name="PIH" value="Poison - Inhalation Hazard"/>
+  <Entry name="POI" value="Poison"/>
+  <Entry name="RAM" value="Radioactive Material Data"/>
+  <Entry name="TEC" value="Technical or Chemical Group Name"/>
+  <Entry name="TNM" value="Trade Name"/>
+  <Entry name="WST" value="Waste Declaration"/>
+</Table>

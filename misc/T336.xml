@@ -1,0 +1,104 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T336.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T336">
+  <Entry name="01" value="Basic"/>
+  <Entry name="02" value="End of Month (EOM)"/>
+  <Entry name="03" value="Fixed Date"/>
+  <Entry name="04" value="Deferred or Installment"/>
+  <Entry name="05" value="Discount Not Applicable"/>
+  <Entry name="06" value="Mixed"/>
+  <Entry name="07" value="Extended"/>
+  <Entry name="08" value="Basic Discount Offered"/>
+  <Entry name="09" value="Proximo"/>
+  <Entry name="10" value="Instant"/>
+  <Entry name="11" value="Elective"/>
+  <Entry name="12" value="10 Days After End of Month (10 EOM)"/>
+  <Entry name="13" value="Seller to advise buyer"/>
+  <Entry name="14" value="Previously agreed upon"/>
+  <Entry name="15" value="Special Proximo"/>
+  <Entry name="16" value="Prompt Payment Act"/>
+  <Entry name="17" value="Terms not Applicable"/>
+  <Entry name="18" value="Fixed Date, Late Payment Penalty Applies"/>
+  <Entry name="19" value="Liquidation"/>
+  <Entry name="20" value="Progress Payment"/>
+  <Entry name="21" value="Fast Pay"/>
+  <Entry name="22" value="Cash Discount Terms Apply"/>
+  <Entry name="23" value="Payment Due Upon Receipt of Invoice"/>
+  <Entry name="24" value="Anticipation"/>
+  <Entry name="25" value="Cash Account"/>
+  <Entry name="26" value="Cash on Advance"/>
+  <Entry name="27" value="Cash on Arrival"/>
+  <Entry name="28" value="Cash per Vendor Request"/>
+  <Entry name="29" value="Cash by State Law"/>
+  <Entry name="30" value="Cash with Order"/>
+  <Entry name="31" value="Cash on Delivery (COD)"/>
+  <Entry name="32" value="Lease Agreement"/>
+  <Entry name="33" value="Net Month Following Invoice (MFI)"/>
+  <Entry name="34" value="Sell by Note"/>
+  <Entry name="35" value="Supplier Floor Plan"/>
+  <Entry name="36" value="Contract Basis"/>
+  <Entry name="37" value="Credit Controlled"/>
+  <Entry name="38" value="Dating Given"/>
+  <Entry name="39" value="Trade Acceptance"/>
+  <Entry name="40" value="Bill to Bill"/>
+  <Entry name="41" value="Letter of Credit"/>
+  <Entry name="42" value="Lump Sum"/>
+  <Entry name="43" value="Fixed Fee"/>
+  <Entry name="44" value="Cost Plus"/>
+  <Entry name="45" value="Bank Transfer"/>
+  <Entry name="46" value="Basic Commission Terms"/>
+  <Entry name="47" value="Bill of Exchange"/>
+  <Entry name="48" value="Cash Against Documents"/>
+  <Entry name="49" value="Certified Check"/>
+  <Entry name="50" value="Discount with Advance Payment"/>
+  <Entry name="52" value="Discount with Prompt Pay"/>
+  <Entry name="54" value="Installment Payments are Due Annually"/>
+  <Entry name="55" value="Installment Payments are Due Semi-annually"/>
+  <Entry name="56" value="Installment Payments are Due Monthly"/>
+  <Entry name="57" value="Installment Payments are Due Quarterly"/>
+  <Entry name="58" value="Irrevocable Letters of Credit"/>
+  <Entry name="61" value="Payment Order Through Bank"/>
+  <Entry name="63" value="Promissory Notes"/>
+  <Entry name="64" value="Secured Account"/>
+  <Entry name="65" value="Letters of Credit at Sight"/>
+  <Entry name="67" value="Deposit Required"/>
+  <Entry name="68" value="Documents against Acceptance"/>
+  <Entry name="70" value="Documents against Payment"/>
+  <Entry name="71" value="Inter-company Account"/>
+  <Entry name="72" value="Unknown"/>
+  <Entry name="73" value="Partial Advance"/>
+  <Entry name="74" value="Payment Upon Completion"/>
+  <Entry name="75" value="United States Funds Required"/>
+  <Entry name="76" value="Usance Bill"/>
+  <Entry name="77" value="Progressive Discount"/>
+  <Entry name="CA" value="Cancellation Option"/>
+  <Entry name="CO" value="Consignment"/>
+  <Entry name="CT" value="Commercial Item Finance"/>
+  <Entry name="NC" value="No Charge"/>
+  <Entry name="PP" value="Prepayment"/>
+  <Entry name="RO" value="Redemption Options"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

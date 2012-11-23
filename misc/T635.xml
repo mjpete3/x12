@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T635.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T635">
+  <Entry name="0" value="No rates available applicable to requested movement."/>
+  <Entry name="1" value="Rates provided per request."/>
+  <Entry name="2" value="Rates provided because rates earlier provided have been changed by a blanket change."/>
+  <Entry name="3" value="Rates provided because rates earlier provided have been changed by other than a blanket change."/>
+  <Entry name="4" value="Rates provided because new rates have been added applicable to a previously requested movement."/>
+  <Entry name="5" value="Successfully Processed"/>
+  <Entry name="6" value="Unsuccessfully Processed"/>
+  <Entry name="9" value="Group Definition Request"/>
+  <Entry name="A" value="Provide rates applicable to a specific movement and continue to provide rates in the future applicable to the specific movement."/>
+  <Entry name="C" value="Rate or Division Change"/>
+  <Entry name="D" value="Cease providing rates applicable to a specific movement."/>
+  <Entry name="F" value="No Rates Provided Due To Invalid Origin Geography"/>
+  <Entry name="G" value="General Price Request or Response"/>
+  <Entry name="H" value="Historic Price Request or Response"/>
+  <Entry name="I" value="Provide rates applicable to specific movement."/>
+  <Entry name="P" value="No Rates Provided Due To Invalid Commodity"/>
+  <Entry name="Q" value="Price Quote Request or Response"/>
+  <Entry name="S" value="Price Distribution Send"/>
+  <Entry name="T" value="No Rates Provided Due To Invalid Destination Geography"/>
+  <Entry name="W" value="Waybill Price Request or Response"/>
+</Table>

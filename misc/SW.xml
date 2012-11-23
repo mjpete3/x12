@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SW.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SW" comment="To transmit codes, descriptions, and values for switching performed">
+  <Field name="TariffApplicationCode" min="1" max="1" validation="T257" comment="Code indicating to which traffic a tariff applies"/>
+  <Field name="ConditionSegmentLogicalConnector" min="1" max="3" comment="Code indicating how a specific segment's statement of a rate restriction is evaluated, and its relationship to rate restrictions stated within other segments of the same segment definition."/>
+  <Field name="ConditionCode" min="4" max="4" comment="Code defined in the official railway equipment register which identifies the type of restriction or provision applicable to a rate; when combined with element 499, a specific rate restriction or provision is represented"/>
+  <Field name="ConditionValue" min="1" max="10" comment="Identifies rate restrictions or provisions"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Rate" type="double" required="y" min="1" max="9" comment="Rate expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="Rule260JunctionCode" required="y" min="1" max="5" comment="Code indicating railroad interchange locations"/>
+  <Field name="AssignedNumber" type="long" required="y" min="1" max="6" comment="Number assigned for differentiation within a transaction set"/>
+</Segment>

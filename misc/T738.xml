@@ -1,0 +1,1018 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T738.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T738">
+  <Entry name="1" value="Control Efficiency"/>
+  <Entry name="2" value="Capture Efficiency"/>
+  <Entry name="3" value="Photonflux Density"/>
+  <Entry name="4" value="Throughput Rate"/>
+  <Entry name="5" value="Cloud Cover"/>
+  <Entry name="6" value="Velocity"/>
+  <Entry name="7" value="Plume Height"/>
+  <Entry name="8" value="Individuals"/>
+  <Entry name="9" value="Storage Limits"/>
+  <Entry name="A" value="Consolidated Weight"/>
+  <Entry name="B" value="Billed Weight"/>
+  <Entry name="C" value="Actual New Repeated for Combination"/>
+  <Entry name="D" value="Destination Weight Agreement"/>
+  <Entry name="E" value="Estimated New Weight"/>
+  <Entry name="F" value="Deficit Weight"/>
+  <Entry name="G" value="Gross Weight"/>
+  <Entry name="H" value="Ground Water Reference Point"/>
+  <Entry name="I" value="Heat Input"/>
+  <Entry name="L" value="Legal Weight"/>
+  <Entry name="M" value="Minimum Weight (for Weight)"/>
+  <Entry name="N" value="Actual Net Weight"/>
+  <Entry name="O" value="Excess Weight Over Maximum"/>
+  <Entry name="Q" value="Volatile Organic Compounds Plus Water"/>
+  <Entry name="R" value="Per Unit Dunnage"/>
+  <Entry name="S" value="State Weight"/>
+  <Entry name="T" value="Tare Weight"/>
+  <Entry name="U" value="Weight per Unit"/>
+  <Entry name="V" value="Oxygenation Level"/>
+  <Entry name="W" value="Reformulated Fuel Level"/>
+  <Entry name="X" value="Maximum Weight (for Rate)"/>
+  <Entry name="10" value="Painting Costs"/>
+  <Entry name="11" value="Structural Costs"/>
+  <Entry name="12" value="Appliances"/>
+  <Entry name="13" value="Utilities"/>
+  <Entry name="14" value="Carpet or Floors"/>
+  <Entry name="15" value="Other Repairs"/>
+  <Entry name="16" value="Landscaping"/>
+  <Entry name="18" value="Roof"/>
+  <Entry name="19" value="Windows"/>
+  <Entry name="1F" value="Radio Frequency"/>
+  <Entry name="20" value="Cleaning or Trash Removal"/>
+  <Entry name="21" value="Probable Sales Price"/>
+  <Entry name="22" value="Proximity"/>
+  <Entry name="23" value="Repairs and Improvements"/>
+  <Entry name="24" value="Contributory Value of Repairs and Improvements"/>
+  <Entry name="25" value="Marketing Time"/>
+  <Entry name="26" value="Closed Comparable Sales"/>
+  <Entry name="27" value="Competitive Listings in Price Range"/>
+  <Entry name="28" value="Financing Concessions"/>
+  <Entry name="29" value="Marketing Concessions"/>
+  <Entry name="2F" value="Alternate Radio Frequency"/>
+  <Entry name="30" value="Probable Net Price"/>
+  <Entry name="31" value="Suggested Initial List Price"/>
+  <Entry name="32" value="Value Change"/>
+  <Entry name="33" value="Probable Final Value"/>
+  <Entry name="34" value="Occupancy Rate"/>
+  <Entry name="35" value="Number of Living Units"/>
+  <Entry name="36" value="Number of Phases"/>
+  <Entry name="37" value="Number of Active Listings"/>
+  <Entry name="38" value="Price Active Listings"/>
+  <Entry name="39" value="Marketing Time"/>
+  <Entry name="3A" value="Target Depth"/>
+  <Entry name="3B" value="Current Depth"/>
+  <Entry name="3C" value="Total Depth"/>
+  <Entry name="3D" value="Well Test Before Oil"/>
+  <Entry name="3E" value="Well Test Before Gas"/>
+  <Entry name="3F" value="Well Test Before Water"/>
+  <Entry name="3G" value="Well Test After Oil"/>
+  <Entry name="3H" value="Well Test After Gas"/>
+  <Entry name="3I" value="Well Test After Water"/>
+  <Entry name="3J" value="Estimated Depth of Operations"/>
+  <Entry name="40" value="Price Per Gross Living Area"/>
+  <Entry name="41" value="Built-up Rate"/>
+  <Entry name="42" value="Vacant Rate"/>
+  <Entry name="43" value="Typical Rents"/>
+  <Entry name="44" value="Neighborhood Apartment Vacancy"/>
+  <Entry name="45" value="Number of Admissions"/>
+  <Entry name="48" value="Cost of Hire"/>
+  <Entry name="49" value="Frontage"/>
+  <Entry name="4F" value="Squelch Tone"/>
+  <Entry name="50" value="Gross Sales"/>
+  <Entry name="51" value="Number of Employees"/>
+  <Entry name="52" value="Payroll"/>
+  <Entry name="53" value="Per Capita or Each"/>
+  <Entry name="54" value="Remuneration"/>
+  <Entry name="56" value="Total Cost"/>
+  <Entry name="57" value="Total Mileage"/>
+  <Entry name="58" value="Number of Rating Units"/>
+  <Entry name="5F" value="Height above Ground"/>
+  <Entry name="62" value="Garage Employee Payroll Maximum"/>
+  <Entry name="63" value="Employee Gross Wage Less Allowable Deductions"/>
+  <Entry name="65" value="Garage Employee Average Hours Worked Per Week"/>
+  <Entry name="66" value="Garage (Dealers) Employee Weeks Worked"/>
+  <Entry name="68" value="Gross Wage"/>
+  <Entry name="6F" value="Gain"/>
+  <Entry name="78" value="Subcontractor - Labor and Materials"/>
+  <Entry name="79" value="Subcontractor - Labor Only"/>
+  <Entry name="8F" value="Directional Height above Average Terrain"/>
+  <Entry name="A1" value="Acids"/>
+  <Entry name="A2" value="Adsorption"/>
+  <Entry name="A3" value="Aging Time"/>
+  <Entry name="A4" value="Aromatics"/>
+  <Entry name="A5" value="Average Differential Pressure"/>
+  <Entry name="A6" value="Average Static Pressure"/>
+  <Entry name="A7" value="Flame Projection Distance"/>
+  <Entry name="A9" value="Exposure"/>
+  <Entry name="AA" value="Alternating Current"/>
+  <Entry name="AB" value="Activation Energy"/>
+  <Entry name="AC" value="Actinium"/>
+  <Entry name="AD" value="Ambient Temperature"/>
+  <Entry name="AE" value="Argon"/>
+  <Entry name="AF" value="Angle of Bend"/>
+  <Entry name="AG" value="Americium"/>
+  <Entry name="AH" value="Astatine"/>
+  <Entry name="AI" value="Acidity"/>
+  <Entry name="AJ" value="Aim Gage"/>
+  <Entry name="AK" value="Volatile Organic Compounds (VOCs)"/>
+  <Entry name="AL" value="Spine Show"/>
+  <Entry name="AM" value="Average Speed"/>
+  <Entry name="AN" value="Flute Test"/>
+  <Entry name="AP" value="Average Pressure"/>
+  <Entry name="AS" value="Ash Fusion Temperature"/>
+  <Entry name="AT" value="Additive"/>
+  <Entry name="AU" value="Number of Units Projected"/>
+  <Entry name="AV" value="Age"/>
+  <Entry name="AW" value="Remaining Economic Life"/>
+  <Entry name="AX" value="Remaining Physical Life"/>
+  <Entry name="AY" value="Number of Comparable Sales"/>
+  <Entry name="AZ" value="Arbor Size"/>
+  <Entry name="B1" value="Base Number"/>
+  <Entry name="B2" value="Number of Comparable Listings"/>
+  <Entry name="B3" value="Present Land Use"/>
+  <Entry name="B4" value="Subject Phase Dwelling Units"/>
+  <Entry name="B5" value="Octanol/Water Partition Coefficient"/>
+  <Entry name="B6" value="Total Project Dwelling Units"/>
+  <Entry name="BA" value="Barium"/>
+  <Entry name="BB" value="Beryllium"/>
+  <Entry name="BC" value="Billet Size"/>
+  <Entry name="BD" value="Bias"/>
+  <Entry name="BE" value="Boron Factor"/>
+  <Entry name="BF" value="Brinell"/>
+  <Entry name="BG" value="Berkelium"/>
+  <Entry name="BH" value="Bromine"/>
+  <Entry name="BJ" value="Burst Index"/>
+  <Entry name="BK" value="Bulk"/>
+  <Entry name="BL" value="Blisters"/>
+  <Entry name="BN" value="Bend"/>
+  <Entry name="BO" value="Lateral Bow (Camber)"/>
+  <Entry name="BP" value="Boiling Point"/>
+  <Entry name="BQ" value="Breaks"/>
+  <Entry name="BR" value="Brightness"/>
+  <Entry name="BT" value="Bursts"/>
+  <Entry name="BU" value="Buckles"/>
+  <Entry name="BW" value="Basis Weight"/>
+  <Entry name="BX" value="Blood Alcohol"/>
+  <Entry name="C0" value="Color Grade"/>
+  <Entry name="C1" value="Carbonyl"/>
+  <Entry name="C2" value="Catalyst"/>
+  <Entry name="C3" value="Maximum Contraction"/>
+  <Entry name="C4" value="Color Quadrant"/>
+  <Entry name="CA" value="Caliper"/>
+  <Entry name="CC" value="Celsius"/>
+  <Entry name="CD" value="Compression"/>
+  <Entry name="CE" value="Capacitance In"/>
+  <Entry name="CF" value="Capacitance Out"/>
+  <Entry name="CG" value="Cadmium"/>
+  <Entry name="CH" value="Cesium"/>
+  <Entry name="CI" value="Curium"/>
+  <Entry name="CJ" value="Cycle Time"/>
+  <Entry name="CK" value="Californium"/>
+  <Entry name="CL" value="Cladding Thickness(% of Composite Thickness)"/>
+  <Entry name="CM" value="Cures"/>
+  <Entry name="CN" value="Chlorine"/>
+  <Entry name="CO" value="Core Loss"/>
+  <Entry name="CP" value="Crimp"/>
+  <Entry name="CQ" value="Cuts"/>
+  <Entry name="CR" value="Crosswise Spacing"/>
+  <Entry name="CS" value="Cross Section"/>
+  <Entry name="CT" value="Center-to-center"/>
+  <Entry name="CU" value="Coil Curvature"/>
+  <Entry name="CW" value="Cuttable Width"/>
+  <Entry name="CX" value="Calculated Value"/>
+  <Entry name="CY" value="Contamination"/>
+  <Entry name="D1" value="Maximum Dilatation"/>
+  <Entry name="D2" value="Dispersing Agent"/>
+  <Entry name="D3" value="Drying Agent"/>
+  <Entry name="D4" value="Dry Point"/>
+  <Entry name="D5" value="Wear"/>
+  <Entry name="D6" value="Horizontal"/>
+  <Entry name="D7" value="Distillation Fraction"/>
+  <Entry name="D8" value="Vertical"/>
+  <Entry name="D9" value="Dots per Inch"/>
+  <Entry name="DA" value="Delta Value A"/>
+  <Entry name="DB" value="Delta Value B"/>
+  <Entry name="DC" value="Ductile Class"/>
+  <Entry name="DD" value="Depth of Dents"/>
+  <Entry name="DE" value="Defects"/>
+  <Entry name="DF" value="Distance Across Flats"/>
+  <Entry name="DG" value="Direct Current"/>
+  <Entry name="DH" value="Dysprosium"/>
+  <Entry name="DI" value="Diameter"/>
+  <Entry name="DJ" value="Dominant Wave Length"/>
+  <Entry name="DK" value="Color Bits in Palette"/>
+  <Entry name="DL" value="Delta Value L"/>
+  <Entry name="DM" value="Dual Amplitude"/>
+  <Entry name="DN" value="Density"/>
+  <Entry name="DO" value="Compressed File Size"/>
+  <Entry name="DP" value="Depth"/>
+  <Entry name="DR" value="Delta R"/>
+  <Entry name="DS" value="Distance Between Points"/>
+  <Entry name="DT" value="Distance From Base Point"/>
+  <Entry name="DU" value="Draw Tension"/>
+  <Entry name="DW" value="Width, Boxcar Door"/>
+  <Entry name="DY" value="Dyeability"/>
+  <Entry name="E0" value="Extraneous Matter"/>
+  <Entry name="E1" value="End"/>
+  <Entry name="EA" value="Elongation"/>
+  <Entry name="EB" value="Edge Burr"/>
+  <Entry name="EC" value="English Coil Dimensions"/>
+  <Entry name="ED" value="Eddy"/>
+  <Entry name="EE" value="Einsteinium"/>
+  <Entry name="EF" value="Europium"/>
+  <Entry name="EG" value="Equivalent Temperature"/>
+  <Entry name="EH" value="Erbium"/>
+  <Entry name="EI" value="Expansion"/>
+  <Entry name="EJ" value="Electrical Conductivity"/>
+  <Entry name="EL" value="Elasticity"/>
+  <Entry name="EM" value="Elmendorf Tear"/>
+  <Entry name="EN" value="Entanglement"/>
+  <Entry name="EP" value="Exciting Power"/>
+  <Entry name="ES" value="Edge"/>
+  <Entry name="ET" value="End Point"/>
+  <Entry name="EW" value="Empty Weight"/>
+  <Entry name="EX" value="Eccentricity"/>
+  <Entry name="F1" value="Fire Point"/>
+  <Entry name="F2" value="Radiated Power"/>
+  <Entry name="F3" value="Output Power (Peak Envelope)"/>
+  <Entry name="F4" value="Height above Average Terrain"/>
+  <Entry name="F5" value="Ground Elevation"/>
+  <Entry name="F6" value="Height to Tip"/>
+  <Entry name="F7" value="Radius from a Location"/>
+  <Entry name="F8" value="Radius from Coordinates"/>
+  <Entry name="F9" value="Operating Hours"/>
+  <Entry name="FA" value="Fluorine"/>
+  <Entry name="FB" value="Flare"/>
+  <Entry name="FC" value="Short Cycle Flatness"/>
+  <Entry name="FD" value="Frequency of Operation"/>
+  <Entry name="FE" value="Fermium"/>
+  <Entry name="FF" value="Francium"/>
+  <Entry name="FG" value="Freezing Point"/>
+  <Entry name="FH" value="Finish"/>
+  <Entry name="FI" value="Filament Count"/>
+  <Entry name="FJ" value="Face Width"/>
+  <Entry name="FK" value="Fluid Consistency"/>
+  <Entry name="FL" value="Longitudinal Flatness"/>
+  <Entry name="FN" value="Flatness"/>
+  <Entry name="FP" value="Flashpoint"/>
+  <Entry name="FQ" value="Frequency"/>
+  <Entry name="FR" value="Flow Rate"/>
+  <Entry name="FS" value="Fold Strength"/>
+  <Entry name="FT" value="Flange Thickness"/>
+  <Entry name="FU" value="Azimuth"/>
+  <Entry name="FV" value="Transverse Flatness"/>
+  <Entry name="FW" value="Flange Width"/>
+  <Entry name="FX" value="Filler"/>
+  <Entry name="FY" value="Beam"/>
+  <Entry name="FZ" value="Output Power (Mean RF)"/>
+  <Entry name="G1" value="Gutter"/>
+  <Entry name="G2" value="Grain Size"/>
+  <Entry name="G3" value="Tilt"/>
+  <Entry name="G4" value="G-Force"/>
+  <Entry name="GA" value="Grain"/>
+  <Entry name="GB" value="Guided Bends Root"/>
+  <Entry name="GC" value="Gadolinium"/>
+  <Entry name="GD" value="Gold"/>
+  <Entry name="GE" value="Guided Bends Face"/>
+  <Entry name="GF" value="Guided Bends Side"/>
+  <Entry name="GG" value="Gauge"/>
+  <Entry name="GH" value="Gallium"/>
+  <Entry name="GI" value="Grit, Brushed"/>
+  <Entry name="GJ" value="Grit, Unbrushed"/>
+  <Entry name="GK" value="Tinting Strength"/>
+  <Entry name="GL" value="Gloss"/>
+  <Entry name="GM" value="Emulsion Gloss"/>
+  <Entry name="GN" value="Gross to Net Conversion Factor"/>
+  <Entry name="GO" value="Particle End Point"/>
+  <Entry name="GP" value="Group Package Separation"/>
+  <Entry name="GQ" value="Scattered Particles"/>
+  <Entry name="GR" value="Gravity"/>
+  <Entry name="GS" value="Carbon Black Undertone"/>
+  <Entry name="GT" value="Glass Transition Temperature"/>
+  <Entry name="GW" value="Gross Weight, Maximum"/>
+  <Entry name="H1" value="Heavies"/>
+  <Entry name="H8" value="Net Explosive Weight"/>
+  <Entry name="H9" value="Recommended Exposure Limit"/>
+  <Entry name="HA" value="Hydro Pressure"/>
+  <Entry name="HB" value="Heavy Aluminas"/>
+  <Entry name="HC" value="Helium"/>
+  <Entry name="HD" value="High Propagation Delay Time"/>
+  <Entry name="HE" value="Heavy Silicates"/>
+  <Entry name="HF" value="Hardness"/>
+  <Entry name="HG" value="Heavy Sulfides"/>
+  <Entry name="HH" value="Heavy Globular Oxides"/>
+  <Entry name="HI" value="Hafnium"/>
+  <Entry name="HJ" value="Holmium"/>
+  <Entry name="HK" value="Human Factors"/>
+  <Entry name="HL" value="Heat Loss"/>
+  <Entry name="HM" value="Height, Maximum"/>
+  <Entry name="HO" value="Holes"/>
+  <Entry name="HP" value="Height of Tread Plate Pattern"/>
+  <Entry name="HR" value="Height of Runners"/>
+  <Entry name="HT" value="Height"/>
+  <Entry name="HZ" value="Hazepoint"/>
+  <Entry name="IA" value="Imperfections - Thicks"/>
+  <Entry name="IB" value="Impact Energy"/>
+  <Entry name="IC" value="Incremental Distance"/>
+  <Entry name="ID" value="Inside Diameter"/>
+  <Entry name="IE" value="Imperfections - Thins"/>
+  <Entry name="IF" value="Input Low Voltage"/>
+  <Entry name="IG" value="Granulated Ingot Size"/>
+  <Entry name="IH" value="Input Current"/>
+  <Entry name="II" value="Input Setup Time"/>
+  <Entry name="IJ" value="Input Hold Time"/>
+  <Entry name="IK" value="Indium"/>
+  <Entry name="IL" value="Imperfections - Neps"/>
+  <Entry name="IM" value="Iridium"/>
+  <Entry name="IN" value="Input Low Current"/>
+  <Entry name="IO" value="Input High Current"/>
+  <Entry name="IP" value="Input Leakage Current"/>
+  <Entry name="IQ" value="Input Clamp Diode Voltage"/>
+  <Entry name="IR" value="Ideal Diameter"/>
+  <Entry name="IS" value="Input High Voltage"/>
+  <Entry name="IT" value="Interrupt Pulse Period"/>
+  <Entry name="IU" value="Interrupt Setup Time"/>
+  <Entry name="IV" value="Iodine"/>
+  <Entry name="IW" value="Incrustation Factor"/>
+  <Entry name="IX" value="Inside Diameter, Minimum"/>
+  <Entry name="IY" value="Induction"/>
+  <Entry name="IZ" value="Ingot Pound Size"/>
+  <Entry name="JA" value="Junction Temperature"/>
+  <Entry name="KA" value="Knoop"/>
+  <Entry name="KB" value="Krypton"/>
+  <Entry name="KN" value="K&amp;N Holdout"/>
+  <Entry name="L0" value="Leaf Grade"/>
+  <Entry name="L1" value="Lights"/>
+  <Entry name="LA" value="Lanthanum"/>
+  <Entry name="LB" value="Lithium"/>
+  <Entry name="LC" value="Low Propagation Delay Time"/>
+  <Entry name="LD" value="Lawrencium"/>
+  <Entry name="LE" value="Lutetium"/>
+  <Entry name="LF" value="Long Fibers"/>
+  <Entry name="LG" value="Leg"/>
+  <Entry name="LL" value="Long Leg"/>
+  <Entry name="LM" value="Length, Maximum"/>
+  <Entry name="LN" value="Length"/>
+  <Entry name="LO" value="Long Length"/>
+  <Entry name="LP" value="Camber of Pattern Line"/>
+  <Entry name="LS" value="Short Leg"/>
+  <Entry name="LT" value="Lengthwise Spacing"/>
+  <Entry name="LW" value="Long Width"/>
+  <Entry name="M1" value="Melt Range"/>
+  <Entry name="M2" value="Maximum Differential Pressure"/>
+  <Entry name="M3" value="Maximum Static Pressure"/>
+  <Entry name="M4" value="Area"/>
+  <Entry name="M5" value="Minimum Speed"/>
+  <Entry name="M6" value="Maximum Speed"/>
+  <Entry name="MA" value="Mean Average"/>
+  <Entry name="MB" value="Mendelevium"/>
+  <Entry name="MC" value="Min./Max Cuttable Width"/>
+  <Entry name="MD" value="Measurement Voltage"/>
+  <Entry name="ME" value="Maximum Input Low Voltage"/>
+  <Entry name="MF" value="Minimum Input High Voltage"/>
+  <Entry name="MG" value="Mercury"/>
+  <Entry name="MH" value="Melting Point"/>
+  <Entry name="MI" value="Minimum"/>
+  <Entry name="MJ" value="Major Section (Stepped)"/>
+  <Entry name="MK" value="Microseperometer (MSEP)"/>
+  <Entry name="MM" value="Management"/>
+  <Entry name="MN" value="Minimum Average"/>
+  <Entry name="MO" value="Mottles"/>
+  <Entry name="MP" value="Mullen Pop"/>
+  <Entry name="MQ" value="MCQuaid"/>
+  <Entry name="MR" value="Module R (R Bar)"/>
+  <Entry name="MS" value="Minor Section (Stepped)"/>
+  <Entry name="MT" value="Moisture Content"/>
+  <Entry name="MU" value="Multiplier"/>
+  <Entry name="MV" value="Maximum Average"/>
+  <Entry name="MW" value="Molecular Weight"/>
+  <Entry name="MX" value="Maximum"/>
+  <Entry name="MY" value="Magnetizing Field"/>
+  <Entry name="NA" value="Number per Package"/>
+  <Entry name="NB" value="Number per Bundle"/>
+  <Entry name="NC" value="Number per Coil Group"/>
+  <Entry name="ND" value="Neodymium"/>
+  <Entry name="NF" value="Neon"/>
+  <Entry name="NG" value="Nobelium"/>
+  <Entry name="NH" value="Number of Items per Package Label"/>
+  <Entry name="NI" value="Number of Splices per Package Label"/>
+  <Entry name="NJ" value="Number of Sheets per Package Label"/>
+  <Entry name="NK" value="Nesting Factor"/>
+  <Entry name="NL" value="Number per Lift"/>
+  <Entry name="NM" value="Number Pkgs. per Master Pack"/>
+  <Entry name="NO" value="Nominal (Target, Aim)"/>
+  <Entry name="NP" value="Percent of Specified"/>
+  <Entry name="NS" value="Number per Skid"/>
+  <Entry name="NU" value="Number per Unit"/>
+  <Entry name="NV" value="N Value"/>
+  <Entry name="O1" value="Orifice - Inside Diameter"/>
+  <Entry name="OA" value="Offset"/>
+  <Entry name="OB" value="Osmium"/>
+  <Entry name="OC" value="Output Low Voltage"/>
+  <Entry name="OD" value="Outside Diameter"/>
+  <Entry name="OE" value="Output Low Current"/>
+  <Entry name="OF" value="Output High Voltage"/>
+  <Entry name="OG" value="Output High Current"/>
+  <Entry name="OH" value="Overhead Height, Receiving Door"/>
+  <Entry name="OI" value="Output Off Current Low"/>
+  <Entry name="OJ" value="Output Off Current High"/>
+  <Entry name="OK" value="Output Short-Circuit Current"/>
+  <Entry name="OL" value="Output Disable Time from Low Level of a 3-State Output"/>
+  <Entry name="OM" value="Outside Diameter, Maximum"/>
+  <Entry name="ON" value="Output Disable Time from High Level of a 3-State Output"/>
+  <Entry name="OO" value="Output Enable Time from Low Level of a 3-State Output"/>
+  <Entry name="OP" value="Openness"/>
+  <Entry name="OQ" value="Output Enable Time from High Level of a 3-State Output"/>
+  <Entry name="OR" value="Distance Between Outside Runners"/>
+  <Entry name="OS" value="Open Circuits"/>
+  <Entry name="OT" value="Output Delay Time"/>
+  <Entry name="OV" value="Opacity"/>
+  <Entry name="OW" value="Overall Width"/>
+  <Entry name="OX" value="Ownership Share"/>
+  <Entry name="OY" value="Operating Weight"/>
+  <Entry name="P1" value="Price"/>
+  <Entry name="PA" value="Package Separation"/>
+  <Entry name="PB" value="Pressure"/>
+  <Entry name="PC" value="Per Hundred Linear Yards"/>
+  <Entry name="PD" value="Platinum"/>
+  <Entry name="PE" value="Potassium"/>
+  <Entry name="PF" value="Promethium"/>
+  <Entry name="PG" value="Polonium"/>
+  <Entry name="PH" value="Pulse Setup Time"/>
+  <Entry name="PI" value="Pulse Hold Time"/>
+  <Entry name="PJ" value="Pulse Width"/>
+  <Entry name="PK" value="Pulse Recovery Time"/>
+  <Entry name="PL" value="Percent Defective"/>
+  <Entry name="PM" value="Practice"/>
+  <Entry name="PN" value="Palladium"/>
+  <Entry name="PO" value="Percent of Order (-, +)"/>
+  <Entry name="PP" value="Powder/Paste Package Size"/>
+  <Entry name="PQ" value="Plutonium"/>
+  <Entry name="PR" value="Praseodymium"/>
+  <Entry name="PS" value="Protactinium"/>
+  <Entry name="PT" value="Pits"/>
+  <Entry name="PU" value="Pressure Base"/>
+  <Entry name="PV" value="Picks"/>
+  <Entry name="PW" value="Purchased Width"/>
+  <Entry name="PX" value="Purity"/>
+  <Entry name="PY" value="Percent of Water"/>
+  <Entry name="PZ" value="Pipe Size Nominal"/>
+  <Entry name="QA" value="Quality Index"/>
+  <Entry name="QB" value="Quantity or Loading Average"/>
+  <Entry name="QC" value="Quantity or Loading Maximum"/>
+  <Entry name="QD" value="Quality or Concentration Average"/>
+  <Entry name="QE" value="Quality or Concentration Minimum"/>
+  <Entry name="QF" value="Quality or Concentration Maximum"/>
+  <Entry name="QG" value="Duration"/>
+  <Entry name="QI" value="Abundance"/>
+  <Entry name="QJ" value="Biomass"/>
+  <Entry name="QK" value="Size Class"/>
+  <Entry name="QL" value="Quality"/>
+  <Entry name="R1" value="Hemoglobin"/>
+  <Entry name="R2" value="Hematocrit"/>
+  <Entry name="R3" value="Epoetin Starting Dosage"/>
+  <Entry name="R4" value="Creatin"/>
+  <Entry name="R7" value="Speed"/>
+  <Entry name="R8" value="Speed Limit"/>
+  <Entry name="RA" value="Relative Humidity"/>
+  <Entry name="RB" value="Range Value"/>
+  <Entry name="RC" value="Radius of Corner"/>
+  <Entry name="RD" value="Readpoint"/>
+  <Entry name="RE" value="Ream Weight"/>
+  <Entry name="RF" value="Resistivity"/>
+  <Entry name="RG" value="Radium"/>
+  <Entry name="RH" value="Rhenium"/>
+  <Entry name="RI" value="Rubidium"/>
+  <Entry name="RJ" value="Rockwell-C"/>
+  <Entry name="RK" value="Rockwell-B"/>
+  <Entry name="RL" value="Reduction Ration"/>
+  <Entry name="RM" value="RMS Range (Side 1)"/>
+  <Entry name="RN" value="Required Interrupt Release"/>
+  <Entry name="RO" value="Reset Pulse Width"/>
+  <Entry name="RP" value="Reduction of Area"/>
+  <Entry name="RQ" value="Radon"/>
+  <Entry name="RR" value="Reduction Ratio"/>
+  <Entry name="RS" value="RMS Range (Side 2)"/>
+  <Entry name="RT" value="Rounds Ammunition/Military"/>
+  <Entry name="RU" value="Rhodium"/>
+  <Entry name="RV" value="Ruthenium"/>
+  <Entry name="RW" value="Rolling Width"/>
+  <Entry name="RX" value="Ridges"/>
+  <Entry name="RY" value="Ratio"/>
+  <Entry name="S1" value="Smoothness"/>
+  <Entry name="S2" value="Selvedge on Beam"/>
+  <Entry name="S3" value="Sheffield Smoothness"/>
+  <Entry name="S4" value="Surface Strength"/>
+  <Entry name="S5" value="Stiffness"/>
+  <Entry name="S6" value="Saturation"/>
+  <Entry name="S7" value="Sediment"/>
+  <Entry name="S8" value="Solubility"/>
+  <Entry name="S9" value="Site Atmospheric Pressure"/>
+  <Entry name="SA" value="Sort Code CIE LAB"/>
+  <Entry name="SB" value="Sort Code CMC"/>
+  <Entry name="SC" value="Schedule Number (Pipe Size)"/>
+  <Entry name="SD" value="Strength"/>
+  <Entry name="SE" value="Selvage Left"/>
+  <Entry name="SF" value="Samarium"/>
+  <Entry name="SG" value="Slit Width"/>
+  <Entry name="SH" value="Strontium"/>
+  <Entry name="SI" value="Supply Current"/>
+  <Entry name="SJ" value="Short Circuits"/>
+  <Entry name="SK" value="Shrinkage"/>
+  <Entry name="SL" value="Short Length"/>
+  <Entry name="SM" value="Shear"/>
+  <Entry name="SN" value="Stain"/>
+  <Entry name="SO" value="Sort Code CIE LCH"/>
+  <Entry name="SP" value="Splinter Count"/>
+  <Entry name="SQ" value="Shipped Quantity"/>
+  <Entry name="SR" value="Selvage Right"/>
+  <Entry name="SS" value="Silver"/>
+  <Entry name="ST" value="Stop Recovery Startup Time"/>
+  <Entry name="SU" value="Shipped Units"/>
+  <Entry name="SV" value="Scandium"/>
+  <Entry name="SW" value="Short Width"/>
+  <Entry name="SX" value="Sodium"/>
+  <Entry name="SY" value="Service Interrupt Duration"/>
+  <Entry name="SZ" value="Skid Height"/>
+  <Entry name="T1" value="Tire Pressure"/>
+  <Entry name="T2" value="Tube - Inside Diameter"/>
+  <Entry name="T3" value="Technical"/>
+  <Entry name="T4" value="Single End Break"/>
+  <Entry name="T5" value="Skein Break"/>
+  <Entry name="TA" value="Thickness Heavy End (Tapered/Stepped)"/>
+  <Entry name="TB" value="Thickness Small End (Tapered/Stepped)"/>
+  <Entry name="TC" value="Temperature"/>
+  <Entry name="TD" value="Thin Aluminas"/>
+  <Entry name="TE" value="Tenacity"/>
+  <Entry name="TF" value="Tensile"/>
+  <Entry name="TG" value="Thin Sulfides"/>
+  <Entry name="TH" value="Thickness"/>
+  <Entry name="TI" value="Thin Silicates"/>
+  <Entry name="TJ" value="Total Supply Current"/>
+  <Entry name="TK" value="Timer Pulse Width"/>
+  <Entry name="TL" value="Tapered/Stepped Length Type"/>
+  <Entry name="TM" value="Length Type: Multiples"/>
+  <Entry name="TN" value="Timer Period"/>
+  <Entry name="TO" value="Terbium"/>
+  <Entry name="TP" value="Thorium"/>
+  <Entry name="TQ" value="Thin Globular Oxides"/>
+  <Entry name="TR" value="Length Type: Random"/>
+  <Entry name="TS" value="Length Type: Specific"/>
+  <Entry name="TT" value="Time"/>
+  <Entry name="TU" value="Technetium"/>
+  <Entry name="TV" value="Thallium"/>
+  <Entry name="TW" value="Top"/>
+  <Entry name="TX" value="Thulium"/>
+  <Entry name="TY" value="Tear Strength"/>
+  <Entry name="UA" value="Uranium"/>
+  <Entry name="UG" value="Usage"/>
+  <Entry name="VH" value="Height, Van Door"/>
+  <Entry name="VO" value="Voltage"/>
+  <Entry name="VW" value="Width, Van Door"/>
+  <Entry name="WA" value="Weight per Unit of Area"/>
+  <Entry name="WB" value="Web"/>
+  <Entry name="WC" value="Web Depth/Height"/>
+  <Entry name="WD" value="Width"/>
+  <Entry name="WE" value="Wolfram"/>
+  <Entry name="WF" value="Wait Recovery Startup Time"/>
+  <Entry name="WH" value="Whiteness"/>
+  <Entry name="WI" value="Winding Loss"/>
+  <Entry name="WL" value="Wall Thickness"/>
+  <Entry name="WM" value="Width, Maximum"/>
+  <Entry name="WR" value="Wrinkles"/>
+  <Entry name="WT" value="Weight"/>
+  <Entry name="WU" value="Weight per Unit of Length"/>
+  <Entry name="WX" value="Wax Pick"/>
+  <Entry name="XA" value="Xenon"/>
+  <Entry name="XH" value="Side Height, Flat Bed With Removable Sides"/>
+  <Entry name="XP" value="Specified"/>
+  <Entry name="XQ" value="Squareness"/>
+  <Entry name="XZ" value="Spool Size"/>
+  <Entry name="YA" value="Yttrium"/>
+  <Entry name="YB" value="Yield"/>
+  <Entry name="YC" value="Ytterbium"/>
+  <Entry name="YD" value="Yarn Count"/>
+  <Entry name="ZA" value="Power Factor"/>
+  <Entry name="ZB" value="Boron"/>
+  <Entry name="ZC" value="Carbon"/>
+  <Entry name="ZD" value="Load Factor"/>
+  <Entry name="ZF" value="Sulfate Sulfur"/>
+  <Entry name="ZG" value="Organic Sulfur"/>
+  <Entry name="ZH" value="Hydrogen"/>
+  <Entry name="ZN" value="Nitrogen"/>
+  <Entry name="ZO" value="Oxygen"/>
+  <Entry name="ZP" value="Phosphorous"/>
+  <Entry name="ZR" value="Pyritic Sulfur"/>
+  <Entry name="ZS" value="Sulfur"/>
+  <Entry name="ZV" value="Vanadium"/>
+  <Entry name="ZW" value="Tungsten"/>
+  <Entry name="AAP" value="AC-apparent Power"/>
+  <Entry name="ABO" value="Absorbance"/>
+  <Entry name="ABR" value="Abrasion"/>
+  <Entry name="ABS" value="Absorbency"/>
+  <Entry name="ACN" value="Acid Number"/>
+  <Entry name="ADH" value="Adhesion"/>
+  <Entry name="ADM" value="Dye Manufacturing Units"/>
+  <Entry name="AGE" value="Inventory Age"/>
+  <Entry name="AGI" value="Aggressive Index"/>
+  <Entry name="ALK" value="Alkalinity"/>
+  <Entry name="ALN" value="Alkalinity Number"/>
+  <Entry name="ALP" value="Alpha-Cellulose"/>
+  <Entry name="AMI" value="Amines"/>
+  <Entry name="AMW" value="Average Molecular Weight"/>
+  <Entry name="AOX" value="Antioxidant"/>
+  <Entry name="API" value="API Gravity"/>
+  <Entry name="APP" value="Appearance"/>
+  <Entry name="ASH" value="Ash"/>
+  <Entry name="ASY" value="Assay"/>
+  <Entry name="AVT" value="Average Temperature"/>
+  <Entry name="BDP" value="Perforation Bottom Depth"/>
+  <Entry name="BHF" value="Bottomhole Pressure - Flowing"/>
+  <Entry name="BHS" value="Bottomhole Pressure - Shutin"/>
+  <Entry name="BIC" value="Bark in Chips"/>
+  <Entry name="BND" value="Amount Bound in Material"/>
+  <Entry name="BOR" value="Boiling Range"/>
+  <Entry name="BRS" value="Breaking Strength"/>
+  <Entry name="BSW" value="Percent Bottom Sediment and Water"/>
+  <Entry name="BUD" value="Bulk Density"/>
+  <Entry name="CAU" value="Caustic Reaction Severity"/>
+  <Entry name="CCF" value="Composite Corrected Factor"/>
+  <Entry name="CCG" value="Combined Center of Gravity"/>
+  <Entry name="CGR" value="Color Grayness RD"/>
+  <Entry name="CHA" value="Chemical Addition Rate"/>
+  <Entry name="CHB" value="Chlorophyll-a"/>
+  <Entry name="CHC" value="Concentration of Hazardous Component"/>
+  <Entry name="CHG" value="Rate of Change"/>
+  <Entry name="CHL" value="Chlorides"/>
+  <Entry name="CIV" value="Cuene Intrinsic Viscosity"/>
+  <Entry name="CLA" value="Clarity"/>
+  <Entry name="CLB" value="Calibration"/>
+  <Entry name="CLN" value="Cleanliness"/>
+  <Entry name="COH" value="Coercive Force"/>
+  <Entry name="COL" value="Color"/>
+  <Entry name="CON" value="Concentration"/>
+  <Entry name="COR" value="Corrosiveness"/>
+  <Entry name="COS" value="Cost"/>
+  <Entry name="COT" value="Content"/>
+  <Entry name="CPF" value="Casing Pressure - Flowing"/>
+  <Entry name="CPS" value="Casing Pressure - Shutin"/>
+  <Entry name="CPT" value="Cup Test Adhesion"/>
+  <Entry name="CRF" value="Free Chlorine Residual"/>
+  <Entry name="CRL" value="Compression Relaxation"/>
+  <Entry name="CRN" value="Crown"/>
+  <Entry name="CRT" value="Total Chlorine Residual"/>
+  <Entry name="CSC" value="Choke Size - Casing"/>
+  <Entry name="CSR" value="Cost Realism"/>
+  <Entry name="CST" value="Choke Size - Tubing"/>
+  <Entry name="CTG" value="Coating"/>
+  <Entry name="CTT" value="Contact Time"/>
+  <Entry name="CUT" value="Cure Time"/>
+  <Entry name="CWT" value="Charge Weight"/>
+  <Entry name="CYB" value="Color Yellowness (+B)"/>
+  <Entry name="DAT" value="Datum Depth"/>
+  <Entry name="DCT" value="Dirt Count"/>
+  <Entry name="DEM" value="De Minimis Level"/>
+  <Entry name="DIL" value="Dilution Factor; An amount by which a quantity is diluted in order to be read on an instrument scale"/>
+  <Entry name="DIR" value="Distillation Range"/>
+  <Entry name="DIS" value="Dispersion"/>
+  <Entry name="DME" value="Dichloromethane Extract"/>
+  <Entry name="DMF" value="Distributed Meter Factor"/>
+  <Entry name="DOC" value="Double Olsen Cup"/>
+  <Entry name="DPM" value="Degree of Polymerization"/>
+  <Entry name="DRY" value="Dryness"/>
+  <Entry name="DWP" value="Dew Point"/>
+  <Entry name="ELC" value="Exposure Ceiling: Threshold Limit Value"/>
+  <Entry name="ELE" value="Elevation"/>
+  <Entry name="ELI" value="Immediately Dangerous to Life and Health"/>
+  <Entry name="ELL" value="Explosion Limit"/>
+  <Entry name="ELO" value="Occupational Safety and Health Administration (OSHA) Permissible Exposure Limit"/>
+  <Entry name="ELP" value="Occupational Safety and Health Administration (OSHA) Permissible Exposure Limit Ceiling"/>
+  <Entry name="ELS" value="American Conference of Government Industrial Hygienists (ACGIH) Threshold Limit Value: Short-Term Exposure"/>
+  <Entry name="ELT" value="American Conference of Governmental Industrial Hygienists (ACGIH) Threshold Limit Value: Time Weighted Average"/>
+  <Entry name="ELV" value="Unshielded Exposure Rate"/>
+  <Entry name="ELW" value="American Industrial Hygienists Association (AIHA) Work Environment Exposure Level (WEEL)"/>
+  <Entry name="ELX" value="American Industrial Hygienists Association (AIHA) Work Environment Exposure Level (WEEL): Time Weighted Average"/>
+  <Entry name="EPL" value="Expected Product Life"/>
+  <Entry name="EVL" value="Evaporation Loss"/>
+  <Entry name="EVR" value="Evaporation Rate"/>
+  <Entry name="EXH" value="Exhaust Benzene Emissions"/>
+  <Entry name="EXT" value="Extractables"/>
+  <Entry name="FBP" value="Acetate Break Point"/>
+  <Entry name="FIL" value="Filter Number"/>
+  <Entry name="FIN" value="Fineness"/>
+  <Entry name="FIT" value="Filterability"/>
+  <Entry name="FLD" value="Fluid Point"/>
+  <Entry name="FLN" value="Fiber Length"/>
+  <Entry name="FLP" value="Fluid Level Above Pump"/>
+  <Entry name="FLT" value="Fluting"/>
+  <Entry name="FLV" value="Flavor Threshold"/>
+  <Entry name="FML" value="Flammability Limits"/>
+  <Entry name="FMZ" value="Flammability"/>
+  <Entry name="FNL" value="Fines Retained on Screen"/>
+  <Entry name="FNS" value="Fines"/>
+  <Entry name="FOA" value="Foam"/>
+  <Entry name="FOH" value="Front Over-Hang of Vehicle"/>
+  <Entry name="FOI" value="Fouling Index"/>
+  <Entry name="FOR" value="Foreign Matter"/>
+  <Entry name="FPV" value="Acetate Plugging Value"/>
+  <Entry name="FSI" value="Free Swelling Index"/>
+  <Entry name="FUD" value="Full Load"/>
+  <Entry name="GEL" value="Gel"/>
+  <Entry name="GGR" value="Gas Gravity"/>
+  <Entry name="GIR" value="Gas Injection Test Rate"/>
+  <Entry name="GLE" value="Ground Level Elevation"/>
+  <Entry name="GOR" value="Gas-to-Oil Ratio"/>
+  <Entry name="GRA" value="Gas Test Rate"/>
+  <Entry name="GRI" value="Graininess"/>
+  <Entry name="H2O" value="Water Volume"/>
+  <Entry name="HAR" value="Hardening Rate"/>
+  <Entry name="HAZ" value="Haze"/>
+  <Entry name="HCG" value="Horizontal Center of Gravity"/>
+  <Entry name="HCH" value="Distance to Endpoint"/>
+  <Entry name="HCI" value="Emission Factor"/>
+  <Entry name="HCJ" value="Heat Content"/>
+  <Entry name="HCK" value="Pollutant Emission"/>
+  <Entry name="HCL" value="Population"/>
+  <Entry name="HCM" value="Release Duration"/>
+  <Entry name="HCN" value="Released Quantity"/>
+  <Entry name="HCO" value="Release Rate"/>
+  <Entry name="HCP" value="Sulfur Content"/>
+  <Entry name="HCQ" value="Wind Speed"/>
+  <Entry name="HCR" value="Acute Toxicity"/>
+  <Entry name="HCS" value="Chronic Toxicity"/>
+  <Entry name="HCT" value="Discharges"/>
+  <Entry name="HCU" value="Effectiveness"/>
+  <Entry name="HCV" value="Fertilization"/>
+  <Entry name="HCW" value="Samples in Compliance"/>
+  <Entry name="HCX" value="Toxicity"/>
+  <Entry name="HHW" value="Hemispherical Point"/>
+  <Entry name="HIB" value="High Boilers"/>
+  <Entry name="HOC" value="Heat of Combustion"/>
+  <Entry name="HTE" value="Heat Equivalency"/>
+  <Entry name="HVM" value="Heavy Metals"/>
+  <Entry name="HWS" value="Softening Point"/>
+  <Entry name="HYD" value="Hydroxyl Number"/>
+  <Entry name="HZC" value="Hazardous Component"/>
+  <Entry name="IDE" value="Identification"/>
+  <Entry name="IGA" value="Autoignition Temperature"/>
+  <Entry name="IGR" value="Input Gas Rate"/>
+  <Entry name="IHV" value="Inherent Viscosity"/>
+  <Entry name="IMA" value="Impact Adhesion"/>
+  <Entry name="IMP" value="Impurities"/>
+  <Entry name="IND" value="Initial Deformation Point"/>
+  <Entry name="INS" value="Insolubles"/>
+  <Entry name="IPI" value="Primary Irritation Index"/>
+  <Entry name="IRA" value="Inclusion Rating"/>
+  <Entry name="JOM" value="Jominy Hardenability"/>
+  <Entry name="KVL" value="Strength Coefficient"/>
+  <Entry name="LAI" value="Langlier Index"/>
+  <Entry name="LC5" value="Lethal Concentration, 50% (&quot;LC-50&quot;)"/>
+  <Entry name="LCG" value="Longitudinal Center of Gravity"/>
+  <Entry name="LD5" value="Lethal Dose, 50% (&quot;LD-50&quot;)"/>
+  <Entry name="LDH" value="Limited Dome Height (LDH)"/>
+  <Entry name="LEF" value="Leaf"/>
+  <Entry name="LIR" value="Liquid Injection Test Rate"/>
+  <Entry name="LIV" value="Limit Intrinsic Viscosity"/>
+  <Entry name="LLD" value="Light Load"/>
+  <Entry name="LOI" value="Loss on Ignition"/>
+  <Entry name="LOS" value="Loss on Drying"/>
+  <Entry name="LOW" value="Low Boilers"/>
+  <Entry name="LPG" value="Liquefied Petroleum Gas Factor"/>
+  <Entry name="LPL" value="Labeled Product Life"/>
+  <Entry name="LPR" value="Line Pressure"/>
+  <Entry name="LSA" value="Lock Seam Adhesion"/>
+  <Entry name="LSK" value="Length Shrinkage"/>
+  <Entry name="LSS" value="Linear Sheet Swelling"/>
+  <Entry name="LTD" value="Liner Top Depth"/>
+  <Entry name="MAT" value="Maturity"/>
+  <Entry name="MCN" value="Magnetic Contamination"/>
+  <Entry name="MDL" value="Method Detection Limit; Minimum concentration of a substance that can be measured and reported with 99% confidence that analyte concentration is greater than zero"/>
+  <Entry name="MEA" value="Media Depth"/>
+  <Entry name="MEF" value="Meter Factor"/>
+  <Entry name="MEL" value="Melt Time"/>
+  <Entry name="MER" value="Efficient Rate-Reservoir"/>
+  <Entry name="MHI" value="Highest Torque"/>
+  <Entry name="MIC" value="Micronaire"/>
+  <Entry name="MOI" value="Moisture"/>
+  <Entry name="MOR" value="Mortality"/>
+  <Entry name="MPR" value="Production Rate-Well"/>
+  <Entry name="MPT" value="Many Press Test"/>
+  <Entry name="MTD" value="Maximum Total Depth"/>
+  <Entry name="MUL" value="Mullen"/>
+  <Entry name="NEU" value="Neutralization Number"/>
+  <Entry name="NIL" value="Nil Ductility Test"/>
+  <Entry name="NNW" value="Net Net Weight"/>
+  <Entry name="NOC" value="Number of Cosigners"/>
+  <Entry name="NON" value="Non-Volatile Matter"/>
+  <Entry name="NOR" value="Number of References"/>
+  <Entry name="NOX" value="NOx Emissions Performance"/>
+  <Entry name="OAP" value="Observed American Petroleum Institute Gravity"/>
+  <Entry name="OBT" value="Observed Temperature"/>
+  <Entry name="OCG" value="Oil/Condensate Gravity"/>
+  <Entry name="OCR" value="Oil/Condensate Test Rate"/>
+  <Entry name="ODR" value="Odor"/>
+  <Entry name="OIL" value="Oil"/>
+  <Entry name="OLE" value="Olefins"/>
+  <Entry name="ORC" value="Organic Carbon"/>
+  <Entry name="OTE" value="Others Each"/>
+  <Entry name="OTH" value="Odor Threshold"/>
+  <Entry name="OTT" value="Others Total"/>
+  <Entry name="OXI" value="Oxidizable Substance"/>
+  <Entry name="OXS" value="Oxidizing Substance"/>
+  <Entry name="PAR" value="Particle Size"/>
+  <Entry name="PBD" value="Plug Back Total Depth"/>
+  <Entry name="PDE" value="Casing/Liner Tubing Depth"/>
+  <Entry name="PDG" value="Pump Depth from Ground"/>
+  <Entry name="PER" value="Magnetic Permeability"/>
+  <Entry name="PFO" value="Perforation Feet Open"/>
+  <Entry name="PHA" value="pH"/>
+  <Entry name="PHW" value="Hardwood Fiber"/>
+  <Entry name="PIC" value="Pick Off"/>
+  <Entry name="POC" value="Completion"/>
+  <Entry name="POD" value="Physical Description - Outer Diameter"/>
+  <Entry name="POP" value="Pour Point"/>
+  <Entry name="PPS" value="Proprietary Shade"/>
+  <Entry name="PQL" value="Practical Quantitation Limit; Lowest concentration of a substance which can be consistently determined within +/- 20% of the true concentration by 75% of the laboratories tested in a performance evaluation study"/>
+  <Entry name="PRA" value="Proportion Alive"/>
+  <Entry name="PRE" value="Prior Experience"/>
+  <Entry name="PRF" value="Pressure Factor"/>
+  <Entry name="PRI" value="Product Index"/>
+  <Entry name="PRL" value="Product Level"/>
+  <Entry name="PRN" value="Proportion Normal"/>
+  <Entry name="PRO" value="Processability"/>
+  <Entry name="PRQ" value="Product Reportable Quantity"/>
+  <Entry name="PRY" value="Porosity"/>
+  <Entry name="PRZ" value="Proportion Fertilized"/>
+  <Entry name="PSA" value="Percent Solution Actual"/>
+  <Entry name="PSP" value="Past Performance"/>
+  <Entry name="PSW" value="Softwood Fiber"/>
+  <Entry name="PWA" value="Processed Waste"/>
+  <Entry name="PWE" value="Physical Description - Weight"/>
+  <Entry name="PWF" value="Power Factor"/>
+  <Entry name="QUR" value="Reportable Quantity"/>
+  <Entry name="R10" value="Relative Fraction of Pure Long-Chain Cellulose"/>
+  <Entry name="R18" value="Relative Fraction of Total Cellulose"/>
+  <Entry name="RAD" value="Radius"/>
+  <Entry name="RAF" value="Roof Adjustment Factor"/>
+  <Entry name="REA" value="Reactivity"/>
+  <Entry name="RED" value="Reducing Substance"/>
+  <Entry name="REF" value="Refining"/>
+  <Entry name="REI" value="Refractive Index"/>
+  <Entry name="REL" value="Reflectance"/>
+  <Entry name="RES" value="Resistance"/>
+  <Entry name="ROH" value="Rear Over-Hang of Vehicle"/>
+  <Entry name="ROX" value="Oxygen from a Renewable Oxygenate"/>
+  <Entry name="RSZ" value="Roll Size"/>
+  <Entry name="RTB" value="Reporting Temperature Base"/>
+  <Entry name="RUD" value="Usage Deviation (Applies to Kilowatt Hours, Kilowatt Demand and Reactive Demand)"/>
+  <Entry name="RVP" value="Reid Vapor Pressure"/>
+  <Entry name="S10" value="Pulp Impurities"/>
+  <Entry name="S12" value="Start"/>
+  <Entry name="S18" value="Hemicellulose"/>
+  <Entry name="SAL" value="Salinity; Salt level in a sample of seawater"/>
+  <Entry name="SAP" value="Saponification Number"/>
+  <Entry name="SCH" value="Schedule"/>
+  <Entry name="SEV" value="Severity"/>
+  <Entry name="SFC" value="Short Fiber Content"/>
+  <Entry name="SHA" value="Shelf Life"/>
+  <Entry name="SIL" value="Silica (Silicon Dioxide)"/>
+  <Entry name="SLD" value="Solderability"/>
+  <Entry name="SLI" value="Slagging Index"/>
+  <Entry name="SMB" value="SAM-B Rating"/>
+  <Entry name="SMD" value="SAM-D Rating"/>
+  <Entry name="SOD" value="Solids"/>
+  <Entry name="SOF" value="Softening Range"/>
+  <Entry name="SPG" value="Specific Gravity"/>
+  <Entry name="SPR" value="Separator Pressure"/>
+  <Entry name="STA" value="Stability"/>
+  <Entry name="STL" value="Short Term Exposure Limit"/>
+  <Entry name="STP" value="Staple"/>
+  <Entry name="SUM" value="Suspended Matter"/>
+  <Entry name="SUR" value="Surface Roughness"/>
+  <Entry name="SUT" value="Surface Tension"/>
+  <Entry name="SVL" value="Survival"/>
+  <Entry name="SXX" value="S10 Minus S18 Value"/>
+  <Entry name="T50" value="T50"/>
+  <Entry name="T90" value="T90"/>
+  <Entry name="TAS" value="Taste"/>
+  <Entry name="TCL" value="Tire Tread Contact Length"/>
+  <Entry name="TDP" value="Perforation Top Depth"/>
+  <Entry name="TEE" value="Autodecomposition Temperature"/>
+  <Entry name="TES" value="Storage Temperature"/>
+  <Entry name="TEX" value="Texture"/>
+  <Entry name="TOA" value="Aquatic Toxicity"/>
+  <Entry name="TOR" value="Torque"/>
+  <Entry name="TOX" value="Toxic Emissions Performance"/>
+  <Entry name="TPF" value="Temperature Factor"/>
+  <Entry name="TPL" value="Tubing Pressure - Flowing"/>
+  <Entry name="TPQ" value="Threshold Planning Quantity"/>
+  <Entry name="TPS" value="Tubing Pressure - Shutin"/>
+  <Entry name="TRA" value="Trash Area"/>
+  <Entry name="TRC" value="Trash Count"/>
+  <Entry name="TRD" value="Tire Diameter"/>
+  <Entry name="TRN" value="Transmittance"/>
+  <Entry name="TRS" value="Transmissivity; Measure of the quantity of light that passes through a given volume of seawater; also used to measure turbidity and to estimate plant growing zones in the ocean"/>
+  <Entry name="TRT" value="Transmissivity Pathlength; The length of the path taken to arrive at transmissivity measurements"/>
+  <Entry name="TSZ" value="Trim Size"/>
+  <Entry name="TTL" value="Trailer Tongue Length"/>
+  <Entry name="TUR" value="Turbidity"/>
+  <Entry name="TVD" value="Maximum True Vertical Depth"/>
+  <Entry name="TWD" value="Tire Width"/>
+  <Entry name="UCB" value="Cube"/>
+  <Entry name="UNA" value="Unipunch Adhesion"/>
+  <Entry name="UNI" value="Uniformity"/>
+  <Entry name="UNK" value="Unknowns"/>
+  <Entry name="VAD" value="Vapor Density"/>
+  <Entry name="VAP" value="Vapor Pressure"/>
+  <Entry name="VBA" value="V-Bend Adhesion"/>
+  <Entry name="VCG" value="Vertical Center of Gravity"/>
+  <Entry name="VIN" value="Vinyl"/>
+  <Entry name="VIS" value="Viscosity"/>
+  <Entry name="VOC" value="VOC Emissions Performance"/>
+  <Entry name="VOL" value="Volume"/>
+  <Entry name="VOT" value="Volatiles"/>
+  <Entry name="VOV" value="Volatiles by Volume"/>
+  <Entry name="VOW" value="Volatiles by Weight"/>
+  <Entry name="VSO" value="Volume Split to Others"/>
+  <Entry name="VWT" value="Volume Weight"/>
+  <Entry name="WDE" value="Water Depth"/>
+  <Entry name="WEL" value="Weight Loss"/>
+  <Entry name="WOD" value="Water-Oil Distribution Coefficient"/>
+  <Entry name="WPF" value="Wellhead Pressure-Flowing"/>
+  <Entry name="WPL" value="Water/Product Level"/>
+  <Entry name="WPS" value="Wellhead Pressure Shutin"/>
+  <Entry name="WRA" value="Water Test Rate"/>
+  <Entry name="WSK" value="Width Shrinkage"/>
+  <Entry name="WTB" value="Water/Tank Bottom Level"/>
+  <Entry name="YPE" value="Yield Point Elongation"/>
+  <Entry name="ZAL" value="Aluminum"/>
+  <Entry name="ZAS" value="Arsenic"/>
+  <Entry name="ZBI" value="Bismuth"/>
+  <Entry name="ZBT" value="N-Butane"/>
+  <Entry name="ZBZ" value="Benzene"/>
+  <Entry name="ZCA" value="Calcium"/>
+  <Entry name="ZCB" value="Columbium"/>
+  <Entry name="ZCD" value="Carbon Dioxide"/>
+  <Entry name="ZCE" value="Cerium"/>
+  <Entry name="ZCO" value="Cobalt"/>
+  <Entry name="ZCR" value="Chromium"/>
+  <Entry name="ZCU" value="Copper"/>
+  <Entry name="ZET" value="Ethane"/>
+  <Entry name="ZFE" value="Iron"/>
+  <Entry name="ZFL" value="Newspaper--Full Page"/>
+  <Entry name="ZFS" value="Iron plus Silicon"/>
+  <Entry name="ZGE" value="Germanium"/>
+  <Entry name="ZHP" value="Heptane"/>
+  <Entry name="ZHS" value="Hydrogen Sulfide"/>
+  <Entry name="ZHX" value="Hexane"/>
+  <Entry name="ZIB" value="I-Butane"/>
+  <Entry name="ZIP" value="I-Pentane"/>
+  <Entry name="ZMG" value="Magnesium"/>
+  <Entry name="ZMN" value="Manganese"/>
+  <Entry name="ZMO" value="Molybdenum"/>
+  <Entry name="ZMT" value="Methane"/>
+  <Entry name="ZNB" value="Niobium"/>
+  <Entry name="ZNI" value="Nickel"/>
+  <Entry name="ZNP" value="Neo-Pentane"/>
+  <Entry name="ZOC" value="Octane"/>
+  <Entry name="ZPB" value="Lead"/>
+  <Entry name="ZPP" value="Propane"/>
+  <Entry name="ZPT" value="N-Pentane"/>
+  <Entry name="ZSB" value="Antimony"/>
+  <Entry name="ZSE" value="Selenium"/>
+  <Entry name="ZSI" value="Silicon"/>
+  <Entry name="ZSN" value="Tin"/>
+  <Entry name="ZTA" value="Tantalum"/>
+  <Entry name="ZTB" value="Newspaper--Tabloid Page"/>
+  <Entry name="ZTE" value="Tellurium"/>
+  <Entry name="ZTI" value="Titanium"/>
+  <Entry name="ZZN" value="Zinc"/>
+  <Entry name="ZZR" value="Zirconium"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

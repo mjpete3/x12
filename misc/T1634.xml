@@ -1,0 +1,128 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1634.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1634">
+  <Entry name="1" value="Accountant"/>
+  <Entry name="2" value="Accounting Manager"/>
+  <Entry name="3" value="Administrative Assistant"/>
+  <Entry name="4" value="Administrator"/>
+  <Entry name="5" value="Assistant Secretary"/>
+  <Entry name="6" value="Assistant Treasurer"/>
+  <Entry name="7" value="Assistant Vice President"/>
+  <Entry name="8" value="Associate"/>
+  <Entry name="9" value="Attorney"/>
+  <Entry name="A" value="Auditor"/>
+  <Entry name="B" value="Bookkeeper"/>
+  <Entry name="C" value="Branch Manager"/>
+  <Entry name="D" value="Cashier"/>
+  <Entry name="E" value="Certified Public Accountant"/>
+  <Entry name="F" value="Chairman"/>
+  <Entry name="G" value="Chairman of the Board"/>
+  <Entry name="H" value="Chairman of the Board of Directors"/>
+  <Entry name="I" value="Chief Executive Officer"/>
+  <Entry name="J" value="Chief Financial Officer"/>
+  <Entry name="K" value="Chief Operating Officer"/>
+  <Entry name="L" value="Clerk"/>
+  <Entry name="M" value="Commercial Manager"/>
+  <Entry name="N" value="Comptroller"/>
+  <Entry name="O" value="Controller"/>
+  <Entry name="P" value="Credit Manager"/>
+  <Entry name="Q" value="EDP Manager"/>
+  <Entry name="R" value="Director"/>
+  <Entry name="S" value="Executive Director"/>
+  <Entry name="T" value="Executive Secretary"/>
+  <Entry name="U" value="Executive Vice President"/>
+  <Entry name="V" value="General Controller"/>
+  <Entry name="W" value="General Counsel"/>
+  <Entry name="X" value="General Manager"/>
+  <Entry name="Y" value="General Partner"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="1A" value="General Secretary"/>
+  <Entry name="1B" value="Group Executive"/>
+  <Entry name="1C" value="Group Controller"/>
+  <Entry name="1D" value="Limited Partner"/>
+  <Entry name="1E" value="Manager"/>
+  <Entry name="1F" value="Managing Director"/>
+  <Entry name="1G" value="Managing Partner"/>
+  <Entry name="1H" value="Marketing Manager"/>
+  <Entry name="1J" value="Member of the Board"/>
+  <Entry name="1K" value="Member of the Board of Directors"/>
+  <Entry name="1L" value="Merchant Banker"/>
+  <Entry name="1M" value="Office Manager"/>
+  <Entry name="1N" value="Official Liquidator"/>
+  <Entry name="1O" value="Other Title"/>
+  <Entry name="1P" value="Owner"/>
+  <Entry name="1Q" value="Partner"/>
+  <Entry name="1R" value="Personnel Manager"/>
+  <Entry name="1S" value="President"/>
+  <Entry name="1T" value="Proprietor"/>
+  <Entry name="1U" value="Purchasing Manager"/>
+  <Entry name="1V" value="Registrar"/>
+  <Entry name="1W" value="Sales Director"/>
+  <Entry name="1X" value="Sales Manager"/>
+  <Entry name="1Y" value="Secretary"/>
+  <Entry name="1Z" value="Secretary of the Board of Directors"/>
+  <Entry name="2A" value="Secretary-Treasurer"/>
+  <Entry name="2B" value="Senior Vice President"/>
+  <Entry name="2C" value="Sole Director"/>
+  <Entry name="2D" value="Spokesperson"/>
+  <Entry name="2E" value="Treasurer"/>
+  <Entry name="2F" value="Unlimited Partner"/>
+  <Entry name="2G" value="Vice Chairman of the Board"/>
+  <Entry name="2H" value="Vice President"/>
+  <Entry name="2I" value="Advertising Manager"/>
+  <Entry name="2J" value="Alternate Director"/>
+  <Entry name="2K" value="Commercial Director"/>
+  <Entry name="2L" value="Company Secretary"/>
+  <Entry name="2M" value="Delegated Manager"/>
+  <Entry name="2N" value="Deputy General Manager"/>
+  <Entry name="2O" value="Export Manager"/>
+  <Entry name="2P" value="Financial Director"/>
+  <Entry name="2Q" value="Marketing Director"/>
+  <Entry name="2R" value="Operations Manager"/>
+  <Entry name="2S" value="Personnel Director"/>
+  <Entry name="2T" value="Production Manager"/>
+  <Entry name="2U" value="Referee"/>
+  <Entry name="2V" value="Sole Administrator"/>
+  <Entry name="2W" value="Technical Director"/>
+  <Entry name="2X" value="Trustee"/>
+  <Entry name="3A" value="Ancillary"/>
+  <Entry name="3B" value="Consultant"/>
+  <Entry name="3C" value="Examiner"/>
+  <Entry name="3D" value="Instructor"/>
+  <Entry name="3E" value="PCP/Gatekeeper"/>
+  <Entry name="3F" value="Researcher"/>
+  <Entry name="3G" value="Specialist"/>
+  <Entry name="3H" value="Vendor"/>
+  <Entry name="3I" value="Chief Electoral Officer"/>
+  <Entry name="3J" value="Co-Chairperson"/>
+  <Entry name="3K" value="Commissioner"/>
+  <Entry name="3L" value="Government Agent"/>
+  <Entry name="3M" value="Notary"/>
+  <Entry name="3N" value="Principal Member"/>
+  <Entry name="3O" value="Principal Officer"/>
+  <Entry name="3P" value="Solicitor"/>
+  <Entry name="3Q" value="Sponsor"/>
+</Table>

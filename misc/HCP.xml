@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: HCP.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="HCP" comment="To specify pricing or repricing information about a health care claim or line item">
+  <Field name="PricingMethodology" required="y" min="2" max="2" validation="T1473" comment="Code specifying pricing methodology at which the claim or line item has been priced or repriced"/>
+  <Field name="MonetaryAmount1" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="MonetaryAmount2" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="ReferenceIdentification1" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Rate" type="double" required="y" min="1" max="9" comment="Rate expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="MonetaryAmount3" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="ProductServiceId1" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="RejectReasonCode" required="y" min="2" max="2" validation="T901" comment="Code assigned by issuer to identify reason for rejection"/>
+  <Field name="PolicyComplianceCode" required="y" min="1" max="2" validation="T1526" comment="Code specifying policy compliance"/>
+  <Field name="ExceptionCode" required="y" min="1" max="2" validation="T1527" comment="Code specifying the exception reason for consideration of out-of-network health care services"/>
+</Segment>

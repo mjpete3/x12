@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PR.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PR" comment="To identify the commodity to which the application of a rate docket is restricted">
+  <Field name="CommodityGeographicLogicalConnectorCode" min="1" max="1" validation="T699" comment="Code identifying how a specific segment's statement of a rate restriction is evaluated and its relationship to rate restrictions stated within other segments of the same segment definition"/>
+  <Field name="CommodityCodeQualifier" required="y" min="1" max="1" validation="T23" comment="Code identifying the commodity coding system used for Commodity Code"/>
+  <Field name="CommodityCode1" required="y" min="1" max="30" comment="Code describing a commodity or group of commodities"/>
+  <Field name="CommodityCode2" required="y" min="1" max="30" comment="Code describing a commodity or group of commodities"/>
+  <Field name="ChangeTypeCode" required="y" min="1" max="1" validation="T259" comment="Code indicating change type"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="DocketControlNumber" required="y" min="1" max="7" comment="A grouping identification which, when combined with elements 140 and 690, provides a unique identity to a parcel of ratemaking activity"/>
+  <Field name="DocketIdentification" required="y" min="1" max="11" comment="A sequence number which, when combined with elements 140 and 697, provides a unique identity to a parcel of ratemaking activity"/>
+  <Field name="GroupTitle" required="y" min="2" max="30" comment="The descriptive title of a data group"/>
+</Segment>

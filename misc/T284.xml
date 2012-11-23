@@ -1,0 +1,93 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T284.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T284">
+  <Entry name="01" value="Bulk Commodity Train"/>
+  <Entry name="09" value="Premium Surface"/>
+  <Entry name="3D" value="Three Day Service"/>
+  <Entry name="9A" value="9 A.M."/>
+  <Entry name="AC" value="Air Cargo"/>
+  <Entry name="AE" value="Air Economy"/>
+  <Entry name="AM" value="A.M."/>
+  <Entry name="BC" value="Business Class"/>
+  <Entry name="CB" value="Consignee Billing Service"/>
+  <Entry name="CE" value="Courier Express"/>
+  <Entry name="CG" value="Ground"/>
+  <Entry name="CX" value="Express Service"/>
+  <Entry name="D1" value="Delivery Scheduled Next Day by Cartage Agent"/>
+  <Entry name="D2" value="Delivery scheduled second day by cartage agent"/>
+  <Entry name="D3" value="Delivery scheduled third day by cartage agent"/>
+  <Entry name="DC" value="Delivery Confirmation"/>
+  <Entry name="DF" value="Deferred Service"/>
+  <Entry name="DR" value="Delivery Confirmation Return"/>
+  <Entry name="DS" value="Door Service"/>
+  <Entry name="DT" value="Delivery Notification Only"/>
+  <Entry name="ES" value="Expedited Service"/>
+  <Entry name="ET" value="Proof of Delivery (POD) with Signature"/>
+  <Entry name="FC" value="First Class"/>
+  <Entry name="G2" value="Standard Service"/>
+  <Entry name="GP" value="Express Service Plus"/>
+  <Entry name="GT" value="Tracking - Ground"/>
+  <Entry name="IA" value="IATA"/>
+  <Entry name="IE" value="Expedited Service - Worldwide"/>
+  <Entry name="IX" value="Express Service - Worldwide"/>
+  <Entry name="ME" value="Metro"/>
+  <Entry name="MW" value="Multiweight"/>
+  <Entry name="ND" value="Next Day Air"/>
+  <Entry name="NF" value="Next Flight Out"/>
+  <Entry name="NH" value="Next Day Hundred Weight"/>
+  <Entry name="NM" value="Next Morning"/>
+  <Entry name="NS" value="Not Served"/>
+  <Entry name="ON" value="Overnight"/>
+  <Entry name="PA" value="Primary Service Area - Next Day by 10:30 A.M."/>
+  <Entry name="PB" value="Priority Mail"/>
+  <Entry name="PC" value="Primary Service Area - Next Day By 9:30 AM"/>
+  <Entry name="PI" value="Priority Mail Insured"/>
+  <Entry name="PM" value="PM"/>
+  <Entry name="PN" value="Primary Service Area - Next Day by Noon"/>
+  <Entry name="PO" value="P.O. Box/Zip Code"/>
+  <Entry name="PR" value="Primary Service Area - Next Day by 5:00 P.M."/>
+  <Entry name="PS" value="Primary Service Area - Second Day by Noon"/>
+  <Entry name="R1" value="Passenger Service"/>
+  <Entry name="R2" value="Quality Intermodal High Speed 70 Miles Per Hour (MPH)"/>
+  <Entry name="R3" value="Other Intermodal and Stack Service"/>
+  <Entry name="R4" value="60 Miles Per Hour (MPH) Service"/>
+  <Entry name="R5" value="Manifest Freight"/>
+  <Entry name="R6" value="Circus Train"/>
+  <Entry name="R7" value="Work Train"/>
+  <Entry name="R8" value="Commuter Service"/>
+  <Entry name="RS" value="Authorized Return Service"/>
+  <Entry name="SA" value="Same Day"/>
+  <Entry name="SC" value="Second Day Air"/>
+  <Entry name="SD" value="Saturday"/>
+  <Entry name="SE" value="Second Day"/>
+  <Entry name="SG" value="Standard Ground"/>
+  <Entry name="SH" value="Second Day Hundred Weight"/>
+  <Entry name="SI" value="Standard Ground Hundred Weight"/>
+  <Entry name="SM" value="Second Morning"/>
+  <Entry name="SP" value="Saturday Pickup"/>
+  <Entry name="ST" value="Standard Class"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

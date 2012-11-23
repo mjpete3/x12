@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: M1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="M1" comment="To specify details related to insurance">
+  <Field name="CountryCode" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="CarriageValue" type="long" required="y" min="2" max="8" comment="Carriage value expressed in whole units of the standard monetary denomination for the currency specified"/>
+  <Field name="DeclaredValue" type="double" required="y" min="2" max="12" comment="Monetary assigned value expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="EntityIdentifierCode" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+  <Field name="FreeFormMessage" required="y" min="1" max="30" comment="Free-form information"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="PercentQualifier1" required="y" min="1" max="2" validation="T1004" comment="Code to qualify percent"/>
+  <Field name="Percent1" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="PercentQualifier2" required="y" min="1" max="2" validation="T1004" comment="Code to qualify percent"/>
+  <Field name="Percent2" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+</Segment>

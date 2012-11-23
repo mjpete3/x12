@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: IND.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="IND" comment="To provide additional demographic information to the receiving school, institution, or agency to assist in identifying the particular student">
+  <Field name="CountryCode" required="y" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="CountyDesignator" required="y" min="5" max="5" comment="Code identifying the county within a state"/>
+  <Field name="CityName" required="y" min="2" max="30" comment="Free-form text for city name"/>
+  <Field name="LanguageCode1" required="y" min="2" max="3" comment="Code designating the language used in text, from a standard code list maintained by the International Standards Organization (ISO 639)"/>
+  <Field name="LanguageProficiencyIndicator" required="y" min="1" max="1" validation="T1476" comment="Code indicating language proficiency"/>
+  <Field name="LanguageCode2" required="y" min="2" max="3" comment="Code designating the language used in text, from a standard code list maintained by the International Standards Organization (ISO 639)"/>
+  <Field name="LanguageCode3" required="y" min="2" max="3" comment="Code designating the language used in text, from a standard code list maintained by the International Standards Organization (ISO 639)"/>
+  <Field name="IdentificationCodeQualifier1" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode1" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="IdentificationCodeQualifier2" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode2" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+</Segment>

@@ -1,0 +1,166 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T432.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T432">
+  <Entry name="01" value="Cancel After This Date"/>
+  <Entry name="02" value="Delivery Requested on This Date"/>
+  <Entry name="03" value="Invoice Date"/>
+  <Entry name="04" value="Purchase Order Date"/>
+  <Entry name="05" value="Sailing Date"/>
+  <Entry name="06" value="Sold Date"/>
+  <Entry name="07" value="Effective Date"/>
+  <Entry name="08" value="Purchase Order Received"/>
+  <Entry name="09" value="Process Date"/>
+  <Entry name="10" value="Requested Ship Date/Pick-up Date"/>
+  <Entry name="11" value="Shipped on This Date"/>
+  <Entry name="12" value="Terms Discount Due Date"/>
+  <Entry name="13" value="Terms Net Due Date"/>
+  <Entry name="14" value="Preferred Payment Date"/>
+  <Entry name="15" value="Promotion Start"/>
+  <Entry name="16" value="Promotion End"/>
+  <Entry name="17" value="Estimated Delivery Date"/>
+  <Entry name="18" value="Date Available/Constructive Replacement"/>
+  <Entry name="19" value="Date Unloaded"/>
+  <Entry name="20" value="Check Date"/>
+  <Entry name="21" value="Charge Back Date"/>
+  <Entry name="22" value="Freight Bill Date"/>
+  <Entry name="23" value="Promotion Order Date - Start"/>
+  <Entry name="24" value="Promotion Order Date - End"/>
+  <Entry name="25" value="Promotion Ship Date - Start"/>
+  <Entry name="26" value="Promotion Ship Date - End"/>
+  <Entry name="27" value="Promotion Requested Delivery Date - Start"/>
+  <Entry name="28" value="Promotion Requested Delivery Date - End"/>
+  <Entry name="29" value="Promotion Performance Date - Start"/>
+  <Entry name="30" value="Promotion Performance Date - End"/>
+  <Entry name="31" value="Promotion Invoice Protection Date - Start"/>
+  <Entry name="32" value="Promotion Invoice Protection Date - End"/>
+  <Entry name="33" value="Promotion Floor Stock Protect - Start"/>
+  <Entry name="34" value="Promotion Floor Stock Protect - End"/>
+  <Entry name="35" value="Delivered on This Date"/>
+  <Entry name="36" value="Expiration Date"/>
+  <Entry name="37" value="Ship Not Before Date"/>
+  <Entry name="38" value="Ship Not Later Than Date"/>
+  <Entry name="39" value="Ship Week Of Date"/>
+  <Entry name="40" value="Original Purchase Order Date"/>
+  <Entry name="41" value="Date Invoice Created"/>
+  <Entry name="42" value="Buy Period Date - Start"/>
+  <Entry name="43" value="Buy Period Date - End"/>
+  <Entry name="44" value="Arrival at Destination Yard"/>
+  <Entry name="45" value="Notified"/>
+  <Entry name="46" value="Actual Placement"/>
+  <Entry name="47" value="Released"/>
+  <Entry name="48" value="Customs Release"/>
+  <Entry name="49" value="Duty Paid"/>
+  <Entry name="50" value="Charged From"/>
+  <Entry name="51" value="Charged To"/>
+  <Entry name="52" value="Ordered"/>
+  <Entry name="53" value="Deliver Not Before Date"/>
+  <Entry name="54" value="Deliver No Later Than Date"/>
+  <Entry name="55" value="Deliver Week Of"/>
+  <Entry name="56" value="Actual Free Time Expiration Date"/>
+  <Entry name="57" value="Guarantee Expiration Date"/>
+  <Entry name="58" value="Price Change Last Order Date"/>
+  <Entry name="59" value="Price Change Last Arrival Date"/>
+  <Entry name="60" value="Price Change Last Ship Date"/>
+  <Entry name="61" value="Price Change Effective Date"/>
+  <Entry name="62" value="Accrual Start Date"/>
+  <Entry name="63" value="Accrual End Date"/>
+  <Entry name="64" value="Must Respond By"/>
+  <Entry name="67" value="Delivered By This Date"/>
+  <Entry name="68" value="Requested Delivery Date"/>
+  <Entry name="69" value="Scheduled Pick-Up Date"/>
+  <Entry name="70" value="Scheduled Delivery Date"/>
+  <Entry name="71" value="Est. Next Promo. Date Start"/>
+  <Entry name="72" value="Est. Next Promo. Date End"/>
+  <Entry name="73" value="Est. Next Promo. Ship Date Start"/>
+  <Entry name="74" value="Estimated Next Promotion Ship Date End"/>
+  <Entry name="76" value="Bill of Lading"/>
+  <Entry name="77" value="Pickup Appointment Scheduled Date"/>
+  <Entry name="78" value="Delivery Appointment Scheduled Date"/>
+  <Entry name="79" value="Pickup Requested Scheduled Date"/>
+  <Entry name="80" value="Delivery Requested Scheduled Date"/>
+  <Entry name="81" value="Pickup Appointment Granted Date"/>
+  <Entry name="82" value="Delivery Appointment Granted Date"/>
+  <Entry name="83" value="Equipment Furnished Date"/>
+  <Entry name="84" value="Bill of Lading Initiated Date"/>
+  <Entry name="85" value="Date Issued"/>
+  <Entry name="86" value="Actual Pickup Date"/>
+  <Entry name="87" value="First Order Date"/>
+  <Entry name="88" value="First Ship Date"/>
+  <Entry name="89" value="First Arrival Date"/>
+  <Entry name="90" value="Requested Pack Date"/>
+  <Entry name="91" value="Superseded Date"/>
+  <Entry name="92" value="Spot for Load Date"/>
+  <Entry name="93" value="Spot for Unload Date"/>
+  <Entry name="94" value="Spot for Storage Date (No Shipment)"/>
+  <Entry name="95" value="Spot for Load Exchange Date (Export)"/>
+  <Entry name="96" value="Scheduled Pick-up Date, Needs Confirmation"/>
+  <Entry name="97" value="Scheduled Delivery Date, Needs Confirmation"/>
+  <Entry name="98" value="Scheduled Pick-up Date, Appointment Confirmed"/>
+  <Entry name="99" value="Scheduled Delivery Date, Appointment Confirmed"/>
+  <Entry name="AA" value="Store Inventory Stock"/>
+  <Entry name="AB" value="Warehouse Inventory Stock"/>
+  <Entry name="BB" value="Transaction Control Date"/>
+  <Entry name="BC" value="Publication Date"/>
+  <Entry name="BD" value="Required By"/>
+  <Entry name="BE" value="Validated"/>
+  <Entry name="BF" value="Pack Date"/>
+  <Entry name="BG" value="Backorder Release Date"/>
+  <Entry name="BH" value="Offered for Delivery"/>
+  <Entry name="BI" value="Inspection"/>
+  <Entry name="BJ" value="Shelf-Life Expiration"/>
+  <Entry name="BK" value="Warranty Expiration"/>
+  <Entry name="BL" value="Manufacture"/>
+  <Entry name="BM" value="Contract Physically Completed"/>
+  <Entry name="BN" value="Contract Final Payment"/>
+  <Entry name="BO" value="Estimated Contract Completion"/>
+  <Entry name="BP" value="Contract Closed"/>
+  <Entry name="BQ" value="Extended Closeout"/>
+  <Entry name="BR" value="Date Delivery Commenced"/>
+  <Entry name="BS" value="Product Receipt Date"/>
+  <Entry name="BT" value="Acceptance"/>
+  <Entry name="BU" value="Rejection"/>
+  <Entry name="BV" value="Recorded"/>
+  <Entry name="BW" value="Signature"/>
+  <Entry name="BX" value="Action"/>
+  <Entry name="BY" value="Expected Reply"/>
+  <Entry name="BZ" value="Demand Receipt Date"/>
+  <Entry name="CA" value="Cutoff Date"/>
+  <Entry name="CB" value="Beginning Date of Customer Plant Shutdown"/>
+  <Entry name="CE" value="Ending Date of Customer Plant Shutdown"/>
+  <Entry name="CL" value="Date Loading Completed"/>
+  <Entry name="EP" value="Earliest Pickup Date"/>
+  <Entry name="FD" value="Freshness Date"/>
+  <Entry name="KA" value="Scheduled Service Completion"/>
+  <Entry name="LA" value="Last Acquisition"/>
+  <Entry name="LC" value="Date Loading Commenced"/>
+  <Entry name="LD" value="Last Demand"/>
+  <Entry name="LP" value="Latest Pickup Date"/>
+  <Entry name="PE" value="Period End"/>
+  <Entry name="RS" value="Ready to Ship"/>
+  <Entry name="SE" value="Date Shipped to Port of Embarkation (POE)"/>
+  <Entry name="TA" value="Original Transaction"/>
+  <Entry name="TR" value="Transfer"/>
+</Table>

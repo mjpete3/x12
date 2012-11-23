@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T381.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T381">
+  <Entry name="A" value="Bid"/>
+  <Entry name="B" value="Back Order"/>
+  <Entry name="C" value="Cents Off Label"/>
+  <Entry name="D" value="Distress Merchandise"/>
+  <Entry name="E" value="Reorder"/>
+  <Entry name="F" value="Intro Offering"/>
+  <Entry name="G" value="Grand Opening"/>
+  <Entry name="H" value="Unmatched Manufacturer ID"/>
+  <Entry name="I" value="Unmatched Coupon Family Code"/>
+  <Entry name="J" value="Purchase Requirement Not Satisfied"/>
+  <Entry name="K" value="Consumer Presented More Coupons Than Allowed"/>
+  <Entry name="L" value="Coupon Value Exceeds Retail Price"/>
+  <Entry name="P" value="Provision Sales to Non-Provision Account"/>
+  <Entry name="Q" value="Price Quote"/>
+  <Entry name="S" value="Temporary Shipping Interruption"/>
+  <Entry name="T" value="Price Protection"/>
+  <Entry name="X" value="Miscellaneous"/>
+</Table>

@@ -1,0 +1,234 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T901.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T901">
+  <Entry name="01" value="Price Authorization Invalid"/>
+  <Entry name="02" value="Price Authorization Expired"/>
+  <Entry name="03" value="Product not on the price authorization"/>
+  <Entry name="04" value="Authorized Quantity Exceeded"/>
+  <Entry name="05" value="Zero Balance"/>
+  <Entry name="06" value="Special Cost Incorrect"/>
+  <Entry name="07" value="Catalog Cost Incorrect"/>
+  <Entry name="08" value="Invalid Ship Location"/>
+  <Entry name="09" value="No Credit Allowed"/>
+  <Entry name="10" value="Administrative Cancellation"/>
+  <Entry name="11" value="Invalid Debit Number"/>
+  <Entry name="12" value="Duplicate Sequence Number"/>
+  <Entry name="13" value="Not Valid for Price Protection"/>
+  <Entry name="14" value="Invalid part number"/>
+  <Entry name="15" value="Required application data missing"/>
+  <Entry name="16" value="Unit resale higher than authorized"/>
+  <Entry name="17" value="Negotiated price was not less than book price"/>
+  <Entry name="18" value="Ship date must not be after current date"/>
+  <Entry name="19" value="Ship date cannot be prior to price authorization issue date"/>
+  <Entry name="20" value="Ship date should not be before price authorization date (for rebills)"/>
+  <Entry name="21" value="Price authorization is a rebill type"/>
+  <Entry name="23" value="Price authorization has been deleted"/>
+  <Entry name="24" value="Price authorization used on a sales order"/>
+  <Entry name="25" value="Disposition pending vendor review."/>
+  <Entry name="26" value="Invalid Customer Number"/>
+  <Entry name="27" value="Invalid Ship Date"/>
+  <Entry name="28" value="Duplicate Invoice Number"/>
+  <Entry name="29" value="Claim Submitted Past Exercise Period"/>
+  <Entry name="30" value="Invalid Meet Competition Cost"/>
+  <Entry name="31" value="Invalid Book Cost"/>
+  <Entry name="32" value="Input Incomplete"/>
+  <Entry name="33" value="Input Errors"/>
+  <Entry name="34" value="No Coverage"/>
+  <Entry name="35" value="Out of Network"/>
+  <Entry name="36" value="Testing not Included"/>
+  <Entry name="37" value="Request Forwarded To and Decision Response Forthcoming From an External Review Organization"/>
+  <Entry name="38" value="Claim Can Not Be Identified for Verification"/>
+  <Entry name="39" value="Actual Information Different than Reported"/>
+  <Entry name="40" value="Actual Information Different - Claim Has Been Re-adjudicated Since Initial Payment"/>
+  <Entry name="41" value="Authorization/Access Restrictions"/>
+  <Entry name="42" value="Unable to Respond at Current Time"/>
+  <Entry name="43" value="Invalid/Missing Provider Identification"/>
+  <Entry name="44" value="Invalid/Missing Provider Name"/>
+  <Entry name="45" value="Invalid/Missing Provider Specialty"/>
+  <Entry name="46" value="Invalid/Missing Provider Phone Number"/>
+  <Entry name="47" value="Invalid/Missing Provider State"/>
+  <Entry name="48" value="Invalid/Missing Referring Provider Identification Number"/>
+  <Entry name="49" value="Provider is Not Primary Care Physician"/>
+  <Entry name="50" value="Provider Ineligible for Inquiries"/>
+  <Entry name="51" value="Provider Not on File"/>
+  <Entry name="52" value="Service Dates Not Within Provider Plan Enrollment"/>
+  <Entry name="53" value="Inquired Benefit Inconsistent with Provider Type"/>
+  <Entry name="54" value="Inappropriate Product/Service ID Qualifier"/>
+  <Entry name="55" value="Inappropriate Product/Service ID"/>
+  <Entry name="56" value="Inappropriate Date"/>
+  <Entry name="57" value="Invalid/Missing Date(s) of Service"/>
+  <Entry name="58" value="Invalid/Missing Date-of-Birth"/>
+  <Entry name="59" value="Invalid/Missing Date-of-Death"/>
+  <Entry name="60" value="Date of Birth Follows Date(s) of Service"/>
+  <Entry name="61" value="Date of Death Precedes Date(s) of Service"/>
+  <Entry name="62" value="Date of Service Not Within Allowable Inquiry Period"/>
+  <Entry name="63" value="Date of Service in Future"/>
+  <Entry name="64" value="Invalid/Missing Patient ID"/>
+  <Entry name="65" value="Invalid/Missing Patient Name"/>
+  <Entry name="66" value="Invalid/Missing Patient Gender Code"/>
+  <Entry name="67" value="Patient Not Found"/>
+  <Entry name="68" value="Duplicate Patient ID Number"/>
+  <Entry name="69" value="Inconsistent with Patient's Age"/>
+  <Entry name="70" value="Inconsistent with Patient's Gender"/>
+  <Entry name="71" value="Patient Birth Date Does Not Match That for the Patient on the Database"/>
+  <Entry name="72" value="Invalid/Missing Subscriber/Insured ID"/>
+  <Entry name="73" value="Invalid/Missing Subscriber/Insured Name"/>
+  <Entry name="74" value="Invalid/Missing Subscriber/Insured Gender Code"/>
+  <Entry name="75" value="Subscriber/Insured Not Found"/>
+  <Entry name="76" value="Duplicate Subscriber/Insured ID Number"/>
+  <Entry name="77" value="Subscriber Found, Patient Not Found"/>
+  <Entry name="78" value="Subscriber/Insured Not in Group/Plan Identified"/>
+  <Entry name="79" value="Invalid Participant Identification"/>
+  <Entry name="80" value="No Response received - Transaction Terminated"/>
+  <Entry name="81" value="Invalid or Missing Case Number"/>
+  <Entry name="82" value="Not Medically Necessary"/>
+  <Entry name="83" value="Level of Care Not Appropriate"/>
+  <Entry name="84" value="Certification Not Required for this Service"/>
+  <Entry name="85" value="Certification Responsibility of External Review Organization"/>
+  <Entry name="86" value="Primary Care Service"/>
+  <Entry name="87" value="Exceeds Plan Maximums"/>
+  <Entry name="88" value="Non-covered Service"/>
+  <Entry name="89" value="No Prior Approval"/>
+  <Entry name="90" value="Requested Information Not Received"/>
+  <Entry name="91" value="Duplicate Request"/>
+  <Entry name="92" value="Service Inconsistent with Diagnosis"/>
+  <Entry name="95" value="Patient Not Eligible"/>
+  <Entry name="96" value="Pre-existing Condition"/>
+  <Entry name="97" value="Invalid or Missing Provider Address"/>
+  <Entry name="98" value="Experimental Service or Procedure"/>
+  <Entry name="AA" value="Authorization Number Not Found"/>
+  <Entry name="AB" value="Air Brakes - Inoperative, etc."/>
+  <Entry name="AD" value="Accident Damage - Derail/Sideswiped"/>
+  <Entry name="AE" value="Requires Primary Care Physician Authorization"/>
+  <Entry name="AF" value="Invalid/Missing Diagnosis Code(s)"/>
+  <Entry name="AG" value="Invalid/Missing Procedure Code(s)"/>
+  <Entry name="AH" value="Invalid/Missing Onset of Current Condition or Illness Date"/>
+  <Entry name="AI" value="Invalid/Missing Accident Date"/>
+  <Entry name="AJ" value="Invalid/Missing Last Menstrual Period Date"/>
+  <Entry name="AK" value="Invalid/Missing Expected Date of Birth"/>
+  <Entry name="AL" value="Invalid/Missing Surgery Date"/>
+  <Entry name="AM" value="Invalid/Missing Admission Date"/>
+  <Entry name="AN" value="Invalid/Missing Discharge Date"/>
+  <Entry name="AO" value="Additional Patient Condition Information Required"/>
+  <Entry name="AR" value="Arrivals"/>
+  <Entry name="BA" value="Reject Due to Air Bags"/>
+  <Entry name="BC" value="Reject Due to No Chains"/>
+  <Entry name="BD" value="Reject Due to Damps"/>
+  <Entry name="BG" value="Reject Due to Bearings"/>
+  <Entry name="BL" value="Reject Due to Load Divider Bad Order"/>
+  <Entry name="BO" value="Loaded Car, Unable to Load"/>
+  <Entry name="BP" value="Reject Due to Bridge Plate"/>
+  <Entry name="BR" value="Reject Due to Brake Rigging Beam, Lever"/>
+  <Entry name="BS" value="Reject Due to Bad Order Slides"/>
+  <Entry name="BV" value="Reject Due to Bad Order Valves/Piping"/>
+  <Entry name="BW" value="Reject Due to Bad Order Walls"/>
+  <Entry name="CA" value="Reject Due to Crank Arm Application"/>
+  <Entry name="CB" value="Reject Due to Center Bowls, Plates and Pins"/>
+  <Entry name="CI" value="Certification Information Does Not Match Patient"/>
+  <Entry name="CL" value="Complete Loading"/>
+  <Entry name="CM" value="Released as Railroad Company Material"/>
+  <Entry name="CN" value="Car Not Ordered"/>
+  <Entry name="CP" value="Put on Constructive Placement"/>
+  <Entry name="CR" value="Wrong Consignee"/>
+  <Entry name="CS" value="Release Load Through Bill Connecting Road"/>
+  <Entry name="CT" value="Release as a Cross-town Load"/>
+  <Entry name="CU" value="Equipment Not Used"/>
+  <Entry name="CW" value="Wrong Car Type"/>
+  <Entry name="DD" value="Reject Due to Doors"/>
+  <Entry name="DG" value="Reject Due to Draft Gear - Yoke"/>
+  <Entry name="DM" value="Dismantle"/>
+  <Entry name="DP" value="Departed"/>
+  <Entry name="DR" value="Reject Due to Dirty"/>
+  <Entry name="DS" value="Defective Safety Devices"/>
+  <Entry name="DV" value="Reject Due to Load Dividers, Side Filters, Special Equipment"/>
+  <Entry name="E1" value="Requested Record Will Not Be Sent; Cannot Identify the Record"/>
+  <Entry name="E2" value="Requested Record Will Not Be Sent; Need Student or Parent Permission"/>
+  <Entry name="E3" value="Requested Record Will Not Be Sent"/>
+  <Entry name="E4" value="Requested Record Will Not Be Sent; Never Enrolled"/>
+  <Entry name="E5" value="Requested Record Will Not Be Sent; No Degree Awarded"/>
+  <Entry name="E6" value="Requested Record Will Not Be Sent; No Grades Posted"/>
+  <Entry name="E7" value="Requested Record Cannot Be Sent Electronically; Record Resides in Paper Format only which Will Be Sent by Mail"/>
+  <Entry name="E8" value="Requires Medical Review"/>
+  <Entry name="EA" value="Empty Equipment Available for Loading"/>
+  <Entry name="ER" value="Reject Due to Spotted in Error"/>
+  <Entry name="ET" value="Empty Trailer Flat Release"/>
+  <Entry name="FD" value="Freight Damage Claim"/>
+  <Entry name="FR" value="Reject Due to Bad Floor"/>
+  <Entry name="GS" value="Release From Demurrage and Start Storage until Waybilled"/>
+  <Entry name="HB" value="Reject Due to Handbrake"/>
+  <Entry name="HH" value="Reject Due to Hand Hold, Ladder, Step, Running Boards, Platforms, etc."/>
+  <Entry name="HX" value="Reject Due to Hot Journal Box"/>
+  <Entry name="IA" value="Invalid Authorization Number Format"/>
+  <Entry name="ID" value="Releases an Idler"/>
+  <Entry name="II" value="Industrial Interchange"/>
+  <Entry name="IN" value="Inter-plant Switch"/>
+  <Entry name="IP" value="Inappropriate Provider Role"/>
+  <Entry name="KR" value="Reject Due to Couplers"/>
+  <Entry name="LK" value="Reject Due to Leaking Contents"/>
+  <Entry name="LS" value="Reject Due to Load Shifted"/>
+  <Entry name="LW" value="Light Weigh and Restencil"/>
+  <Entry name="MA" value="Missing Authorization Number"/>
+  <Entry name="MO" value="Move from Current Spot to Next"/>
+  <Entry name="NC" value="No Certification Information Found"/>
+  <Entry name="OG" value="Reject Due to Outlet Gate/Valve Lo and Open Hopper"/>
+  <Entry name="OI" value="Released from Industry to be Inspected"/>
+  <Entry name="OR" value="Ordered for Replacement"/>
+  <Entry name="OV" value="Reject Due to Overloaded"/>
+  <Entry name="PF" value="Released Repaired by Private Facility"/>
+  <Entry name="PM" value="Preventative Maintenance"/>
+  <Entry name="PN" value="Released not Repaired by Private Facility"/>
+  <Entry name="RB" value="Released from Industry to Custody of Broker"/>
+  <Entry name="RD" value="To be Reloaded"/>
+  <Entry name="RF" value="Reject Due to Refrigeration Unit"/>
+  <Entry name="RH" value="Reject Due to Roof Hatches"/>
+  <Entry name="RK" value="Reject Due to Racks (Bi or Tri Levels)"/>
+  <Entry name="RL" value="Released"/>
+  <Entry name="RN" value="Bad Order Reinitialing and Numbering"/>
+  <Entry name="RP" value="Released Partially Unloaded"/>
+  <Entry name="RS" value="Released Loaded for Line Haul Shipment"/>
+  <Entry name="RT" value="Run Through Equipment not Spotted"/>
+  <Entry name="SC" value="Released from Demurrage after being Scrapped"/>
+  <Entry name="ST" value="Released from Shop Track"/>
+  <Entry name="SU" value="Reject Due to Superstructure - End, Roof and Sides"/>
+  <Entry name="SW" value="Local Waybill"/>
+  <Entry name="T1" value="Cannot Identify Provider as TPO (Third Party Organization) Participant"/>
+  <Entry name="T2" value="Cannot Identify Payer as TPO (Third Party Organization) Participant"/>
+  <Entry name="T3" value="Cannot Identify Insured as TPO (Third Party Organization) Participant"/>
+  <Entry name="T4" value="Payer Name or Identifier Missing"/>
+  <Entry name="T5" value="Certification Information Missing"/>
+  <Entry name="T6" value="Claim does not contain enough information for re-pricing"/>
+  <Entry name="TC" value="Bad Order to Transfer Lading"/>
+  <Entry name="TD" value="Reject Due to Tie Down Devices"/>
+  <Entry name="TH" value="Reject Due to Trailer Hitch"/>
+  <Entry name="TL" value="Reject Due to Train Line, Air Hose, Anglecock"/>
+  <Entry name="TR" value="Reject Due to Truck, S-Frame, Bolster"/>
+  <Entry name="UC" value="Reject Due to Uncoupling Rod"/>
+  <Entry name="UF" value="Reject Due to Underframe - Including Sills"/>
+  <Entry name="UG" value="Bad Order for Upgrading of Car"/>
+  <Entry name="WA" value="Reject Due to Wheel/Axle"/>
+  <Entry name="WK" value="Bad Order Due to Wreck"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,87 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T344.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T344">
+  <Entry name="AA" value="More Than One Year"/>
+  <Entry name="AB" value="First Six-Month Period"/>
+  <Entry name="AC" value="Second Six-Month Period"/>
+  <Entry name="AD" value="Average Daily"/>
+  <Entry name="AE" value="Under One Year"/>
+  <Entry name="AF" value="Next Three Months"/>
+  <Entry name="AG" value="Four Month Period"/>
+  <Entry name="AM" value="Average Monthly"/>
+  <Entry name="AN" value="Annual"/>
+  <Entry name="AP" value="Academic Period"/>
+  <Entry name="AY" value="Average Year"/>
+  <Entry name="BD" value="Buyer's Manufacturing Days"/>
+  <Entry name="BM" value="Bimonthly"/>
+  <Entry name="BW" value="Bi-weekly"/>
+  <Entry name="CC" value="Cycles"/>
+  <Entry name="CY" value="Calendar Year"/>
+  <Entry name="DA" value="Calendar Days"/>
+  <Entry name="DW" value="Work Days"/>
+  <Entry name="DY" value="Day"/>
+  <Entry name="EA" value="Calendar Year-to-Date"/>
+  <Entry name="EB" value="Campaign-to-Date"/>
+  <Entry name="EC" value="Election Cycle"/>
+  <Entry name="ED" value="This Period"/>
+  <Entry name="EE" value="To Date"/>
+  <Entry name="EL" value="Option Period at End of Lease"/>
+  <Entry name="F1" value="Fiscal Year Plus One Year"/>
+  <Entry name="F2" value="Fiscal Year Plus Two Years"/>
+  <Entry name="FY" value="Fiscal Year"/>
+  <Entry name="HR" value="Hours"/>
+  <Entry name="ID" value="Inception to Date"/>
+  <Entry name="KK" value="Maximum Calendar Days"/>
+  <Entry name="KL" value="As Required"/>
+  <Entry name="LN" value="Lease Termination Notification Period"/>
+  <Entry name="LT" value="Lease Term"/>
+  <Entry name="MD" value="Month to Date"/>
+  <Entry name="MI" value="Minutes"/>
+  <Entry name="MO" value="Month"/>
+  <Entry name="MS" value="Mean Time Between Stops"/>
+  <Entry name="MT" value="Mean Time Between Failure"/>
+  <Entry name="NX" value="Next Six Months"/>
+  <Entry name="PA" value="Plan Year to Date"/>
+  <Entry name="PD" value="Period to Date"/>
+  <Entry name="PM" value="Preceding 12 Months"/>
+  <Entry name="PR" value="Preceding Six Months"/>
+  <Entry name="Q1" value="First Quarter"/>
+  <Entry name="Q2" value="Second Quarter"/>
+  <Entry name="Q3" value="Third Quarter"/>
+  <Entry name="Q4" value="Fourth Quarter"/>
+  <Entry name="QY" value="Quarter of a Year"/>
+  <Entry name="SA" value="Semiannual"/>
+  <Entry name="SD" value="Seller's Manufacturing Days"/>
+  <Entry name="SH" value="Shift"/>
+  <Entry name="SM" value="Semimonthly"/>
+  <Entry name="SP" value="Summer Period"/>
+  <Entry name="TY" value="Tax Year"/>
+  <Entry name="WK" value="Weeks"/>
+  <Entry name="WW" value="Work Week"/>
+  <Entry name="WY" value="Weekly"/>
+  <Entry name="YD" value="Year to Date"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

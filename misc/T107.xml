@@ -1,0 +1,64 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T107.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T107">
+  <Entry name="1" value="Graduated"/>
+  <Entry name="2" value="Income Sensitive"/>
+  <Entry name="3" value="Income Contingent"/>
+  <Entry name="4" value="Level (Sum Constant)"/>
+  <Entry name="8" value="Credit Account"/>
+  <Entry name="A" value="Private Netting Agreement, Pay by Wire Transfer"/>
+  <Entry name="B" value="Compensation by Balance"/>
+  <Entry name="C" value="Pay By Check"/>
+  <Entry name="D" value="Debited"/>
+  <Entry name="E" value="Electronic Payment System"/>
+  <Entry name="F" value="Freight Payment Bank"/>
+  <Entry name="G" value="CCD (NACHA Cash Concentration/Disbursement - Funds Transacted without Remittance Information)"/>
+  <Entry name="H" value="CCD+(NACHA Cash Concentration/Disbursement - Funds Transacted Plus an 80 Record Remittance Detail)"/>
+  <Entry name="I" value="Invoiced Separately"/>
+  <Entry name="J" value="CTX (NACHA Corporate Trade Exchange - Transaction Plus Remittance Detail in ANSI Standard Flexible Format)"/>
+  <Entry name="K" value="Private Netting, Pay by Check"/>
+  <Entry name="L" value="Letter of Credit"/>
+  <Entry name="M" value="Deduction from Film Rental"/>
+  <Entry name="N" value="Billing Account"/>
+  <Entry name="O" value="CTP (NACHA Corporate Trade Payment - Transaction Plus Remittance Detail in Fixed Format)"/>
+  <Entry name="P" value="Previously Charged"/>
+  <Entry name="Q" value="Petroleum Clearinghouse Bank"/>
+  <Entry name="R" value="Related Detail Account"/>
+  <Entry name="S" value="Summary Account"/>
+  <Entry name="T" value="Wire Transfer"/>
+  <Entry name="U" value="Direct Pay to Others"/>
+  <Entry name="V" value="Lock Box"/>
+  <Entry name="W" value="Waived"/>
+  <Entry name="X" value="In Kind Payment"/>
+  <Entry name="Y" value="Credit"/>
+  <Entry name="AA" value="Bank Draft"/>
+  <Entry name="AB" value="Cash"/>
+  <Entry name="AC" value="Credit Card"/>
+  <Entry name="AD" value="Direct Deposit"/>
+  <Entry name="AE" value="Money Order"/>
+  <Entry name="AF" value="Special Account"/>
+  <Entry name="AG" value="Travelers Check"/>
+</Table>

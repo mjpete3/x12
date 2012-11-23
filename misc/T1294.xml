@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1294.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1294">
+  <Entry name="EW" value="Excessive Wear and Tear"/>
+  <Entry name="FR" value="Freight or Retailer Damage"/>
+  <Entry name="IN" value="Item not Defective"/>
+  <Entry name="IO" value="Item as Ordered"/>
+  <Entry name="MI" value="More Information Requested"/>
+  <Entry name="NR" value="No Record of Original Sale"/>
+  <Entry name="OS" value="Out of Season or Discontinued Line Item"/>
+  <Entry name="PC" value="Pricing or Cost Difference"/>
+  <Entry name="PR" value="Picture Requested"/>
+  <Entry name="QD" value="Quantity Difference"/>
+  <Entry name="RR" value="Repair or Refurbish"/>
+  <Entry name="RT" value="Return Time Limit Exceeded or Beyond Warranty Period"/>
+  <Entry name="SR" value="Sample Requested"/>
+  <Entry name="UI" value="Unidentifiable Item"/>
+</Table>

@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1720.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1720">
+  <Entry name="0" value="Cannot Identify Loan"/>
+  <Entry name="B" value="Non-escrow or Non-impound Loan"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="CC" value="Contract Canceled"/>
+  <Entry name="CS" value="Contract Service with Another Vendor"/>
+  <Entry name="E1" value="Missing Legal Description"/>
+  <Entry name="E2" value="Contract or Maintenance Accepted"/>
+  <Entry name="E3" value="Missing Homeowner Authorization"/>
+  <Entry name="E4" value="Service Type Not Available"/>
+  <Entry name="E5" value="Audit Exception"/>
+  <Entry name="R2" value="Modified Payment Enclosed"/>
+  <Entry name="R3" value="Loan Paid in Full"/>
+  <Entry name="R4" value="Loan Service Released"/>
+  <Entry name="R5" value="Other Non-payment Reason"/>
+  <Entry name="NSD" value="New Subdivision"/>
+  <Entry name="UML" value="Unmatched or Missing Lender"/>
+  <Entry name="UMT" value="Unmatched or Missing Tax Authority"/>
+  <Entry name="WOI" value="With Other Interest"/>
+  <Entry name="WOP" value="With Other Property"/>
+</Table>

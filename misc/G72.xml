@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G72.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G72" comment="To specify allowances, charges, or services">
+  <Field name="AllowanceOrChargeCode" min="1" max="3" validation="T340" comment="Code identifying the type of allowance or charge"/>
+  <Field name="AllowanceOrChargeMethodOfHandlingCode" min="2" max="2" validation="T331" comment="Code indicating method of handling for an allowance or charge"/>
+  <Field name="AllowanceOrChargeNumber" required="y" min="1" max="16" comment="The number assigned by a vendor referencing an allowance, promotion, deal or charge"/>
+  <Field name="ExceptionNumber" required="y" min="1" max="16" comment="A unique number identifying an exception or modification to an offered or existing promotion"/>
+  <Field name="AllowanceOrChargeRate" type="double" required="y" min="1" max="15" comment="Allowance or Charge Rate per Unit"/>
+  <Field name="AllowanceOrChargeQuantity" type="double" required="y" min="1" max="10" comment="Quantity basis when allowance or charge quantity is different from the purchase order or invoice quantity"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="AllowanceOrChargeTotalAmount" type="double" required="y" min="1" max="15" comment="Total dollar amount for the allowance or charge"/>
+  <Field name="Percent" type="double" required="y" min="1" max="6" comment="Percent expressed as a percent"/>
+  <Field name="DollarBasisForPercent" type="double" required="y" min="1" max="9" comment="Dollar basis to be used in the percent calculation of the allowance, charge or tax"/>
+  <Field name="OptionNumber" required="y" min="1" max="20" comment="A unique number identifying available promotion or allowance options when more than one is offered"/>
+</Segment>

@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CSC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CSC" comment="To provide a mechanism for exchanging certificates of authority, public keys and associated information in an X12 format">
+  <Field name="CryptographicManagementPurpose" min="3" max="3" validation="T1642" comment="The stated business purpose for exchanging public key on certificate information with a trading partner"/>
+  <Field name="SecurityOriginatorName" required="y" min="1" max="64" comment="Unique designation (identity) of the cryptographic process that performs authentication or encryption on data to be interchanged, or originates a cryptographic service message Note: X9 has a minimum length of 4 characters for the security originator; no mechanism, or registration method is provided by X9 or X12 to guarantee the uniqueness of the identifier"/>
+  <Field name="SecurityRecipientName" required="y" min="1" max="64" comment="Unique designation (identity) of the cryptographic process that performs authentication or decryption on received data, or is the destination of a cryptographic service message Note: X9 has a minimum length of 4 characters for the security recipient; no mechanism, or registration method is provided by X9 or X12 to guarantee the uniqueness of the identifier"/>
+  <Field name="CertificateLookUpInformation" type="C050" required="y" min="0" max="inf" comment="Conveys the information related to or used for certificate identification"/>
+  <Field name="ReferenceIdentifier" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+  <Field name="FilterIdCode" required="y" min="3" max="3" validation="T1570" comment="Code specifying the type of filter used to convert data code values"/>
+  <Field name="VersionIdentifier" required="y" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="LengthOfData" type="double" required="y" min="1" max="18" comment="Length of data is the number of character positions of the compressed or encrypted/filtered text; when data is plain text, this field shall be absent"/>
+  <Field name="SecurityValue" type="C033" required="y" min="0" max="inf" comment="Value of the Security Token"/>
+</Segment>

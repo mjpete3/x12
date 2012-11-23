@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T748.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T748">
+  <Entry name="A" value="Released From Bad Order"/>
+  <Entry name="B" value="Bad Order Setback"/>
+  <Entry name="C" value="Car Not Weighed"/>
+  <Entry name="D" value="Empty Received as a Load"/>
+  <Entry name="E" value="Embargoed Shipment"/>
+  <Entry name="G" value="Refused by Customer - Unneeded"/>
+  <Entry name="I" value="Interchanged in Error"/>
+  <Entry name="L" value="Not in Compliance With Special Car Order 90 or Special Car Order 100 Empty"/>
+  <Entry name="M" value="Empty - No handling required by Car Service Rules"/>
+  <Entry name="N" value="No Record Rights"/>
+  <Entry name="O" value="Overweight Shipment"/>
+  <Entry name="P" value="Intermediate Switch Carrier"/>
+  <Entry name="R" value="Refused by Customer - Unfit"/>
+  <Entry name="S" value="Car Applied to Shipper Car Order - Place for Loading"/>
+  <Entry name="T" value="Transfer or Adjustment of Lading Car Service Rate 10, Sections 1 &amp; 2"/>
+  <Entry name="W" value="No Waybill"/>
+  <Entry name="X" value="Association of American Railroads Restriction"/>
+  <Entry name="DS" value="Destination Switch Move"/>
+  <Entry name="HM" value="Haulage Movement"/>
+  <Entry name="NC" value="No Clearance"/>
+  <Entry name="NU" value="Not on Universal Machine Language Equipment Register"/>
+  <Entry name="OA" value="Old Age (Over-age)"/>
+  <Entry name="OS" value="Origin Switch Move"/>
+  <Entry name="RB" value="RBOX or RGON Exception"/>
+</Table>

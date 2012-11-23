@@ -1,0 +1,265 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T366.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T366">
+  <Entry name="1A" value="Review/Repricing Contact"/>
+  <Entry name="1B" value="Preferred Provider Organization (PPO) Contact"/>
+  <Entry name="1C" value="Health Maintenance Organization (HMO) Contact"/>
+  <Entry name="1D" value="Third-party Administrator (TPA) Contact"/>
+  <Entry name="1E" value="New Business Processing"/>
+  <Entry name="1F" value="Physician"/>
+  <Entry name="1G" value="Service Team"/>
+  <Entry name="1H" value="Underwriter"/>
+  <Entry name="1I" value="Local Contact"/>
+  <Entry name="3A" value="Automated Clearinghouse (ACH) Contact"/>
+  <Entry name="A1" value="Claim Approver"/>
+  <Entry name="A2" value="Applicant"/>
+  <Entry name="A3" value="Interviewer"/>
+  <Entry name="A4" value="Owner Representative"/>
+  <Entry name="A5" value="Appointment Scheduler"/>
+  <Entry name="A6" value="Concurrent Employer Contact"/>
+  <Entry name="AA" value="Authorized Representative"/>
+  <Entry name="AB" value="Appraiser"/>
+  <Entry name="AC" value="Administrative Contracting Officer"/>
+  <Entry name="AD" value="Accounting Department"/>
+  <Entry name="AE" value="Corporate Purchasing Agent"/>
+  <Entry name="AF" value="Authorized Financial Contact"/>
+  <Entry name="AG" value="Agent"/>
+  <Entry name="AH" value="After-Hours Contact"/>
+  <Entry name="AI" value="Additional Insurance Information Contact"/>
+  <Entry name="AJ" value="Primary Contact"/>
+  <Entry name="AL" value="Alternate Contact"/>
+  <Entry name="AM" value="Administrator"/>
+  <Entry name="AN" value="Attention-to Party"/>
+  <Entry name="AP" value="Accounts Payable Department"/>
+  <Entry name="AR" value="Accounts Receivable Department"/>
+  <Entry name="AS" value="Authorized Signature"/>
+  <Entry name="AT" value="Material Safety Data Sheet Contact"/>
+  <Entry name="AU" value="Report Authorizer"/>
+  <Entry name="AV" value="Advisor"/>
+  <Entry name="AW" value="Co-investigator"/>
+  <Entry name="AX" value="Additional Contact Points at Institutions"/>
+  <Entry name="BA" value="Broker"/>
+  <Entry name="BB" value="Local Purchasing Agent"/>
+  <Entry name="BC" value="Broker Contact"/>
+  <Entry name="BD" value="Buyer Name or Department"/>
+  <Entry name="BI" value="Bill Inquiry Contact"/>
+  <Entry name="BJ" value="Operations"/>
+  <Entry name="BK" value="Marketing Department"/>
+  <Entry name="BL" value="Technical Department"/>
+  <Entry name="BM" value="Work Broker Maintenance Manager"/>
+  <Entry name="BP" value="School Principal"/>
+  <Entry name="BS" value="Board Staff"/>
+  <Entry name="BU" value="Business Unit Manager"/>
+  <Entry name="C1" value="Carrier Contact"/>
+  <Entry name="C2" value="Co-borrower"/>
+  <Entry name="CA" value="Customer Contact Granting Appointment"/>
+  <Entry name="CB" value="Changed By"/>
+  <Entry name="CC" value="Computer Systems Contact"/>
+  <Entry name="CD" value="Contract Contact"/>
+  <Entry name="CE" value="Certifier"/>
+  <Entry name="CF" value="Customer Engineer"/>
+  <Entry name="CG" value="Chief Executive Officer"/>
+  <Entry name="CH" value="Change Order Approver"/>
+  <Entry name="CI" value="Chief Financial Officer"/>
+  <Entry name="CJ" value="Chief Information Officer"/>
+  <Entry name="CK" value="Chairman of the Board"/>
+  <Entry name="CL" value="Chief Operating Officer"/>
+  <Entry name="CM" value="Container Manager"/>
+  <Entry name="CN" value="General Contact"/>
+  <Entry name="CO" value="Component Engineer"/>
+  <Entry name="CP" value="Cost and Schedule Coordinator"/>
+  <Entry name="CR" value="Customer Relations"/>
+  <Entry name="CS" value="CAD/CAM Specialist"/>
+  <Entry name="CT" value="Claimant"/>
+  <Entry name="CU" value="Auditing Contact"/>
+  <Entry name="CV" value="Clearinghouse Contact"/>
+  <Entry name="CW" value="Confirmed With"/>
+  <Entry name="CX" value="Payers Claim Office"/>
+  <Entry name="CY" value="Case Manager"/>
+  <Entry name="CZ" value="Claim Recipient"/>
+  <Entry name="DA" value="Directory Advertising Contact"/>
+  <Entry name="DC" value="Delivery Contact"/>
+  <Entry name="DD" value="Division Director"/>
+  <Entry name="DE" value="Design Engineer"/>
+  <Entry name="DF" value="Director"/>
+  <Entry name="DI" value="Delivery Instructions Contact"/>
+  <Entry name="DM" value="Division Manager"/>
+  <Entry name="DN" value="Dental School Admissions Office"/>
+  <Entry name="DV" value="Development"/>
+  <Entry name="E1" value="Estimator"/>
+  <Entry name="E2" value="Evening Programs Office"/>
+  <Entry name="EA" value="EDI Coordinator"/>
+  <Entry name="EB" value="Entered By"/>
+  <Entry name="EC" value="Emergency Contact-Shipper"/>
+  <Entry name="ED" value="Emergency Contact-Consignee"/>
+  <Entry name="EF" value="Emergency Contact-Military Traffic Management Command (MTMC)"/>
+  <Entry name="EG" value="Engineering"/>
+  <Entry name="EM" value="Emergency Contact"/>
+  <Entry name="EN" value="Engineer"/>
+  <Entry name="EO" value="Executive Officer"/>
+  <Entry name="EP" value="Employer Contact"/>
+  <Entry name="ES" value="Electronic Submission Recipient"/>
+  <Entry name="EV" value="Executive Vice-President"/>
+  <Entry name="EX" value="Expeditor"/>
+  <Entry name="FA" value="Financial Aid Office"/>
+  <Entry name="FB" value="Coordinator"/>
+  <Entry name="FC" value="Forwarder Contact"/>
+  <Entry name="FD" value="Primary Control Point"/>
+  <Entry name="FF" value="Licensee"/>
+  <Entry name="FL" value="Foreclosing Lender Administrative Contact"/>
+  <Entry name="FM" value="Functional Manager"/>
+  <Entry name="FN" value="Joint Work Agent"/>
+  <Entry name="FO" value="Office Manager"/>
+  <Entry name="FP" value="Marketing Director"/>
+  <Entry name="FQ" value="Staff"/>
+  <Entry name="FR" value="Compliance Officer"/>
+  <Entry name="GA" value="Graduate Fine Arts Office"/>
+  <Entry name="GB" value="Graduate Business Office"/>
+  <Entry name="GC" value="Guidance Counselor"/>
+  <Entry name="GE" value="Graduate Engineering Office"/>
+  <Entry name="GR" value="Graduate Admissions Office"/>
+  <Entry name="HM" value="Hazardous Material Contact"/>
+  <Entry name="HR" value="Human Resources"/>
+  <Entry name="IC" value="Information Contact"/>
+  <Entry name="IO" value="Issuing Officer"/>
+  <Entry name="IP" value="Insured Party"/>
+  <Entry name="IS" value="Law Firm"/>
+  <Entry name="KA" value="Authorized Negotiator"/>
+  <Entry name="KB" value="Preaward Survey Manager"/>
+  <Entry name="KC" value="Accepting Official"/>
+  <Entry name="KP" value="Attorney"/>
+  <Entry name="KT" value="Clerk of Court"/>
+  <Entry name="LD" value="Law School Admissions Office"/>
+  <Entry name="LG" value="Logistics Contact"/>
+  <Entry name="MA" value="Maintenance Contact"/>
+  <Entry name="MB" value="Mayor"/>
+  <Entry name="MC" value="Medical Contact"/>
+  <Entry name="MD" value="Medical Admissions Office"/>
+  <Entry name="ME" value="Manufacturing"/>
+  <Entry name="MG" value="Manager"/>
+  <Entry name="MK" value="Multiple Listing Service Staff"/>
+  <Entry name="ML" value="Multiple Listing Service Vendor"/>
+  <Entry name="MM" value="Customer Maintenance Manager"/>
+  <Entry name="NA" value="National Agent"/>
+  <Entry name="NC" value="Numerical Control Engineer"/>
+  <Entry name="NP" value="Notary Public"/>
+  <Entry name="NT" value="Notification Contact"/>
+  <Entry name="OA" value="Other Adult"/>
+  <Entry name="OC" value="Order Contact"/>
+  <Entry name="OD" value="Order Department"/>
+  <Entry name="OS" value="Office Staff"/>
+  <Entry name="OW" value="Owner"/>
+  <Entry name="PA" value="President"/>
+  <Entry name="PB" value="Plant Manager"/>
+  <Entry name="PC" value="Purchasing Contracting Officer (PCO)"/>
+  <Entry name="PD" value="Project Director"/>
+  <Entry name="PE" value="Process Engineer"/>
+  <Entry name="PF" value="Price Administration"/>
+  <Entry name="PG" value="Program Director"/>
+  <Entry name="PH" value="Provider"/>
+  <Entry name="PI" value="Preparer"/>
+  <Entry name="PJ" value="Project Manager"/>
+  <Entry name="PK" value="Performance Evaluation Committee"/>
+  <Entry name="PL" value="Manufacturing Plant Contact"/>
+  <Entry name="PM" value="Product Manager"/>
+  <Entry name="PN" value="Probation or Legal Officer"/>
+  <Entry name="PO" value="Production Representative"/>
+  <Entry name="PP" value="Program Manager"/>
+  <Entry name="PQ" value="Parent or Guardian"/>
+  <Entry name="PR" value="Prototype Coordinator"/>
+  <Entry name="PS" value="Personnel Department"/>
+  <Entry name="PT" value="Partner"/>
+  <Entry name="PU" value="Report Preparer"/>
+  <Entry name="PV" value="Participating Laboratory Contact"/>
+  <Entry name="PW" value="Principal Study Contact or Author"/>
+  <Entry name="PX" value="Purchase Service Provider"/>
+  <Entry name="PY" value="Packager"/>
+  <Entry name="PZ" value="Patient"/>
+  <Entry name="QA" value="Quality Assurance Contact"/>
+  <Entry name="QC" value="Quality Coordinator"/>
+  <Entry name="QI" value="Quality Inspector"/>
+  <Entry name="QM" value="Quality Manager"/>
+  <Entry name="QP" value="Quoting Party"/>
+  <Entry name="QR" value="Ordering Officer"/>
+  <Entry name="QY" value="Port Engineer"/>
+  <Entry name="RA" value="Rental Company Administrative Contact"/>
+  <Entry name="RB" value="Real Estate Property Occupant"/>
+  <Entry name="RC" value="Rebate/Chargeback Contact"/>
+  <Entry name="RD" value="Receiving Dock"/>
+  <Entry name="RE" value="Receiving Contact"/>
+  <Entry name="RF" value="Real Estate Property Key Holder"/>
+  <Entry name="RG" value="Registrar"/>
+  <Entry name="RP" value="Responsible Person"/>
+  <Entry name="RQ" value="Requestor"/>
+  <Entry name="RS" value="Rate Supervisor or Clerk"/>
+  <Entry name="RZ" value="Respondant"/>
+  <Entry name="SA" value="Sales Administration"/>
+  <Entry name="SB" value="Student"/>
+  <Entry name="SC" value="Schedule Contact"/>
+  <Entry name="SD" value="Shipping Department"/>
+  <Entry name="SE" value="Service Organization"/>
+  <Entry name="SF" value="Student in Absentia"/>
+  <Entry name="SG" value="Secretary"/>
+  <Entry name="SH" value="Shipper Contact"/>
+  <Entry name="SI" value="Investigator"/>
+  <Entry name="SJ" value="Spouse"/>
+  <Entry name="SK" value="School Clerk"/>
+  <Entry name="SL" value="Collector"/>
+  <Entry name="SM" value="Submitting Contact"/>
+  <Entry name="SN" value="Study Submitter Contact"/>
+  <Entry name="SO" value="Service Order Writer"/>
+  <Entry name="SP" value="Special Program Contact"/>
+  <Entry name="SQ" value="Systems Administrator"/>
+  <Entry name="SR" value="Sales Representative or Department"/>
+  <Entry name="SS" value="Supervisor"/>
+  <Entry name="ST" value="Service Technician"/>
+  <Entry name="SU" value="Supplier Contact"/>
+  <Entry name="SV" value="Service Manager"/>
+  <Entry name="SW" value="Social Services Worker"/>
+  <Entry name="SY" value="Secondary Taxpayer"/>
+  <Entry name="TA" value="Traffic Administrator"/>
+  <Entry name="TB" value="Telephone Answering Service Contact"/>
+  <Entry name="TC" value="College of Education Admissions Office"/>
+  <Entry name="TD" value="Tender Developer"/>
+  <Entry name="TE" value="Treasurer"/>
+  <Entry name="TH" value="School of Theology Admissions Office"/>
+  <Entry name="TM" value="Transmitter"/>
+  <Entry name="TN" value="Tenant"/>
+  <Entry name="TP" value="Primary Taxpayer"/>
+  <Entry name="TR" value="Technical Marketing Representative"/>
+  <Entry name="TY" value="Platform Maintenance Manager"/>
+  <Entry name="UG" value="Undergraduate Admissions Office"/>
+  <Entry name="UP" value="Union President"/>
+  <Entry name="UQ" value="Processor"/>
+  <Entry name="UR" value="Ultimate Receiver"/>
+  <Entry name="VM" value="School of Veterinary Medicine Admissions Office"/>
+  <Entry name="VP" value="Vice President"/>
+  <Entry name="WH" value="Warehouse"/>
+  <Entry name="WI" value="Witness"/>
+  <Entry name="WR" value="Technical Writer"/>
+  <Entry name="WV" value="Waiver Application Contact"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

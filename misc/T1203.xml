@@ -1,0 +1,143 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1203.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1203">
+  <Entry name="01" value="Divorce"/>
+  <Entry name="02" value="Birth"/>
+  <Entry name="03" value="Death"/>
+  <Entry name="04" value="Retirement"/>
+  <Entry name="05" value="Adoption"/>
+  <Entry name="06" value="Strike"/>
+  <Entry name="07" value="Termination of Benefits"/>
+  <Entry name="08" value="Termination of Employment"/>
+  <Entry name="09" value="Consolidation Omnibus Budget Reconciliation Act (COBRA)"/>
+  <Entry name="10" value="Consolidation Omnibus Budget Reconciliation Act (COBRA) Premium Paid"/>
+  <Entry name="11" value="Surviving Spouse"/>
+  <Entry name="12" value="Lay Off"/>
+  <Entry name="13" value="Leave of Absence"/>
+  <Entry name="14" value="Voluntary Withdrawal"/>
+  <Entry name="15" value="Primary Care Provider (PCP) Change"/>
+  <Entry name="16" value="Quit"/>
+  <Entry name="17" value="Fired"/>
+  <Entry name="18" value="Suspended"/>
+  <Entry name="19" value="Sabbatical"/>
+  <Entry name="20" value="Active"/>
+  <Entry name="21" value="Disability"/>
+  <Entry name="22" value="Plan Change"/>
+  <Entry name="23" value="Furloughed"/>
+  <Entry name="24" value="Resigned"/>
+  <Entry name="25" value="Change in Identifying Data Elements"/>
+  <Entry name="26" value="Declined Coverage"/>
+  <Entry name="27" value="Pre-Enrollment"/>
+  <Entry name="28" value="Initial Enrollment"/>
+  <Entry name="29" value="Benefit Selection"/>
+  <Entry name="30" value="Discrimination Test"/>
+  <Entry name="31" value="Legal Separation"/>
+  <Entry name="32" value="Marriage"/>
+  <Entry name="33" value="Personnel Data"/>
+  <Entry name="34" value="Investment Elections and Contribution Rates"/>
+  <Entry name="35" value="Loan Repayment"/>
+  <Entry name="36" value="Contribution or Plan Allocation"/>
+  <Entry name="37" value="Leave of Absence with Benefits"/>
+  <Entry name="38" value="Leave of Absence without Benefits"/>
+  <Entry name="39" value="Lay Off with Benefits"/>
+  <Entry name="40" value="Lay Off without Benefits"/>
+  <Entry name="41" value="Re-enrollment"/>
+  <Entry name="42" value="New Entity"/>
+  <Entry name="43" value="Change of Location"/>
+  <Entry name="44" value="Change of Telephone Number"/>
+  <Entry name="45" value="Went Out of Business"/>
+  <Entry name="46" value="Current Customer Information File in Error"/>
+  <Entry name="47" value="Account Balance Reporting"/>
+  <Entry name="48" value="Fees Processing"/>
+  <Entry name="49" value="Interfund Transfer"/>
+  <Entry name="4A" value="Business Name Change"/>
+  <Entry name="4B" value="Business Name Correction"/>
+  <Entry name="4C" value="Physical or Mailing Address Correction"/>
+  <Entry name="50" value="Loan Request"/>
+  <Entry name="51" value="Enrollment in Subsequent Benefit Plan"/>
+  <Entry name="52" value="Health Care Facility Change"/>
+  <Entry name="53" value="Name Synonym Add"/>
+  <Entry name="54" value="Sub Location Add"/>
+  <Entry name="55" value="Sub Location Change"/>
+  <Entry name="56" value="Sub Location Expire"/>
+  <Entry name="57" value="Buyout"/>
+  <Entry name="58" value="Merger"/>
+  <Entry name="59" value="Non Payment"/>
+  <Entry name="60" value="Coverage Placed Elsewhere"/>
+  <Entry name="61" value="Duplicate Coverage"/>
+  <Entry name="62" value="Change in Ownership"/>
+  <Entry name="63" value="Business Sold"/>
+  <Entry name="64" value="Underwriting Reason"/>
+  <Entry name="65" value="No Employees, Exposure or Operations"/>
+  <Entry name="66" value="Revocation of Voluntary Market Acceptance"/>
+  <Entry name="67" value="Include Primary Business Management"/>
+  <Entry name="68" value="Exclude Primary Business Management"/>
+  <Entry name="69" value="Failure to Pay Deductible"/>
+  <Entry name="70" value="Misrepresented Information"/>
+  <Entry name="71" value="Rewritten"/>
+  <Entry name="72" value="Adding a Jurisdiction"/>
+  <Entry name="73" value="Deleting a Jurisdiction"/>
+  <Entry name="75" value="Occupational Illness"/>
+  <Entry name="76" value="Change Insured Federal Employer Identification Number (FEIN)"/>
+  <Entry name="77" value="Change Employer Federal Employer Identification Number (FEIN)"/>
+  <Entry name="78" value="Change Employer Unemployment Insurance (UI) Code"/>
+  <Entry name="79" value="Change Policy Number"/>
+  <Entry name="80" value="Modification without a Specific Operating Unit Location in Jurisdiction"/>
+  <Entry name="81" value="Change Policy Effective Date"/>
+  <Entry name="82" value="Change Policy Expiration Date"/>
+  <Entry name="83" value="Change Insurer Federal Employer Identification Number (FEIN)"/>
+  <Entry name="84" value="No Eligible Employees"/>
+  <Entry name="85" value="Reinstatement - Canceled in Error"/>
+  <Entry name="86" value="Change in Insured Information"/>
+  <Entry name="87" value="Change in Employer Information"/>
+  <Entry name="88" value="Parent Identification Change"/>
+  <Entry name="89" value="Change to Expiration Date"/>
+  <Entry name="90" value="Phone Verify Only"/>
+  <Entry name="91" value="Name Synonym Delete"/>
+  <Entry name="92" value="Duplicate Entry on Customer Identification File"/>
+  <Entry name="93" value="Removal of the Customer Identification File Merge ID"/>
+  <Entry name="94" value="Removal of the Customer Identification File Buyout ID"/>
+  <Entry name="95" value="Removal of the Customer Identification File in Error ID"/>
+  <Entry name="96" value="Re-activation of an Out-of-Business Customer"/>
+  <Entry name="97" value="Sub-location Reinstatement"/>
+  <Entry name="AA" value="Dissatisfaction with Office Staff"/>
+  <Entry name="AB" value="Dissatisfaction with Medical Care/Services Rendered"/>
+  <Entry name="AC" value="Inconvenient Office Location"/>
+  <Entry name="AD" value="Dissatisfaction with Office Hours"/>
+  <Entry name="AE" value="Unable to Schedule Appointments in a Timely Manner"/>
+  <Entry name="AF" value="Dissatisfaction with Physician's Referral Policy"/>
+  <Entry name="AG" value="Less Respect and Attention Time Given than to Other Patients"/>
+  <Entry name="AH" value="Patient Moved to a New Location"/>
+  <Entry name="AI" value="No Reason Given"/>
+  <Entry name="AJ" value="Appointment Times not Met in a Timely Manner"/>
+  <Entry name="XB" value="Became Medical Only"/>
+  <Entry name="XI" value="Indemnity"/>
+  <Entry name="XL" value="Became Lost Time"/>
+  <Entry name="XM" value="Medical Only"/>
+  <Entry name="XN" value="Notification Only"/>
+  <Entry name="XT" value="Transfer"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

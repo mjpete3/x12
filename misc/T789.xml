@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T789.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T789">
+  <Entry name="A0" value="841 x 1189 mm *"/>
+  <Entry name="A1" value="594 x 841 mm *"/>
+  <Entry name="A2" value="420 x 594 mm *"/>
+  <Entry name="A3" value="297 x 420 mm *"/>
+  <Entry name="A4" value="210 x 297 mm *"/>
+  <Entry name="AH" value="8.5 x 11.0 inches"/>
+  <Entry name="AV" value="11.0 x 8.5 inches"/>
+  <Entry name="BH" value="11.0 x 17.0 inches"/>
+  <Entry name="CH" value="17.0 x 22.0 inches"/>
+  <Entry name="DH" value="22.0 x 34.0 inches"/>
+  <Entry name="EH" value="34.0 x 44.0 inches"/>
+  <Entry name="FH" value="28.0 x 40.0 inches"/>
+  <Entry name="GH" value="11.0 *"/>
+  <Entry name="HH" value="28.0 *"/>
+  <Entry name="JH" value="34.0 *"/>
+  <Entry name="KH" value="40.0 *"/>
+  <Entry name="NL" value="8.5 x 14.0 inches (Legal)"/>
+</Table>

@@ -1,0 +1,55 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1295.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1295">
+  <Entry name="A" value="Active"/>
+  <Entry name="C" value="Death Not Processed"/>
+  <Entry name="D" value="Disabled"/>
+  <Entry name="N" value="New"/>
+  <Entry name="R" value="Reinstated"/>
+  <Entry name="S" value="Suspended"/>
+  <Entry name="AN" value="Active Non-Vested"/>
+  <Entry name="AV" value="Active Vested"/>
+  <Entry name="CD" value="Contract Discontinuance"/>
+  <Entry name="DB" value="Termination - Death"/>
+  <Entry name="DN" value="Deferral - Not Vested"/>
+  <Entry name="DP" value="Delete or Pending Purge"/>
+  <Entry name="DR" value="Distribution Restricted"/>
+  <Entry name="DV" value="Deferral - Vested"/>
+  <Entry name="EL" value="Eligible, Not Participating"/>
+  <Entry name="GA" value="Golden Age"/>
+  <Entry name="KP" value="Keep Participant"/>
+  <Entry name="PD" value="Plan Discontinuance"/>
+  <Entry name="PF" value="Potentially Forfeitable"/>
+  <Entry name="RT" value="Retired"/>
+  <Entry name="S1" value="Suspended From Contributing For 1 Year"/>
+  <Entry name="S2" value="Suspended From Contributing For 2 Years"/>
+  <Entry name="TD" value="Termination - Disability"/>
+  <Entry name="TN" value="Terminated Non-Vested"/>
+  <Entry name="TR" value="Termination - Retirement"/>
+  <Entry name="TS" value="Termination - Severance"/>
+  <Entry name="TV" value="Terminated Vested"/>
+  <Entry name="US" value="Unit Sale"/>
+</Table>

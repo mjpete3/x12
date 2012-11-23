@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T231.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T231">
+  <Entry name="A" value="Additional Equipment for Manifest Billing"/>
+  <Entry name="B" value="Basket Attached to Chassis (to hold generator set)"/>
+  <Entry name="C" value="Prior Load Credit"/>
+  <Entry name="D" value="Chassis Attached to Container"/>
+  <Entry name="F" value="Conveying Flat Car"/>
+  <Entry name="G" value="Reference to Lead Equipment for Manifest Billing"/>
+  <Entry name="H" value="Generator Set"/>
+  <Entry name="K" value="Clip-on Front-Mounted Generator Unit For Container"/>
+  <Entry name="L" value="Lead Car"/>
+  <Entry name="M" value="Mated"/>
+  <Entry name="N" value="Cryogenic Apparatus"/>
+  <Entry name="R" value="Tractor"/>
+  <Entry name="S" value="Saddle to Conveying Flatcar"/>
+  <Entry name="T" value="Trailer"/>
+  <Entry name="X" value="Transfer Load"/>
+</Table>

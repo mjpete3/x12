@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1609.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1609">
+  <Entry name="00" value="Price List"/>
+  <Entry name="01" value="U.P.C./Global Trade Identification Number"/>
+  <Entry name="02" value="Vendor's (Seller's) Item Number"/>
+  <Entry name="AI" value="Assigned Identification"/>
+  <Entry name="AN" value="Due to Number"/>
+  <Entry name="DT" value="Date of Transaction"/>
+  <Entry name="EI" value="Entity Identification (Primary)"/>
+  <Entry name="ES" value="Entity Identification (Secondary)"/>
+  <Entry name="IN" value="Invoice Number"/>
+  <Entry name="LI" value="Location Identification"/>
+  <Entry name="MA" value="Monetary Amount"/>
+  <Entry name="MV" value="Measurement Value"/>
+  <Entry name="PO" value="Purchase Order Number"/>
+  <Entry name="PR" value="Pricing Specification"/>
+  <Entry name="PS" value="Product or Service Identification"/>
+  <Entry name="QY" value="Quantity"/>
+  <Entry name="RP" value="Reference Identification (Primary)"/>
+  <Entry name="RS" value="Reference Identification (Secondary)"/>
+  <Entry name="RT" value="Rate"/>
+  <Entry name="TT" value="Time of Transaction"/>
+  <Entry name="TX" value="Tax Identification"/>
+  <Entry name="UP" value="Unit Price"/>
+  <Entry name="VV" value="Buyer's Item Number"/>
+  <Entry name="DFI" value="Depository Financial Institution (DFI) Identification Number"/>
+</Table>

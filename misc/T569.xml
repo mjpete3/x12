@@ -1,0 +1,73 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T569.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T569">
+  <Entry name="1" value="New Business Account"/>
+  <Entry name="2" value="Group Number"/>
+  <Entry name="3" value="Policy Number"/>
+  <Entry name="4" value="Money Market Fund"/>
+  <Entry name="5" value="Retirement Account Vested Interest at Market Value"/>
+  <Entry name="6" value="Retirement Account Vested Interest Net Cash Value"/>
+  <Entry name="7" value="Individual Retirement Account (IRA) Vested Interest at Market Value"/>
+  <Entry name="8" value="Individual Retirement Account (IRA) Vested Interest Net Cash Value"/>
+  <Entry name="9" value="Corporate Controlled Retirement Account Vested Interest"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="01" value="Time Deposit"/>
+  <Entry name="03" value="Checking Account"/>
+  <Entry name="05" value="Stock"/>
+  <Entry name="06" value="Bond"/>
+  <Entry name="07" value="Life Insurance Face Value"/>
+  <Entry name="08" value="Retirement Account - Vested Interest"/>
+  <Entry name="10" value="Business Account"/>
+  <Entry name="11" value="Trust Fund Account"/>
+  <Entry name="12" value="Stocks and Bonds Account"/>
+  <Entry name="13" value="Life Insurance Account - Net Cash Value"/>
+  <Entry name="14" value="Employee Retirement Account (401K)"/>
+  <Entry name="AG" value="Agency"/>
+  <Entry name="AP" value="Application"/>
+  <Entry name="BA" value="Brokerage Account"/>
+  <Entry name="CB" value="Charge Back Account for Returns"/>
+  <Entry name="CC" value="Credit Card"/>
+  <Entry name="CM" value="Cash Management"/>
+  <Entry name="DA" value="Demand Deposit"/>
+  <Entry name="DC" value="Debit Card"/>
+  <Entry name="EC" value="Existing Carrier"/>
+  <Entry name="RD" value="Return Items on Demand Deposit Account"/>
+  <Entry name="RS" value="Return Items on Savings Account"/>
+  <Entry name="SG" value="Savings"/>
+  <Entry name="ALC" value="Agency Location Code (ALC)"/>
+  <Entry name="ANN" value="Annuity"/>
+  <Entry name="CDM" value="Controlled Disbursement Master Account"/>
+  <Entry name="CDS" value="Controlled Disbursement Sub Account"/>
+  <Entry name="CRU" value="Credit Union"/>
+  <Entry name="EPC" value="Enriched Plan Contract Number"/>
+  <Entry name="LTD" value="Long-term Disability Policy Number"/>
+  <Entry name="MUT" value="Mutual Fund"/>
+  <Entry name="PRI" value="Primary Bank"/>
+  <Entry name="REL" value="Relationship Summary Account"/>
+  <Entry name="SKA" value="Safekeeping (Custody) Account"/>
+  <Entry name="ZB1" value="Zero Balance Master Account"/>
+  <Entry name="ZB2" value="Zero Balance Affiliate Account"/>
+</Table>

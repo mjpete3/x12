@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: M12.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="M12" comment="To transmit in-bond information">
+  <Field name="CustomsEntryTypeCode" min="2" max="2" comment="Code defining the type of entry assigned by U.S. Customs"/>
+  <Field name="CustomsEntryNumber" required="y" min="1" max="15" comment="Automated Commercial System Code Furnished by U.S. Customs Service"/>
+  <Field name="LocationIdentifier1" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="LocationIdentifier2" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="CustomsShipmentValue" required="y" min="2" max="8" comment="Customs value in whole dollars"/>
+  <Field name="InBondControlNumber" required="y" min="1" max="25" comment="Currently assigned control number for in-bond movement"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="TransportationMethodTypeCode" required="y" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="VesselName" required="y" min="2" max="28" comment="Name of ship as documented in &quot;Lloyd's Register of Ships&quot;"/>
+</Segment>

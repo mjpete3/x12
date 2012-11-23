@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T208.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T208">
+  <Entry name="4" value="46 Level DOT Code"/>
+  <Entry name="6" value="Airline Tariff 6D"/>
+  <Entry name="9" value="Title 49, Code of Federal Regulations (CFR)"/>
+  <Entry name="A" value="International Civil Aviation Organization (ICAO) Code"/>
+  <Entry name="B" value="Uniform Fire Code (UFC)"/>
+  <Entry name="C" value="Storage Compatibility Group"/>
+  <Entry name="D" value="Hazardous Materials ID, DOT"/>
+  <Entry name="E" value="Endorsement"/>
+  <Entry name="F" value="Air Force Joint Manual 24-204"/>
+  <Entry name="I" value="Intergovernmental Maritime Organization (IMO) Code"/>
+  <Entry name="R" value="Bureau of Explosives (BOE) 6000 Tariff"/>
+  <Entry name="T" value="International Air Transport Association Dangerous Goods Code List"/>
+  <Entry name="U" value="United Nations"/>
+  <Entry name="X" value="Hazard Class or Division"/>
+</Table>

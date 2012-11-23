@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T184.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T184">
+  <Entry name="B" value="Barge"/>
+  <Entry name="C" value="Cubic Centimeters"/>
+  <Entry name="D" value="Cord"/>
+  <Entry name="E" value="Cubic Feet"/>
+  <Entry name="F" value="100 Board Feet"/>
+  <Entry name="G" value="Gallons"/>
+  <Entry name="H" value="Hundreds of Measurement Tons"/>
+  <Entry name="L" value="Load"/>
+  <Entry name="M" value="Cubic Decimeters"/>
+  <Entry name="N" value="Cubic Inches"/>
+  <Entry name="R" value="Car"/>
+  <Entry name="S" value="Measurement Ton"/>
+  <Entry name="T" value="Container"/>
+  <Entry name="U" value="Volumetric Unit"/>
+  <Entry name="V" value="Liter"/>
+  <Entry name="X" value="Cubic Meters"/>
+</Table>

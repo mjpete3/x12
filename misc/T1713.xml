@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1713.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1713">
+  <Entry name="01" value="No Reduction Made; Requested Loan Amount Equals School Certified Amount"/>
+  <Entry name="02" value="Reduced to the Maximum Amount Allowable per Grade Level"/>
+  <Entry name="03" value="Reduced to the Maximum Amount Allowable per Student (for Entire Career)"/>
+  <Entry name="04" value="Reduced to the Maximum Amount Allowable within a 7-month Period"/>
+  <Entry name="05" value="Reduced to the Appropriate Lender Approved Amount"/>
+  <Entry name="06" value="Reduced Because Requested Loan Amount Exceeds Cost of Attendance minus Expected Family Contribution Amount and Estimated Financial Aid Amount"/>
+  <Entry name="07" value="Reduced to the Maximum Amount Allowable by the Guarantor"/>
+  <Entry name="08" value="Reduced to the Appropriate School Certification Amount; School Certified Amount is less than the Borrower Requested Loan Amount"/>
+  <Entry name="09" value="Requested to the Amount Agreed to by the Endorser"/>
+  <Entry name="10" value="Reduced to the Maximum Amount Allowable as Calculated in Accordance with Guarantor Policy"/>
+  <Entry name="11" value="Reduced to the Amount Requested by the Borrower after Processing of Initial Application"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

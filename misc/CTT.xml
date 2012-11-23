@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CTT.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CTT" comment="To transmit a hash total for a specific element in the transaction set">
+  <Field name="NumberOfLineItems" type="long" min="1" max="6" comment="Total number of line items in the transaction set"/>
+  <Field name="HashTotal" type="double" required="y" min="1" max="10" comment="Sum of values of the specified data element. All values in the data element will be summed without regard to decimal points (explicit or implicit) or signs. Truncation will occur on the left most digits if the sum is greater than the maximum size of the hash total of the data element. Example: -.0018 First occurrence of value being hashed. .18 Second occurrence of value being hashed. 1.8 Third occurrence of value being hashed. 18.01 Fourth occurrence of value being hashed. --------- 1855 Hash Total"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="UnitOrBasisForMeasurementCode1" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Volume" type="double" required="y" min="1" max="8" comment="Value of volumetric measure"/>
+  <Field name="UnitOrBasisForMeasurementCode2" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+</Segment>

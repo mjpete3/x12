@@ -1,0 +1,74 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1336.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1336">
+  <Entry name="D" value="Disability"/>
+  <Entry name="E" value="Medicare - Point of Service (POS)"/>
+  <Entry name="U" value="Multiple Options Health Plan"/>
+  <Entry name="12" value="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan"/>
+  <Entry name="13" value="Medicare Secondary End-Stage Renal Disease Beneficiary in the Mandated Coordination Period with an Employer's Group Health Plan"/>
+  <Entry name="14" value="Medicare Secondary, No-fault Insurance including Auto is Primary"/>
+  <Entry name="15" value="Medicare Secondary Worker's Compensation"/>
+  <Entry name="16" value="Medicare Secondary Public Health Service (PHS)or Other Federal Agency"/>
+  <Entry name="41" value="Medicare Secondary Black Lung"/>
+  <Entry name="42" value="Medicare Secondary Veteran's Administration"/>
+  <Entry name="43" value="Medicare Secondary Disabled Beneficiary Under Age 65 with Large Group Health Plan (LGHP)"/>
+  <Entry name="47" value="Medicare Secondary, Other Liability Insurance is Primary"/>
+  <Entry name="AP" value="Auto Insurance Policy"/>
+  <Entry name="C1" value="Commercial"/>
+  <Entry name="CO" value="Consolidated Omnibus Budget Reconciliation Act (COBRA)"/>
+  <Entry name="CP" value="Medicare Conditionally Primary"/>
+  <Entry name="DB" value="Disability Benefits"/>
+  <Entry name="EP" value="Exclusive Provider Organization"/>
+  <Entry name="FF" value="Family or Friends"/>
+  <Entry name="GP" value="Group Policy"/>
+  <Entry name="HM" value="Health Maintenance Organization (HMO)"/>
+  <Entry name="HN" value="Health Maintenance Organization (HMO) - Medicare Risk"/>
+  <Entry name="HS" value="Special Low Income Medicare Beneficiary"/>
+  <Entry name="IN" value="Indemnity"/>
+  <Entry name="IP" value="Individual Policy"/>
+  <Entry name="LC" value="Long Term Care"/>
+  <Entry name="LD" value="Long Term Policy"/>
+  <Entry name="LI" value="Life Insurance"/>
+  <Entry name="LT" value="Litigation"/>
+  <Entry name="MA" value="Medicare Part A"/>
+  <Entry name="MB" value="Medicare Part B"/>
+  <Entry name="MC" value="Medicaid"/>
+  <Entry name="MH" value="Medigap Part A"/>
+  <Entry name="MI" value="Medigap Part B"/>
+  <Entry name="MP" value="Medicare Primary"/>
+  <Entry name="OT" value="Other"/>
+  <Entry name="PE" value="Property Insurance - Personal"/>
+  <Entry name="PL" value="Personal"/>
+  <Entry name="PP" value="Personal Payment (Cash - No Insurance)"/>
+  <Entry name="PR" value="Preferred Provider Organization (PPO)"/>
+  <Entry name="PS" value="Point of Service (POS)"/>
+  <Entry name="QM" value="Qualified Medicare Beneficiary"/>
+  <Entry name="RP" value="Property Insurance - Real"/>
+  <Entry name="SP" value="Supplemental Policy"/>
+  <Entry name="TF" value="Tax Equity Fiscal Responsibility Act (TEFRA)"/>
+  <Entry name="WC" value="Workers Compensation"/>
+  <Entry name="WU" value="Wrap Up Policy"/>
+</Table>

@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: MIR.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="MIR" comment="To determine if mortgage insurance has been approved or declined, and if approved, supply details about the coverage">
+  <Field name="MortgageInsuranceApplicationType" min="1" max="1" validation="T1097" comment="Code identifying the type of Mortgage Insurance application"/>
+  <Field name="UnderwritingDecisionCode" min="1" max="1" validation="T1209" comment="Code indicating the decision made by the underwriter"/>
+  <Field name="MortgageInsuranceCertificateTypeCode" required="y" min="1" max="1" validation="T1099" comment="Code indicating whether Mortgage Insurance certificate is for primary loan or pool loan or both"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Percent1" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Amount" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Percent2" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Percent3" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="MortgageInsuranceRenewalOptionCode" required="y" min="1" max="1" validation="T1102" comment="Code indicating the type of renewal option for Mortgage Insurance"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+</Segment>

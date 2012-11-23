@@ -1,0 +1,376 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T363.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T363">
+  <Entry name="AAA" value="Agent Details"/>
+  <Entry name="AAB" value="Associated Business Areas"/>
+  <Entry name="AAC" value="Borrower"/>
+  <Entry name="AAD" value="Nationality Details"/>
+  <Entry name="AAE" value="Assets"/>
+  <Entry name="AAF" value="Liabilities"/>
+  <Entry name="AAG" value="Agent Details"/>
+  <Entry name="AAH" value="Additional Facility Details"/>
+  <Entry name="AAI" value="Exemption Law Location Description"/>
+  <Entry name="AAJ" value="Forecast Details"/>
+  <Entry name="AAK" value="Import and Export Details"/>
+  <Entry name="AAL" value="Inventory Valuation"/>
+  <Entry name="AAM" value="Product Brands Sold Description"/>
+  <Entry name="AAN" value="Purchase Territory"/>
+  <Entry name="AAO" value="Responsibilities"/>
+  <Entry name="AAP" value="Supplier Description"/>
+  <Entry name="AAQ" value="Education Description"/>
+  <Entry name="AAR" value="Liquidity Details"/>
+  <Entry name="AAS" value="Former Activity Description"/>
+  <Entry name="AAT" value="Division Description"/>
+  <Entry name="ABN" value="Abbreviated Nomenclature"/>
+  <Entry name="ACC" value="Access Instructions"/>
+  <Entry name="ACI" value="Additional Claim Information"/>
+  <Entry name="ACN" value="Action Taken"/>
+  <Entry name="ACS" value="Actual Solution"/>
+  <Entry name="ACT" value="Action"/>
+  <Entry name="ADD" value="Additional Information"/>
+  <Entry name="AES" value="Actual Evaluation Summary"/>
+  <Entry name="AET" value="Adverse Event Terms"/>
+  <Entry name="AFA" value="Description"/>
+  <Entry name="AFB" value="Generic Chemical Name"/>
+  <Entry name="AFC" value="Prevention Program Description"/>
+  <Entry name="AFD" value="Risk Management Plan Description"/>
+  <Entry name="AFE" value="Safety Comments"/>
+  <Entry name="AFF" value="Summary"/>
+  <Entry name="ALG" value="Allergies"/>
+  <Entry name="ALL" value="All Documents"/>
+  <Entry name="ALT" value="Alerts"/>
+  <Entry name="AMN" value="Additional Manufacturer Narrative"/>
+  <Entry name="AOO" value="Area of Operation"/>
+  <Entry name="APN" value="Application Notes"/>
+  <Entry name="APS" value="Appropriation Specifications"/>
+  <Entry name="BBD" value="Bank Description"/>
+  <Entry name="BBF" value="Business Founder"/>
+  <Entry name="BBH" value="Business History"/>
+  <Entry name="BBN" value="Banking Notes"/>
+  <Entry name="BBO" value="Business Origin Description"/>
+  <Entry name="BBT" value="Brand Names"/>
+  <Entry name="BFD" value="Business Financing Details"/>
+  <Entry name="BOL" value="Bill of Lading Note"/>
+  <Entry name="BUR" value="Bureau Remarks"/>
+  <Entry name="CAA" value="Authentication Information"/>
+  <Entry name="CAB" value="Line of In-State Business"/>
+  <Entry name="CAC" value="Relationship Information"/>
+  <Entry name="CAD" value="Basis for Amount Due"/>
+  <Entry name="CAE" value="Type of Debt"/>
+  <Entry name="CAF" value="Land Use Purpose"/>
+  <Entry name="CAG" value="Land Description"/>
+  <Entry name="CAH" value="Basis of Calculation"/>
+  <Entry name="CAI" value="General Business Description"/>
+  <Entry name="CAJ" value="Type of Business"/>
+  <Entry name="CAK" value="Character of Business"/>
+  <Entry name="CAL" value="Representation of Value"/>
+  <Entry name="CAM" value="Supporting Statement, Tax, and Fee Computation"/>
+  <Entry name="CAN" value="Cooperative Corporation Statement"/>
+  <Entry name="CAO" value="Close Corporation Statement"/>
+  <Entry name="CAP" value="Agreement to Abide by Laws"/>
+  <Entry name="CAQ" value="Stock Restrictions"/>
+  <Entry name="CAR" value="Other Related Information"/>
+  <Entry name="CAS" value="Prohibition Against Being an Officer"/>
+  <Entry name="CAT" value="Qualification of Director"/>
+  <Entry name="CAU" value="Nature of Charter"/>
+  <Entry name="CAV" value="Statement of Assets and Liabilities"/>
+  <Entry name="CAW" value="Bankruptcy Information"/>
+  <Entry name="CAX" value="Certificate of Disclosure"/>
+  <Entry name="CAZ" value="Asset Detail"/>
+  <Entry name="CBA" value="Statement Related to Regulation"/>
+  <Entry name="CBB" value="Consideration to be Received"/>
+  <Entry name="CBC" value="Other Lawful Provisions"/>
+  <Entry name="CBH" value="Monetary Amount Description"/>
+  <Entry name="CBI" value="Description of Title"/>
+  <Entry name="CCA" value="Competition"/>
+  <Entry name="CCB" value="Construction Details"/>
+  <Entry name="CCC" value="Construction Financing"/>
+  <Entry name="CCD" value="Construction Line of Business"/>
+  <Entry name="CCE" value="Contract Details"/>
+  <Entry name="CCF" value="Corporate Filing Details"/>
+  <Entry name="CCG" value="Customer Description"/>
+  <Entry name="CCN" value="Copyright Notice"/>
+  <Entry name="CDD" value="Contingent Debt Details"/>
+  <Entry name="CER" value="Certification Narrative"/>
+  <Entry name="CHG" value="Change"/>
+  <Entry name="CIG" value="Cigarette Information"/>
+  <Entry name="CIR" value="Circumstances Prior to Difficulty"/>
+  <Entry name="CLN" value="Classifying Information"/>
+  <Entry name="CLR" value="Security Clearance Instructions"/>
+  <Entry name="CMP" value="Concomitant Medical Product Description"/>
+  <Entry name="CMT" value="Maintenance Comment"/>
+  <Entry name="COD" value="Corrected Data"/>
+  <Entry name="COM" value="Consumer Comments"/>
+  <Entry name="CON" value="Conviction Act Details"/>
+  <Entry name="CRA" value="Credit Report Alerts"/>
+  <Entry name="CRK" value="Closing Comment"/>
+  <Entry name="CRN" value="Credit Report Notes"/>
+  <Entry name="CUS" value="Customs declaration"/>
+  <Entry name="DCP" value="Goals, Rehabilitation Potential, or Discharge Plans"/>
+  <Entry name="DCS" value="Destination Control Statement"/>
+  <Entry name="DDC" value="Deficiency Description Changes"/>
+  <Entry name="DEE" value="Event Description"/>
+  <Entry name="DEL" value="Delivery"/>
+  <Entry name="DEP" value="Problem Description"/>
+  <Entry name="DFR" value="Dose, Frequency and Route Description"/>
+  <Entry name="DFS" value="Departure from Specification Comment"/>
+  <Entry name="DGN" value="Diagnosis Description"/>
+  <Entry name="DME" value="Durable Medical Equipment (DME) and Supplies"/>
+  <Entry name="DOD" value="Description of Damage"/>
+  <Entry name="DOI" value="Outcome Description"/>
+  <Entry name="DRV" value="Driver Out of Service Notice"/>
+  <Entry name="DRW" value="Driver Out of Service Resolution"/>
+  <Entry name="DSW" value="Detailed Statement of Work"/>
+  <Entry name="EAA" value="Other Type of Group"/>
+  <Entry name="EAB" value="Ballot Measure"/>
+  <Entry name="EAC" value="Attachment"/>
+  <Entry name="EAD" value="Board"/>
+  <Entry name="EAE" value="Prohibited Contribution Circumstance"/>
+  <Entry name="EAF" value="Committee Activity"/>
+  <Entry name="EAG" value="Compensation Arrangement"/>
+  <Entry name="EAH" value="Country Sub-Entity"/>
+  <Entry name="EAI" value="Faction"/>
+  <Entry name="EAJ" value="Gift"/>
+  <Entry name="EAK" value="In-Kind Contribution Use"/>
+  <Entry name="EAL" value="Industry Group"/>
+  <Entry name="EAM" value="Jurisdiction"/>
+  <Entry name="EAN" value="Nature and Purpose of Other Lobbyist Employers"/>
+  <Entry name="EAO" value="Description of Office"/>
+  <Entry name="EAP" value="Party Considering Legislation"/>
+  <Entry name="EAQ" value="Description of Position"/>
+  <Entry name="EAR" value="Description of Sponsor"/>
+  <Entry name="EAS" value="Affiliation"/>
+  <Entry name="EAT" value="Asset Disposition"/>
+  <Entry name="EAV" value="Committee Interest"/>
+  <Entry name="EAW" value="Compensation or Services Exchanged for Consideration"/>
+  <Entry name="EAX" value="Contributor Interest"/>
+  <Entry name="EAY" value="Description of Debt"/>
+  <Entry name="EAZ" value="Employer Description"/>
+  <Entry name="EBA" value="Purpose of Employment"/>
+  <Entry name="EBB" value="Description of Agency and Position"/>
+  <Entry name="EBC" value="Description of Goods and Services"/>
+  <Entry name="EBD" value="Length of Lobbying Actions"/>
+  <Entry name="EBE" value="Lobbying Interest"/>
+  <Entry name="EBF" value="Method of Disposal"/>
+  <Entry name="EBG" value="Purpose of Credit"/>
+  <Entry name="EBH" value="Description of Other Business Sub-Category"/>
+  <Entry name="EBI" value="Other Type of Compensation"/>
+  <Entry name="EBJ" value="Description of Other Legislative Interest"/>
+  <Entry name="EBK" value="Other Reason for Withdrawal"/>
+  <Entry name="EBL" value="Other Type of Relationship"/>
+  <Entry name="EBM" value="Other Temporary Residence"/>
+  <Entry name="EBN" value="Other Type of Committee"/>
+  <Entry name="EBO" value="Place Paid"/>
+  <Entry name="EBP" value="Proposition"/>
+  <Entry name="EBQ" value="Reason for Purchase"/>
+  <Entry name="EBR" value="Reason for Contribution"/>
+  <Entry name="EBS" value="Description of Repayment Schedule"/>
+  <Entry name="EBU" value="Service Description"/>
+  <Entry name="EBV" value="Initiative"/>
+  <Entry name="EBW" value="Description of Amendment"/>
+  <Entry name="EBX" value="Type of Election"/>
+  <Entry name="EBY" value="Other Type of Account"/>
+  <Entry name="EBZ" value="Interest Rate Description"/>
+  <Entry name="ECA" value="In-Kind Contribution"/>
+  <Entry name="ECB" value="Reason for Refund"/>
+  <Entry name="ECC" value="Incidental Expenses"/>
+  <Entry name="ECD" value="Environmental Conditions Description"/>
+  <Entry name="ECE" value="Other Expenses"/>
+  <Entry name="ECF" value="Other Income"/>
+  <Entry name="ECG" value="Description of Receipt"/>
+  <Entry name="ECH" value="Surplus Funds"/>
+  <Entry name="ECI" value="Collateral"/>
+  <Entry name="ECJ" value="Contributor"/>
+  <Entry name="ECK" value="Miscellaneous Receipt Transaction"/>
+  <Entry name="ECL" value="Other Advertising"/>
+  <Entry name="ECM" value="Estimate Comment"/>
+  <Entry name="ECN" value="Equipment Condition Description"/>
+  <Entry name="ECO" value="Other Necessary Personal Expense"/>
+  <Entry name="ECP" value="Other Campaign Expense"/>
+  <Entry name="ECQ" value="Long-Term Liability"/>
+  <Entry name="ECR" value="Short-Term Liability"/>
+  <Entry name="ECS" value="Other Sponsor Expense"/>
+  <Entry name="ECT" value="Emergency Certification"/>
+  <Entry name="ECU" value="Other Transportation Expense"/>
+  <Entry name="ECV" value="Refund"/>
+  <Entry name="ECW" value="Reason for Return"/>
+  <Entry name="EED" value="Equipment Description"/>
+  <Entry name="EFD" value="Equipment Function Description"/>
+  <Entry name="ELE" value="Equipment Log Entry"/>
+  <Entry name="EMC" value="Employment Comments"/>
+  <Entry name="EMD" value="Estimate Method Description"/>
+  <Entry name="ENR" value="Explanation for Non-Return of Device to Manufacturer"/>
+  <Entry name="ERN" value="Error Notes"/>
+  <Entry name="EVL" value="Event Location"/>
+  <Entry name="EXE" value="Exemption Description"/>
+  <Entry name="EXN" value="Exhibit Notes"/>
+  <Entry name="EXR" value="Exercise Routine"/>
+  <Entry name="EXT" value="Exterior Description"/>
+  <Entry name="FDD" value="Final Deficiency Description"/>
+  <Entry name="FEE" value="Fee Description"/>
+  <Entry name="FIX" value="Repair Summary"/>
+  <Entry name="FUT" value="Future Plans"/>
+  <Entry name="GEN" value="Entire Transaction Set"/>
+  <Entry name="GPI" value="General Product or Process Information"/>
+  <Entry name="GPL" value="General Policy"/>
+  <Entry name="GSI" value="General Specification Information"/>
+  <Entry name="HHI" value="Household Goods Information"/>
+  <Entry name="ICN" value="Interviewee Conversation"/>
+  <Entry name="IDT" value="Intangible Description"/>
+  <Entry name="IID" value="Inventory (Stock) Description"/>
+  <Entry name="IIE" value="Investment Description"/>
+  <Entry name="IIR" value="Intercompany Relations"/>
+  <Entry name="IMP" value="Problem Impact"/>
+  <Entry name="INP" value="Reason for Inspection"/>
+  <Entry name="INS" value="Insurance"/>
+  <Entry name="INT" value="General Order Instructions"/>
+  <Entry name="INV" value="Invoice Instruction"/>
+  <Entry name="IVC" value="Income Verification Comments"/>
+  <Entry name="JVD" value="Joint Venture Description"/>
+  <Entry name="LAB" value="Labeling Instructions"/>
+  <Entry name="LBD" value="Laboratory Data"/>
+  <Entry name="LBS" value="Labeled Strength"/>
+  <Entry name="LEN" value="Lender Use"/>
+  <Entry name="LIN" value="Line Item"/>
+  <Entry name="LIQ" value="Liquor Information"/>
+  <Entry name="LLA" value="Letters of Liability Agreements"/>
+  <Entry name="LLB" value="Loan Details"/>
+  <Entry name="LLC" value="Long Term Debt Description"/>
+  <Entry name="LOC" value="Location Description Information"/>
+  <Entry name="LOI" value="Loading Instructions"/>
+  <Entry name="LSD" value="Legal Structure Details"/>
+  <Entry name="MCD" value="Marital Contract Details"/>
+  <Entry name="MCN" value="Motor Carrier Instructions"/>
+  <Entry name="MDO" value="Device Operator Description"/>
+  <Entry name="MED" value="Medications"/>
+  <Entry name="MFG" value="Manufacturing Instructions"/>
+  <Entry name="MKN" value="Marketing Notes"/>
+  <Entry name="MMD" value="Merger Description"/>
+  <Entry name="MSD" value="Marketable Securities Description"/>
+  <Entry name="NCD" value="Nonconformance Specification"/>
+  <Entry name="NPD" value="Nameplate Data"/>
+  <Entry name="NTR" value="Nutritional Requirements"/>
+  <Entry name="OBI" value="Originator to Beneficiary Instructions"/>
+  <Entry name="OBL" value="Obligation Description"/>
+  <Entry name="OCA" value="Other Current Asset Description"/>
+  <Entry name="OCC" value="Occupancy Information"/>
+  <Entry name="OCL" value="Other Current Liability Description"/>
+  <Entry name="OCP" value="Occupation"/>
+  <Entry name="OCR" value="Outside the Continental U.S. (OCONUS) Rating Information"/>
+  <Entry name="ODD" value="Originator Deficiency Description"/>
+  <Entry name="ODT" value="Orders for Disciplines and Treatments"/>
+  <Entry name="OLS" value="Original Legal Structure"/>
+  <Entry name="OPO" value="Occupation Definition"/>
+  <Entry name="ORA" value="Test Results Other Than Room Air"/>
+  <Entry name="ORD" value="Ordering Restrictions"/>
+  <Entry name="ORE" value="Other Remedial Action"/>
+  <Entry name="ORI" value="Order Instructions"/>
+  <Entry name="OTH" value="Other Instructions"/>
+  <Entry name="OTN" value="Another Type of Number Description"/>
+  <Entry name="OTS" value="Report Source Description"/>
+  <Entry name="PAY" value="Payables"/>
+  <Entry name="PCS" value="Process Specification"/>
+  <Entry name="PDS" value="Product Specification"/>
+  <Entry name="PED" value="Employee Sharing Arrangements"/>
+  <Entry name="PEN" value="Penalty Description"/>
+  <Entry name="PES" value="Partial Pressure of Oxygen (PO2) is 60 millimeters (MM) of Mercury (Hg) or above, or arterial blood oxygen saturation is 90% or above"/>
+  <Entry name="PID" value="Property Improvement Description"/>
+  <Entry name="PKG" value="Packaging Instructions"/>
+  <Entry name="PMT" value="Payment"/>
+  <Entry name="POB" value="Primary Observation"/>
+  <Entry name="POC" value="Principals or Organization Comments"/>
+  <Entry name="POL" value="Property Owner Location Information"/>
+  <Entry name="PPC" value="Principal Procedure Code Description"/>
+  <Entry name="PRI" value="Priority"/>
+  <Entry name="PRN" value="Public Record Notes"/>
+  <Entry name="PRO" value="Previous Registered Office"/>
+  <Entry name="PRR" value="Price Range"/>
+  <Entry name="PSY" value="Problem Summary"/>
+  <Entry name="PUR" value="Purchasing"/>
+  <Entry name="QUL" value="Qualifications"/>
+  <Entry name="QUT" value="Quotation Instruction"/>
+  <Entry name="RDI" value="Reason for Delinquency Information"/>
+  <Entry name="REC" value="Recommendation"/>
+  <Entry name="REF" value="Treatment Refusal Note"/>
+  <Entry name="REG" value="Registered Activity"/>
+  <Entry name="REP" value="Report"/>
+  <Entry name="REV" value="Receivables"/>
+  <Entry name="RFL" value="Reason for Leaving"/>
+  <Entry name="RHB" value="Functional Limitations, Reason Homebound, or Both"/>
+  <Entry name="RLA" value="Reason for Leave of Absence"/>
+  <Entry name="RLH" value="Reasons Patient Leaves Home"/>
+  <Entry name="RNH" value="Times and Reasons Patient Not at Home"/>
+  <Entry name="RNI" value="Missing Report Explanation"/>
+  <Entry name="ROU" value="Circuit Routing Instructions"/>
+  <Entry name="RPT" value="Report Remarks"/>
+  <Entry name="RST" value="Place Where a Report was Submitted"/>
+  <Entry name="RVC" value="Rent Verification Comments"/>
+  <Entry name="SAN" value="Settlement Amount Notes"/>
+  <Entry name="SCN" value="Ocean Shipping Container Information"/>
+  <Entry name="SDD" value="Sentence Description"/>
+  <Entry name="SET" value="Unusual Home, Social Environment, or Both"/>
+  <Entry name="SFM" value="Safety Measures"/>
+  <Entry name="SHR" value="Shipping Restrictions"/>
+  <Entry name="SMD" value="Selling Means Description"/>
+  <Entry name="SOB" value="Secondary Observation"/>
+  <Entry name="SOW" value="Statement of Work"/>
+  <Entry name="SPH" value="Special Handling"/>
+  <Entry name="SPT" value="Supplementary Plan of Treatment"/>
+  <Entry name="SPV" value="Closing Instructions"/>
+  <Entry name="SSA" value="School Attended Details"/>
+  <Entry name="SSC" value="Status Comment"/>
+  <Entry name="SSD" value="Sales Description"/>
+  <Entry name="SSE" value="Spouse Information"/>
+  <Entry name="SSG" value="School Graduated Details"/>
+  <Entry name="SSH" value="Security Service Information"/>
+  <Entry name="SSI" value="Shareholding Information"/>
+  <Entry name="SSS" value="Signing Authority"/>
+  <Entry name="SST" value="Sales Territory"/>
+  <Entry name="TAF" value="Tariff Abbreviation"/>
+  <Entry name="TCF" value="Tariff Commodity Footnotes"/>
+  <Entry name="TDA" value="Turkish Defense Affairs Authorization Information"/>
+  <Entry name="TES" value="Task Statement"/>
+  <Entry name="TIL" value="Tariff Index"/>
+  <Entry name="TLF" value="Tariff Rule"/>
+  <Entry name="TLR" value="Tradeline Remarks"/>
+  <Entry name="TMP" value="Toxic Organic Management Plan"/>
+  <Entry name="TPO" value="Third Party Organization Notes"/>
+  <Entry name="TRA" value="Transportation"/>
+  <Entry name="TRE" value="Reportable Event Description"/>
+  <Entry name="TRF" value="Tariff Rate Footnotes"/>
+  <Entry name="TRS" value="Quality Information"/>
+  <Entry name="TSD" value="Terms of Sale Description"/>
+  <Entry name="TSF" value="Tariff Section Footnotes"/>
+  <Entry name="TST" value="Test Results"/>
+  <Entry name="UPI" value="Updated Information"/>
+  <Entry name="VEC" value="Verification Comments"/>
+  <Entry name="VEH" value="Vehicle Out of Service Notice"/>
+  <Entry name="VNN" value="Variation Notes"/>
+  <Entry name="WHI" value="Warehouse Instruction"/>
+  <Entry name="WRP" value="Wrapping Instructions"/>
+  <Entry name="ZED" value="Zero Discharge Certification Statement"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

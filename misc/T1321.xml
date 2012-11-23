@@ -1,0 +1,1327 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1321.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1321">
+  <Entry name="00" value="Requested"/>
+  <Entry name="01" value="Patient was admitted to a hospital"/>
+  <Entry name="02" value="Patient was bed confined before the ambulance service"/>
+  <Entry name="03" value="Patient was bed confined after the ambulance service"/>
+  <Entry name="04" value="Patient was moved by stretcher"/>
+  <Entry name="05" value="Patient was unconscious or in shock"/>
+  <Entry name="06" value="Patient was transported in an emergency situation"/>
+  <Entry name="07" value="Patient had to be physically restrained"/>
+  <Entry name="08" value="Patient had visible hemorrhaging"/>
+  <Entry name="09" value="Ambulance service was medically necessary"/>
+  <Entry name="0A" value="Automated Export System - Post Departure Authorized Special Status (AES-PASS) Standard"/>
+  <Entry name="0B" value="Automated Export System - Post Departure Authorized Special Status (AES-PASS) Expanded"/>
+  <Entry name="0C" value="Automated Export System - Post Departure Authorized Special Status (AES-PASS) Post Departure"/>
+  <Entry name="0D" value="Facility's Emergency Response Plan Includes Information on Emergency Health Care"/>
+  <Entry name="0E" value="Facility's Emergency Response Plan Includes Procedures for Informing Public and Local Agencies Responsible for Responding to an Accidental Release"/>
+  <Entry name="0F" value="Facility has a Clean Air Act Title V Operating Permit"/>
+  <Entry name="0G" value="Facility has a Written Emergency Response Plan"/>
+  <Entry name="0H" value="Facility has Reportable Accidents"/>
+  <Entry name="0I" value="Facility is Covered by the Emergency Planning and Community Right to Know Act Section 302"/>
+  <Entry name="0J" value="Facility is Covered by the Occupational Safety and Health Act (OSHA) Process Safety Management Standard"/>
+  <Entry name="0K" value="Facility is Included in the Community Emergency Response Plan"/>
+  <Entry name="0L" value="Hazardous Waste Mixed with Resource Conservation Recovery Act (RCRA)-Radioactive Material"/>
+  <Entry name="0M" value="Offsite Responders Notified"/>
+  <Entry name="0N" value="Precipitation Present"/>
+  <Entry name="0O" value="Disabled Veteran"/>
+  <Entry name="0P" value="Servicer has Advanced Funds to Pay for Delinquent Taxes on Non-escrowed Mortgage"/>
+  <Entry name="0Q" value="Property Has Fire Insurance Only that was not Lender Placed"/>
+  <Entry name="0R" value="Reported but Unconfirmed"/>
+  <Entry name="0S" value="Has Smoke Alarms"/>
+  <Entry name="0T" value="Operates as a Holding Company"/>
+  <Entry name="0U" value="Optimum"/>
+  <Entry name="0V" value="Renewed"/>
+  <Entry name="0W" value="Highest Educational Level"/>
+  <Entry name="0X" value="Principal Certificate"/>
+  <Entry name="0Y" value="Inservice Education Completed"/>
+  <Entry name="0Z" value="Main Assignment"/>
+  <Entry name="10" value="Patient is ambulatory"/>
+  <Entry name="11" value="Ambulation is Impaired and Walking Aid is Used for Therapy or Mobility"/>
+  <Entry name="12" value="Patient is confined to a bed or chair"/>
+  <Entry name="13" value="Patient is Confined to a Room or an Area Without Bathroom Facilities"/>
+  <Entry name="14" value="Ambulation is Impaired and Walking Aid is Used for Mobility"/>
+  <Entry name="15" value="Patient Condition Requires Positioning of the Body or Attachments Which Would Not be Feasible With the Use of an Ordinary Bed"/>
+  <Entry name="16" value="Patient needs a trapeze bar to sit up due to respiratory condition or change body positions for other medical reasons"/>
+  <Entry name="17" value="Patient's Ability to Breathe is Severely Impaired"/>
+  <Entry name="18" value="Patient condition requires frequent and/or immediate changes in body positions"/>
+  <Entry name="19" value="Patient can operate controls"/>
+  <Entry name="1A" value="Patient is receiving anti-fungal therapy"/>
+  <Entry name="1B" value="Property is occupied by owner"/>
+  <Entry name="1C" value="Property is occupied by tenant"/>
+  <Entry name="1D" value="Property is vacant"/>
+  <Entry name="1E" value="Location is urban"/>
+  <Entry name="1F" value="Location is suburban"/>
+  <Entry name="1G" value="Location is rural"/>
+  <Entry name="1H" value="Built-up over 75%"/>
+  <Entry name="1I" value="Built-up 25 - 75%"/>
+  <Entry name="1J" value="Built-up under 25%"/>
+  <Entry name="1K" value="Growth rate is rapid"/>
+  <Entry name="1L" value="Class I-Left"/>
+  <Entry name="1M" value="Growth rate is stable"/>
+  <Entry name="1N" value="Growth rate is slow"/>
+  <Entry name="1O" value="Property values are increasing"/>
+  <Entry name="1P" value="Property values are stable"/>
+  <Entry name="1Q" value="Property values are declining"/>
+  <Entry name="1R" value="Class I-Right"/>
+  <Entry name="1S" value="Demand or supply is in shortage"/>
+  <Entry name="1T" value="Demand or supply is in balance"/>
+  <Entry name="1U" value="Demand or supply is over supply"/>
+  <Entry name="1V" value="Marketing time is under 3 months"/>
+  <Entry name="1W" value="Marketing time is 3 to 6 months"/>
+  <Entry name="1X" value="Marketing time is over 6 months"/>
+  <Entry name="1Y" value="Predominant occupancy is the owner"/>
+  <Entry name="1Z" value="Predominant occupancy is the tenant"/>
+  <Entry name="20" value="Siderails Are to be Attached to a Hospital Bed Owned by the Beneficiary"/>
+  <Entry name="21" value="Patient owns equipment"/>
+  <Entry name="22" value="Mattress or Siderails are Being Used with Prescribed Medically Necessary Hospital Bed Owned by the Beneficiary"/>
+  <Entry name="23" value="Patient Needs Lift to Get In or Out of Bed or to Assist in Transfer from Bed to Wheelchair"/>
+  <Entry name="24" value="Patient has an orthopedic impairment requiring traction equipment which prevents ambulation during period of use"/>
+  <Entry name="25" value="Item has been prescribed as part of a planned regimen of treatment in patient home"/>
+  <Entry name="26" value="Patient is highly susceptible to decubitus ulcers"/>
+  <Entry name="27" value="Patient or a care-giver has been instructed in use of equipment"/>
+  <Entry name="28" value="Patient has poor diabetic control"/>
+  <Entry name="29" value="A 6-7 hour nocturnal study documents 30 episodes of apnea each lasting more than 10 seconds"/>
+  <Entry name="2A" value="Patient is receiving oral anti-fungal therapy"/>
+  <Entry name="2B" value="Predominant occupancy is vacant (0-5%)"/>
+  <Entry name="2C" value="Predominant occupancy is vacant (over 5%)"/>
+  <Entry name="2D" value="Developer or builder is in control of the Home Owners Association"/>
+  <Entry name="2E" value="Site is a corner lot"/>
+  <Entry name="2F" value="Zoning compliance is legal"/>
+  <Entry name="2G" value="Zoning compliance is legal nonconforming (grandfather use)"/>
+  <Entry name="2H" value="Zoning compliance is illegal"/>
+  <Entry name="2I" value="There is no zoning"/>
+  <Entry name="2J" value="Highest and best use as improved is the present use"/>
+  <Entry name="2K" value="Highest and best use as improved is other use"/>
+  <Entry name="2L" value="Class II-Left"/>
+  <Entry name="2M" value="Property is located in a Federal Emergency Management Administration special flood hazard area"/>
+  <Entry name="2N" value="Appraisal is made &quot;as is&quot;"/>
+  <Entry name="2O" value="Appraisal is made subject to the repairs, alterations, inspections, or conditions listed"/>
+  <Entry name="2P" value="Appraisal is made subject to the completion per plans and specifications"/>
+  <Entry name="2Q" value="Project type is planned unit development (PUD)"/>
+  <Entry name="2R" value="Class II-Right"/>
+  <Entry name="2S" value="Project type is condominium"/>
+  <Entry name="2T" value="Property rights are fee simple"/>
+  <Entry name="2U" value="Property rights are leasehold"/>
+  <Entry name="2V" value="Supervisor appraiser inspected the property per supervisory appraiser's certification"/>
+  <Entry name="2W" value="Property was sold within last 12 months"/>
+  <Entry name="2X" value="Appraiser signed statement of limiting conditions and disclaimer"/>
+  <Entry name="2Y" value="Ownership interest in a property"/>
+  <Entry name="2Z" value="Termination"/>
+  <Entry name="30" value="Without the equipment, the patient would require surgery"/>
+  <Entry name="31" value="Patient has had a total knee replacement"/>
+  <Entry name="32" value="Patient has intractable lymphedema of the extremities"/>
+  <Entry name="33" value="Patient is in a nursing home"/>
+  <Entry name="34" value="Patient is conscious"/>
+  <Entry name="35" value="This Feeding is the Only Form of Nutritional Intake for This Patient"/>
+  <Entry name="36" value="Patient was administered premix"/>
+  <Entry name="37" value="Oxygen delivery equipment is stationary"/>
+  <Entry name="38" value="Certification signed by the physician is on file at the supplier's office"/>
+  <Entry name="39" value="Patient Has Mobilizing Respiratory Tract Secretions"/>
+  <Entry name="3A" value="Patient is receiving topical anti-fungal therapy"/>
+  <Entry name="3B" value="Points Paid by Seller"/>
+  <Entry name="3C" value="Points Paid by Buyer"/>
+  <Entry name="3D" value="Seller Concession"/>
+  <Entry name="3E" value="Letter of Certification"/>
+  <Entry name="3F" value="Verbal Report Needed"/>
+  <Entry name="3G" value="Any Relationship Between Owner and Occupant"/>
+  <Entry name="3H" value="Map and Directions to Remote Properties to Follow"/>
+  <Entry name="3I" value="Ground Lease to Follow"/>
+  <Entry name="3J" value="Disclosure Statement to Follow"/>
+  <Entry name="3K" value="Copy of Property Listing to Follow"/>
+  <Entry name="3L" value="Class III-Left"/>
+  <Entry name="3M" value="Copy of Title Report Plat Map to Follow"/>
+  <Entry name="3N" value="Property Tax Bill to Follow"/>
+  <Entry name="3O" value="Engineering or Soil Report to Follow"/>
+  <Entry name="3P" value="Sales Contract Available"/>
+  <Entry name="3Q" value="Leave Will be Taken"/>
+  <Entry name="3R" value="Class III-Right"/>
+  <Entry name="3S" value="Approved"/>
+  <Entry name="3T" value="Balance Sheet does not balance"/>
+  <Entry name="3U" value="Banking done through Parent Company"/>
+  <Entry name="3V" value="Banking done through Related Concern"/>
+  <Entry name="3W" value="Banking done through Subsidiary"/>
+  <Entry name="3X" value="Can not determine if subject engaged in business"/>
+  <Entry name="3Y" value="Deteriorated"/>
+  <Entry name="3Z" value="Detrimental Information Received"/>
+  <Entry name="40" value="Patient or Caregiver is Capable of Using the Equipment Without Technical or Professional Supervision"/>
+  <Entry name="41" value="Patient or Caregiver is Unable to Propel or Lift a Standard Weight Wheelchair"/>
+  <Entry name="42" value="Patient Requires Leg Elevation for Edema or Body Alignment"/>
+  <Entry name="43" value="Patient Weight or Usage Needs Necessitate a Heavy Duty Wheelchair"/>
+  <Entry name="44" value="Patient Requires Reclining Function of a Wheelchair"/>
+  <Entry name="45" value="Patient is Unable to Operate a Wheelchair Manually"/>
+  <Entry name="46" value="Patient or Caregiver Requires Side Transfer into Wheelchair, Commode or Other"/>
+  <Entry name="47" value="Advertisement Run Condition"/>
+  <Entry name="48" value="Individual Paid for Last Day Worked"/>
+  <Entry name="49" value="Full Wages Paid for Date of Injury"/>
+  <Entry name="4A" value="Services are rendered within Hospice-elected period of coverage"/>
+  <Entry name="4B" value="Accidents"/>
+  <Entry name="4C" value="Account Representative Transfer"/>
+  <Entry name="4D" value="Additional Coverage"/>
+  <Entry name="4E" value="Advice to Stop"/>
+  <Entry name="4F" value="Agent Replacement"/>
+  <Entry name="4G" value="Backup Withholding"/>
+  <Entry name="4H" value="Current Employer"/>
+  <Entry name="4I" value="Current Occupation"/>
+  <Entry name="4J" value="Employer Reimbursement"/>
+  <Entry name="4K" value="Employee Retirement Income Security Act (ERISA)"/>
+  <Entry name="4L" value="Expected Changes"/>
+  <Entry name="4M" value="Experimental"/>
+  <Entry name="4N" value="Foreign Flight"/>
+  <Entry name="4O" value="Future Involvement"/>
+  <Entry name="4P" value="Grounding, Fine, Reprimand"/>
+  <Entry name="4Q" value="Group Disability Insurance Conversion"/>
+  <Entry name="4R" value="Group Disability Insurance Offset"/>
+  <Entry name="4S" value="Group Disability Insurance Participation"/>
+  <Entry name="4T" value="Group Disability Insurance Top Up"/>
+  <Entry name="4U" value="Home Employment"/>
+  <Entry name="4V" value="Information Omitted"/>
+  <Entry name="4W" value="Injury Benefits"/>
+  <Entry name="4X" value="Issue at Higher Premiums"/>
+  <Entry name="4Y" value="Issue With Exclusions"/>
+  <Entry name="4Z" value="Issue Without Benefits"/>
+  <Entry name="50" value="Citation or Ticket Issued"/>
+  <Entry name="51" value="Individual is Member of Policyholder's Household"/>
+  <Entry name="52" value="Individual Permitted to Use Vehicle"/>
+  <Entry name="53" value="Individual Wore Seatbelt"/>
+  <Entry name="54" value="Child Restraint Device in Vehicle"/>
+  <Entry name="55" value="Child Restraint Device Used"/>
+  <Entry name="56" value="Individual Injured"/>
+  <Entry name="57" value="Individual Transported to Another Location"/>
+  <Entry name="58" value="Durable Medical Equipment (DME) Purchased New"/>
+  <Entry name="59" value="Durable Medical Equipment (DME) Is Under Warranty"/>
+  <Entry name="5A" value="Treatment is rendered related to the terminal illness"/>
+  <Entry name="5B" value="Certified Aftermarket Parts Association (CAPA) Only"/>
+  <Entry name="5C" value="Certified Aftermarket Parts Association (CAPA) Preferred"/>
+  <Entry name="5D" value="Juvenile Seen"/>
+  <Entry name="5E" value="Medical Treatment"/>
+  <Entry name="5F" value="Military Aviation"/>
+  <Entry name="5G" value="New Group"/>
+  <Entry name="5H" value="Other Coverage Offset"/>
+  <Entry name="5I" value="Other Principals Being Insured"/>
+  <Entry name="5J" value="Owner Active in Business"/>
+  <Entry name="5K" value="Payroll Deduction"/>
+  <Entry name="5L" value="Prepaid"/>
+  <Entry name="5M" value="Previous Application"/>
+  <Entry name="5N" value="Primary Occupation"/>
+  <Entry name="5O" value="Racing Accident"/>
+  <Entry name="5P" value="Replacement"/>
+  <Entry name="5Q" value="Resides With Applicant"/>
+  <Entry name="5R" value="Gender Distinct"/>
+  <Entry name="5S" value="Sibling Coverage"/>
+  <Entry name="5T" value="Sickness Benefits"/>
+  <Entry name="5U" value="Special Dating"/>
+  <Entry name="5V" value="Spousal Consent"/>
+  <Entry name="5W" value="Suitability Analysis"/>
+  <Entry name="5X" value="Suitable for Coverage"/>
+  <Entry name="5Y" value="Taxable"/>
+  <Entry name="5Z" value="This Company Replacement"/>
+  <Entry name="60" value="Transportation Was To the Nearest Facility"/>
+  <Entry name="61" value="Employee is Exempt"/>
+  <Entry name="62" value="Claimant is Covered on the Employer's Long-term Disability Plan"/>
+  <Entry name="63" value="Employee's Job Responsibilities Changed Due to the Disabling Condition"/>
+  <Entry name="64" value="Employer Has a Return to Work Policy for Disabled Employees"/>
+  <Entry name="65" value="Open"/>
+  <Entry name="66" value="Normal"/>
+  <Entry name="67" value="Closed-moderate"/>
+  <Entry name="68" value="Severe"/>
+  <Entry name="69" value="Moderate"/>
+  <Entry name="6A" value="Treatment is rendered by a Hospice employed physician"/>
+  <Entry name="6B" value="United States Citizen"/>
+  <Entry name="6C" value="Permanent Resident Alien"/>
+  <Entry name="6D" value="Borrower is First Time Homebuyer"/>
+  <Entry name="6E" value="Unemployment Claims"/>
+  <Entry name="6F" value="Unemployment Insurance Eligibility"/>
+  <Entry name="6G" value="Work Status"/>
+  <Entry name="6H" value="Workers Compensation Eligible"/>
+  <Entry name="6I" value="Factored on Recourse Basis"/>
+  <Entry name="6J" value="Factored with Advances"/>
+  <Entry name="6K" value="Figures are Actual"/>
+  <Entry name="6L" value="Figures are Anticipated"/>
+  <Entry name="6M" value="Figures are Estimated"/>
+  <Entry name="6N" value="Figures are Modified"/>
+  <Entry name="6O" value="Figures are Projected"/>
+  <Entry name="6P" value="Government Business Number Unavailable"/>
+  <Entry name="6Q" value="Goodwill Origin Purchased from Bankrupt Company"/>
+  <Entry name="6R" value="Goodwill Origin Rented"/>
+  <Entry name="6S" value="Has no ownership"/>
+  <Entry name="6T" value="Improved"/>
+  <Entry name="6U" value="Intangibles breakdown available"/>
+  <Entry name="6V" value="Intangibles include Organizational Expense"/>
+  <Entry name="6W" value="Intercompany relations consist of Loans and Advances"/>
+  <Entry name="6X" value="Intercompany relations consist of Merchandise Transactions"/>
+  <Entry name="6Y" value="Intercompany relations consist of Service Transactions"/>
+  <Entry name="6Z" value="Local banking utilized on a transfer account basis"/>
+  <Entry name="70" value="Straight"/>
+  <Entry name="71" value="Convex"/>
+  <Entry name="72" value="Concave"/>
+  <Entry name="73" value="Double Protrusion"/>
+  <Entry name="74" value="No Crossbite"/>
+  <Entry name="75" value="Posterior"/>
+  <Entry name="76" value="Anterior"/>
+  <Entry name="77" value="Maxillary"/>
+  <Entry name="78" value="Mandibular"/>
+  <Entry name="79" value="Right"/>
+  <Entry name="7A" value="Treatment is rendered by a private attending physician"/>
+  <Entry name="7B" value="Medications Ordered are being Administered Intramuscularly"/>
+  <Entry name="7C" value="Medications Ordered are being Administered Intravenously"/>
+  <Entry name="7D" value="Medications Ordered are being Administered Orally"/>
+  <Entry name="7E" value="Maintains no Inventory"/>
+  <Entry name="7F" value="Medications Ordered are being Administered Subcutaneously"/>
+  <Entry name="7G" value="Majority"/>
+  <Entry name="7H" value="Marketable Securities valued at cost"/>
+  <Entry name="7I" value="Marketable Securities valued at lower of cost or market"/>
+  <Entry name="7J" value="Interior Access Denied"/>
+  <Entry name="7K" value="Repairs are Recommended"/>
+  <Entry name="7L" value="Loan Originated under Shared Equity Plan"/>
+  <Entry name="7M" value="Title and or Legal Issues Exist"/>
+  <Entry name="7N" value="Environmental Issues Exist"/>
+  <Entry name="7O" value="Property is Listed As Is"/>
+  <Entry name="7P" value="Property is Listed as Repaired"/>
+  <Entry name="7Q" value="Vacancy Rate is Greater Than 5 Percent to 10 Percent"/>
+  <Entry name="7R" value="Vacancy Rate is Greater Than 10 Percent to 20 Percent"/>
+  <Entry name="7S" value="Vacancy Rate is Greater Than 20 Percent"/>
+  <Entry name="7T" value="Most Comparable Property"/>
+  <Entry name="7U" value="Anticipate Issues which Affect Ability to Secure Financing"/>
+  <Entry name="7V" value="Points are Paid by Seller"/>
+  <Entry name="7W" value="Property Covered by Flood Insurance Policy"/>
+  <Entry name="7X" value="Property Covered by Earthquake Insurance Policy"/>
+  <Entry name="7Y" value="Points are Negotiable"/>
+  <Entry name="7Z" value="Property is Currently Listed with a Real Estate Firm"/>
+  <Entry name="80" value="Left"/>
+  <Entry name="81" value="Maxillary Moderate"/>
+  <Entry name="82" value="Mandibular Moderate"/>
+  <Entry name="83" value="Maxillary Severe"/>
+  <Entry name="84" value="Mandibular Severe"/>
+  <Entry name="85" value="Income Has Been Verified"/>
+  <Entry name="86" value="Person Has Been Interviewed"/>
+  <Entry name="87" value="Rent Has Been Verified"/>
+  <Entry name="88" value="Employer Has Been Verified"/>
+  <Entry name="89" value="Position Has Been Verified"/>
+  <Entry name="8A" value="Treatment is curative"/>
+  <Entry name="8B" value="Income or Assets of Another Used"/>
+  <Entry name="8C" value="Disclosure of Someone Else's Liabilities Required"/>
+  <Entry name="8D" value="Property Improvements &quot;to be made&quot;"/>
+  <Entry name="8E" value="Property Improvements &quot;have been made&quot;"/>
+  <Entry name="8F" value="Distant Suburban"/>
+  <Entry name="8G" value="Self Employed"/>
+  <Entry name="8H" value="Liability to be Satisfied"/>
+  <Entry name="8I" value="Are Assets/Liabilities Reported Jointly"/>
+  <Entry name="8J" value="Location is Farm"/>
+  <Entry name="8K" value="Location is Resort"/>
+  <Entry name="8L" value="Shortage Exist for Competing Listings"/>
+  <Entry name="8M" value="Competing Listings are in Balance"/>
+  <Entry name="8N" value="Oversupply Exist for Competing Listings"/>
+  <Entry name="8O" value="Incentives are Offered"/>
+  <Entry name="8P" value="Listed Property has been Inspected"/>
+  <Entry name="8Q" value="Sale Property has been Inspected"/>
+  <Entry name="8R" value="General Marketing Condition is Depressed"/>
+  <Entry name="8S" value="General Marketing Condition is Slow"/>
+  <Entry name="8T" value="General Marketing Condition is Static"/>
+  <Entry name="8U" value="General Marketing Condition is Improving"/>
+  <Entry name="8V" value="General Marketing Condition is Excellent"/>
+  <Entry name="8W" value="Employment Conditions are Stable"/>
+  <Entry name="8X" value="Employment Conditions are Declining"/>
+  <Entry name="8Y" value="Employment Conditions are Increasing"/>
+  <Entry name="8Z" value="Overimprovement Condition Exists"/>
+  <Entry name="90" value="Inquiry Has Been Verified"/>
+  <Entry name="91" value="Outstanding Judgments"/>
+  <Entry name="92" value="Declared Bankruptcy in Past 7 Years"/>
+  <Entry name="93" value="Foreclosure or Deed in Lieu in Past 7 Years"/>
+  <Entry name="94" value="Party to Lawsuit"/>
+  <Entry name="95" value="Obligated on a Loan Foreclosed, Deed in Lieu of Judgment"/>
+  <Entry name="96" value="Currently Delinquent or in Default"/>
+  <Entry name="97" value="Obligated to Pay Alimony, Child Support or Maintenance"/>
+  <Entry name="98" value="Part of Down Payment Borrowed"/>
+  <Entry name="99" value="Co-maker or Endorser on a Note"/>
+  <Entry name="9A" value="Treatment is Palliative"/>
+  <Entry name="9B" value="Involuntary Committal"/>
+  <Entry name="9C" value="Lack of Available Equipment"/>
+  <Entry name="9D" value="Lack of Appropriate Facility within Reasonable Distance to Treat Patient in the Event of Complications"/>
+  <Entry name="9E" value="Sudden Onset of Disorientation"/>
+  <Entry name="9F" value="Sudden Onset of Severe, Incapacitating Pain"/>
+  <Entry name="9G" value="Continuous Hemorrhage from any Site with Abnormal Lab Values"/>
+  <Entry name="9H" value="Patient Requires Intensive IV Therapy"/>
+  <Entry name="9I" value="Patient Requires Volume Expanders"/>
+  <Entry name="9J" value="Patient Requires Protective Isolation"/>
+  <Entry name="9K" value="Patient Requires Frequent Monitoring"/>
+  <Entry name="9L" value="Patient Requires Extended Post-operative Observation"/>
+  <Entry name="9M" value="Foreclosure Proceedings Have Begun"/>
+  <Entry name="9N" value="Underimprovement Condition Exists"/>
+  <Entry name="9O" value="Marketability of Property is Excellent"/>
+  <Entry name="9P" value="Marketability of Property is Good"/>
+  <Entry name="9Q" value="Marketability of Property is Fair"/>
+  <Entry name="9R" value="Marketability of Property is Poor"/>
+  <Entry name="9S" value="Fees are Current"/>
+  <Entry name="9T" value="Fees Include Tennis"/>
+  <Entry name="9U" value="Fees Include Pool"/>
+  <Entry name="9V" value="Fees Include Insurance"/>
+  <Entry name="9W" value="Fees Include Landscape"/>
+  <Entry name="9X" value="Fees Include Other Amenities"/>
+  <Entry name="9Y" value="Most Likely Buyer is Owner Occupant"/>
+  <Entry name="9Z" value="Most Likely Buyer is Investor"/>
+  <Entry name="A0" value="Liability Coverage Will Transfer"/>
+  <Entry name="A1" value="Most Likely Buyer is Other Person or Entity"/>
+  <Entry name="A2" value="Potential Financing is Fannie Mae"/>
+  <Entry name="A3" value="Suppress Paper Endorsement"/>
+  <Entry name="A4" value="Do Not Suppress Paper Endorsement"/>
+  <Entry name="A5" value="Escrow"/>
+  <Entry name="A6" value="Teaching Minor"/>
+  <Entry name="A7" value="Sub-servicer Submitted"/>
+  <Entry name="A8" value="First Mortgage"/>
+  <Entry name="A9" value="Second Mortgage"/>
+  <Entry name="AA" value="Amputation"/>
+  <Entry name="AB" value="Address Skip Begin"/>
+  <Entry name="AC" value="Address Corrected"/>
+  <Entry name="AD" value="Automatic Drill Time Calculated"/>
+  <Entry name="AE" value="Automatic Edging Time Calculated"/>
+  <Entry name="AF" value="Automatically Select"/>
+  <Entry name="AG" value="Agitated"/>
+  <Entry name="AH" value="Automatically Search and List"/>
+  <Entry name="AI" value="Address Incorrect"/>
+  <Entry name="AJ" value="Assumable"/>
+  <Entry name="AK" value="Potential Financing is Cash"/>
+  <Entry name="AL" value="Ambulation Limitations"/>
+  <Entry name="AM" value="Potential Financing is Outside Lender"/>
+  <Entry name="AN" value="Address Incomplete"/>
+  <Entry name="AO" value="Accept Certification without Changes"/>
+  <Entry name="AP" value="Alley is Public"/>
+  <Entry name="AQ" value="Potential Financing is Federal Housing Administration"/>
+  <Entry name="AR" value="Address Skip Resolved"/>
+  <Entry name="AS" value="Address Skip Exhaust"/>
+  <Entry name="AT" value="Accept Statement of Limiting Conditions without Changes"/>
+  <Entry name="AU" value="Automatic Underside Time Calculated"/>
+  <Entry name="AV" value="Available - Not Used"/>
+  <Entry name="AW" value="Accept Certification with Changes"/>
+  <Entry name="AX" value="Accept Statement of Limiting Conditions with Changes"/>
+  <Entry name="AY" value="Adjacent Track Occupied"/>
+  <Entry name="AZ" value="Potential Financing is Veterans Affairs"/>
+  <Entry name="B0" value="Uninsured Motorist Coverage Will Transfer"/>
+  <Entry name="B1" value="Mortgage in Foreclosure"/>
+  <Entry name="B2" value="Real Estate Owned (REO) Mortgage"/>
+  <Entry name="B3" value="Potential Financing is Contract for Deed"/>
+  <Entry name="B4" value="Only the Exterior has been Inspected"/>
+  <Entry name="B5" value="Real Estate Owned Property or Foreclosure Property"/>
+  <Entry name="B6" value="Number of Comparable Listings is Normal"/>
+  <Entry name="B7" value="Number of Comparable Listings is an Oversupply"/>
+  <Entry name="B8" value="Number of Comparable Listings is a Shortage"/>
+  <Entry name="B9" value="Property Management Expenses Outstanding"/>
+  <Entry name="BA" value="Borrower Letter Attempt"/>
+  <Entry name="BB" value="Building or Mobile Home is in a Coastal Barrier Resources Area"/>
+  <Entry name="BC" value="Borrower Telephone Contact"/>
+  <Entry name="BD" value="Business Pending"/>
+  <Entry name="BE" value="Borrower Letter Contact"/>
+  <Entry name="BF" value="Marketable Securities valued at market"/>
+  <Entry name="BG" value="Appropriate Improvement Condition Exists"/>
+  <Entry name="BH" value="Name unknown to local authorities"/>
+  <Entry name="BI" value="No manufacturing done on Premises"/>
+  <Entry name="BJ" value="Occasional"/>
+  <Entry name="BK" value="Officer or owner in other Businesses"/>
+  <Entry name="BL" value="Bowel Limitations, Bladder Limitations, or both (Incontinence)"/>
+  <Entry name="BM" value="Old"/>
+  <Entry name="BN" value="Operates on part time basis"/>
+  <Entry name="BO" value="Parent Financial Statement Used"/>
+  <Entry name="BP" value="Borrower Payment Received"/>
+  <Entry name="BQ" value="Product Information Available"/>
+  <Entry name="BR" value="Bedrest BRP (Bathroom Privileges)"/>
+  <Entry name="BS" value="Revenue derived from Commissions"/>
+  <Entry name="BT" value="Borrower Telephone Attempt"/>
+  <Entry name="BU" value="Revenue derived from Donations"/>
+  <Entry name="BV" value="Revenue derived from Fees"/>
+  <Entry name="BW" value="Revenue derived from Grants"/>
+  <Entry name="BX" value="Revenue derived from Taxes"/>
+  <Entry name="BY" value="Sprinkler Equipped"/>
+  <Entry name="BZ" value="Statement requested from Government Registry"/>
+  <Entry name="C0" value="Collision Coverage Will Transfer"/>
+  <Entry name="C1" value="Advances From Property Management Expenses Outstanding"/>
+  <Entry name="C2" value="Final Demand Letter Sent"/>
+  <Entry name="C3" value="Lender Request for Assistance"/>
+  <Entry name="C4" value="Mortgage has Lender-purchased Mortgage Insurance"/>
+  <Entry name="C5" value="Insufficient Funds"/>
+  <Entry name="C6" value="Credit Enhanced Mortgage"/>
+  <Entry name="C7" value="Corporate Appointment"/>
+  <Entry name="C8" value="Special Servicing Required"/>
+  <Entry name="C9" value="Client Specifically Requested Consideration of Special Financing or an Assumable Loan"/>
+  <Entry name="CA" value="Cane Required"/>
+  <Entry name="CB" value="Complete Bedrest"/>
+  <Entry name="CC" value="Collection Card was Left"/>
+  <Entry name="CD" value="Call to Directory Assistance for Reference Telephone"/>
+  <Entry name="CE" value="Co-signer Telephone Attempt"/>
+  <Entry name="CF" value="Co-signer Telephone Contact"/>
+  <Entry name="CG" value="Co-signer Delinquency Letter Sent"/>
+  <Entry name="CH" value="Co-signer Final Demand Letter Sent"/>
+  <Entry name="CI" value="Call to Directory Assistance for Co-signer Telephone"/>
+  <Entry name="CJ" value="Valid Borrower Address or Phone Attempt with Previous Holder"/>
+  <Entry name="CK" value="Convertible"/>
+  <Entry name="CL" value="Claimant had a Pre-existing Injury"/>
+  <Entry name="CM" value="Comatose"/>
+  <Entry name="CN" value="Common Elements are Leased to or by the Home Owners' Association"/>
+  <Entry name="CO" value="Contracture"/>
+  <Entry name="CP" value="Case Pending"/>
+  <Entry name="CQ" value="Callable"/>
+  <Entry name="CR" value="Crutches Required"/>
+  <Entry name="CS" value="Community Participates in National Flood Insurance Program"/>
+  <Entry name="CT" value="Common Elements are Completed"/>
+  <Entry name="CU" value="Curb and Gutter are Public"/>
+  <Entry name="CV" value="Cooperative"/>
+  <Entry name="CW" value="Cooling Water is Low"/>
+  <Entry name="CX" value="Certification Status"/>
+  <Entry name="CY" value="Car Spaces are Adequate"/>
+  <Entry name="CZ" value="Car Spaces are Inadequate"/>
+  <Entry name="D0" value="Comprehensive Coverage Will Transfer"/>
+  <Entry name="D1" value="Issue Check Payable to Borrower and Return to Servicer"/>
+  <Entry name="D2" value="Issue Check Payable to Servicer and Return to Servicer"/>
+  <Entry name="D3" value="Issue Check Payable to Borrower and Send to Borrower"/>
+  <Entry name="D4" value="Issue Check Payable to Servicer or Borrower and Return to Servicer"/>
+  <Entry name="D5" value="Issue Check Payable to Other Payee"/>
+  <Entry name="D6" value="Positive"/>
+  <Entry name="D7" value="Negative"/>
+  <Entry name="D8" value="Taxes are Typical for the Area and Price Range"/>
+  <Entry name="D9" value="Improvement Conforms to Zoning Regulations"/>
+  <Entry name="DA" value="Call to Directory Assistance for Borrower Telephone"/>
+  <Entry name="DB" value="Deferment or Forbearance Begin"/>
+  <Entry name="DC" value="Declined"/>
+  <Entry name="DD" value="Borrower Furnished Demographic Data"/>
+  <Entry name="DE" value="Deferment or Forbearance End"/>
+  <Entry name="DF" value="Funds available for Unsecured Creditors"/>
+  <Entry name="DG" value="Dynamic Brakes are Out"/>
+  <Entry name="DH" value="Debtor has been Domiciled"/>
+  <Entry name="DI" value="Disoriented"/>
+  <Entry name="DJ" value="Dynamic Brakes are Operational"/>
+  <Entry name="DK" value="Construction Warranty"/>
+  <Entry name="DL" value="Construction Warranty Transferable"/>
+  <Entry name="DM" value="Maintenance Drug under Client's Benefit Plan"/>
+  <Entry name="DN" value="Payment Reduced Because Maximum Allowable Cost Exceeded"/>
+  <Entry name="DO" value="Benefits Terminated Prior to Service Date"/>
+  <Entry name="DP" value="Depressed"/>
+  <Entry name="DQ" value="Drug Part of Formulary Data Base"/>
+  <Entry name="DR" value="Subject not Engaged in Business"/>
+  <Entry name="DS" value="All Door Seals are Intact"/>
+  <Entry name="DT" value="Filing Fee Attached"/>
+  <Entry name="DU" value="Subject not Engaged in Business at Requested Address"/>
+  <Entry name="DV" value="Suspended"/>
+  <Entry name="DW" value="Total"/>
+  <Entry name="DX" value="Unable to Respond"/>
+  <Entry name="DY" value="Dyspnea with Minimal Exertion"/>
+  <Entry name="DZ" value="Uses Own Facilities"/>
+  <Entry name="E0" value="Figures are Total"/>
+  <Entry name="E1" value="Fixed Asset Breakdown Undisclosed"/>
+  <Entry name="E2" value="For the Fiscal Year"/>
+  <Entry name="E3" value="For the Period"/>
+  <Entry name="E4" value="Formed by Consolidation"/>
+  <Entry name="E5" value="Formed by Merger"/>
+  <Entry name="E6" value="Prior Bankruptcy Case Filed in Last 6 Years"/>
+  <Entry name="E7" value="Debtor is not Represented by an Attorney"/>
+  <Entry name="E8" value="A Pending Case has been Filed"/>
+  <Entry name="E9" value="Guaranteed by Parent Company"/>
+  <Entry name="EA" value="Has Authority for All Purchases"/>
+  <Entry name="EB" value="Has Authority to Purchase Supplies"/>
+  <Entry name="EC" value="Equipment Certified"/>
+  <Entry name="ED" value="Has Business Interruption Insurance"/>
+  <Entry name="EE" value="Has Class of Stock"/>
+  <Entry name="EF" value="Has Extended Coverage Insurance"/>
+  <Entry name="EG" value="Has Fire Insurance"/>
+  <Entry name="EH" value="Has Joint Authority"/>
+  <Entry name="EI" value="Has Life Insurance"/>
+  <Entry name="EJ" value="Existence of Preliminary Flood Determination"/>
+  <Entry name="EK" value="Existence of Community Participation in the National Flood Insurance"/>
+  <Entry name="EL" value="Endurance Limitations"/>
+  <Entry name="EM" value="Has Marriage Contract"/>
+  <Entry name="EN" value="Electricity On"/>
+  <Entry name="EO" value="Equipment Is Overhauled"/>
+  <Entry name="EP" value="Exercises Prescribed"/>
+  <Entry name="EQ" value="Has No Par Value"/>
+  <Entry name="ER" value="Engine Start-Up Performed with No Problems Reported"/>
+  <Entry name="ES" value="Engine Start-Up Performed with Problems Reported"/>
+  <Entry name="ET" value="Electrical Control System Shut Down"/>
+  <Entry name="EU" value="Has Other Insurance"/>
+  <Entry name="EV" value="Has Par Value"/>
+  <Entry name="EW" value="Has Sole Authority"/>
+  <Entry name="EX" value="Excellent"/>
+  <Entry name="EY" value="Has Voting Rights"/>
+  <Entry name="EZ" value="Heading Address in Registered Office Only"/>
+  <Entry name="F0" value="High Level"/>
+  <Entry name="F1" value="Homeworkers Employed"/>
+  <Entry name="F2" value="In Subscriber Shares"/>
+  <Entry name="F3" value="Inactive"/>
+  <Entry name="F4" value="Incomplete"/>
+  <Entry name="F5" value="Incorporation Details Requested"/>
+  <Entry name="F6" value="Increase or Up"/>
+  <Entry name="F7" value="Information Cannot Be Provided at This Time"/>
+  <Entry name="F8" value="Information in Date"/>
+  <Entry name="F9" value="Information Requires Investigation"/>
+  <Entry name="FA" value="Actions has a Significant Environmental Effect"/>
+  <Entry name="FB" value="Application Includes Complete System"/>
+  <Entry name="FC" value="Antenna is Mounted on a Structure with an Existing Antenna"/>
+  <Entry name="FD" value="Notice of Construction or Alteration has been Filed"/>
+  <Entry name="FE" value="Applicant Wants to Monitor Frequency"/>
+  <Entry name="FF" value="Applicant has been Denied Government Benefits Due to Use of Drugs"/>
+  <Entry name="FG" value="Application is Certified"/>
+  <Entry name="FH" value="Application is for other Than a New Station"/>
+  <Entry name="FI" value="Fee Required"/>
+  <Entry name="FJ" value="Flood Status"/>
+  <Entry name="FK" value="Flood Insurance Required"/>
+  <Entry name="FL" value="Federal Flood Insurance is Available (Community Participates)"/>
+  <Entry name="FM" value="Inventory Valued Using LIFO (Last In/First Out)"/>
+  <Entry name="FN" value="Not Too High Level"/>
+  <Entry name="FO" value="Forgetful"/>
+  <Entry name="FP" value="Flood Certification with Life of Loan"/>
+  <Entry name="FQ" value="Street Maintenance is Public"/>
+  <Entry name="FR" value="Fair"/>
+  <Entry name="FS" value="Not Yet Registered"/>
+  <Entry name="FT" value="Obliged to File Balance Sheet"/>
+  <Entry name="FU" value="Official Confirmation Received"/>
+  <Entry name="FV" value="Old But Well Kept"/>
+  <Entry name="FW" value="Old Established Business"/>
+  <Entry name="FX" value="Operated at Break Even"/>
+  <Entry name="FY" value="Operates as Agent"/>
+  <Entry name="FZ" value="Flood Zone Status"/>
+  <Entry name="G0" value="Out of Business"/>
+  <Entry name="G1" value="Outstanding Claims"/>
+  <Entry name="G2" value="Gas On"/>
+  <Entry name="G3" value="Hazardous Materials are Used or Produced"/>
+  <Entry name="G4" value="Genetically Engineered Organisms are Used or Produced"/>
+  <Entry name="G5" value="This is a Group Proposal"/>
+  <Entry name="G6" value="Historical Sites Are Affected"/>
+  <Entry name="G7" value="Facilities are Properly Accredited or Authorized"/>
+  <Entry name="G8" value="Proprietary or Privileged Information will be contained in the Application"/>
+  <Entry name="G9" value="This Project has an Actual or Potential Impact on the Environment"/>
+  <Entry name="GA" value="Growth Rate is Fully Developed"/>
+  <Entry name="GB" value="Outstanding Social Security Claims"/>
+  <Entry name="GC" value="Outstanding Value Added Tax (VAT) Claims"/>
+  <Entry name="GD" value="Product Demonstration in Effect"/>
+  <Entry name="GE" value="Ownership Acknowledged in Signed Statement"/>
+  <Entry name="GF" value="Ownership Acknowledged Verbally"/>
+  <Entry name="GG" value="Ownership Not Acknowledged"/>
+  <Entry name="GH" value="Owns No Real Estate"/>
+  <Entry name="GI" value="Owns Real Estate but Details Not Available"/>
+  <Entry name="GJ" value="Prepared from Books Without Audit"/>
+  <Entry name="GK" value="Prepared from Statement by Accountant"/>
+  <Entry name="GL" value="Profits Paid to Group"/>
+  <Entry name="GM" value="Shelf Set to Manufacturer's Standard"/>
+  <Entry name="GN" value="Publicly Traded"/>
+  <Entry name="GO" value="Good"/>
+  <Entry name="GP" value="Purchase Authority is Qualified"/>
+  <Entry name="GQ" value="Purchases on Floor Plan"/>
+  <Entry name="GR" value="Shelf Set to Retailer's Schematic"/>
+  <Entry name="GS" value="Purchases on Letter of Credit"/>
+  <Entry name="GT" value="Real Estate Check is Necessary"/>
+  <Entry name="GU" value="Record of Preferential Claims"/>
+  <Entry name="GV" value="Registered Address is Same as Business Address"/>
+  <Entry name="GW" value="Relatives Help in Business"/>
+  <Entry name="GX" value="Satisfactory"/>
+  <Entry name="GY" value="Seasons are Steady"/>
+  <Entry name="GZ" value="Secured"/>
+  <Entry name="H0" value="Organization Certifies Compliance with Federal Lobbying Regulations"/>
+  <Entry name="H1" value="Project involves International Co-operative Activities"/>
+  <Entry name="H2" value="Human Anatomical Substances Are Used"/>
+  <Entry name="H3" value="Handicap Facilities Are Available"/>
+  <Entry name="H4" value="Lobbying Activities Have Been Conducted Regarding the Proposal"/>
+  <Entry name="H5" value="Organization Certifies Compliance With the Drug-Free Workplace Act"/>
+  <Entry name="H6" value="Organization Certifies Compliance with the Code of Federal Regulations Regarding Research Misconduct"/>
+  <Entry name="H7" value="Organization Provides a Smoke Free Workplace"/>
+  <Entry name="H8" value="Organization Certifies Compliance with Federal Discrimination Regulations"/>
+  <Entry name="H9" value="Organization Certifies Compliance with the Code of Federal Regulations Regarding Responsibility of Applicants for Promoting Objectivity in Research for which Public Health Service (PHS) Funding is Sought"/>
+  <Entry name="HA" value="Well Maintained"/>
+  <Entry name="HB" value="Interest Rate Buydown"/>
+  <Entry name="HC" value="Heating and Cooling for the Individual Units Separately Metered"/>
+  <Entry name="HD" value="High Discharge"/>
+  <Entry name="HE" value="High Engine Water Pressure"/>
+  <Entry name="HF" value="Interest Only"/>
+  <Entry name="HG" value="Graduated Payment"/>
+  <Entry name="HH" value="Principal Balance Exceeds Maximum Negative Amortization"/>
+  <Entry name="HI" value="Last Change"/>
+  <Entry name="HJ" value="Liability Released"/>
+  <Entry name="HK" value="Liability Not Released"/>
+  <Entry name="HL" value="Hearing Limitations"/>
+  <Entry name="HM" value="Liability Determined by Note Holder"/>
+  <Entry name="HN" value="After Conversion"/>
+  <Entry name="HO" value="Hostile"/>
+  <Entry name="HP" value="After Modification"/>
+  <Entry name="HQ" value="Balloon"/>
+  <Entry name="HR" value="Capitalized Mortgage"/>
+  <Entry name="HS" value="Federal Wages in Effect"/>
+  <Entry name="HT" value="Social Security Number (SSN) Never Issued"/>
+  <Entry name="HU" value="Name Does Not Match Social Security Number (SSN)"/>
+  <Entry name="HV" value="Birthdate Does Not Match Social Security Number (SSN)"/>
+  <Entry name="HW" value="Impossible Social Security Number (SSN)"/>
+  <Entry name="HX" value="Employee is Ineligible to Work"/>
+  <Entry name="HY" value="Metes and Bounds"/>
+  <Entry name="HZ" value="Consolidation, Extension, Modification of Mortgage Loan (CEM)"/>
+  <Entry name="I0" value="Based on Operating Data"/>
+  <Entry name="I1" value="Uses Outside Services"/>
+  <Entry name="I2" value="Very High Level"/>
+  <Entry name="I3" value="Very Small"/>
+  <Entry name="I4" value="Voluntary Bankruptcy"/>
+  <Entry name="I5" value="Well Balanced"/>
+  <Entry name="I6" value="Well Regarded in Business Circles"/>
+  <Entry name="I7" value="Organization has Delinquent Federal Debts"/>
+  <Entry name="I8" value="Organization has been Placed on the Federal Debarment and Suspension List"/>
+  <Entry name="I9" value="No-show Indicator"/>
+  <Entry name="IA" value="Interest Paid in Advance"/>
+  <Entry name="IB" value="Interest Paid in Arrears"/>
+  <Entry name="IC" value="Interest Carryover"/>
+  <Entry name="ID" value="Sells Directly"/>
+  <Entry name="IE" value="Sells with Agents"/>
+  <Entry name="IF" value="Sells with Storage"/>
+  <Entry name="IG" value="Small"/>
+  <Entry name="IH" value="Independent at Home"/>
+  <Entry name="II" value="Some Increase"/>
+  <Entry name="IJ" value="Somewhat Declining Tendency"/>
+  <Entry name="IK" value="Started Some Time Ago"/>
+  <Entry name="IL" value="Industry Location"/>
+  <Entry name="IM" value="Sufficient"/>
+  <Entry name="IN" value="Indifferent"/>
+  <Entry name="IO" value="Termination Date Set"/>
+  <Entry name="IP" value="Injury occurred on Employer's Premises"/>
+  <Entry name="IQ" value="Terms Include Lump Sum Payments"/>
+  <Entry name="IR" value="Terms Include Progress Payments"/>
+  <Entry name="IS" value="Terms on Cost Plus Basis"/>
+  <Entry name="IT" value="Terms on Fixed Fee Basis"/>
+  <Entry name="IU" value="Trade Style Registered"/>
+  <Entry name="IV" value="Trading Address of Sole Proprietor"/>
+  <Entry name="IW" value="Unchanged Situation"/>
+  <Entry name="IX" value="Undetermined"/>
+  <Entry name="IY" value="Unsatisfactory"/>
+  <Entry name="IZ" value="Unsecured"/>
+  <Entry name="J0" value="Qualifies as an Energy Efficient Home"/>
+  <Entry name="J1" value="Military Services Barred from Recruitment Activities at the Proposing Organization's Site(s)"/>
+  <Entry name="J2" value="Rate Negotiated"/>
+  <Entry name="J3" value="Under Penalty of Perjury the Information is True and Correct"/>
+  <Entry name="J4" value="Project Requires Inter-Government Review for Activities that affect State or Local Government or Possible National Security Implications"/>
+  <Entry name="J5" value="Filing on Behalf of Debtor is Authorized"/>
+  <Entry name="J6" value="Debtor Understands the Relief available under each Bankruptcy Chapter"/>
+  <Entry name="J7" value="Attorney Declares that Debtor has been Informed"/>
+  <Entry name="J8" value="Attorney has Explained the Relief available under each Bankruptcy Chapter"/>
+  <Entry name="J9" value="There has been a Transfer of a Claim Against the Debtor by or to any Petitioner"/>
+  <Entry name="JA" value="Third Party Originated"/>
+  <Entry name="JB" value="Existing Construction"/>
+  <Entry name="JC" value="Other Lien"/>
+  <Entry name="JD" value="Subject Lien"/>
+  <Entry name="JE" value="No Evidence of Property Damage Observed such as Dampness, Termites, or Structure Settlement"/>
+  <Entry name="JF" value="Primary Underwriting System"/>
+  <Entry name="JG" value="Non New Parts Used"/>
+  <Entry name="JH" value="Pledged Loan"/>
+  <Entry name="JI" value="Security Delivery"/>
+  <Entry name="JJ" value="Secondary Underwriting System"/>
+  <Entry name="JK" value="Distribution is Stopped"/>
+  <Entry name="JL" value="Sentence was Suspended"/>
+  <Entry name="JM" value="Very Negative Information Exists"/>
+  <Entry name="JN" value="Payment Notes Exist"/>
+  <Entry name="JO" value="Immigrated"/>
+  <Entry name="JP" value="Audited with Qualifications"/>
+  <Entry name="JQ" value="Audited"/>
+  <Entry name="JR" value="Temporarily Closed"/>
+  <Entry name="JS" value="Partial"/>
+  <Entry name="JT" value="Telephone Number is Unpublished"/>
+  <Entry name="JU" value="Telephone Number is Not in Service"/>
+  <Entry name="JV" value="Negative Information Exists for the Group"/>
+  <Entry name="JW" value="The More Important Items are Only Included"/>
+  <Entry name="JX" value="Interest Owned by Affiliated Company"/>
+  <Entry name="JY" value="Interest Owned by Subject of Inquiry"/>
+  <Entry name="JZ" value="Qualifies as a Government Approved Condominium or Project"/>
+  <Entry name="K0" value="Account Receivables Breakdown Undisclosed"/>
+  <Entry name="K1" value="Additional Record Items Available"/>
+  <Entry name="K2" value="Address is Qualified"/>
+  <Entry name="K3" value="All Paid In or Issued"/>
+  <Entry name="K4" value="Appears High"/>
+  <Entry name="K5" value="Appears Not to Guarantee Sufficient Coverage"/>
+  <Entry name="K6" value="Appears Sufficiently High"/>
+  <Entry name="K7" value="Appears to Indicate a Strained Situation"/>
+  <Entry name="K8" value="Banks with Main National Banks"/>
+  <Entry name="K9" value="Bills Paid from Branch Office"/>
+  <Entry name="KA" value="Bills Paid from Division Office"/>
+  <Entry name="KB" value="Bills Paid from Headquarters Office"/>
+  <Entry name="KC" value="Bond Information Available"/>
+  <Entry name="KD" value="Changed Accounting Date"/>
+  <Entry name="KE" value="Clear"/>
+  <Entry name="KF" value="Clear Declining Tendency"/>
+  <Entry name="KG" value="Clear Increase"/>
+  <Entry name="KH" value="Cluttered"/>
+  <Entry name="KI" value="Company has No Other Locations"/>
+  <Entry name="KJ" value="Company is Branch of Foreign Entity"/>
+  <Entry name="KK" value="Company is Perpetual"/>
+  <Entry name="KL" value="Company is Tax Exempt"/>
+  <Entry name="KM" value="Compared to Same Period Last Year"/>
+  <Entry name="KN" value="Conducted at a Loss"/>
+  <Entry name="KO" value="Inventory Valued using FIFO (First In/First Out)"/>
+  <Entry name="KP" value="Large"/>
+  <Entry name="KQ" value="Letter of Agreement Present"/>
+  <Entry name="KR" value="Letter of Agreement Withdrawn"/>
+  <Entry name="KS" value="Letter of Liability Present"/>
+  <Entry name="KT" value="Letter of Liability Withdrawn"/>
+  <Entry name="KU" value="Location Inquired Upon is a Branch"/>
+  <Entry name="KV" value="Location Inquired Upon is a Branch; Headquarters is Provided"/>
+  <Entry name="KW" value="Location inquired upon is a Headquarters"/>
+  <Entry name="KX" value="Location is Foreign"/>
+  <Entry name="KY" value="Means Exhausted"/>
+  <Entry name="KZ" value="Medium to Large"/>
+  <Entry name="L0" value="Immunization Mandated by State Law for Employment"/>
+  <Entry name="L1" value="General Standard of 20 Degree or .5 Diopter Sphere or Cylinder Change Met"/>
+  <Entry name="L2" value="Replacement Due to Loss or Theft"/>
+  <Entry name="L3" value="Replacement Due to Breakage or Damage"/>
+  <Entry name="L4" value="Replacement Due to Patient Preference"/>
+  <Entry name="L5" value="Replacement Due to Medical Reason"/>
+  <Entry name="L6" value="Land Contract"/>
+  <Entry name="L7" value="Account Current"/>
+  <Entry name="L8" value="Very Good"/>
+  <Entry name="L9" value="Restored"/>
+  <Entry name="LA" value="Letter of Map Amendment or Letter of Map Revision"/>
+  <Entry name="LB" value="Legally Blind"/>
+  <Entry name="LC" value="Producer of Goods"/>
+  <Entry name="LD" value="Drawback Indicator"/>
+  <Entry name="LE" value="Lethargic"/>
+  <Entry name="LF" value="Customs Rule Applicable"/>
+  <Entry name="LG" value="Exported Pursuant to Law Regulation or to Cancel Customs Bond"/>
+  <Entry name="LH" value="Country of Origin Information Applies to All Prior Shipments"/>
+  <Entry name="LI" value="Price Estimated"/>
+  <Entry name="LJ" value="North American Free Trade Agreement (NAFTA) Preference"/>
+  <Entry name="LK" value="Kit Form"/>
+  <Entry name="LL" value="Lockout Effective"/>
+  <Entry name="LM" value="Letter of Appointment"/>
+  <Entry name="LN" value="Facility's Emergency Response Plan Includes Specific Actions to be Taken in Response to Accidental Releases of Regulated Substances"/>
+  <Entry name="LO" value="Locomotive is Isolated"/>
+  <Entry name="LP" value="Low Engine Oil Pressure"/>
+  <Entry name="LQ" value="Facility had a Safety Inspection"/>
+  <Entry name="LR" value="Locomotive Engine is Running"/>
+  <Entry name="LS" value="Lessee Signature on File"/>
+  <Entry name="LT" value="Lender or Servicer Transfer"/>
+  <Entry name="LU" value="Evidence of Dampness"/>
+  <Entry name="LV" value="Evidence of Termites"/>
+  <Entry name="LW" value="Evidence of Structure Settlement"/>
+  <Entry name="LX" value="Salvage Moved"/>
+  <Entry name="LY" value="Address is Former Location"/>
+  <Entry name="LZ" value="Address is Occupied by Others"/>
+  <Entry name="M0" value="Facility has an Occupational Safety and Health Act (OSHA) Star or Merit Ranking"/>
+  <Entry name="M1" value="Data Corrected"/>
+  <Entry name="M2" value="Servicer Record Selected"/>
+  <Entry name="M3" value="Length of Service is 3 Months or Less"/>
+  <Entry name="M4" value="Length of Service is 3 Months or more, and Less than 1 Year"/>
+  <Entry name="M5" value="Length of Service is 1 Year through 5 Years"/>
+  <Entry name="M6" value="Length of Service is more than 5 Years"/>
+  <Entry name="M7" value="Cataract or Corneal Transplant or Other Condition such as Keratoconus"/>
+  <Entry name="M8" value="Vision in Worse Eye Correctable to 20/40 or Better with Regular Lenses"/>
+  <Entry name="M9" value="Contact Lenses Corrected Vision in Worse Eye to 20/40 or Better"/>
+  <Entry name="MA" value="Major Alarm Flag Reported"/>
+  <Entry name="MB" value="Equipment has Modified Configuration"/>
+  <Entry name="MC" value="Other Mental Condition"/>
+  <Entry name="MD" value="Marketing Time is 4 to 6 Months"/>
+  <Entry name="ME" value="Trend Reversed"/>
+  <Entry name="MF" value="Microprocessor Fault"/>
+  <Entry name="MG" value="Mortgage Insurance Application Included"/>
+  <Entry name="MH" value="Mortgage Credit Report Included"/>
+  <Entry name="MI" value="Residential Loan Application Included"/>
+  <Entry name="MJ" value="Real Estate Information Report Included"/>
+  <Entry name="MK" value="Real Estate Title Evidence Included"/>
+  <Entry name="ML" value="Manually Search and List"/>
+  <Entry name="MM" value="Property is Occupied by Tenant (Market Rent)"/>
+  <Entry name="MN" value="Property is Occupied by Tenant (Regulated Rent)"/>
+  <Entry name="MO" value="Cooperative Project Includes or Owns Any Commercial Units"/>
+  <Entry name="MP" value="Units and Project Amenities are Complete"/>
+  <Entry name="MQ" value="Eligible Trust"/>
+  <Entry name="MR" value="Resale Property"/>
+  <Entry name="MS" value="Miscellaneous Skip-Trace Attempt"/>
+  <Entry name="MT" value="Photos Match Description"/>
+  <Entry name="MU" value="Photos Show Negative Influence"/>
+  <Entry name="MV" value="Exclude from Monthly Debt"/>
+  <Entry name="MW" value="This Broker Market Analysis is being Completed for Home Market Assistance"/>
+  <Entry name="MX" value="This Broker Market Analysis is being Completed for Homesale or Buyout"/>
+  <Entry name="MY" value="Project Type is Single Family"/>
+  <Entry name="MZ" value="Project Type is Other"/>
+  <Entry name="N0" value="Hospitalized over-night"/>
+  <Entry name="N1" value="Claim Involves (a) Day(s) Away From Work"/>
+  <Entry name="N2" value="Claim involves Restricted Work Activity Without Days Away from Work"/>
+  <Entry name="N3" value="Strike or Lockout in Progress"/>
+  <Entry name="N4" value="Shutdown or Layoff in Progress"/>
+  <Entry name="N5" value="Work is Seasonal"/>
+  <Entry name="N6" value="Natural Disaster or Adverse Weather Affecting Work"/>
+  <Entry name="N7" value="Shorter Work Schedules or Fewer Pay Periods than Usual in Effect"/>
+  <Entry name="N8" value="Longer Work Schedules or More Pay Periods than Usual in Effect"/>
+  <Entry name="N9" value="Other Factors Affect Claim Frequency"/>
+  <Entry name="NA" value="No User Available"/>
+  <Entry name="NB" value="Neighborhood Predominately Single Family Dwellings"/>
+  <Entry name="NC" value="Item has Direct Numerical Control"/>
+  <Entry name="ND" value="Note Holder Permission Required"/>
+  <Entry name="NE" value="Notarized"/>
+  <Entry name="NF" value="New Construction"/>
+  <Entry name="NG" value="Mortgage Points are Customarily Paid by Seller"/>
+  <Entry name="NH" value="No National Flood Insurance Program map"/>
+  <Entry name="NI" value="Seasoned Mortgage"/>
+  <Entry name="NJ" value="Issues are Anticipated that would Affect the Ability to Secure Financing of the Subject Property"/>
+  <Entry name="NK" value="Citizenship"/>
+  <Entry name="NL" value="Group Disability Insurance Mandatory"/>
+  <Entry name="NM" value="Retail Origination"/>
+  <Entry name="NN" value="Answer to Referenced Question is &quot;None&quot;"/>
+  <Entry name="NO" value="Arm's Length Transaction"/>
+  <Entry name="NP" value="Certification of a Non-attorney Bankruptcy Petition Preparer"/>
+  <Entry name="NQ" value="Eligible for the Fannie Mae Neighbors Program"/>
+  <Entry name="NR" value="No Restrictions"/>
+  <Entry name="NS" value="401K Plan in Effect"/>
+  <Entry name="NT" value="Lodging Provided"/>
+  <Entry name="NU" value="Not Used"/>
+  <Entry name="NV" value="Contract Labor"/>
+  <Entry name="NW" value="Bonuses Paid"/>
+  <Entry name="NX" value="Minors Employed"/>
+  <Entry name="NY" value="Meets Requirements for Fannie Mae Community Seconds Program"/>
+  <Entry name="NZ" value="Purchase is a Result of Current Employer Sponsored Relocation"/>
+  <Entry name="O0" value="Teaching Major"/>
+  <Entry name="O1" value="Multiple Unspecified Instances"/>
+  <Entry name="O2" value="Hires Part Time Employees as Needed"/>
+  <Entry name="O3" value="Mexican Request"/>
+  <Entry name="O4" value="Risk Management Plan Requires Predictive Filing"/>
+  <Entry name="O5" value="Sanitized Copy"/>
+  <Entry name="O6" value="Site Treated, Disposed, Recycled Waste On-Site or Discharged Waste to Sewer or Publicly Owned Treatment Works"/>
+  <Entry name="O7" value="Toxic Chemical Claimed as Trade Secret"/>
+  <Entry name="O8" value="Under Control of Reporting Facility or Parent Company"/>
+  <Entry name="O9" value="Weather Conditions Not Known"/>
+  <Entry name="OA" value="Seller Provided Below Market Secondary Financing"/>
+  <Entry name="OB" value="Fixed Site"/>
+  <Entry name="OC" value="Mobile Facility"/>
+  <Entry name="OD" value="Transfer Authorized"/>
+  <Entry name="OE" value="Transfer Complete"/>
+  <Entry name="OF" value="Commercial Driver's License Verified"/>
+  <Entry name="OG" value="Responsibility Accepted"/>
+  <Entry name="OH" value="Waterbody Involved"/>
+  <Entry name="OI" value="Charges Pending"/>
+  <Entry name="OJ" value="Driver has Proper License Class"/>
+  <Entry name="OK" value="Driver Compliant with License Restrictions"/>
+  <Entry name="OL" value="Other Limitation"/>
+  <Entry name="OM" value="Driver has Commercial Driver's License"/>
+  <Entry name="ON" value="Driver has Medical Waiver"/>
+  <Entry name="OO" value="Own other Federal Housing Administration Property"/>
+  <Entry name="OP" value="Out of Range Product Temperature"/>
+  <Entry name="OQ" value="Photographs Taken"/>
+  <Entry name="OR" value="Other Restrictions"/>
+  <Entry name="OS" value="Out of Service"/>
+  <Entry name="OT" value="Oriented"/>
+  <Entry name="OU" value="Police Officer at Scene"/>
+  <Entry name="OV" value="Overridden"/>
+  <Entry name="OW" value="Proposed"/>
+  <Entry name="OX" value="Rating is Affected"/>
+  <Entry name="OY" value="Veteran as Defined by the Federal Housing Administration (FHA), Veterans Administration (VA), or Department of Housing and Urban Development (HUD)"/>
+  <Entry name="OZ" value="Liability is Contingent or has a Co-signer"/>
+  <Entry name="P0" value="Terminal Degree"/>
+  <Entry name="P1" value="Patient was Discharged from the First Facility"/>
+  <Entry name="P2" value="Patient was Admitted to the Second Facility"/>
+  <Entry name="P3" value="Property has a Family Room or Den"/>
+  <Entry name="P4" value="Property has Central Air Conditioning"/>
+  <Entry name="P5" value="Property Typical of Neighborhood"/>
+  <Entry name="P6" value="Property Deferred Maintenance Typical of Neighborhood"/>
+  <Entry name="P7" value="Accepting Existing Patients"/>
+  <Entry name="P8" value="Accepting New Patients"/>
+  <Entry name="P9" value="Property Intended to be Occupied as Primary Residence"/>
+  <Entry name="PA" value="Paralysis"/>
+  <Entry name="PB" value="Phone Skip Begin"/>
+  <Entry name="PC" value="Plan is Attached"/>
+  <Entry name="PD" value="Phone Skip Resolved"/>
+  <Entry name="PE" value="Phone Skip Exhaust"/>
+  <Entry name="PF" value="Paid Outside of Closing"/>
+  <Entry name="PG" value="Project is Subject to Ground Rent"/>
+  <Entry name="PH" value="Prepayable"/>
+  <Entry name="PI" value="Program"/>
+  <Entry name="PJ" value="Provider is Participating"/>
+  <Entry name="PK" value="Preliminary Flood Determination"/>
+  <Entry name="PL" value="Provider Certification in the Taxonomy Has Been Verified"/>
+  <Entry name="PM" value="Project and Services Budget is Maintained"/>
+  <Entry name="PN" value="Atypical Physical Condition"/>
+  <Entry name="PO" value="Personal Property Onsite"/>
+  <Entry name="PP" value="Property Previously Winterized"/>
+  <Entry name="PQ" value="Liability will be Resubordinated to the Loan upon Closing"/>
+  <Entry name="PR" value="Poor"/>
+  <Entry name="PS" value="Publication is Included in Sharing"/>
+  <Entry name="PT" value="Project is Complete"/>
+  <Entry name="PU" value="Not Paid"/>
+  <Entry name="PV" value="Property Vacant 0-5 Percent"/>
+  <Entry name="PW" value="Partial Weight Bearing"/>
+  <Entry name="PX" value="Paid by Borrower Before Closing"/>
+  <Entry name="PY" value="Property for Sale"/>
+  <Entry name="PZ" value="Property Vacant Over 5 Percent"/>
+  <Entry name="Q0" value="Veteran"/>
+  <Entry name="Q1" value="Export Product"/>
+  <Entry name="Q2" value="Distilled Spirit, Beer or Wine"/>
+  <Entry name="Q3" value="U.S. Goods Returned"/>
+  <Entry name="Q4" value="Candidate for U.S. Customs Service Protest"/>
+  <Entry name="Q5" value="Domestic Product"/>
+  <Entry name="Q6" value="Prior Approval Letter and Official Orders on File"/>
+  <Entry name="Q7" value="Importer's Substantiating Statement and Contract are on File"/>
+  <Entry name="Q8" value="International Transport Movement"/>
+  <Entry name="Q9" value="Piece Count should be Included in the Total Packing List Quantity"/>
+  <Entry name="QA" value="Shipment should be Held at the Port"/>
+  <Entry name="QB" value="Multiple States of Origin for this Item"/>
+  <Entry name="QC" value="Multiple Countries of Origin for this Item"/>
+  <Entry name="QD" value="Letter of Credit Restricted to a Specific Bank"/>
+  <Entry name="QE" value="Letter of Credit Permits Transshipment"/>
+  <Entry name="QF" value="Letter of Credit Covers Partial Shipments"/>
+  <Entry name="QG" value="Dutiable Item"/>
+  <Entry name="QH" value="Amounts should be Pro-rated across Line Items"/>
+  <Entry name="QI" value="Toxic Substance Control Act (TSCA) Certification Required"/>
+  <Entry name="QJ" value="Visa Required for this Item"/>
+  <Entry name="QK" value="Item Subject to Quotas"/>
+  <Entry name="QL" value="Item is a Set as Defined by the General Rules of Interpretation Section 3 (GRI3)"/>
+  <Entry name="QM" value="Item is a Set"/>
+  <Entry name="QN" value="Item is an Ensemble"/>
+  <Entry name="QO" value="Item is a Metal Item"/>
+  <Entry name="QP" value="Item is a Machine Part"/>
+  <Entry name="QQ" value="Item is a Hazardous Item"/>
+  <Entry name="QR" value="Item is Eligible under the Generalized System of Preferences (GSP)"/>
+  <Entry name="QS" value="Quantity to be Imported has been Approved by the Necessary Agencies"/>
+  <Entry name="QT" value="Filing Data is to be Withheld from Public Inspection"/>
+  <Entry name="QU" value="Property Type Cooperative"/>
+  <Entry name="QV" value="Paid by Borrower at Closing"/>
+  <Entry name="QW" value="Paid by Other At or Before Closing"/>
+  <Entry name="QX" value="Treated as a Reduction to Income"/>
+  <Entry name="QY" value="Does Organization Receive Income from the Sale or Lease of Tangible Personal Property, the Lease of Real Property, or the Sale of Taxable Services?"/>
+  <Entry name="QZ" value="Is organization a contractor-retailer primarily engaged in retail sales?"/>
+  <Entry name="R0" value="Exempt from Public Records Law"/>
+  <Entry name="R1" value="Debtor Holds Claim to Real Property"/>
+  <Entry name="R2" value="Entity Claims to Hold a Secured Interest"/>
+  <Entry name="R3" value="Debtor has Property of the Type Specified"/>
+  <Entry name="R4" value="Debtor Elects the State Exemption"/>
+  <Entry name="R5" value="Debtor Elects the Federal Exemption"/>
+  <Entry name="R6" value="Co-debtor may be Jointly Liable"/>
+  <Entry name="R7" value="Claim is Contingent"/>
+  <Entry name="R8" value="Claim is Unliquidated"/>
+  <Entry name="R9" value="Claim is Disputed"/>
+  <Entry name="RA" value="Reference Telephone Attempt"/>
+  <Entry name="RB" value="Debtor has No Creditors Holding Unsecured Priority Claims"/>
+  <Entry name="RC" value="Reference Telephone Contact"/>
+  <Entry name="RD" value="Rent Delinquent"/>
+  <Entry name="RE" value="Claim is Subject to Setoff"/>
+  <Entry name="RF" value="Debtor has No Executory Contracts or Unexpired Leases"/>
+  <Entry name="RG" value="Lease is for Nonresidential Real Property"/>
+  <Entry name="RH" value="Debtor has No Co-debtors"/>
+  <Entry name="RI" value="Debtor is Married"/>
+  <Entry name="RJ" value="Debtor's Spouse Maintains a Separate Household"/>
+  <Entry name="RK" value="Real Estate Taxes are Included"/>
+  <Entry name="RL" value="Property Insurance is Included"/>
+  <Entry name="RM" value="Debtor has No Creditors Holding Secured Claims"/>
+  <Entry name="RN" value="Rent Control"/>
+  <Entry name="RO" value="Equipment is Rebuilt"/>
+  <Entry name="RP" value="Individual Injured in Performance of Duty"/>
+  <Entry name="RQ" value="Individual Injured by Third Party"/>
+  <Entry name="RR" value="Quality of Management and its Enforcement of Rules and Regulations Based on General Appearances"/>
+  <Entry name="RS" value="Pay Continued"/>
+  <Entry name="RT" value="Sick Leave Taken"/>
+  <Entry name="RU" value="Signature on File"/>
+  <Entry name="RV" value="Low Refrigerant Capacity Shutdown"/>
+  <Entry name="RW" value="Recent Defrost"/>
+  <Entry name="RX" value="Rated Horsepower can be Produced"/>
+  <Entry name="RY" value="Foreign Military Sale"/>
+  <Entry name="RZ" value="Waiver of Prior Notice"/>
+  <Entry name="S0" value="Alternate Certification Program Participant"/>
+  <Entry name="S1" value="Services Provided at the Second Facility were available at the First Facility"/>
+  <Entry name="S2" value="Under Treatment"/>
+  <Entry name="S3" value="First Time Vacant"/>
+  <Entry name="S4" value="Adverse Easement"/>
+  <Entry name="S5" value="Disclosure Indicator"/>
+  <Entry name="S6" value="Atypical Off Site Improvements"/>
+  <Entry name="S7" value="Toxic Substances"/>
+  <Entry name="S8" value="Adverse Encroachment"/>
+  <Entry name="S9" value="Atypical Functional Condition"/>
+  <Entry name="SA" value="Subject Property is Currently Listed"/>
+  <Entry name="SB" value="Debtor is a Small Business as Defined in 11 U.S.C. Section 101"/>
+  <Entry name="SC" value="Special Services are Mobile Home Only"/>
+  <Entry name="SD" value="Special Services are Leasehold or Mobile Home or Both"/>
+  <Entry name="SE" value="Debtor Elects to be Considered as a Small Business Under 11 U.S.C. Section 1121(e)"/>
+  <Entry name="SF" value="Sensor Fault"/>
+  <Entry name="SG" value="Street Lights are Public"/>
+  <Entry name="SH" value="Special Services are Leasehold or Subleasehold or Both"/>
+  <Entry name="SI" value="Hazardous Waste"/>
+  <Entry name="SJ" value="Pest Infestation"/>
+  <Entry name="SK" value="Road Maintenance Required"/>
+  <Entry name="SL" value="Speech Limitations"/>
+  <Entry name="SM" value="Currently Serving in Military"/>
+  <Entry name="SN" value="Major Base Support"/>
+  <Entry name="SO" value="Critical Support Level Met"/>
+  <Entry name="SP" value="Street is Public"/>
+  <Entry name="SQ" value="Local Wages in Effect"/>
+  <Entry name="SR" value="Federal Worker Displacement"/>
+  <Entry name="SS" value="Adverse Zoning"/>
+  <Entry name="ST" value="New Services Requested"/>
+  <Entry name="SU" value="Continued Services Requested"/>
+  <Entry name="SV" value="Major Corporation/High Tech"/>
+  <Entry name="SW" value="Sidewalk is Public"/>
+  <Entry name="SX" value="Collective Bargaining Agreement Sent by Mail"/>
+  <Entry name="SY" value="Collective Bargaining Agreement Sent by Facsimile"/>
+  <Entry name="SZ" value="Contract"/>
+  <Entry name="T0" value="Under Contract"/>
+  <Entry name="T1" value="Road Test Performed with No Problems Reported"/>
+  <Entry name="T2" value="Road Test Performed with Problems Reported"/>
+  <Entry name="T3" value="Tires' Brand Match"/>
+  <Entry name="T4" value="Real Estate Taxes are Current"/>
+  <Entry name="T5" value="Hazard Insurance is Current"/>
+  <Entry name="T6" value="Terminate Guarantee"/>
+  <Entry name="T7" value="Atypical External Condition"/>
+  <Entry name="T8" value="Subsidence (Settlement of Ground Surface Caused by Loss of Support)"/>
+  <Entry name="T9" value="Utilities Inadequate"/>
+  <Entry name="TA" value="Collective Bargaining Agreement Sent by Electronic Bulletin Board"/>
+  <Entry name="TB" value="Debtor has No Creditors Holding Unsecured Nonpriority Claims"/>
+  <Entry name="TC" value="Transport via Cargo Aircraft"/>
+  <Entry name="TD" value="Annual Leave Taken"/>
+  <Entry name="TE" value="Item is Special Test Equipment"/>
+  <Entry name="TF" value="Operates as Representative For Others"/>
+  <Entry name="TG" value="Claim Involves Work Related Death"/>
+  <Entry name="TH" value="Claim Does Not Involve Work Related Death, Days Away from Work, or Restricted Work Activity"/>
+  <Entry name="TI" value="Employee Has Not Recovered to Return to Work"/>
+  <Entry name="TJ" value="Employee Has Retired"/>
+  <Entry name="TK" value="Employee Has Resigned"/>
+  <Entry name="TL" value="Employee is Permanently and Totally Disabled"/>
+  <Entry name="TM" value="Traction Motor is Cut Out"/>
+  <Entry name="TN" value="Atypical Quality of Construction"/>
+  <Entry name="TO" value="Atypical Remodeling"/>
+  <Entry name="TP" value="Transport via Passenger Aircraft"/>
+  <Entry name="TQ" value="Atypical Additions"/>
+  <Entry name="TR" value="Transfer to Bed, or Chair, or Both"/>
+  <Entry name="TS" value="Adverse Marketing Conditions in Subject Property's Neighborhood"/>
+  <Entry name="TT" value="Neighborhood Water Source is Public"/>
+  <Entry name="TU" value="Neighborhood Sewage Treatment is Public"/>
+  <Entry name="TV" value="Telephone Number Verified"/>
+  <Entry name="TW" value="Neighborhood Street is Public"/>
+  <Entry name="TX" value="Other Miscellaneous Adverse Characteristics"/>
+  <Entry name="TY" value="Subject Property's Street is Public"/>
+  <Entry name="TZ" value="Subject Property's Sewage Treatment is Public"/>
+  <Entry name="U0" value="Disability"/>
+  <Entry name="U1" value="Minimal Change"/>
+  <Entry name="U2" value="Neat Appearance"/>
+  <Entry name="U3" value="Net Worth Computed after Exemptions"/>
+  <Entry name="U4" value="Net Worth Considerably Higher"/>
+  <Entry name="U5" value="Net Worth Higher"/>
+  <Entry name="U6" value="No Employees"/>
+  <Entry name="U7" value="No Employees - Business Managed by Owner"/>
+  <Entry name="U8" value="No Employees - Business Managed by Partners"/>
+  <Entry name="U9" value="Not Out of Business"/>
+  <Entry name="UA" value="Uninsurable, 1316 Property"/>
+  <Entry name="UB" value="Conducted at a Profit"/>
+  <Entry name="UC" value="Contingent Debt Indicated"/>
+  <Entry name="UD" value="Continue"/>
+  <Entry name="UE" value="Contracts Obtained by Bid"/>
+  <Entry name="UF" value="Contracts Obtained by Negotiation"/>
+  <Entry name="UG" value="Converted to Holding Company"/>
+  <Entry name="UH" value="Cross Claim Filed"/>
+  <Entry name="UI" value="Declining Tendency"/>
+  <Entry name="UJ" value="Detrimental Events in Past, Relating to Business"/>
+  <Entry name="UK" value="Detrimental Events in Past, Relating to Management"/>
+  <Entry name="UL" value="Down or Decline or Decreased"/>
+  <Entry name="UM" value="Employees Include Officers"/>
+  <Entry name="UN" value="Uncooperative"/>
+  <Entry name="UO" value="Employees Include Owners"/>
+  <Entry name="UP" value="Employees Include Partners"/>
+  <Entry name="UQ" value="Employees Include Temporary Workers"/>
+  <Entry name="UR" value="Employees Vary According to Needs"/>
+  <Entry name="US" value="Enclosed"/>
+  <Entry name="UT" value="Up as Tolerated"/>
+  <Entry name="UU" value="Extent of Audit, if any, Not Indicated"/>
+  <Entry name="UV" value="Favorable Personal Reputation"/>
+  <Entry name="UW" value="Figures are Abbreviated"/>
+  <Entry name="UX" value="Figures are Converted to Agency Format"/>
+  <Entry name="UY" value="Figures are Individual"/>
+  <Entry name="UZ" value="Figures are Restated"/>
+  <Entry name="V0" value="Ultimate Parent Company Financial Statement Used"/>
+  <Entry name="V1" value="Valid Borrower Address or Phone Attempt with School Attended"/>
+  <Entry name="V2" value="Lender Determined Borrower Moved Out of State"/>
+  <Entry name="V3" value="Lender Determined Borrower Moved Back into State"/>
+  <Entry name="V4" value="Lender Determined Borrower Incarcerated"/>
+  <Entry name="V5" value="Lender Determined Borrower No Longer Incarcerated"/>
+  <Entry name="V6" value="Original"/>
+  <Entry name="V7" value="True and Exact Copy"/>
+  <Entry name="V8" value="Subject Property's Water Source is Public"/>
+  <Entry name="V9" value="Pictures Required"/>
+  <Entry name="VA" value="Intercompany Relations Exist"/>
+  <Entry name="VB" value="Inventory Valued at Lower of Cost or Market"/>
+  <Entry name="VC" value="Inventory Valued at Other Methods"/>
+  <Entry name="VD" value="Operates as Sole Agent"/>
+  <Entry name="VE" value="Without Personal Judgment"/>
+  <Entry name="VF" value="Work is Subcontracted"/>
+  <Entry name="VG" value="Not Registered"/>
+  <Entry name="VH" value="Immediate Attention Required"/>
+  <Entry name="VI" value="Vehicle Inspection Report Completed"/>
+  <Entry name="VJ" value="Middle to Medium"/>
+  <Entry name="VK" value="Rent Control Likely"/>
+  <Entry name="VL" value="Furnished"/>
+  <Entry name="VM" value="Price Range Single Family or Planned Unit Development Not Applicable"/>
+  <Entry name="VN" value="Price Range Condominium Not Applicable"/>
+  <Entry name="VO" value="Price Range Two to Four Family Not Applicable"/>
+  <Entry name="VP" value="Financial Figures are Projected Based on Sales"/>
+  <Entry name="VQ" value="Financial Figures are Projected Based on Employees"/>
+  <Entry name="VR" value="Parent Company has Bankruptcy"/>
+  <Entry name="VS" value="Headquarters has Bankruptcy"/>
+  <Entry name="VT" value="Commercial Motor Vehicle was Involved in this Conviction"/>
+  <Entry name="VU" value="Commercial Motor Vehicle was Carrying Hazardous Materials when the Offense was Committed"/>
+  <Entry name="VV" value="Prepared from Internal Book Figures"/>
+  <Entry name="VW" value="Quantity Declined"/>
+  <Entry name="VX" value="Quantity Details Unknown"/>
+  <Entry name="VY" value="Was tax paid when purchased by seller?"/>
+  <Entry name="VZ" value="Was item depreciable?"/>
+  <Entry name="W0" value="Statement is on a Trading Trust"/>
+  <Entry name="W1" value="New Registration"/>
+  <Entry name="W2" value="Mailing Address Change"/>
+  <Entry name="W3" value="Residence Address Change"/>
+  <Entry name="W4" value="Name Change"/>
+  <Entry name="W5" value="Party Enrollment Change"/>
+  <Entry name="W6" value="Needs Absentee Ballot"/>
+  <Entry name="W7" value="Would Like to be Election Day Worker"/>
+  <Entry name="W8" value="Duplicate Registration"/>
+  <Entry name="W9" value="Forwarded Application"/>
+  <Entry name="WA" value="Walker Required"/>
+  <Entry name="WB" value="Water On"/>
+  <Entry name="WC" value="Application Incomplete"/>
+  <Entry name="WD" value="Vehicle Plate Surrendered"/>
+  <Entry name="WE" value="Written Notice to Note Holder"/>
+  <Entry name="WF" value="Written Notice to Borrower"/>
+  <Entry name="WG" value="Within Specified Time Period"/>
+  <Entry name="WH" value="Within Specified Range"/>
+  <Entry name="WI" value="Injury was Work Related"/>
+  <Entry name="WJ" value="Dealer Pricing Authorization"/>
+  <Entry name="WK" value="Summary Level Information"/>
+  <Entry name="WL" value="Detail Level Information"/>
+  <Entry name="WM" value="Non-occupant Co-borrower"/>
+  <Entry name="WN" value="Unit is a Studio (Efficiency)"/>
+  <Entry name="WO" value="Equipment in Working Order"/>
+  <Entry name="WP" value="To be Watched"/>
+  <Entry name="WQ" value="Undetermined Out of Business Status"/>
+  <Entry name="WR" value="Wheelchair Required"/>
+  <Entry name="WS" value="Balance Sheet Filed"/>
+  <Entry name="WT" value="Winterized Tag Observed"/>
+  <Entry name="WU" value="Material Safety Data Sheet"/>
+  <Entry name="WV" value="Accepts Credit Cards"/>
+  <Entry name="WW" value="All Purchases Made from Headquarters"/>
+  <Entry name="WX" value="Busy"/>
+  <Entry name="WY" value="Excessive"/>
+  <Entry name="WZ" value="Fairly new"/>
+  <Entry name="X0" value="No Employees - Business Managed by Director(s)"/>
+  <Entry name="X1" value="Gross Weekly Amount is Estimated"/>
+  <Entry name="X2" value="Waiting Period Disability Days are Non-consecutive"/>
+  <Entry name="X3" value="Report Depicts Most Recent Data - Interim Period(s) Omitted"/>
+  <Entry name="X4" value="Permanent Impairment Paid at Minimum"/>
+  <Entry name="X5" value="Employee's Death is a Result of Work Injury or Illness"/>
+  <Entry name="X6" value="Employee's Written Social Security Number Release is on File"/>
+  <Entry name="X7" value="Employee's Medical Records Release Authorization is on File"/>
+  <Entry name="X8" value="Employee Returned to Work with Pre-Injury Employer"/>
+  <Entry name="X9" value="Cafe"/>
+  <Entry name="XA" value="Figures are Average"/>
+  <Entry name="XB" value="Imports"/>
+  <Entry name="XC" value="In Process of Establishing"/>
+  <Entry name="XD" value="Intercompany Relations Consist of Endorsements"/>
+  <Entry name="XE" value="Intercompany Relations Consist of Guarantees"/>
+  <Entry name="XF" value="Intercompany Relations Consist of Leasing Arrangements"/>
+  <Entry name="XG" value="Intercompany Relations Consist of Sharing Accounting"/>
+  <Entry name="XH" value="Intercompany Relations Consist of Sharing Facilities"/>
+  <Entry name="XI" value="Intercompany Relations Consist of Sharing Management"/>
+  <Entry name="XJ" value="Intercompany Relations Consist of Sharing Personnel"/>
+  <Entry name="XK" value="Interest in Other Business(es) Along with Family"/>
+  <Entry name="XL" value="Interest in Other Business(es) Along with Others in Reported Company"/>
+  <Entry name="XM" value="Inventory Valued at Company's Estimates"/>
+  <Entry name="XN" value="Inventory Valued at Cost"/>
+  <Entry name="XO" value="Inventory Valued using AVCO (Average Cost)"/>
+  <Entry name="XP" value="Joint Ownership"/>
+  <Entry name="XQ" value="Leases with No Rent Payments"/>
+  <Entry name="XR" value="Leases with Option to Buy"/>
+  <Entry name="XS" value="Leases with Token Payment"/>
+  <Entry name="XT" value="Limited"/>
+  <Entry name="XU" value="Located for Several Years"/>
+  <Entry name="XV" value="Located Since Opening"/>
+  <Entry name="XW" value="Modern"/>
+  <Entry name="XX" value="Non-Existent"/>
+  <Entry name="XY" value="Officer or Owner in Other Businesses in the Same Field"/>
+  <Entry name="XZ" value="Operates as a Distributor for Others"/>
+  <Entry name="Y0" value="Insured Cooperative"/>
+  <Entry name="Y1" value="Worked in Industry for Several Years"/>
+  <Entry name="Y2" value="Aircraft Operation"/>
+  <Entry name="Y3" value="All Classifications on Policy Accounted For"/>
+  <Entry name="Y4" value="Board Provided"/>
+  <Entry name="Y5" value="Casual Labor"/>
+  <Entry name="Y6" value="Certificates on File for All Subcontractors"/>
+  <Entry name="Y7" value="Commissions Paid"/>
+  <Entry name="Y8" value="Condition or Type of Records Cause Additional Audit Time"/>
+  <Entry name="Y9" value="Domestic Workers Employed"/>
+  <Entry name="YA" value="Operates from Residence"/>
+  <Entry name="YB" value="Operates under License by Others"/>
+  <Entry name="YC" value="Rents from Month to Month"/>
+  <Entry name="YD" value="Semi-modern"/>
+  <Entry name="YE" value="Under Construction"/>
+  <Entry name="YF" value="Unlimited"/>
+  <Entry name="YG" value="Used"/>
+  <Entry name="YH" value="Variable"/>
+  <Entry name="YI" value="Holder is a Subsidiary of Reporting Agent"/>
+  <Entry name="YJ" value="Contact is Unchanged From Previous Report"/>
+  <Entry name="YK" value="Report was Filed Last Year by This Agent"/>
+  <Entry name="YL" value="Party is Authorized to do Business in This State"/>
+  <Entry name="YM" value="Clear Decrease"/>
+  <Entry name="YN" value="Employees Temporarily Laid Off"/>
+  <Entry name="YO" value="Established in the Industry"/>
+  <Entry name="YP" value="Global Business"/>
+  <Entry name="YQ" value="Information to be Followed Up"/>
+  <Entry name="YR" value="Known Details are Listed"/>
+  <Entry name="YS" value="Land is Rented"/>
+  <Entry name="YT" value="Low"/>
+  <Entry name="YU" value="Prime Commercial Area"/>
+  <Entry name="YV" value="Shares with Affiliated Company(ies)"/>
+  <Entry name="YW" value="Slightly Higher"/>
+  <Entry name="YX" value="Slightly Lower"/>
+  <Entry name="YY" value="Stagnant"/>
+  <Entry name="YZ" value="Territory Information is Available"/>
+  <Entry name="Z0" value="Subcontractors Used"/>
+  <Entry name="Z1" value="Insured Is a Subcontractor"/>
+  <Entry name="Z2" value="Insured Has Multiple Entries"/>
+  <Entry name="Z3" value="Insured Has Retail Operations"/>
+  <Entry name="Z4" value="Insured Requested Division of Payroll of Employee(s)"/>
+  <Entry name="Z5" value="Owner or Officer Interviewed"/>
+  <Entry name="Z6" value="Premium Overtime Excluded"/>
+  <Entry name="Z7" value="Records Reflect Proper Division of Employee(s) Payroll"/>
+  <Entry name="Z8" value="Records Satisfactory for Audit"/>
+  <Entry name="Z9" value="Relatives Employed"/>
+  <Entry name="ZA" value="Customer - Configuration Change is Required"/>
+  <Entry name="ZB" value="Condition Board of Inspection and Survey (INSURV) is Mission Degrading"/>
+  <Entry name="ZC" value="Condition Board of Inspection and Survey (INSURV) is Maintenance Related"/>
+  <Entry name="ZD" value="Condition Board of Inspection and Survey (INSURV) is Safety Related"/>
+  <Entry name="ZE" value="Repair is Mission Essential"/>
+  <Entry name="ZF" value="Repair is Safety Essential"/>
+  <Entry name="ZG" value="Periodic Maintenance is Required"/>
+  <Entry name="ZH" value="Condition Board of Inspection and Survey (INSURV) Discrepancy is Corrected"/>
+  <Entry name="ZI" value="Progress is in Jeopardy"/>
+  <Entry name="ZJ" value="Employee's Injury or Illness is Work Related"/>
+  <Entry name="ZK" value="Final - Configuration Change is Required"/>
+  <Entry name="ZL" value="Final - Delivery to Shop is Required"/>
+  <Entry name="ZM" value="Final - Requestor Workforce will Assist"/>
+  <Entry name="ZN" value="Job is Level 2"/>
+  <Entry name="ZO" value="Preliminary - Configuration Change is Required"/>
+  <Entry name="ZP" value="Preliminary - Delivery to Shop is Required"/>
+  <Entry name="ZQ" value="Preliminary - Requestor Workforce will Assist"/>
+  <Entry name="ZR" value="Configuration Change is Associated with Time Meter"/>
+  <Entry name="ZS" value="Shop Has Lead Responsibility"/>
+  <Entry name="ZT" value="Estimate is Derived From Job Template"/>
+  <Entry name="ZU" value="Requestor Holds Technical Documentation"/>
+  <Entry name="ZV" value="Replacement Item"/>
+  <Entry name="ZW" value="Canadian Standards Association (CSA) Approved"/>
+  <Entry name="ZX" value="Non-convertible"/>
+  <Entry name="ZY" value="Underwriters Laboratory (UL) Approved"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="000" value="In Progress"/>
+  <Entry name="PRD" value="Prior Damage"/>
+  <Entry name="RCA" value="Rental Car Arranged"/>
+  <Entry name="SUB" value="Subrogation Open"/>
+</Table>

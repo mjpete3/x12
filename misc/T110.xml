@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T110.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T110">
+  <Entry name="BA" value="Batch Accept"/>
+  <Entry name="BC" value="Batch Accept with Data Content Change"/>
+  <Entry name="BE" value="Batch Accept with Error"/>
+  <Entry name="BP" value="Batch Partial Accept/Reject"/>
+  <Entry name="BR" value="Batch Reject"/>
+  <Entry name="GA" value="Functional Group Accept"/>
+  <Entry name="GC" value="Functional Group Accept with Data Content Change"/>
+  <Entry name="GE" value="Functional Group Accept with Error"/>
+  <Entry name="GP" value="Functional Group Partial Accept/Reject"/>
+  <Entry name="GR" value="Functional Group Reject"/>
+  <Entry name="IA" value="Item Accept"/>
+  <Entry name="IC" value="Item Accept with Data Content Change"/>
+  <Entry name="IE" value="Item Accept with Error"/>
+  <Entry name="IP" value="Item Partial Accept/Reject"/>
+  <Entry name="IR" value="Item Reject"/>
+  <Entry name="TA" value="Transaction Set Accept"/>
+  <Entry name="TC" value="Transaction Set Accept with Data Content Change"/>
+  <Entry name="TE" value="Transaction Set Accept with Error"/>
+  <Entry name="TP" value="Transaction Set Partial Accept/Reject"/>
+  <Entry name="TR" value="Transaction Set Reject"/>
+</Table>

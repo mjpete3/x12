@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G66.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G66" comment="To specify transportation instructions relating to the shipment">
+  <Field name="ShipmentMethodOfPayment" required="y" min="2" max="2" validation="T146" comment="Code identifying payment terms for transportation charges"/>
+  <Field name="TransportationMethodTypeCode" required="y" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="PalletExchangeCode" required="y" min="1" max="1" validation="T399" comment="Code specifying pallet exchange instructions"/>
+  <Field name="UnitLoadOptionCode" required="y" min="2" max="2" validation="T400" comment="Code identifying loading or unloading a shipment"/>
+  <Field name="Routing" required="y" min="1" max="35" comment="Free-form description of the routing or requested routing for shipment, or the originating carrier's identity"/>
+  <Field name="FOBPointCode" required="y" min="2" max="2" validation="T433" comment="Code identifying type of F.O.B. point"/>
+  <Field name="FOBPoint" required="y" min="1" max="30" comment="Descriptive name of F.O.B. point"/>
+</Segment>

@@ -1,0 +1,210 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1365.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1365">
+  <Entry name="1" value="Medical Care"/>
+  <Entry name="2" value="Surgical"/>
+  <Entry name="3" value="Consultation"/>
+  <Entry name="4" value="Diagnostic X-Ray"/>
+  <Entry name="5" value="Diagnostic Lab"/>
+  <Entry name="6" value="Radiation Therapy"/>
+  <Entry name="7" value="Anesthesia"/>
+  <Entry name="8" value="Surgical Assistance"/>
+  <Entry name="9" value="Other Medical"/>
+  <Entry name="B" value="Non-escrow or Non-impound Service"/>
+  <Entry name="C" value="Escrow or Impound Service"/>
+  <Entry name="10" value="Blood Charges"/>
+  <Entry name="11" value="Used Durable Medical Equipment"/>
+  <Entry name="12" value="Durable Medical Equipment Purchase"/>
+  <Entry name="13" value="Ambulatory Service Center Facility"/>
+  <Entry name="14" value="Renal Supplies in the Home"/>
+  <Entry name="15" value="Alternate Method Dialysis"/>
+  <Entry name="16" value="Chronic Renal Disease (CRD) Equipment"/>
+  <Entry name="17" value="Pre-Admission Testing"/>
+  <Entry name="18" value="Durable Medical Equipment Rental"/>
+  <Entry name="19" value="Pneumonia Vaccine"/>
+  <Entry name="20" value="Second Surgical Opinion"/>
+  <Entry name="21" value="Third Surgical Opinion"/>
+  <Entry name="22" value="Social Work"/>
+  <Entry name="23" value="Diagnostic Dental"/>
+  <Entry name="24" value="Periodontics"/>
+  <Entry name="25" value="Restorative"/>
+  <Entry name="26" value="Endodontics"/>
+  <Entry name="27" value="Maxillofacial Prosthetics"/>
+  <Entry name="28" value="Adjunctive Dental Services"/>
+  <Entry name="30" value="Health Benefit Plan Coverage"/>
+  <Entry name="31" value="Benefit Disclaimer"/>
+  <Entry name="32" value="Plan Waiting Period"/>
+  <Entry name="33" value="Chiropractic"/>
+  <Entry name="34" value="Chiropractic Office Visits"/>
+  <Entry name="35" value="Dental Care"/>
+  <Entry name="36" value="Dental Crowns"/>
+  <Entry name="37" value="Dental Accident"/>
+  <Entry name="38" value="Orthodontics"/>
+  <Entry name="39" value="Prosthodontics"/>
+  <Entry name="40" value="Oral Surgery"/>
+  <Entry name="41" value="Routine (Preventive) Dental"/>
+  <Entry name="42" value="Home Health Care"/>
+  <Entry name="43" value="Home Health Prescriptions"/>
+  <Entry name="44" value="Home Health Visits"/>
+  <Entry name="45" value="Hospice"/>
+  <Entry name="46" value="Respite Care"/>
+  <Entry name="47" value="Hospital"/>
+  <Entry name="48" value="Hospital - Inpatient"/>
+  <Entry name="49" value="Hospital - Room and Board"/>
+  <Entry name="50" value="Hospital - Outpatient"/>
+  <Entry name="51" value="Hospital - Emergency Accident"/>
+  <Entry name="52" value="Hospital - Emergency Medical"/>
+  <Entry name="53" value="Hospital - Ambulatory Surgical"/>
+  <Entry name="54" value="Long Term Care"/>
+  <Entry name="55" value="Major Medical"/>
+  <Entry name="56" value="Medically Related Transportation"/>
+  <Entry name="57" value="Air Transportation"/>
+  <Entry name="58" value="Cabulance"/>
+  <Entry name="59" value="Licensed Ambulance"/>
+  <Entry name="60" value="General Benefits"/>
+  <Entry name="61" value="In-vitro Fertilization"/>
+  <Entry name="62" value="MRI/CAT Scan"/>
+  <Entry name="63" value="Donor Procedures"/>
+  <Entry name="64" value="Acupuncture"/>
+  <Entry name="65" value="Newborn Care"/>
+  <Entry name="66" value="Pathology"/>
+  <Entry name="67" value="Smoking Cessation"/>
+  <Entry name="68" value="Well Baby Care"/>
+  <Entry name="69" value="Maternity"/>
+  <Entry name="70" value="Transplants"/>
+  <Entry name="71" value="Audiology Exam"/>
+  <Entry name="72" value="Inhalation Therapy"/>
+  <Entry name="73" value="Diagnostic Medical"/>
+  <Entry name="74" value="Private Duty Nursing"/>
+  <Entry name="75" value="Prosthetic Device"/>
+  <Entry name="76" value="Dialysis"/>
+  <Entry name="77" value="Otological Exam"/>
+  <Entry name="78" value="Chemotherapy"/>
+  <Entry name="79" value="Allergy Testing"/>
+  <Entry name="80" value="Immunizations"/>
+  <Entry name="81" value="Routine Physical"/>
+  <Entry name="82" value="Family Planning"/>
+  <Entry name="83" value="Infertility"/>
+  <Entry name="84" value="Abortion"/>
+  <Entry name="85" value="AIDS"/>
+  <Entry name="86" value="Emergency Services"/>
+  <Entry name="87" value="Cancer"/>
+  <Entry name="88" value="Pharmacy"/>
+  <Entry name="89" value="Free Standing Prescription Drug"/>
+  <Entry name="90" value="Mail Order Prescription Drug"/>
+  <Entry name="91" value="Brand Name Prescription Drug"/>
+  <Entry name="92" value="Generic Prescription Drug"/>
+  <Entry name="93" value="Podiatry"/>
+  <Entry name="94" value="Podiatry - Office Visits"/>
+  <Entry name="95" value="Podiatry - Nursing Home Visits"/>
+  <Entry name="96" value="Professional (Physician)"/>
+  <Entry name="97" value="Anesthesiologist"/>
+  <Entry name="98" value="Professional (Physician) Visit - Office"/>
+  <Entry name="99" value="Professional (Physician) Visit - Inpatient"/>
+  <Entry name="A0" value="Professional (Physician) Visit - Outpatient"/>
+  <Entry name="A1" value="Professional (Physician) Visit - Nursing Home"/>
+  <Entry name="A2" value="Professional (Physician) Visit - Skilled Nursing Facility"/>
+  <Entry name="A3" value="Professional (Physician) Visit - Home"/>
+  <Entry name="A4" value="Psychiatric"/>
+  <Entry name="A5" value="Psychiatric - Room and Board"/>
+  <Entry name="A6" value="Psychotherapy"/>
+  <Entry name="A7" value="Psychiatric - Inpatient"/>
+  <Entry name="A8" value="Psychiatric - Outpatient"/>
+  <Entry name="A9" value="Rehabilitation"/>
+  <Entry name="AA" value="Rehabilitation - Room and Board"/>
+  <Entry name="AB" value="Rehabilitation - Inpatient"/>
+  <Entry name="AC" value="Rehabilitation - Outpatient"/>
+  <Entry name="AD" value="Occupational Therapy"/>
+  <Entry name="AE" value="Physical Medicine"/>
+  <Entry name="AF" value="Speech Therapy"/>
+  <Entry name="AG" value="Skilled Nursing Care"/>
+  <Entry name="AH" value="Skilled Nursing Care - Room and Board"/>
+  <Entry name="AI" value="Substance Abuse"/>
+  <Entry name="AJ" value="Alcoholism"/>
+  <Entry name="AK" value="Drug Addiction"/>
+  <Entry name="AL" value="Vision (Optometry)"/>
+  <Entry name="AM" value="Frames"/>
+  <Entry name="AN" value="Routine Exam"/>
+  <Entry name="AO" value="Lenses"/>
+  <Entry name="AQ" value="Nonmedically Necessary Physical"/>
+  <Entry name="AR" value="Experimental Drug Therapy"/>
+  <Entry name="B1" value="Burn Care"/>
+  <Entry name="B2" value="Brand Name Prescription Drug - Formulary"/>
+  <Entry name="B3" value="Brand Name Prescription Drug - Non-Formulary"/>
+  <Entry name="BA" value="Independent Medical Evaluation"/>
+  <Entry name="BB" value="Partial Hospitalization (Psychiatric)"/>
+  <Entry name="BC" value="Day Care (Psychiatric)"/>
+  <Entry name="BD" value="Cognitive Therapy"/>
+  <Entry name="BE" value="Massage Therapy"/>
+  <Entry name="BF" value="Pulmonary Rehabilitation"/>
+  <Entry name="BG" value="Cardiac Rehabilitation"/>
+  <Entry name="BH" value="Pediatric"/>
+  <Entry name="BI" value="Nursery"/>
+  <Entry name="BJ" value="Skin"/>
+  <Entry name="BK" value="Orthopedic"/>
+  <Entry name="BL" value="Cardiac"/>
+  <Entry name="BM" value="Lymphatic"/>
+  <Entry name="BN" value="Gastrointestinal"/>
+  <Entry name="BP" value="Endocrine"/>
+  <Entry name="BQ" value="Neurology"/>
+  <Entry name="BR" value="Eye"/>
+  <Entry name="BS" value="Invasive Procedures"/>
+  <Entry name="BT" value="Gynecological"/>
+  <Entry name="BU" value="Obstetrical"/>
+  <Entry name="BV" value="Obstetrical/Gynecological"/>
+  <Entry name="BW" value="Mail Order Prescription Drug: Brand Name"/>
+  <Entry name="BX" value="Mail Order Prescription Drug: Generic"/>
+  <Entry name="BY" value="Physician Visit - Office: Sick"/>
+  <Entry name="BZ" value="Physician Visit - Office: Well"/>
+  <Entry name="C1" value="Coronary Care"/>
+  <Entry name="CA" value="Private Duty Nursing - Inpatient"/>
+  <Entry name="CB" value="Private Duty Nursing - Home"/>
+  <Entry name="CC" value="Surgical Benefits - Professional (Physician)"/>
+  <Entry name="CD" value="Surgical Benefits - Facility"/>
+  <Entry name="CE" value="Mental Health Provider - Inpatient"/>
+  <Entry name="CF" value="Mental Health Provider - Outpatient"/>
+  <Entry name="CG" value="Mental Health Facility - Inpatient"/>
+  <Entry name="CH" value="Mental Health Facility - Outpatient"/>
+  <Entry name="CI" value="Substance Abuse Facility - Inpatient"/>
+  <Entry name="CJ" value="Substance Abuse Facility - Outpatient"/>
+  <Entry name="CK" value="Screening X-ray"/>
+  <Entry name="CL" value="Screening laboratory"/>
+  <Entry name="CM" value="Mammogram, High Risk Patient"/>
+  <Entry name="CN" value="Mammogram, Low Risk Patient"/>
+  <Entry name="CO" value="Flu Vaccination"/>
+  <Entry name="CP" value="Eyewear and Eyewear Accessories"/>
+  <Entry name="DG" value="Dermatology"/>
+  <Entry name="DM" value="Durable Medical Equipment"/>
+  <Entry name="GF" value="Generic Prescription Drug - Formulary"/>
+  <Entry name="GN" value="Generic Prescription Drug - Non-Formulary"/>
+  <Entry name="GY" value="Allergy"/>
+  <Entry name="IC" value="Intensive Care"/>
+  <Entry name="MH" value="Mental Health"/>
+  <Entry name="NI" value="Neonatal Intensive Care"/>
+  <Entry name="TC" value="Transitional Care"/>
+  <Entry name="TN" value="Transitional Nursery Care"/>
+  <Entry name="UC" value="Urgent Care"/>
+</Table>

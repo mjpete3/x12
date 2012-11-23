@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: N7.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="N7" comment="To identify the equipment">
+  <Field name="EquipmentInitial" required="y" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightQualifier" required="y" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+  <Field name="TareWeight" type="long" required="y" min="3" max="8" comment="Weight of the equipment"/>
+  <Field name="WeightAllowance" type="long" required="y" min="2" max="6" comment="Allowance made for increased weight due to such factors as snow"/>
+  <Field name="Dunnage" type="long" required="y" min="1" max="6" comment="Weight of material used to protect lading (even bracings, false floors, etc.)"/>
+  <Field name="Volume" type="double" required="y" min="1" max="8" comment="Value of volumetric measure"/>
+  <Field name="VolumeUnitQualifier" required="y" min="1" max="1" validation="T184" comment="Code identifying the volume unit"/>
+  <Field name="OwnershipCode" required="y" min="1" max="1" validation="T102" comment="Code indicating the relationship of equipment to carrier or ownership of equipment"/>
+  <Field name="EquipmentDescriptionCode" required="y" min="2" max="2" validation="T40" comment="Code identifying type of equipment used for shipment"/>
+  <Field name="StandardCarrierAlphaCode1" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="TemperatureControl" required="y" min="3" max="6" comment="Free-form abbreviation of temperature range or flash-point temperature"/>
+  <Field name="Position" required="y" min="1" max="3" comment="Relative position of shipment in car, trailer, or container (mutually defined)"/>
+  <Field name="EquipmentLength" type="long" required="y" min="4" max="5" comment="Length (in feet and inches) of equipment ordered or used to transport shipment (The format is FFFII where FFF is feet and II is inches; the range for II is 00 through 11)"/>
+  <Field name="TareQualifierCode" required="y" min="1" max="1" validation="T571" comment="Code identifying the type of tare"/>
+  <Field name="WeightUnitCode" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="EquipmentNumberCheckDigit" type="long" required="y" min="1" max="1" comment="Number which designates the check digit applied to a piece of equipment"/>
+  <Field name="TypeOfServiceCode" required="y" min="2" max="2" validation="T56" comment="Code specifying extent of transportation service requested"/>
+  <Field name="Height" type="double" required="y" min="1" max="8" comment="Vertical dimension of an object measured when the object is in the upright position"/>
+  <Field name="Width" type="double" required="y" min="1" max="8" comment="Shorter measurement of the two horizontal dimensions measured with the object in the upright position"/>
+  <Field name="EquipmentType" required="y" min="4" max="4" comment="Code identifying equipment type"/>
+  <Field name="StandardCarrierAlphaCode2" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="CarTypeCode" required="y" min="1" max="4" comment="Code specifying type of rail car or intermodal equipment type and its general characteristics"/>
+</Segment>

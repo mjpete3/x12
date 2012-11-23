@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 997.xml 85 2009-05-13 19:17:51Z ikk $
+-->
+
+<!--
+  This is an example of a message definition spread among several
+  files: main loop is here, all other definitions, i.e., segments,
+  composites, validation tables live in separate files.
+-->
+
+<Definition>
+  <Loop name="997" comment="This X12 Transaction Set contains the format and establishes the data contents of the Functional Acknowledgment Transaction Set (997) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to define the control structures for a set of acknowledgments to indicate the results of the syntactical analysis of the electronically encoded documents. The encoded documents are the transaction sets, which are grouped in functional groups, used in defining transactions for business data interchange. This standard does not cover the semantic meaning of the information encoded in the transaction sets.">
+    <Segment name="ST"  max="1">
+      <Field name="TransactionSetIdentifierCode" const="997" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
+      <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+    </Segment>
+    <Segment name="AK1" max="1"/>
+    <Loop name="L1000" max="999999" required="y">
+      <Segment name="AK2" max="1" required="n"/>
+      <Loop name="L1010" max="999999" required="n">
+        <Segment name="AK3" max="1" required="n"/>
+        <Segment name="AK4" max="99" required="n"/>
+      </Loop>
+      <Segment name="AK5" max="1" required="y"/>
+    </Loop>
+    <Segment name="AK9" max="1" required="y"/>
+    <Segment name="SE"  max="1" required="y"/>
+  </Loop>
+</Definition>

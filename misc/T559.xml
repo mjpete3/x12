@@ -1,0 +1,218 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T559.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T559">
+  <Entry name="10" value="Alabama"/>
+  <Entry name="11" value="Alaska"/>
+  <Entry name="12" value="Arizona"/>
+  <Entry name="13" value="Arkansas"/>
+  <Entry name="14" value="California"/>
+  <Entry name="15" value="Colorado"/>
+  <Entry name="16" value="Connecticut"/>
+  <Entry name="17" value="Delaware"/>
+  <Entry name="18" value="District of Columbia"/>
+  <Entry name="19" value="Florida"/>
+  <Entry name="20" value="Georgia"/>
+  <Entry name="21" value="Hawaii"/>
+  <Entry name="22" value="Idaho"/>
+  <Entry name="23" value="Illinois"/>
+  <Entry name="24" value="Indiana"/>
+  <Entry name="25" value="Iowa"/>
+  <Entry name="26" value="Kansas"/>
+  <Entry name="27" value="Louisiana"/>
+  <Entry name="28" value="Kentucky"/>
+  <Entry name="29" value="Maine"/>
+  <Entry name="30" value="Maryland"/>
+  <Entry name="31" value="Massachusetts"/>
+  <Entry name="32" value="Michigan"/>
+  <Entry name="33" value="Minnesota"/>
+  <Entry name="34" value="Mississippi"/>
+  <Entry name="35" value="Missouri"/>
+  <Entry name="36" value="Montana"/>
+  <Entry name="37" value="Nebraska"/>
+  <Entry name="38" value="Nevada"/>
+  <Entry name="39" value="New Hampshire"/>
+  <Entry name="40" value="New Jersey"/>
+  <Entry name="41" value="New Mexico"/>
+  <Entry name="42" value="New York"/>
+  <Entry name="43" value="North Carolina"/>
+  <Entry name="44" value="North Dakota"/>
+  <Entry name="45" value="Ohio"/>
+  <Entry name="46" value="Oklahoma"/>
+  <Entry name="47" value="Oregon"/>
+  <Entry name="48" value="Pennsylvania"/>
+  <Entry name="49" value="Rhode Island"/>
+  <Entry name="50" value="South Carolina"/>
+  <Entry name="51" value="South Dakota"/>
+  <Entry name="52" value="Tennessee"/>
+  <Entry name="53" value="Texas"/>
+  <Entry name="54" value="Utah"/>
+  <Entry name="55" value="Vermont"/>
+  <Entry name="56" value="Virginia"/>
+  <Entry name="57" value="Washington"/>
+  <Entry name="58" value="West Virginia"/>
+  <Entry name="59" value="Wisconsin"/>
+  <Entry name="60" value="Wyoming"/>
+  <Entry name="61" value="Insurance Services Office (ISO)"/>
+  <Entry name="62" value="National Crime Information Center (NCIC)"/>
+  <Entry name="64" value="U.S. National Center for Health Statistics Commission of Professional and Hospital Activities"/>
+  <Entry name="65" value="Office of Workers Compensation Programs"/>
+  <Entry name="66" value="National Association of Convenience Stores"/>
+  <Entry name="93" value="Dun &amp; Bradstreet"/>
+  <Entry name="94" value="Code Assigned by the Organization that is the Ultimate Destination of the Transaction Set"/>
+  <Entry name="A1" value="American Land Title Association"/>
+  <Entry name="A2" value="California Land Title Association"/>
+  <Entry name="A3" value="Texas Land Title Association"/>
+  <Entry name="A4" value="Assigned by Carrier"/>
+  <Entry name="AA" value="Aluminum Association"/>
+  <Entry name="AB" value="Assigned by Buyer"/>
+  <Entry name="AC" value="American Conference of Government Industrial Hygienists (ACGIH)"/>
+  <Entry name="AD" value="Agency Company Organization for Research and Development (ACORD)"/>
+  <Entry name="AE" value="Advertising Industry"/>
+  <Entry name="AF" value="Automotive Aftermarket Industry Association (AAIA)"/>
+  <Entry name="AG" value="State Agency Assigned"/>
+  <Entry name="AH" value="American Industrial Hygiene Association (AIHA)"/>
+  <Entry name="AJ" value="Real Estate Information Industry"/>
+  <Entry name="AL" value="National Alcohol Beverage Control Association"/>
+  <Entry name="AM" value="American Medical Association"/>
+  <Entry name="AP" value="American Petroleum Institute"/>
+  <Entry name="AQ" value="American Public Works Association (APWA) One Call Systems International (OCSI)"/>
+  <Entry name="AR" value="Association of American Railroads"/>
+  <Entry name="AS" value="Assigned by Seller"/>
+  <Entry name="AT" value="American Society for Testing and Materials (ASTM)"/>
+  <Entry name="AW" value="American Welding Society (AWS)"/>
+  <Entry name="AX" value="ANSI Accredited Standards Committee, X12"/>
+  <Entry name="AY" value="American Yarn Spinners Association (AYSA)"/>
+  <Entry name="BA" value="Business and Institutional Furniture Manufacturer's Association (BIFMA)"/>
+  <Entry name="BE" value="Telcordia Technologies"/>
+  <Entry name="BF" value="National Business Forms Association"/>
+  <Entry name="BI" value="Book Industry Systems Advisory Committee"/>
+  <Entry name="CA" value="Chemical Abstract Services (CAS)"/>
+  <Entry name="CB" value="Copper and Brass Fabricators Council, Inc."/>
+  <Entry name="CC" value="National Cotton Council of America"/>
+  <Entry name="CE" value="Construction Specification Institute (CSI) Extended"/>
+  <Entry name="CI" value="Chemical Industry Data Exchange (CIDX)"/>
+  <Entry name="CL" value="Collision Industry Electronic Commerce Association (CIECA)"/>
+  <Entry name="CM" value="Carbide Manufacturers"/>
+  <Entry name="CO" value="County Designator Code"/>
+  <Entry name="CP" value="United States Department of Agriculture, Agricultural Marketing Service (AMS), Cotton Programs"/>
+  <Entry name="CR" value="Commander - Rome Air Development Center"/>
+  <Entry name="CS" value="Construction Specification Institute (CSI)"/>
+  <Entry name="CU" value="Committee on Uniform Security Identification Procedures (CUSIP)"/>
+  <Entry name="CX" value="National Association of Corrosion Engineers (NACE)"/>
+  <Entry name="DA" value="Food and Drug Administration (FDA)"/>
+  <Entry name="DD" value="Department of Defense"/>
+  <Entry name="DE" value="Drug Enforcement Administration"/>
+  <Entry name="DF" value="Department of Defense (DoD)"/>
+  <Entry name="DI" value="Deutsches Institut fur Normung (DIN)"/>
+  <Entry name="DL" value="Defense Logistics Agency"/>
+  <Entry name="DN" value="Department of the Navy"/>
+  <Entry name="DO" value="United States Department of Transportation (DOT)"/>
+  <Entry name="DR" value="National Wholesale Druggists Association"/>
+  <Entry name="DS" value="Defense Finance and Accounting Service (DFAS)"/>
+  <Entry name="DX" value="United States Marine Corps"/>
+  <Entry name="DY" value="Department of Air Force"/>
+  <Entry name="DZ" value="Department of Army"/>
+  <Entry name="EI" value="Electronic Industries Association"/>
+  <Entry name="EP" value="United States Environmental Protection Agency (EPA)"/>
+  <Entry name="ES" value="Environment and Safety Data Exchange (ESDX)"/>
+  <Entry name="ET" value="Temporary Help Industry"/>
+  <Entry name="EU" value="Electric Utilities"/>
+  <Entry name="EX" value="Electronics Industry Data Exchange (EIDX)"/>
+  <Entry name="FA" value="Fabric and Supplier Linkage Council (FASLINC)"/>
+  <Entry name="FC" value="Federal Communications Commission (FCC)"/>
+  <Entry name="FD" value="Uniform Code Council (UCS)"/>
+  <Entry name="FG" value="Federal Government"/>
+  <Entry name="FH" value="Federal Highway Administration"/>
+  <Entry name="FI" value="American Furniture Manufacturers Association"/>
+  <Entry name="GC" value="Graphics Communications Association"/>
+  <Entry name="GI" value="Gas Industry Standards Board"/>
+  <Entry name="GS" value="General Services Administration (GSA)"/>
+  <Entry name="GU" value="Natural Gas Utilities"/>
+  <Entry name="HC" value="Health Care Financing Administration"/>
+  <Entry name="HF" value="Human Factors and Ergonomics Society"/>
+  <Entry name="HI" value="Health Insurance Association of America"/>
+  <Entry name="HS" value="Department of Health and Human Services"/>
+  <Entry name="HU" value="Department of Housing and Urban Development"/>
+  <Entry name="IA" value="International Agency for Research on Cancer (IARC)"/>
+  <Entry name="IB" value="International Association of Industrial Accident Boards and Commissions"/>
+  <Entry name="IC" value="International Air Transport Association (IATA)"/>
+  <Entry name="IM" value="Iron and Steel Standards Committee ISM"/>
+  <Entry name="IN" value="International Association of Corporation Administrators"/>
+  <Entry name="IS" value="International Standards Organization"/>
+  <Entry name="JA" value="Japanese Standards Association"/>
+  <Entry name="LA" value="Life and Annuity Industry Committee"/>
+  <Entry name="LB" value="Department of Labor"/>
+  <Entry name="LI" value="Leasing Industry"/>
+  <Entry name="MA" value="Mortgage Bankers Association of America"/>
+  <Entry name="MB" value="Office of Management and Budget"/>
+  <Entry name="MC" value="Manufacturing Company"/>
+  <Entry name="ME" value="American Society of Mechanical Engineers (ASME)"/>
+  <Entry name="MI" value="ABCD - The Microcomputer Industry Association"/>
+  <Entry name="MP" value="Material Safety Data Sheet (MSDS) Provider"/>
+  <Entry name="MS" value="Military Standard"/>
+  <Entry name="MV" value="American Association of Motor Vehicle Administrators (AAMVA)"/>
+  <Entry name="NA" value="National Insurance Crime Bureau (NICB)"/>
+  <Entry name="NB" value="National Association of Business and Educational Radio"/>
+  <Entry name="NC" value="National Council on Compensation Insurance"/>
+  <Entry name="NE" value="National Electric Manufacturers Association (NEMA)"/>
+  <Entry name="NF" value="National Fire Protection Agency (NFPA)"/>
+  <Entry name="NG" value="National Auto Glass Specification (NAGS)"/>
+  <Entry name="NI" value="National Institute of Occupational Safety and Health (NIOSH)"/>
+  <Entry name="NR" value="National Retail Merchants Association"/>
+  <Entry name="NS" value="National Center for State Courts"/>
+  <Entry name="NT" value="National Toxicology Program (NTP)"/>
+  <Entry name="NU" value="United States Nuclear Regulatory Commission"/>
+  <Entry name="NW" value="Newspaper Association of America"/>
+  <Entry name="OI" value="Optical Industry"/>
+  <Entry name="OP" value="Office Products"/>
+  <Entry name="OS" value="United States Occupational Safety and Health Administration (OSHA)"/>
+  <Entry name="PA" value="American Paper Institute"/>
+  <Entry name="PC" value="Pennsylvania Courts"/>
+  <Entry name="RN" value="RosettaNet"/>
+  <Entry name="SA" value="Society of Automotive Engineers, Inc. (SAE)"/>
+  <Entry name="SE" value="Serials Industry Systems Advisory Committee (SISAC)"/>
+  <Entry name="SL" value="Student Loan Guarantor"/>
+  <Entry name="SP" value="American Society for Automation in Pharmacy"/>
+  <Entry name="ST" value="American Iron &amp; Steel Institute"/>
+  <Entry name="TA" value="Air Transport Association of America"/>
+  <Entry name="TB" value="Textile Distributors Association, Inc."/>
+  <Entry name="TC" value="Textile Apparel Linkage Council (TALC)"/>
+  <Entry name="TD" value="Transportation Data Coordinating Committee: Electronic Data Interchange Association (TDCC:EDIA)"/>
+  <Entry name="TI" value="Telecommunications Industry"/>
+  <Entry name="TM" value="American Textile Manufacturers Institute"/>
+  <Entry name="TP" value="Canadian Freight Classification"/>
+  <Entry name="TR" value="American Trucking Associations"/>
+  <Entry name="TX" value="American Apparel Manufacturers Association"/>
+  <Entry name="UA" value="(UN/SPSC) United Nations Products and Services Classification Code"/>
+  <Entry name="UC" value="United States Courts"/>
+  <Entry name="UI" value="Industrial/Commercial (I/C) Electronic Data Interchange"/>
+  <Entry name="UL" value="Underwriters Laboratories"/>
+  <Entry name="UN" value="United Nations (UN)"/>
+  <Entry name="UT" value="Utility Industry Group"/>
+  <Entry name="VI" value="Voluntary Inter-Industry Commerce Standard (VICS) EDI"/>
+  <Entry name="WH" value="Canadian Workplace Hazardous Materials Information System (WHMIS)"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

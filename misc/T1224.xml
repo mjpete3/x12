@@ -1,0 +1,62 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1224.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1224">
+  <Entry name="AC" value="All Categories of Contribution"/>
+  <Entry name="EA" value="Employer Contribution Amount"/>
+  <Entry name="EB" value="Employee Pretax Basic"/>
+  <Entry name="EC" value="Employee Post-Tax Basic"/>
+  <Entry name="ED" value="Employer Discretionary (Profit Sharing)"/>
+  <Entry name="EI" value="Employee Pretax Individual Retirement Account"/>
+  <Entry name="EM" value="Employer Discretionary"/>
+  <Entry name="EP" value="Employee Pretax"/>
+  <Entry name="ER" value="Employee Post-Tax Individual Retirement Account"/>
+  <Entry name="ES" value="Employee Pretax Supplemental"/>
+  <Entry name="ET" value="Employee Post-Tax"/>
+  <Entry name="EU" value="Employee Post-Tax Supplemental"/>
+  <Entry name="IC" value="Claimant Contribution Amount"/>
+  <Entry name="MB" value="Employer Pretax Match Basic"/>
+  <Entry name="MS" value="Employer Pretax Match Supplemental"/>
+  <Entry name="MT" value="Employer Post-Tax Match Basic"/>
+  <Entry name="MU" value="Employer Post-Tax Match Supplemental"/>
+  <Entry name="NC" value="Nonqualified Matching Contribution"/>
+  <Entry name="NQ" value="Non-Qualified Voluntary Employee Contribution"/>
+  <Entry name="PB" value="Prior Plan Employee Pretax Basic"/>
+  <Entry name="PS" value="Prior Plan Employee Post-Tax Supplemental"/>
+  <Entry name="PT" value="Prior Plan Employee Post-Tax Basic"/>
+  <Entry name="QC" value="Employer Qualified Nonelective Contribution"/>
+  <Entry name="QE" value="Qualified Voluntary Employee Contribution"/>
+  <Entry name="QM" value="Qualified Matching Contribution"/>
+  <Entry name="QP" value="Qualified Employee Stock Option Plan"/>
+  <Entry name="RA" value="Rollover 401(A)"/>
+  <Entry name="RK" value="Rollover 401(K)"/>
+  <Entry name="RO" value="Rollover"/>
+  <Entry name="RP" value="Employer Pretax"/>
+  <Entry name="RS" value="Prior Plan Employee Pretax Supplemental"/>
+  <Entry name="RT" value="Employer Post-Tax"/>
+  <Entry name="SD" value="Salary Deferral"/>
+  <Entry name="SP" value="Spousal Individual Retirement Account"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

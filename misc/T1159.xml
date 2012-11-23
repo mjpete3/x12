@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1159.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1159">
+  <Entry name="1" value="Special Circumstances (Something unusual occurred during testing that may have affected how the student performed)"/>
+  <Entry name="2" value="Nonstandard Administration Procedure (Braille, Signing, Extended Time, etc.)"/>
+  <Entry name="3" value="Experience Only"/>
+  <Entry name="4" value="Diagnostic Only"/>
+  <Entry name="5" value="Experience and Diagnostic"/>
+  <Entry name="6" value="Reader or Signer"/>
+  <Entry name="7" value="Large Type Booklet, write or mark on booklet or separate paper, untimed"/>
+  <Entry name="8" value="Large Type Booklet, type on typewriter, braillewriter, or computer, untimed"/>
+  <Entry name="9" value="Large Type Booklet, scribe marks responses, untimed"/>
+  <Entry name="A" value="Untimed, with breaks"/>
+  <Entry name="B" value="One and a half times the normal time, no break"/>
+  <Entry name="C" value="One and a half times the normal time, one break only"/>
+  <Entry name="D" value="Self-determined review of audio/videotape, untimed"/>
+  <Entry name="E" value="Reader or Signer, examinee marks on answer document, booklet, or separate paper, standard administration type"/>
+  <Entry name="F" value="Special Furniture"/>
+  <Entry name="H" value="Use of scripts for videotape scenarios only"/>
+  <Entry name="I" value="Foreign language dictionary and standard timing"/>
+  <Entry name="J" value="Special Lighting"/>
+  <Entry name="K" value="Head Mouse"/>
+  <Entry name="L" value="Adjustable table height"/>
+  <Entry name="M" value="Enlarged Keyboard"/>
+  <Entry name="N" value="Adjustable swivel arm"/>
+  <Entry name="O" value="Track ball"/>
+  <Entry name="P" value="Separate room"/>
+  <Entry name="Q" value="Amanuensis or Recorder"/>
+  <Entry name="R" value="Sign Language Interpreter"/>
+  <Entry name="S" value="Extra time"/>
+  <Entry name="T" value="Multi-day"/>
+  <Entry name="U" value="Exempt"/>
+</Table>

@@ -1,0 +1,1283 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T374.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T374">
+  <Entry name="001" value="Cancel After"/>
+  <Entry name="002" value="Delivery Requested"/>
+  <Entry name="003" value="Invoice"/>
+  <Entry name="004" value="Purchase Order"/>
+  <Entry name="005" value="Sailing"/>
+  <Entry name="006" value="Sold"/>
+  <Entry name="007" value="Effective"/>
+  <Entry name="008" value="Purchase Order Received"/>
+  <Entry name="009" value="Process"/>
+  <Entry name="010" value="Requested Ship"/>
+  <Entry name="011" value="Shipped"/>
+  <Entry name="012" value="Terms Discount Due"/>
+  <Entry name="013" value="Terms Net Due"/>
+  <Entry name="014" value="Deferred Payment"/>
+  <Entry name="015" value="Promotion Start"/>
+  <Entry name="016" value="Promotion End"/>
+  <Entry name="017" value="Estimated Delivery"/>
+  <Entry name="018" value="Available"/>
+  <Entry name="019" value="Unloaded"/>
+  <Entry name="020" value="Check"/>
+  <Entry name="021" value="Charge Back"/>
+  <Entry name="022" value="Freight Bill"/>
+  <Entry name="023" value="Promotion Order - Start"/>
+  <Entry name="024" value="Promotion Order - End"/>
+  <Entry name="025" value="Promotion Ship - Start"/>
+  <Entry name="026" value="Promotion Ship - End"/>
+  <Entry name="027" value="Promotion Requested Delivery - Start"/>
+  <Entry name="028" value="Promotion Requested Delivery - End"/>
+  <Entry name="029" value="Promotion Performance - Start"/>
+  <Entry name="030" value="Promotion Performance - End"/>
+  <Entry name="031" value="Promotion Invoice Performance - Start"/>
+  <Entry name="032" value="Promotion Invoice Performance - End"/>
+  <Entry name="033" value="Promotion Floor Stock Protect - Start"/>
+  <Entry name="034" value="Promotion Floor Stock Protect - End"/>
+  <Entry name="035" value="Delivered"/>
+  <Entry name="036" value="Expiration"/>
+  <Entry name="037" value="Ship Not Before"/>
+  <Entry name="038" value="Ship No Later"/>
+  <Entry name="039" value="Ship Week of"/>
+  <Entry name="040" value="Status (After and Including)"/>
+  <Entry name="041" value="Status (Prior and Including)"/>
+  <Entry name="042" value="Superseded"/>
+  <Entry name="043" value="Publication"/>
+  <Entry name="044" value="Settlement Date as Specified by the Originator"/>
+  <Entry name="045" value="Endorsement Date"/>
+  <Entry name="046" value="Field Failure"/>
+  <Entry name="047" value="Functional Test"/>
+  <Entry name="048" value="System Test"/>
+  <Entry name="049" value="Prototype Test"/>
+  <Entry name="050" value="Received"/>
+  <Entry name="051" value="Cumulative Quantity Start"/>
+  <Entry name="052" value="Cumulative Quantity End"/>
+  <Entry name="053" value="Buyers Local"/>
+  <Entry name="054" value="Sellers Local"/>
+  <Entry name="055" value="Confirmed"/>
+  <Entry name="056" value="Estimated Port of Entry"/>
+  <Entry name="057" value="Actual Port of Entry"/>
+  <Entry name="058" value="Customs Clearance"/>
+  <Entry name="059" value="Inland Ship"/>
+  <Entry name="060" value="Engineering Change Level"/>
+  <Entry name="061" value="Cancel if Not Delivered by"/>
+  <Entry name="062" value="Blueprint"/>
+  <Entry name="063" value="Do Not Deliver After"/>
+  <Entry name="064" value="Do Not Deliver Before"/>
+  <Entry name="065" value="1st Schedule Delivery"/>
+  <Entry name="066" value="1st Schedule Ship"/>
+  <Entry name="067" value="Current Schedule Delivery"/>
+  <Entry name="068" value="Current Schedule Ship"/>
+  <Entry name="069" value="Promised for Delivery"/>
+  <Entry name="070" value="Scheduled for Delivery (After and Including)"/>
+  <Entry name="071" value="Requested for Delivery (After and Including)"/>
+  <Entry name="072" value="Promised for Delivery (After and Including)"/>
+  <Entry name="073" value="Scheduled for Delivery (Prior to and Including)"/>
+  <Entry name="074" value="Requested for Delivery (Prior to and Including)"/>
+  <Entry name="075" value="Promised for Delivery (Prior to and Including)"/>
+  <Entry name="076" value="Scheduled for Delivery (Week of)"/>
+  <Entry name="077" value="Requested for Delivery (Week of)"/>
+  <Entry name="078" value="Promised for Delivery (Week of)"/>
+  <Entry name="079" value="Promised for Shipment"/>
+  <Entry name="080" value="Scheduled for Shipment (After and Including)"/>
+  <Entry name="081" value="Requested for Shipment (After and Including)"/>
+  <Entry name="082" value="Promised for Shipment (After and Including)"/>
+  <Entry name="083" value="Scheduled for Shipment (Prior to and Including)"/>
+  <Entry name="084" value="Requested for Shipment (Prior to and Including)"/>
+  <Entry name="085" value="Promised for Shipment (Prior to and Including)"/>
+  <Entry name="086" value="Scheduled for Shipment (Week of)"/>
+  <Entry name="087" value="Requested for Shipment (Week of)"/>
+  <Entry name="088" value="Promised for Shipment (Week of)"/>
+  <Entry name="089" value="Inquiry"/>
+  <Entry name="090" value="Report Start"/>
+  <Entry name="091" value="Report End"/>
+  <Entry name="092" value="Contract Effective"/>
+  <Entry name="093" value="Contract Expiration"/>
+  <Entry name="094" value="Manufacture"/>
+  <Entry name="095" value="Bill of Lading"/>
+  <Entry name="096" value="Discharge"/>
+  <Entry name="097" value="Transaction Creation"/>
+  <Entry name="098" value="Bid (Effective)"/>
+  <Entry name="099" value="Bid Open (Date Bids Will Be Opened)"/>
+  <Entry name="100" value="No Shipping Schedule Established as of"/>
+  <Entry name="101" value="No Production Schedule Established as of"/>
+  <Entry name="102" value="Issue"/>
+  <Entry name="103" value="Award"/>
+  <Entry name="104" value="System Survey"/>
+  <Entry name="105" value="Quality Rating"/>
+  <Entry name="106" value="Required By"/>
+  <Entry name="107" value="Deposit"/>
+  <Entry name="108" value="Postmark"/>
+  <Entry name="109" value="Received at Lockbox"/>
+  <Entry name="110" value="Originally Scheduled Ship"/>
+  <Entry name="111" value="Manifest/Ship Notice"/>
+  <Entry name="112" value="Buyers Dock"/>
+  <Entry name="113" value="Sample Required"/>
+  <Entry name="114" value="Tooling Required"/>
+  <Entry name="115" value="Sample Available"/>
+  <Entry name="116" value="Scheduled Interchange Delivery"/>
+  <Entry name="118" value="Requested Pick-up"/>
+  <Entry name="119" value="Test Performed"/>
+  <Entry name="120" value="Control Plan"/>
+  <Entry name="121" value="Feasibility Sign Off"/>
+  <Entry name="122" value="Failure Mode Effective"/>
+  <Entry name="124" value="Group Contract Effective"/>
+  <Entry name="125" value="Group Contract Expiration"/>
+  <Entry name="126" value="Wholesale Contract Effective"/>
+  <Entry name="127" value="Wholesale Contract Expiration"/>
+  <Entry name="128" value="Replacement Effective"/>
+  <Entry name="129" value="Customer Contract Effective"/>
+  <Entry name="130" value="Customer Contract Expiration"/>
+  <Entry name="131" value="Item Contract Effective"/>
+  <Entry name="132" value="Item Contract Expiration"/>
+  <Entry name="133" value="Accounts Receivable - Statement Date"/>
+  <Entry name="134" value="Ready for Inspection"/>
+  <Entry name="135" value="Booking"/>
+  <Entry name="136" value="Technical Rating"/>
+  <Entry name="137" value="Delivery Rating"/>
+  <Entry name="138" value="Commercial Rating"/>
+  <Entry name="139" value="Estimated"/>
+  <Entry name="140" value="Actual"/>
+  <Entry name="141" value="Assigned"/>
+  <Entry name="142" value="Loss"/>
+  <Entry name="143" value="Due Date of First Payment to Principal and Interest"/>
+  <Entry name="144" value="Estimated Acceptance"/>
+  <Entry name="145" value="Opening Date"/>
+  <Entry name="146" value="Closing Date"/>
+  <Entry name="147" value="Due Date Last Complete Installment Paid"/>
+  <Entry name="148" value="Date of Local Office Approval of Conveyance of Damaged Real Estate Property"/>
+  <Entry name="149" value="Date Deed Filed for Record"/>
+  <Entry name="150" value="Service Period Start"/>
+  <Entry name="151" value="Service Period End"/>
+  <Entry name="152" value="Effective Date of Change"/>
+  <Entry name="153" value="Service Interruption"/>
+  <Entry name="154" value="Adjustment Period Start"/>
+  <Entry name="155" value="Adjustment Period End"/>
+  <Entry name="156" value="Allotment Period Start"/>
+  <Entry name="157" value="Test Period Start"/>
+  <Entry name="158" value="Test Period Ending"/>
+  <Entry name="159" value="Bid Price Exception"/>
+  <Entry name="160" value="Samples to be Returned By"/>
+  <Entry name="161" value="Loaded on Vessel"/>
+  <Entry name="162" value="Pending Archive"/>
+  <Entry name="163" value="Actual Archive"/>
+  <Entry name="164" value="First Issue"/>
+  <Entry name="165" value="Final Issue"/>
+  <Entry name="166" value="Message"/>
+  <Entry name="167" value="Most Recent Revision (or Initial Version)"/>
+  <Entry name="168" value="Release"/>
+  <Entry name="169" value="Product Availability Date"/>
+  <Entry name="170" value="Supplemental Issue"/>
+  <Entry name="171" value="Revision"/>
+  <Entry name="172" value="Correction"/>
+  <Entry name="173" value="Week Ending"/>
+  <Entry name="174" value="Month Ending"/>
+  <Entry name="175" value="Cancel if not shipped by"/>
+  <Entry name="176" value="Expedited on"/>
+  <Entry name="177" value="Cancellation"/>
+  <Entry name="178" value="Hold (as of)"/>
+  <Entry name="179" value="Hold as Stock (as of)"/>
+  <Entry name="180" value="No Promise (as of)"/>
+  <Entry name="181" value="Stop Work (as of)"/>
+  <Entry name="182" value="Will Advise (as of)"/>
+  <Entry name="183" value="Connection"/>
+  <Entry name="184" value="Inventory"/>
+  <Entry name="185" value="Vessel Registry"/>
+  <Entry name="186" value="Invoice Period Start"/>
+  <Entry name="187" value="Invoice Period End"/>
+  <Entry name="188" value="Credit Advice"/>
+  <Entry name="189" value="Debit Advice"/>
+  <Entry name="190" value="Released to Vessel"/>
+  <Entry name="191" value="Material Specification"/>
+  <Entry name="192" value="Delivery Ticket"/>
+  <Entry name="193" value="Period Start"/>
+  <Entry name="194" value="Period End"/>
+  <Entry name="195" value="Contract Re-Open"/>
+  <Entry name="196" value="Start"/>
+  <Entry name="197" value="End"/>
+  <Entry name="198" value="Completion"/>
+  <Entry name="199" value="Seal"/>
+  <Entry name="200" value="Assembly Start"/>
+  <Entry name="201" value="Acceptance"/>
+  <Entry name="202" value="Master Lease Agreement"/>
+  <Entry name="203" value="First Produced"/>
+  <Entry name="204" value="Official Rail Car Interchange (Either Actual or Agreed Upon)"/>
+  <Entry name="205" value="Transmitted"/>
+  <Entry name="206" value="Status (Outside Processor)"/>
+  <Entry name="207" value="Status (Commercial)"/>
+  <Entry name="208" value="Lot Number Expiration"/>
+  <Entry name="209" value="Contract Performance Start"/>
+  <Entry name="210" value="Contract Performance Delivery"/>
+  <Entry name="211" value="Service Requested"/>
+  <Entry name="212" value="Returned to Customer"/>
+  <Entry name="213" value="Adjustment to Bill Dated"/>
+  <Entry name="214" value="Date of Repair/Service"/>
+  <Entry name="215" value="Interruption Start"/>
+  <Entry name="216" value="Interruption End"/>
+  <Entry name="217" value="Spud"/>
+  <Entry name="218" value="Initial Completion"/>
+  <Entry name="219" value="Plugged and Abandoned"/>
+  <Entry name="220" value="Penalty"/>
+  <Entry name="221" value="Penalty Begin"/>
+  <Entry name="222" value="Birth"/>
+  <Entry name="223" value="Birth Certificate"/>
+  <Entry name="224" value="Adoption"/>
+  <Entry name="225" value="Christening"/>
+  <Entry name="226" value="Lease Commencement"/>
+  <Entry name="227" value="Lease Term Start"/>
+  <Entry name="228" value="Lease Term End"/>
+  <Entry name="229" value="Rent Start"/>
+  <Entry name="230" value="Installation"/>
+  <Entry name="231" value="Progress Payment"/>
+  <Entry name="232" value="Claim Statement Period Start"/>
+  <Entry name="233" value="Claim Statement Period End"/>
+  <Entry name="234" value="Settlement Date"/>
+  <Entry name="235" value="Delayed Billing (Not Delayed Payment)"/>
+  <Entry name="236" value="Lender Credit Check"/>
+  <Entry name="237" value="Student Signed"/>
+  <Entry name="238" value="Schedule Release"/>
+  <Entry name="239" value="Baseline"/>
+  <Entry name="240" value="Baseline Start"/>
+  <Entry name="241" value="Baseline Complete"/>
+  <Entry name="242" value="Actual Start"/>
+  <Entry name="243" value="Actual Complete"/>
+  <Entry name="244" value="Estimated Start"/>
+  <Entry name="245" value="Estimated Completion"/>
+  <Entry name="246" value="Start no earlier than"/>
+  <Entry name="247" value="Start no later than"/>
+  <Entry name="248" value="Finish no later than"/>
+  <Entry name="249" value="Finish no earlier than"/>
+  <Entry name="250" value="Mandatory (or Target) Start"/>
+  <Entry name="251" value="Mandatory (or Target) Finish"/>
+  <Entry name="252" value="Early Start"/>
+  <Entry name="253" value="Early Finish"/>
+  <Entry name="254" value="Late Start"/>
+  <Entry name="255" value="Late Finish"/>
+  <Entry name="256" value="Scheduled Start"/>
+  <Entry name="257" value="Scheduled Finish"/>
+  <Entry name="258" value="Original Early Start"/>
+  <Entry name="259" value="Original Early Finish"/>
+  <Entry name="260" value="Rest Day"/>
+  <Entry name="261" value="Rest Start"/>
+  <Entry name="262" value="Rest Finish"/>
+  <Entry name="263" value="Holiday"/>
+  <Entry name="264" value="Holiday Start"/>
+  <Entry name="265" value="Holiday Finish"/>
+  <Entry name="266" value="Base"/>
+  <Entry name="267" value="Timenow"/>
+  <Entry name="268" value="End Date of Support"/>
+  <Entry name="269" value="Date Account Matures"/>
+  <Entry name="270" value="Date Filed"/>
+  <Entry name="271" value="Penalty End"/>
+  <Entry name="272" value="Exit Plant Date"/>
+  <Entry name="273" value="Latest On Board Carrier Date"/>
+  <Entry name="274" value="Requested Departure Date"/>
+  <Entry name="275" value="Approved"/>
+  <Entry name="276" value="Contract Start"/>
+  <Entry name="277" value="Contract Definition"/>
+  <Entry name="278" value="Last Item Delivery"/>
+  <Entry name="279" value="Contract Completion"/>
+  <Entry name="280" value="Date Course of Orthodontics Treatment Began or is Expected to Begin"/>
+  <Entry name="281" value="Over Target Baseline Month"/>
+  <Entry name="282" value="Previous Report"/>
+  <Entry name="283" value="Funds Appropriation - Start"/>
+  <Entry name="284" value="Funds Appropriation - End"/>
+  <Entry name="285" value="Employment or Hire"/>
+  <Entry name="286" value="Retirement"/>
+  <Entry name="287" value="Medicare"/>
+  <Entry name="288" value="Consolidated Omnibus Budget Reconciliation Act (COBRA)"/>
+  <Entry name="289" value="Premium Paid to Date"/>
+  <Entry name="290" value="Coordination of Benefits"/>
+  <Entry name="291" value="Plan"/>
+  <Entry name="292" value="Benefit"/>
+  <Entry name="293" value="Education"/>
+  <Entry name="294" value="Earnings Effective Date"/>
+  <Entry name="295" value="Primary Care Provider"/>
+  <Entry name="296" value="Initial Disability Period Return To Work"/>
+  <Entry name="297" value="Initial Disability Period Last Day Worked"/>
+  <Entry name="298" value="Latest Absence"/>
+  <Entry name="299" value="Illness"/>
+  <Entry name="300" value="Enrollment Signature Date"/>
+  <Entry name="301" value="Consolidated Omnibus Budget Reconciliation Act (COBRA) Qualifying Event"/>
+  <Entry name="302" value="Maintenance"/>
+  <Entry name="303" value="Maintenance Effective"/>
+  <Entry name="304" value="Latest Visit or Consultation"/>
+  <Entry name="305" value="Net Credit Service Date"/>
+  <Entry name="306" value="Adjustment Effective Date"/>
+  <Entry name="307" value="Eligibility"/>
+  <Entry name="308" value="Pre-Award Survey"/>
+  <Entry name="309" value="Plan Termination"/>
+  <Entry name="310" value="Date of Closing"/>
+  <Entry name="311" value="Latest Receiving Date/Cutoff Date"/>
+  <Entry name="312" value="Salary Deferral"/>
+  <Entry name="313" value="Cycle"/>
+  <Entry name="314" value="Disability"/>
+  <Entry name="315" value="Offset"/>
+  <Entry name="316" value="Prior Incorrect Date of Birth"/>
+  <Entry name="317" value="Corrected Date of Birth"/>
+  <Entry name="318" value="Added"/>
+  <Entry name="319" value="Failed"/>
+  <Entry name="320" value="Date Foreclosure Proceedings Instituted"/>
+  <Entry name="321" value="Purchased"/>
+  <Entry name="322" value="Put into Service"/>
+  <Entry name="323" value="Replaced"/>
+  <Entry name="324" value="Returned"/>
+  <Entry name="325" value="Disbursement Date"/>
+  <Entry name="326" value="Guarantee Date"/>
+  <Entry name="327" value="Quarter Ending"/>
+  <Entry name="328" value="Changed"/>
+  <Entry name="329" value="Terminated"/>
+  <Entry name="330" value="Referral Date"/>
+  <Entry name="331" value="Evaluation Date"/>
+  <Entry name="332" value="Placement Date"/>
+  <Entry name="333" value="Individual Education Plan (IEP)"/>
+  <Entry name="334" value="Re-evaluation Date"/>
+  <Entry name="335" value="Dismissal Date"/>
+  <Entry name="336" value="Employment Begin"/>
+  <Entry name="337" value="Employment End"/>
+  <Entry name="338" value="Medicare Begin"/>
+  <Entry name="339" value="Medicare End"/>
+  <Entry name="340" value="Consolidated Omnibus Budget Reconciliation Act (COBRA) Begin"/>
+  <Entry name="341" value="Consolidated Omnibus Budget Reconciliation Act (COBRA) End"/>
+  <Entry name="342" value="Premium Paid to Date Begin"/>
+  <Entry name="343" value="Premium Paid to Date End"/>
+  <Entry name="344" value="Coordination of Benefits Begin"/>
+  <Entry name="345" value="Coordination of Benefits End"/>
+  <Entry name="346" value="Plan Begin"/>
+  <Entry name="347" value="Plan End"/>
+  <Entry name="348" value="Benefit Begin"/>
+  <Entry name="349" value="Benefit End"/>
+  <Entry name="350" value="Education Begin"/>
+  <Entry name="351" value="Education End"/>
+  <Entry name="352" value="Primary Care Provider Begin"/>
+  <Entry name="353" value="Primary Care Provider End"/>
+  <Entry name="354" value="Illness Begin"/>
+  <Entry name="355" value="Illness End"/>
+  <Entry name="356" value="Eligibility Begin"/>
+  <Entry name="357" value="Eligibility End"/>
+  <Entry name="358" value="Cycle Begin"/>
+  <Entry name="359" value="Cycle End"/>
+  <Entry name="360" value="Initial Disability Period Start"/>
+  <Entry name="361" value="Initial Disability Period End"/>
+  <Entry name="362" value="Offset Begin"/>
+  <Entry name="363" value="Offset End"/>
+  <Entry name="364" value="Plan Period Election Begin"/>
+  <Entry name="365" value="Plan Period Election End"/>
+  <Entry name="366" value="Plan Period Election"/>
+  <Entry name="367" value="Due to Customer"/>
+  <Entry name="368" value="Submittal"/>
+  <Entry name="369" value="Estimated Departure Date"/>
+  <Entry name="370" value="Actual Departure Date"/>
+  <Entry name="371" value="Estimated Arrival Date"/>
+  <Entry name="372" value="Actual Arrival Date"/>
+  <Entry name="373" value="Order Start"/>
+  <Entry name="374" value="Order End"/>
+  <Entry name="375" value="Delivery Start"/>
+  <Entry name="376" value="Delivery End"/>
+  <Entry name="377" value="Contract Costs Through"/>
+  <Entry name="378" value="Financial Information Submission"/>
+  <Entry name="379" value="Business Termination"/>
+  <Entry name="380" value="Applicant Signed"/>
+  <Entry name="381" value="Cosigner Signed"/>
+  <Entry name="382" value="Enrollment"/>
+  <Entry name="383" value="Adjusted Hire"/>
+  <Entry name="384" value="Credited Service"/>
+  <Entry name="385" value="Credited Service Begin"/>
+  <Entry name="386" value="Credited Service End"/>
+  <Entry name="387" value="Deferred Distribution"/>
+  <Entry name="388" value="Payment Commencement"/>
+  <Entry name="389" value="Payroll Period"/>
+  <Entry name="390" value="Payroll Period Begin"/>
+  <Entry name="391" value="Payroll Period End"/>
+  <Entry name="392" value="Plan Entry"/>
+  <Entry name="393" value="Plan Participation Suspension"/>
+  <Entry name="394" value="Rehire"/>
+  <Entry name="395" value="Retermination"/>
+  <Entry name="396" value="Termination"/>
+  <Entry name="397" value="Valuation"/>
+  <Entry name="398" value="Vesting Service"/>
+  <Entry name="399" value="Vesting Service Begin"/>
+  <Entry name="400" value="Vesting Service End"/>
+  <Entry name="401" value="Duplicate Bill"/>
+  <Entry name="402" value="Adjustment Promised"/>
+  <Entry name="403" value="Adjustment Processed"/>
+  <Entry name="404" value="Year Ending"/>
+  <Entry name="405" value="Production"/>
+  <Entry name="406" value="Material Classification"/>
+  <Entry name="408" value="Weighed"/>
+  <Entry name="409" value="Date of Deed in Lieu"/>
+  <Entry name="410" value="Date of Firm Commitment"/>
+  <Entry name="411" value="Expiration Date of Extension to Foreclose"/>
+  <Entry name="412" value="Date of Notice to Convey"/>
+  <Entry name="413" value="Date of Release of Bankruptcy"/>
+  <Entry name="414" value="Optimistic Early Start"/>
+  <Entry name="415" value="Optimistic Early Finish"/>
+  <Entry name="416" value="Optimistic Late Start"/>
+  <Entry name="417" value="Optimistic Late Finish"/>
+  <Entry name="418" value="Most Likely Early Start"/>
+  <Entry name="419" value="Most Likely Early Finish"/>
+  <Entry name="420" value="Most Likely Late Start"/>
+  <Entry name="421" value="Most Likely Late Finish"/>
+  <Entry name="422" value="Pessimistic Early Start"/>
+  <Entry name="423" value="Pessimistic Early Finish"/>
+  <Entry name="424" value="Pessimistic Late Start"/>
+  <Entry name="425" value="Pessimistic Late Finish"/>
+  <Entry name="426" value="First Payment Due"/>
+  <Entry name="427" value="First Interest Payment Due"/>
+  <Entry name="428" value="Subsequent Interest Payment Due"/>
+  <Entry name="429" value="Irregular Interest Payment Due"/>
+  <Entry name="430" value="Guarantor Received"/>
+  <Entry name="431" value="Onset of Current Symptoms or Illness"/>
+  <Entry name="432" value="Submission"/>
+  <Entry name="433" value="Removed"/>
+  <Entry name="434" value="Statement"/>
+  <Entry name="435" value="Admission"/>
+  <Entry name="436" value="Insurance Card"/>
+  <Entry name="437" value="Spouse Retirement"/>
+  <Entry name="438" value="Onset of Similar Symptoms or Illness"/>
+  <Entry name="439" value="Accident"/>
+  <Entry name="440" value="Release of Information"/>
+  <Entry name="441" value="Prior Placement"/>
+  <Entry name="442" value="Date of Death"/>
+  <Entry name="443" value="Peer Review Organization (PRO) Approved Stay"/>
+  <Entry name="444" value="First Visit or Consultation"/>
+  <Entry name="445" value="Initial Placement"/>
+  <Entry name="446" value="Replacement"/>
+  <Entry name="447" value="Occurrence"/>
+  <Entry name="448" value="Occurrence Span"/>
+  <Entry name="449" value="Occurrence Span From"/>
+  <Entry name="450" value="Occurrence Span To"/>
+  <Entry name="451" value="Initial Fee Due"/>
+  <Entry name="452" value="Appliance Placement"/>
+  <Entry name="453" value="Acute Manifestation of a Chronic Condition"/>
+  <Entry name="454" value="Initial Treatment"/>
+  <Entry name="455" value="Last X-Ray"/>
+  <Entry name="456" value="Surgery"/>
+  <Entry name="457" value="Continuous Passive Motion (CPM)"/>
+  <Entry name="458" value="Certification"/>
+  <Entry name="459" value="Nursing Home From"/>
+  <Entry name="460" value="Nursing Home To"/>
+  <Entry name="461" value="Last Certification"/>
+  <Entry name="462" value="Date of Local Office Approval of Conveyance of Occupied Real Estate Property"/>
+  <Entry name="463" value="Begin Therapy"/>
+  <Entry name="464" value="Oxygen Therapy From"/>
+  <Entry name="465" value="Oxygen Therapy To"/>
+  <Entry name="466" value="Oxygen Therapy"/>
+  <Entry name="467" value="Signature"/>
+  <Entry name="468" value="Prescription Fill"/>
+  <Entry name="469" value="Provider Signature"/>
+  <Entry name="470" value="Date of Local Office Certification of Conveyance of Damaged Real Estate Property"/>
+  <Entry name="471" value="Prescription"/>
+  <Entry name="472" value="Service"/>
+  <Entry name="473" value="Medicaid Begin"/>
+  <Entry name="474" value="Medicaid End"/>
+  <Entry name="475" value="Medicaid"/>
+  <Entry name="476" value="Peer Review Organization (PRO) Approved Stay From"/>
+  <Entry name="477" value="Peer Review Organization (PRO) Approved Stay To"/>
+  <Entry name="478" value="Prescription From"/>
+  <Entry name="479" value="Prescription To"/>
+  <Entry name="480" value="Arterial Blood Gas Test"/>
+  <Entry name="481" value="Oxygen Saturation Test"/>
+  <Entry name="482" value="Pregnancy Begin"/>
+  <Entry name="483" value="Pregnancy End"/>
+  <Entry name="484" value="Last Menstrual Period"/>
+  <Entry name="485" value="Injury Begin"/>
+  <Entry name="486" value="Injury End"/>
+  <Entry name="487" value="Nursing Home"/>
+  <Entry name="488" value="Collateral Dependent"/>
+  <Entry name="489" value="Collateral Dependent Begin"/>
+  <Entry name="490" value="Collateral Dependent End"/>
+  <Entry name="491" value="Sponsored Dependent"/>
+  <Entry name="492" value="Sponsored Dependent Begin"/>
+  <Entry name="493" value="Sponsored Dependent End"/>
+  <Entry name="494" value="Deductible"/>
+  <Entry name="495" value="Out-of-Pocket"/>
+  <Entry name="496" value="Contract Audit Date"/>
+  <Entry name="497" value="Latest Delivery Date at Pier"/>
+  <Entry name="498" value="Mortgagee Reported Curtailment Date"/>
+  <Entry name="499" value="Mortgagee Official Signature Date"/>
+  <Entry name="500" value="Resubmission"/>
+  <Entry name="501" value="Expected Reply"/>
+  <Entry name="502" value="Dropped to Less than Half Time"/>
+  <Entry name="503" value="Repayment Begin"/>
+  <Entry name="504" value="Loan Servicing Transfer"/>
+  <Entry name="505" value="Loan Purchase"/>
+  <Entry name="506" value="Last Notification"/>
+  <Entry name="507" value="Extract"/>
+  <Entry name="508" value="Extended"/>
+  <Entry name="509" value="Servicer Signature Date"/>
+  <Entry name="510" value="Date Packed"/>
+  <Entry name="511" value="Shelf Life Expiration"/>
+  <Entry name="512" value="Warranty Expiration"/>
+  <Entry name="513" value="Overhauled"/>
+  <Entry name="514" value="Transferred"/>
+  <Entry name="515" value="Notified"/>
+  <Entry name="516" value="Discovered"/>
+  <Entry name="517" value="Inspected"/>
+  <Entry name="518" value="Voucher (Date of)"/>
+  <Entry name="519" value="Date Bankruptcy Filed"/>
+  <Entry name="520" value="Date of Damage"/>
+  <Entry name="521" value="Date Hazard Insurance Policy Cancelled"/>
+  <Entry name="522" value="Expiration Date to Submit Title Evidence"/>
+  <Entry name="523" value="Date of Claim"/>
+  <Entry name="524" value="Date of Notice of Referral for Assignment"/>
+  <Entry name="525" value="Date of Notice of Probable Ineligibility for Assignment"/>
+  <Entry name="526" value="Date of Foreclosure Notice"/>
+  <Entry name="527" value="Expiration of Foreclosure Timeframe"/>
+  <Entry name="528" value="Date Possessory Action Initiated"/>
+  <Entry name="529" value="Date of Possession"/>
+  <Entry name="530" value="Date of Last Installment Received"/>
+  <Entry name="531" value="Date of Acquisition of Title"/>
+  <Entry name="532" value="Expiration of Extension to Convey"/>
+  <Entry name="533" value="Date of Assignment Approval"/>
+  <Entry name="534" value="Date of Assignment Rejection"/>
+  <Entry name="535" value="Curtailment Date from Advice of Payment"/>
+  <Entry name="536" value="Expiration of Extension to Submit Fiscal Data"/>
+  <Entry name="537" value="Date Documentation, or Paperwork, or Both Was Sent"/>
+  <Entry name="538" value="Makegood Commercial Date"/>
+  <Entry name="539" value="Policy Effective"/>
+  <Entry name="540" value="Policy Expiration"/>
+  <Entry name="541" value="Employee Effective Date of Coverage"/>
+  <Entry name="542" value="Claim Administrator Notified of Employee Legal Representation"/>
+  <Entry name="543" value="Last Premium Paid Date"/>
+  <Entry name="544" value="Employer Knowledge of the Injury"/>
+  <Entry name="545" value="Claim Administrator Knowledge of the Injury"/>
+  <Entry name="546" value="Date of Maximum Medical Improvement"/>
+  <Entry name="547" value="Date of Loan"/>
+  <Entry name="548" value="Date of Advance"/>
+  <Entry name="549" value="Beginning Lay Date"/>
+  <Entry name="550" value="Certificate Effective"/>
+  <Entry name="551" value="Benefit Application Date"/>
+  <Entry name="552" value="Actual Return to Work"/>
+  <Entry name="553" value="Released Return to Work"/>
+  <Entry name="554" value="Ending Lay Date"/>
+  <Entry name="555" value="Employee Wages Ceased"/>
+  <Entry name="556" value="Last Salary Increase"/>
+  <Entry name="557" value="Employee Laid Off"/>
+  <Entry name="558" value="Injury or Illness"/>
+  <Entry name="559" value="Oldest Unpaid Installment"/>
+  <Entry name="560" value="Preforeclosure Acceptance Date"/>
+  <Entry name="561" value="Preforeclosure Sale Closing Date"/>
+  <Entry name="562" value="Date of First Uncured Default"/>
+  <Entry name="563" value="Date Default Was Cured"/>
+  <Entry name="564" value="Date of First Mortgage Payment"/>
+  <Entry name="565" value="Date of Property Inspection"/>
+  <Entry name="566" value="Date Total Amount of Delinquency Reported"/>
+  <Entry name="567" value="Date Outstanding Loan Balance Reported"/>
+  <Entry name="568" value="Date Foreclosure Sale Scheduled"/>
+  <Entry name="569" value="Date Foreclosure Held"/>
+  <Entry name="570" value="Date Redemption Period Ends"/>
+  <Entry name="571" value="Date Voluntary Conveyance Accepted"/>
+  <Entry name="572" value="Date Property Sold"/>
+  <Entry name="573" value="Date Claim Paid"/>
+  <Entry name="574" value="Action Begin Date"/>
+  <Entry name="575" value="Projected Action End Date"/>
+  <Entry name="576" value="Action End Date"/>
+  <Entry name="577" value="Original Maturity Date"/>
+  <Entry name="578" value="Date Referred to Attorney for Foreclosure"/>
+  <Entry name="579" value="Planned Release"/>
+  <Entry name="580" value="Actual Release"/>
+  <Entry name="581" value="Contract Period"/>
+  <Entry name="582" value="Report Period"/>
+  <Entry name="583" value="Suspension"/>
+  <Entry name="584" value="Reinstatement"/>
+  <Entry name="585" value="Report"/>
+  <Entry name="586" value="First Contact"/>
+  <Entry name="587" value="Projected Foreclosure Sale Date"/>
+  <Entry name="589" value="Date Assignment Filed for Record"/>
+  <Entry name="590" value="Date of Appraisal"/>
+  <Entry name="591" value="Expiration Date of Extension to Assign"/>
+  <Entry name="592" value="Date of Extension to Convey"/>
+  <Entry name="593" value="Date Hazard Insurance Policy Refused"/>
+  <Entry name="594" value="High Fabrication Release Authorization"/>
+  <Entry name="595" value="High Raw Material Authorization"/>
+  <Entry name="596" value="Material Change Notice"/>
+  <Entry name="597" value="Latest Delivery Date at Rail Ramp"/>
+  <Entry name="598" value="Rejected"/>
+  <Entry name="599" value="Repayment Schedule Sent"/>
+  <Entry name="600" value="As Of"/>
+  <Entry name="601" value="First Submission"/>
+  <Entry name="602" value="Subsequent Submission"/>
+  <Entry name="603" value="Renewal"/>
+  <Entry name="604" value="Withdrawn"/>
+  <Entry name="606" value="Certification Period Start"/>
+  <Entry name="607" value="Certification Revision"/>
+  <Entry name="608" value="Continuous Coverage Date(s)"/>
+  <Entry name="609" value="Prearranged Deal Match"/>
+  <Entry name="610" value="Contingency End"/>
+  <Entry name="611" value="Oxygen Therapy Evaluation"/>
+  <Entry name="612" value="Shut In"/>
+  <Entry name="613" value="Allowable Effective"/>
+  <Entry name="614" value="First Sales"/>
+  <Entry name="615" value="Date Acquired"/>
+  <Entry name="616" value="Interviewer Signed"/>
+  <Entry name="617" value="Application Logged Date"/>
+  <Entry name="618" value="Review Date"/>
+  <Entry name="619" value="Decision Date"/>
+  <Entry name="620" value="Previously Resided"/>
+  <Entry name="621" value="Reported"/>
+  <Entry name="622" value="Checked"/>
+  <Entry name="623" value="Settled"/>
+  <Entry name="624" value="Presently Residing"/>
+  <Entry name="625" value="Employed in this Position"/>
+  <Entry name="626" value="Verified"/>
+  <Entry name="627" value="Second Admission Date"/>
+  <Entry name="629" value="Account Opened"/>
+  <Entry name="630" value="Account Closed"/>
+  <Entry name="631" value="Property Acquired"/>
+  <Entry name="632" value="Property Built"/>
+  <Entry name="633" value="Employed in this Profession"/>
+  <Entry name="634" value="Next Review Date"/>
+  <Entry name="635" value="Initial Contact Date"/>
+  <Entry name="636" value="Date of Last Update"/>
+  <Entry name="637" value="Second Discharge Date"/>
+  <Entry name="638" value="Date of Last Draw"/>
+  <Entry name="640" value="Complaint"/>
+  <Entry name="641" value="Option"/>
+  <Entry name="642" value="Solicitation"/>
+  <Entry name="643" value="Clause"/>
+  <Entry name="644" value="Meeting"/>
+  <Entry name="646" value="Rental Period"/>
+  <Entry name="647" value="Next Pay Increase"/>
+  <Entry name="648" value="Period Covered by Source Documents"/>
+  <Entry name="649" value="Document Due"/>
+  <Entry name="650" value="Court Notice"/>
+  <Entry name="651" value="Expected Funding Date"/>
+  <Entry name="652" value="Assignment Recorded"/>
+  <Entry name="653" value="Case Reopened"/>
+  <Entry name="655" value="Previous Court Event"/>
+  <Entry name="656" value="Last Date to Object"/>
+  <Entry name="657" value="Court Event"/>
+  <Entry name="658" value="Last Date to File a Claim"/>
+  <Entry name="659" value="Case Converted"/>
+  <Entry name="660" value="Debt Incurred"/>
+  <Entry name="661" value="Judgment"/>
+  <Entry name="662" value="Wages Start"/>
+  <Entry name="663" value="Wages End"/>
+  <Entry name="664" value="Date Through Which Property Taxes Have Been Paid"/>
+  <Entry name="665" value="Paid Through Date"/>
+  <Entry name="666" value="Date Paid"/>
+  <Entry name="667" value="Anesthesia Administration"/>
+  <Entry name="668" value="Price Protection"/>
+  <Entry name="669" value="Claim Incurred"/>
+  <Entry name="670" value="Book Entry Delivery"/>
+  <Entry name="671" value="Rate Adjustment"/>
+  <Entry name="672" value="Next Installment Due Date"/>
+  <Entry name="673" value="Daylight Overdraft Time"/>
+  <Entry name="674" value="Presentment Date"/>
+  <Entry name="675" value="Negotiated Extension Date"/>
+  <Entry name="681" value="Remittance"/>
+  <Entry name="682" value="Security Rate Adjustment"/>
+  <Entry name="683" value="Filing Period"/>
+  <Entry name="684" value="Review Period End"/>
+  <Entry name="685" value="Requested Settlement"/>
+  <Entry name="686" value="Last Screening"/>
+  <Entry name="687" value="Confinement"/>
+  <Entry name="688" value="Arrested"/>
+  <Entry name="689" value="Convicted"/>
+  <Entry name="690" value="Interviewed"/>
+  <Entry name="691" value="Last Visit"/>
+  <Entry name="692" value="Recovery"/>
+  <Entry name="693" value="Time in U.S."/>
+  <Entry name="694" value="Future Period"/>
+  <Entry name="695" value="Previous Period"/>
+  <Entry name="696" value="Interest Paid To"/>
+  <Entry name="697" value="Date of Seizure"/>
+  <Entry name="699" value="Setoff"/>
+  <Entry name="700" value="Override Date for Settlement"/>
+  <Entry name="701" value="Settlement Date (From Interline Settlement System (ISS) only)"/>
+  <Entry name="702" value="Sending Road Time Stamp"/>
+  <Entry name="703" value="Retransmission Time Stamp"/>
+  <Entry name="704" value="Delivery Appointment Date and Time"/>
+  <Entry name="705" value="Interest Paid Through"/>
+  <Entry name="706" value="Date Material Usage Suspended"/>
+  <Entry name="707" value="Last Payment Made"/>
+  <Entry name="708" value="Past Due"/>
+  <Entry name="709" value="Analysis Month Ending"/>
+  <Entry name="710" value="Date of Specification"/>
+  <Entry name="711" value="Date of Standard"/>
+  <Entry name="712" value="Return to Work Part Time"/>
+  <Entry name="713" value="Paid-through Date for Salary Continuation"/>
+  <Entry name="714" value="Paid-through Date for Vacation Pay"/>
+  <Entry name="715" value="Paid-through Date for Accrued Sick Pay"/>
+  <Entry name="716" value="Appraisal Ordered"/>
+  <Entry name="717" value="Date of Operation"/>
+  <Entry name="718" value="Best Time to Call"/>
+  <Entry name="719" value="Verbal Report Needed"/>
+  <Entry name="720" value="Estimated Escrow Closing"/>
+  <Entry name="721" value="Permit Year"/>
+  <Entry name="722" value="Remodeling Completed"/>
+  <Entry name="723" value="Current Month Ending"/>
+  <Entry name="724" value="Previous Month Ending"/>
+  <Entry name="725" value="Cycle to Date"/>
+  <Entry name="726" value="Year to Date"/>
+  <Entry name="727" value="On Hold"/>
+  <Entry name="728" value="Off Hold"/>
+  <Entry name="729" value="Facsimile Due By"/>
+  <Entry name="730" value="Reporting Cycle Date"/>
+  <Entry name="731" value="Last Paid Installment Date"/>
+  <Entry name="732" value="Claims Made"/>
+  <Entry name="733" value="Date of Last Payment Received"/>
+  <Entry name="734" value="Curtailment Date"/>
+  <Entry name="736" value="Pool Settlement"/>
+  <Entry name="737" value="Next Interest Change Date"/>
+  <Entry name="738" value="Most Recent Hemoglobin or Hematocrit or Both"/>
+  <Entry name="739" value="Most Recent Serum Creatine"/>
+  <Entry name="740" value="Closed"/>
+  <Entry name="741" value="Therapy"/>
+  <Entry name="742" value="Implantation"/>
+  <Entry name="743" value="Explantation"/>
+  <Entry name="744" value="Date Became Aware"/>
+  <Entry name="745" value="First Marketed"/>
+  <Entry name="746" value="Last Marketed"/>
+  <Entry name="747" value="New Due Date of First Payment to Principal and Interest"/>
+  <Entry name="748" value="New Maturity Date"/>
+  <Entry name="749" value="Current"/>
+  <Entry name="750" value="Expected Problem Resolution"/>
+  <Entry name="751" value="Alternate Problem Resolution"/>
+  <Entry name="752" value="Fee Capitalization"/>
+  <Entry name="753" value="Interest Capitalization"/>
+  <Entry name="754" value="Next Payment Due"/>
+  <Entry name="755" value="Conversion to Repayment"/>
+  <Entry name="756" value="End of Grace"/>
+  <Entry name="757" value="School Refund"/>
+  <Entry name="758" value="Simple Interest Due"/>
+  <Entry name="759" value="Date Practice Ceased"/>
+  <Entry name="760" value="Printed"/>
+  <Entry name="761" value="Date Practice Established"/>
+  <Entry name="762" value="Drop Action Date"/>
+  <Entry name="764" value="Most Recent Renewal"/>
+  <Entry name="765" value="Original"/>
+  <Entry name="766" value="Outside Auditor's Report"/>
+  <Entry name="769" value="Pre-certification Date"/>
+  <Entry name="770" value="Back on Market"/>
+  <Entry name="771" value="Status"/>
+  <Entry name="772" value="Benefit Adjustment Start"/>
+  <Entry name="773" value="Off-Market"/>
+  <Entry name="774" value="Tour"/>
+  <Entry name="775" value="Benefit Adjustment End"/>
+  <Entry name="776" value="Listing Received"/>
+  <Entry name="777" value="Benefit Adjustment Period"/>
+  <Entry name="778" value="Anticipated Closing"/>
+  <Entry name="779" value="Last Publication"/>
+  <Entry name="780" value="Sold Book Publication"/>
+  <Entry name="781" value="Occupancy"/>
+  <Entry name="782" value="Contingency"/>
+  <Entry name="783" value="Percolation Test"/>
+  <Entry name="784" value="Septic Approval"/>
+  <Entry name="785" value="Title Transfer"/>
+  <Entry name="786" value="Open House"/>
+  <Entry name="787" value="Benefit Credit Period"/>
+  <Entry name="788" value="Benefit Transfer Period"/>
+  <Entry name="789" value="Homestead"/>
+  <Entry name="790" value="Sanction"/>
+  <Entry name="791" value="Tail Coverage Begin"/>
+  <Entry name="792" value="Tail Coverage End"/>
+  <Entry name="793" value="Training Begin"/>
+  <Entry name="794" value="Training End"/>
+  <Entry name="795" value="Verification Received"/>
+  <Entry name="796" value="Verification Sent"/>
+  <Entry name="797" value="State Residency Date"/>
+  <Entry name="798" value="Effective Date of the Routing File"/>
+  <Entry name="799" value="Test Data Analysis"/>
+  <Entry name="800" value="Midpoint of Performance"/>
+  <Entry name="801" value="Acquisition Date"/>
+  <Entry name="802" value="Date of Action"/>
+  <Entry name="803" value="Paid in Full"/>
+  <Entry name="804" value="Refinance"/>
+  <Entry name="805" value="Voluntary Termination"/>
+  <Entry name="806" value="Customer Order"/>
+  <Entry name="807" value="Stored"/>
+  <Entry name="808" value="Selected"/>
+  <Entry name="809" value="Posted"/>
+  <Entry name="810" value="Document Received"/>
+  <Entry name="811" value="Rebuilt"/>
+  <Entry name="812" value="Marriage"/>
+  <Entry name="813" value="Customs Entry Date"/>
+  <Entry name="814" value="Payment Due Date"/>
+  <Entry name="815" value="Maturity Date"/>
+  <Entry name="816" value="Trade Date"/>
+  <Entry name="817" value="Gallons Per Minute (GPM) Test Performed"/>
+  <Entry name="818" value="British Thermal Unit (BTU) Test Performed"/>
+  <Entry name="819" value="Last Accounts Filed at Public Registration Agency"/>
+  <Entry name="820" value="Real Estate Tax Year"/>
+  <Entry name="821" value="Final Reconciliation Value Estimate as of"/>
+  <Entry name="822" value="Map"/>
+  <Entry name="823" value="Opinion"/>
+  <Entry name="824" value="Version"/>
+  <Entry name="825" value="Original Due Date"/>
+  <Entry name="826" value="Incumbency Period"/>
+  <Entry name="827" value="Audience Deficiency Period"/>
+  <Entry name="828" value="Aired Date"/>
+  <Entry name="830" value="Schedule"/>
+  <Entry name="831" value="Paid Through Date for Minimum Payment"/>
+  <Entry name="832" value="Paid Through Date for Total Payment"/>
+  <Entry name="840" value="Election"/>
+  <Entry name="841" value="Engineering Data List"/>
+  <Entry name="842" value="Last Production"/>
+  <Entry name="843" value="Not Before"/>
+  <Entry name="844" value="Not After"/>
+  <Entry name="845" value="Initial Claim"/>
+  <Entry name="846" value="Benefits Paid"/>
+  <Entry name="847" value="Wages Earned"/>
+  <Entry name="848" value="Adjusted Start"/>
+  <Entry name="849" value="Adjusted End"/>
+  <Entry name="850" value="Revised Adjusted Start"/>
+  <Entry name="851" value="Revised Adjusted End"/>
+  <Entry name="853" value="Field Test"/>
+  <Entry name="854" value="Mortgage Note Date"/>
+  <Entry name="855" value="Alternative Due Date"/>
+  <Entry name="856" value="First Payment Change"/>
+  <Entry name="857" value="First Rate Adjustment"/>
+  <Entry name="858" value="Alternate Base Period"/>
+  <Entry name="859" value="Prior Notice"/>
+  <Entry name="860" value="Appointment Effective"/>
+  <Entry name="861" value="Appointment Expiration"/>
+  <Entry name="862" value="Company Termination"/>
+  <Entry name="863" value="Continuing Education Requirement"/>
+  <Entry name="864" value="Distributor Effective"/>
+  <Entry name="865" value="Distributor Termination"/>
+  <Entry name="866" value="Examination"/>
+  <Entry name="867" value="Incorporation Dissolution"/>
+  <Entry name="868" value="Last Follow-up"/>
+  <Entry name="869" value="License Effective"/>
+  <Entry name="870" value="License Expiration"/>
+  <Entry name="871" value="License Renewal"/>
+  <Entry name="872" value="License Requested"/>
+  <Entry name="873" value="Mailed"/>
+  <Entry name="874" value="Paperwork Mailed"/>
+  <Entry name="875" value="Previous Employment"/>
+  <Entry name="876" value="Previous Employment End"/>
+  <Entry name="877" value="Previous Employment Start"/>
+  <Entry name="878" value="Previous Residence"/>
+  <Entry name="879" value="Previous Residence End"/>
+  <Entry name="880" value="Previous Residence Start"/>
+  <Entry name="881" value="Request"/>
+  <Entry name="882" value="Resident License Effective"/>
+  <Entry name="883" value="Resident License Expiration"/>
+  <Entry name="884" value="State Termination"/>
+  <Entry name="885" value="Texas Line Termination"/>
+  <Entry name="900" value="Acceleration"/>
+  <Entry name="901" value="Adjusted Contestability"/>
+  <Entry name="903" value="Application Entry"/>
+  <Entry name="904" value="Approval/Offer"/>
+  <Entry name="905" value="Automatic Premium Loan"/>
+  <Entry name="906" value="Collection"/>
+  <Entry name="907" value="Confinement End"/>
+  <Entry name="908" value="Confinement Start"/>
+  <Entry name="909" value="Contestability"/>
+  <Entry name="910" value="Flat Extra End"/>
+  <Entry name="911" value="Last Activity"/>
+  <Entry name="912" value="Last Change"/>
+  <Entry name="913" value="Last Episode"/>
+  <Entry name="914" value="Last Meal"/>
+  <Entry name="915" value="Loan"/>
+  <Entry name="916" value="Application Status"/>
+  <Entry name="917" value="Maturity"/>
+  <Entry name="918" value="Medical Information Signature"/>
+  <Entry name="919" value="Medical Information System"/>
+  <Entry name="920" value="Note"/>
+  <Entry name="921" value="Offer Expiration"/>
+  <Entry name="922" value="Original Receipt"/>
+  <Entry name="923" value="Placement"/>
+  <Entry name="924" value="Placement Period Expiration"/>
+  <Entry name="925" value="Processing"/>
+  <Entry name="926" value="Recapture"/>
+  <Entry name="927" value="Re-entry"/>
+  <Entry name="928" value="Reissue"/>
+  <Entry name="929" value="Reinstatement"/>
+  <Entry name="930" value="Requalification"/>
+  <Entry name="931" value="Reinsurance Effective"/>
+  <Entry name="932" value="Reservation of Facility"/>
+  <Entry name="933" value="Settlement Status"/>
+  <Entry name="934" value="Table Rating End"/>
+  <Entry name="935" value="Termination of Facility"/>
+  <Entry name="936" value="Treatment"/>
+  <Entry name="937" value="Department of Labor Wage Determination Date"/>
+  <Entry name="938" value="Order"/>
+  <Entry name="939" value="Resolved"/>
+  <Entry name="940" value="Execution Date"/>
+  <Entry name="941" value="Capitation Period Start"/>
+  <Entry name="942" value="Capitation Period End"/>
+  <Entry name="943" value="Last Date for a Government Agency to File a Claim"/>
+  <Entry name="944" value="Adjustment Period"/>
+  <Entry name="945" value="Activity"/>
+  <Entry name="946" value="Mail By"/>
+  <Entry name="947" value="Preparation"/>
+  <Entry name="948" value="Payment Initiated"/>
+  <Entry name="949" value="Payment Effective"/>
+  <Entry name="950" value="Application"/>
+  <Entry name="951" value="Reclassification"/>
+  <Entry name="952" value="Reclassification (Exit Date)"/>
+  <Entry name="953" value="Post-Reclassification"/>
+  <Entry name="954" value="Post-Reclassification (First Report Card)"/>
+  <Entry name="955" value="Post-Reclassification (First Semi-annual)"/>
+  <Entry name="956" value="Post-Reclassification (Second Semi-annual)"/>
+  <Entry name="957" value="Post-Reclassification (End of Second Year)"/>
+  <Entry name="960" value="Adjusted Death Benefit"/>
+  <Entry name="961" value="Anniversary"/>
+  <Entry name="962" value="Annuitization"/>
+  <Entry name="963" value="Annuity Commencement Date"/>
+  <Entry name="964" value="Bill"/>
+  <Entry name="965" value="Calendar Anniversary"/>
+  <Entry name="966" value="Contract Mailed"/>
+  <Entry name="967" value="Early Withdrawal"/>
+  <Entry name="968" value="Fiscal Anniversary"/>
+  <Entry name="969" value="Income"/>
+  <Entry name="970" value="Initial Premium"/>
+  <Entry name="971" value="Initial Premium Effective"/>
+  <Entry name="972" value="Last Premium Effective"/>
+  <Entry name="973" value="Minimum Required Distribution"/>
+  <Entry name="974" value="Next Anniversary"/>
+  <Entry name="975" value="Notice"/>
+  <Entry name="976" value="Notification of Death"/>
+  <Entry name="977" value="Partial Annuitization"/>
+  <Entry name="978" value="Plan Anniversary"/>
+  <Entry name="979" value="Policy Surrender"/>
+  <Entry name="980" value="Prior Contract Anniversary"/>
+  <Entry name="981" value="Prior Contract Issue"/>
+  <Entry name="982" value="Signature Received"/>
+  <Entry name="983" value="Tax"/>
+  <Entry name="984" value="Benefit Period"/>
+  <Entry name="985" value="Month to Date"/>
+  <Entry name="986" value="Semiannual Ending"/>
+  <Entry name="987" value="Surrender"/>
+  <Entry name="988" value="Plan of Treatment Period"/>
+  <Entry name="989" value="Prior Hospitalization Date(s) Related to Current Service(s)"/>
+  <Entry name="990" value="Original Name Change"/>
+  <Entry name="992" value="Date Requested"/>
+  <Entry name="993" value="Request for Quotation"/>
+  <Entry name="994" value="Quote"/>
+  <Entry name="995" value="Recorded Date"/>
+  <Entry name="996" value="Required Delivery"/>
+  <Entry name="997" value="Quote to be Received By"/>
+  <Entry name="998" value="Continuation of Pay Start Date"/>
+  <Entry name="999" value="Document Date"/>
+  <Entry name="AA1" value="Estimated Point of Arrival"/>
+  <Entry name="AA2" value="Estimated Point of Discharge"/>
+  <Entry name="AA3" value="Cancel After, Ex Country"/>
+  <Entry name="AA4" value="Cancel After, Ex Factory"/>
+  <Entry name="AA5" value="Do Not Ship Before, Ex Country"/>
+  <Entry name="AA6" value="Do Not Ship Before, Ex Factory"/>
+  <Entry name="AA7" value="Final Scheduled Payment"/>
+  <Entry name="AA8" value="Actual Discharge"/>
+  <Entry name="AA9" value="Address Period"/>
+  <Entry name="AAA" value="Arrival in Country"/>
+  <Entry name="AAB" value="Citation"/>
+  <Entry name="AAC" value="Suspension Effective"/>
+  <Entry name="AAD" value="Crime"/>
+  <Entry name="AAE" value="Discharge - Planned"/>
+  <Entry name="AAF" value="Draft"/>
+  <Entry name="AAG" value="Due Date"/>
+  <Entry name="AAH" value="Event"/>
+  <Entry name="AAI" value="First Involvement"/>
+  <Entry name="AAJ" value="Guarantee Period"/>
+  <Entry name="AAK" value="Income Increase Period"/>
+  <Entry name="AAL" value="Installment Date"/>
+  <Entry name="AAM" value="Last Civilian Flight"/>
+  <Entry name="AAN" value="Last Flight"/>
+  <Entry name="AAO" value="Last Insurance Medical"/>
+  <Entry name="AAP" value="Last Military Flight"/>
+  <Entry name="AAQ" value="Last Physical"/>
+  <Entry name="AAR" value="License"/>
+  <Entry name="AAS" value="Medical Certificate"/>
+  <Entry name="AAT" value="Medication"/>
+  <Entry name="AAU" value="Net Worth Date"/>
+  <Entry name="AAV" value="Next Activity"/>
+  <Entry name="AAW" value="Ownership Change"/>
+  <Entry name="AAX" value="Ownership Period"/>
+  <Entry name="AAY" value="Rate Date"/>
+  <Entry name="AAZ" value="Requested Contract"/>
+  <Entry name="AB1" value="Requested Offer"/>
+  <Entry name="AB2" value="Sales Period"/>
+  <Entry name="AB3" value="Tax Year"/>
+  <Entry name="AB4" value="Time Period"/>
+  <Entry name="AB5" value="Travel"/>
+  <Entry name="AB6" value="Treatment End"/>
+  <Entry name="AB7" value="Treatment Start"/>
+  <Entry name="AB8" value="Trust"/>
+  <Entry name="AB9" value="Worst Time to Call"/>
+  <Entry name="ABA" value="Registration"/>
+  <Entry name="ABB" value="Revoked"/>
+  <Entry name="ABC" value="Estimated Date of Birth"/>
+  <Entry name="ABD" value="Last Annual Report"/>
+  <Entry name="ABE" value="Legal Action Started"/>
+  <Entry name="ABF" value="Lien"/>
+  <Entry name="ABG" value="Payment Period"/>
+  <Entry name="ABH" value="Profit Period"/>
+  <Entry name="ABI" value="Registered"/>
+  <Entry name="ABK" value="Consolidated"/>
+  <Entry name="ABL" value="Board of Directors Not Authorized As Of"/>
+  <Entry name="ABM" value="Board of Directors Incomplete As Of"/>
+  <Entry name="ABN" value="Manager Not Registered As Of"/>
+  <Entry name="ABO" value="Citizenship Change"/>
+  <Entry name="ABP" value="Participation"/>
+  <Entry name="ABQ" value="Capitalization"/>
+  <Entry name="ABR" value="Registration of Board of Directors"/>
+  <Entry name="ABS" value="Ceased Operations"/>
+  <Entry name="ABT" value="Satisfied"/>
+  <Entry name="ABU" value="Terms Met"/>
+  <Entry name="ABV" value="Asset Documentation Expiration"/>
+  <Entry name="ABW" value="Credit Documentation Expiration"/>
+  <Entry name="ABX" value="Income Documentation Expiration"/>
+  <Entry name="ABY" value="Product Held Until"/>
+  <Entry name="ACA" value="Immigration Date"/>
+  <Entry name="ACB" value="Estimated Immigration Date"/>
+  <Entry name="ACC" value="Current Disability Period Start"/>
+  <Entry name="ACD" value="Current Disability Period End"/>
+  <Entry name="ACE" value="Current Disability Period Last Day Worked"/>
+  <Entry name="ACF" value="Benefit Type Gross Weekly Amount Effective"/>
+  <Entry name="ACG" value="Benefit Type Net Weekly Amount Effective"/>
+  <Entry name="ACH" value="Benefit Type Period Start"/>
+  <Entry name="ACI" value="Benefit Type Period End"/>
+  <Entry name="ACJ" value="Benefit Debit Start"/>
+  <Entry name="ACK" value="Acknowledgment"/>
+  <Entry name="ACL" value="Benefit Debit End"/>
+  <Entry name="ACM" value="Benefit Credit Start"/>
+  <Entry name="ACN" value="Benefit Credit End"/>
+  <Entry name="ACO" value="Benefit Transfer Start"/>
+  <Entry name="ACP" value="Benefit Transfer End"/>
+  <Entry name="ACQ" value="Wage Effective"/>
+  <Entry name="ACR" value="Denial Effective"/>
+  <Entry name="ACS" value="Denial Rescission"/>
+  <Entry name="ACT" value="Payment Issue"/>
+  <Entry name="ACU" value="Payment Period Start"/>
+  <Entry name="ACV" value="Payment Period End"/>
+  <Entry name="ACW" value="Employer Reported Injury To Claim Administrator"/>
+  <Entry name="ACX" value="Survey Year"/>
+  <Entry name="ACZ" value="Controvert Date"/>
+  <Entry name="ADA" value="Billed Through"/>
+  <Entry name="ADB" value="Business Control Change"/>
+  <Entry name="ADC" value="Court Registration"/>
+  <Entry name="ADD" value="Annual Report Due"/>
+  <Entry name="ADE" value="Claim Notification Received"/>
+  <Entry name="ADF" value="Conversion Privilege End"/>
+  <Entry name="ADG" value="Dividend Applied"/>
+  <Entry name="ADH" value="In-force"/>
+  <Entry name="ADI" value="Paid-up"/>
+  <Entry name="ADJ" value="Premium Change"/>
+  <Entry name="ADK" value="Policy Effective on or before"/>
+  <Entry name="ADL" value="Asset and Liability Schedule"/>
+  <Entry name="ADM" value="Annual Report Mailed"/>
+  <Entry name="ADN" value="Policy Effective on or after"/>
+  <Entry name="ADR" value="Annual Report Filed"/>
+  <Entry name="ADS" value="Audit Period After Split Date"/>
+  <Entry name="ADT" value="Audit Period Prior to Split Date"/>
+  <Entry name="ADU" value="Exposure Source Period"/>
+  <Entry name="ADV" value="Subcontractor Period of Hire"/>
+  <Entry name="ADW" value="Divorce"/>
+  <Entry name="ADX" value="Power of Attorney"/>
+  <Entry name="ADY" value="Uniform Gifts to Minors Account Established"/>
+  <Entry name="AEA" value="Medicare Part A Eligibility Begin Date"/>
+  <Entry name="AEB" value="Medicare Part A Eligibility End Date"/>
+  <Entry name="AEC" value="Medicare Part A Coverage Effective Date"/>
+  <Entry name="AED" value="Medicare Part A Termination Date"/>
+  <Entry name="AEE" value="Medicare Part B Eligibility Begin Date"/>
+  <Entry name="AEF" value="Medicare Part B Eligibility End Date"/>
+  <Entry name="AEG" value="Medicare Part B Coverage Effective Date"/>
+  <Entry name="AEH" value="Medicare Part B Termination Date"/>
+  <Entry name="AEI" value="Loading Period"/>
+  <Entry name="AEK" value="Date on which Assets Judged Insufficient to Pay Creditors"/>
+  <Entry name="AEL" value="Employees Temporarily Laid Off Begin Period"/>
+  <Entry name="AEM" value="Employees Temporarily Laid Off End Period"/>
+  <Entry name="AEN" value="First Published"/>
+  <Entry name="AEO" value="Forecast Period Start"/>
+  <Entry name="AEP" value="Forecast Period End"/>
+  <Entry name="AEQ" value="Investigation Start"/>
+  <Entry name="AER" value="Investigation End"/>
+  <Entry name="AES" value="Last Published"/>
+  <Entry name="AET" value="Latest Balance Sheet"/>
+  <Entry name="AEU" value="Share Price"/>
+  <Entry name="AEV" value="Stop Distribution"/>
+  <Entry name="AEW" value="Maximum Credit Date"/>
+  <Entry name="AEX" value="Founding Date"/>
+  <Entry name="AEY" value="Repayment Plan Start Date"/>
+  <Entry name="ARD" value="Annual Report Delinquency"/>
+  <Entry name="AWH" value="Withheld Date"/>
+  <Entry name="BAA" value="Compliance Audit"/>
+  <Entry name="BAB" value="Contractor Safety Performance Evaluation"/>
+  <Entry name="BAC" value="Contractor Safety Procedures Review"/>
+  <Entry name="BAD" value="Date of Equipment Inspection"/>
+  <Entry name="BAE" value="Date of Safety Inspection"/>
+  <Entry name="BAF" value="Employees Participation Plan Review"/>
+  <Entry name="BAG" value="Expected Completion of Changes Resulting from Compliance Audit"/>
+  <Entry name="BAH" value="Expected Completion of Changes Resulting from Process Hazard Analysis"/>
+  <Entry name="BAI" value="Expected Completion of Changes Resulting from Hazard Review"/>
+  <Entry name="BAJ" value="Hazard Review Completion"/>
+  <Entry name="BAK" value="Hot Work Permit Procedures Review"/>
+  <Entry name="BAL" value="Investigation"/>
+  <Entry name="BAM" value="Maintenance Procedures Review"/>
+  <Entry name="BAN" value="Management of Change Procedures Review"/>
+  <Entry name="BAO" value="Operating Procedures Review"/>
+  <Entry name="BAP" value="Safety Information Review"/>
+  <Entry name="BAQ" value="Training"/>
+  <Entry name="BAR" value="Training Program Review"/>
+  <Entry name="CAD" value="Changed Accounting Date"/>
+  <Entry name="CCR" value="Customs Cargo Release"/>
+  <Entry name="CDT" value="Maintenance Comment"/>
+  <Entry name="CEA" value="Formation"/>
+  <Entry name="CEB" value="Continuance"/>
+  <Entry name="CEC" value="Merger"/>
+  <Entry name="CED" value="Year Due"/>
+  <Entry name="CEE" value="Next Annual Meeting"/>
+  <Entry name="CEF" value="End of Last Fiscal Year"/>
+  <Entry name="CEH" value="Year Beginning"/>
+  <Entry name="CEJ" value="Started Doing Business"/>
+  <Entry name="CEK" value="Sworn and Subscribed"/>
+  <Entry name="CEL" value="Calendar Year"/>
+  <Entry name="CEM" value="Asset"/>
+  <Entry name="CEN" value="Inactivity"/>
+  <Entry name="CEO" value="High Capital Year"/>
+  <Entry name="CLO" value="Closing Date of First Balance Sheet"/>
+  <Entry name="CLU" value="Closed Until"/>
+  <Entry name="COM" value="Compliance"/>
+  <Entry name="CON" value="Converted into Holding Company"/>
+  <Entry name="CUR" value="Current List"/>
+  <Entry name="DAF" value="Account Frozen"/>
+  <Entry name="DDO" value="Declaration"/>
+  <Entry name="DEE" value="Deed Not Available"/>
+  <Entry name="DEL" value="Delete"/>
+  <Entry name="DET" value="Detrimental Information Received"/>
+  <Entry name="DFF" value="Deferral"/>
+  <Entry name="DFS" value="Departure From Specification"/>
+  <Entry name="DIS" value="Disposition"/>
+  <Entry name="DLC" value="Date of Last Contact"/>
+  <Entry name="DOA" value="Date of Abandonment"/>
+  <Entry name="DOD" value="Date of Delinquency"/>
+  <Entry name="DOI" value="Delivery Order Issued"/>
+  <Entry name="DOR" value="Repossession"/>
+  <Entry name="DSP" value="Disposal"/>
+  <Entry name="E01" value="Tenure Decision"/>
+  <Entry name="E02" value="Most Recent Position Change"/>
+  <Entry name="E03" value="Fee Payment"/>
+  <Entry name="E04" value="Start Date for Continuous Employment"/>
+  <Entry name="E05" value="Start Date for Current Position"/>
+  <Entry name="E06" value="Start Date for Original Position"/>
+  <Entry name="E07" value="Fiscal Year"/>
+  <Entry name="ECD" value="Estimated Construction Date"/>
+  <Entry name="ECF" value="Estimated Completion - First Prior Month"/>
+  <Entry name="ECS" value="Estimated Completion - Second Prior Month"/>
+  <Entry name="ECT" value="Estimated Completion - Third Prior Month"/>
+  <Entry name="EDA" value="Affirmed"/>
+  <Entry name="EDB" value="Auction"/>
+  <Entry name="EDC" value="Authorized"/>
+  <Entry name="EDD" value="Contribution"/>
+  <Entry name="EDE" value="Executed"/>
+  <Entry name="EDF" value="Forgiven"/>
+  <Entry name="EDG" value="Presented"/>
+  <Entry name="EDH" value="Legislative Session"/>
+  <Entry name="EDI" value="Organized"/>
+  <Entry name="EDJ" value="Pledged"/>
+  <Entry name="EDK" value="Primary Election"/>
+  <Entry name="EDL" value="Qualified"/>
+  <Entry name="EDM" value="Refunded"/>
+  <Entry name="EDN" value="Rescinded"/>
+  <Entry name="EDO" value="Restructured From"/>
+  <Entry name="EDP" value="Vote"/>
+  <Entry name="EPP" value="Estimate Preparation"/>
+  <Entry name="ESC" value="Estimate Comment"/>
+  <Entry name="ESF" value="Estimated Start - First Prior Month"/>
+  <Entry name="ESS" value="Estimated Start - Second Prior Month"/>
+  <Entry name="EST" value="Estimated Start - Third Prior Month"/>
+  <Entry name="ETP" value="Earliest Filing Period"/>
+  <Entry name="EXO" value="Exposure"/>
+  <Entry name="EXP" value="Export"/>
+  <Entry name="FFI" value="Financial Information"/>
+  <Entry name="FFO" value="First Order"/>
+  <Entry name="GRD" value="Graduated"/>
+  <Entry name="ICF" value="Converted to Electronic Date"/>
+  <Entry name="IDG" value="Insolvency Discharge Granted"/>
+  <Entry name="III" value="Incorporation"/>
+  <Entry name="IMP" value="Import"/>
+  <Entry name="INC" value="Incident"/>
+  <Entry name="INT" value="Inactive Until"/>
+  <Entry name="KEV" value="Key Event Fiscal Year"/>
+  <Entry name="KEW" value="Key Event Calendar Year"/>
+  <Entry name="LAM" value="Last Annual Meeting"/>
+  <Entry name="LAS" value="Last Check for Balance Sheet Update"/>
+  <Entry name="LCC" value="Last Capital Change"/>
+  <Entry name="LEA" value="Letter of Agreement"/>
+  <Entry name="LEL" value="Letter of Liability"/>
+  <Entry name="LIQ" value="Liquidation"/>
+  <Entry name="LLP" value="Low Period"/>
+  <Entry name="LOG" value="Equipment Log Entry"/>
+  <Entry name="LPC" value="List Price Change"/>
+  <Entry name="LSC" value="Legal Structure Change"/>
+  <Entry name="LTP" value="Latest Filing Period"/>
+  <Entry name="MRR" value="Meter Reading"/>
+  <Entry name="MSD" value="Latest Material Safety Data Sheet Date"/>
+  <Entry name="NAM" value="Present Name"/>
+  <Entry name="NFD" value="Negotiated Finish"/>
+  <Entry name="NRG" value="Not Registered"/>
+  <Entry name="NSD" value="Negotiated Start"/>
+  <Entry name="ORG" value="Original List"/>
+  <Entry name="PBC" value="Present Control"/>
+  <Entry name="PDV" value="Privilege Details Verification"/>
+  <Entry name="PLS" value="Present Legal Structure"/>
+  <Entry name="PPD" value="Post Paid Date"/>
+  <Entry name="PPP" value="Peak Period"/>
+  <Entry name="PRD" value="Previously Reported Date of Birth"/>
+  <Entry name="PRR" value="Presented to Receivers"/>
+  <Entry name="PTD" value="Paid To Date"/>
+  <Entry name="PTO" value="Plan to Obsolete"/>
+  <Entry name="RAP" value="Receiver Appointed"/>
+  <Entry name="RES" value="Resigned"/>
+  <Entry name="RFD" value="Requested Finish"/>
+  <Entry name="RFF" value="Recovery Finish"/>
+  <Entry name="RFO" value="Referred From"/>
+  <Entry name="RNT" value="Rent Survey"/>
+  <Entry name="RRM" value="Received in the Mail"/>
+  <Entry name="RRT" value="Revocation"/>
+  <Entry name="RSD" value="Requested Start"/>
+  <Entry name="RSS" value="Recovery Start"/>
+  <Entry name="RTO" value="Referred To"/>
+  <Entry name="SCV" value="Social Security Claims Verification"/>
+  <Entry name="SDD" value="Sole Directorship Date"/>
+  <Entry name="STN" value="Transition"/>
+  <Entry name="TSR" value="Trade Style Registered"/>
+  <Entry name="TSS" value="Trial Started"/>
+  <Entry name="TST" value="Trial Set"/>
+  <Entry name="VAT" value="Value Added Tax (VAT) Claims Verification"/>
+  <Entry name="VLU" value="Valid Until"/>
+  <Entry name="W01" value="Sample Collected"/>
+  <Entry name="W02" value="Status Change"/>
+  <Entry name="W03" value="Construction Start"/>
+  <Entry name="W05" value="Recompletion"/>
+  <Entry name="W06" value="Last Logged"/>
+  <Entry name="W07" value="Well Log Run"/>
+  <Entry name="W08" value="Surface Casing Authority Approval"/>
+  <Entry name="W09" value="Reached Total Depth"/>
+  <Entry name="W10" value="Spacing Order Unit Assigned"/>
+  <Entry name="W11" value="Rig Arrival"/>
+  <Entry name="W12" value="Location Exception Order Number Assigned"/>
+  <Entry name="W13" value="Sidetracked Wellbore"/>
+  <Entry name="WAA" value="Time Employee Began Work"/>
+  <Entry name="WAY" value="Waybill"/>
+  <Entry name="YXX" value="Programmed Fiscal Year"/>
+  <Entry name="YXY" value="Programmed Calendar Year"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

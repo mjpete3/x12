@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: B2.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="B2" comment="To transmit basic data relating to shipment information">
+  <Field name="TariffServiceCode" required="y" min="2" max="2" validation="T375" comment="Code specifying the types of services for rating purposes"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="StandardPointLocationCode" required="y" min="6" max="9" comment="Code (Standard Point Location) defined by National Motor Freight Tariff Association (NMFTA) or the Canadian Transportation Agency (CTA) point development group as the official code assigned to a city or point (for ratemaking purposes) within a city"/>
+  <Field name="ShipmentIdentificationNumber" required="y" min="1" max="30" comment="Identification number assigned to the shipment by the shipper that uniquely identifies the shipment from origin to ultimate destination and is not subject to modification; (Does not contain blanks or special characters)"/>
+  <Field name="WeightUnitCode" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="ShipmentMethodOfPayment" min="2" max="2" validation="T146" comment="Code identifying payment terms for transportation charges"/>
+  <Field name="ShipmentQualifier" required="y" min="1" max="1" validation="T147" comment="Code defining relationship of this shipment with respect to other shipments given to the carrier at the same time"/>
+  <Field name="TotalEquipment" type="long" required="y" min="1" max="3" comment="Total pieces of equipment"/>
+  <Field name="ShipmentWeightCode" required="y" min="1" max="1" validation="T460" comment="Code indicating the way by which weights are obtained for a particular shipment"/>
+  <Field name="CustomsDocumentationHandlingCode" required="y" min="2" max="2" validation="T501" comment="Code defining method of handling for documentation"/>
+  <Field name="TransportationTermsCode" required="y" min="3" max="3" validation="T335" comment="Code identifying the trade terms which apply to the shipment transportation responsibility"/>
+  <Field name="PaymentMethodCode" required="y" min="3" max="3" validation="T591" comment="Code identifying the method for the movement of payment instructions"/>
+</Segment>

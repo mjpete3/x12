@@ -1,0 +1,35 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G01.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G01" comment="To transmit identifying dates and numbers for this transaction set">
+  <Field name="Date1" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="InvoiceNumber" min="1" max="22" comment="Identifying number assigned by issuer"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="PurchaseOrderNumber" required="y" min="1" max="22" comment="Identifying number for Purchase Order assigned by the orderer/purchaser"/>
+  <Field name="VendorOrderNumber" required="y" min="1" max="22" comment="Number assigned by a vendor referencing a particular customer purchase order"/>
+  <Field name="MasterReference" required="y" min="1" max="22" comment="Reference number assigned by the sender to relate a transaction set to a master transaction (When associating a group of purchase orders, invoices or other transaction sets, use the master reference (link) number to identify the group and the link sequence number to identify individual transaction sets within the group)"/>
+  <Field name="LinkSequenceNumber" type="long" required="y" min="6" max="6" comment="A two-part number in the form &quot;SSSTTT&quot; where &quot;SSS&quot; is a sequentially assigned number and &quot;TTT&quot; equals the highest sequential number being used within the associated (linked) group (Leading zeros are required for both &quot;SSS&quot; and &quot;TTT&quot;)"/>
+  <Field name="TransactionTypeCode" required="y" min="2" max="2" validation="T640" comment="Code specifying the type of transaction"/>
+</Segment>

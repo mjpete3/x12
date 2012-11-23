@@ -1,0 +1,163 @@
+<!--
+    This file is part of the X12Parser library that provides tools to
+    manipulate X12 messages using Ruby native syntax.
+
+    http://x12parser.rubyforge.org 
+    
+    Copyright (C) 2009 APP Design, Inc.
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+    $Id: 270interchange.xml 79 2009-05-13 17:22:33Z ikk $
+  -->
+
+<Loop name="270interchange" min="1" max="1">
+  <Segment name="ISA" min="1" max="1"/>
+
+  <Loop name="FG" min="1" max="inf">
+    <Segment name="GS" min="1" max="1"/>
+
+    <Loop name="270" comment="This X12 Transaction Set contains the format and establishes the data contents of the Eligibility, Coverage or Benefit Inquiry Transaction Set (270) for use within the context of an Electronic Data Interchange (EDI) environment. This transaction set can be used to inquire about the eligibility, coverages or benefits associated with a benefit plan, employer, plan sponsor, subscriber or a dependent under the subscriber's policy. The transaction set is intended to be used by all lines of insurance such as Health, Life, and Property and Casualty.">
+      <Segment name="ST" required="y" max="1">
+        <Field name="TransactionSetIdentifierCode" const="270" comment="Code uniquely identifying a Transaction Set"/>
+        <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+      </Segment>
+      <Segment name="BHT" required="y" max="1" comment="To define the business hierarchical structure of the transaction set and identify the business application purpose and reference data, i.e., number, date, and time">
+        <Field name="HierarchicalStructureCode" required="y" const="0022"                       comment="Code indicating the hierarchical application structure of a transaction set that utilizes the HL segment to define the structure of the transaction set"/>
+        <Field name="TransactionSetPurposeCode" required="y" min="2" max="2"  validation="T353" comment="Code identifying purpose of transaction set"/>
+        <Field name="ReferenceIdentification"                min="1" max="50"                   comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+        <Field name="Date"                      required="y" min="8" max="8"                    comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+        <Field name="Time"                      required="y" min="4" max="8"                    comment="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"/>
+        <Field name="TransactionTypeCode"       required="n" min="2" max="2"  validation="T640" comment="Code specifying the type of transaction"/>
+      </Segment>
+
+      <Loop name="L2000A" max="inf" required="y">
+        <Segment name="HL" min="1" max="1" comment="To identify dependencies among and the content of hierarchically related groups of data segments">
+          <Field name="HierarchicalIdNumber"             required="y" min="1" max="12" comment="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"/>
+          <Field name="HierarchicalParentIdNumber"       required="n" min="1" max="12" comment="Identification number of the next higher hierarchical data segment that the data segment being described is subordinate to"/>
+          <Field name="HierarchicalLevelCode" const="20" required="y"                  comment="Code defining the characteristic of a level in a hierarchical structure"/>
+          <Field name="HierarchicalChildCode"            required="n" min="1" max="1" validation="T736" comment="Code indicating if there are hierarchical child data segments subordinate to the level being described"/>
+        </Segment>
+        <Loop name="L2100A" min="1" max="1" required="y">
+          <Segment name="NM1" required="y" max="1"/>
+        </Loop>
+      </Loop>
+
+      <Loop name="L2000B" max="inf" required="y">
+        <Segment name="HL" min="1" max="1" comment="To identify dependencies among and the content of hierarchically related groups of data segments">
+          <Field name="HierarchicalIdNumber"             required="y" min="1" max="12" comment="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"/>
+          <Field name="HierarchicalParentIdNumber"       required="n" min="1" max="12" comment="Identification number of the next higher hierarchical data segment that the data segment being described is subordinate to"/>
+          <Field name="HierarchicalLevelCode" const="21" required="y"                  comment="Code defining the characteristic of a level in a hierarchical structure"/>
+          <Field name="HierarchicalChildCode"            required="n" min="1" max="1" validation="T736" comment="Code indicating if there are hierarchical child data segments subordinate to the level being described"/>
+        </Segment>
+        <Loop name="L2100B" min="1" max="1" required="y">
+          <Segment name="NM1" required="y" max="1"/>
+          <Segment name="REF" required="n" max="9"/>
+          <Segment name="N3"  required="n" max="1"/>
+          <Segment name="N4"  required="n" max="1"/>
+          <Segment name="PER" required="n" max="3"/>
+          <Segment name="PRV" required="n" max="1"/>
+        </Loop>
+      </Loop>
+
+      <Loop name="L2000C" max="inf" required="y">
+        <Segment name="HL" min="1" max="1" comment="To identify dependencies among and the content of hierarchically related groups of data segments">
+          <Field name="HierarchicalIdNumber"             required="y" min="1" max="12" comment="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"/>
+          <Field name="HierarchicalParentIdNumber"       required="n" min="1" max="12" comment="Identification number of the next higher hierarchical data segment that the data segment being described is subordinate to"/>
+          <Field name="HierarchicalLevelCode" const="22" required="y"                  comment="Code defining the characteristic of a level in a hierarchical structure"/>
+          <Field name="HierarchicalChildCode"            required="n" min="1" max="1" validation="T736" comment="Code indicating if there are hierarchical child data segments subordinate to the level being described"/>
+        </Segment>
+        <Segment name="TRN" required="n" max="2"/>
+        <Loop name="L2100C" min="1" max="1" required="y">
+          <!-- Note the difference from 'standard' NM1: IdentificationCodeQualifier and IdentificationCode are not
+               required -->
+          <Segment name="NM1" required="y" max="1" comment="To supply the full name of an individual or organizational entity">
+            <Field name="EntityIdentifierCode1"       required="y" min="2" max="3"  validation="T98"   comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+            <Field name="EntityTypeQualifier"         required="y" min="1" max="1"  validation="T1065" comment="Code qualifying the type of entity"/>
+            <Field name="NameLastOrOrganizationName"  required="n" min="1" max="60"                    comment="Individual last name or organizational name"/>
+            <Field name="NameFirst"                   required="n" min="1" max="35"                    comment="Individual first name"/>
+            <Field name="NameMiddle"                  required="n" min="1" max="25"                    comment="Individual middle name or initial"/>
+            <Field name="NamePrefix"                  required="n" min="1" max="10"                    comment="Prefix to individual name"/>
+            <Field name="NameSuffix"                  required="n" min="1" max="10"                    comment="Suffix to individual name"/>
+            <Field name="IdentificationCodeQualifier" required="n" min="1" max="2"  validation="T66"   comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+            <Field name="IdentificationCode"          required="n" min="2" max="80"                    comment="Code identifying a party or other code"/>
+            <Field name="EntityRelationshipCode"      required="n" min="2" max="2"  validation="T706"  comment="Code describing entity relationship"/>
+            <Field name="EntityIdentifierCode"        required="n" min="2" max="3"  validation="T98"   comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+          </Segment>
+          <Segment name="REF" required="n" max="9"/>
+          <Segment name="N3"  required="n" max="1"/>
+          <Segment name="N4"  required="n" max="1"/>
+          <Segment name="PRV" required="n" max="1"/>
+          <Segment name="DMG" required="n" max="3"/>
+          <Segment name="INS" required="n" max="1"/>
+          <Segment name="DTP" required="n" max="2"/>
+          <Loop name="L2110C" max="99" required="n">
+            <Segment name="EQ"  required="n" max="1"/>
+            <Segment name="AMT" required="n" max="1"/>
+            <Segment name="III" required="n" max="10"/>
+            <Segment name="REF" required="n" max="1"/>
+            <Segment name="DTP" required="n" max="1"/>
+          </Loop>
+        </Loop>
+      </Loop>
+
+      <Loop name="L2000D" max="inf" required="n">
+        <Segment name="HL" min="1" max="1" comment="To identify dependencies among and the content of hierarchically related groups of data segments">
+          <Field name="HierarchicalIdNumber"             required="y" min="1" max="12" comment="A unique number assigned by the sender to identify a particular data segment in a hierarchical structure"/>
+          <Field name="HierarchicalParentIdNumber"       required="n" min="1" max="12" comment="Identification number of the next higher hierarchical data segment that the data segment being described is subordinate to"/>
+          <Field name="HierarchicalLevelCode" const="23" required="y"                  comment="Code defining the characteristic of a level in a hierarchical structure"/>
+          <Field name="HierarchicalChildCode" const="0"  required="y"                  comment="Code indicating if there are hierarchical child data segments subordinate to the level being described"/>
+        </Segment>
+        <Segment name="TRN" required="n" max="2"/>
+        <Loop name="L2100D" min="0" max="1" required="n">
+          <!-- Note the difference from 'standard' NM1: IdentificationCodeQualifier and IdentificationCode are not
+               required -->
+          <Segment name="NM1" required="y" max="1" comment="To supply the full name of an individual or organizational entity">
+            <Field name="EntityIdentifierCode1"       required="y" min="2" max="3"  validation="T98"   comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+            <Field name="EntityTypeQualifier"         required="y" min="1" max="1"  validation="T1065" comment="Code qualifying the type of entity"/>
+            <Field name="NameLastOrOrganizationName"  required="n" min="1" max="60"                    comment="Individual last name or organizational name"/>
+            <Field name="NameFirst"                   required="n" min="1" max="35"                    comment="Individual first name"/>
+            <Field name="NameMiddle"                  required="n" min="1" max="25"                    comment="Individual middle name or initial"/>
+            <Field name="NamePrefix"                  required="n" min="1" max="10"                    comment="Prefix to individual name"/>
+            <Field name="NameSuffix"                  required="n" min="1" max="10"                    comment="Suffix to individual name"/>
+            <Field name="IdentificationCodeQualifier" required="n" min="1" max="2"  validation="T66"   comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+            <Field name="IdentificationCode"          required="n" min="2" max="80"                    comment="Code identifying a party or other code"/>
+            <Field name="EntityRelationshipCode"      required="n" min="2" max="2"  validation="T706"  comment="Code describing entity relationship"/>
+            <Field name="EntityIdentifierCode"        required="n" min="2" max="3"  validation="T98"   comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+          </Segment>
+          <Segment name="REF" required="n" max="9"/>
+          <Segment name="N3"  required="n" max="1"/>
+          <Segment name="N4"  required="n" max="1"/>
+          <Segment name="PRV" required="n" max="1"/>
+          <Segment name="DMG" required="n" max="3"/>
+          <Segment name="INS" required="n" max="1"/>
+          <Segment name="DTP" required="n" max="2"/>
+          <Loop name="L2110D" max="99" required="n">
+            <Segment name="EQ"  required="y" max="1"/>
+            <Segment name="III" required="n" max="10"/>
+            <Segment name="REF" required="n" max="1"/>
+            <Segment name="DTP" required="n" max="1"/>
+          </Loop>
+        </Loop>
+      </Loop>
+
+      <Segment name="SE" min="1" max="1"/>
+    </Loop>
+
+    <Segment name="GE" min="1" max="1"/>
+  </Loop>
+
+  <Segment name="IEA" min="1" max="1"/>
+</Loop>

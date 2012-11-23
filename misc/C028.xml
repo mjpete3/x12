@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: C028.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+
+<Composite name="C028" comment="Parameters needed to calculate the Assurance Token">
+  <Field name="AssuranceTokenParameterCode1" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue1" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode2" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue2" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode3" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue3" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode4" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue4" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode5" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue5" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode6" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue6" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode7" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue7" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode8" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue8" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode9" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue9" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+  <Field name="AssuranceTokenParameterCode10" required="y" min="2" max="2" validation="T1439" comment="A code specifying the type of Assurance Token Parameter"/>
+  <Field name="AssuranceTokenParameterValue10" required="y" min="1" max="64" comment="A value of a parameter, usually specifying one or more options, required for the proper operation of the cryptographic algorithm used to compute the Assurance Token; depending on the algorithm used, one or more values may be required"/>
+</Composite>

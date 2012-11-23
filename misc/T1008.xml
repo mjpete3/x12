@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1008.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1008">
+  <Entry name="6" value="Magistrate"/>
+  <Entry name="7" value="Bankruptcy Chapter 7"/>
+  <Entry name="9" value="Bankruptcy Chapter 9"/>
+  <Entry name="11" value="Bankruptcy Chapter 11"/>
+  <Entry name="12" value="Bankruptcy Chapter 12"/>
+  <Entry name="13" value="Bankruptcy Chapter 13"/>
+  <Entry name="30" value="Bankruptcy Section 304"/>
+  <Entry name="AA" value="Suspension of Payments"/>
+  <Entry name="AB" value="Felony"/>
+  <Entry name="AC" value="Misdemeanor"/>
+  <Entry name="AG" value="Administrative Agency Appeal"/>
+  <Entry name="AP" value="Bankruptcy Adversary Proceeding"/>
+  <Entry name="AR" value="Cases for Other Courts"/>
+  <Entry name="CR" value="Criminal"/>
+  <Entry name="CV" value="Civil"/>
+  <Entry name="DO" value="Domestic"/>
+  <Entry name="FB" value="Foreign Bankruptcy"/>
+  <Entry name="HS" value="Industrial Health and Safety"/>
+  <Entry name="JV" value="Juvenile"/>
+  <Entry name="LC" value="License"/>
+  <Entry name="MS" value="Miscellaneous"/>
+  <Entry name="MV" value="Motor Vehicle"/>
+  <Entry name="NT" value="Non-Traffic"/>
+  <Entry name="OT" value="Other Unlisted Case Type"/>
+  <Entry name="PC" value="Private Complaint"/>
+  <Entry name="SL" value="Student Aid"/>
+  <Entry name="SR" value="Sealed Criminal"/>
+  <Entry name="SV" value="Sealed Civil"/>
+  <Entry name="TR" value="Traffic"/>
+  <Entry name="XX" value="Cross Complaint"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

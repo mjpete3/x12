@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1292.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1292">
+  <Entry name="CR" value="Consumer Return to Vendor"/>
+  <Entry name="DI" value="Dispose"/>
+  <Entry name="KA" value="Keep with an Allowance"/>
+  <Entry name="KR" value="Keep and Repair"/>
+  <Entry name="MW" value="Manufacturer Warranty Service"/>
+  <Entry name="PA" value="Partially Authorized"/>
+  <Entry name="RA" value="Return with Authorization Number"/>
+  <Entry name="RD" value="Request Denied"/>
+  <Entry name="RF" value="Return for Factory Repair"/>
+  <Entry name="RN" value="Return without Authorization Number"/>
+  <Entry name="RP" value="Return Authorization Pending"/>
+  <Entry name="RT" value="Ship to Third Party"/>
+  <Entry name="SC" value="Ship to Third Party for Charitable Contribution"/>
+  <Entry name="SD" value="Ship to Third Party for Disposal"/>
+</Table>

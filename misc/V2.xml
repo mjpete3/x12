@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: V2.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="V2" comment="To provide vessel details">
+  <Field name="LocationIdentifier" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Weight1" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightUnitCode1" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Weight2" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightUnitCode2" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Weight3" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightUnitCode3" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Weight4" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightUnitCode4" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Weight5" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightUnitCode5" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="Length" type="double" required="y" min="1" max="8" comment="Largest horizontal dimension of an object measured when the object is in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+</Segment>

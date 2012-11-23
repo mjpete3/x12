@@ -1,0 +1,60 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T115.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T115">
+  <Entry name="1" value="Final Port of Discharge (Operational)"/>
+  <Entry name="2" value="Collect Charge Location (Operational)"/>
+  <Entry name="3" value="Customs Office of Manifest Origin"/>
+  <Entry name="4" value="Customs Office of Manifest Destination"/>
+  <Entry name="5" value="Activity Location (Operational)"/>
+  <Entry name="6" value="Origin Rail Intermodal Terminal"/>
+  <Entry name="7" value="Destination Rail Intermodal Terminal"/>
+  <Entry name="8" value="First Optional Port of Discharge"/>
+  <Entry name="9" value="Second Optional Port of Discharge"/>
+  <Entry name="A" value="Place of Acceptance (Operational)"/>
+  <Entry name="B" value="Reconsolidation Point (Operational)"/>
+  <Entry name="C" value="De-Consolidation Point (Operational)"/>
+  <Entry name="D" value="Port of Discharge (Operational)"/>
+  <Entry name="E" value="Place of Delivery (Contractual)"/>
+  <Entry name="F" value="Freight Payable At (Contractual)"/>
+  <Entry name="G" value="Port of Entry (Operational)"/>
+  <Entry name="H" value="Port of Exit (Operational)"/>
+  <Entry name="I" value="Interim Point (Operational)"/>
+  <Entry name="J" value="Bill of Lading Port of Loading (Contractual)"/>
+  <Entry name="K" value="Bill of Lading Port of Discharge (Contractual)"/>
+  <Entry name="L" value="Port of Loading (Operational)"/>
+  <Entry name="M" value="Destination (Operational)"/>
+  <Entry name="N" value="Final Destination (Operational)"/>
+  <Entry name="O" value="Origin (Operational)"/>
+  <Entry name="P" value="Dispatching Pool (Operational)"/>
+  <Entry name="Q" value="Bill of Lading Origin of Goods (Contractual)"/>
+  <Entry name="R" value="Place of Receipt (Contractual)"/>
+  <Entry name="S" value="Return Pool (Operational)"/>
+  <Entry name="T" value="Transshipment Port (Contractual)"/>
+  <Entry name="V" value="Prepaid Charge Location (Operational)"/>
+  <Entry name="W" value="Bill of Lading Release Office (Operational)"/>
+  <Entry name="X" value="Third Optional Port of Discharge"/>
+  <Entry name="Y" value="Relay Port (Operational)"/>
+</Table>

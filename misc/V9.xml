@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: V9.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="V9" comment="To specify information about a specific event">
+  <Field name="EventCode" min="3" max="3" validation="T304" comment="Code identifying the event about which a report is made"/>
+  <Field name="Event" required="y" min="1" max="25" comment="Free-form description of event"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Time" required="y" min="4" max="8" comment="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"/>
+  <Field name="CityName" required="y" min="2" max="30" comment="Free-form text for city name"/>
+  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="CountryCode" required="y" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="StatusReasonCode" required="y" min="3" max="3" validation="T641" comment="Code indicating the status reason"/>
+  <Field name="StandardPointLocationCode1" required="y" min="6" max="9" comment="Code (Standard Point Location) defined by National Motor Freight Tariff Association (NMFTA) or the Canadian Transportation Agency (CTA) point development group as the official code assigned to a city or point (for ratemaking purposes) within a city"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="TrainDelayReasonCode" required="y" min="2" max="3" comment="Code specifying reason for train delay"/>
+  <Field name="FreeFormMessage" required="y" min="1" max="30" comment="Free-form information"/>
+  <Field name="TimeCode" required="y" min="2" max="2" validation="T623" comment="Code identifying the time. In accordance with International Standards Organization standard 8601, time can be specified by a + or - and an indication in hours in relation to Universal Time Coordinate (UTC) time; since + is a restricted character, + and - are substituted by P and M in the codes that follow"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="StandardPointLocationCode2" required="y" min="6" max="9" comment="Code (Standard Point Location) defined by National Motor Freight Tariff Association (NMFTA) or the Canadian Transportation Agency (CTA) point development group as the official code assigned to a city or point (for ratemaking purposes) within a city"/>
+  <Field name="TotalEquipment1" type="long" required="y" min="1" max="3" comment="Total pieces of equipment"/>
+  <Field name="TotalEquipment2" type="long" required="y" min="1" max="3" comment="Total pieces of equipment"/>
+  <Field name="TotalEquipment3" type="long" required="y" min="1" max="3" comment="Total pieces of equipment"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="Length" type="double" required="y" min="1" max="8" comment="Largest horizontal dimension of an object measured when the object is in the upright position"/>
+</Segment>

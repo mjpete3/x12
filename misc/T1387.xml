@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1387.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1387">
+  <Entry name="1" value="Reserve Requirement Rate - Demand Deposit Account (DDA)"/>
+  <Entry name="2" value="Analysis Earnings Credit Interest Rate Not Yet Net of Reserves"/>
+  <Entry name="3" value="Book/Ledger Balance Overdraft Interest Rate"/>
+  <Entry name="4" value="Collected Balance Overdraft Interest Rate"/>
+  <Entry name="5" value="Deficiency Balance Interest Rate"/>
+  <Entry name="6" value="Treasury Tax and Loan (TT &amp; L)"/>
+  <Entry name="7" value="Federal Deposit Insurance Corporation (FDIC)"/>
+  <Entry name="8" value="Overdraft Reserve Requirement Recover"/>
+  <Entry name="9" value="Federal Funds"/>
+  <Entry name="10" value="Prime"/>
+  <Entry name="11" value="Mutually Defined"/>
+  <Entry name="12" value="Reserve Requirement Rate - Non-Demand Deposit Account (Non-DDA)"/>
+  <Entry name="13" value="Money Market (MMA)"/>
+  <Entry name="14" value="Negotiable Order of Withdrawal Reserve (NOW)"/>
+  <Entry name="15" value="Certificate of Deposit (CD)"/>
+  <Entry name="2A" value="Analysis Earnings Credit Interest Rate Net of Reserves"/>
+  <Entry name="BA" value="Base"/>
+  <Entry name="CF" value="Current Factor"/>
+  <Entry name="CM" value="Commission"/>
+  <Entry name="CR" value="Coupon Rate"/>
+  <Entry name="CX" value="Currency Exchange"/>
+  <Entry name="DA" value="Demand Deposit Account Interest"/>
+  <Entry name="DI" value="Deficiency Interest Rate"/>
+  <Entry name="DR" value="Discount"/>
+  <Entry name="DS" value="Deficiency Surcharge Rate"/>
+  <Entry name="IR" value="Interest"/>
+  <Entry name="NB" value="Book/Ledger Balance Net Overdraft Interest Rate"/>
+  <Entry name="NC" value="Collected Balance Net Overdraft Interest Rate"/>
+  <Entry name="PB" value="Principal Balance Factor"/>
+  <Entry name="PF" value="Principal and Interest Factor"/>
+  <Entry name="RR" value="Rebate"/>
+  <Entry name="SR" value="Security"/>
+  <Entry name="ST" value="Standby (Letter of Credit)"/>
+  <Entry name="UF" value="Uncollected Funds Usage Interest Rate"/>
+</Table>

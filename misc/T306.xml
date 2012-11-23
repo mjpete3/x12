@@ -1,0 +1,347 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T306.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T306">
+  <Entry name="0" value="Authorize"/>
+  <Entry name="1" value="Add"/>
+  <Entry name="2" value="Change (Update)"/>
+  <Entry name="3" value="Delete"/>
+  <Entry name="4" value="Verify"/>
+  <Entry name="5" value="Send"/>
+  <Entry name="6" value="Receive"/>
+  <Entry name="7" value="Request"/>
+  <Entry name="8" value="In Production Send"/>
+  <Entry name="9" value="Not Capable of Taking Action"/>
+  <Entry name="A" value="Add A Bill of Lading"/>
+  <Entry name="B" value="Cancel Balance of Order/Item that Exceeds Value Specified in Data Element 610"/>
+  <Entry name="C" value="Cancelled"/>
+  <Entry name="D" value="Delete a Bill of Lading"/>
+  <Entry name="E" value="Eliminate/Expire"/>
+  <Entry name="F" value="Final"/>
+  <Entry name="G" value="Cancel Entire Order/Item"/>
+  <Entry name="H" value="Master-In-Bond (MIB) Arrival"/>
+  <Entry name="I" value="Reissue"/>
+  <Entry name="J" value="Record"/>
+  <Entry name="K" value="In Production Send and Receive"/>
+  <Entry name="L" value="In Development/Send"/>
+  <Entry name="M" value="In Development/Receive"/>
+  <Entry name="N" value="In Development/Send and Receive"/>
+  <Entry name="O" value="In Test/Send"/>
+  <Entry name="P" value="In Test/Receive"/>
+  <Entry name="Q" value="In Test/Send and Receive"/>
+  <Entry name="R" value="In Production Receive"/>
+  <Entry name="S" value="Re-record"/>
+  <Entry name="T" value="Status Query"/>
+  <Entry name="U" value="Reject"/>
+  <Entry name="V" value="Respond"/>
+  <Entry name="W" value="Reverse"/>
+  <Entry name="X" value="Recommend"/>
+  <Entry name="Y" value="Not Recommend"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="00" value="Authorize and Settle Combination"/>
+  <Entry name="10" value="Adjourn"/>
+  <Entry name="11" value="Approve"/>
+  <Entry name="12" value="Auction"/>
+  <Entry name="13" value="Cleared"/>
+  <Entry name="14" value="Compose"/>
+  <Entry name="15" value="Correct and Resubmit Claim"/>
+  <Entry name="16" value="Consider"/>
+  <Entry name="17" value="Create"/>
+  <Entry name="18" value="Decide"/>
+  <Entry name="19" value="Declare"/>
+  <Entry name="20" value="Decree Recall"/>
+  <Entry name="21" value="Disapprove"/>
+  <Entry name="22" value="Dissolve"/>
+  <Entry name="23" value="Escalation"/>
+  <Entry name="24" value="On-Hold"/>
+  <Entry name="25" value="Dropped"/>
+  <Entry name="26" value="Bankruptcy Filed - Review Account"/>
+  <Entry name="27" value="Moved - Follow Up"/>
+  <Entry name="28" value="Change Phone Number"/>
+  <Entry name="29" value="Payment Received - Follow Up"/>
+  <Entry name="30" value="Account Active - Pursue"/>
+  <Entry name="31" value="Return per Client Request"/>
+  <Entry name="32" value="Pursue Legal Action"/>
+  <Entry name="33" value="Active"/>
+  <Entry name="34" value="Pursue Garnishment"/>
+  <Entry name="35" value="New Assignment - Proceed"/>
+  <Entry name="36" value="Repossess Merchandise"/>
+  <Entry name="37" value="Adjust Payment"/>
+  <Entry name="38" value="Change Address"/>
+  <Entry name="39" value="Skiptrace Account"/>
+  <Entry name="40" value="Close Account - Deceased"/>
+  <Entry name="41" value="Update to Inactive"/>
+  <Entry name="42" value="Account Paid in Full - Close Account"/>
+  <Entry name="43" value="Refused to Pay - Review Account"/>
+  <Entry name="44" value="Account Disputed - Review"/>
+  <Entry name="45" value="Do Not Contact - Fair Debt Collection Practices Act (FDCPA)"/>
+  <Entry name="46" value="Forward Account"/>
+  <Entry name="47" value="Enforce"/>
+  <Entry name="48" value="Extinguish"/>
+  <Entry name="49" value="Judgment for Defendant"/>
+  <Entry name="50" value="Judgment for Plaintiff"/>
+  <Entry name="51" value="Complete"/>
+  <Entry name="52" value="Justified"/>
+  <Entry name="53" value="Legal Moratorium on Debts Incurred to Date"/>
+  <Entry name="54" value="Meeting Held"/>
+  <Entry name="55" value="Meeting Held and Opened"/>
+  <Entry name="56" value="Moratorium"/>
+  <Entry name="57" value="Not Filed"/>
+  <Entry name="58" value="Not Justified"/>
+  <Entry name="59" value="Partial Release"/>
+  <Entry name="60" value="Provisional Moratorium"/>
+  <Entry name="61" value="Readjudicate"/>
+  <Entry name="62" value="Resolve"/>
+  <Entry name="63" value="Resulted in a Suit"/>
+  <Entry name="64" value="Resulted in No Liquidation"/>
+  <Entry name="65" value="Set Aside"/>
+  <Entry name="66" value="Settled out of Court"/>
+  <Entry name="67" value="Sold"/>
+  <Entry name="68" value="Stayed"/>
+  <Entry name="69" value="Subordination"/>
+  <Entry name="70" value="Surrender"/>
+  <Entry name="71" value="Term Expired"/>
+  <Entry name="72" value="Unsatisfied"/>
+  <Entry name="73" value="Void"/>
+  <Entry name="74" value="Suspended, 24 Hours"/>
+  <Entry name="75" value="Dispute"/>
+  <Entry name="76" value="Assign"/>
+  <Entry name="77" value="Agent Change"/>
+  <Entry name="78" value="Agent Hierarchy Change"/>
+  <Entry name="79" value="Reactivate"/>
+  <Entry name="80" value="Reconcile"/>
+  <Entry name="81" value="Renew"/>
+  <Entry name="82" value="Follow Up"/>
+  <Entry name="83" value="Future"/>
+  <Entry name="84" value="Letter of Authority Sent"/>
+  <Entry name="85" value="New Premium Only"/>
+  <Entry name="86" value="Pended for Follow Up"/>
+  <Entry name="87" value="Countersue"/>
+  <Entry name="88" value="Contact via Telephone Call"/>
+  <Entry name="89" value="Contact via Fax"/>
+  <Entry name="90" value="Mark"/>
+  <Entry name="91" value="In Progress"/>
+  <Entry name="92" value="Reconfirm"/>
+  <Entry name="93" value="Send Record at End of the Fall Term"/>
+  <Entry name="94" value="Send Record at End of the Winter Term"/>
+  <Entry name="95" value="Send Record at End of the Spring Term"/>
+  <Entry name="96" value="Send Record at End of the Summer Term"/>
+  <Entry name="97" value="Send Record at End of the Intersession Term"/>
+  <Entry name="A1" value="Certified in total"/>
+  <Entry name="A2" value="Certified - partial"/>
+  <Entry name="A3" value="Not Certified"/>
+  <Entry name="A4" value="Pended"/>
+  <Entry name="A5" value="Upheld"/>
+  <Entry name="A6" value="Modified"/>
+  <Entry name="AA" value="Award"/>
+  <Entry name="AB" value="Abandon"/>
+  <Entry name="AC" value="Acknowledge"/>
+  <Entry name="AD" value="Decrease in Amount"/>
+  <Entry name="AE" value="Activate"/>
+  <Entry name="AF" value="Affirm"/>
+  <Entry name="AG" value="Added Commodity Codes"/>
+  <Entry name="AH" value="Added Equipment"/>
+  <Entry name="AI" value="Increase in Amount"/>
+  <Entry name="AJ" value="Added Points Served"/>
+  <Entry name="AL" value="Allow"/>
+  <Entry name="AP" value="Appeal"/>
+  <Entry name="AQ" value="Acquitted"/>
+  <Entry name="AR" value="Advanced Payment"/>
+  <Entry name="AS" value="Discovered"/>
+  <Entry name="AT" value="Appoint"/>
+  <Entry name="AV" value="Cancellation Not Effected"/>
+  <Entry name="AW" value="Mass Cancellation"/>
+  <Entry name="AX" value="Partial Cancellation"/>
+  <Entry name="BD" value="Board"/>
+  <Entry name="BE" value="Producer Reporting Structure Change"/>
+  <Entry name="BF" value="Background Investigation"/>
+  <Entry name="BG" value="License Request"/>
+  <Entry name="BH" value="Book of Business Transfer"/>
+  <Entry name="BI" value="Bifurcate"/>
+  <Entry name="BJ" value="Print Loan Application Only"/>
+  <Entry name="BK" value="Guarantee Application Only"/>
+  <Entry name="BL" value="Guarantee Before Sending Application"/>
+  <Entry name="BM" value="Return Loan Application with Certification Data"/>
+  <Entry name="BN" value="Guarantee After Receiving Application"/>
+  <Entry name="BO" value="Use Both Date and Meter Criteria"/>
+  <Entry name="C1" value="Community Service Required"/>
+  <Entry name="C2" value="Convicted"/>
+  <Entry name="CA" value="Change Name"/>
+  <Entry name="CB" value="Cut"/>
+  <Entry name="CC" value="Concur"/>
+  <Entry name="CD" value="Completed Docket (Proposer Only and on Current Docket)"/>
+  <Entry name="CE" value="Charge"/>
+  <Entry name="CF" value="Confirm"/>
+  <Entry name="CG" value="Conditionally Grant"/>
+  <Entry name="CL" value="Closed"/>
+  <Entry name="CM" value="Commence"/>
+  <Entry name="CN" value="Consolidated"/>
+  <Entry name="CO" value="Correct"/>
+  <Entry name="CP" value="Counter Proposal"/>
+  <Entry name="CR" value="Process Immediate, Critical"/>
+  <Entry name="CS" value="Transfer of Claim for Security"/>
+  <Entry name="CT" value="Contact Payer"/>
+  <Entry name="CU" value="Continue"/>
+  <Entry name="CV" value="Convert"/>
+  <Entry name="CX" value="Claim Transferred"/>
+  <Entry name="D1" value="Deported"/>
+  <Entry name="D2" value="Dismissed"/>
+  <Entry name="DA" value="Division Adjustment Only"/>
+  <Entry name="DB" value="Shorten Expiration Date"/>
+  <Entry name="DC" value="Delivered to Another Carrier"/>
+  <Entry name="DD" value="Delete and Docket (Proposer Only on Unconcurred Docket)"/>
+  <Entry name="DE" value="Deny"/>
+  <Entry name="DF" value="Defer"/>
+  <Entry name="DG" value="Decrease"/>
+  <Entry name="DH" value="Extended Expiration Date"/>
+  <Entry name="DI" value="Dismissed with Prejudice"/>
+  <Entry name="DJ" value="Dismissed without Prejudice"/>
+  <Entry name="DK" value="Dispose"/>
+  <Entry name="DL" value="Divert"/>
+  <Entry name="DP" value="Delivered to Public Warehouse"/>
+  <Entry name="DR" value="Direct"/>
+  <Entry name="DS" value="Discarded"/>
+  <Entry name="DT" value="Discontinue"/>
+  <Entry name="DX" value="Discharged"/>
+  <Entry name="EA" value="Establish Address"/>
+  <Entry name="EB" value="Establish Additional Address"/>
+  <Entry name="EC" value="Establish Electronic Address"/>
+  <Entry name="ED" value="Suppress Correspondence"/>
+  <Entry name="EE" value="Suppress Forms"/>
+  <Entry name="EN" value="Enter"/>
+  <Entry name="EP" value="Entire Patient Information"/>
+  <Entry name="ER" value="Extension Request"/>
+  <Entry name="EV" value="Evaluate"/>
+  <Entry name="EX" value="Extend"/>
+  <Entry name="EZ" value="Exception Occurred"/>
+  <Entry name="F1" value="Fined"/>
+  <Entry name="FA" value="Fail"/>
+  <Entry name="FC" value="Factor Change"/>
+  <Entry name="FI" value="File"/>
+  <Entry name="FO" value="Forfeit"/>
+  <Entry name="FR" value="Patient Follow-Up Required"/>
+  <Entry name="GR" value="Grant"/>
+  <Entry name="HM" value="Process Manually"/>
+  <Entry name="HR" value="Hold Until Released"/>
+  <Entry name="I1" value="Found Not Guilty"/>
+  <Entry name="IA" value="Deactivate"/>
+  <Entry name="IM" value="Increase"/>
+  <Entry name="IN" value="Interim"/>
+  <Entry name="IS" value="Issue"/>
+  <Entry name="IT" value="Initiate"/>
+  <Entry name="JA" value="Jailed"/>
+  <Entry name="JO" value="Join"/>
+  <Entry name="JU" value="Judgment"/>
+  <Entry name="KA" value="Registration Confirmed"/>
+  <Entry name="LC" value="Left at Consignee"/>
+  <Entry name="LQ" value="Liquidate"/>
+  <Entry name="ME" value="Merge"/>
+  <Entry name="MO" value="Mooting"/>
+  <Entry name="NA" value="No Action Required"/>
+  <Entry name="NC" value="Process Routinely, Not Critical"/>
+  <Entry name="ND" value="No Change"/>
+  <Entry name="NP" value="Not Present"/>
+  <Entry name="NS" value="Do Not Send"/>
+  <Entry name="OD" value="Order"/>
+  <Entry name="OP" value="Open"/>
+  <Entry name="OR" value="Use Date or Meter Criteria (whichever occurs first)"/>
+  <Entry name="OT" value="Other Unlisted Action"/>
+  <Entry name="P1" value="Sentenced to Probation"/>
+  <Entry name="PA" value="Tariff Publisher Add"/>
+  <Entry name="PB" value="Partial Transfer of Claim"/>
+  <Entry name="PC" value="Previously Converted"/>
+  <Entry name="PD" value="Tariff Publisher Delete"/>
+  <Entry name="PF" value="Preliminary Final"/>
+  <Entry name="PI" value="Provide Additional Information"/>
+  <Entry name="PJ" value="Progress Payment"/>
+  <Entry name="PO" value="Proposed"/>
+  <Entry name="PP" value="Partial Patient Information"/>
+  <Entry name="PR" value="Present"/>
+  <Entry name="PS" value="Proposal"/>
+  <Entry name="PT" value="Proposal Trace"/>
+  <Entry name="PU" value="Publish Changes"/>
+  <Entry name="PV" value="Provisional Payment"/>
+  <Entry name="R1" value="Reopened"/>
+  <Entry name="R2" value="Send Record Now"/>
+  <Entry name="R3" value="Send Record at End of the Term"/>
+  <Entry name="R4" value="Send Record After Degree is Posted"/>
+  <Entry name="R5" value="Send Vocational Record Only"/>
+  <Entry name="R6" value="Transfer"/>
+  <Entry name="R7" value="Assumption"/>
+  <Entry name="R8" value="Terminate"/>
+  <Entry name="R9" value="Reinstate"/>
+  <Entry name="RA" value="Remove"/>
+  <Entry name="RB" value="Resecure"/>
+  <Entry name="RC" value="Returned to Carrier Facility"/>
+  <Entry name="RD" value="Rate and Division Adjustment"/>
+  <Entry name="RE" value="Released"/>
+  <Entry name="RF" value="Returned to Shipper's Facility (Other Than Original Shipping Location)"/>
+  <Entry name="RG" value="Refer"/>
+  <Entry name="RH" value="Recall"/>
+  <Entry name="RI" value="Restricted"/>
+  <Entry name="RJ" value="Rate Adjustment"/>
+  <Entry name="RK" value="Rate Adjustment with a Sequence Change"/>
+  <Entry name="RL" value="Reschedule"/>
+  <Entry name="RM" value="Remand"/>
+  <Entry name="RN" value="Reject Proposal with Counter Proposal to Follow"/>
+  <Entry name="RO" value="Returned to Original Shipping Location"/>
+  <Entry name="RP" value="Request To Publish"/>
+  <Entry name="RQ" value="Tariff Publisher Reissue"/>
+  <Entry name="RR" value="Reverse and Remand"/>
+  <Entry name="RS" value="Report Status"/>
+  <Entry name="RT" value="Restrain"/>
+  <Entry name="RU" value="Return"/>
+  <Entry name="RV" value="Revoke"/>
+  <Entry name="RW" value="Rescind"/>
+  <Entry name="RX" value="Replace"/>
+  <Entry name="RZ" value="Reject - Header Level Errors"/>
+  <Entry name="S1" value="Secure"/>
+  <Entry name="S2" value="Suspended"/>
+  <Entry name="SA" value="Satisfy"/>
+  <Entry name="SB" value="Subrogate"/>
+  <Entry name="SC" value="Screen"/>
+  <Entry name="SD" value="Seal"/>
+  <Entry name="SE" value="Settle"/>
+  <Entry name="SL" value="Schedule"/>
+  <Entry name="SR" value="Serve"/>
+  <Entry name="SS" value="Sustain"/>
+  <Entry name="SU" value="Suspend"/>
+  <Entry name="SV" value="Sever"/>
+  <Entry name="SZ" value="Seize"/>
+  <Entry name="TD" value="Temporarily Deny"/>
+  <Entry name="TE" value="Oppose"/>
+  <Entry name="TG" value="Temporarily Grant"/>
+  <Entry name="TN" value="Annul"/>
+  <Entry name="TP" value="Temporarily Grant, in Part"/>
+  <Entry name="TR" value="Trim"/>
+  <Entry name="TS" value="Disallow"/>
+  <Entry name="TU" value="Take Under Advisement"/>
+  <Entry name="VA" value="Vacate"/>
+  <Entry name="W1" value="Reconcile Historical Records"/>
+  <Entry name="WD" value="Withdrawn"/>
+  <Entry name="WI" value="Winterize"/>
+  <Entry name="WQ" value="Accept"/>
+  <Entry name="WV" value="Waive"/>
+</Table>

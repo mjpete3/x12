@@ -1,0 +1,113 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1013.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1013">
+  <Entry name="1" value="Case Information Statement"/>
+  <Entry name="2" value="Sheriff Return of Service"/>
+  <Entry name="3" value="Intent to File Pleading"/>
+  <Entry name="4" value="Appearance"/>
+  <Entry name="5" value="Opinion"/>
+  <Entry name="25" value="Generic Dismissal of Bankruptcy Case"/>
+  <Entry name="26" value="Order of Bifurcation and Dismissal of Joint Bankruptcy"/>
+  <Entry name="27" value="Generic Conversion, Refile Claims in New Case"/>
+  <Entry name="28" value="Generic Conversion, Do Not Refile Claims in New Case"/>
+  <Entry name="70" value="Trustee's Notice of Filing of Final Account"/>
+  <Entry name="9A" value="Section 341 Notice, Chapter 7, Individual (Joint), No Asset"/>
+  <Entry name="9B" value="Section 341 Notice, Chapter 7, Corporation (Partnership), No Asset"/>
+  <Entry name="9C" value="Section 341 Notice, Chapter 7, Individual (Joint), Asset"/>
+  <Entry name="9D" value="Section 341 Notice, Chapter 7, Corporation (Partnership), Asset"/>
+  <Entry name="9E" value="Section 341 Notice, Chapter 11, Individual (Joint)"/>
+  <Entry name="9F" value="Section 341 Notice, Chapter 11, Corporation (Partnership)"/>
+  <Entry name="9G" value="Section 341 Notice, Chapter 12, Individual (Joint)"/>
+  <Entry name="9H" value="Section 341 Notice, Chapter 12, Corporation (Partnership)"/>
+  <Entry name="9I" value="Section 341 Notice, Chapter 13, Individual (Joint)"/>
+  <Entry name="AB" value="Proposed Abandonment"/>
+  <Entry name="CJ" value="Consent Judgment"/>
+  <Entry name="CP" value="Notice to Debtor and Debtor's Counsel to Commence Payments"/>
+  <Entry name="DJ" value="Default Judgment"/>
+  <Entry name="FJ" value="Foreign Judgment"/>
+  <Entry name="JC" value="Judgment Confession"/>
+  <Entry name="JN" value="Judgment Note"/>
+  <Entry name="SJ" value="Summary Judgment"/>
+  <Entry name="YJ" value="Declaratory Judgment"/>
+  <Entry name="101" value="New Claims Bar Date"/>
+  <Entry name="11B" value="Postconversion 341, Chapter 11, Business"/>
+  <Entry name="11I" value="Postconversion 341, Chapter 11, Individual"/>
+  <Entry name="12B" value="Postconversion 341, Chapter 12, Business"/>
+  <Entry name="12I" value="Postconversion 341, Chapter 12, Individual"/>
+  <Entry name="12N" value="Hardship Discharge of Chapter 12 Debtor, Plan Not Completed"/>
+  <Entry name="12Y" value="Discharge of Chapter 12 Debtor After Completion of Plan"/>
+  <Entry name="13B" value="Discharge of Chapter 13 Debtor in a Pre-11/5/90 Case"/>
+  <Entry name="13I" value="Postconversion 341, Chapter 13, Individual"/>
+  <Entry name="13N" value="Hardship Discharge of Chapter 13 Debtor, Plan Not Completed"/>
+  <Entry name="13P" value="Summary of Chapter 13 Plan"/>
+  <Entry name="13Y" value="Discharge of Chapter 13 Debtor After Completion of Plan"/>
+  <Entry name="18J" value="Discharge of Joint Chapter 7, Both Debtors Discharged"/>
+  <Entry name="18O" value="Discharge of Joint Chapter 7, One Debtor Discharged"/>
+  <Entry name="23A" value="Conversion of Chapter 13 to Chapter 7, by Debtor"/>
+  <Entry name="23B" value="Conversion Chapter 13 to Chapter 7, by Trustee (Creditor)"/>
+  <Entry name="24B" value="Dismissal of Chapter 13 Case"/>
+  <Entry name="305" value="Order of Execution"/>
+  <Entry name="306" value="Levy"/>
+  <Entry name="308" value="Civil Action Hearing"/>
+  <Entry name="309" value="Execution Sale"/>
+  <Entry name="310" value="Recovery of Real Property Hearing"/>
+  <Entry name="311" value="Order for Possession"/>
+  <Entry name="315" value="Judgment"/>
+  <Entry name="417" value="Warrant of Arrest"/>
+  <Entry name="603" value="Summary Conviction"/>
+  <Entry name="610" value="Guardian Notice to Represent Minor Party"/>
+  <Entry name="611" value="Trial Summary Case"/>
+  <Entry name="612" value="Hearing"/>
+  <Entry name="616" value="Continuance"/>
+  <Entry name="619" value="Fugitive"/>
+  <Entry name="621" value="Conviction"/>
+  <Entry name="623" value="Intent to Defend"/>
+  <Entry name="625" value="Transfer"/>
+  <Entry name="628" value="Bail Hearing"/>
+  <Entry name="629" value="Preliminary Hearing"/>
+  <Entry name="630" value="Preliminary Arraignment"/>
+  <Entry name="631" value="Indigency Hearing"/>
+  <Entry name="638" value="Withdrawal of Suspension"/>
+  <Entry name="642" value="Determination of Property Claims"/>
+  <Entry name="700" value="Disposition"/>
+  <Entry name="701" value="Trustee Report of Surplus"/>
+  <Entry name="7BA" value="Postconversion 341, Chapter 7, Business, Asset"/>
+  <Entry name="7IA" value="Postconversion 341, Chapter 7, Individual, Asset"/>
+  <Entry name="DEF" value="Deficiency Notice"/>
+  <Entry name="DIS" value="Discharge of Debtor, Chapter 7 (11), Individual"/>
+  <Entry name="DOT" value="Order Approving Account, Discharging Trustee and Closing Estate"/>
+  <Entry name="FAM" value="Order of Dismissal for Failure to Appear at the Section 341 First Meeting of Creditors"/>
+  <Entry name="FCL" value="File Claims in Lead Case"/>
+  <Entry name="FFS" value="Order of Dismissal for Failure to Timely File Schedules"/>
+  <Entry name="ITB" value="Notice of Appointment of Interim Trustee and Approval of Blanket Bond"/>
+  <Entry name="NOA" value="Notice of Assets"/>
+  <Entry name="OCP" value="Order Confirming Plan"/>
+  <Entry name="ODC" value="Order Dismissing Case"/>
+  <Entry name="OFR" value="Order for Relief"/>
+  <Entry name="POC" value="Proof of Claim"/>
+  <Entry name="SCH" value="Notice of Deadline for Filing Schedules"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,204 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T122.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T122">
+  <Entry name="AA" value="Percent Of Amount Advanced"/>
+  <Entry name="AB" value="Accelerated"/>
+  <Entry name="AC" value="Percent Of Amount Of Collection"/>
+  <Entry name="AD" value="Addition"/>
+  <Entry name="AE" value="Percent of Outstanding Principal Balance"/>
+  <Entry name="AF" value="Percent of Original Principal Balance"/>
+  <Entry name="AG" value="Percentage"/>
+  <Entry name="AI" value="Effective Payment Rate"/>
+  <Entry name="AJ" value="Fixed Dollar Amount"/>
+  <Entry name="AV" value="Ad Valorum (Per Cent of Value)"/>
+  <Entry name="B0" value="Per Board Feet"/>
+  <Entry name="B1" value="Per 100 Board Feet"/>
+  <Entry name="BF" value="Per 1,000 Board Feet"/>
+  <Entry name="BL" value="Bill of Lading Declared Value"/>
+  <Entry name="BR" value="Per Barrel"/>
+  <Entry name="C5" value="Per 50 Cubic Feet"/>
+  <Entry name="CD" value="Per Car Per Day"/>
+  <Entry name="CE" value="Ceiling"/>
+  <Entry name="CF" value="Per 40 Cubic Feet (Measurement Ton)"/>
+  <Entry name="CM" value="Per Cubic Meter"/>
+  <Entry name="CO" value="Cost per Unit"/>
+  <Entry name="CP" value="Computer Units"/>
+  <Entry name="CS" value="Per Special Charge"/>
+  <Entry name="CT" value="Charge or Credit Based on Percentage of Total"/>
+  <Entry name="CW" value="Per Hundred Weight"/>
+  <Entry name="DD" value="Department of Defense Unique Codes"/>
+  <Entry name="DE" value="Decrease"/>
+  <Entry name="DH" value="Per Hundred Dollars"/>
+  <Entry name="DI" value="Divisor"/>
+  <Entry name="DO" value="Flat Division"/>
+  <Entry name="DP" value="Per $1000"/>
+  <Entry name="DR" value="Per Dromedary Service Shipment"/>
+  <Entry name="DS" value="Per Hundredweight Per Mile Per Dromedary Service Shipment"/>
+  <Entry name="DV" value="Per Day Per Vehicle"/>
+  <Entry name="EI" value="Ex Parte Increase"/>
+  <Entry name="ER" value="Per Each Request"/>
+  <Entry name="FA" value="Floor"/>
+  <Entry name="FB" value="Full"/>
+  <Entry name="FC" value="Flat Charge"/>
+  <Entry name="FF" value="Percent Of Tariff Rate"/>
+  <Entry name="FI" value="First"/>
+  <Entry name="FL" value="Per Flat Bed"/>
+  <Entry name="FN" value="Per Two Weeks"/>
+  <Entry name="FR" value="Flat Rate"/>
+  <Entry name="FT" value="Per Foot"/>
+  <Entry name="FV" value="Loaded to Full Visible Capacity"/>
+  <Entry name="GT" value="Per Gross Ton"/>
+  <Entry name="HD" value="Per Hundredweight Per Dromedary Service Shipment"/>
+  <Entry name="HL" value="Per Hour Per Load"/>
+  <Entry name="HM" value="Rate Per Hundred Weight Per Mile"/>
+  <Entry name="HN" value="Per Half Month"/>
+  <Entry name="HX" value="Hundredweight Per Day"/>
+  <Entry name="HY" value="Per Half Year"/>
+  <Entry name="IA" value="Increase"/>
+  <Entry name="IM" value="Intermodal Unit"/>
+  <Entry name="IN" value="Per Inch"/>
+  <Entry name="KG" value="Per Kilograms"/>
+  <Entry name="KL" value="Per Kiloliter"/>
+  <Entry name="KP" value="Per Kilometer"/>
+  <Entry name="KT" value="Per Kilotons"/>
+  <Entry name="LA" value="Per Pound Per Article"/>
+  <Entry name="LB" value="Per Pound"/>
+  <Entry name="LF" value="Per Loaded 436L Pallet"/>
+  <Entry name="LI" value="Liability per Pound per Piece"/>
+  <Entry name="LL" value="Life of Loan"/>
+  <Entry name="LP" value="Per Label"/>
+  <Entry name="LR" value="Per Litre"/>
+  <Entry name="LS" value="Lump Sum"/>
+  <Entry name="LT" value="Per Long Ton"/>
+  <Entry name="LV" value="Per Pound Per Vehicle"/>
+  <Entry name="M1" value="Minimum Per Person"/>
+  <Entry name="MA" value="Minimum per Service"/>
+  <Entry name="MB" value="Per Mile per Service"/>
+  <Entry name="MC" value="Minimum Per Car"/>
+  <Entry name="MD" value="Per Man Per Day"/>
+  <Entry name="ME" value="Multiple Equipment"/>
+  <Entry name="MF" value="Maximum"/>
+  <Entry name="MG" value="Miles Per Week Per Driver"/>
+  <Entry name="MH" value="Per Man Per Hour"/>
+  <Entry name="MI" value="Negative Charge"/>
+  <Entry name="MM" value="Per Metric Ton (Tonne)"/>
+  <Entry name="MN" value="Minimum"/>
+  <Entry name="MO" value="Per Month"/>
+  <Entry name="MP" value="Maximum Per Shipment"/>
+  <Entry name="MR" value="Per Mile Per Vehicle Used Per Round Trip"/>
+  <Entry name="MS" value="Minimum Per Shipment"/>
+  <Entry name="MT" value="Per Permit"/>
+  <Entry name="MU" value="Multiplier"/>
+  <Entry name="MV" value="Per Mile Per Vehicle (Rail Car) Moved"/>
+  <Entry name="MW" value="Minimum Per Vehicle"/>
+  <Entry name="MX" value="Mixed Shipment Rule"/>
+  <Entry name="MZ" value="Per Mile Per Shipment"/>
+  <Entry name="NA" value="Negative"/>
+  <Entry name="NB" value="Nonamortizing"/>
+  <Entry name="ND" value="Minimum Per Driver"/>
+  <Entry name="NE" value="Net Package Charge"/>
+  <Entry name="NM" value="Per Mile Per Person"/>
+  <Entry name="NP" value="Minimum Per Day Per Person"/>
+  <Entry name="NV" value="Minimum Per Day Per Vehicle"/>
+  <Entry name="OP" value="Optional Value"/>
+  <Entry name="OS" value="Per Season"/>
+  <Entry name="OT" value="One-Time Charge"/>
+  <Entry name="P0" value="Per Year per Square Foot"/>
+  <Entry name="P1" value="Per Advancement"/>
+  <Entry name="P2" value="Per Person Per Night"/>
+  <Entry name="P8" value="Potential"/>
+  <Entry name="P9" value="Partial"/>
+  <Entry name="PA" value="Per Container"/>
+  <Entry name="PB" value="Per Barge"/>
+  <Entry name="PC" value="Per Car"/>
+  <Entry name="PD" value="Per Day"/>
+  <Entry name="PE" value="Per 20 Foot Equivalent (TEU)"/>
+  <Entry name="PF" value="Per Cubic Foot"/>
+  <Entry name="PG" value="Per Gallon"/>
+  <Entry name="PH" value="Per Hundred (of Basic Unit)"/>
+  <Entry name="PI" value="Hourly Rate Per Vehicle"/>
+  <Entry name="PJ" value="Projected"/>
+  <Entry name="PK" value="Per Cord"/>
+  <Entry name="PL" value="Per Load"/>
+  <Entry name="PM" value="Per Mile"/>
+  <Entry name="PN" value="Per Night"/>
+  <Entry name="PO" value="Positive"/>
+  <Entry name="PP" value="Per Piece"/>
+  <Entry name="PQ" value="Per Period"/>
+  <Entry name="PR" value="Per Hour"/>
+  <Entry name="PS" value="Per Shipment"/>
+  <Entry name="PT" value="Per Net Ton"/>
+  <Entry name="PU" value="Per Unit"/>
+  <Entry name="PV" value="Per Vehicle"/>
+  <Entry name="PW" value="Percentage of Charges"/>
+  <Entry name="PX" value="Payment"/>
+  <Entry name="PY" value="Per Gallon Per Mile"/>
+  <Entry name="PZ" value="Per Package Charge"/>
+  <Entry name="QY" value="Per Quarter Year"/>
+  <Entry name="RA" value="Rate per Thousand"/>
+  <Entry name="RB" value="Rate per Hundred"/>
+  <Entry name="RC" value="Rate"/>
+  <Entry name="RL" value="Per Relocation"/>
+  <Entry name="RP" value="Percent Of Rate"/>
+  <Entry name="RT" value="Per Vehicle Used Per Round Trip"/>
+  <Entry name="S0" value="Per 1000 Square Feet"/>
+  <Entry name="S1" value="Per 100 Square Feet"/>
+  <Entry name="SA" value="Subtraction"/>
+  <Entry name="SB" value="Subsequent"/>
+  <Entry name="SC" value="Per Stencil"/>
+  <Entry name="SD" value="Shipper's Export Declaration Value"/>
+  <Entry name="SE" value="Second"/>
+  <Entry name="SF" value="Per Square Feet"/>
+  <Entry name="SG" value="Stated"/>
+  <Entry name="SH" value="Scheduled"/>
+  <Entry name="SP" value="Per Stop"/>
+  <Entry name="ST" value="Per Short Ton"/>
+  <Entry name="SU" value="Per Stack Car Unit"/>
+  <Entry name="SV" value="Per Vehicle Per Stop"/>
+  <Entry name="SY" value="Square Yard"/>
+  <Entry name="SZ" value="Per Day Per Shipment"/>
+  <Entry name="TB" value="Per 2 Trailers Same Day"/>
+  <Entry name="TC" value="Per 3 Trailers Same Day"/>
+  <Entry name="TD" value="Per 4 Trailers Same Day"/>
+  <Entry name="TM" value="Per Mile Per Ton"/>
+  <Entry name="TN" value="Per Train Rate"/>
+  <Entry name="TP" value="Per Tag"/>
+  <Entry name="TR" value="Per Trailer (Per Train)"/>
+  <Entry name="VA" value="Per Vehicle Moved"/>
+  <Entry name="VH" value="Per Vehicle Used"/>
+  <Entry name="VM" value="Volume"/>
+  <Entry name="VP" value="Maximum Per Vehicle"/>
+  <Entry name="VR" value="Per Rail Car Used"/>
+  <Entry name="VS" value="Various"/>
+  <Entry name="VT" value="Per Mile per Vehicle"/>
+  <Entry name="VU" value="Per Mile Per Vehicle (Rail Car) Used"/>
+  <Entry name="VV" value="Per Vehicle per State"/>
+  <Entry name="WK" value="Per Week"/>
+  <Entry name="WM" value="Weight or Measurement"/>
+  <Entry name="XP" value="Maximum Per Person"/>
+  <Entry name="YR" value="Per Year"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1488.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1488">
+  <Entry name="A" value="Body; Including Floors, Roof, Sides, Ends and Multi-level Rack"/>
+  <Entry name="B" value="Braking System; Any Brake Component Listed in Rule 83 Car Part Codes under the Heading of 'Brake Equipment' and 'Piping'"/>
+  <Entry name="C" value="Clean-Out; Including Preparation for Loading such as Clean-out, Conditioning and Pre-tripping"/>
+  <Entry name="D" value="Derailment or Accident; Damage Resulting from Derailment, Sideswipes, Fire, Flood or Other Casualty Occurrence"/>
+  <Entry name="E" value="Doors; Including Side, End and Hopper Doors, Outlet Gates, Hatch and Dome Covers"/>
+  <Entry name="F" value="Draft System; Including Couplers, Yokes, Draft Gears, Draft Lugs, Draft Sills, End of Car and Center of Car Cushioning Units and Articulated Connections"/>
+  <Entry name="G" value="Interior Linings and Coatings; Including any Interior Lining or Coating"/>
+  <Entry name="H" value="Load Attention: Requiring Measurement, Weighing, Adjustment, Transfer or Containment of Leaking Commodity"/>
+  <Entry name="I" value="Load Restraining Devices; Components Integral to Car such as Tie Down Equipment, Interior Bulkheads, DF Equipment, Trailer Hitches, Container Pedestals or Other Similar Equipment"/>
+  <Entry name="J" value="Mechanical Inspection; Including Inspection From Early Warning Letters, Maintenance Advisory Notifications or Special Instructions Received From the Car Owners or Handling Line"/>
+  <Entry name="K" value="Refrigeration Equipment; Including Inspections Pre-Tripping and Defective Equipment Listed in Rule 83 Car Part Codes Under the Heading 'Mechanical Refrigeration Equipment'"/>
+  <Entry name="L" value="Safety Appliance; Including Handholds, Sill Steps, Ladders, Running Boards, Crossover Boards, Brake Steps and Uncoupling Levers"/>
+  <Entry name="M" value="Trucks; Including Side Frames, Truck Bolsters, Friction Castins, Springs Snubbers and Side Bearings, but Excluding Wheel Assemblies and Brake Rigging"/>
+  <Entry name="N" value="Underframe; Including Center Sills, Side Sills and Body Bolsters, Crossbearers, Crossties, Body Center Plates and Body Side Bearings"/>
+  <Entry name="O" value="Wheel Assembly; Including Wheels, Axles, Friction or Roller Bearings Wedges, Adapters, Periodic Attention and Hot Boxes"/>
+  <Entry name="P" value="Enroute to Ship for Inspection"/>
+  <Entry name="Q" value="Defect Unknown; Car Awaiting Inspection"/>
+</Table>

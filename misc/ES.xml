@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ES.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="ES" comment="To provide detail information regarding the dynamic condition of equipment">
+  <Field name="BadOrderReasonCode" required="y" min="1" max="1" validation="T1488" comment="Code indicating the reason equipment has been designated as a bad order"/>
+  <Field name="HoldReasonCode" required="y" min="2" max="2" validation="T1489" comment="Code indicating the reason equipment has been detained"/>
+  <Field name="AssociationOfAmericanRailroadsCarGradeCode" required="y" min="1" max="1" comment="Code indicating the mechanical condition of a rail car"/>
+  <Field name="TimePeriodQualifier" required="y" min="1" max="1" validation="T519" comment="Code identifying the type of time period"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="SwitchTypeCode" required="y" min="2" max="2" validation="T617" comment="Code identifying type of switch movement desired or accomplished"/>
+</Segment>

@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PPD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PPD" comment="To identify the payment pattern of specific, credit-related items">
+  <Field name="PaymentPattern" required="y" min="1" max="84" comment="To identify a monthly payment pattern over time"/>
+  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod1" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="ReferenceIdentification1" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="RatingCode" required="y" min="2" max="2" validation="T263" comment="Code identifying the status of the credit account rating"/>
+  <Field name="DateTimePeriod2" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="Number1" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number2" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number3" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number4" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number5" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number6" type="long" required="y" min="1" max="9" comment="A generic number"/>
+</Segment>

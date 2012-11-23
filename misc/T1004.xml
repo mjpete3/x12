@@ -1,0 +1,305 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1004.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1004">
+  <Entry name="1" value="Lease Rate Factor"/>
+  <Entry name="2" value="Early Termination Rate"/>
+  <Entry name="3" value="Renewal Rate"/>
+  <Entry name="4" value="Renewal Rate Cap"/>
+  <Entry name="5" value="One Family"/>
+  <Entry name="6" value="2-4 Family"/>
+  <Entry name="7" value="Multifamily"/>
+  <Entry name="8" value="Commercial"/>
+  <Entry name="9" value="Other"/>
+  <Entry name="A" value="Non-recoverable Depreciation"/>
+  <Entry name="B" value="Recoverable Depreciation"/>
+  <Entry name="C" value="Depreciation"/>
+  <Entry name="D" value="Overhead on Recoverable Depreciation"/>
+  <Entry name="E" value="Profit on Recoverable Depreciation"/>
+  <Entry name="F" value="Overhead"/>
+  <Entry name="G" value="Net Sales to Fixed Assets Ratio"/>
+  <Entry name="H" value="Total Liabilities to Total Assets Ratio"/>
+  <Entry name="J" value="Discount"/>
+  <Entry name="K" value="Non-current Assets to Net Worth"/>
+  <Entry name="L" value="Non-current Assets to Total Assets"/>
+  <Entry name="M" value="Miscellaneous Ownership Percentage"/>
+  <Entry name="N" value="Net Profit Payment Ownership Percentage"/>
+  <Entry name="O" value="Overriding Royalty Payment Ownership Percentage"/>
+  <Entry name="P" value="Production Payment Ownership Percentage"/>
+  <Entry name="Q" value="Percent Relative to Industry Average"/>
+  <Entry name="R" value="Royalty Ownership Percentage"/>
+  <Entry name="S" value="Special Overriding Royalty Ownership Percentage"/>
+  <Entry name="T" value="Tax Ownership Percentage"/>
+  <Entry name="U" value="Sales to Current Assets"/>
+  <Entry name="V" value="Working Capital to Sales"/>
+  <Entry name="W" value="Working Ownership Percentage"/>
+  <Entry name="X" value="Purchase Ownership Percentage"/>
+  <Entry name="Y" value="Percent Relative to National Average"/>
+  <Entry name="01" value="Guaranteed Interest Rate"/>
+  <Entry name="02" value="Locked Interest Rate"/>
+  <Entry name="03" value="Creditors to Sales Costs"/>
+  <Entry name="04" value="Interest Payable to Sales"/>
+  <Entry name="05" value="Target Fee or Profit"/>
+  <Entry name="06" value="Current Schedule Variance"/>
+  <Entry name="07" value="Current Cost Variance"/>
+  <Entry name="08" value="Cumulative Schedule Variance"/>
+  <Entry name="09" value="Cumulative Cost Variance"/>
+  <Entry name="10" value="Complete"/>
+  <Entry name="11" value="Remaining"/>
+  <Entry name="12" value="Vacant"/>
+  <Entry name="13" value="Owner Occupancy"/>
+  <Entry name="14" value="Availability Factor"/>
+  <Entry name="15" value="Efficiency Factor"/>
+  <Entry name="16" value="Scrap or Rework Yield"/>
+  <Entry name="17" value="Physical (Percent) Completed"/>
+  <Entry name="18" value="Percent of Value"/>
+  <Entry name="19" value="Premium Rate"/>
+  <Entry name="20" value="Loan-to-Value Balance Remaining"/>
+  <Entry name="21" value="Annual Demand Quantity Weighting Factor"/>
+  <Entry name="22" value="Annual Demand Value Weighting Factor"/>
+  <Entry name="23" value="Essentiality Weighting Factor"/>
+  <Entry name="24" value="Procurement Lead-time Weighting Factor"/>
+  <Entry name="25" value="Months To Procurement Weighting Factor"/>
+  <Entry name="26" value="Annual Demand Frequency Weighting Factor"/>
+  <Entry name="27" value="Tenant Occupancy"/>
+  <Entry name="28" value="Occupancy Rate"/>
+  <Entry name="29" value="Working Capital Need to Sales"/>
+  <Entry name="30" value="Active Contracts Delinquent-Contractor Caused"/>
+  <Entry name="31" value="Active Contracts Delinquent-All Causes"/>
+  <Entry name="32" value="Active Line Items Delinquent-Contractor Caused"/>
+  <Entry name="33" value="Active Line Items Delinquent-All Causes"/>
+  <Entry name="34" value="Contracts Completed Delinquent-Contractor Caused"/>
+  <Entry name="35" value="Contracts Completed Delinquent-All Causes"/>
+  <Entry name="36" value="Line Items Completed Delinquent-Contractor Caused"/>
+  <Entry name="37" value="Line Items Completed Delinquent-All Causes"/>
+  <Entry name="38" value="Delinquent Active Line Items in the Aging Population"/>
+  <Entry name="39" value="Liquid Assets to Sales"/>
+  <Entry name="40" value="Participation"/>
+  <Entry name="41" value="Servicing Fee"/>
+  <Entry name="42" value="Percentage of Original Loan Amount"/>
+  <Entry name="43" value="Percentage of Principal Balance"/>
+  <Entry name="44" value="Percentage of Principal and Interest Payment"/>
+  <Entry name="45" value="Percentage of Total Mortgage Payment"/>
+  <Entry name="46" value="Guarantee Fee Per Contract"/>
+  <Entry name="47" value="Guarantee Fee After Alternate Payment Method"/>
+  <Entry name="48" value="Guarantee Fee After Buyup or Buydown"/>
+  <Entry name="49" value="Buyup or Buydown Rate per Basis Point"/>
+  <Entry name="50" value="Security Margin"/>
+  <Entry name="51" value="Insurance Coverage"/>
+  <Entry name="52" value="Guarantee Amount"/>
+  <Entry name="53" value="Participation Retained or Owned"/>
+  <Entry name="54" value="Inventory to Cost of Goods Sold"/>
+  <Entry name="55" value="Net Profit Margin"/>
+  <Entry name="56" value="Financial Expenses to Sales"/>
+  <Entry name="57" value="Return on Value Added"/>
+  <Entry name="58" value="Employee Costs to Value Added"/>
+  <Entry name="59" value="Basement Finished"/>
+  <Entry name="60" value="Late Charge Rate"/>
+  <Entry name="62" value="Total Assets to Total Liability"/>
+  <Entry name="65" value="Indebtedness"/>
+  <Entry name="66" value="Liquid Ratio"/>
+  <Entry name="67" value="Net Worth to Total Assets"/>
+  <Entry name="68" value="Subcontracted"/>
+  <Entry name="69" value="Percent of Points Paid by Borrower"/>
+  <Entry name="70" value="Percent of Points Paid by Seller"/>
+  <Entry name="71" value="Percent of Points Paid by Other"/>
+  <Entry name="72" value="Cooperative"/>
+  <Entry name="73" value="Markup"/>
+  <Entry name="76" value="Sales per Employee"/>
+  <Entry name="77" value="Sales to Net Working Capital"/>
+  <Entry name="78" value="Tax Percentage Factor"/>
+  <Entry name="79" value="Total Liability to Net Worth"/>
+  <Entry name="80" value="Percentage of Time"/>
+  <Entry name="81" value="Predominant Occupancy Vacant"/>
+  <Entry name="82" value="Asset to Sales"/>
+  <Entry name="83" value="Capital per Employee"/>
+  <Entry name="84" value="Cash Sales"/>
+  <Entry name="85" value="Collection Period (Days)"/>
+  <Entry name="86" value="Costs per Employee"/>
+  <Entry name="87" value="Accounts Payable (Creditors) to Sales"/>
+  <Entry name="88" value="Current Liabilities to Net Worth"/>
+  <Entry name="89" value="Current Liabilities to Inventory (Stock)"/>
+  <Entry name="90" value="Current Ratio"/>
+  <Entry name="91" value="Fixed Assets to Net Worth"/>
+  <Entry name="92" value="Inventory (Stock) Turnover"/>
+  <Entry name="93" value="Profit per Employee"/>
+  <Entry name="94" value="Quick Ratio (Acid Test)"/>
+  <Entry name="95" value="Retainage Required for Project"/>
+  <Entry name="96" value="Return on Assets"/>
+  <Entry name="97" value="Return on Sales (Profit Margin)"/>
+  <Entry name="98" value="Return on Capital"/>
+  <Entry name="99" value="Shareholders' Return (Return on Net Worth)"/>
+  <Entry name="AB" value="Contracts Obtained by Negotiation"/>
+  <Entry name="AC" value="Cost Plus Basis"/>
+  <Entry name="AD" value="Lump Sum Payments"/>
+  <Entry name="AE" value="Purchases on Letter of Credit"/>
+  <Entry name="AF" value="Purchases on Floor Plan"/>
+  <Entry name="AG" value="Change in Sales"/>
+  <Entry name="AH" value="Change in Profit"/>
+  <Entry name="AI" value="Damage"/>
+  <Entry name="AJ" value="Interest on Liabilities"/>
+  <Entry name="AK" value="Risk Margin"/>
+  <Entry name="AL" value="Liability Ratio"/>
+  <Entry name="AM" value="Interest Cover"/>
+  <Entry name="AN" value="Annual Limit"/>
+  <Entry name="AP" value="Allocation"/>
+  <Entry name="AQ" value="Ordinance Percentage"/>
+  <Entry name="AR" value="Accounts Receivable Turnover"/>
+  <Entry name="AS" value="Annual Interest"/>
+  <Entry name="AT" value="Apartments"/>
+  <Entry name="AU" value="Minimum Purchase Liability"/>
+  <Entry name="AV" value="Assessment Ratio"/>
+  <Entry name="AY" value="Annual Yield"/>
+  <Entry name="AZ" value="Students Enrolled in Postsecondary Programs"/>
+  <Entry name="BA" value="All Shares of Stock Owned"/>
+  <Entry name="BB" value="Class of Stock Owned"/>
+  <Entry name="BC" value="Voting Shares Issued"/>
+  <Entry name="BD" value="Property in County"/>
+  <Entry name="BE" value="Property in State"/>
+  <Entry name="BF" value="Apportionment"/>
+  <Entry name="BG" value="Bid Guarantee"/>
+  <Entry name="BH" value="Ownership"/>
+  <Entry name="BI" value="Fixed Assets to Total Assets"/>
+  <Entry name="BJ" value="Inventory to Total Assets"/>
+  <Entry name="BK" value="Accounts Receivable to Total Assets"/>
+  <Entry name="BL" value="Industry Probability of Distress"/>
+  <Entry name="BM" value="Inventory Financing"/>
+  <Entry name="BP" value="Total Base Period Wages"/>
+  <Entry name="BS" value="Business Portion"/>
+  <Entry name="BU" value="Built-up"/>
+  <Entry name="CA" value="Contribution"/>
+  <Entry name="CB" value="Commission"/>
+  <Entry name="CH" value="Change"/>
+  <Entry name="CJ" value="Charge"/>
+  <Entry name="CN" value="Condominium"/>
+  <Entry name="CO" value="Corporate"/>
+  <Entry name="CP" value="Contract to Lease"/>
+  <Entry name="CR" value="Contractor Share Ratio"/>
+  <Entry name="CS" value="Customer Share Ratio"/>
+  <Entry name="CU" value="Capacity Used"/>
+  <Entry name="CV" value="Current Bad Debt Provision"/>
+  <Entry name="DF" value="Decrement Factor"/>
+  <Entry name="DY" value="Per Day Limit"/>
+  <Entry name="EA" value="Estimate Accuracy"/>
+  <Entry name="EF" value="Escalation Factor"/>
+  <Entry name="EG" value="Actual Direct Federal Support"/>
+  <Entry name="EH" value="Actual Direct Non-Federal Support"/>
+  <Entry name="EI" value="Estimated Direct Federal Support"/>
+  <Entry name="EJ" value="Estimated Direct Non-Federal Support"/>
+  <Entry name="EK" value="Federal"/>
+  <Entry name="EL" value="Federal Allocation"/>
+  <Entry name="EM" value="Fixed Federal"/>
+  <Entry name="EN" value="Minimum"/>
+  <Entry name="EO" value="Non-Federal"/>
+  <Entry name="EP" value="Expense Percentage"/>
+  <Entry name="EQ" value="Non-Federal Allocation"/>
+  <Entry name="ER" value="Prime Interest Rate"/>
+  <Entry name="ES" value="Inflation"/>
+  <Entry name="ET" value="Probability of Distress"/>
+  <Entry name="FT" value="Fault Isolation Time"/>
+  <Entry name="FV" value="Forecasted Vacancy and Collection Loss"/>
+  <Entry name="GA" value="Gross Adjustment"/>
+  <Entry name="IA" value="Intersell"/>
+  <Entry name="IN" value="Industrial"/>
+  <Entry name="KA" value="Variation in Quantity Over"/>
+  <Entry name="KB" value="Variation in Quantity Under"/>
+  <Entry name="LM" value="Limit"/>
+  <Entry name="MA" value="Maximum Allowable Withholding from Disposable Income"/>
+  <Entry name="MN" value="Monthly Limit"/>
+  <Entry name="MS" value="Market Share"/>
+  <Entry name="MX" value="Maximum Owned by Small Shareholders"/>
+  <Entry name="NA" value="Net Adjustment"/>
+  <Entry name="NH" value="New Homes"/>
+  <Entry name="OC" value="Overall Capitalization Rate"/>
+  <Entry name="OF" value="Offtake"/>
+  <Entry name="OH" value="Outside Hours"/>
+  <Entry name="OP" value="Option Percentage"/>
+  <Entry name="PA" value="Lease Production"/>
+  <Entry name="PB" value="Previous Bad Debt Provision"/>
+  <Entry name="PC" value="Primary Coverage"/>
+  <Entry name="PD" value="Paid in Capital"/>
+  <Entry name="PF" value="Per Person Deductible"/>
+  <Entry name="PH" value="Per Occurrence Deductible"/>
+  <Entry name="PM" value="Per Person Monthly Limit"/>
+  <Entry name="PN" value="Per Occurrence Monthly Limit"/>
+  <Entry name="PP" value="Per Person Limit"/>
+  <Entry name="PR" value="Per Occurrence Limit"/>
+  <Entry name="PT" value="Previous Participation"/>
+  <Entry name="PV" value="Percent of Value of Real Estate Taxes"/>
+  <Entry name="PW" value="Percent of Funding"/>
+  <Entry name="Q1" value="Percent of Day Employed"/>
+  <Entry name="Q2" value="Percent of Time Employed"/>
+  <Entry name="Q3" value="Percent of Time Employed in This District"/>
+  <Entry name="Q4" value="Percent of Time Spent in This Assignment"/>
+  <Entry name="Q5" value="Percent of Time Spent as Administrator"/>
+  <Entry name="RA" value="Above Share"/>
+  <Entry name="RB" value="Below Share"/>
+  <Entry name="RC" value="Contractor Above Share"/>
+  <Entry name="RD" value="Contractor Below Share"/>
+  <Entry name="RE" value="Percent Removed"/>
+  <Entry name="RF" value="Fixed Fee Rate"/>
+  <Entry name="RG" value="Progress Payment Rate"/>
+  <Entry name="RI" value="Incentive Fee Rate"/>
+  <Entry name="RL" value="Progress Payment Liquidation Rate"/>
+  <Entry name="RO" value="Real Estate Owned and Foreclosures"/>
+  <Entry name="RP" value="Royalty"/>
+  <Entry name="RQ" value="Estimated"/>
+  <Entry name="RR" value="Alternate Progress Payment Liquidation Rate"/>
+  <Entry name="RS" value="Resale"/>
+  <Entry name="SA" value="Set Aside"/>
+  <Entry name="SC" value="Subcontracted Costs"/>
+  <Entry name="SD" value="Moisture Content"/>
+  <Entry name="SE" value="Protein Content"/>
+  <Entry name="SF" value="Percent Dockage"/>
+  <Entry name="SG" value="Test Weight"/>
+  <Entry name="ST" value="Percent from Stormwater"/>
+  <Entry name="TA" value="Change in Ordinary Income"/>
+  <Entry name="TB" value="Change in Taxable Income"/>
+  <Entry name="TC" value="Common Stock Reported"/>
+  <Entry name="TD" value="Earnings per Share"/>
+  <Entry name="TE" value="Equity to Deposit"/>
+  <Entry name="TF" value="Equity to Loan"/>
+  <Entry name="TG" value="Invested Capital"/>
+  <Entry name="TH" value="Loan to Deposit"/>
+  <Entry name="TI" value="Operates at Capacity"/>
+  <Entry name="TJ" value="Ordinary Profit to Sales"/>
+  <Entry name="TK" value="Payment Period"/>
+  <Entry name="TL" value="Preferred Stock Reported"/>
+  <Entry name="TM" value="Previous Percent of Value"/>
+  <Entry name="TN" value="Return on Equity of Minority Interest"/>
+  <Entry name="TP" value="Tract"/>
+  <Entry name="TQ" value="Current Liabilities to Total Liabilities"/>
+  <Entry name="TR" value="Gross Profit Margin"/>
+  <Entry name="TS" value="Current Assets to Total Liabilities"/>
+  <Entry name="TX" value="Tax Rate"/>
+  <Entry name="WI" value="Working Interest"/>
+  <Entry name="WK" value="Per Week Limit"/>
+  <Entry name="X1" value="Interest"/>
+  <Entry name="X2" value="Percent of Day"/>
+  <Entry name="X3" value="Percent of Week"/>
+  <Entry name="X4" value="Percent of Year"/>
+  <Entry name="XT" value="Asset Turnover"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

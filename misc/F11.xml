@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: F11.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="F11" comment="To identify a loss or damage claim and to indicate its status">
+  <Field name="Date1" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Amount1" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="Amount2" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="StatusCode" min="2" max="2" validation="T546" comment="Code identifying the status of a business transaction, such as a claim, policy, real estate, or securities transaction"/>
+  <Field name="Date2" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="DeclineAmendReasonCode" required="y" min="3" max="3" validation="T548" comment="Code indicating the reason for declination or amendment"/>
+  <Field name="CurrencyCode" required="y" min="3" max="3" comment="Code (Standard ISO) for country in whose currency the charges are specified"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+</Segment>

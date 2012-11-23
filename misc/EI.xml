@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: EI.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="EI" comment="To identify individual equipment and its sequence number for automatic identification">
+  <Field name="Count" type="long" required="y" min="1" max="9" comment="Occurrence counter"/>
+  <Field name="EquipmentInitial" required="y" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" required="y" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="EquipmentOrientationCode" required="y" min="1" max="1" validation="T1543" comment="Code indicating the direction the equipment is entrained or the lading is loaded;  When used to indicate the lading orientation, direction is defined relative to the equipment on which it is loaded"/>
+  <Field name="Position" required="y" min="1" max="3" comment="Relative position of shipment in car, trailer, or container (mutually defined)"/>
+  <Field name="TagStatusCode" required="y" min="1" max="1" validation="T1554" comment="Code indicating the status of an Automatic Equipment Identification Tag"/>
+</Segment>

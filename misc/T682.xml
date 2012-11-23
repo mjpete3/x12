@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T682.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T682">
+  <Entry name="1" value="Fabrication Authorization Quantity is Final Model Year Requirement; The Part is a Non carryover Item for the Subsequent Model Year from the Supplier"/>
+  <Entry name="2" value="Material Authorization Quantity is Final Model Year Requirement; The Part is a Non carryover Item for the Subsequent Model Year from the Supplier"/>
+  <Entry name="3" value="Part will be Canceled at the Material Quantity"/>
+  <Entry name="4" value="Part is a Carryover Item from Subsequent Model Year from the Supplier"/>
+  <Entry name="5" value="Part is a New Item for the Subsequent Model Year"/>
+  <Entry name="6" value="Part is a New Item Due to an Interim Engineering Release"/>
+  <Entry name="7" value="Final Release for this Cancelled Part"/>
+  <Entry name="8" value="Planning Quantity is Final Model Year Requirement The Part is a Non-Carryover Item for the Subsequent Model Year From the Supplier"/>
+  <Entry name="9" value="Final Forecast for this Cancelled Part"/>
+  <Entry name="A" value="All Time Buy. Unless Specifically Stated, This Code is Not to be Interpreted as Authorization for Tool Scrap"/>
+  <Entry name="B" value="Balance-Out Part; Eng. Change Pending"/>
+  <Entry name="D" value="Terminal Buy"/>
+  <Entry name="E" value="Systems Automated Buy"/>
+  <Entry name="F" value="Corporation Campaign Buy"/>
+  <Entry name="G" value="Source Surplus"/>
+  <Entry name="H" value="Reschedule"/>
+  <Entry name="I" value="Merchandising Act Promotion Buy"/>
+  <Entry name="J" value="Minimum or Lot Buy"/>
+  <Entry name="K" value="Die Tie"/>
+  <Entry name="L" value="Landau Specification"/>
+  <Entry name="M" value="Mill Run Purchase"/>
+  <Entry name="N" value="Solicitation"/>
+  <Entry name="P" value="Pilot/Pre-production"/>
+  <Entry name="Q" value="Special Large Quantity Buy"/>
+  <Entry name="R" value="Replacement Orders"/>
+  <Entry name="S" value="Initial Orders"/>
+  <Entry name="T" value="Trim Order"/>
+  <Entry name="U" value="Confirming Phone Order"/>
+  <Entry name="W" value="Cover Overshipment - Do Not Reship"/>
+  <Entry name="X" value="Economic Order Quantity"/>
+  <Entry name="Y" value="Production Year End Surplus"/>
+</Table>

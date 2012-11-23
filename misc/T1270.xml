@@ -1,0 +1,917 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1270.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1270">
+  <Entry name="0" value="Document Identification Code"/>
+  <Entry name="1" value="Free On Board Site Code"/>
+  <Entry name="3" value="Kind of Contract Code"/>
+  <Entry name="4" value="Type of Contract Code"/>
+  <Entry name="5" value="Criticality Designator Code"/>
+  <Entry name="7" value="Quality Assurance Site Code"/>
+  <Entry name="8" value="Acceptance Site Code"/>
+  <Entry name="A" value="American Society for Testing and Materials (ASTM)"/>
+  <Entry name="B" value="Bank Administration Institute (BAI)"/>
+  <Entry name="C" value="Canadian Inter*EDI"/>
+  <Entry name="D" value="Court Document Type Code"/>
+  <Entry name="E" value="Diagnostic Statistical Manual of Mental Disorders Code List (DSM)"/>
+  <Entry name="F" value="Financial Rating"/>
+  <Entry name="G" value="Risk Class"/>
+  <Entry name="H" value="Life/Annuity Status Codes"/>
+  <Entry name="I" value="Identifying Characteristics"/>
+  <Entry name="J" value="Trade Code"/>
+  <Entry name="K" value="Property Underwriting Condition Code"/>
+  <Entry name="L" value="Line Item Condition Code"/>
+  <Entry name="M" value="Policy Type Code"/>
+  <Entry name="N" value="Valuation Type Code"/>
+  <Entry name="O" value="Source of Loss Code"/>
+  <Entry name="P" value="Ceiling Type Code"/>
+  <Entry name="Q" value="Surface Descriptor Code"/>
+  <Entry name="R" value="Coverage Modifier"/>
+  <Entry name="S" value="Society for Worldwide Interbank Financial Telecommunications (SWIFT)"/>
+  <Entry name="T" value="Personal Property and Contents Code"/>
+  <Entry name="U" value="Residential and Commercial Room Code"/>
+  <Entry name="V" value="Violation Type Code List"/>
+  <Entry name="W" value="Court Issued Warrant Type Code"/>
+  <Entry name="X" value="Vehicle Class"/>
+  <Entry name="Y" value="Rental Charge"/>
+  <Entry name="Z" value="Cancellation Reason"/>
+  <Entry name="10" value="Transaction Status Indicator Code"/>
+  <Entry name="11" value="Contract Delivery Date Revision Agent Code"/>
+  <Entry name="12" value="Reason for Contract Delivery Date Revision Code"/>
+  <Entry name="13" value="Recommendations Regarding Delayed Deliveries Code"/>
+  <Entry name="14" value="Contract Shipment Advice Code"/>
+  <Entry name="15" value="Individual Insurance Financial Detail"/>
+  <Entry name="16" value="Cash Discount Stipulation Code"/>
+  <Entry name="17" value="Shipment Acceptance Discrepancy Explanation Code"/>
+  <Entry name="18" value="Insurance Plan Description Characteristics"/>
+  <Entry name="19" value="Contract Close-out Group Code"/>
+  <Entry name="20" value="Payment Type Code"/>
+  <Entry name="21" value="Contract Fund Reporting Transaction Code"/>
+  <Entry name="22" value="Contract Payment Deduction or Collection Code"/>
+  <Entry name="23" value="Obligation Variance Code"/>
+  <Entry name="24" value="Plus or Minus Indicator Code"/>
+  <Entry name="25" value="Reason for Delayed Closing of Contract File Code"/>
+  <Entry name="26" value="Contract Payment Line Item Status Code"/>
+  <Entry name="27" value="Special Reimbursable Provisions Code"/>
+  <Entry name="28" value="Kind of Modification Code"/>
+  <Entry name="29" value="Purchasing Contract Officer (PCO) Instructions Code"/>
+  <Entry name="30" value="Type of Delay Code"/>
+  <Entry name="31" value="Healthcare Provider Characteristics and Resources"/>
+  <Entry name="32" value="Container and Roll-on/Roll-off Number Code"/>
+  <Entry name="33" value="Air Commodity and Special Handling Code"/>
+  <Entry name="34" value="Water Commodity and Special Handling Code"/>
+  <Entry name="35" value="Air Dimension Code"/>
+  <Entry name="36" value="Air Terminal Identifier Code"/>
+  <Entry name="37" value="Water Terminal Identifier Code"/>
+  <Entry name="38" value="Consolidation and Containerization Point Code"/>
+  <Entry name="39" value="Transportation Mode or Method Code"/>
+  <Entry name="40" value="Type Pack Code"/>
+  <Entry name="41" value="Date Shipped or Received Code"/>
+  <Entry name="42" value="Estimated Time of Arrival Code"/>
+  <Entry name="43" value="Military and Civilian Grade Code"/>
+  <Entry name="44" value="Seavan Ownership Code"/>
+  <Entry name="45" value="Ocean Carrier Code"/>
+  <Entry name="46" value="Voyage Document Number Code"/>
+  <Entry name="47" value="Voyage Manifest Reference Code"/>
+  <Entry name="48" value="Vessel Status and Terms of Carriage Code"/>
+  <Entry name="49" value="Vessel Sustaining Code"/>
+  <Entry name="50" value="Subrogation Action Code"/>
+  <Entry name="52" value="Billing Advice Code"/>
+  <Entry name="53" value="Billing Status Code"/>
+  <Entry name="54" value="Type of Bill Code"/>
+  <Entry name="55" value="Recipient of Billing Status Code"/>
+  <Entry name="56" value="Sales Price Condition Code"/>
+  <Entry name="57" value="Delivery Source Code"/>
+  <Entry name="58" value="Transportation Bill Code"/>
+  <Entry name="59" value="Stock Fund or Non-stock Fund Code"/>
+  <Entry name="60" value="General Services Administration (GSA) Customer Supply Center Number Code"/>
+  <Entry name="61" value="Information Indicator Code"/>
+  <Entry name="62" value="Communications Routing Identifier Code"/>
+  <Entry name="63" value="Content Indicator Code"/>
+  <Entry name="65" value="Health Care Claim Status Code"/>
+  <Entry name="66" value="Suffix or Limit Code"/>
+  <Entry name="67" value="Type of Assistance Code"/>
+  <Entry name="68" value="Healthcare Provider Taxonomy"/>
+  <Entry name="69" value="Foreign Military Sales Country Code"/>
+  <Entry name="71" value="Service and Agency Code"/>
+  <Entry name="72" value="Disbursement Status Code"/>
+  <Entry name="73" value="Aid Type Code"/>
+  <Entry name="74" value="Demand Code"/>
+  <Entry name="75" value="Suffix Code"/>
+  <Entry name="78" value="Project Code"/>
+  <Entry name="79" value="Priority Designator Code"/>
+  <Entry name="80" value="Advice Code"/>
+  <Entry name="81" value="Status Code"/>
+  <Entry name="82" value="Shipment Hold Code"/>
+  <Entry name="83" value="Supply Condition Code"/>
+  <Entry name="84" value="Management Code"/>
+  <Entry name="85" value="Country and Activity Code"/>
+  <Entry name="87" value="Subsistence Type of Pack Code"/>
+  <Entry name="88" value="Disposal Authority Code"/>
+  <Entry name="89" value="Cooperative Logistics Program Support Code"/>
+  <Entry name="90" value="Precious Metals Indicator Code"/>
+  <Entry name="91" value="Automated Data Processing Equipment Identification Code"/>
+  <Entry name="92" value="Reason for Disposal Code"/>
+  <Entry name="93" value="Type of Storage Code"/>
+  <Entry name="94" value="Identification Code"/>
+  <Entry name="95" value="Offer and Release Option Code"/>
+  <Entry name="96" value="Shipment Release Code"/>
+  <Entry name="97" value="Ultimate Recipient Code"/>
+  <Entry name="98" value="Reason for Requisitioning Code"/>
+  <Entry name="99" value="Purpose Code"/>
+  <Entry name="A1" value="Ownership Code"/>
+  <Entry name="A2" value="Customer Within Country Code"/>
+  <Entry name="A3" value="Delivery Term Code"/>
+  <Entry name="A4" value="Case Designator Number"/>
+  <Entry name="A5" value="Subcase Number"/>
+  <Entry name="A6" value="Freight Forwarder Number"/>
+  <Entry name="A7" value="Record Control Number"/>
+  <Entry name="A8" value="Program Year Code"/>
+  <Entry name="A9" value="Supplemental Data"/>
+  <Entry name="AA" value="Country Code (Finance and Acquisition)"/>
+  <Entry name="AB" value="Defense Priorities and Allocations System Code"/>
+  <Entry name="AC" value="Account Characteristics Code"/>
+  <Entry name="AD" value="Acquisition Advice Code"/>
+  <Entry name="AE" value="Beneficiary Type"/>
+  <Entry name="AF" value="Class of Pitch"/>
+  <Entry name="AG" value="Grade of Difficulty"/>
+  <Entry name="AH" value="Acquisition Method Suffix Code"/>
+  <Entry name="AI" value="Acquisition Method Code"/>
+  <Entry name="AJ" value="Utilization Code"/>
+  <Entry name="AK" value="Distribution Code"/>
+  <Entry name="AL" value="Special Requirements Code"/>
+  <Entry name="AM" value="Locale of Activity"/>
+  <Entry name="AN" value="Nature of Event Code"/>
+  <Entry name="AO" value="Settlement/Payout Options"/>
+  <Entry name="AP" value="American Psychiatric Association Diagnostic Statistical Manual of Mental Disorders (DSM IIIR)"/>
+  <Entry name="AQ" value="Application Question Identifier"/>
+  <Entry name="AR" value="Arrest Reason"/>
+  <Entry name="AS" value="Form Type Code"/>
+  <Entry name="AT" value="Allegation Type Code"/>
+  <Entry name="AU" value="All Patient Refined Diagnosis Related Groups (APR-DRG)"/>
+  <Entry name="AV" value="Subrogation Payment Options"/>
+  <Entry name="AW" value="All Patient Diagnosis Related Groups (AP-DRG)"/>
+  <Entry name="AX" value="Ambulatory Patient Groups (APG)"/>
+  <Entry name="AY" value="Subrogation Response Codes"/>
+  <Entry name="AZ" value="Subrogation Request Codes"/>
+  <Entry name="BA" value="Vessel Stowage Location Code"/>
+  <Entry name="BB" value="Business Type"/>
+  <Entry name="BC" value="Transportation Holding Delay Code"/>
+  <Entry name="BD" value="Transportation Priority Code"/>
+  <Entry name="BE" value="Value"/>
+  <Entry name="BF" value="Diagnosis"/>
+  <Entry name="BG" value="Condition"/>
+  <Entry name="BH" value="Occurrence"/>
+  <Entry name="BI" value="Occurrence Span"/>
+  <Entry name="BJ" value="Admitting Diagnosis"/>
+  <Entry name="BK" value="Principal Diagnosis"/>
+  <Entry name="BL" value="Application Fee Status Codes"/>
+  <Entry name="BN" value="United States Department of Health and Human Services, Office of Vital Statistics E-code"/>
+  <Entry name="BO" value="Health Care Financing Administration Common Procedural Coding System"/>
+  <Entry name="BP" value="Health Care Financing Administration Common Procedural Coding System Principal Procedure"/>
+  <Entry name="BQ" value="International Classification of Diseases Clinical Modification (ICD-9-CM) Procedure"/>
+  <Entry name="BR" value="International Classification of Diseases Clinical Modification (ICD-9-CM) Principal Procedure"/>
+  <Entry name="BS" value="Current Procedural Terminology (CPT) Codes"/>
+  <Entry name="BT" value="Accident Description"/>
+  <Entry name="BU" value="Part of Body Affected"/>
+  <Entry name="BV" value="Education Institution Type Code"/>
+  <Entry name="BW" value="Educational Areas Code"/>
+  <Entry name="BX" value="Profession Type Code"/>
+  <Entry name="BY" value="Share Type Code"/>
+  <Entry name="BZ" value="Business Size Code"/>
+  <Entry name="C1" value="Eye Color Code"/>
+  <Entry name="C2" value="Hair Color Code"/>
+  <Entry name="C3" value="Skin Tone Code"/>
+  <Entry name="CA" value="Type of Inquiry Code"/>
+  <Entry name="CB" value="Billed Office Indicator Code"/>
+  <Entry name="CC" value="Treasury Symbol Code"/>
+  <Entry name="CD" value="Supplementary Accounting Classification Code"/>
+  <Entry name="CE" value="Reference and Station Code"/>
+  <Entry name="CF" value="Major Force Program Code"/>
+  <Entry name="CG" value="Aircraft Mission Design Series Code"/>
+  <Entry name="CH" value="Type of Issue Code"/>
+  <Entry name="CI" value="Criminal Charge"/>
+  <Entry name="CJ" value="Criminal Charge Grade"/>
+  <Entry name="CK" value="Coupon Adjustment Reason Code"/>
+  <Entry name="CL" value="County Designator Code"/>
+  <Entry name="CM" value="Financial Management Service Cash-Link Code"/>
+  <Entry name="CN" value="Cause of Injury Code"/>
+  <Entry name="CO" value="Customized Notice Type Code"/>
+  <Entry name="CP" value="Salvage Disposition Code"/>
+  <Entry name="CQ" value="Capacity Type Indicator"/>
+  <Entry name="CR" value="Federal Item Identification Guide Criticality (FIIG) Code"/>
+  <Entry name="CS" value="Clause Status Type"/>
+  <Entry name="CT" value="Compensation Type Codes"/>
+  <Entry name="CU" value="Cuisine Type Code"/>
+  <Entry name="CV" value="Coverage Code List"/>
+  <Entry name="CW" value="Controvert Code"/>
+  <Entry name="CZ" value="Conviction Offense Type"/>
+  <Entry name="D1" value="Driver's License Withdrawal Type"/>
+  <Entry name="D2" value="Driver's License Withdrawal Extent"/>
+  <Entry name="D3" value="Driver's License Withdrawal Basis"/>
+  <Entry name="D4" value="Driver's License Withdrawal Due Process Status"/>
+  <Entry name="D5" value="Driver's License Withdrawal Reason"/>
+  <Entry name="DA" value="Device Availability Code"/>
+  <Entry name="DB" value="Debtor Business Type Code"/>
+  <Entry name="DC" value="Report Distribution Code"/>
+  <Entry name="DD" value="Primary Diagnosis"/>
+  <Entry name="DE" value="Signal Code"/>
+  <Entry name="DF" value="Media and Status Code"/>
+  <Entry name="DG" value="Fund Code"/>
+  <Entry name="DH" value="Drug Detail Code"/>
+  <Entry name="DI" value="Single Use Label Code"/>
+  <Entry name="DJ" value="Remedial Action Code"/>
+  <Entry name="DK" value="Program Originator Code"/>
+  <Entry name="DL" value="Service Contract Act Operation Code"/>
+  <Entry name="DM" value="Agent Status Code"/>
+  <Entry name="DN" value="Nature of Debt Code"/>
+  <Entry name="DO" value="Device Operator Type Code"/>
+  <Entry name="DP" value="Producer Financial History Codes"/>
+  <Entry name="DQ" value="Device Status Code"/>
+  <Entry name="DR" value="Diagnosis Related Group (DRG)"/>
+  <Entry name="DS" value="Related Device Applicability Code"/>
+  <Entry name="DT" value="Debtor Type Code"/>
+  <Entry name="DU" value="Device Usage Code"/>
+  <Entry name="DW" value="Estimating Method Status Code"/>
+  <Entry name="DX" value="Contact Status Code"/>
+  <Entry name="DY" value="Type of Firm Code"/>
+  <Entry name="DZ" value="Reportable Event Status Code"/>
+  <Entry name="EA" value="Asset Status or Transaction Reporting Code"/>
+  <Entry name="EB" value="Asset Transfer Status Code"/>
+  <Entry name="EC" value="Certification Requirements Code"/>
+  <Entry name="ED" value="Coast Designation Code"/>
+  <Entry name="EE" value="Competitive Characteristics Code"/>
+  <Entry name="EF" value="Correction or Change for Storage Item Records Code"/>
+  <Entry name="EG" value="Excavation Information Code List"/>
+  <Entry name="EH" value="Type Due-In Indicator"/>
+  <Entry name="EI" value="Discrepancy Indicator Code"/>
+  <Entry name="EJ" value="Disposal Condition Code"/>
+  <Entry name="EK" value="Event or Exposure Code"/>
+  <Entry name="EL" value="Error Classification Code"/>
+  <Entry name="EM" value="Inventory Category Code"/>
+  <Entry name="EN" value="Local Source Code"/>
+  <Entry name="EO" value="Adverse Event Outcome Code"/>
+  <Entry name="EQ" value="Controlled Inventory Item Code"/>
+  <Entry name="ER" value="Department of Defense Identification Code"/>
+  <Entry name="ES" value="Extension Reason"/>
+  <Entry name="ET" value="Reject Advice Code"/>
+  <Entry name="EU" value="Request Code"/>
+  <Entry name="EV" value="Review Period Indicator Code"/>
+  <Entry name="EW" value="Small Arms Error Transaction Reject Code"/>
+  <Entry name="EX" value="Small Arms Transaction Code"/>
+  <Entry name="EY" value="Special Program Requirement Status Code"/>
+  <Entry name="EZ" value="Type Inspection Code"/>
+  <Entry name="FA" value="Type of Contractor Code"/>
+  <Entry name="FB" value="Type of Media Code"/>
+  <Entry name="FC" value="Type Physical Inventory or Transaction History Code"/>
+  <Entry name="FD" value="Demilitarization Code"/>
+  <Entry name="FE" value="Shelf Life Code"/>
+  <Entry name="FF" value="Essentiality Code"/>
+  <Entry name="FG" value="Source Maintenance and Recoverability Code"/>
+  <Entry name="FH" value="Type of Location Reconciliation Request"/>
+  <Entry name="FI" value="Applicant Type"/>
+  <Entry name="FJ" value="Antenna Structure Type"/>
+  <Entry name="FK" value="Station Classification"/>
+  <Entry name="FL" value="Radio Frequency Type"/>
+  <Entry name="FM" value="Station Classification Type"/>
+  <Entry name="FN" value="Class of Operation"/>
+  <Entry name="FO" value="Antenna Polarization"/>
+  <Entry name="FP" value="Fund Purpose"/>
+  <Entry name="FQ" value="Radio System Type"/>
+  <Entry name="FR" value="Frequency Band"/>
+  <Entry name="FS" value="Area of Operation"/>
+  <Entry name="FT" value="Application Type"/>
+  <Entry name="FU" value="Authorization Type"/>
+  <Entry name="FV" value="Radio Service Type"/>
+  <Entry name="FW" value="Applicant Classification Type"/>
+  <Entry name="FX" value="Frequency"/>
+  <Entry name="FZ" value="Edit Error Code"/>
+  <Entry name="G1" value="Uniform Residential Appraisal Attributes Code"/>
+  <Entry name="GA" value="Action Code"/>
+  <Entry name="GB" value="Medium of Transmission Code"/>
+  <Entry name="GC" value="Management Indicator Code (Petroleum)"/>
+  <Entry name="GD" value="Gain or Loss Indicator Code"/>
+  <Entry name="GE" value="Type Adjustment Code"/>
+  <Entry name="GF" value="Type Identity Change Code"/>
+  <Entry name="GG" value="Transportation Mode Reason Code"/>
+  <Entry name="GI" value="Notification Indicator Code"/>
+  <Entry name="GJ" value="Reject Indicator Code"/>
+  <Entry name="GK" value="Investigation Status Code"/>
+  <Entry name="GQ" value="Group Qualifier Code"/>
+  <Entry name="GR" value="National Council on Compensation Insurance (NCCI) Nature of Injury Code"/>
+  <Entry name="GS" value="Occupational Safety and Health Administration (OSHA) Nature of Injury Code"/>
+  <Entry name="GT" value="National Council on Compensation Insurance (NCCI) Part of Body Code"/>
+  <Entry name="GU" value="Occupational Safety and Health Administration (OSHA) Part of Body Code"/>
+  <Entry name="GV" value="National Council on Compensation Insurance (NCCI) Source of Injury Code"/>
+  <Entry name="GW" value="Occupational Safety and Health Administration (OSHA) Source of Injury Code"/>
+  <Entry name="GX" value="Glass Action Code"/>
+  <Entry name="GY" value="Cause of Loss Code"/>
+  <Entry name="GZ" value="Loss Description Code"/>
+  <Entry name="HA" value="Discrepancy Code"/>
+  <Entry name="HB" value="Discrepancy Advice Code"/>
+  <Entry name="HC" value="Institutional Sector or Level Classification Code"/>
+  <Entry name="HD" value="Discrepancy Status or Disposition Code"/>
+  <Entry name="HE" value="Claim Payment Remark Codes"/>
+  <Entry name="HF" value="Education Staff Type Code"/>
+  <Entry name="HG" value="Education Fee Type Code"/>
+  <Entry name="HI" value="Health Industry Number"/>
+  <Entry name="HJ" value="Institutional Fee Basis Code"/>
+  <Entry name="HK" value="National Center for Education Statistics Integrated Postsecondary Education Data System Institutional Characteristics Survey Code"/>
+  <Entry name="HL" value="Accreditation, Affiliation, or Licensing Level Code"/>
+  <Entry name="HM" value="National Center for Education Statistics Accreditation or Licensing Type"/>
+  <Entry name="HO" value="Home Infusion EDI Coalition (HIEC) Product/Service Code"/>
+  <Entry name="HS" value="Service Contract Act Occupation Category Code"/>
+  <Entry name="IC" value="Collision Industry Electronic Commerce Association (CIECA) - Inspection"/>
+  <Entry name="ID" value="Identity Disclosure Code"/>
+  <Entry name="IF" value="Investment Fund Type"/>
+  <Entry name="IQ" value="IRS Qualification Code"/>
+  <Entry name="IT" value="Initial Treatment Code"/>
+  <Entry name="J0" value="Summons Type Code"/>
+  <Entry name="J1" value="Judicial Hearing Type Code"/>
+  <Entry name="J2" value="Judicial Order Type Code"/>
+  <Entry name="J3" value="Judicial Sentence Type Code"/>
+  <Entry name="J4" value="Court Disposition Code"/>
+  <Entry name="J5" value="Court Appearance Type Code"/>
+  <Entry name="J6" value="Court Pleading Type Code"/>
+  <Entry name="J7" value="Defendant Plea Type Code"/>
+  <Entry name="J8" value="Trial Type Code"/>
+  <Entry name="J9" value="Court Case Status Code"/>
+  <Entry name="JA" value="Physical Characteristics Code"/>
+  <Entry name="JB" value="Weight or Fragility Code"/>
+  <Entry name="JC" value="Preservation Material Code"/>
+  <Entry name="JD" value="Quantity per Unit Pack Code"/>
+  <Entry name="JE" value="Preservation Data Code"/>
+  <Entry name="JF" value="Packing Requirement Level A Code"/>
+  <Entry name="JG" value="Packing Requirement Level B Code"/>
+  <Entry name="JH" value="Packing Requirement Level C Code"/>
+  <Entry name="JI" value="Intermediate Container Code"/>
+  <Entry name="JK" value="Intermediate Container Quantity Code"/>
+  <Entry name="JL" value="Special Marking Code"/>
+  <Entry name="JM" value="Type and Cause Code"/>
+  <Entry name="JN" value="Mission Impact Statement Code"/>
+  <Entry name="JO" value="International Standard Designation System for Teeth and Areas of the Oral Cavity"/>
+  <Entry name="JP" value="National Standard Tooth Numbering System"/>
+  <Entry name="KA" value="Deficiency Cause"/>
+  <Entry name="KB" value="Discrepancy"/>
+  <Entry name="KC" value="Preventive Measure"/>
+  <Entry name="KD" value="Contractor Alert List Reason"/>
+  <Entry name="KE" value="Quality Alert List Reason"/>
+  <Entry name="KF" value="Contractor Alert List Status"/>
+  <Entry name="KG" value="Nature of Buy"/>
+  <Entry name="KH" value="Type of Procurement"/>
+  <Entry name="KI" value="Representative Buy Indicator"/>
+  <Entry name="KJ" value="Assured Delivery Indicator"/>
+  <Entry name="KK" value="Award Source"/>
+  <Entry name="KL" value="Termination"/>
+  <Entry name="KM" value="Patient Event Problem Code"/>
+  <Entry name="KO" value="Method Evaluation Code"/>
+  <Entry name="KP" value="Result Evaluation Code"/>
+  <Entry name="KQ" value="Conclusion Evaluation Code"/>
+  <Entry name="KS" value="Device Event Problem Code"/>
+  <Entry name="KT" value="Dose Form Code"/>
+  <Entry name="KU" value="Route Code"/>
+  <Entry name="KW" value="Report Source Code"/>
+  <Entry name="KZ" value="Adverse Event Code"/>
+  <Entry name="LA" value="Contract"/>
+  <Entry name="LB" value="Contractor Review List Status"/>
+  <Entry name="LC" value="Laboratory Test Condition Code"/>
+  <Entry name="LD" value="Collision Industry Electronic Commerce Association (CIECA) - Loss Category"/>
+  <Entry name="LE" value="Life/Annuity Service Features"/>
+  <Entry name="LF" value="Life/Annuity Product Code"/>
+  <Entry name="LG" value="Location Code"/>
+  <Entry name="LH" value="Basis of Jurisdiction Code"/>
+  <Entry name="LJ" value="Principal Party Citizenship Code"/>
+  <Entry name="LK" value="Nature of Suit Code"/>
+  <Entry name="LM" value="Case Origin Code"/>
+  <Entry name="LN" value="Line of business code"/>
+  <Entry name="LO" value="Letter of Recommendation Rating Category"/>
+  <Entry name="LP" value="Deficiency Indicator"/>
+  <Entry name="LQ" value="Delinquency Indicator"/>
+  <Entry name="LR" value="Test Results Code"/>
+  <Entry name="LS" value="Loss Severity Code"/>
+  <Entry name="LT" value="Laboratory Results Identification Code"/>
+  <Entry name="LZ" value="War Reserve Material Requirement Code"/>
+  <Entry name="MA" value="Multi-Media Object"/>
+  <Entry name="MB" value="Service Contract Act Occupation Classification Code"/>
+  <Entry name="MC" value="Manual Class Code"/>
+  <Entry name="ME" value="Device Evaluation Code"/>
+  <Entry name="MI" value="Minority Indicator"/>
+  <Entry name="MJ" value="Drug Status Code"/>
+  <Entry name="MK" value="Drug Status Adverse Event Code"/>
+  <Entry name="ML" value="Lot Type Code"/>
+  <Entry name="MN" value="Post Market Study Status Code"/>
+  <Entry name="NA" value="Plant Clearance Office Code"/>
+  <Entry name="NB" value="Inventory Type Code"/>
+  <Entry name="NC" value="Property Record Status Code"/>
+  <Entry name="ND" value="Control Unit Design Code"/>
+  <Entry name="NE" value="Direct Numerical Control System Code"/>
+  <Entry name="NF" value="Type Numerical Control System Code"/>
+  <Entry name="NH" value="Property Source Code"/>
+  <Entry name="NI" value="Nature of Injury Code"/>
+  <Entry name="NJ" value="Uniform Freight Classification (UFC) Code"/>
+  <Entry name="NK" value="National Motor Freight Classification (NMFC) Code"/>
+  <Entry name="NP" value="Special Category Code"/>
+  <Entry name="NR" value="Excess Material Disposition Code"/>
+  <Entry name="NS" value="Hazardous Material Code"/>
+  <Entry name="NT" value="Type of Cargo Code"/>
+  <Entry name="O1" value="Office of Worker's Compensation Programs (OWCP) Source of Injury Code"/>
+  <Entry name="O2" value="Office of Worker's Compensation Programs (OWCP) Nature of Injury Code"/>
+  <Entry name="O3" value="Office of Worker's Compensation Programs (OWCP) Part of Body Code"/>
+  <Entry name="O4" value="Office of Worker's Compensation Programs (OWCP) Occupation Code"/>
+  <Entry name="OC" value="Occupation Code"/>
+  <Entry name="PA" value="Prior Damage Location Code"/>
+  <Entry name="PB" value="Part of Body Code"/>
+  <Entry name="PC" value="Collision Industry Electronic Commerce Association (CIECA) - Profile"/>
+  <Entry name="PD" value="Professional Designation"/>
+  <Entry name="PI" value="Collision Industry Electronic Commerce Association (CIECA) - Points of Impact"/>
+  <Entry name="PL" value="Priority Lookup"/>
+  <Entry name="PS" value="Professional Status Code"/>
+  <Entry name="PT" value="Price Tier"/>
+  <Entry name="QA" value="Response Status Code"/>
+  <Entry name="QB" value="Business Entity Filing Report Type Code"/>
+  <Entry name="QC" value="Business Entity Filing Detail Code"/>
+  <Entry name="QE" value="Domestic Line of Business Code"/>
+  <Entry name="QF" value="Foreign Line of Business Code"/>
+  <Entry name="QG" value="Business Entity Filing Status Code"/>
+  <Entry name="QH" value="Business Entity Filing Securities Information Code"/>
+  <Entry name="QI" value="Business Entity Financial Information Code"/>
+  <Entry name="QJ" value="Business Entity Status Code"/>
+  <Entry name="QK" value="Business Entity Filing Location Code"/>
+  <Entry name="QS" value="Query Status"/>
+  <Entry name="QT" value="Quantity Type Indicator"/>
+  <Entry name="R1" value="Upstream Rank (Priority)"/>
+  <Entry name="R2" value="Receipt Rank (Priority)"/>
+  <Entry name="R3" value="Delivery Rank (Priority)"/>
+  <Entry name="R4" value="Downstream Rank (Priority)"/>
+  <Entry name="RA" value="Religious Affiliation Code"/>
+  <Entry name="RC" value="Requirement Code"/>
+  <Entry name="RD" value="Property Ownership Type Code"/>
+  <Entry name="RE" value="Property Type Code"/>
+  <Entry name="RI" value="Residency Indicator"/>
+  <Entry name="RQ" value="Testing Service Question Code List"/>
+  <Entry name="RT" value="Request Type"/>
+  <Entry name="RX" value="National Council for Prescription Drug Programs Reject/Payment Codes"/>
+  <Entry name="SA" value="Student Activity Type Code"/>
+  <Entry name="SB" value="Student Award Code"/>
+  <Entry name="SC" value="Source"/>
+  <Entry name="SD" value="Secondary diagnosis"/>
+  <Entry name="SE" value="Sound Code"/>
+  <Entry name="SF" value="Run Type"/>
+  <Entry name="SG" value="Source of Deposit Code"/>
+  <Entry name="SH" value="Source of Lead Code"/>
+  <Entry name="SI" value="SIC (Standard Industrial Classification)"/>
+  <Entry name="SJ" value="Source of Injury Code"/>
+  <Entry name="SL" value="Secondary Source of Injury"/>
+  <Entry name="SO" value="Solicitation Cancellation Reason"/>
+  <Entry name="SP" value="Standard Occupation Classification Code"/>
+  <Entry name="SR" value="Statistical Administrative Information Code"/>
+  <Entry name="SS" value="System Status"/>
+  <Entry name="ST" value="Special Marketing Type Code"/>
+  <Entry name="TB" value="Treasury Management Association Service Code and Bank Service Code"/>
+  <Entry name="TC" value="Treatment Codes"/>
+  <Entry name="TD" value="Tertiary diagnosis"/>
+  <Entry name="TE" value="Treasury Management Association Service Code"/>
+  <Entry name="TF" value="Title Exception and Requirement Code List"/>
+  <Entry name="TG" value="Title Document Code List"/>
+  <Entry name="TQ" value="Systemized Nomenclature of Dentistry (SNODENT)"/>
+  <Entry name="TR" value="Report Code"/>
+  <Entry name="TT" value="Natural Gas Transaction Type"/>
+  <Entry name="TX" value="Follow-up Code"/>
+  <Entry name="TY" value="Reportable Event Code"/>
+  <Entry name="UR" value="Event Reappearance Code"/>
+  <Entry name="US" value="Event Abatement Code"/>
+  <Entry name="UT" value="Health Care Financing Administration (HCFA) Durable Medical Equipment Regional Carrier (DMERC) Certificate of Medical Necessity (CMN) Forms"/>
+  <Entry name="UU" value="Unit Code"/>
+  <Entry name="XD" value="Export Declaration"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="100" value="Freddie Mac (Federal Home Loan Mortgage Corporation) Special Character Code"/>
+  <Entry name="101" value="Fannie Mae (Federal National Mortgage Association) Special Feature Code"/>
+  <Entry name="102" value="Mortgage Index Source Code"/>
+  <Entry name="103" value="Fannie Mae (Federal National Mortgage Association) Remittance Programs"/>
+  <Entry name="104" value="Freddie Mac (Federal Home Loan Mortgage Corporation) Remittance Programs"/>
+  <Entry name="105" value="Freddie Mac (Federal Home Loan Mortgage Corporation) Mortgage Insurance Code"/>
+  <Entry name="106" value="Fannie Mae (Federal National Mortgage Association) Pool Feature Code"/>
+  <Entry name="107" value="Fannie Mae (Federal National Mortgage Association) Mortgage Insurance Code"/>
+  <Entry name="108" value="Testing Statistical Category Code List"/>
+  <Entry name="109" value="Testing Demographic Category Code List"/>
+  <Entry name="AAA" value="SNOMED, Systematized Nomenclature of Medicine"/>
+  <Entry name="AAD" value="Asset Type"/>
+  <Entry name="AAE" value="Current Asset Type"/>
+  <Entry name="AAF" value="Current Liability Type"/>
+  <Entry name="AAG" value="Dun and Bradstreet Canada's 8 digit Standard Industrial Classification Code"/>
+  <Entry name="AAH" value="Financial Item Allocation Code"/>
+  <Entry name="AAI" value="Financial Item Attributed Code"/>
+  <Entry name="AAJ" value="Financial Item Reclassification Code"/>
+  <Entry name="AAK" value="Functional Area"/>
+  <Entry name="AAL" value="Hobby Code"/>
+  <Entry name="AAM" value="Investment Type"/>
+  <Entry name="AAN" value="Liability Type"/>
+  <Entry name="AAO" value="Projection Type"/>
+  <Entry name="AAP" value="Trend Reason"/>
+  <Entry name="AAQ" value="NACHA (National Automated Clearing House Association)"/>
+  <Entry name="AAR" value="CPA (Canadian Payments Association)"/>
+  <Entry name="AAS" value="Proprietary"/>
+  <Entry name="AAT" value="Fannie Mae Adjustable Rate Mortgage Plan Codes"/>
+  <Entry name="AAU" value="Diagnosis Encountered During Examination and Investigation of Individuals and Populations Code"/>
+  <Entry name="AAV" value="Vaccination, Innoculation or Isolation Code"/>
+  <Entry name="AAW" value="Immunization Injection Code"/>
+  <Entry name="AAX" value="International Classification of Diseases Clinical Modification (ICD-9-CM) Code"/>
+  <Entry name="AAY" value="Current Dental Terminology (CDT) Code"/>
+  <Entry name="ABR" value="Assigned by Receiver"/>
+  <Entry name="ABS" value="Assigned by Sender"/>
+  <Entry name="ACR" value="Academic Rank"/>
+  <Entry name="ADJ" value="Accounting Adjustment Method"/>
+  <Entry name="AJT" value="Adjustment Type"/>
+  <Entry name="ALP" value="Alteration Lookup"/>
+  <Entry name="APE" value="Activite Principale Exercee (APE) Code"/>
+  <Entry name="BCC" value="Business Change Code"/>
+  <Entry name="BCR" value="Business Credit Rating"/>
+  <Entry name="BPL" value="Board of Inspection and Survey Part Lookup"/>
+  <Entry name="BRL" value="Board of Inspection and Survey Responsibility Lookup"/>
+  <Entry name="BSL" value="Board of Inspection and Survey Ship Lookup"/>
+  <Entry name="BTC" value="Balance Type Code"/>
+  <Entry name="BUI" value="Bid Up Indicator"/>
+  <Entry name="CAH" value="Complimentary, Alternative, or Holistic Procedure Codes"/>
+  <Entry name="CFI" value="Contractual Flow Indicator"/>
+  <Entry name="CHG" value="Charge Indicator"/>
+  <Entry name="CIE" value="Collision Industry Electronic Commerce Association (CIECA) - Assignment Type"/>
+  <Entry name="CLP" value="Cause Lookup"/>
+  <Entry name="CML" value="Customer Maintenance Level Lookup"/>
+  <Entry name="COG" value="Cognizance Symbol"/>
+  <Entry name="CPS" value="Court Party Status"/>
+  <Entry name="CRC" value="Complaint Request Code"/>
+  <Entry name="CSF" value="Corporate Statement Filing Code"/>
+  <Entry name="DBS" value="DUN's Standard Industrial Classification (SIC) 2+2, Dun and Bradstreet"/>
+  <Entry name="DGO" value="Dynamic Generator Set Code"/>
+  <Entry name="DLO" value="Dynamic Locomotive Tag Code"/>
+  <Entry name="DLP" value="Deferral Lookup"/>
+  <Entry name="DPE" value="Association of American Railroads Deprescription Exception List"/>
+  <Entry name="DPL" value="Association of American Railroads Deprescription Distribution List"/>
+  <Entry name="DRL" value="Collision Industry Electronic Commerce Association (CIECA) - Detail Repair Lines Code List"/>
+  <Entry name="DSS" value="Delivery Scheduling Status"/>
+  <Entry name="EAA" value="Alabama Campaign Disclosure Report Codes"/>
+  <Entry name="EAB" value="Alaska Campaign Disclosure Report Codes"/>
+  <Entry name="EAC" value="American Samoa Campaign Disclosure Report Codes"/>
+  <Entry name="EAD" value="Arizona Campaign Disclosure Report Codes"/>
+  <Entry name="EAE" value="Arkansas Campaign Disclosure Report Codes"/>
+  <Entry name="EAF" value="California Campaign Disclosure Report Codes"/>
+  <Entry name="EAG" value="Colorado Campaign Disclosure Report Codes"/>
+  <Entry name="EAH" value="Connecticut Campaign Disclosure Report Codes"/>
+  <Entry name="EAI" value="Delaware Campaign Disclosure Report Codes"/>
+  <Entry name="EAJ" value="District of Columbia Campaign Disclosure Report Codes"/>
+  <Entry name="EAK" value="Florida Campaign Disclosure Report Codes"/>
+  <Entry name="EAL" value="Georgia Campaign Disclosure Report Codes"/>
+  <Entry name="EAM" value="Guam Campaign Disclosure Report Codes"/>
+  <Entry name="EAN" value="Hawaii Campaign Disclosure Report Codes"/>
+  <Entry name="EAO" value="Idaho Campaign Disclosure Report Codes"/>
+  <Entry name="EAP" value="Illinois Campaign Disclosure Report Codes"/>
+  <Entry name="EAQ" value="Indiana Campaign Disclosure Report Codes"/>
+  <Entry name="EAR" value="Iowa Campaign Disclosure Report Codes"/>
+  <Entry name="EAS" value="Kansas Campaign Disclosure Report Codes"/>
+  <Entry name="EAT" value="Kentucky Campaign Disclosure Report Codes"/>
+  <Entry name="EAU" value="Louisiana Campaign Disclosure Report Codes"/>
+  <Entry name="EAV" value="Maine Campaign Disclosure Report Codes"/>
+  <Entry name="EAW" value="Maryland Campaign Disclosure Report Codes"/>
+  <Entry name="EAX" value="Massachusetts Campaign Disclosure Report Codes"/>
+  <Entry name="EAY" value="Michigan Campaign Disclosure Report Codes"/>
+  <Entry name="EAZ" value="Minnesota Campaign Disclosure Report Codes"/>
+  <Entry name="EBA" value="Mississippi Campaign Disclosure Report Codes"/>
+  <Entry name="EBB" value="Missouri Campaign Disclosure Report Codes"/>
+  <Entry name="EBC" value="Montana Campaign Disclosure Report Codes"/>
+  <Entry name="EBD" value="Nebraska Campaign Disclosure Report Codes"/>
+  <Entry name="EBE" value="Nevada Campaign Disclosure Report Codes"/>
+  <Entry name="EBF" value="New Hampshire Campaign Disclosure Report Codes"/>
+  <Entry name="EBG" value="New Jersey Campaign Disclosure Report Codes"/>
+  <Entry name="EBH" value="New Mexico Campaign Disclosure Report Codes"/>
+  <Entry name="EBI" value="New York Campaign Disclosure Report Codes"/>
+  <Entry name="EBJ" value="North Carolina Campaign Disclosure Report Codes"/>
+  <Entry name="EBK" value="North Dakota Campaign Disclosure Report Codes"/>
+  <Entry name="EBL" value="Ohio Campaign Disclosure Report Codes"/>
+  <Entry name="EBM" value="Oklahoma Campaign Disclosure Report Codes"/>
+  <Entry name="EBN" value="Oregon Campaign Disclosure Report Codes"/>
+  <Entry name="EBO" value="Pennsylvania Campaign Disclosure Report Codes"/>
+  <Entry name="EBP" value="Puerto Rico Campaign Disclosure Report Codes"/>
+  <Entry name="EBQ" value="Rhode Island Campaign Disclosure Report Codes"/>
+  <Entry name="EBR" value="South Carolina Campaign Disclosure Report Codes"/>
+  <Entry name="EBS" value="South Dakota Campaign Disclosure Report Codes"/>
+  <Entry name="EBT" value="Tennessee Campaign Disclosure Report Codes"/>
+  <Entry name="EBU" value="Texas Campaign Disclosure Report Codes"/>
+  <Entry name="EBV" value="Utah Campaign Disclosure Report Codes"/>
+  <Entry name="EBW" value="Vermont Campaign Disclosure Report Codes"/>
+  <Entry name="EBX" value="Virginia Campaign Disclosure Report Codes"/>
+  <Entry name="EBY" value="Virgin Islands Campaign Disclosure Report Codes"/>
+  <Entry name="EBZ" value="Washington Campaign Disclosure Report Codes"/>
+  <Entry name="ECA" value="West Virginia Campaign Disclosure Report Codes"/>
+  <Entry name="ECB" value="Wisconsin Campaign Disclosure Report Codes"/>
+  <Entry name="ECC" value="Wyoming Campaign Disclosure Report Codes"/>
+  <Entry name="ECD" value="Alberta Campaign Disclosure Report Codes"/>
+  <Entry name="ECE" value="British Columbia Campaign Disclosure Report Codes"/>
+  <Entry name="ECF" value="Manitoba Campaign Disclosure Report Codes"/>
+  <Entry name="ECG" value="New Brunswick Campaign Disclosure Report Codes"/>
+  <Entry name="ECH" value="Newfoundland Campaign Disclosure Report Codes"/>
+  <Entry name="ECI" value="Northwest Territories Campaign Disclosure Report Codes"/>
+  <Entry name="ECJ" value="Nova Scotia Campaign Disclosure Report Codes"/>
+  <Entry name="ECK" value="Ontario Campaign Disclosure Report Codes"/>
+  <Entry name="ECL" value="Prince Edward Island Campaign Disclosure Report Codes"/>
+  <Entry name="ECM" value="Quebec Campaign Disclosure Report Codes"/>
+  <Entry name="ECN" value="Saskatchewan Campaign Disclosure Report Codes"/>
+  <Entry name="ECO" value="Yukon Territory Campaign Disclosure Report Codes"/>
+  <Entry name="ECP" value="Federal Campaign Disclosure Report Codes"/>
+  <Entry name="ECQ" value="Alabama Lobbyist Report Codes"/>
+  <Entry name="ECR" value="Alaska Lobbyist Report Codes"/>
+  <Entry name="ECS" value="Arizona Lobbyist Report Codes"/>
+  <Entry name="ECT" value="Arkansas Lobbyist Report Codes"/>
+  <Entry name="ECU" value="California Lobbyist Report Codes"/>
+  <Entry name="ECV" value="Colorado Lobbyist Report Codes"/>
+  <Entry name="ECW" value="Connecticut Lobbyist Report Codes"/>
+  <Entry name="ECX" value="Delaware Lobbyist Report Codes"/>
+  <Entry name="ECY" value="District of Columbia Lobbyist Report Codes"/>
+  <Entry name="ECZ" value="Florida Lobbyist Report Codes"/>
+  <Entry name="EDA" value="Georgia Lobbyist Report Codes"/>
+  <Entry name="EDB" value="Hawaii Lobbyist Report Codes"/>
+  <Entry name="EDC" value="Idaho Lobbyist Report Codes"/>
+  <Entry name="EDD" value="Illinois Lobbyist Report Codes"/>
+  <Entry name="EDE" value="Indiana Lobbyist Report Codes"/>
+  <Entry name="EDF" value="Iowa Lobbyist Report Codes"/>
+  <Entry name="EDG" value="Kansas Lobbyist Report Codes"/>
+  <Entry name="EDH" value="Kentucky Lobbyist Report Codes"/>
+  <Entry name="EDI" value="Louisiana Lobbyist Report Codes"/>
+  <Entry name="EDJ" value="Maine Lobbyist Report Codes"/>
+  <Entry name="EDK" value="Maryland Lobbyist Report Codes"/>
+  <Entry name="EDL" value="Massachusetts Lobbyist Report Codes"/>
+  <Entry name="EDM" value="Michigan Lobbyist Report Codes"/>
+  <Entry name="EDN" value="Minnesota Lobbyist Report Codes"/>
+  <Entry name="EDO" value="Mississippi Lobbyist Report Codes"/>
+  <Entry name="EDP" value="Missouri Lobbyist Report Codes"/>
+  <Entry name="EDQ" value="Montana Lobbyist Report Codes"/>
+  <Entry name="EDR" value="Nebraska Lobbyist Report Codes"/>
+  <Entry name="EDS" value="Nevada Lobbyist Report Codes"/>
+  <Entry name="EDT" value="New Hampshire Lobbyist Report Codes"/>
+  <Entry name="EDU" value="New Jersey Lobbyist Report Codes"/>
+  <Entry name="EDV" value="New Mexico Lobbyist Report Codes"/>
+  <Entry name="EDW" value="New York Lobbyist Report Codes"/>
+  <Entry name="EDX" value="North Carolina Lobbyist Report Codes"/>
+  <Entry name="EDY" value="North Dakota Lobbyist Report Codes"/>
+  <Entry name="EDZ" value="Ohio Lobbyist Report Codes"/>
+  <Entry name="EEA" value="Oklahoma Lobbyist Report Codes"/>
+  <Entry name="EEB" value="Oregon Lobbyist Report Codes"/>
+  <Entry name="EEC" value="Pennsylvania Lobbyist Report Codes"/>
+  <Entry name="EED" value="Puerto Rico Lobbyist Report Codes"/>
+  <Entry name="EEE" value="Rhode Island Lobbyist Report Codes"/>
+  <Entry name="EEF" value="South Carolina Lobbyist Report Codes"/>
+  <Entry name="EEG" value="South Dakota Lobbyist Report Codes"/>
+  <Entry name="EEH" value="Tennessee Lobbyist Report Codes"/>
+  <Entry name="EEI" value="Texas Lobbyist Report Codes"/>
+  <Entry name="EEJ" value="Utah Lobbyist Report Codes"/>
+  <Entry name="EEK" value="Vermont Lobbyist Report Codes"/>
+  <Entry name="EEL" value="Virginia Lobbyist Report Codes"/>
+  <Entry name="EEM" value="Washington Lobbyist Report Codes"/>
+  <Entry name="EEN" value="West Virginia Lobbyist Report Codes"/>
+  <Entry name="EEO" value="Wisconsin Lobbyist Report Codes"/>
+  <Entry name="EEP" value="Wyoming Lobbyist Report Codes"/>
+  <Entry name="EEQ" value="New York City Campaign Disclosure Report Codes"/>
+  <Entry name="EER" value="Seattle Campaign Disclosure Report Codes"/>
+  <Entry name="EES" value="New York City Lobbyist Report Codes"/>
+  <Entry name="EMC" value="Automotive Aftermarket Industry Association (AAIA) Emission Code"/>
+  <Entry name="EQR" value="Equipment Request Codes"/>
+  <Entry name="ESL" value="Equipment Status Lookup"/>
+  <Entry name="ETL" value="Estimate Type Lookup"/>
+  <Entry name="EWC" value="Evaluate Work Candidate Lookup"/>
+  <Entry name="EWR" value="Evaluate Work Candidate Reason Lookup"/>
+  <Entry name="EXD" value="Export Declaration"/>
+  <Entry name="FAP" value="Fannie Mae Refinance Plan Code"/>
+  <Entry name="FC1" value="Federal Communication, Control and Security Code List 1"/>
+  <Entry name="FF1" value="Federal Finance Code List 1"/>
+  <Entry name="FH1" value="Federal Health Care Code List 1"/>
+  <Entry name="FL1" value="Federal Logistics Code List 1"/>
+  <Entry name="FP1" value="Federal Procurement Code List 1"/>
+  <Entry name="FRP" value="Freddie Mac Refinance Plan Code"/>
+  <Entry name="FT1" value="Federal Transportation Code List 1"/>
+  <Entry name="HRC" value="Hazardous Response Codes"/>
+  <Entry name="HZR" value="Association of American Railroads Standard Transportation Commodity Code Description Qualifier"/>
+  <Entry name="IMC" value="Item Management Code"/>
+  <Entry name="IMP" value="Impact Recorder Code"/>
+  <Entry name="IPA" value="Impact Axis or Analog Port Code"/>
+  <Entry name="IRT" value="Imbalance Reporting Type"/>
+  <Entry name="JCL" value="Job Characteristics Lookup"/>
+  <Entry name="JOL" value="Job Originator Lookup"/>
+  <Entry name="KYL" value="Key Event Lookup"/>
+  <Entry name="LIN" value="Line of Authority"/>
+  <Entry name="LOC" value="Location Indicator"/>
+  <Entry name="LOI" value="Logical Observation Identifier Names and Codes (LOINC) Codes"/>
+  <Entry name="LSC" value="Legal Structure Code"/>
+  <Entry name="MCC" value="Material Control Code"/>
+  <Entry name="MCD" value="Generator Set Mounting Code"/>
+  <Entry name="MOC" value="Mechanization of Contract Administration Services (MOCAS) System Error Code"/>
+  <Entry name="MRI" value="Maximum Rate Indicator"/>
+  <Entry name="NAC" value="Nomenclature Activity Classification Economy (NACE) Code"/>
+  <Entry name="NAF" value="Norme Activite Francaise (NAF) Code"/>
+  <Entry name="NAS" value="Nature of Suit"/>
+  <Entry name="NDC" value="National Drug Code (NDC)"/>
+  <Entry name="NPC" value="Automotive Aftermarket Industry Association (AAIA) National Popularity Code"/>
+  <Entry name="PCR" value="Pseudo Closure Reason Code"/>
+  <Entry name="PGS" value="Petroleum United States Geological Survey (USGS) Formation Code"/>
+  <Entry name="PIT" value="Petroleum Bill Type"/>
+  <Entry name="PLC" value="Petroleum Land Category"/>
+  <Entry name="PLS" value="Petroleum Lease Status"/>
+  <Entry name="POB" value="Part of Body and Nature of Injury"/>
+  <Entry name="PPD" value="Petroleum Product Disposition"/>
+  <Entry name="PPP" value="Petroleum Product Point-of-Sale"/>
+  <Entry name="PPS" value="Petroleum Product Selling Arrangement"/>
+  <Entry name="PPV" value="Petroleum Product Value Adjustment"/>
+  <Entry name="PRA" value="Petroleum Royalty Adjustment"/>
+  <Entry name="PRC" value="Petroleum Royalty Calculation Method"/>
+  <Entry name="PRI" value="Processing Rights Indicator"/>
+  <Entry name="PRR" value="Petroleum Regulatory Report"/>
+  <Entry name="PRT" value="Petroleum Royalty Transaction"/>
+  <Entry name="PWA" value="Petroleum Well Action"/>
+  <Entry name="PWI" value="Petroleum Well Information"/>
+  <Entry name="PWR" value="Petroleum Well Shut-In Reason"/>
+  <Entry name="PWS" value="Petroleum Well Classification Status"/>
+  <Entry name="PWT" value="Petroleum Well Test Information"/>
+  <Entry name="QDR" value="Product Quality Deficiency Report Summary Code"/>
+  <Entry name="RCA" value="Registered Contractor Activity Code"/>
+  <Entry name="REC" value="Race or Ethnicity Collection Code"/>
+  <Entry name="RED" value="Reduction Reason Code"/>
+  <Entry name="REN" value="Association of American Railroads Rate EDI Network Error Code"/>
+  <Entry name="RET" value="Classification of Race or Ethnicity"/>
+  <Entry name="RSS" value="Receipt Scheduling Status"/>
+  <Entry name="RTC" value="Registration Type Code"/>
+  <Entry name="RUM" value="Refrigeration Unit Operating Mode Code"/>
+  <Entry name="SBA" value="Statistic Bundes Amt (SBA) Code"/>
+  <Entry name="SCI" value="Subsequent Cycle Indicator"/>
+  <Entry name="SEC" value="Stock Exchange Code"/>
+  <Entry name="SET" value="Settlement Type"/>
+  <Entry name="SHL" value="Safety Hazard Lookup"/>
+  <Entry name="SHM" value="Accident Resulting Change Code"/>
+  <Entry name="SHN" value="Active Mitigation Consideration Code"/>
+  <Entry name="SHO" value="Activity Methods Code"/>
+  <Entry name="SHP" value="Analytical Method Code"/>
+  <Entry name="SHQ" value="Atmospheric Stability Class Code"/>
+  <Entry name="SHR" value="Basis of Estimate Code"/>
+  <Entry name="SHS" value="Certification Code"/>
+  <Entry name="SHT" value="Contributing Factor Code"/>
+  <Entry name="SHU" value="Control Device Type Code"/>
+  <Entry name="SHV" value="Design/Standard Code"/>
+  <Entry name="SHW" value="Device Classification Code"/>
+  <Entry name="SHX" value="Discharge Indicator Code"/>
+  <Entry name="SHY" value="Discharge Quantity Range Code"/>
+  <Entry name="SHZ" value="Non-Reportable Discharge Indicator Code"/>
+  <Entry name="SIA" value="Emergency Response Regulation/Statute Code"/>
+  <Entry name="SIB" value="Emission Factor Type Code"/>
+  <Entry name="SIC" value="Emission Release Point Type Code"/>
+  <Entry name="SID" value="Emission Source Type Code"/>
+  <Entry name="SIE" value="Emission Type Code"/>
+  <Entry name="SIF" value="Emission Unit Type Code"/>
+  <Entry name="SIG" value="Endpoint Code"/>
+  <Entry name="SIH" value="Environment Code"/>
+  <Entry name="SII" value="Environmental Program Type Code"/>
+  <Entry name="SIJ" value="Environmental Receptor Code"/>
+  <Entry name="SIK" value="Facility Category Code"/>
+  <Entry name="SIL" value="Facility Status Code"/>
+  <Entry name="SIM" value="Factor Calculation Method Code"/>
+  <Entry name="SIN" value="Frequency of Analysis Code"/>
+  <Entry name="SIO" value="Generator Status Code"/>
+  <Entry name="SIP" value="Geometric Type Code"/>
+  <Entry name="SIQ" value="Hazardous Waste Form Code"/>
+  <Entry name="SIR" value="Horizontal Datum Code"/>
+  <Entry name="SIS" value="Information System Code"/>
+  <Entry name="SIT" value="Initiating Event Code"/>
+  <Entry name="SIU" value="Inventory Quantity Range Code"/>
+  <Entry name="SIV" value="Latitude/Longitude Source Code"/>
+  <Entry name="SIW" value="Latitude/Longitude Verification Code"/>
+  <Entry name="SIX" value="Location Description Code"/>
+  <Entry name="SIY" value="Major Hazard Code"/>
+  <Entry name="SIZ" value="Manufacturing Code"/>
+  <Entry name="SJA" value="Material Classification Code"/>
+  <Entry name="SJB" value="Material Code"/>
+  <Entry name="SJC" value="Maximum Achievable Control Technology Code"/>
+  <Entry name="SJD" value="Method of Collection Code"/>
+  <Entry name="SJE" value="Mitigation System Code"/>
+  <Entry name="SJF" value="Model Used Code"/>
+  <Entry name="SJG" value="Monitoring/Detection System Code"/>
+  <Entry name="SJH" value="Monitoring Location Code"/>
+  <Entry name="SJI" value="Non-Generating Waste Code"/>
+  <Entry name="SJJ" value="Off-Site Availability Code"/>
+  <Entry name="SJK" value="Off-Site Impact Code"/>
+  <Entry name="SJL" value="On-Site Impact Code"/>
+  <Entry name="SJM" value="On-Site Process System Type Code"/>
+  <Entry name="SJN" value="Origin Code"/>
+  <Entry name="SJO" value="Parameter Code"/>
+  <Entry name="SJP" value="Passive Mitigation Consideration Code"/>
+  <Entry name="SJQ" value="Permit Compliance Status Code"/>
+  <Entry name="SJR" value="Physical State Code"/>
+  <Entry name="SJS" value="Point of Measurement Code"/>
+  <Entry name="SJT" value="Preservative Code"/>
+  <Entry name="SJU" value="Process Code"/>
+  <Entry name="SJV" value="Process Control Code"/>
+  <Entry name="SJW" value="Process Hazard Analysis Update Resulting Change Code"/>
+  <Entry name="SJX" value="Process Hazards Analysis Technique Code"/>
+  <Entry name="SJY" value="Public Receptor Code"/>
+  <Entry name="SJZ" value="Range of Concentration Code"/>
+  <Entry name="SKA" value="Recovery Method Code"/>
+  <Entry name="SKB" value="Recycling Method Code"/>
+  <Entry name="SKC" value="Release Event Code"/>
+  <Entry name="SKD" value="Release Source Code"/>
+  <Entry name="SKE" value="Reliability Indicator Code"/>
+  <Entry name="SKF" value="Rule Effectiveness Method Code"/>
+  <Entry name="SKG" value="Sample Type Code"/>
+  <Entry name="SKH" value="Scenario Code"/>
+  <Entry name="SKI" value="Site Location Code"/>
+  <Entry name="SKJ" value="Source Category Code"/>
+  <Entry name="SKK" value="Source of Waste Generation Code"/>
+  <Entry name="SKL" value="Source Reduction Activity Code"/>
+  <Entry name="SKM" value="System Type Code"/>
+  <Entry name="SKN" value="Time Period Code"/>
+  <Entry name="SKO" value="Topography Code"/>
+  <Entry name="SKP" value="Transfer Quantity Range Code"/>
+  <Entry name="SKQ" value="Type of Competency Testing Code"/>
+  <Entry name="SKR" value="Type of Training Code"/>
+  <Entry name="SKS" value="Type of Waste Management Code"/>
+  <Entry name="SKT" value="Use Code"/>
+  <Entry name="SKU" value="Waste Emanation Code"/>
+  <Entry name="SKV" value="Waste Management Status Code"/>
+  <Entry name="SKW" value="Waste Stream Code"/>
+  <Entry name="SKX" value="Waste Treatment Method Code"/>
+  <Entry name="SKY" value="Wind Direction Code"/>
+  <Entry name="SKZ" value="Unit of Measure Code"/>
+  <Entry name="SLS" value="Scheduling Status"/>
+  <Entry name="SMB" value="Statement Basis"/>
+  <Entry name="SMI" value="Special Material Identification Code"/>
+  <Entry name="SPE" value="Special Dating"/>
+  <Entry name="SRL" value="Special Requirement Lookup"/>
+  <Entry name="STC" value="Association of American Railroads Standard Transportation Commodity Code Master Description Information"/>
+  <Entry name="STF" value="Forward and Store Application Error Edit Codes"/>
+  <Entry name="SUI" value="Solicited/Unsolicited Indicator"/>
+  <Entry name="SVC" value="Service Code"/>
+  <Entry name="SWR" value="Association of American Railroads Switch Release Codes"/>
+  <Entry name="T00" value="Commercial Vehicle Operations Safety Code"/>
+  <Entry name="T01" value="Data Categories"/>
+  <Entry name="T02" value="Event Codes"/>
+  <Entry name="T03" value="Operation Type"/>
+  <Entry name="T04" value="Accident Parameters"/>
+  <Entry name="T05" value="Inspection Parameters"/>
+  <Entry name="T06" value="Driver Parameters"/>
+  <Entry name="T07" value="View Parameters"/>
+  <Entry name="T08" value="Vehicle Parameters"/>
+  <Entry name="T09" value="Fleet Parameters"/>
+  <Entry name="T10" value="Query Options"/>
+  <Entry name="T11" value="Jurisdiction Type"/>
+  <Entry name="T12" value="Single State Registration System and Operating Authority Credential"/>
+  <Entry name="T13" value="Commercial Vehicle Operations Insurance"/>
+  <Entry name="T14" value="Commercial Vehicle Registration"/>
+  <Entry name="T15" value="Hazardous Materials Credential"/>
+  <Entry name="T16" value="Oversize/Overweight Credential"/>
+  <Entry name="T17" value="Commercial Vehicle Tax"/>
+  <Entry name="T18" value="Commercial Vehicle Title"/>
+  <Entry name="T19" value="Commercial Driver's License"/>
+  <Entry name="T20" value="Commercial Vehicle Type"/>
+  <Entry name="T21" value="Commercial Vehicle Operations Status Code"/>
+  <Entry name="T22" value="Safety and Fitness Electronic Record Systems Subscription Option"/>
+  <Entry name="T23" value="Commercial Vehicle Operations Commodity Code"/>
+  <Entry name="T24" value="Commercial Vehicle Operations Hazardous Material Code"/>
+  <Entry name="T25" value="Safety and Fitness Electronic Record Systems Error Code"/>
+  <Entry name="T26" value="Commercial Vehicle Operations Jurisdiction Identifier Code"/>
+  <Entry name="T27" value="Compliance Review Code"/>
+  <Entry name="T28" value="Incident Condition Code"/>
+  <Entry name="T29" value="Incident Related Action Code"/>
+  <Entry name="T30" value="Incident Location Code"/>
+  <Entry name="T31" value="Incident Consequence Code"/>
+  <Entry name="T32" value="Road Characteristic Code"/>
+  <Entry name="T33" value="Vehicle Occupant Code"/>
+  <Entry name="T34" value="Package Failure Code"/>
+  <Entry name="T35" value="Pedestrian Code"/>
+  <Entry name="TCD" value="Collision Industry Electronic Commerce Association (CIECA) - Totals Code List"/>
+  <Entry name="TCL" value="Template Characteristic Lookup"/>
+  <Entry name="TFR" value="Tax or Fee Exemption Reason Code"/>
+  <Entry name="TOL" value="Template Owner Lookup"/>
+  <Entry name="TTL" value="Template Type Lookup"/>
+  <Entry name="UNP" value="(UN/SPSC) United Nations Products and Services Classification Code"/>
+  <Entry name="UPC" value="Unclaimed Property Additions, Deletions, and Deductions Codes"/>
+  <Entry name="UPT" value="Unclaimed Property Type Code"/>
+  <Entry name="VAL" value="Validation Code"/>
+  <Entry name="WDL" value="When Discovered Lookup"/>
+  <Entry name="WRC" value="Automotive Aftermarket Industry Association (AAIA) Warranty Code"/>
+</Table>

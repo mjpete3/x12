@@ -1,0 +1,157 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T935.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T935">
+  <Entry name="01" value="Where Air = 1"/>
+  <Entry name="02" value="Where Butyl Acetate = 1"/>
+  <Entry name="03" value="Approximately"/>
+  <Entry name="04" value="Equal to"/>
+  <Entry name="05" value="Greater than or equal to"/>
+  <Entry name="06" value="Greater than"/>
+  <Entry name="07" value="Less than"/>
+  <Entry name="08" value="Less than or equal to"/>
+  <Entry name="09" value="Where H2O = 1 or Water = 1"/>
+  <Entry name="10" value="Not equal to"/>
+  <Entry name="11" value="Corrected to 60 Degrees Fahrenheit"/>
+  <Entry name="12" value="Where Toluene = 1"/>
+  <Entry name="13" value="Vapor in Air"/>
+  <Entry name="14" value="Vapor in Other Than Air"/>
+  <Entry name="15" value="Standard Temperature and Pressure"/>
+  <Entry name="16" value="Conditions Other Than Standard Temperature and Pressure"/>
+  <Entry name="17" value="In Ethyl Alcohol"/>
+  <Entry name="18" value="In Ethyl Ether"/>
+  <Entry name="19" value="In Water"/>
+  <Entry name="20" value="At 1 Atmosphere Pressure"/>
+  <Entry name="21" value="Where Ether = 1"/>
+  <Entry name="22" value="Actual"/>
+  <Entry name="23" value="Predicted"/>
+  <Entry name="24" value="Air-dried Basis"/>
+  <Entry name="25" value="As-received Basis"/>
+  <Entry name="26" value="Dry Basis"/>
+  <Entry name="27" value="Equilibrium Basis"/>
+  <Entry name="28" value="Moisture and Ash-Free Basis"/>
+  <Entry name="29" value="Oxidizing Atmosphere"/>
+  <Entry name="30" value="Reducing Atmosphere"/>
+  <Entry name="31" value="Calculated"/>
+  <Entry name="32" value="Scaled Weight"/>
+  <Entry name="34" value="Ratchet"/>
+  <Entry name="35" value="Saturated Vapor"/>
+  <Entry name="36" value="Unconditional"/>
+  <Entry name="37" value="Short-term"/>
+  <Entry name="38" value="Time-weighted"/>
+  <Entry name="39" value="Corrected"/>
+  <Entry name="40" value="Uncorrected"/>
+  <Entry name="41" value="Off Peak"/>
+  <Entry name="42" value="On Peak"/>
+  <Entry name="43" value="Intermediate"/>
+  <Entry name="44" value="Average"/>
+  <Entry name="45" value="Per Gallon"/>
+  <Entry name="46" value="Estimated"/>
+  <Entry name="47" value="Minimum"/>
+  <Entry name="49" value="Mist"/>
+  <Entry name="50" value="Predominant"/>
+  <Entry name="51" value="Total"/>
+  <Entry name="52" value="Cost"/>
+  <Entry name="53" value="Tenant"/>
+  <Entry name="54" value="Owner"/>
+  <Entry name="55" value="For Sale"/>
+  <Entry name="56" value="Real Estate Owned or Corporate Owned"/>
+  <Entry name="57" value="Boarded or Blocked Up"/>
+  <Entry name="58" value="Planned"/>
+  <Entry name="59" value="Completed"/>
+  <Entry name="60" value="Sold"/>
+  <Entry name="61" value="Rented"/>
+  <Entry name="62" value="Current"/>
+  <Entry name="63" value="Current List"/>
+  <Entry name="64" value="Effective"/>
+  <Entry name="65" value="List When Sold"/>
+  <Entry name="66" value="Sales"/>
+  <Entry name="67" value="Final List"/>
+  <Entry name="68" value="As Is"/>
+  <Entry name="69" value="As Repaired or Improved"/>
+  <Entry name="70" value="Instantaneous"/>
+  <Entry name="71" value="Low"/>
+  <Entry name="72" value="Low to Good"/>
+  <Entry name="73" value="Low to High"/>
+  <Entry name="74" value="Low to Medium"/>
+  <Entry name="75" value="Low to Moderate"/>
+  <Entry name="76" value="Medium"/>
+  <Entry name="77" value="Medium to Good"/>
+  <Entry name="78" value="Medium to High"/>
+  <Entry name="79" value="Moderate"/>
+  <Entry name="80" value="Moderate to Good"/>
+  <Entry name="81" value="Moderate to High"/>
+  <Entry name="82" value="Moderate to Medium"/>
+  <Entry name="83" value="Good"/>
+  <Entry name="84" value="Good to High"/>
+  <Entry name="85" value="High"/>
+  <Entry name="86" value="Budgeted"/>
+  <Entry name="87" value="Forecast"/>
+  <Entry name="88" value="Adjusted"/>
+  <Entry name="89" value="Allocated"/>
+  <Entry name="90" value="Increasing"/>
+  <Entry name="91" value="Stable"/>
+  <Entry name="92" value="Declining"/>
+  <Entry name="93" value="Previous"/>
+  <Entry name="94" value="Potential"/>
+  <Entry name="95" value="Modeled"/>
+  <Entry name="96" value="Measured"/>
+  <Entry name="97" value="Maximum"/>
+  <Entry name="98" value="Regulated"/>
+  <Entry name="99" value="Spring"/>
+  <Entry name="AA" value="Summer On-peak"/>
+  <Entry name="AB" value="Summer Mid-peak"/>
+  <Entry name="AC" value="Summer Off-peak"/>
+  <Entry name="AD" value="Summer Super On-peak"/>
+  <Entry name="AE" value="Summer Super Off-peak"/>
+  <Entry name="AF" value="Winter On-peak"/>
+  <Entry name="AG" value="Winter Mid-peak"/>
+  <Entry name="AH" value="Winter Off-peak"/>
+  <Entry name="AI" value="Winter Super On-peak"/>
+  <Entry name="AJ" value="Winter Super Off-peak"/>
+  <Entry name="AK" value="Summer Day"/>
+  <Entry name="AL" value="Summer Night"/>
+  <Entry name="AM" value="Winter Day"/>
+  <Entry name="AN" value="Winter Night"/>
+  <Entry name="AO" value="Summer"/>
+  <Entry name="AP" value="Winter"/>
+  <Entry name="AQ" value="Day"/>
+  <Entry name="AR" value="Night"/>
+  <Entry name="AS" value="Peak-2"/>
+  <Entry name="AT" value="Peak-3"/>
+  <Entry name="AU" value="Peak-4"/>
+  <Entry name="AV" value="Shoulder"/>
+  <Entry name="AW" value="Non Time Related Demand"/>
+  <Entry name="AX" value="Fall"/>
+  <Entry name="AY" value="Summer On Peak-2"/>
+  <Entry name="AZ" value="Winter On Peak-2"/>
+  <Entry name="BA" value="Probable Contamination"/>
+  <Entry name="BB" value="Not Confirmed"/>
+  <Entry name="BC" value="Tentative Identification"/>
+  <Entry name="BD" value="Failed"/>
+  <Entry name="BE" value="Summer Mid Peak-2"/>
+  <Entry name="BF" value="Winter Mid Peak-2"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

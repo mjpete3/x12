@@ -1,0 +1,63 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T836.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T836">
+  <Entry name="A1" value="Bottom level first position from front end."/>
+  <Entry name="A2" value="Bottom level second position from front end."/>
+  <Entry name="A3" value="Bottom level third position from front end."/>
+  <Entry name="A4" value="Bottom level fourth position from front end"/>
+  <Entry name="A5" value="Bottom level fifth position from front end."/>
+  <Entry name="A6" value="Bottom level sixth position from front end."/>
+  <Entry name="A7" value="Bottom level seventh position from front end"/>
+  <Entry name="A8" value="Bottom level eighth position from front end"/>
+  <Entry name="A9" value="Bottom level ninth position from front end"/>
+  <Entry name="AX" value="Bottom level twelfth position from front end"/>
+  <Entry name="AY" value="Bottom level eleventh position from front end"/>
+  <Entry name="AZ" value="Bottom level tenth position from front end"/>
+  <Entry name="B1" value="Second level first position from front end."/>
+  <Entry name="B2" value="Second level second position from front end."/>
+  <Entry name="B3" value="Second level third position from front end."/>
+  <Entry name="B4" value="Second level fourth position from front end."/>
+  <Entry name="B5" value="Second level fifth position from front end."/>
+  <Entry name="B6" value="Second level sixth position from front end."/>
+  <Entry name="B7" value="Second level seventh position from front end."/>
+  <Entry name="B8" value="Second level eighth position from front end"/>
+  <Entry name="B9" value="Second level ninth position from front end"/>
+  <Entry name="BX" value="Second level twelfth position from front end"/>
+  <Entry name="BY" value="Second level eleventh position from front end"/>
+  <Entry name="BZ" value="Second level tenth position from front end"/>
+  <Entry name="C1" value="Third level first position from front end."/>
+  <Entry name="C2" value="Third level second position from front end."/>
+  <Entry name="C3" value="Third level third position from front end."/>
+  <Entry name="C4" value="Third level fourth position from front end."/>
+  <Entry name="C5" value="Third level fifth position from front end."/>
+  <Entry name="C6" value="Third level sixth position from front end."/>
+  <Entry name="C7" value="Third level seventh position from front end."/>
+  <Entry name="C8" value="Third level eighth position from front end"/>
+  <Entry name="C9" value="Third level ninth position from front end"/>
+  <Entry name="CX" value="Third level twelfth position from front end"/>
+  <Entry name="CY" value="Third level eleventh position from front end"/>
+  <Entry name="CZ" value="Third level tenth position from front end"/>
+</Table>

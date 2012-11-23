@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T547.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T547">
+  <Entry name="A" value="Default Interest Rate"/>
+  <Entry name="B" value="Default Note Holder's Rate"/>
+  <Entry name="C" value="Current Note Rate"/>
+  <Entry name="D" value="Debenture"/>
+  <Entry name="E" value="Current Pass Through Rate"/>
+  <Entry name="F" value="Security or Pass Through Rate"/>
+  <Entry name="G" value="Security or Pass Through Rate Floor"/>
+  <Entry name="H" value="Security or Pass Through Rate Ceiling"/>
+  <Entry name="J" value="Weighted Average Note Rate"/>
+  <Entry name="K" value="Servicing Fee"/>
+  <Entry name="L" value="Lender Paid Mortgage Insurance Portion"/>
+  <Entry name="M" value="Mortgage Note"/>
+  <Entry name="N" value="Guarantee Fee Per Contract"/>
+  <Entry name="P" value="Original Annual Interest Rate"/>
+  <Entry name="Q" value="Original Index Value"/>
+  <Entry name="S" value="Security or Pass Through Margin"/>
+  <Entry name="T" value="New Interest Rate"/>
+  <Entry name="U" value="Last Adjustable Rate Mortgage (ARM) Rate"/>
+  <Entry name="W" value="Weighted Average Interest Rate"/>
+  <Entry name="X" value="Accounting Net Yield Rate"/>
+</Table>

@@ -1,0 +1,181 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1069.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1069">
+  <Entry name="01" value="Spouse"/>
+  <Entry name="02" value="Son or Daughter"/>
+  <Entry name="03" value="Father or Mother"/>
+  <Entry name="04" value="Grandfather or Grandmother"/>
+  <Entry name="05" value="Grandson or Granddaughter"/>
+  <Entry name="06" value="Uncle or Aunt"/>
+  <Entry name="07" value="Nephew or Niece"/>
+  <Entry name="08" value="Cousin"/>
+  <Entry name="09" value="Adopted Child"/>
+  <Entry name="10" value="Foster Child"/>
+  <Entry name="11" value="Son-in-law or Daughter-in-law"/>
+  <Entry name="12" value="Brother-in-law or Sister-in-law"/>
+  <Entry name="13" value="Mother-in-law or Father-in-law"/>
+  <Entry name="14" value="Brother or Sister"/>
+  <Entry name="15" value="Ward"/>
+  <Entry name="16" value="Stepparent"/>
+  <Entry name="17" value="Stepson or Stepdaughter"/>
+  <Entry name="18" value="Self"/>
+  <Entry name="19" value="Child"/>
+  <Entry name="20" value="Employee"/>
+  <Entry name="21" value="Unknown"/>
+  <Entry name="22" value="Handicapped Dependent"/>
+  <Entry name="23" value="Sponsored Dependent"/>
+  <Entry name="24" value="Dependent of a Minor Dependent"/>
+  <Entry name="25" value="Ex-spouse"/>
+  <Entry name="26" value="Guardian"/>
+  <Entry name="27" value="Student"/>
+  <Entry name="28" value="Friend"/>
+  <Entry name="29" value="Significant Other"/>
+  <Entry name="30" value="Both Parents"/>
+  <Entry name="31" value="Court Appointed Guardian"/>
+  <Entry name="32" value="Mother"/>
+  <Entry name="33" value="Father"/>
+  <Entry name="34" value="Other Adult"/>
+  <Entry name="36" value="Emancipated Minor"/>
+  <Entry name="37" value="Agency Representative"/>
+  <Entry name="38" value="Collateral Dependent"/>
+  <Entry name="39" value="Organ Donor"/>
+  <Entry name="40" value="Cadaver Donor"/>
+  <Entry name="41" value="Injured Plaintiff"/>
+  <Entry name="43" value="Child Where Insured Has No Financial Responsibility"/>
+  <Entry name="45" value="Widow"/>
+  <Entry name="46" value="Widower"/>
+  <Entry name="47" value="State Fund"/>
+  <Entry name="48" value="Stepfather"/>
+  <Entry name="49" value="Stepmother"/>
+  <Entry name="50" value="Foster Parent"/>
+  <Entry name="51" value="Emergency Contact"/>
+  <Entry name="52" value="Employer"/>
+  <Entry name="53" value="Life Partner"/>
+  <Entry name="55" value="Adopted Daughter"/>
+  <Entry name="56" value="Adopted Son"/>
+  <Entry name="57" value="Adoptive Father"/>
+  <Entry name="58" value="Adoptive Mother"/>
+  <Entry name="59" value="Adoptive Parents"/>
+  <Entry name="60" value="Annuitant"/>
+  <Entry name="61" value="Aunt"/>
+  <Entry name="62" value="Brother"/>
+  <Entry name="63" value="Brother-in-Law"/>
+  <Entry name="64" value="Business"/>
+  <Entry name="65" value="Business Associate"/>
+  <Entry name="66" value="Business Insurance Trust"/>
+  <Entry name="67" value="Business Partner"/>
+  <Entry name="68" value="Charity"/>
+  <Entry name="70" value="Children of Marriage"/>
+  <Entry name="71" value="Company"/>
+  <Entry name="72" value="Corporation"/>
+  <Entry name="73" value="Creditor"/>
+  <Entry name="74" value="Daughter"/>
+  <Entry name="75" value="Daughter-in-Law"/>
+  <Entry name="76" value="Dependent"/>
+  <Entry name="78" value="Estate"/>
+  <Entry name="79" value="Ex-wife"/>
+  <Entry name="80" value="Family Member"/>
+  <Entry name="81" value="Father-in-Law"/>
+  <Entry name="82" value="Fianc? (Male)"/>
+  <Entry name="83" value="Financ?e (Female)"/>
+  <Entry name="84" value="Fiduciary"/>
+  <Entry name="86" value="Foster Daughter"/>
+  <Entry name="87" value="Foster Father"/>
+  <Entry name="88" value="Foster Mother"/>
+  <Entry name="90" value="Foster Son"/>
+  <Entry name="91" value="God Daughter"/>
+  <Entry name="92" value="God Father"/>
+  <Entry name="93" value="God Parents"/>
+  <Entry name="94" value="God Son"/>
+  <Entry name="95" value="Grandchildren"/>
+  <Entry name="96" value="Granddaughter"/>
+  <Entry name="97" value="Grandfather"/>
+  <Entry name="98" value="Grandmother"/>
+  <Entry name="99" value="Grandparents"/>
+  <Entry name="A1" value="Grandson"/>
+  <Entry name="A2" value="Great Aunt"/>
+  <Entry name="A3" value="Ex-husband"/>
+  <Entry name="A4" value="Half Brother"/>
+  <Entry name="A5" value="Half Sister"/>
+  <Entry name="A6" value="Husband"/>
+  <Entry name="A7" value="Institution"/>
+  <Entry name="A8" value="Mortgage Holder"/>
+  <Entry name="A9" value="Mother-in-Law"/>
+  <Entry name="B1" value="Nephew"/>
+  <Entry name="B2" value="Niece"/>
+  <Entry name="B3" value="Parents-in-Law"/>
+  <Entry name="B4" value="Partnership"/>
+  <Entry name="B5" value="Partner"/>
+  <Entry name="B6" value="Personal Insurance Trust"/>
+  <Entry name="B7" value="Sister"/>
+  <Entry name="B8" value="Sister-in-Law"/>
+  <Entry name="B9" value="Sole Proprietorship"/>
+  <Entry name="C1" value="Son"/>
+  <Entry name="C2" value="Son-in-Law"/>
+  <Entry name="C3" value="Step Brother"/>
+  <Entry name="C4" value="Step Children"/>
+  <Entry name="C5" value="Step Daughter"/>
+  <Entry name="C8" value="Step Sister"/>
+  <Entry name="C9" value="Step Son"/>
+  <Entry name="D1" value="Trust"/>
+  <Entry name="D2" value="Trustee"/>
+  <Entry name="D3" value="Uncle"/>
+  <Entry name="D4" value="Wife"/>
+  <Entry name="D5" value="Teacher"/>
+  <Entry name="D6" value="School Counselor"/>
+  <Entry name="D7" value="School Principal"/>
+  <Entry name="D8" value="Other School Administrator"/>
+  <Entry name="D9" value="Coach"/>
+  <Entry name="E1" value="Activity Sponsor"/>
+  <Entry name="E2" value="Supervisor"/>
+  <Entry name="E3" value="Co-worker"/>
+  <Entry name="E4" value="Minister or Priest"/>
+  <Entry name="E5" value="Ecclesiastical or Religious Leader"/>
+  <Entry name="E6" value="God Mother"/>
+  <Entry name="E7" value="Probation Officer"/>
+  <Entry name="E8" value="Accountant"/>
+  <Entry name="E9" value="Advisor"/>
+  <Entry name="F1" value="Alma Mater"/>
+  <Entry name="F2" value="Applicant"/>
+  <Entry name="F3" value="Banker"/>
+  <Entry name="F6" value="Clergyman"/>
+  <Entry name="F7" value="Client"/>
+  <Entry name="F8" value="Club or Organization Officer"/>
+  <Entry name="F9" value="Doctor"/>
+  <Entry name="G2" value="Educator/Teacher/Instructor"/>
+  <Entry name="G3" value="Betrothed"/>
+  <Entry name="G4" value="Insured"/>
+  <Entry name="G5" value="Lawyer"/>
+  <Entry name="G6" value="Medical Care Provider"/>
+  <Entry name="G7" value="Neighbor"/>
+  <Entry name="G8" value="Other Relationship"/>
+  <Entry name="G9" value="Other Relative"/>
+  <Entry name="H1" value="Owner"/>
+  <Entry name="H4" value="Payor"/>
+  <Entry name="N1" value="None"/>
+  <Entry name="OT" value="Non-applicable Individual Relationship Category"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

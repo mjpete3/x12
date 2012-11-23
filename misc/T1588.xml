@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1588.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1588">
+  <Entry name="AM" value="American"/>
+  <Entry name="CM" value="Communist"/>
+  <Entry name="CN" value="Conservative"/>
+  <Entry name="DM" value="Democratic"/>
+  <Entry name="FR" value="Freedom"/>
+  <Entry name="GN" value="Green"/>
+  <Entry name="GR" value="Grass Roots"/>
+  <Entry name="IN" value="Independence"/>
+  <Entry name="LL" value="Liberal"/>
+  <Entry name="LR" value="LaRouche"/>
+  <Entry name="LT" value="Libertarian"/>
+  <Entry name="NP" value="No Political Party"/>
+  <Entry name="OT" value="Other Political Party"/>
+  <Entry name="PF" value="Peace and Freedom"/>
+  <Entry name="RL" value="Right-to-Life"/>
+  <Entry name="RP" value="Republican"/>
+  <Entry name="SC" value="Socialist"/>
+  <Entry name="SL" value="Socialist-Labor"/>
+  <Entry name="TX" value="Taxpayers"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

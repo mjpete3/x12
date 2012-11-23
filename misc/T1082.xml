@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1082.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1082">
+  <Entry name="01" value="Cash"/>
+  <Entry name="02" value="Change in Rate or Term or Both"/>
+  <Entry name="04" value="Home Improvement"/>
+  <Entry name="05" value="Education"/>
+  <Entry name="06" value="Medical"/>
+  <Entry name="07" value="Increase Rate"/>
+  <Entry name="08" value="Reduce Term"/>
+  <Entry name="09" value="Adjustable Rate to Fixed Rate"/>
+  <Entry name="12" value="Debt Consolidation"/>
+  <Entry name="13" value="Change in Loan Type"/>
+  <Entry name="14" value="Other Purpose"/>
+  <Entry name="16" value="Purchase"/>
+  <Entry name="17" value="Reduce Rate"/>
+  <Entry name="18" value="Equity Takeout"/>
+  <Entry name="20" value="Construction to Permanent"/>
+  <Entry name="21" value="Construction"/>
+  <Entry name="22" value="Combined Construction and Permanent"/>
+  <Entry name="23" value="Increase Term"/>
+  <Entry name="24" value="Balloon Satisfaction"/>
+  <Entry name="25" value="Rate or Term Refinance with Cash Out"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

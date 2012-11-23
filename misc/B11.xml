@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: B11.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="B11" comment="To transmit identifying numbers, dates, and other basic data relating to the transaction set">
+  <Field name="IdentificationCodeQualifier" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="AmountQualifierCode" required="y" min="1" max="3" validation="T522" comment="Code to qualify amount"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="ItemDescriptionType" required="y" min="1" max="1" validation="T349" comment="Code indicating the format of a description"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="ServiceLevelCode" required="y" min="2" max="2" validation="T284" comment="Code indicating the level of transportation service or the billing service offered by the transportation carrier"/>
+  <Field name="ReportTransmissionCode" required="y" min="1" max="2" validation="T756" comment="Code defining timing, transmission method or format by which reports are to be sent"/>
+</Segment>

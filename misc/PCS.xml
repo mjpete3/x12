@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PCS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PCS" comment="To convey the status of a product service claim or claims or to supply adjustment reason codes and amounts as needed for an entire claim or for a particular item within the claim">
+  <Field name="ClaimStatusCode" required="y" min="1" max="2" validation="T1029" comment="Code identifying the status of an entire claim as assigned by the payor, claim review organization or repricing organization"/>
+  <Field name="AgencyQualifierCode1" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier1" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="ClaimResponseReasonCode" required="y" min="1" max="3" validation="T1172" comment="Code identifying the detailed reason for the response"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="FollowUpActionCode" required="y" min="1" max="1" validation="T889" comment="Code identifying follow-up actions allowed"/>
+  <Field name="AgencyQualifierCode2" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier2" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="DispositionCode" required="y" min="3" max="3" validation="T1225" comment="Code specifying the disposition of removed part, subassembly, or assembly"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="AuthorizationIdentification" required="y" min="1" max="4" comment="Identifier representing authorization of an unusual repair or some attendant condition"/>
+</Segment>

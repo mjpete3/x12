@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1085.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1085">
+  <Entry name="01" value="Adjustable Payment Based on Index"/>
+  <Entry name="02" value="Fixed Payment with Balloon Option"/>
+  <Entry name="03" value="Pledged"/>
+  <Entry name="04" value="Growing Equity Mortgage (GEM)"/>
+  <Entry name="05" value="Fixed Payment"/>
+  <Entry name="06" value="Graduated Payment Mortgage (GPM)"/>
+  <Entry name="07" value="Interest Only with Balloon"/>
+  <Entry name="08" value="Graduated Payment Adjustable Rate Mortgage"/>
+  <Entry name="09" value="Extended Term"/>
+  <Entry name="10" value="Wraparound Mortgage"/>
+  <Entry name="11" value="Collateral Pledge Graduated Payment Mortgage"/>
+  <Entry name="12" value="Fixed Payment With Buydown"/>
+  <Entry name="13" value="Other Loan Payment Type"/>
+  <Entry name="14" value="Step Rate"/>
+  <Entry name="15" value="Tiered"/>
+  <Entry name="16" value="Renegotiated Rate"/>
+  <Entry name="17" value="Reverse Annuity"/>
+  <Entry name="18" value="Reverse Installment Buydown"/>
+  <Entry name="19" value="Shared Appreciation"/>
+  <Entry name="20" value="Second Mortgage"/>
+  <Entry name="21" value="Interest Only"/>
+  <Entry name="22" value="Non-level"/>
+  <Entry name="23" value="Biweekly"/>
+  <Entry name="24" value="Five-year Balloon"/>
+  <Entry name="25" value="Seven-year Balloon"/>
+  <Entry name="26" value="Regular Reducing"/>
+  <Entry name="27" value="Skip"/>
+  <Entry name="28" value="Balloon"/>
+  <Entry name="29" value="Single"/>
+  <Entry name="30" value="Fixed Principal Payment"/>
+  <Entry name="32" value="Start Up Mortgage"/>
+</Table>

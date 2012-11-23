@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: E24.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="E24" comment="To provide the detail information related to the sequence of the data elements in a segment or composite for the electronic form of the X12 standards">
+  <Field name="MaintenanceOperationCode" min="1" max="1" validation="T487" comment="Code indicating the type maintenance operation"/>
+  <Field name="PositionInSegmentOrComposite" type="long" min="1" max="2" comment="Relative position of the data element in the segment or composite definition; it is 1 for the data element immediately following the segment ID and is incremented by 1 for each succeeding element to the end of the segment or composite"/>
+  <Field name="DataElementReferenceNumber" type="long" min="1" max="4" comment="Reference number used to locate the data element in the Data Element Dictionary"/>
+  <Field name="RequirementDesignator" min="1" max="1" validation="T904" comment="Requirement designator as specified in the standard or standards convention"/>
+  <Field name="DataElementType" required="y" min="1" max="1" validation="T491" comment="A code that indicates the type of data element"/>
+  <Field name="NoteIdentificationNumber" type="long" required="y" min="1" max="6" comment="A number providing a reference to a segment or file which contains notes or comments related to X12 standards documentation"/>
+  <Field name="Count" type="long" required="y" min="1" max="9" comment="Occurrence counter"/>
+</Segment>

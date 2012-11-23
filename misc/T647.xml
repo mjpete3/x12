@@ -1,0 +1,227 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T647.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T647">
+  <Entry name="A" value="Missing or Invalid Report Type Code"/>
+  <Entry name="B" value="Missing or Invalid Physical Inventory Code"/>
+  <Entry name="C" value="Missing or Invalid Consignee"/>
+  <Entry name="D" value="Missing or Invalid Fund Code"/>
+  <Entry name="E" value="Missing or Invalid Material Condition Code"/>
+  <Entry name="F" value="Missing or Invalid Management Code"/>
+  <Entry name="G" value="Missing or Invalid Processing (Count) Date Code"/>
+  <Entry name="H" value="Missing or Invalid Unit of Measure Code"/>
+  <Entry name="I" value="Missing or Invalid Source of Supply Code"/>
+  <Entry name="J" value="Missing or Invalid Purpose Code"/>
+  <Entry name="K" value="Missing or Invalid Ownership Code"/>
+  <Entry name="L" value="Missing or Invalid Support Request Code"/>
+  <Entry name="M" value="Missing or Invalid Supply Condition Code"/>
+  <Entry name="N" value="Missing or Invalid Payer Identification"/>
+  <Entry name="O" value="Missing or Invalid Issuer Identification"/>
+  <Entry name="P" value="Missing or Invalid Item Quantity"/>
+  <Entry name="Q" value="Missing or Invalid Item Identification"/>
+  <Entry name="R" value="Missing or Invalid Support Date"/>
+  <Entry name="S" value="Missing or Unauthorized Transportation Mode/Method Code"/>
+  <Entry name="T" value="Unauthorized Transaction Set Purpose Code"/>
+  <Entry name="U" value="Missing or Unauthorized Transaction Type Code"/>
+  <Entry name="V" value="Missing or Unauthorized Action Code"/>
+  <Entry name="W" value="Outside Ship Window"/>
+  <Entry name="MA" value="Missing or Invalid Store Number"/>
+  <Entry name="MB" value="Missing or Invalid Purchase Order Number"/>
+  <Entry name="MC" value="Missing or Invalid Bill of Lading Number"/>
+  <Entry name="MD" value="Missing or Invalid Invoice Date"/>
+  <Entry name="ME" value="Missing or Invalid Department Number"/>
+  <Entry name="MF" value="Missing or Invalid Internal Vendor Number"/>
+  <Entry name="MG" value="Missing or Invalid U.P.C. Code"/>
+  <Entry name="MH" value="Missing or Invalid DUNS Number"/>
+  <Entry name="MI" value="Missing or Invalid SCAC"/>
+  <Entry name="MJ" value="Missing or Invalid Terms"/>
+  <Entry name="MK" value="Missing or Invalid Ship Date Location"/>
+  <Entry name="ML" value="Missing or Invalid Sell to Location"/>
+  <Entry name="MM" value="Missing or Invalid Bill to Location"/>
+  <Entry name="MN" value="Missing or Invalid Unit Cost"/>
+  <Entry name="MP" value="Missing or Invalid Non-merchandise Code"/>
+  <Entry name="MQ" value="Missing or Invalid Non-merchandise Cost"/>
+  <Entry name="RU" value="Rate Unverifiable"/>
+  <Entry name="001" value="Car Not in Umler"/>
+  <Entry name="002" value="Car Not in Correct Status for Billing"/>
+  <Entry name="003" value="Duplicate Billing"/>
+  <Entry name="004" value="Invalid Commodity Code"/>
+  <Entry name="005" value="Route Error"/>
+  <Entry name="006" value="Duplicate"/>
+  <Entry name="007" value="Missing Data"/>
+  <Entry name="008" value="Out of Range"/>
+  <Entry name="009" value="Invalid Date"/>
+  <Entry name="010" value="Total Out of Balance"/>
+  <Entry name="011" value="Not Matching"/>
+  <Entry name="012" value="Invalid Combination"/>
+  <Entry name="024" value="Other Unlisted Reason"/>
+  <Entry name="026" value="Customer Identification Number is Invalid"/>
+  <Entry name="027" value="Customer Identification Number Does not Exist"/>
+  <Entry name="028" value="Customer Identification Number and Entity Name Do not Match"/>
+  <Entry name="029" value="Customer Identification Number Is Missing"/>
+  <Entry name="036" value="Invalid Serial Number"/>
+  <Entry name="101" value="Effective Date Too Early"/>
+  <Entry name="102" value="Improper Placement of Labels"/>
+  <Entry name="104" value="Item Already Exists"/>
+  <Entry name="105" value="Item Marked For Delete"/>
+  <Entry name="106" value="Item Not Authorized For Buyer Assigned Vendor Number"/>
+  <Entry name="107" value="Missing or Invalid Location"/>
+  <Entry name="108" value="Location Received Not On Order"/>
+  <Entry name="109" value="Negative Value"/>
+  <Entry name="110" value="Missing Marking Identification at Pack Level"/>
+  <Entry name="111" value="Duplicate Purchase Order Number"/>
+  <Entry name="112" value="Missing Product Description 1"/>
+  <Entry name="113" value="Missing Product Description 2"/>
+  <Entry name="114" value="Code Not Mapped to Application"/>
+  <Entry name="115" value="Missing Code for Application"/>
+  <Entry name="116" value="Retail Price Is Greater Than Suggested Retail Price"/>
+  <Entry name="117" value="Sender Not Authorized To Submit Ship Notice Data For Buyer Assigned Vendor Number"/>
+  <Entry name="118" value="Sender Not Authorized To Submit Ship Notice For Item(s)"/>
+  <Entry name="119" value="Duplicate Shipment Identification Number"/>
+  <Entry name="120" value="Ship-To Location Not Consistent With Purchase Order Ship-To"/>
+  <Entry name="121" value="Duplicate SSCC (formerly known as Serial Shipping Container Code)"/>
+  <Entry name="122" value="Invalid SSCC (formerly known as Serial Shipping Container Code) Range"/>
+  <Entry name="123" value="Invalid SSCC (formerly known as Serial Shipping Container Code) Structure"/>
+  <Entry name="124" value="Missing Marking Identification at Tare Level"/>
+  <Entry name="125" value="Unscannable Labels"/>
+  <Entry name="126" value="Incorrect Label Format"/>
+  <Entry name="128" value="Missing Labels on Shipping Container"/>
+  <Entry name="129" value="Cost Change Not Accepted"/>
+  <Entry name="130" value="UCC-12 Change Not Allowed"/>
+  <Entry name="131" value="Zero Value"/>
+  <Entry name="133" value="Item Not Found On Purchase Order"/>
+  <Entry name="134" value="Missing or Invalid Invoice Number"/>
+  <Entry name="136" value="Receiving Location Not On Order"/>
+  <Entry name="137" value="Allowance Errors"/>
+  <Entry name="138" value="Purchase Order Closed"/>
+  <Entry name="139" value="Missing or Invalid Vendor Pack Quantity"/>
+  <Entry name="140" value="Missing or Invalid Ship-To Location"/>
+  <Entry name="141" value="Purchase Order Cancelled"/>
+  <Entry name="500" value="Misrouted Freight Bill"/>
+  <Entry name="801" value="Missing or Invalid Transaction Handling Code"/>
+  <Entry name="802" value="Invalid Debit or Credit Flag Code"/>
+  <Entry name="803" value="Missing or Invalid Payment Method Code"/>
+  <Entry name="804" value="Missing or Invalid Payment Format"/>
+  <Entry name="805" value="Missing Depository Financial Institution (DFI) Qualifier"/>
+  <Entry name="806" value="Missing or Invalid Financial Institution Transit Routing Number"/>
+  <Entry name="807" value="Missing or Invalid Originating Account Number"/>
+  <Entry name="808" value="Missing or Invalid Receiving Account Number"/>
+  <Entry name="809" value="Missing Effective Entry Date"/>
+  <Entry name="810" value="Effective Payment Date is Past"/>
+  <Entry name="811" value="Payment Received Too Far in Advance"/>
+  <Entry name="812" value="Missing Transaction Reference or Trace Number"/>
+  <Entry name="813" value="Missing or Invalid Payee Name and Address"/>
+  <Entry name="814" value="Received After Cutoff Date or Time"/>
+  <Entry name="815" value="Duplicate Batch"/>
+  <Entry name="817" value="Duplicate Trace Number"/>
+  <Entry name="818" value="Missing Control Totals"/>
+  <Entry name="819" value="Control Totals Amount Error"/>
+  <Entry name="820" value="Control Totals Count Error"/>
+  <Entry name="821" value="Control Totals Out of Sequence"/>
+  <Entry name="822" value="Transaction Set Payment Amount Error"/>
+  <Entry name="823" value="Payment Pending Credit Approval"/>
+  <Entry name="824" value="Payment Passed Credit Approval"/>
+  <Entry name="825" value="Payment Amount Exceeds Approved Credit Limit; Refused"/>
+  <Entry name="826" value="Non-Sufficient Funds in Account; Refused"/>
+  <Entry name="827" value="Account Frozen"/>
+  <Entry name="828" value="Account Transferred"/>
+  <Entry name="829" value="Payee Deceased"/>
+  <Entry name="830" value="Refused by Payee"/>
+  <Entry name="831" value="Missing or Invalid Cancellation Type Code"/>
+  <Entry name="832" value="Invalid Request or Cancellation Flag"/>
+  <Entry name="833" value="Invalid Cancellation Request (Item Not in Financial Warehouse to Cancel)"/>
+  <Entry name="834" value="Missing or Invalid Effective Payment Date"/>
+  <Entry name="847" value="Closed/Non-Existent Account Number"/>
+  <Entry name="848" value="Incorrect Data"/>
+  <Entry name="849" value="Corrected Data"/>
+  <Entry name="ASA" value="Associated Authorization"/>
+  <Entry name="ASV" value="Associated Vehicle Identification Number(s) Unknown"/>
+  <Entry name="AVE" value="Associated Vehicle Identification Number(s) Invalid"/>
+  <Entry name="CAL" value="Currency Calculation"/>
+  <Entry name="CHK" value="Check Being Returned"/>
+  <Entry name="COV" value="Conflicting Authorizations"/>
+  <Entry name="CUR" value="Invalid Currency Code"/>
+  <Entry name="DBL" value="Duplicate Bill of Lading Number"/>
+  <Entry name="DDT" value="Departure Date Invalid"/>
+  <Entry name="DRC" value="Duplicate Railcar Departure"/>
+  <Entry name="DTE" value="Incorrect Date"/>
+  <Entry name="DUP" value="Duplicate Transaction"/>
+  <Entry name="HUG" value="Quantity of Handling Units Shipped Greater Than the Quantity Specified"/>
+  <Entry name="HUL" value="Quantity of Handling Units Shipped Less Than the Quantity Specified"/>
+  <Entry name="ICA" value="Invalid Claim Amount"/>
+  <Entry name="ICG" value="Invalid Charge Allowance Qualifier"/>
+  <Entry name="IDC" value="Invalid Decline/Amend Reason Code"/>
+  <Entry name="IDN" value="Invalid Department Number"/>
+  <Entry name="IID" value="Invalid Identification Code"/>
+  <Entry name="IMD" value="Invalid Railcar Type"/>
+  <Entry name="INC" value="Incomplete Transaction"/>
+  <Entry name="INF" value="Invalid Status Code"/>
+  <Entry name="IPR" value="Status Code Previously Reported"/>
+  <Entry name="IQT" value="Invalid Quantity"/>
+  <Entry name="IWT" value="Invalid Weight"/>
+  <Entry name="LOC" value="Invalid Damage Area Code"/>
+  <Entry name="MBL" value="Multiple Bills of Lading"/>
+  <Entry name="MDN" value="Missing Department Number"/>
+  <Entry name="MID" value="Missing Identification Code"/>
+  <Entry name="MQT" value="Missing Quantity"/>
+  <Entry name="MWT" value="Missing Weight"/>
+  <Entry name="NAU" value="Not Authorized"/>
+  <Entry name="NCL" value="No Clearance Authorization"/>
+  <Entry name="NCR" value="No Clearance Reported"/>
+  <Entry name="NDP" value="No Departure Reported"/>
+  <Entry name="NDT" value="No Termination Date"/>
+  <Entry name="NIF" value="Invalid Status Location"/>
+  <Entry name="NOC" value="Automated Clearinghouse (ACH) Notification of Change"/>
+  <Entry name="NOD" value="Not on Departure"/>
+  <Entry name="NRA" value="No Railcar Arrival"/>
+  <Entry name="OTH" value="Other"/>
+  <Entry name="PND" value="Pending Payment"/>
+  <Entry name="POI" value="Purchase Order Number Invalid"/>
+  <Entry name="PPD" value="Previously Paid"/>
+  <Entry name="PRM" value="Primary Inspection Not Received"/>
+  <Entry name="QTY" value="Quantity"/>
+  <Entry name="RAT" value="No Rate Available"/>
+  <Entry name="RTE" value="Invalid Shipper's Route Code"/>
+  <Entry name="RTN" value="Automated Clearinghouse (ACH) Return Items"/>
+  <Entry name="SCA" value="Invalid SCAC"/>
+  <Entry name="SCD" value="Invalid Vehicle Service Code"/>
+  <Entry name="SEV" value="Invalid Damage Severity Code"/>
+  <Entry name="SPL" value="Invalid SPLC Code"/>
+  <Entry name="STA" value="Shipment Picked Up After the Date Specified by the Ship Window"/>
+  <Entry name="STP" value="Shipment Picked Up Prior to the Date Specified by the Ship Window"/>
+  <Entry name="STR" value="Invalid Storage Days Calculation"/>
+  <Entry name="TRN" value="Turnover"/>
+  <Entry name="TYP" value="Invalid Damage Type Code"/>
+  <Entry name="UAU" value="Used Authorization"/>
+  <Entry name="UCN" value="Unknown Claim Number"/>
+  <Entry name="UKN" value="Unknown Move/Service"/>
+  <Entry name="UNP" value="Invalid Unit Price"/>
+  <Entry name="UNV" value="Unknown Vehicle Identification Number"/>
+  <Entry name="VIN" value="Invalid Vehicle Identification Number"/>
+  <Entry name="VND" value="Vehicle Not Departed"/>
+  <Entry name="VOS" value="Offsite Storage"/>
+  <Entry name="ZDS" value="Zero Storage Days"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,68 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1250.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1250">
+  <Entry name="CC" value="First Two Digits of Year Expressed in Format CCYY"/>
+  <Entry name="CD" value="Month and Year Expressed in Format MMMYYYY"/>
+  <Entry name="CM" value="Date in Format CCYYMM"/>
+  <Entry name="CQ" value="Date in Format CCYYQ"/>
+  <Entry name="CY" value="Year Expressed in Format CCYY"/>
+  <Entry name="D6" value="Date Expressed in Format YYMMDD"/>
+  <Entry name="D8" value="Date Expressed in Format CCYYMMDD"/>
+  <Entry name="DA" value="Range of Dates within a Single Month Expressed in Format DD-DD"/>
+  <Entry name="DB" value="Date Expressed in Format MMDDCCYY"/>
+  <Entry name="DD" value="Day of Month in Numeric Format"/>
+  <Entry name="DT" value="Date and Time Expressed in Format CCYYMMDDHHMM"/>
+  <Entry name="EH" value="Last Digit of Year and Julian Date Expressed in Format YDDD"/>
+  <Entry name="KA" value="Date Expressed in Format YYMMMDD"/>
+  <Entry name="MD" value="Month of Year and Day of Month Expressed in Format MMDD"/>
+  <Entry name="MM" value="Month of Year in Numeric Format"/>
+  <Entry name="RD" value="Range of Dates Expressed in Format MMDDCCYY-MMDDCCYY"/>
+  <Entry name="TC" value="Julian Date Expressed in Format DDD"/>
+  <Entry name="TM" value="Time Expressed in Format HHMM"/>
+  <Entry name="TQ" value="Date Expressed in Format MMYY"/>
+  <Entry name="TR" value="Date and Time Expressed in Format DDMMYYHHMM"/>
+  <Entry name="TS" value="Time Expressed in Format HHMMSS"/>
+  <Entry name="TT" value="Date Expressed in Format MMDDYY"/>
+  <Entry name="TU" value="Date Expressed in Format YYDDD"/>
+  <Entry name="UN" value="Unstructured"/>
+  <Entry name="YM" value="Year and Month Expressed in Format YYMM"/>
+  <Entry name="YY" value="Last Two Digits of Year Expressed in Format CCYY"/>
+  <Entry name="DDT" value="Range of Dates and Time, Expressed in CCYYMMDD-CCYYMMDDHHMM"/>
+  <Entry name="DTD" value="Range of Dates and Time, Expressed in CCYYMMDDHHMM-CCYYMMDD"/>
+  <Entry name="DTS" value="Range of Date and Time Expressed in Format CCYYMMDDHHMMSS-CCYYMMDDHHMMSS"/>
+  <Entry name="RD2" value="Range of Years Expressed in Format YY-YY"/>
+  <Entry name="RD4" value="Range of Years Expressed in Format CCYY-CCYY"/>
+  <Entry name="RD5" value="Range of Years and Months Expressed in Format CCYYMM-CCYYMM"/>
+  <Entry name="RD6" value="Range of Dates Expressed in Format YYMMDD-YYMMDD"/>
+  <Entry name="RD8" value="Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD"/>
+  <Entry name="RDM" value="Range of Dates Expressed in Format YYMMDD-MMDD"/>
+  <Entry name="RDT" value="Range of Date and Time, Expressed in Format CCYYMMDDHHMM-CCYYMMDDHHMM"/>
+  <Entry name="RMD" value="Range of Months and Days Expressed in Format MMDD-MMDD"/>
+  <Entry name="RMY" value="Range of Years and Months Expressed in Format YYMM-YYMM"/>
+  <Entry name="RTM" value="Range of Time Expressed in Format HHMM-HHMM"/>
+  <Entry name="RTS" value="Date and Time Expressed in Format CCYYMMDDHHMMSS"/>
+  <Entry name="YMM" value="Range of Year and Months, Expressed in CCYYMMM-MMM Format"/>
+</Table>

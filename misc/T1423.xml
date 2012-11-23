@@ -1,0 +1,89 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1423.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1423">
+  <Entry name="AM" value="Ambulance"/>
+  <Entry name="AP" value="Apportioned"/>
+  <Entry name="AQ" value="Antique"/>
+  <Entry name="AR" value="Amateur Radio or Citizen's Band Radio Operator"/>
+  <Entry name="AT" value="All Terrain Vehicle"/>
+  <Entry name="BU" value="Bus"/>
+  <Entry name="BV" value="Marine"/>
+  <Entry name="CC" value="Consular Corps"/>
+  <Entry name="CI" value="City Owned or Municipal Vehicle"/>
+  <Entry name="CO" value="Commercial"/>
+  <Entry name="CU" value="County Owned"/>
+  <Entry name="DA" value="Drive-away"/>
+  <Entry name="DB" value="Dune Buggy"/>
+  <Entry name="DD" value="Dentist"/>
+  <Entry name="DL" value="Dealer"/>
+  <Entry name="DP" value="Diplomatic"/>
+  <Entry name="DU" value="Duplicate"/>
+  <Entry name="DV" value="Disabled Veteran"/>
+  <Entry name="DX" value="Disabled Person"/>
+  <Entry name="EX" value="Exempt"/>
+  <Entry name="FD" value="Fire Department"/>
+  <Entry name="FG" value="Foreign Government"/>
+  <Entry name="FM" value="Farm Vehicle"/>
+  <Entry name="HT" value="Heavy Truck"/>
+  <Entry name="IP" value="International Plate"/>
+  <Entry name="IT" value="In-transit"/>
+  <Entry name="JJ" value="Judge or Justice"/>
+  <Entry name="LE" value="Legislative, U.S."/>
+  <Entry name="LF" value="Law Enforcement"/>
+  <Entry name="LS" value="Legislative, State"/>
+  <Entry name="MC" value="Motorcycle"/>
+  <Entry name="MD" value="Motorcycle Dealer"/>
+  <Entry name="MF" value="Manufacturer"/>
+  <Entry name="ML" value="Military Vehicle, Canadian"/>
+  <Entry name="MP" value="Moped"/>
+  <Entry name="MV" value="Military Vehicle, U.S."/>
+  <Entry name="NG" value="National Guard Member"/>
+  <Entry name="OB" value="Omnibus"/>
+  <Entry name="OL" value="Other License Plate Types"/>
+  <Entry name="PC" value="Passenger Car"/>
+  <Entry name="PE" value="Personalized or Customized"/>
+  <Entry name="PH" value="Physician"/>
+  <Entry name="PX" value="Pharmacist"/>
+  <Entry name="RE" value="Reciprocal (or Reciprocity)"/>
+  <Entry name="RI" value="Reissue"/>
+  <Entry name="RP" value="Replacement"/>
+  <Entry name="RV" value="Rented Vehicle or Trailer"/>
+  <Entry name="S1" value="Special Car"/>
+  <Entry name="SC" value="Special Purpose Commercial Vehicle"/>
+  <Entry name="SN" value="Snowmobile"/>
+  <Entry name="ST" value="State Owned Vehicle"/>
+  <Entry name="SV" value="School Vehicle"/>
+  <Entry name="TK" value="Truck"/>
+  <Entry name="TL" value="Trailer"/>
+  <Entry name="TM" value="Temporary Tags"/>
+  <Entry name="TP" value="Transporter"/>
+  <Entry name="TR" value="Truck - Tractor"/>
+  <Entry name="TX" value="Taxi"/>
+  <Entry name="US" value="U.S. Government Vehicle"/>
+  <Entry name="UV" value="Utility Vehicle (UTV)"/>
+  <Entry name="VF" value="Veterans of Foreign Wars"/>
+  <Entry name="VN" value="Van"/>
+</Table>

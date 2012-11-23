@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G12.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G12" comment="To describe physical characteristics and placement of coupons">
+  <Field name="Length" type="double" required="y" min="1" max="8" comment="Largest horizontal dimension of an object measured when the object is in the upright position"/>
+  <Field name="Width" type="double" required="y" min="1" max="8" comment="Shorter measurement of the two horizontal dimensions measured with the object in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="PromotionConditionCode" required="y" min="2" max="2" validation="T422" comment="Code describing a performance or advertising condition"/>
+  <Field name="PositionCode1" required="y" min="2" max="2" validation="T945" comment="Code specifying the position of an item such as the location, within a specimen, from which the sample was taken; the position of a coupon within an advertisement; etc"/>
+  <Field name="PositionCode2" required="y" min="2" max="2" validation="T945" comment="Code specifying the position of an item such as the location, within a specimen, from which the sample was taken; the position of a coupon within an advertisement; etc"/>
+</Segment>

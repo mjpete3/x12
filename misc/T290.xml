@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T290.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T290">
+  <Entry name="01" value="Price Protection Applies"/>
+  <Entry name="02" value="Allocation Applies"/>
+  <Entry name="03" value="Advance Ship Notice/Pallet Tags"/>
+  <Entry name="04" value="Bar Code Case Label"/>
+  <Entry name="05" value="Bottom Load Only"/>
+  <Entry name="06" value="Color Coding"/>
+  <Entry name="07" value="Synchronization of Prices"/>
+  <Entry name="08" value="Dedicated Carrier"/>
+  <Entry name="09" value="Drop Trailer"/>
+  <Entry name="10" value="Financial Electronic Data Interchange (FEDI)"/>
+  <Entry name="11" value="Fax a Manifest"/>
+  <Entry name="12" value="Hand Stack - Special Loading"/>
+  <Entry name="13" value="Modular Pallets"/>
+  <Entry name="14" value="No Diverting"/>
+  <Entry name="15" value="Order Lead Time Requirement"/>
+  <Entry name="16" value="Order Quality (No-Touch EDI)"/>
+  <Entry name="17" value="Pallet Placards"/>
+  <Entry name="18" value="Pick and Pack"/>
+  <Entry name="19" value="Pre-set Appointments"/>
+  <Entry name="20" value="Rapid Deployment (Same Day Ship)"/>
+  <Entry name="21" value="Slipsheet"/>
+  <Entry name="22" value="Strap Packages"/>
+  <Entry name="23" value="Third Party Pallet"/>
+  <Entry name="24" value="Unload Time Required"/>
+</Table>

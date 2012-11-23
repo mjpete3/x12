@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TI11.xml 80 2009-05-13 18:04:35Z ikk $
+-->
+
+<Table name="TI11">
+  <Entry name="00200" value="Standard Issued as ANSI X12.5-1987"/>
+  <Entry name="00201" value="Draft Standard for Trial Use Approved by ASC X12 Through August 1988"/>
+  <Entry name="00204" value="Draft Standard for Trial Use Approved by ASC X12 Through May 1989"/>
+  <Entry name="00300" value="Standard Issued as ANSI X12.5-1992"/>
+  <Entry name="00301" value="Draft Standard for Trial Use Approved for Publication by ASC X12 Procedures Review Board Through October 1990"/>
+  <Entry name="00302" value="Draft Standard for Trial Use Approved for Publication by ASC X12 Procedures Review Board Through October 1991"/>
+  <Entry name="00303" value="Draft Standard for Trial Use Approved for Publication by ASC X12 Procedures Review Board Through October 1992"/>
+  <Entry name="00304" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1993"/>
+  <Entry name="00305" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1994"/>
+  <Entry name="00306" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1995"/>
+  <Entry name="00307" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1996"/>
+  <Entry name="00400" value="Standard Issued as ANSI X12.5-1997"/>
+  <Entry name="00401" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1997"/>
+  <Entry name="00402" value="Draft Standards for Trial Use Approved for Publication by ASC X12 Procedures Review Board through October 1998"/>
+</Table>

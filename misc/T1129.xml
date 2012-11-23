@@ -1,0 +1,184 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1129.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1129">
+  <Entry name="1" value="Primary Disability - Frozen"/>
+  <Entry name="2" value="Primary Disability - Non-frozen"/>
+  <Entry name="3" value="Dependent Disability - Frozen"/>
+  <Entry name="4" value="Dependent Disability - Non-frozen"/>
+  <Entry name="5" value="Retirement - Frozen"/>
+  <Entry name="6" value="Retirement - Non-frozen"/>
+  <Entry name="7" value="Permanent"/>
+  <Entry name="8" value="Temporary"/>
+  <Entry name="9" value="Canadian"/>
+  <Entry name="10" value="Joint"/>
+  <Entry name="11" value="Deferred"/>
+  <Entry name="12" value="Eligible"/>
+  <Entry name="13" value="Applied"/>
+  <Entry name="14" value="Receiving"/>
+  <Entry name="15" value="Defense Medical Evaluation"/>
+  <Entry name="16" value="Delayed Reporting Penalty (Insured)"/>
+  <Entry name="17" value="Engineering Services"/>
+  <Entry name="18" value="Expert Test (Trial)"/>
+  <Entry name="19" value="Expert Fees and Expenses (excluding tests and testimony)"/>
+  <Entry name="22" value="Fee Schedule Savings"/>
+  <Entry name="23" value="Fatal"/>
+  <Entry name="24" value="Permanent Total"/>
+  <Entry name="25" value="Permanent Total Supplemental"/>
+  <Entry name="26" value="Permanent Partial Scheduled"/>
+  <Entry name="27" value="Permanent Partial Unscheduled"/>
+  <Entry name="28" value="Temporary Total"/>
+  <Entry name="29" value="Temporary Partial"/>
+  <Entry name="30" value="Employer Liability"/>
+  <Entry name="31" value="Permanent Partial Disfigurement"/>
+  <Entry name="32" value="Employer Paid"/>
+  <Entry name="34" value="Funeral Expenses"/>
+  <Entry name="35" value="Penalties"/>
+  <Entry name="36" value="Interest"/>
+  <Entry name="37" value="Employer's Legal Expenses"/>
+  <Entry name="38" value="Claimant's Legal Expenses"/>
+  <Entry name="39" value="Payments to Physicians"/>
+  <Entry name="40" value="Hospital Costs"/>
+  <Entry name="41" value="Other Medical"/>
+  <Entry name="42" value="Vocational Rehabilitation Evaluation"/>
+  <Entry name="43" value="Vocational Rehabilitation Education"/>
+  <Entry name="44" value="Other Vocational Rehabilitation"/>
+  <Entry name="45" value="Total Temporary Catastrophic"/>
+  <Entry name="46" value="Unknown Payment Type"/>
+  <Entry name="57" value="Vocational Rehabilitation Maintenance"/>
+  <Entry name="58" value="Claim Value Recovery"/>
+  <Entry name="60" value="Deductible Recovery"/>
+  <Entry name="61" value="Additional Living Expense"/>
+  <Entry name="62" value="Alternative Dispute Resolution Services"/>
+  <Entry name="63" value="Anesthesiologist"/>
+  <Entry name="64" value="Annuity"/>
+  <Entry name="65" value="Attorney Expenses"/>
+  <Entry name="66" value="Attorney Fees"/>
+  <Entry name="67" value="Auto Liability Subrogation"/>
+  <Entry name="69" value="Not Eligible"/>
+  <Entry name="71" value="Catastrophic Benefits"/>
+  <Entry name="72" value="Central Index Bureau Filing Fees"/>
+  <Entry name="73" value="Chiropractor"/>
+  <Entry name="74" value="Indemnity Reserves"/>
+  <Entry name="75" value="Medical Reserves"/>
+  <Entry name="76" value="Expense Reserves"/>
+  <Entry name="77" value="Vocational Rehabilitation Reserves"/>
+  <Entry name="78" value="Indemnity Payments"/>
+  <Entry name="79" value="Medical Payments"/>
+  <Entry name="80" value="Expense Payments"/>
+  <Entry name="81" value="Vocational Rehabilitation Payments"/>
+  <Entry name="82" value="Claim Payment"/>
+  <Entry name="83" value="Claim Reserve"/>
+  <Entry name="84" value="Bodily Injury Payment"/>
+  <Entry name="85" value="Bodily Injury Reserve"/>
+  <Entry name="86" value="Property Damage Payment"/>
+  <Entry name="87" value="Property Damage Reserve"/>
+  <Entry name="88" value="Comprehensive Payment"/>
+  <Entry name="89" value="Comprehensive Reserve"/>
+  <Entry name="90" value="Collision Payment"/>
+  <Entry name="91" value="Collision Reserve"/>
+  <Entry name="92" value="Salvage"/>
+  <Entry name="93" value="Expert Witness Fees"/>
+  <Entry name="94" value="Claimant Legal Expense"/>
+  <Entry name="95" value="Claimant Medical Evaluation"/>
+  <Entry name="96" value="Commercial Photographers"/>
+  <Entry name="97" value="Mandated Medical Exam"/>
+  <Entry name="98" value="Death Benefits"/>
+  <Entry name="99" value="Defense Attorney Fees and Expenses"/>
+  <Entry name="A1" value="Funeral Benefits"/>
+  <Entry name="A2" value="Hearing Attendance or Representation Fees"/>
+  <Entry name="A3" value="Hospital - Inpatient Charges"/>
+  <Entry name="A4" value="Hospital - Outpatient Charges"/>
+  <Entry name="A5" value="Hospital Bill Audit"/>
+  <Entry name="A6" value="Impairment Income Benefits"/>
+  <Entry name="A7" value="Independent Adjustor Expense"/>
+  <Entry name="A8" value="Independent Medical Exam"/>
+  <Entry name="A9" value="Legal Expenses - Miscellaneous"/>
+  <Entry name="AA" value="Chiropractic Expenses"/>
+  <Entry name="AB" value="Dental Expenses"/>
+  <Entry name="AC" value="Physical Therapy Costs"/>
+  <Entry name="AD" value="Pharmaceutical Costs"/>
+  <Entry name="AE" value="Durable Medical Costs"/>
+  <Entry name="AF" value="Medical Travel Costs"/>
+  <Entry name="AG" value="Employee Medical-Legal Costs"/>
+  <Entry name="AH" value="Employer-Claim Administrator Medical-Legal Costs"/>
+  <Entry name="AI" value="Agreed upon or Directed Medical-Legal Costs"/>
+  <Entry name="AJ" value="Unallocated Funds"/>
+  <Entry name="AK" value="Future Credit Recovery"/>
+  <Entry name="B1" value="Liability Settlement"/>
+  <Entry name="B2" value="Life Pension"/>
+  <Entry name="B3" value="Lump Sum Remarriage Payment"/>
+  <Entry name="B4" value="Lump Sum Settlement Amount"/>
+  <Entry name="B5" value="Major Case of Individual Case Reporting"/>
+  <Entry name="B6" value="Medical Equipment"/>
+  <Entry name="B7" value="Peer Review Board Expenses"/>
+  <Entry name="B8" value="Medical Management Services"/>
+  <Entry name="B9" value="Medical Records or Reports"/>
+  <Entry name="C1" value="Medical Rehabilitation"/>
+  <Entry name="C2" value="Medical Test (Trial)"/>
+  <Entry name="C3" value="No-fault benefit or expense (Non-Workers Compensation)"/>
+  <Entry name="C4" value="Nursing Care"/>
+  <Entry name="C5" value="Extended Care Facility"/>
+  <Entry name="C6" value="State Fund - Other"/>
+  <Entry name="C7" value="Penalties Paid on Medical Benefits"/>
+  <Entry name="C8" value="Penalties Paid on Indemnity Benefits"/>
+  <Entry name="C9" value="Pension Indemnity Benefit"/>
+  <Entry name="D1" value="Permanent Partial Disfigurement"/>
+  <Entry name="D2" value="Personal Property or Contents"/>
+  <Entry name="D3" value="Pharmacy"/>
+  <Entry name="D4" value="Photographs other than Commercial"/>
+  <Entry name="D5" value="Physiotherapy"/>
+  <Entry name="D6" value="PPO (Preferred Provider Organization) Fees or Expenses"/>
+  <Entry name="D7" value="Product Liability Subrogation"/>
+  <Entry name="D8" value="Property Adjustment"/>
+  <Entry name="D9" value="Provider Bill Audit Expense"/>
+  <Entry name="E1" value="Radiology"/>
+  <Entry name="E2" value="Time and Expense Fees"/>
+  <Entry name="E3" value="Scheduled Award"/>
+  <Entry name="E4" value="Social Security"/>
+  <Entry name="E5" value="State Second Injury Fund"/>
+  <Entry name="E6" value="State Supplemental Fund"/>
+  <Entry name="E7" value="Supplemental Permanent Total Benefits"/>
+  <Entry name="E9" value="Employee Interest"/>
+  <Entry name="F1" value="Testing Lab"/>
+  <Entry name="F2" value="Third Party Contribution"/>
+  <Entry name="F3" value="Transportation - Other"/>
+  <Entry name="F4" value="Transportation - Medical Treatment"/>
+  <Entry name="F5" value="Treating or Panel Physician"/>
+  <Entry name="F6" value="Utilization Review - Hospital"/>
+  <Entry name="F7" value="Utilization Review - Physician"/>
+  <Entry name="F8" value="Unallocated Indemnity"/>
+  <Entry name="F9" value="Unallocated Medical"/>
+  <Entry name="G2" value="Witness Fees and Expenses - Other than Expert Witness"/>
+  <Entry name="G3" value="Vocational Rehabilitation Training"/>
+  <Entry name="G4" value="Appraisal Fees"/>
+  <Entry name="G5" value="Autopsy Fees"/>
+  <Entry name="G6" value="Surveillance Special Investigation Fees and Expenses"/>
+  <Entry name="G7" value="Temporary Income Benefits"/>
+  <Entry name="G8" value="State Fund - Other"/>
+  <Entry name="G9" value="Federal Second Injury Fund"/>
+  <Entry name="H2" value="Federal Supplemental Fund"/>
+  <Entry name="H3" value="Flat Rate"/>
+</Table>

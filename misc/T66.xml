@@ -1,0 +1,266 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T66.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T66">
+  <Entry name="0" value="Petroleum Industry Exchange (PETROEX) Number"/>
+  <Entry name="1" value="D-U-N-S Number, Dun &amp; Bradstreet"/>
+  <Entry name="2" value="Standard Carrier Alpha Code (SCAC)"/>
+  <Entry name="3" value="Federal Maritime Commission (Ocean) (FMC)"/>
+  <Entry name="4" value="International Air Transport Association (IATA)"/>
+  <Entry name="6" value="Plant Code"/>
+  <Entry name="7" value="Loading Dock"/>
+  <Entry name="8" value="UCC/EAN Global Product Identification Prefix"/>
+  <Entry name="9" value="D-U-N-S+4, D-U-N-S Number with Four Character Suffix"/>
+  <Entry name="A" value="U.S. Customs Carrier Identification"/>
+  <Entry name="C" value="Insured's Changed Unique Identification Number"/>
+  <Entry name="D" value="Census Schedule D"/>
+  <Entry name="E" value="Hazard Insurance Policy Number"/>
+  <Entry name="F" value="Document Custodian Identification Number"/>
+  <Entry name="G" value="Payee Identification Number"/>
+  <Entry name="I" value="Secondary Marketing Investor Assigned Number"/>
+  <Entry name="J" value="Mortgage Electronic Registration System Organization Identifier"/>
+  <Entry name="K" value="Census Schedule K"/>
+  <Entry name="L" value="Investor Assigned Identification Number"/>
+  <Entry name="M" value="Certificate Number"/>
+  <Entry name="N" value="Insured's Unique Identification Number"/>
+  <Entry name="S" value="Title Insurance Policy Number"/>
+  <Entry name="10" value="Department of Defense Activity Address Code (DODAAC)"/>
+  <Entry name="11" value="Drug Enforcement Administration (DEA)"/>
+  <Entry name="12" value="Telephone Number (Phone)"/>
+  <Entry name="13" value="Federal Reserve Routing Code (FRRC)"/>
+  <Entry name="14" value="UCC/EAN Location Code Prefix"/>
+  <Entry name="15" value="Standard Address Number (SAN)"/>
+  <Entry name="16" value="ZIP Code"/>
+  <Entry name="17" value="Automated Broker Interface (ABI) Routing Code"/>
+  <Entry name="19" value="FIPS-55 (Named Populated Places)"/>
+  <Entry name="20" value="Standard Point Location Code (SPLC)"/>
+  <Entry name="21" value="Health Industry Number (HIN)"/>
+  <Entry name="22" value="Council of Petroleum Accounting Societies code (COPAS)"/>
+  <Entry name="23" value="Journal of Commerce (JOC)"/>
+  <Entry name="24" value="Employer's Identification Number"/>
+  <Entry name="25" value="Carrier's Customer Code"/>
+  <Entry name="26" value="Petroleum Accountants Society of Canada Company Code"/>
+  <Entry name="27" value="Government Bill Of Lading Office Code (GBLOC)"/>
+  <Entry name="28" value="American Paper Institute"/>
+  <Entry name="29" value="Grid Location and Facility Code"/>
+  <Entry name="30" value="American Petroleum Institute Location Code"/>
+  <Entry name="31" value="Bank Identification Code"/>
+  <Entry name="32" value="Assigned by Property Operator"/>
+  <Entry name="33" value="Commercial and Government Entity (CAGE)"/>
+  <Entry name="34" value="Social Security Number"/>
+  <Entry name="35" value="Electronic Mail Internal System Address Code"/>
+  <Entry name="36" value="Customs House Broker License Number"/>
+  <Entry name="37" value="United Nations Vendor Code"/>
+  <Entry name="38" value="Country Code"/>
+  <Entry name="39" value="Local Union Number"/>
+  <Entry name="40" value="Electronic Mail User Code"/>
+  <Entry name="41" value="Telecommunications Carrier Identification Code"/>
+  <Entry name="42" value="Telecommunications Pseudo Carrier Identification Code"/>
+  <Entry name="43" value="Alternate Social Security Number"/>
+  <Entry name="44" value="Return Sequence Number"/>
+  <Entry name="45" value="Declaration Control Number"/>
+  <Entry name="46" value="Electronic Transmitter Identification Number (ETIN)"/>
+  <Entry name="47" value="Tax Authority Identification"/>
+  <Entry name="48" value="Electronic Filer Identification Number (EFIN)"/>
+  <Entry name="49" value="State Identification Number"/>
+  <Entry name="50" value="Business License Number"/>
+  <Entry name="51" value="Fuel Inventory Adjustment Identification"/>
+  <Entry name="53" value="Building"/>
+  <Entry name="54" value="Warehouse"/>
+  <Entry name="55" value="Post Office Box"/>
+  <Entry name="56" value="Division"/>
+  <Entry name="57" value="Department"/>
+  <Entry name="58" value="Originating Company Number"/>
+  <Entry name="59" value="Receiving Company Number"/>
+  <Entry name="61" value="Holding Mortgagee Number"/>
+  <Entry name="62" value="Servicing Mortgagee Number"/>
+  <Entry name="63" value="Servicer-holder Mortgagee Number"/>
+  <Entry name="64" value="One Call Agency"/>
+  <Entry name="71" value="Integrated Postsecondary Education Data System (IPEDS) set of codes maintained by the U.S. Department of Education's National Center of Education Statistics, Washington, D.C."/>
+  <Entry name="72" value="The College Board's Admission Testing Program (ATP), administered by the Educational Testing Service (ETS), 4-digit list of postsecondary educational institutions."/>
+  <Entry name="73" value="Federal Interagency Commission on Education (FICE) number. Available from the United States Department of Education, National Center for Education Statistics."/>
+  <Entry name="74" value="American College Testing (ACT) list of postsecondary educational institutions."/>
+  <Entry name="75" value="State or Province Assigned Number"/>
+  <Entry name="76" value="Local School District or Jurisdiction Number"/>
+  <Entry name="77" value="National Center for Education Statistics (NCES) Common Core of Data (CCD) number for PreK - 12 institutions"/>
+  <Entry name="78" value="The College Board and ACT 6 digit code list of secondary educational institutions"/>
+  <Entry name="81" value="Classification of Instructional Programs (CIP) coding structure maintained by the U.S. Department of Education's National Center for Education Statistics"/>
+  <Entry name="82" value="Higher Education General Information Survey (HEGIS) maintained by the U.S. Department of Education's National Center for Education Statistics"/>
+  <Entry name="83" value="Congressional District"/>
+  <Entry name="90" value="California Ethnic Subgroups Code Table"/>
+  <Entry name="91" value="Assigned by Seller or Seller's Agent"/>
+  <Entry name="92" value="Assigned by Buyer or Buyer's Agent"/>
+  <Entry name="93" value="Code assigned by the organization originating the transaction set"/>
+  <Entry name="94" value="Code assigned by the organization that is the ultimate destination of the transaction set"/>
+  <Entry name="95" value="Assigned By Transporter"/>
+  <Entry name="96" value="Assigned By Pipeline Operator"/>
+  <Entry name="97" value="Receiver's Code"/>
+  <Entry name="98" value="Purchasing Office"/>
+  <Entry name="99" value="Office of Workers Compensation Programs (OWCP) Agency Code"/>
+  <Entry name="A1" value="Approver ID"/>
+  <Entry name="A2" value="Military Assistance Program Address Code (MAPAC)"/>
+  <Entry name="A3" value="Assigned by Third Party"/>
+  <Entry name="A4" value="Assigned by Clearinghouse"/>
+  <Entry name="A5" value="Committee on Uniform Security Identification Procedures (CUSIP) Number"/>
+  <Entry name="A6" value="Financial Identification Numbering System (FINS) Number"/>
+  <Entry name="AA" value="Postal Service Code"/>
+  <Entry name="AB" value="US Environmental Protection Agency (EPA) Identification Number"/>
+  <Entry name="AC" value="Attachment Control Number"/>
+  <Entry name="AD" value="Blue Cross Blue Shield Association Plan Code"/>
+  <Entry name="AE" value="Alberta Energy Resources Conservation Board"/>
+  <Entry name="AF" value="Rental Location Identifier"/>
+  <Entry name="AL" value="Anesthesia License Number"/>
+  <Entry name="AP" value="Alberta Petroleum Marketing Commission"/>
+  <Entry name="BC" value="British Columbia Ministry of Energy Mines and Petroleum Resources"/>
+  <Entry name="BD" value="Blue Cross Provider Number"/>
+  <Entry name="BE" value="Common Language Location Identification (CLLI)"/>
+  <Entry name="BG" value="Badge Number"/>
+  <Entry name="BP" value="Benefit Plan"/>
+  <Entry name="BS" value="Blue Shield Provider Number"/>
+  <Entry name="C1" value="Insured or Subscriber"/>
+  <Entry name="C2" value="Health Maintenance Organization (HMO) Provider Number"/>
+  <Entry name="C5" value="Customer Identification File"/>
+  <Entry name="CA" value="Statistics Canada Canadian College Student Information System Course Codes"/>
+  <Entry name="CB" value="Statistics Canada Canadian College Student Information System Institution Codes"/>
+  <Entry name="CC" value="Statistics Canada University Student Information System Curriculum Codes"/>
+  <Entry name="CD" value="Contract Division"/>
+  <Entry name="CE" value="Bureau of the Census Filer Identification Code"/>
+  <Entry name="CF" value="Canadian Financial Institution Routing Number"/>
+  <Entry name="CI" value="CHAMPUS (Civilian Health and Medical Program of the Uniformed Services) Identification Number"/>
+  <Entry name="CL" value="Corrected Loan Number"/>
+  <Entry name="CM" value="U.S. Customs Service (USCS) Manufacturer Identifier (MID)"/>
+  <Entry name="CN" value="National Center for Education Statistics (NCES) Course Classification System for Secondary Schools"/>
+  <Entry name="CP" value="Canadian Petroleum Association"/>
+  <Entry name="CR" value="Credit Repository"/>
+  <Entry name="CS" value="Statistics Canada University Student Information System University Codes"/>
+  <Entry name="CT" value="Court Identification Code"/>
+  <Entry name="DG" value="United States Department of Education Guarantor Identification Code"/>
+  <Entry name="DL" value="United States Department of Education Lender Identification Code"/>
+  <Entry name="DN" value="Dentist License Number"/>
+  <Entry name="DO" value="Door"/>
+  <Entry name="DP" value="Data Processing Point"/>
+  <Entry name="DR" value="Gas Industry Standards Board (GISB) Data Reference Number (DRN)"/>
+  <Entry name="DS" value="United States Department of Education School Identification Code"/>
+  <Entry name="EC" value="ARI Electronic Commerce Location ID Code"/>
+  <Entry name="EH" value="Theatre Number"/>
+  <Entry name="EI" value="Employee Identification Number"/>
+  <Entry name="EL" value="Elevator"/>
+  <Entry name="EP" value="U.S. Environmental Protection Agency (EPA)"/>
+  <Entry name="EQ" value="Insurance Company Assigned Identification Number"/>
+  <Entry name="ER" value="Mortgagee Assigned Identification Number"/>
+  <Entry name="ES" value="Automated Export System (AES) Filer Identification Code"/>
+  <Entry name="ET" value="Educational Testing Service List of International Postsecondary Institutions"/>
+  <Entry name="FA" value="Facility Identification"/>
+  <Entry name="FB" value="Field Code"/>
+  <Entry name="FC" value="Federal Court Jurisdiction Identifier"/>
+  <Entry name="FD" value="Federal Court Divisional Office Number"/>
+  <Entry name="FE" value="Facility Federal Identification Number"/>
+  <Entry name="FI" value="Federal Taxpayer's Identification Number"/>
+  <Entry name="FJ" value="Federal Jurisdiction"/>
+  <Entry name="FL" value="Floor"/>
+  <Entry name="FN" value="U.S. Environmental Protection Agency (EPA) Laboratory Certification Identification"/>
+  <Entry name="GA" value="Primary Agent Identification"/>
+  <Entry name="GC" value="GAS*CODE"/>
+  <Entry name="HC" value="Health Care Financing Administration"/>
+  <Entry name="HN" value="Health Insurance Claim (HIC) Number"/>
+  <Entry name="HS" value="House (Canadian Grain Elevator)"/>
+  <Entry name="ID" value="UCC EDI Communications ID (Comm ID)"/>
+  <Entry name="II" value="Standard Unique Health Identifier for each Individual in the United States"/>
+  <Entry name="LC" value="Agency Location Code (U.S. Government)"/>
+  <Entry name="LD" value="NISO Z39.53 Language Codes"/>
+  <Entry name="LE" value="ISO 639 Language Codes"/>
+  <Entry name="LI" value="Labeler Identification Code (LIC)"/>
+  <Entry name="LN" value="Loan Number"/>
+  <Entry name="M3" value="Disbursing Station"/>
+  <Entry name="M4" value="Department of Defense Routing Identifier Code (RIC)"/>
+  <Entry name="M5" value="Jurisdiction Code"/>
+  <Entry name="M6" value="Division Office Code"/>
+  <Entry name="MA" value="Mail Stop"/>
+  <Entry name="MB" value="Medical Information Bureau"/>
+  <Entry name="MC" value="Medicaid Provider Number"/>
+  <Entry name="MD" value="Manitoba Department of Mines and Resources"/>
+  <Entry name="MI" value="Member Identification Number"/>
+  <Entry name="MK" value="Market"/>
+  <Entry name="ML" value="Multiple Listing Service Vendor - Multiple Listing Service Identification"/>
+  <Entry name="MN" value="Mortgage Identification Number"/>
+  <Entry name="MP" value="Medicare Provider Number"/>
+  <Entry name="MR" value="Medicaid Recipient Identification Number"/>
+  <Entry name="NA" value="National Association of Realtors - Multiple Listing Service Identification"/>
+  <Entry name="ND" value="Mode Designator"/>
+  <Entry name="NI" value="National Association of Insurance Commissioners (NAIC) Identification"/>
+  <Entry name="NO" value="National Criminal Information Center Originating Agency"/>
+  <Entry name="NR" value="Non Resident Alien Registration Number"/>
+  <Entry name="OC" value="Occupation Code"/>
+  <Entry name="OP" value="On-line Payment and Collection"/>
+  <Entry name="PA" value="Secondary Agent Identification"/>
+  <Entry name="PB" value="Public Identification"/>
+  <Entry name="PC" value="Provider Commercial Number"/>
+  <Entry name="PI" value="Payor Identification"/>
+  <Entry name="PP" value="Pharmacy Processor Number"/>
+  <Entry name="PR" value="Pier"/>
+  <Entry name="RA" value="Regulatory Agency Number"/>
+  <Entry name="RB" value="Real Estate Agent"/>
+  <Entry name="RC" value="Real Estate Company"/>
+  <Entry name="RD" value="Real Estate Broker Identification"/>
+  <Entry name="RE" value="Real Estate License Number"/>
+  <Entry name="RI" value="Office of Regulatory Information Systems (ORIS) Code"/>
+  <Entry name="RP" value="Ramp"/>
+  <Entry name="RT" value="Railroad Track"/>
+  <Entry name="SA" value="Tertiary Agent Identification"/>
+  <Entry name="SB" value="Social Insurance Number"/>
+  <Entry name="SD" value="Saskatchewan Department of Energy Mines and Resources"/>
+  <Entry name="SF" value="Suffix Code"/>
+  <Entry name="SI" value="Standard Industry Code (SIC)"/>
+  <Entry name="SJ" value="State Jurisdiction"/>
+  <Entry name="SK" value="State/Provincial Lottery License Number"/>
+  <Entry name="SL" value="State License Number"/>
+  <Entry name="SP" value="Specialty License Number"/>
+  <Entry name="ST" value="State/Province License Tag"/>
+  <Entry name="SV" value="Service Provider Number"/>
+  <Entry name="SW" value="Society for Worldwide Interbank Financial Telecommunications (SWIFT) Address"/>
+  <Entry name="TA" value="Taxpayer ID Number"/>
+  <Entry name="TC" value="Internal Revenue Service Terminal Code"/>
+  <Entry name="TL" value="Transport4 Location Code"/>
+  <Entry name="TS" value="Transport4 Shipper Code"/>
+  <Entry name="TZ" value="Department Code"/>
+  <Entry name="UC" value="Consumer Credit Identification Number"/>
+  <Entry name="UI" value="Unit Identification Code"/>
+  <Entry name="UL" value="UCC/EAN Location Code"/>
+  <Entry name="UM" value="UCC/EAN Location Code Suffix"/>
+  <Entry name="UP" value="Unique Physician Identification Number (UPIN)"/>
+  <Entry name="UR" value="Uniform Resource Locator (URL)"/>
+  <Entry name="US" value="Unique Supplier Identification Number (USIN)"/>
+  <Entry name="UT" value="Unit"/>
+  <Entry name="WR" value="Wine Region Code"/>
+  <Entry name="WS" value="Education Language Codes"/>
+  <Entry name="X1" value="National Center for Education Statistics Unit Identification Number"/>
+  <Entry name="XV" value="Health Care Financing Administration National Payer Identification Number (PAYERID)"/>
+  <Entry name="XX" value="Health Care Financing Administration National Provider Identifier"/>
+  <Entry name="XY" value="District Assigned Number"/>
+  <Entry name="ZC" value="Contractor Establishment Code"/>
+  <Entry name="ZN" value="Zone"/>
+  <Entry name="ZY" value="Temporary Identification Number"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

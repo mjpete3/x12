@@ -1,0 +1,66 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T202.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T202">
+  <Entry name="AD" value="Adjustment of Previous Freight Bill Charges"/>
+  <Entry name="AI" value="Supply Additional Information"/>
+  <Entry name="AR" value="Adding Revenue"/>
+  <Entry name="B1" value="Bad Order Car"/>
+  <Entry name="BA" value="Bi-lateral Agreement Date not Met"/>
+  <Entry name="BD" value="Balance Due Billing"/>
+  <Entry name="BE" value="Billing Error"/>
+  <Entry name="BO" value="Bad Order Setback/Bill Cancelled"/>
+  <Entry name="CA" value="Cancelled Bill"/>
+  <Entry name="CM" value="Cancelled Due to Multicars Being Covered on One Waybill"/>
+  <Entry name="CO" value="Correction"/>
+  <Entry name="CP" value="Correct Container or Consolidation Contents"/>
+  <Entry name="CS" value="Consolidation"/>
+  <Entry name="CT" value="Cancel Waybill"/>
+  <Entry name="CU" value="Covered Under Another Universal Railroad Revenue Waybill Identification"/>
+  <Entry name="D1" value="Diversion or Reconsignment"/>
+  <Entry name="DC" value="Dispute Over Collect/Prepaid"/>
+  <Entry name="DE" value="Delete Event"/>
+  <Entry name="DP" value="Delete Container or Consolidation Contents"/>
+  <Entry name="DS" value="Delayed Shipment"/>
+  <Entry name="EM" value="Error Move"/>
+  <Entry name="MB" value="Miscellaneous Billing"/>
+  <Entry name="MD" value="Change Settlement Date"/>
+  <Entry name="MR" value="Misroute"/>
+  <Entry name="NC" value="No Car (Have Not Received Car)"/>
+  <Entry name="ND" value="No Division Available"/>
+  <Entry name="PD" value="Past Due Billing"/>
+  <Entry name="RB" value="Rebilling (Ignore Previous Bill)"/>
+  <Entry name="RC" value="Revenue Correction"/>
+  <Entry name="RD" value="Route Dispute"/>
+  <Entry name="RE" value="Reassignment/Transfer"/>
+  <Entry name="RF" value="Rebuttal, Full (of previously rejected invoice)"/>
+  <Entry name="RL" value="Rule 11 Domain Dispute"/>
+  <Entry name="RP" value="Rebuttal, Partial (of previously rejected invoice)"/>
+  <Entry name="SC" value="Switch Carrier"/>
+  <Entry name="SP" value="Separated Car From Multicar Shipment"/>
+  <Entry name="TL" value="Transload"/>
+  <Entry name="WC" value="Wrecked Car"/>
+  <Entry name="WS" value="Work Stoppage"/>
+</Table>

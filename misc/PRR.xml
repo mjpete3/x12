@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PRR.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PRR" comment="To describe a product condition causing an engineering change or the condition when presented for service, for a recall notice, or for a service bulletin">
+  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+  <Field name="AgencyQualifierCode1" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier1" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="ComplaintCode" required="y" min="3" max="6" validation="T1229" comment="Code identifying the basic reasons why this item is being repaired"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="AgencyQualifierCode2" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier2" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="ServiceClassificationCode" required="y" min="1" max="4" validation="T1233" comment="Code specifying uniformly categorize reasons for service actions or changes made to products, assemblies, sub-assemblies, parts or processes"/>
+  <Field name="AgencyQualifierCode3" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier3" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="SeverityConditionCode" required="y" min="1" max="2" validation="T1234" comment="Code specifying the severity or urgency of the condition causing a repair, a service notification, or a product recall"/>
+</Segment>

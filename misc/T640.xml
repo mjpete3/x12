@@ -1,0 +1,553 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T640.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T640">
+  <Entry name="01" value="Location Address Message"/>
+  <Entry name="02" value="Location Relation Information"/>
+  <Entry name="03" value="Report Message"/>
+  <Entry name="04" value="Electronic Mail Message"/>
+  <Entry name="05" value="Request for Co-op"/>
+  <Entry name="06" value="Guidelines"/>
+  <Entry name="07" value="Budget"/>
+  <Entry name="08" value="Commitment"/>
+  <Entry name="09" value="Co-op Actual"/>
+  <Entry name="10" value="Distribution"/>
+  <Entry name="11" value="National Property Registry System Real Estate Property Transaction"/>
+  <Entry name="12" value="Physician's Report"/>
+  <Entry name="13" value="Maintenance Request"/>
+  <Entry name="14" value="Maintenance Response"/>
+  <Entry name="15" value="Request with Immediate Response Required (No Follow-up)"/>
+  <Entry name="16" value="Request with Immediate Response Required (Follow-up Required)"/>
+  <Entry name="17" value="Request with Immediate Response to Mailbox"/>
+  <Entry name="18" value="Response - No Further Updates to Follow"/>
+  <Entry name="19" value="Response - Further Updates to Follow"/>
+  <Entry name="20" value="Air Export Waybill and Invoice"/>
+  <Entry name="21" value="Air Import Invoice"/>
+  <Entry name="22" value="Ocean Export Direct Invoice"/>
+  <Entry name="23" value="Ocean Export Indirect Invoice"/>
+  <Entry name="24" value="Ocean Export Brokerage Invoice"/>
+  <Entry name="25" value="Ocean Import Invoice"/>
+  <Entry name="26" value="Miscellaneous Services Invoice"/>
+  <Entry name="27" value="Warehouse Services Invoice"/>
+  <Entry name="28" value="Pre-registration"/>
+  <Entry name="29" value="Registration"/>
+  <Entry name="30" value="Delivery"/>
+  <Entry name="31" value="Subrogation Demand"/>
+  <Entry name="33" value="Normal"/>
+  <Entry name="34" value="Emergency Request"/>
+  <Entry name="35" value="Short Notice Request"/>
+  <Entry name="36" value="Damage Notification"/>
+  <Entry name="37" value="Design Report"/>
+  <Entry name="38" value="Test"/>
+  <Entry name="39" value="Notice of Occupational Disease"/>
+  <Entry name="3M" value="Supporting Information"/>
+  <Entry name="40" value="Notice of Traumatic Injury"/>
+  <Entry name="41" value="Statement of Financial Affairs"/>
+  <Entry name="42" value="Customer Shipment"/>
+  <Entry name="43" value="International Shipment"/>
+  <Entry name="44" value="Interplant Shipment"/>
+  <Entry name="45" value="Production to Carrier Shipment"/>
+  <Entry name="46" value="Advanced Payment"/>
+  <Entry name="47" value="Delinquency"/>
+  <Entry name="48" value="Payment Information"/>
+  <Entry name="49" value="Audit"/>
+  <Entry name="50" value="Transfer Loan In"/>
+  <Entry name="51" value="Transfer Loan Out"/>
+  <Entry name="52" value="Mailing Address Services"/>
+  <Entry name="54" value="Information Only, No Response Required"/>
+  <Entry name="55" value="New Service Order"/>
+  <Entry name="56" value="Denied Request"/>
+  <Entry name="57" value="Service Termination"/>
+  <Entry name="58" value="Tax Billing or Remittance"/>
+  <Entry name="60" value="Material In Transit"/>
+  <Entry name="62" value="Preaward Notification"/>
+  <Entry name="63" value="Postaward Notification"/>
+  <Entry name="64" value="Small Business Award Notification"/>
+  <Entry name="65" value="Award Notification"/>
+  <Entry name="66" value="Notification to Late Bidders"/>
+  <Entry name="67" value="Notification of Protest Receipt"/>
+  <Entry name="68" value="Abstract of Offers"/>
+  <Entry name="69" value="Bid Rejection Notice"/>
+  <Entry name="6A" value="Accomplishment Based Renewal"/>
+  <Entry name="6C" value="Competitive Renewal"/>
+  <Entry name="6N" value="Non-competitive Renewal"/>
+  <Entry name="6R" value="Resubmission"/>
+  <Entry name="6S" value="Supplemental"/>
+  <Entry name="70" value="Unsolicited Bid Notice"/>
+  <Entry name="71" value="Filing and Search Request"/>
+  <Entry name="72" value="Termination"/>
+  <Entry name="73" value="Filing Officer Confirmation"/>
+  <Entry name="74" value="Amendment"/>
+  <Entry name="75" value="Full Assignment"/>
+  <Entry name="76" value="Partial Assignment"/>
+  <Entry name="77" value="Full Release of Collateral"/>
+  <Entry name="78" value="Partial Release of Collateral"/>
+  <Entry name="79" value="Continuation"/>
+  <Entry name="80" value="Uniform Commercial Code Filing with Broad Collateral Description"/>
+  <Entry name="81" value="Uniform Commercial Code Filing with Specific Collateral Description"/>
+  <Entry name="82" value="Segregation by Purchase Order Number"/>
+  <Entry name="83" value="Segregation by Carrier PRO Number"/>
+  <Entry name="85" value="Response - No Action Taken"/>
+  <Entry name="87" value="Disability Benefits Proof of Coverage Notification"/>
+  <Entry name="88" value="Debtor Filing"/>
+  <Entry name="89" value="Federal Occupational Reporting"/>
+  <Entry name="91" value="Secured Party Filing"/>
+  <Entry name="94" value="Partial Release Filing"/>
+  <Entry name="95" value="Full (Total) Release"/>
+  <Entry name="97" value="Multiple Listing"/>
+  <Entry name="98" value="Sale"/>
+  <Entry name="99" value="Loan"/>
+  <Entry name="A0" value="Requisition"/>
+  <Entry name="A1" value="Storage Item Data Change"/>
+  <Entry name="A3" value="Administrative Fees"/>
+  <Entry name="A4" value="Amended Return"/>
+  <Entry name="A5" value="Notice of Charge"/>
+  <Entry name="A6" value="Protest or Response to Charge"/>
+  <Entry name="A7" value="Charge Decision"/>
+  <Entry name="AA" value="Due to Analysis"/>
+  <Entry name="AB" value="Advance Shipment and Billing Notice"/>
+  <Entry name="AC" value="Requisition Cancellation"/>
+  <Entry name="AD" value="Notice of Availability"/>
+  <Entry name="AE" value="Due to Reconciliation (Full)"/>
+  <Entry name="AF" value="Requisition Follow-Up"/>
+  <Entry name="AG" value="Due to Reconciliation (Partial)"/>
+  <Entry name="AH" value="Pre-Employment Screening"/>
+  <Entry name="AI" value="Adjusted Invoice"/>
+  <Entry name="AJ" value="Student Loan Interest Statement (1098-E)"/>
+  <Entry name="AK" value="Tuition Payments Statement (1098-T)"/>
+  <Entry name="AL" value="Arbitration"/>
+  <Entry name="AM" value="Requisition Modification"/>
+  <Entry name="AN" value="Material Obligation Inquiry"/>
+  <Entry name="AP" value="Material Obligation Advice"/>
+  <Entry name="AQ" value="Quantity Verification Inquiry"/>
+  <Entry name="AR" value="Supply Assistance"/>
+  <Entry name="AS" value="Shipment Advice"/>
+  <Entry name="AT" value="Administrative Action"/>
+  <Entry name="AV" value="Quantity Verification Advice"/>
+  <Entry name="AW" value="Material Obligation Reinstatement"/>
+  <Entry name="AZ" value="Disposal Shipment Advice"/>
+  <Entry name="BA" value="Backbill Invoice"/>
+  <Entry name="BB" value="Billback"/>
+  <Entry name="BD" value="Statement of Balance Due"/>
+  <Entry name="BF" value="Best and Final Offer"/>
+  <Entry name="BG" value="Non-escrow or Non-impound Tracking"/>
+  <Entry name="BH" value="Bill and Hold Goods"/>
+  <Entry name="BJ" value="Bankruptcy Petition"/>
+  <Entry name="BK" value="Bankruptcy Schedules"/>
+  <Entry name="BL" value="Blanket Lease Schedule"/>
+  <Entry name="BM" value="Requisition Passing Order"/>
+  <Entry name="BN" value="Requisition Referral Order"/>
+  <Entry name="BO" value="Procurement Cancellation"/>
+  <Entry name="BP" value="Procurement Modification"/>
+  <Entry name="BR" value="Business Taxpayer Registration"/>
+  <Entry name="BS" value="Bill of Sale Schedule"/>
+  <Entry name="BT" value="Balance and Transaction Report"/>
+  <Entry name="BU" value="Workers' Compensation 1st Report of Injury"/>
+  <Entry name="BV" value="Workers' Compensation Subsequent Report"/>
+  <Entry name="BW" value="Workers' Compensation Combined 1st and Subsequent Report"/>
+  <Entry name="BX" value="Not for Resale Invoice"/>
+  <Entry name="BZ" value="Freight Invoice"/>
+  <Entry name="C0" value="Customs Entry Detail"/>
+  <Entry name="C1" value="Claim Information"/>
+  <Entry name="C2" value="Case Opening"/>
+  <Entry name="C3" value="Consignment"/>
+  <Entry name="C4" value="Escrow or Impound Service Reporting"/>
+  <Entry name="C5" value="Tax Assessment Bill"/>
+  <Entry name="C6" value="Fixed Assets Tax Return"/>
+  <Entry name="C7" value="Service Cancellation"/>
+  <Entry name="CA" value="Cash"/>
+  <Entry name="CB" value="Contribution"/>
+  <Entry name="CC" value="Credit Commission Invoice"/>
+  <Entry name="CD" value="Consolidated Debit Invoice"/>
+  <Entry name="CE" value="Consolidated Credit Invoice"/>
+  <Entry name="CF" value="Consolidated Debit Memo"/>
+  <Entry name="CG" value="Consolidated Credit Memo"/>
+  <Entry name="CH" value="Chargeable"/>
+  <Entry name="CI" value="Consolidated Invoice"/>
+  <Entry name="CJ" value="Confirmation"/>
+  <Entry name="CK" value="Claim Submission"/>
+  <Entry name="CL" value="Customer Allocation"/>
+  <Entry name="CM" value="Call Detail Memo"/>
+  <Entry name="CN" value="Credit Invoice"/>
+  <Entry name="CO" value="Corrected"/>
+  <Entry name="CP" value="Commission Payment"/>
+  <Entry name="CR" value="Credit Memo"/>
+  <Entry name="CS" value="Cash Surrender Distribution"/>
+  <Entry name="CT" value="Cost Type Invoice"/>
+  <Entry name="CU" value="Cargo Outturn Report"/>
+  <Entry name="CV" value="Cost Voucher"/>
+  <Entry name="CW" value="Cash Letter"/>
+  <Entry name="CX" value="Check List"/>
+  <Entry name="CY" value="Citation to Pay or Appear"/>
+  <Entry name="CZ" value="Conviction Notice"/>
+  <Entry name="D1" value="Dividend Payment"/>
+  <Entry name="D4" value="Receipt"/>
+  <Entry name="DA" value="Due-In"/>
+  <Entry name="DB" value="Detour Billing"/>
+  <Entry name="DC" value="Debit Commission Invoice"/>
+  <Entry name="DD" value="Interdistrict (Pre-Kindergarten - Grade 12) Student Record"/>
+  <Entry name="DE" value="Advance Receipt"/>
+  <Entry name="DF" value="Diesel Fuel Bill"/>
+  <Entry name="DG" value="Response"/>
+  <Entry name="DH" value="Discretionary Additional Company Contribution"/>
+  <Entry name="DI" value="Debit Invoice"/>
+  <Entry name="DK" value="Duty Drawback"/>
+  <Entry name="DL" value="Deposit List"/>
+  <Entry name="DN" value="Direct Nonqualified Rollover"/>
+  <Entry name="DO" value="Drop Shipment Invoice"/>
+  <Entry name="DP" value="District to Postsecondary Student Record"/>
+  <Entry name="DQ" value="Direct Qualified Rollover"/>
+  <Entry name="DR" value="Debit Memo"/>
+  <Entry name="DS" value="Disposition"/>
+  <Entry name="DT" value="Detail"/>
+  <Entry name="DU" value="Duplicate"/>
+  <Entry name="E1" value="Administrative Records Submission"/>
+  <Entry name="EA" value="Excess Interest Allocation"/>
+  <Entry name="EB" value="Engineering Final Bill"/>
+  <Entry name="EC" value="Campaign Filing"/>
+  <Entry name="ED" value="Lobbyist Filing"/>
+  <Entry name="EF" value="Engineering Installation, Right to Use, Final Bill"/>
+  <Entry name="EI" value="Engineering Installation, Final Bill"/>
+  <Entry name="EM" value="Estimate of Record"/>
+  <Entry name="EP" value="Expense Payment"/>
+  <Entry name="ER" value="Engineering Right to Use, Final Bill"/>
+  <Entry name="EX" value="Excess Material Notification"/>
+  <Entry name="F1" value="Final Report"/>
+  <Entry name="F6" value="Shipper Imbalance"/>
+  <Entry name="F7" value="Producer Imbalance"/>
+  <Entry name="FA" value="Forfeiture Allocation"/>
+  <Entry name="FB" value="Final Bill"/>
+  <Entry name="FC" value="Forfeiture Credit"/>
+  <Entry name="FD" value="Consolidated Invoice, Final Bill"/>
+  <Entry name="FE" value="Memorandum, Final Bill"/>
+  <Entry name="FF" value="Full Assignment Filing"/>
+  <Entry name="FG" value="Filing"/>
+  <Entry name="FI" value="First Cost Invoice"/>
+  <Entry name="FL" value="Final Notice"/>
+  <Entry name="FM" value="Funding Modification"/>
+  <Entry name="FN" value="First Notice of Loss"/>
+  <Entry name="FP" value="Flat Rate Per Unit Bill"/>
+  <Entry name="FR" value="Federal Royalty"/>
+  <Entry name="FS" value="Financial Statement Report"/>
+  <Entry name="FT" value="Material Returns"/>
+  <Entry name="G1" value="Nomination"/>
+  <Entry name="G2" value="Request for Confirmation"/>
+  <Entry name="G3" value="Confirmation Response"/>
+  <Entry name="GA" value="Government Furnished Material Inquiry Advice"/>
+  <Entry name="GI" value="Government Furnished Material Inquiry"/>
+  <Entry name="GR" value="Garnishment"/>
+  <Entry name="GS" value="Credit Report"/>
+  <Entry name="GT" value="Disability Notice"/>
+  <Entry name="GU" value="Black Lung Claim"/>
+  <Entry name="GV" value="Claim Experience Report"/>
+  <Entry name="GW" value="Employer's Report"/>
+  <Entry name="GX" value="Longshore Report"/>
+  <Entry name="GY" value="Unit Report"/>
+  <Entry name="HA" value="Hazardous Waste Report"/>
+  <Entry name="HB" value="Discharge Monitoring Report"/>
+  <Entry name="HC" value="Risk Management Plan"/>
+  <Entry name="HD" value="Self Monitoring Report"/>
+  <Entry name="HE" value="Hazardous Air Pollutant Inventory Report"/>
+  <Entry name="HF" value="Stationary Point Source Inventory Report"/>
+  <Entry name="HG" value="Toxic Release Inventory Report"/>
+  <Entry name="HP" value="Horsepower Equalization Bill"/>
+  <Entry name="I1" value="In-Ad Coupon Notification"/>
+  <Entry name="IA" value="Inventory"/>
+  <Entry name="IB" value="Installation Final Bill"/>
+  <Entry name="IC" value="Insurance Coverage Notification"/>
+  <Entry name="ID" value="Employers Report of Disability"/>
+  <Entry name="IE" value="Indian Royalty"/>
+  <Entry name="IF" value="Material, Engineering, Installation, Final Bill"/>
+  <Entry name="II" value="Interfund Transfer In"/>
+  <Entry name="IM" value="Incident Notice"/>
+  <Entry name="IN" value="Inquiry"/>
+  <Entry name="IO" value="Interfund Transfer Out"/>
+  <Entry name="IR" value="Installation, Right to Use, Final Bill"/>
+  <Entry name="IU" value="Material, Installation, Right to Use, Final Bill"/>
+  <Entry name="IW" value="Workers Compensation Report of Injury or Illness"/>
+  <Entry name="IX" value="Interchange Update"/>
+  <Entry name="IZ" value="Investment Fees"/>
+  <Entry name="JM" value="Maintenance and Operations Bill"/>
+  <Entry name="JO" value="Joint Facility Miscellaneous Bill or Other"/>
+  <Entry name="JR" value="Rental Bill"/>
+  <Entry name="JS" value="Junction Settlement Update"/>
+  <Entry name="JU" value="Judgment"/>
+  <Entry name="JX" value="Junction Update"/>
+  <Entry name="KB" value="Termination for Default"/>
+  <Entry name="KC" value="Definitization of Contract"/>
+  <Entry name="KD" value="Definitization of Order"/>
+  <Entry name="KE" value="Exercise of Option"/>
+  <Entry name="KF" value="Intent to Exercise Option"/>
+  <Entry name="KG" value="Administrative Change"/>
+  <Entry name="KH" value="Change Order"/>
+  <Entry name="KI" value="Supplemental Agreement"/>
+  <Entry name="KJ" value="Amended Shipping Instructions"/>
+  <Entry name="KK" value="Provisioned Item"/>
+  <Entry name="KL" value="Withdrawal of Offer"/>
+  <Entry name="KM" value="Additions to General Provisions"/>
+  <Entry name="KN" value="Request for Price Quote"/>
+  <Entry name="KS" value="Addition to Solicitation Mailing List"/>
+  <Entry name="KT" value="Termination for Convenience"/>
+  <Entry name="LC" value="Due-in Reconciliation Inquiry"/>
+  <Entry name="LD" value="Loan Distribution"/>
+  <Entry name="LE" value="Loan Repayment Expense"/>
+  <Entry name="LF" value="Landed Costs"/>
+  <Entry name="LN" value="Loss Notification"/>
+  <Entry name="LO" value="Loan Repayment to Principal Only"/>
+  <Entry name="LP" value="Loan Repayment"/>
+  <Entry name="LR" value="Logistics Reassignment"/>
+  <Entry name="LV" value="Levy"/>
+  <Entry name="M1" value="Manufacturer Coupon Notification"/>
+  <Entry name="MA" value="Mailing List"/>
+  <Entry name="MB" value="Maintenance to Business Taxpayer Registration"/>
+  <Entry name="MC" value="Material Credit Invoice"/>
+  <Entry name="MD" value="Market Development Fund"/>
+  <Entry name="ME" value="Memorandum"/>
+  <Entry name="MF" value="Material, Engineering, Final Bill"/>
+  <Entry name="MI" value="Material, Installation, Final Bill"/>
+  <Entry name="ML" value="Membership List"/>
+  <Entry name="MM" value="Multiple Shippers, Multiple Consignees"/>
+  <Entry name="MP" value="Mise En Place (In Place)"/>
+  <Entry name="MR" value="Material, Right to Use, Final Bill"/>
+  <Entry name="MS" value="Material Final Bill"/>
+  <Entry name="MU" value="Multifamily Program"/>
+  <Entry name="N1" value="Bilateral"/>
+  <Entry name="N2" value="Notice of Assessment"/>
+  <Entry name="N3" value="Notice of Warrant"/>
+  <Entry name="N4" value="Notice of Adjustment"/>
+  <Entry name="N5" value="Notice of Determination"/>
+  <Entry name="N6" value="Notice of Settlement"/>
+  <Entry name="N7" value="Notice of Recorded Lien"/>
+  <Entry name="N8" value="Notice of Deficiency"/>
+  <Entry name="NA" value="Material Release Order"/>
+  <Entry name="NB" value="Material Release Inquiry"/>
+  <Entry name="NC" value="Material Release Order Forced Closure"/>
+  <Entry name="ND" value="Material Release Cancellation"/>
+  <Entry name="NE" value="Disposal Release Order"/>
+  <Entry name="NF" value="Disposal Release Inquiry"/>
+  <Entry name="NG" value="Disposal Release Cancellation"/>
+  <Entry name="NH" value="Disposal Shipment Confirmation Inquiry"/>
+  <Entry name="NI" value="Redistribution Order"/>
+  <Entry name="NJ" value="Material Release Confirmation"/>
+  <Entry name="NK" value="Material Release Denial"/>
+  <Entry name="NL" value="Material Release Advice"/>
+  <Entry name="NM" value="Disposal Release Confirmation"/>
+  <Entry name="NO" value="Notice"/>
+  <Entry name="NP" value="Disposal Release Denial"/>
+  <Entry name="NQ" value="Disposal Release Advice"/>
+  <Entry name="NR" value="Material Release Cancellation Advice"/>
+  <Entry name="NS" value="In-Transit"/>
+  <Entry name="NT" value="Disposal Release Cancellation Advice"/>
+  <Entry name="NU" value="Inventory Adjustment"/>
+  <Entry name="OC" value="On Approval"/>
+  <Entry name="OF" value="Offer"/>
+  <Entry name="OP" value="Opinion"/>
+  <Entry name="OR" value="Order"/>
+  <Entry name="P1" value="Preliminary"/>
+  <Entry name="PA" value="Progress Payment Invoice"/>
+  <Entry name="PB" value="Partial Bill"/>
+  <Entry name="PC" value="Invention Report"/>
+  <Entry name="PD" value="Prior Damage Report"/>
+  <Entry name="PE" value="Pleading"/>
+  <Entry name="PF" value="Partial Assignment Filing"/>
+  <Entry name="PG" value="Premium Routing Guide"/>
+  <Entry name="PH" value="Prospective Student Information"/>
+  <Entry name="PI" value="Personal Injury Bill"/>
+  <Entry name="PL" value="Plan Allocation"/>
+  <Entry name="PM" value="Premium Payment"/>
+  <Entry name="PO" value="Plan Takeover"/>
+  <Entry name="PP" value="Prepaid Invoice"/>
+  <Entry name="PR" value="Product (or Service)"/>
+  <Entry name="PS" value="Postsecondary Student Academic Record"/>
+  <Entry name="PT" value="Plan-to-plan Transfer"/>
+  <Entry name="PU" value="Notice of Claim"/>
+  <Entry name="PV" value="Protest or Response to Claim"/>
+  <Entry name="PW" value="Claim Decision"/>
+  <Entry name="PX" value="Wage Verification Notice"/>
+  <Entry name="PZ" value="Purchase Report"/>
+  <Entry name="Q1" value="Scheduled Quantity"/>
+  <Entry name="Q2" value="Scheduled Quantity for Operator"/>
+  <Entry name="QA" value="Coupon Regular Clearinghouse Invoice"/>
+  <Entry name="QB" value="Coupon Direct Retailer Invoice"/>
+  <Entry name="QC" value="Coupon Clearinghouse Pay Direct Invoice"/>
+  <Entry name="QD" value="Product Quality Deficiency"/>
+  <Entry name="QE" value="Coupon Scan Validate Invoice"/>
+  <Entry name="QF" value="Scan Validate Adjustment"/>
+  <Entry name="QG" value="Quick Response Routing Guide"/>
+  <Entry name="QH" value="Full Coupon Redemption (No Adjustments)"/>
+  <Entry name="QJ" value="Adjusted Coupon Redemption"/>
+  <Entry name="QK" value="Coupon Redemption Detail"/>
+  <Entry name="QL" value="Adjustments to Previous Coupon Redemption"/>
+  <Entry name="QP" value="Coupon Quick Pay Invoice"/>
+  <Entry name="QR" value="Product Quality Deficiency Response"/>
+  <Entry name="R1" value="Request for Enrollment Verification"/>
+  <Entry name="R2" value="Response to Request for Enrollment Verification"/>
+  <Entry name="R3" value="Response to Garnishment"/>
+  <Entry name="R4" value="Release of Garnishment"/>
+  <Entry name="R5" value="Response to Levy"/>
+  <Entry name="R6" value="Release of Levy"/>
+  <Entry name="R7" value="Response to Order to Withhold"/>
+  <Entry name="R8" value="Release of Order to Withhold"/>
+  <Entry name="RA" value="Request for Credit"/>
+  <Entry name="RB" value="Right to Use"/>
+  <Entry name="RC" value="Request for Quote"/>
+  <Entry name="RD" value="Returns Detail"/>
+  <Entry name="RE" value="Rebill"/>
+  <Entry name="RF" value="Material, Engineering, Right to Use, Final Bill"/>
+  <Entry name="RG" value="Revised Final Bill"/>
+  <Entry name="RH" value="Request for Additional Funds"/>
+  <Entry name="RI" value="Routing Instructions"/>
+  <Entry name="RJ" value="Response to Request for Routing Instructions"/>
+  <Entry name="RK" value="Registration"/>
+  <Entry name="RM" value="Reminder to File"/>
+  <Entry name="RP" value="Reporting"/>
+  <Entry name="RQ" value="Request"/>
+  <Entry name="RS" value="Response - Additional Response(s) Available"/>
+  <Entry name="RT" value="Spend Down"/>
+  <Entry name="RU" value="Medical Services Reservation"/>
+  <Entry name="RZ" value="Removed from Solicitation Mailing List"/>
+  <Entry name="S1" value="Special Routing Guide"/>
+  <Entry name="S2" value="Standard Routing Guide"/>
+  <Entry name="S3" value="Supplemental Loan Repayment"/>
+  <Entry name="S4" value="Submission"/>
+  <Entry name="SA" value="Stand-alone Lease Schedule"/>
+  <Entry name="SB" value="Second Notice of Balance Due"/>
+  <Entry name="SC" value="Deprescription"/>
+  <Entry name="SD" value="Supply Process Deficiency"/>
+  <Entry name="SE" value="Special Bilateral"/>
+  <Entry name="SF" value="Single Family Program"/>
+  <Entry name="SG" value="Sample Goods Invoice"/>
+  <Entry name="SH" value="Shipment Status Notification"/>
+  <Entry name="SL" value="Summary Lease Schedule"/>
+  <Entry name="SM" value="Single Shipper, Multiple Consignees"/>
+  <Entry name="SO" value="Spot Rate"/>
+  <Entry name="SP" value="Supplier Rating"/>
+  <Entry name="SQ" value="Schedule Query"/>
+  <Entry name="SR" value="Supply Process Deficiency Response"/>
+  <Entry name="SS" value="Single Shipper, Single Consignee"/>
+  <Entry name="ST" value="State Royalty"/>
+  <Entry name="SU" value="Survey"/>
+  <Entry name="SV" value="Supplemental Invoice"/>
+  <Entry name="T1" value="Report sent by National Center for Education Statistics (NCES)"/>
+  <Entry name="T2" value="Report sent to National Center for Education Statistics (NCES)"/>
+  <Entry name="T3" value="Common Core of Data (CCD) Report from the National Center for Education Statistics (NCES)"/>
+  <Entry name="T4" value="Common Core of Data (CCD) Report to the National Center for Education Statistics (NCES)"/>
+  <Entry name="T5" value="Integrated Postsecondary Education Database System (IPEDS) Report from National Center for Education Statistics (NCES)"/>
+  <Entry name="T6" value="Integrated Postsecondary Education Database System (IPEDS) Report to National Center for Education Statistics (NCES)"/>
+  <Entry name="T7" value="Transportation Invoice"/>
+  <Entry name="T8" value="Sales Invoice"/>
+  <Entry name="T9" value="Service Requester Level Invoice"/>
+  <Entry name="TD" value="Shipment or Movement Deficiency"/>
+  <Entry name="TF" value="Tax or Fee Exemption Certification"/>
+  <Entry name="TG" value="Receipt Acknowledgment Inquiry"/>
+  <Entry name="TH" value="Receipt Acknowledgment Advice"/>
+  <Entry name="TI" value="Delinquent Due-in Advice"/>
+  <Entry name="TJ" value="Delinquent Due-in Inquiry"/>
+  <Entry name="TK" value="Due-in Reconciliation Advice"/>
+  <Entry name="TL" value="Total Loss Evaluation"/>
+  <Entry name="TP" value="Trading Partner Information"/>
+  <Entry name="TR" value="Shipment or Movement Deficiency Response"/>
+  <Entry name="TS" value="Transfer Statement"/>
+  <Entry name="TT" value="Testing Service Report"/>
+  <Entry name="TX" value="Request for Testing Service Report"/>
+  <Entry name="U1" value="Contract Abstract"/>
+  <Entry name="U2" value="Shipment Performance Notice"/>
+  <Entry name="U4" value="Acceptance Alert"/>
+  <Entry name="U5" value="Update"/>
+  <Entry name="U9" value="Contract Payment Notice"/>
+  <Entry name="UA" value="Amendment Filing"/>
+  <Entry name="UC" value="Uniform Commercial Code Filing"/>
+  <Entry name="UD" value="Unsalable Detail"/>
+  <Entry name="UF" value="Material, Engineering, Installation, Right to Use, Final Bill"/>
+  <Entry name="UI" value="Uniform Commercial Code Filing Inquiry"/>
+  <Entry name="UM" value="Termination Filing"/>
+  <Entry name="UO" value="Original Filing"/>
+  <Entry name="UP" value="Unsalable Product Invoice"/>
+  <Entry name="UR" value="Uniform Commercial Code Filing Response to Inquiry"/>
+  <Entry name="UT" value="Continuation Filing"/>
+  <Entry name="V1" value="Contract Completion Report"/>
+  <Entry name="V2" value="Nomination Quick Response"/>
+  <Entry name="V3" value="Confirmation Response Quick Response"/>
+  <Entry name="V4" value="Pre-determined Allocation Quick Response"/>
+  <Entry name="VH" value="Public Voucher"/>
+  <Entry name="VJ" value="Commercial Invoice"/>
+  <Entry name="VL" value="Violation Notice"/>
+  <Entry name="VM" value="Voluntary MEDWATCH Report"/>
+  <Entry name="VN" value="Mandatory MEDWATCH Report"/>
+  <Entry name="VO" value="Medical Device New Baseline Report"/>
+  <Entry name="VP" value="Medical Device Annual Baseline Report"/>
+  <Entry name="VQ" value="User Facility Annual Medical Device Report"/>
+  <Entry name="VR" value="Annual Certification of Medical Device Report"/>
+  <Entry name="W1" value="Weapons Data Change"/>
+  <Entry name="W4" value="Weapons Control Report"/>
+  <Entry name="W5" value="Weapons Control Report Reconciliation"/>
+  <Entry name="WA" value="Work Assignment"/>
+  <Entry name="WC" value="Workers Compensation Proof of Coverage Notification"/>
+  <Entry name="WD" value="Withdrawal"/>
+  <Entry name="WH" value="Order to Withhold"/>
+  <Entry name="WO" value="Work Order"/>
+  <Entry name="WS" value="Waste"/>
+  <Entry name="WT" value="Warrant"/>
+  <Entry name="X1" value="Consolidator's Invoice"/>
+  <Entry name="XA" value="Cancel Pending New Offer"/>
+  <Entry name="XB" value="Bilateral Spot Rate"/>
+  <Entry name="XC" value="Automatic Concurrence"/>
+  <Entry name="XD" value="Special Deprescription"/>
+  <Entry name="XX" value="Firm Order Confirmation with Facility Information"/>
+  <Entry name="XY" value="Firm Order Confirmation"/>
+  <Entry name="XZ" value="Facility Confirmation"/>
+  <Entry name="YI" value="Funds Validation Inquiry"/>
+  <Entry name="YR" value="Funds Validation Response"/>
+  <Entry name="Z1" value="Military Interdepartmental Purchase Request (MIPR)"/>
+  <Entry name="Z2" value="Project Directive"/>
+  <Entry name="Z3" value="Request for Contractual Procurement"/>
+  <Entry name="Z4" value="Reimbursable Work Order"/>
+  <Entry name="ZA" value="Request Initiation of Work Candidate"/>
+  <Entry name="ZB" value="Report of Work Candidate"/>
+  <Entry name="ZC" value="Report of Assignment or Deletion of Work Candidate to Maintenance Period"/>
+  <Entry name="ZD" value="Request Assignment of Work Candidate to Planning Maintenance Activity"/>
+  <Entry name="ZE" value="Request for Full Work Candidate Detail"/>
+  <Entry name="ZF" value="Report of Full Work Candidate Detail"/>
+  <Entry name="ZG" value="Report of Approved Work Candidate"/>
+  <Entry name="ZH" value="Request Work Candidate Cost/Duration Estimate"/>
+  <Entry name="ZI" value="Report of Work Candidate Cost/Duration Estimate"/>
+  <Entry name="ZJ" value="Request Work Candidate Planning Services"/>
+  <Entry name="ZK" value="Report of Work Candidate Planning Services"/>
+  <Entry name="ZL" value="Report of Assignment or Deletion of Work Candidate to Planning/Maintenance Activity"/>
+  <Entry name="ZM" value="Request of Assignment or Deletion of Work Candidate to Maintenance Period"/>
+  <Entry name="ZN" value="Stop Work Order"/>
+  <Entry name="ZO" value="Authorization to Continue Work"/>
+  <Entry name="ZP" value="Request for Departure From Specification"/>
+  <Entry name="ZQ" value="Report of Authorized Departure From Specification"/>
+  <Entry name="ZR" value="Request Work Progress Status"/>
+  <Entry name="ZS" value="Report of Work Progress Status"/>
+  <Entry name="ZT" value="Report of Rejection or Return of Work Candidate"/>
+  <Entry name="ZU" value="Request Work Candidate Change"/>
+  <Entry name="ZV" value="Lien Filing"/>
+  <Entry name="ZW" value="Sort and Segregate Detail"/>
+  <Entry name="ZX" value="Expungement of Prior Filing"/>
+  <Entry name="ZY" value="Cancellation of Filing"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

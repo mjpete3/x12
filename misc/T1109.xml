@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1109.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1109">
+  <Entry name="7" value="Not Provided"/>
+  <Entry name="8" value="Not Applicable"/>
+  <Entry name="A" value="Asian or Pacific Islander"/>
+  <Entry name="B" value="Black"/>
+  <Entry name="C" value="Caucasian"/>
+  <Entry name="D" value="Subcontinent Asian American"/>
+  <Entry name="E" value="Other Race or Ethnicity"/>
+  <Entry name="F" value="Asian Pacific American"/>
+  <Entry name="G" value="Native American"/>
+  <Entry name="H" value="Hispanic"/>
+  <Entry name="I" value="American Indian or Alaskan Native"/>
+  <Entry name="J" value="Native Hawaiian"/>
+  <Entry name="N" value="Black (Non-Hispanic)"/>
+  <Entry name="O" value="White (Non-Hispanic)"/>
+  <Entry name="P" value="Pacific Islander"/>
+  <Entry name="Q" value="Black or African American (Office of Management and Budget 1997)"/>
+  <Entry name="R" value="Hispanic or Latino (Office of Management and Budget 1997)"/>
+  <Entry name="S" value="White (Office of Management and Budget 1997)"/>
+  <Entry name="T" value="American Indian or Alaska Native (Office of Management and Budget 1997)"/>
+  <Entry name="U" value="Asian (Office of Management and Budget 1997)"/>
+  <Entry name="V" value="Native Hawaiian or Other Pacific Islander (Office of Management and Budget 1997)"/>
+  <Entry name="W" value="Not Hispanic or Latino (Office of Management and Budget 1997)"/>
+  <Entry name="Z" value="Mutually Defined"/>
+</Table>

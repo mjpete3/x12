@@ -1,0 +1,52 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T892.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T892">
+  <Entry name="01" value="Out of Stock"/>
+  <Entry name="02" value="Equipment Cut"/>
+  <Entry name="03" value="Booking Location Request"/>
+  <Entry name="04" value="On Hold"/>
+  <Entry name="05" value="Order Discrepancy"/>
+  <Entry name="06" value="Receiving Location Request"/>
+  <Entry name="07" value="Inventory Discrepancy"/>
+  <Entry name="08" value="Material Shortage"/>
+  <Entry name="09" value="Substitution"/>
+  <Entry name="10" value="Diverted Item"/>
+  <Entry name="11" value="Loading Error"/>
+  <Entry name="12" value="Inbound Carrier Failure"/>
+  <Entry name="13" value="Product Allocation Exceeded"/>
+  <Entry name="14" value="Improperly Sized Order"/>
+  <Entry name="15" value="Wrong Equipment"/>
+  <Entry name="16" value="Insufficient Equipment Space"/>
+  <Entry name="17" value="Discontinued Item"/>
+  <Entry name="20" value="Late Stock Transfer"/>
+  <Entry name="21" value="Inadequate Lead Time"/>
+  <Entry name="22" value="Stock Transfer Not Set Up"/>
+  <Entry name="23" value="Item Not Stocked at Shipping Location"/>
+  <Entry name="24" value="Product Withdrawn"/>
+  <Entry name="25" value="Addition Requested by Customer"/>
+  <Entry name="26" value="Bacteria Clearance"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

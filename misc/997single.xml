@@ -1,0 +1,835 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 997single.xml 85 2009-05-13 19:17:51Z ikk $
+-->
+
+<!-- 
+     This is an example of a message definition contained in one big
+     file.  The main loop is here along with all other definitions, i.e.,
+     segments, composites, and validation tables.
+-->
+
+<Definition>
+  <Segment name="ST" comment="To indicate the start of a transaction set and to assign a control number">
+    <Field name="TransactionSetIdentifierCode" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
+    <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+    <Field name="ImplementationConventionReference" required="y" min="1" max="35" comment="Reference assigned to identify Implementation Convention"/>
+  </Segment>
+
+  <Composite name="C030" comment="Code indicating the relative position of the simple data element or composite data structure in error within a segment, count beginning with 1 for the position immediately following the segment ID; additionally indicating the relative position of a repeating structure in error, count beginning with 1 for the position immediately following the preceding element separator; additionally indicating the relative position of a component of a composite data structure in error, count beginning with 1 for the position following the preceding element or repetition separator">
+    <Field name="ElementPositionInSegment" type="long" required="n" min="1" max="2" comment="This is used to indicate the relative position of a simple data element, or the relative position of a composite data structure with the relative position of the component within the composite data structure, in error; in the data segment the count starts with 1 for the simple data element or composite data structure immediately following the segment ID"/>
+    <Field name="ComponentDataElementPositionInComposite" type="long" required="y" min="1" max="2" comment="To identify the component data element position within the composite that is in error"/>
+    <Field name="RepeatingDataElementPosition" type="long" required="y" min="1" max="4" comment="To identify the specific repetition of a data element that is in error"/>
+  </Composite>
+
+  <Segment name="AK1" comment="To start acknowledgment of a functional group">
+    <Field name="FunctionalIdentifierCode" min="2" max="2" validation="T479" comment="Code identifying a group of application related transaction sets"/>
+    <Field name="GroupControlNumber" type="long" min="1" max="9" comment="Assigned number originated and maintained by the sender"/>
+  </Segment>
+
+  <Segment name="AK2" comment="To start acknowledgment of a single transaction set">
+    <Field name="TransactionSetIdentifierCode" required="y" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
+    <Field name="TransactionSetControlNumber"  required="y" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+  </Segment>
+
+  <Segment name="AK3" comment="To report errors in a data segment and identify the location of the data segment">
+    <Field name="SegmentIdCode" required="y" min="2" max="3" comment="Code defining the segment ID of the data segment in error (See Appendix A - Number 77)"/>
+    <Field name="SegmentPositionInTransactionSet" required="y" type="long" min="1" max="6" comment="The numerical count position of this data segment from the start of the transaction set: the transaction set header is count position 1"/>
+    <Field name="LoopIdentifierCode" required="n" min="1" max="6" comment="The loop ID number given on the transaction set diagram is the value for this data element in segments LS and LE"/>
+    <Field name="SegmentSyntaxErrorCode" required="n" min="1" max="3" validation="T720" comment="Code indicating error found based on the syntax editing of a segment"/>
+  </Segment>
+
+  <Segment name="AK4" comment="To report errors in a data element or composite data structure and identify the location of the data element">
+    <Field name="PositionInSegment"          type="C030" required="y" min="0" max="inf" comment="Code indicating the relative position of the simple data element or composite data structure in error within a segment, count beginning with 1 for the position immediately following the segment ID; additionally indicating the relative position of a repeating structure in error, count beginning with 1 for the position immediately following the preceding element separator; additionally indicating the relative position of a component of a composite data structure in error, count beginning with 1 for the position following the preceding element or repetition separator"/>
+    <Field name="DataElementReferenceNumber" type="long" required="n" min="1" max="4" comment="Reference number used to locate the data element in the Data Element Dictionary"/>
+    <Field name="DataElementSyntaxErrorCode"             required="y" min="1" max="3" validation="T723" comment="Code indicating the error found after syntax edits of a data element"/>
+    <Field name="CopyOfBadDataElement"                   required="n" min="1" max="99" comment="This is a copy of the data element in error"/>
+  </Segment>
+
+  <Segment name="AK5" comment="To acknowledge acceptance or rejection and report errors in a transaction set">
+    <Field name="TransactionSetAcknowledgmentCode" required="n" min="1" max="1" validation="T717" comment="Code indicating accept or reject condition based on the syntax editing of the transaction set"/>
+    <Field name="TransactionSetSyntaxErrorCode1"   required="n" min="1" max="3" validation="T718" comment="Code indicating error found based on the syntax editing of a transaction set"/>
+    <Field name="TransactionSetSyntaxErrorCode2"   required="n" min="1" max="3" validation="T718" comment="Code indicating error found based on the syntax editing of a transaction set"/>
+    <Field name="TransactionSetSyntaxErrorCode3"   required="n" min="1" max="3" validation="T718" comment="Code indicating error found based on the syntax editing of a transaction set"/>
+    <Field name="TransactionSetSyntaxErrorCode4"   required="n" min="1" max="3" validation="T718" comment="Code indicating error found based on the syntax editing of a transaction set"/>
+    <Field name="TransactionSetSyntaxErrorCode5"   required="n" min="1" max="3" validation="T718" comment="Code indicating error found based on the syntax editing of a transaction set"/>
+  </Segment>
+
+  <Segment name="AK9" comment="To acknowledge acceptance or rejection of a functional group and report the number of included transaction sets from the original trailer, the accepted sets, and the received sets in this functional group">
+    <Field name="FunctionalGroupAcknowledgeCode"              required="y" min="1" max="1" validation="T715" comment="Code indicating accept or reject condition based on the syntax editing of the functional group"/>
+    <Field name="NumberOfTransactionSetsIncluded" type="long" required="y" min="1" max="6" comment="Total number of transaction sets included in the functional group or interchange (transmission) group terminated by the trailer containing this data element"/>
+    <Field name="NumberOfReceivedTransactionSets" type="long" required="y" min="1" max="6" comment="Number of Transaction Sets received"/>
+    <Field name="NumberOfAcceptedTransactionSets" type="long" required="y" min="1" max="6" comment="Number of accepted Transaction Sets in a Functional Group"/>
+    <Field name="FunctionalGroupSyntaxErrorCode1"                          min="1" max="3" validation="T716" comment="Code indicating error found based on the syntax editing of the functional group header and/or trailer"/>
+    <Field name="FunctionalGroupSyntaxErrorCode2"                          min="1" max="3" validation="T716" comment="Code indicating error found based on the syntax editing of the functional group header and/or trailer"/>
+    <Field name="FunctionalGroupSyntaxErrorCode3"                          min="1" max="3" validation="T716" comment="Code indicating error found based on the syntax editing of the functional group header and/or trailer"/>
+    <Field name="FunctionalGroupSyntaxErrorCode4"                          min="1" max="3" validation="T716" comment="Code indicating error found based on the syntax editing of the functional group header and/or trailer"/>
+    <Field name="FunctionalGroupSyntaxErrorCode5"                          min="1" max="3" validation="T716" comment="Code indicating error found based on the syntax editing of the functional group header and/or trailer"/>
+  </Segment>
+
+  <Segment name="SE" comment="To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments)">
+    <Field name="NumberOfIncludedSegments" type="long" required="y" min="1" max="10" comment="Total number of segments included in a transaction set including ST and SE segments"/>
+    <Field name="TransactionSetControlNumber" required="y" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+  </Segment>
+
+  <Loop name="997" comment="This X12 Transaction Set contains the format and establishes the data contents of the Functional Acknowledgment Transaction Set (997) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to define the control structures for a set of acknowledgments to indicate the results of the syntactical analysis of the electronically encoded documents. The encoded documents are the transaction sets, which are grouped in functional groups, used in defining transactions for business data interchange. This standard does not cover the semantic meaning of the information encoded in the transaction sets.">
+    <Segment name="ST"  max="1">
+      <Field name="TransactionSetIdentifierCode" const="997" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
+      <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+    </Segment>
+    <Segment name="AK1" max="1"/>
+    <Loop name="L1000" max="999999" required="y">
+      <Segment name="AK2" max="1" required="n"/>
+      <Loop name="L1010" max="999999" required="n">
+        <Segment name="AK3" max="1" required="n"/>
+        <Segment name="AK4" max="99" required="n"/>
+      </Loop>
+      <Segment name="AK5" max="1" required="y"/>
+    </Loop>
+    <Segment name="AK9" max="1" required="y"/>
+    <Segment name="SE"  max="1" required="y"/>
+  </Loop>
+
+  <Table name="T143">
+    <Entry name="100" value="Insurance Plan Description"/>
+    <Entry name="101" value="Name and Address Lists"/>
+    <Entry name="102" value="Associated Data"/>
+    <Entry name="103" value="Abandoned Property Filings"/>
+    <Entry name="104" value="Air Shipment Information"/>
+    <Entry name="105" value="Business Entity Filings"/>
+    <Entry name="106" value="Motor Carrier Rate Proposal"/>
+    <Entry name="107" value="Request for Motor Carrier Rate Proposal"/>
+    <Entry name="108" value="Response to a Motor Carrier Rate Proposal"/>
+    <Entry name="109" value="Vessel Content Details"/>
+    <Entry name="110" value="Air Freight Details and Invoice"/>
+    <Entry name="111" value="Individual Insurance Policy and Client Information"/>
+    <Entry name="112" value="Property Damage Report"/>
+    <Entry name="113" value="Election Campaign and Lobbyist Reporting"/>
+    <Entry name="120" value="Vehicle Shipping Order"/>
+    <Entry name="121" value="Vehicle Service"/>
+    <Entry name="124" value="Vehicle Damage"/>
+    <Entry name="125" value="Multilevel Railcar Load Details"/>
+    <Entry name="126" value="Vehicle Application Advice"/>
+    <Entry name="127" value="Vehicle Baying Order"/>
+    <Entry name="128" value="Dealer Information"/>
+    <Entry name="129" value="Vehicle Carrier Rate Update"/>
+    <Entry name="130" value="Student Educational Record (Transcript)"/>
+    <Entry name="131" value="Student Educational Record (Transcript) Acknowledgment"/>
+    <Entry name="132" value="Human Resource Information"/>
+    <Entry name="133" value="Educational Institution Record"/>
+    <Entry name="135" value="Student Aid Origination Record"/>
+    <Entry name="138" value="Education Testing Results Request and Report"/>
+    <Entry name="139" value="Student Loan Guarantee Result"/>
+    <Entry name="140" value="Product Registration"/>
+    <Entry name="141" value="Product Service Claim Response"/>
+    <Entry name="142" value="Product Service Claim"/>
+    <Entry name="143" value="Product Service Notification"/>
+    <Entry name="144" value="Student Loan Transfer and Status Verification"/>
+    <Entry name="146" value="Request for Student Educational Record (Transcript)"/>
+    <Entry name="147" value="Response to Request for Student Educational Record (Transcript)"/>
+    <Entry name="148" value="Report of Injury, Illness or Incident"/>
+    <Entry name="149" value="Notice of Tax Adjustment or Assessment"/>
+    <Entry name="150" value="Tax Rate Notification"/>
+    <Entry name="151" value="Electronic Filing of Tax Return Data Acknowledgment"/>
+    <Entry name="152" value="Statistical Government Information"/>
+    <Entry name="153" value="Unemployment Insurance Tax Claim or Charge Information"/>
+    <Entry name="154" value="Secured Interest Filing"/>
+    <Entry name="155" value="Business Credit Report"/>
+    <Entry name="157" value="Notice of Power of Attorney"/>
+    <Entry name="159" value="Motion Picture Booking Confirmation"/>
+    <Entry name="160" value="Transportation Automatic Equipment Identification"/>
+    <Entry name="161" value="Train Sheet"/>
+    <Entry name="163" value="Transportation Appointment Schedule Information"/>
+    <Entry name="170" value="Revenue Receipts Statement"/>
+    <Entry name="175" value="Court and Law Enforcement Notice"/>
+    <Entry name="176" value="Court Submission"/>
+    <Entry name="179" value="Environmental Compliance Reporting"/>
+    <Entry name="180" value="Return Merchandise Authorization and Notification"/>
+    <Entry name="185" value="Royalty Regulatory Report"/>
+    <Entry name="186" value="Insurance Underwriting Requirements Reporting"/>
+    <Entry name="187" value="Premium Audit Request and Return"/>
+    <Entry name="188" value="Educational Course Inventory"/>
+    <Entry name="189" value="Application for Admission to Educational Institutions"/>
+    <Entry name="190" value="Student Enrollment Verification"/>
+    <Entry name="191" value="Student Loan Pre-Claims and Claims"/>
+    <Entry name="194" value="Grant or Assistance Application"/>
+    <Entry name="195" value="Federal Communications Commission (FCC) License Application"/>
+    <Entry name="196" value="Contractor Cost Data Reporting"/>
+    <Entry name="197" value="Real Estate Title Evidence"/>
+    <Entry name="198" value="Loan Verification Information"/>
+    <Entry name="199" value="Real Estate Settlement Information"/>
+    <Entry name="200" value="Mortgage Credit Report"/>
+    <Entry name="201" value="Residential Loan Application"/>
+    <Entry name="202" value="Secondary Mortgage Market Loan Delivery"/>
+    <Entry name="203" value="Secondary Mortgage Market Investor Report"/>
+    <Entry name="204" value="Motor Carrier Load Tender"/>
+    <Entry name="205" value="Mortgage Note"/>
+    <Entry name="206" value="Real Estate Inspection"/>
+    <Entry name="210" value="Motor Carrier Freight Details and Invoice"/>
+    <Entry name="211" value="Motor Carrier Bill of Lading"/>
+    <Entry name="212" value="Motor Carrier Delivery Trailer Manifest"/>
+    <Entry name="213" value="Motor Carrier Shipment Status Inquiry"/>
+    <Entry name="214" value="Transportation Carrier Shipment Status Message"/>
+    <Entry name="215" value="Motor Carrier Pick-up Manifest"/>
+    <Entry name="216" value="Motor Carrier Shipment Pick-up Notification"/>
+    <Entry name="217" value="Motor Carrier Loading and Route Guide"/>
+    <Entry name="218" value="Motor Carrier Tariff Information"/>
+    <Entry name="219" value="Logistics Service Request"/>
+    <Entry name="220" value="Logistics Service Response"/>
+    <Entry name="222" value="Cartage Work Assignment"/>
+    <Entry name="223" value="Consolidators Freight Bill and Invoice"/>
+    <Entry name="224" value="Motor Carrier Summary Freight Bill Manifest"/>
+    <Entry name="225" value="Response to a Cartage Work Assignment"/>
+    <Entry name="227" value="Trailer Usage Report"/>
+    <Entry name="240" value="Motor Carrier Package Status"/>
+    <Entry name="242" value="Data Status Tracking"/>
+    <Entry name="244" value="Product Source Information"/>
+    <Entry name="245" value="Real Estate Tax Service Response"/>
+    <Entry name="248" value="Account Assignment/Inquiry and Service/Status"/>
+    <Entry name="249" value="Animal Toxicological Data"/>
+    <Entry name="250" value="Purchase Order Shipment Management Document"/>
+    <Entry name="251" value="Pricing Support"/>
+    <Entry name="252" value="Insurance Producer Administration"/>
+    <Entry name="255" value="Underwriting Information Services"/>
+    <Entry name="256" value="Periodic Compensation"/>
+    <Entry name="260" value="Application for Mortgage Insurance Benefits"/>
+    <Entry name="261" value="Real Estate Information Request"/>
+    <Entry name="262" value="Real Estate Information Report"/>
+    <Entry name="263" value="Residential Mortgage Insurance Application Response"/>
+    <Entry name="264" value="Mortgage Loan Default Status"/>
+    <Entry name="265" value="Real Estate Title Insurance Services Order"/>
+    <Entry name="266" value="Mortgage or Property Record Change Notification"/>
+    <Entry name="267" value="Individual Life, Annuity and Disability Application"/>
+    <Entry name="268" value="Annuity Activity"/>
+    <Entry name="269" value="Health Care Benefit Coordination Verification"/>
+    <Entry name="270" value="Eligibility, Coverage or Benefit Inquiry"/>
+    <Entry name="271" value="Eligibility, Coverage or Benefit Information"/>
+    <Entry name="272" value="Property and Casualty Loss Notification"/>
+    <Entry name="273" value="Insurance/Annuity Application Status"/>
+    <Entry name="274" value="Healthcare Provider Information"/>
+    <Entry name="275" value="Patient Information"/>
+    <Entry name="276" value="Health Care Claim Status Request"/>
+    <Entry name="277" value="Health Care Claim Status Notification"/>
+    <Entry name="278" value="Health Care Services Review Information"/>
+    <Entry name="280" value="Voter Registration Information"/>
+    <Entry name="283" value="Tax or Fee Exemption Certification"/>
+    <Entry name="284" value="Commercial Vehicle Safety Reports"/>
+    <Entry name="285" value="Commercial Vehicle Safety and Credentials Information Exchange"/>
+    <Entry name="286" value="Commercial Vehicle Credentials"/>
+    <Entry name="288" value="Wage Determination"/>
+    <Entry name="290" value="Cooperative Advertising Agreements"/>
+    <Entry name="300" value="Reservation (Booking Request) (Ocean)"/>
+    <Entry name="301" value="Confirmation (Ocean)"/>
+    <Entry name="303" value="Booking Cancellation (Ocean)"/>
+    <Entry name="304" value="Shipping Instructions"/>
+    <Entry name="309" value="Customs Manifest"/>
+    <Entry name="310" value="Freight Receipt and Invoice (Ocean)"/>
+    <Entry name="311" value="Canadian Customs Information"/>
+    <Entry name="312" value="Arrival Notice (Ocean)"/>
+    <Entry name="313" value="Shipment Status Inquiry (Ocean)"/>
+    <Entry name="315" value="Status Details (Ocean)"/>
+    <Entry name="317" value="Delivery/Pickup Order"/>
+    <Entry name="319" value="Terminal Information"/>
+    <Entry name="322" value="Terminal Operations and Intermodal Ramp Activity"/>
+    <Entry name="323" value="Vessel Schedule and Itinerary (Ocean)"/>
+    <Entry name="324" value="Vessel Stow Plan (Ocean)"/>
+    <Entry name="325" value="Consolidation of Goods In Container"/>
+    <Entry name="326" value="Consignment Summary List"/>
+    <Entry name="350" value="Customs Status Information"/>
+    <Entry name="352" value="U.S. Customs Carrier General Order Status"/>
+    <Entry name="353" value="Customs Events Advisory Details"/>
+    <Entry name="354" value="U.S. Customs Automated Manifest Archive Status"/>
+    <Entry name="355" value="U.S. Customs Acceptance/Rejection"/>
+    <Entry name="356" value="U.S. Customs Permit to Transfer Request"/>
+    <Entry name="357" value="U.S. Customs In-Bond Information"/>
+    <Entry name="358" value="Customs Consist Information"/>
+    <Entry name="361" value="Carrier Interchange Agreement (Ocean)"/>
+    <Entry name="362" value="Cargo Insurance Advice of Shipment"/>
+    <Entry name="404" value="Rail Carrier Shipment Information"/>
+    <Entry name="410" value="Rail Carrier Freight Details and Invoice"/>
+    <Entry name="412" value="Trailer or Container Repair Billing"/>
+    <Entry name="414" value="Rail Carhire Settlements"/>
+    <Entry name="417" value="Rail Carrier Waybill Interchange"/>
+    <Entry name="418" value="Rail Advance Interchange Consist"/>
+    <Entry name="419" value="Advance Car Disposition"/>
+    <Entry name="420" value="Car Handling Information"/>
+    <Entry name="421" value="Estimated Time of Arrival and Car Scheduling"/>
+    <Entry name="422" value="Shipper's Car Order"/>
+    <Entry name="423" value="Rail Industrial Switch List"/>
+    <Entry name="425" value="Rail Waybill Request"/>
+    <Entry name="426" value="Rail Revenue Waybill"/>
+    <Entry name="429" value="Railroad Retirement Activity"/>
+    <Entry name="431" value="Railroad Station Master File"/>
+    <Entry name="432" value="Rail Deprescription"/>
+    <Entry name="433" value="Railroad Reciprocal Switch File"/>
+    <Entry name="434" value="Railroad Mark Register Update Activity"/>
+    <Entry name="435" value="Standard Transportation Commodity Code Master"/>
+    <Entry name="436" value="Locomotive Information"/>
+    <Entry name="437" value="Railroad Junctions and Interchanges Activity"/>
+    <Entry name="440" value="Shipment Weights"/>
+    <Entry name="451" value="Railroad Event Report"/>
+    <Entry name="452" value="Railroad Problem Log Inquiry or Advice"/>
+    <Entry name="453" value="Railroad Service Commitment Advice"/>
+    <Entry name="455" value="Railroad Parameter Trace Registration"/>
+    <Entry name="456" value="Railroad Equipment Inquiry or Advice"/>
+    <Entry name="460" value="Railroad Price Distribution Request or Response"/>
+    <Entry name="463" value="Rail Rate Reply"/>
+    <Entry name="466" value="Rate Request"/>
+    <Entry name="468" value="Rate Docket Journal Log"/>
+    <Entry name="470" value="Railroad Clearance"/>
+    <Entry name="475" value="Rail Route File Maintenance"/>
+    <Entry name="485" value="Ratemaking Action"/>
+    <Entry name="486" value="Rate Docket Expiration"/>
+    <Entry name="490" value="Rate Group Definition"/>
+    <Entry name="492" value="Miscellaneous Rates"/>
+    <Entry name="494" value="Scale Rate Table"/>
+    <Entry name="500" value="Medical Event Reporting"/>
+    <Entry name="501" value="Vendor Performance Review"/>
+    <Entry name="503" value="Pricing History"/>
+    <Entry name="504" value="Clauses and Provisions"/>
+    <Entry name="511" value="Requisition"/>
+    <Entry name="517" value="Material Obligation Validation"/>
+    <Entry name="521" value="Income or Asset Offset"/>
+    <Entry name="527" value="Material Due-In and Receipt"/>
+    <Entry name="536" value="Logistics Reassignment"/>
+    <Entry name="540" value="Notice of Employment Status"/>
+    <Entry name="561" value="Contract Abstract"/>
+    <Entry name="567" value="Contract Completion Status"/>
+    <Entry name="568" value="Contract Payment Management Report"/>
+    <Entry name="601" value="U.S. Customs Export Shipment Information"/>
+    <Entry name="602" value="Transportation Services Tender"/>
+    <Entry name="620" value="Excavation Communication"/>
+    <Entry name="625" value="Well Information"/>
+    <Entry name="650" value="Maintenance Service Order"/>
+    <Entry name="715" value="Intermodal Group Loading Plan"/>
+    <Entry name="753" value="Request for Routing Instructions"/>
+    <Entry name="754" value="Routing Instructions"/>
+    <Entry name="805" value="Contract Pricing Proposal"/>
+    <Entry name="806" value="Project Schedule Reporting"/>
+    <Entry name="810" value="Invoice"/>
+    <Entry name="811" value="Consolidated Service Invoice/Statement"/>
+    <Entry name="812" value="Credit/Debit Adjustment"/>
+    <Entry name="813" value="Electronic Filing of Tax Return Data"/>
+    <Entry name="814" value="General Request, Response or Confirmation"/>
+    <Entry name="815" value="Cryptographic Service Message"/>
+    <Entry name="816" value="Organizational Relationships"/>
+    <Entry name="818" value="Commission Sales Report"/>
+    <Entry name="819" value="Joint Interest Billing and Operating Expense Statement"/>
+    <Entry name="820" value="Payment Order/Remittance Advice"/>
+    <Entry name="821" value="Financial Information Reporting"/>
+    <Entry name="822" value="Account Analysis"/>
+    <Entry name="823" value="Lockbox"/>
+    <Entry name="824" value="Application Advice"/>
+    <Entry name="826" value="Tax Information Exchange"/>
+    <Entry name="827" value="Financial Return Notice"/>
+    <Entry name="828" value="Debit Authorization"/>
+    <Entry name="829" value="Payment Cancellation Request"/>
+    <Entry name="830" value="Planning Schedule with Release Capability"/>
+    <Entry name="831" value="Application Control Totals"/>
+    <Entry name="832" value="Price/Sales Catalog"/>
+    <Entry name="833" value="Mortgage Credit Report Order"/>
+    <Entry name="834" value="Benefit Enrollment and Maintenance"/>
+    <Entry name="835" value="Health Care Claim Payment/Advice"/>
+    <Entry name="836" value="Procurement Notices"/>
+    <Entry name="837" value="Health Care Claim"/>
+    <Entry name="838" value="Trading Partner Profile"/>
+    <Entry name="839" value="Project Cost Reporting"/>
+    <Entry name="840" value="Request for Quotation"/>
+    <Entry name="841" value="Specifications/Technical Information"/>
+    <Entry name="842" value="Nonconformance Report"/>
+    <Entry name="843" value="Response to Request for Quotation"/>
+    <Entry name="844" value="Product Transfer Account Adjustment"/>
+    <Entry name="845" value="Price Authorization Acknowledgment/Status"/>
+    <Entry name="846" value="Inventory Inquiry/Advice"/>
+    <Entry name="847" value="Material Claim"/>
+    <Entry name="848" value="Material Safety Data Sheet"/>
+    <Entry name="849" value="Response to Product Transfer Account Adjustment"/>
+    <Entry name="850" value="Purchase Order"/>
+    <Entry name="851" value="Asset Schedule"/>
+    <Entry name="852" value="Product Activity Data"/>
+    <Entry name="853" value="Routing and Carrier Instruction"/>
+    <Entry name="854" value="Shipment Delivery Discrepancy Information"/>
+    <Entry name="855" value="Purchase Order Acknowledgment"/>
+    <Entry name="856" value="Ship Notice/Manifest"/>
+    <Entry name="857" value="Shipment and Billing Notice"/>
+    <Entry name="858" value="Shipment Information"/>
+    <Entry name="859" value="Freight Invoice"/>
+    <Entry name="860" value="Purchase Order Change Request - Buyer Initiated"/>
+    <Entry name="861" value="Receiving Advice/Acceptance Certificate"/>
+    <Entry name="862" value="Shipping Schedule"/>
+    <Entry name="863" value="Report of Test Results"/>
+    <Entry name="864" value="Text Message"/>
+    <Entry name="865" value="Purchase Order Change Acknowledgment/Request - Seller Initiated"/>
+    <Entry name="866" value="Production Sequence"/>
+    <Entry name="867" value="Product Transfer and Resale Report"/>
+    <Entry name="868" value="Electronic Form Structure"/>
+    <Entry name="869" value="Order Status Inquiry"/>
+    <Entry name="870" value="Order Status Report"/>
+    <Entry name="871" value="Component Parts Content"/>
+    <Entry name="872" value="Residential Mortgage Insurance Application"/>
+    <Entry name="873" value="Commodity Movement Services"/>
+    <Entry name="874" value="Commodity Movement Services Response"/>
+    <Entry name="875" value="Grocery Products Purchase Order"/>
+    <Entry name="876" value="Grocery Products Purchase Order Change"/>
+    <Entry name="877" value="Manufacturer Coupon Family Code Structure"/>
+    <Entry name="878" value="Product Authorization/De-authorization"/>
+    <Entry name="879" value="Price Information"/>
+    <Entry name="880" value="Grocery Products Invoice"/>
+    <Entry name="881" value="Manufacturer Coupon Redemption Detail"/>
+    <Entry name="882" value="Direct Store Delivery Summary Information"/>
+    <Entry name="883" value="Market Development Fund Allocation"/>
+    <Entry name="884" value="Market Development Fund Settlement"/>
+    <Entry name="885" value="Retail Account Characteristics"/>
+    <Entry name="886" value="Customer Call Reporting"/>
+    <Entry name="887" value="Coupon Notification"/>
+    <Entry name="888" value="Item Maintenance"/>
+    <Entry name="889" value="Promotion Announcement"/>
+    <Entry name="891" value="Deduction Research Report"/>
+    <Entry name="893" value="Item Information Request"/>
+    <Entry name="894" value="Delivery/Return Base Record"/>
+    <Entry name="895" value="Delivery/Return Acknowledgment or Adjustment"/>
+    <Entry name="896" value="Product Dimension Maintenance"/>
+    <Entry name="920" value="Loss or Damage Claim - General Commodities"/>
+    <Entry name="924" value="Loss or Damage Claim - Motor Vehicle"/>
+    <Entry name="925" value="Claim Tracer"/>
+    <Entry name="926" value="Claim Status Report and Tracer Reply"/>
+    <Entry name="928" value="Automotive Inspection Detail"/>
+    <Entry name="940" value="Warehouse Shipping Order"/>
+    <Entry name="943" value="Warehouse Stock Transfer Shipment Advice"/>
+    <Entry name="944" value="Warehouse Stock Transfer Receipt Advice"/>
+    <Entry name="945" value="Warehouse Shipping Advice"/>
+    <Entry name="947" value="Warehouse Inventory Adjustment Advice"/>
+    <Entry name="980" value="Functional Group Totals"/>
+    <Entry name="990" value="Response to a Load Tender"/>
+    <Entry name="993" value="Secured Receipt/Acknowledgment"/>
+    <Entry name="996" value="File Transfer"/>
+    <Entry name="997" value="Functional Acknowledgment"/>
+    <Entry name="998" value="Set Cancellation"/>
+  </Table>
+
+  <Table name="T479">
+    <Entry name="AA" value="Account Analysis (822)"/>
+    <Entry name="AB" value="Logistics Service Request (219)"/>
+    <Entry name="AC" value="Associated Data (102)"/>
+    <Entry name="AD" value="Individual Life, Annuity and Disability Application (267)"/>
+    <Entry name="AE" value="Premium Audit Request and Return (187)"/>
+    <Entry name="AF" value="Application for Admission to Educational Institutions (189)"/>
+    <Entry name="AG" value="Application Advice (824)"/>
+    <Entry name="AH" value="Logistics Service Response (220)"/>
+    <Entry name="AI" value="Automotive Inspection Detail (928)"/>
+    <Entry name="AK" value="Student Educational Record (Transcript) Acknowledgment (131)"/>
+    <Entry name="AL" value="Set Cancellation (998) and Application Acceptance/Rejection Advice (499)"/>
+    <Entry name="AM" value="Item Information Request (893)"/>
+    <Entry name="AN" value="Return Merchandise Authorization and Notification (180)"/>
+    <Entry name="AO" value="Income or Asset Offset (521)"/>
+    <Entry name="AP" value="Abandoned Property Filings (103)"/>
+    <Entry name="AQ" value="U.S. Customs Manifest (309)"/>
+    <Entry name="AR" value="Warehouse Stock Transfer Shipment Advice (943)"/>
+    <Entry name="AS" value="Transportation Appointment Schedule Information (163)"/>
+    <Entry name="AT" value="Animal Toxicological Data (249)"/>
+    <Entry name="AU" value="U.S. Customs Status Information (350)"/>
+    <Entry name="AV" value="U.S. Customs Carrier General Order Status (352)"/>
+    <Entry name="AW" value="Warehouse Inventory Adjustment Advice (947)"/>
+    <Entry name="AX" value="U.S. Customs Events Advisory Details (353)"/>
+    <Entry name="AY" value="U.S. Customs Automated Manifest Archive Status (354)"/>
+    <Entry name="AZ" value="U.S. Customs Acceptance/Rejection (355)"/>
+    <Entry name="BA" value="U.S. Customs Permit to Transfer Request (356)"/>
+    <Entry name="BB" value="U.S. Customs In-Bond Information (357)"/>
+    <Entry name="BC" value="Business Credit Report (155)"/>
+    <Entry name="BD" value="U.S. Customs Consist Information (358)"/>
+    <Entry name="BE" value="Benefit Enrollment and Maintenance (834)"/>
+    <Entry name="BF" value="Business Entity Filings (105)"/>
+    <Entry name="BL" value="Motor Carrier Bill of Lading (211)"/>
+    <Entry name="BS" value="Shipment and Billing Notice (857)"/>
+    <Entry name="CA" value="Purchase Order Change Acknowledgment/Request - Seller Initiated (865)"/>
+    <Entry name="CB" value="Unemployment Insurance Tax Claim or Charge Information (153)"/>
+    <Entry name="CC" value="Clauses and Provisions (504)"/>
+    <Entry name="CD" value="Credit/Debit Adjustment (812)"/>
+    <Entry name="CE" value="Cartage Work Assignment (222)"/>
+    <Entry name="CF" value="Corporate Financial Adjustment Information (844 and 849)"/>
+    <Entry name="CH" value="Car Handling Information (420)"/>
+    <Entry name="CI" value="Consolidated Service Invoice/Statement (811)"/>
+    <Entry name="CJ" value="Manufacturer Coupon Family Code Structure (877)"/>
+    <Entry name="CK" value="Manufacturer Coupon Redemption Detail (881)"/>
+    <Entry name="CL" value="Election Campaign and Lobbyist Reporting (113)"/>
+    <Entry name="CM" value="Component Parts Content (871)"/>
+    <Entry name="CN" value="Coupon Notification (887)"/>
+    <Entry name="CO" value="Cooperative Advertising Agreements (290)"/>
+    <Entry name="CP" value="Electronic Proposal Information (251, 805)"/>
+    <Entry name="CQ" value="Commodity Movement Services Response (874)"/>
+    <Entry name="CR" value="Rail Carhire Settlements (414)"/>
+    <Entry name="CS" value="Cryptographic Service Message (815)"/>
+    <Entry name="CT" value="Application Control Totals (831)"/>
+    <Entry name="CU" value="Commodity Movement Services (873)"/>
+    <Entry name="CV" value="Commercial Vehicle Safety and Credentials Information Exchange (285)"/>
+    <Entry name="CW" value="Educational Institution Record (133)"/>
+    <Entry name="D3" value="Contract Completion Status (567)"/>
+    <Entry name="D4" value="Contract Abstract (561)"/>
+    <Entry name="D5" value="Contract Payment Management Report (568)"/>
+    <Entry name="DA" value="Debit Authorization (828)"/>
+    <Entry name="DD" value="Shipment Delivery Discrepancy Information (854)"/>
+    <Entry name="DF" value="Market Development Fund Allocation (883)"/>
+    <Entry name="DI" value="Dealer Information (128)"/>
+    <Entry name="DM" value="Shipper's Car Order (422)"/>
+    <Entry name="DS" value="Data Status Tracking (242)"/>
+    <Entry name="DX" value="Direct Exchange Delivery and Return Information (894, 895)"/>
+    <Entry name="EC" value="Educational Course Inventory (188)"/>
+    <Entry name="ED" value="Student Educational Record (Transcript) (130)"/>
+    <Entry name="EI" value="Railroad Equipment Inquiry or Advice (456)"/>
+    <Entry name="EP" value="Environmental Compliance Reporting (179)"/>
+    <Entry name="ER" value="Revenue Receipts Statement (170)"/>
+    <Entry name="ES" value="Notice of Employment Status (540)"/>
+    <Entry name="EV" value="Railroad Event Report (451)"/>
+    <Entry name="EX" value="Excavation Communication (620)"/>
+    <Entry name="FA" value="Functional Acknowledgment (997)"/>
+    <Entry name="FB" value="Freight Invoice (859)"/>
+    <Entry name="FC" value="Court and Law Enforcement Information (175, 176)"/>
+    <Entry name="FG" value="Motor Carrier Loading and Route Guide (217)"/>
+    <Entry name="FH" value="Motor Carrier Tariff Information (218)"/>
+    <Entry name="FR" value="Financial Reporting (821, 827)"/>
+    <Entry name="FT" value="File Transfer (996)"/>
+    <Entry name="GB" value="Average Agreement Demurrage (423)"/>
+    <Entry name="GC" value="Damage Claim Transaction Sets (920, 924, 925, 926)"/>
+    <Entry name="GE" value="General Request, Response or Confirmation (814)"/>
+    <Entry name="GF" value="Response to a Load Tender (990)"/>
+    <Entry name="GL" value="Intermodal Group Loading Plan (715)"/>
+    <Entry name="GP" value="Grocery Products Invoice (880)"/>
+    <Entry name="GR" value="Statistical Government Information (152)"/>
+    <Entry name="GT" value="Grant or Assistance Application (194)"/>
+    <Entry name="HB" value="Eligibility, Coverage or Benefit Information (271)"/>
+    <Entry name="HC" value="Health Care Claim (837)"/>
+    <Entry name="HI" value="Health Care Services Review Information (278)"/>
+    <Entry name="HN" value="Health Care Claim Status Notification (277)"/>
+    <Entry name="HP" value="Health Care Claim Payment/Advice (835)"/>
+    <Entry name="HR" value="Health Care Claim Status Request (276)"/>
+    <Entry name="HS" value="Eligibility, Coverage or Benefit Inquiry (270)"/>
+    <Entry name="HU" value="Human Resource Information (132)"/>
+    <Entry name="HV" value="Health Care Benefit Coordination Verification (269)"/>
+    <Entry name="IA" value="Air Freight Details and Invoice (110, 980)"/>
+    <Entry name="IB" value="Inventory Inquiry/Advice (846)"/>
+    <Entry name="IC" value="Rail Advance Interchange Consist (418)"/>
+    <Entry name="ID" value="Insurance/Annuity Application Status (273)"/>
+    <Entry name="IE" value="Insurance Producer Administration (252)"/>
+    <Entry name="IF" value="Individual Insurance Policy and Client Information (111)"/>
+    <Entry name="IG" value="Direct Store Delivery Summary Information (882)"/>
+    <Entry name="IH" value="Commercial Vehicle Safety Reports (284)"/>
+    <Entry name="IJ" value="Report of Injury, Illness or Incident (148)"/>
+    <Entry name="IM" value="Motor Carrier Freight Details and Invoice (210, 980)"/>
+    <Entry name="IN" value="Invoice Information (810)"/>
+    <Entry name="IO" value="Ocean Shipment Billing Details (310, 312, 980)"/>
+    <Entry name="IR" value="Rail Carrier Freight Details and Invoice (410, 980)"/>
+    <Entry name="IS" value="Estimated Time of Arrival and Car Scheduling (421)"/>
+    <Entry name="JB" value="Joint Interest Billing and Operating Expense Statement (819)"/>
+    <Entry name="KM" value="Commercial Vehicle Credentials (286)"/>
+    <Entry name="LA" value="Federal Communications Commission (FCC) License Application (195)"/>
+    <Entry name="LB" value="Lockbox (823)"/>
+    <Entry name="LI" value="Locomotive Information (436)"/>
+    <Entry name="LN" value="Property and Casualty Loss Notification (272)"/>
+    <Entry name="LR" value="Logistics Reassignment (536)"/>
+    <Entry name="LS" value="Asset Schedule (851)"/>
+    <Entry name="LT" value="Student Loan Transfer and Status Verification (144)"/>
+    <Entry name="MA" value="Motor Carrier Summary Freight Bill Manifest (224)"/>
+    <Entry name="MC" value="Request for Motor Carrier Rate Proposal (107)"/>
+    <Entry name="MD" value="Department of Defense Inventory Management (527)"/>
+    <Entry name="ME" value="Mortgage Origination (198, 200, 201, 245, 261, 262, 263, 833, 872)"/>
+    <Entry name="MF" value="Market Development Fund Settlement (884)"/>
+    <Entry name="MG" value="Mortgage Servicing Transaction Sets (203, 206, 260, 264, 266)"/>
+    <Entry name="MH" value="Motor Carrier Rate Proposal (106)"/>
+    <Entry name="MI" value="Motor Carrier Shipment Status Inquiry (213)"/>
+    <Entry name="MJ" value="Secondary Mortgage Market Loan Delivery (202)"/>
+    <Entry name="MK" value="Response to a Motor Carrier Rate Proposal (108)"/>
+    <Entry name="MM" value="Medical Event Reporting (500)"/>
+    <Entry name="MN" value="Mortgage Note (205)"/>
+    <Entry name="MO" value="Maintenance Service Order (650)"/>
+    <Entry name="MP" value="Motion Picture Booking Confirmation (159)"/>
+    <Entry name="MQ" value="Consolidators Freight Bill and Invoice (223)"/>
+    <Entry name="MR" value="Multilevel Railcar Load Details (125)"/>
+    <Entry name="MS" value="Material Safety Data Sheet (848)"/>
+    <Entry name="MT" value="Electronic Form Structure (868)"/>
+    <Entry name="MV" value="Material Obligation Validation (517)"/>
+    <Entry name="MW" value="Rail Waybill Response (427)"/>
+    <Entry name="MX" value="Material Claim (847)"/>
+    <Entry name="MY" value="Response to a Cartage Work Assignment (225)"/>
+    <Entry name="MZ" value="Motor Carrier Package Status (240)"/>
+    <Entry name="NC" value="Nonconformance Report (842)"/>
+    <Entry name="NL" value="Name and Address Lists (101)"/>
+    <Entry name="NP" value="Notice of Power of Attorney (157)"/>
+    <Entry name="NR" value="Secured Receipt or Acknowledgment (993)"/>
+    <Entry name="NT" value="Notice of Tax Adjustment or Assessment (149)"/>
+    <Entry name="OC" value="Cargo Insurance Advice of Shipment (362)"/>
+    <Entry name="OG" value="Order Group - Grocery (875, 876)"/>
+    <Entry name="OR" value="Organizational Relationships (816)"/>
+    <Entry name="OW" value="Warehouse Shipping Order (940)"/>
+    <Entry name="PA" value="Price Authorization Acknowledgment/Status (845)"/>
+    <Entry name="PB" value="Railroad Parameter Trace Registration (455)"/>
+    <Entry name="PC" value="Purchase Order Change Request - Buyer Initiated (860)"/>
+    <Entry name="PD" value="Product Activity Data (852)"/>
+    <Entry name="PE" value="Periodic Compensation (256)"/>
+    <Entry name="PF" value="Annuity Activity (268)"/>
+    <Entry name="PG" value="Insurance Plan Description (100)"/>
+    <Entry name="PH" value="Pricing History (503)"/>
+    <Entry name="PI" value="Patient Information (275)"/>
+    <Entry name="PJ" value="Project Schedule Reporting (806)"/>
+    <Entry name="PK" value="Project Cost Reporting (839) and Contractor Cost Data Reporting (196)"/>
+    <Entry name="PL" value="Railroad Problem Log Inquiry or Advice (452)"/>
+    <Entry name="PN" value="Product Source Information (244)"/>
+    <Entry name="PO" value="Purchase Order (850)"/>
+    <Entry name="PQ" value="Property Damage Report (112)"/>
+    <Entry name="PR" value="Purchase Order Acknowledgment (855)"/>
+    <Entry name="PS" value="Planning Schedule with Release Capability (830)"/>
+    <Entry name="PT" value="Product Transfer and Resale Report (867)"/>
+    <Entry name="PU" value="Motor Carrier Shipment Pick-up Notification (216)"/>
+    <Entry name="PV" value="Purchase Order Shipment Management Document (250)"/>
+    <Entry name="PW" value="Healthcare Provider Information (274)"/>
+    <Entry name="PY" value="Payment Cancellation Request (829)"/>
+    <Entry name="QG" value="Product Information (878, 879, 888, 889, 896)"/>
+    <Entry name="QM" value="Transportation Carrier Shipment Status Message (214)"/>
+    <Entry name="QO" value="Ocean Shipment Status Information (313, 315)"/>
+    <Entry name="RA" value="Payment Order/Remittance Advice (820)"/>
+    <Entry name="RB" value="Railroad Clearance (470)"/>
+    <Entry name="RC" value="Receiving Advice/Acceptance Certificate (861)"/>
+    <Entry name="RD" value="Royalty Regulatory Report (185)"/>
+    <Entry name="RE" value="Warehouse Stock Receipt Advice (944)"/>
+    <Entry name="RF" value="Request for Routing Instructions (753)"/>
+    <Entry name="RG" value="Routing Instructions (754)"/>
+    <Entry name="RH" value="Railroad Reciprocal Switch File (433)"/>
+    <Entry name="RI" value="Routing and Carrier Instruction (853)"/>
+    <Entry name="RJ" value="Railroad Mark Register Update Activity (434)"/>
+    <Entry name="RK" value="Standard Transportation Commodity Code Master (435)"/>
+    <Entry name="RL" value="Rail Industrial Switch List (423)"/>
+    <Entry name="RM" value="Railroad Station Master File (431)"/>
+    <Entry name="RN" value="Requisition Transaction (511)"/>
+    <Entry name="RO" value="Ocean Booking Information (300, 301, 303)"/>
+    <Entry name="RP" value="Commission Sales Report (818)"/>
+    <Entry name="RQ" value="Request for Quotation (840) and Procurement Notices (836)"/>
+    <Entry name="RR" value="Response to Request For Quotation (843)"/>
+    <Entry name="RS" value="Order Status Information (869, 870)"/>
+    <Entry name="RT" value="Report of Test Results (863)"/>
+    <Entry name="RU" value="Railroad Retirement Activity (429)"/>
+    <Entry name="RV" value="Railroad Junctions and Interchanges Activity (437)"/>
+    <Entry name="RW" value="Rail Revenue Waybill (426)"/>
+    <Entry name="RX" value="Rail Deprescription (432)"/>
+    <Entry name="RY" value="Request for Student Educational Record (Transcript) (146)"/>
+    <Entry name="RZ" value="Response to Request for Student Educational Record (Transcript) (147)"/>
+    <Entry name="SA" value="Air Shipment Information (104)"/>
+    <Entry name="SB" value="Switch Rails (424)"/>
+    <Entry name="SC" value="Price/Sales Catalog (832)"/>
+    <Entry name="SD" value="Student Loan Pre-Claims and Claims (191)"/>
+    <Entry name="SE" value="Shipper's Export Declaration (601)"/>
+    <Entry name="SG" value="SG Receiving Advice - Grocery (885)"/>
+    <Entry name="SH" value="Ship Notice/Manifest (856)"/>
+    <Entry name="SI" value="Shipment Information (858)"/>
+    <Entry name="SJ" value="Transportation Automatic Equipment Identification (160)"/>
+    <Entry name="SL" value="Student Aid Origination Record (135, 139)"/>
+    <Entry name="SM" value="Motor Carrier Load Tender (204)"/>
+    <Entry name="SN" value="Rail Route File Maintenance (475)"/>
+    <Entry name="SO" value="Ocean Shipment Information (304, 309, 311, 317, 319,  322, 323, 324, 325, 350, 352, 353, 354, 355, 356, 357, 358, 361)"/>
+    <Entry name="SP" value="Specifications/Technical Information (841)"/>
+    <Entry name="SQ" value="Production Sequence (866)"/>
+    <Entry name="SR" value="Rail Carrier Shipment Information (404, 419)"/>
+    <Entry name="SS" value="Shipping Schedule (862)"/>
+    <Entry name="ST" value="Railroad Service Commitment Advice (453)"/>
+    <Entry name="SU" value="Account Assignment/Inquiry and Service/Status (248)"/>
+    <Entry name="SV" value="Student Enrollment Verification (190)"/>
+    <Entry name="SW" value="Warehouse Shipping Advice (945)"/>
+    <Entry name="TA" value="Electronic Filing of Tax Return Data Acknowledgment (151)"/>
+    <Entry name="TB" value="Trailer or Container Repair Billing (412)"/>
+    <Entry name="TD" value="Trading Partner Profile (838)"/>
+    <Entry name="TE" value="Tax or Fee Exemption Certification (283)"/>
+    <Entry name="TF" value="Electronic Filing of Tax Return Data (813)"/>
+    <Entry name="TI" value="Tax Information Exchange (826)"/>
+    <Entry name="TM" value="Motor Carrier Delivery Trailer Manifest (212)"/>
+    <Entry name="TN" value="Tax Rate Notification (150)"/>
+    <Entry name="TO" value="Real Estate Title Services (197, 199, 265)"/>
+    <Entry name="TP" value="Rail Rate Transactions (460, 463, 466, 468, 485, 486, 490, 492, 494)"/>
+    <Entry name="TR" value="Train Sheet (161)"/>
+    <Entry name="TS" value="Transportation Services Tender (602)"/>
+    <Entry name="TT" value="Education Testing Results Request and Report (138)"/>
+    <Entry name="TU" value="Trailer Usage Report (227)"/>
+    <Entry name="TX" value="Text Message (864)"/>
+    <Entry name="UA" value="Retail Account Characteristics (885)"/>
+    <Entry name="UB" value="Customer Call Reporting (886)"/>
+    <Entry name="UC" value="Secured Interest Filing (154)"/>
+    <Entry name="UD" value="Deduction Research Report (891)"/>
+    <Entry name="UI" value="Underwriting Information Services (255)"/>
+    <Entry name="UP" value="Motor Carrier Pick-up Manifest (215)"/>
+    <Entry name="UW" value="Insurance Underwriting Requirements Reporting (186)"/>
+    <Entry name="VA" value="Vehicle Application Advice (126)"/>
+    <Entry name="VB" value="Vehicle Baying Order (127)"/>
+    <Entry name="VC" value="Vehicle Shipping Order (120)"/>
+    <Entry name="VD" value="Vehicle Damage (124)"/>
+    <Entry name="VE" value="Vessel Content Details (109)"/>
+    <Entry name="VH" value="Vehicle Carrier Rate Update (129)"/>
+    <Entry name="VI" value="Voter Registration Information (280)"/>
+    <Entry name="VS" value="Vehicle Service (121)"/>
+    <Entry name="WA" value="Product Service Transaction Sets (140, 141, 142, 143)"/>
+    <Entry name="WB" value="Rail Carrier Waybill Interchange (417)"/>
+    <Entry name="WG" value="Vendor Performance Review (501)"/>
+    <Entry name="WI" value="Wage Determination (288)"/>
+    <Entry name="WL" value="Well Information (625)"/>
+    <Entry name="WR" value="Shipment Weights (440)"/>
+    <Entry name="WT" value="Rail Waybill Request (425)"/>
+  </Table>
+
+  <Table name="T480">
+    <Entry name="001000" value="ASC X12 Standards Approved by ANSI in 1983"/>
+    <Entry name="002000" value="ASC X12 Standards Approved by ANSI in 1986"/>
+    <Entry name="002001" value="Draft Standards Approved by ASC X12 in November 1987"/>
+    <Entry name="002002" value="Draft Standards Approved by ASC X12 through February 1988"/>
+    <Entry name="002003" value="Draft Standards Approved by ASC X12 through August 1988"/>
+    <Entry name="002031" value="Draft Standards Approved by ASC X12 through February 1989"/>
+    <Entry name="002040" value="Draft Standards Approved by ASC X12 through May 1989"/>
+    <Entry name="002041" value="Draft Standards Approved by ASC X12 through October 1989"/>
+    <Entry name="002042" value="Draft Standards Approved by ASC X12 through February 1990"/>
+    <Entry name="003000" value="ASC X12 Standards Approved by ANSI in 1992"/>
+    <Entry name="003010" value="Draft Standards Approved by ASC X12 through June 1990"/>
+    <Entry name="003011" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1991"/>
+    <Entry name="003012" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1991"/>
+    <Entry name="003020" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1991"/>
+    <Entry name="003021" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1992"/>
+    <Entry name="003022" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1992"/>
+    <Entry name="003030" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1992"/>
+    <Entry name="003031" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1993"/>
+    <Entry name="003032" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1993"/>
+    <Entry name="003040" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1993"/>
+    <Entry name="003041" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1994"/>
+    <Entry name="003042" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1994"/>
+    <Entry name="003050" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1994"/>
+    <Entry name="003051" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1995"/>
+    <Entry name="003052" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1995"/>
+    <Entry name="003060" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1995"/>
+    <Entry name="003061" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1996"/>
+    <Entry name="003062" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1996"/>
+    <Entry name="003070" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1996"/>
+    <Entry name="003071" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1997"/>
+    <Entry name="003072" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1997"/>
+    <Entry name="004000" value="ASC X12 Standards Approved by ANSI in 1997"/>
+    <Entry name="004010" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1997"/>
+    <Entry name="004011" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 1998"/>
+    <Entry name="004012" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 1998"/>
+    <Entry name="004020" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1998"/>
+    <Entry name="004021" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 1999"/>
+    <Entry name="004022" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 1999"/>
+    <Entry name="004030" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1999"/>
+    <Entry name="004031" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 2000"/>
+    <Entry name="004032" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 2000"/>
+    <Entry name="004040" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 2000"/>
+    <Entry name="004041" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 2001"/>
+    <Entry name="004042" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 2001"/>
+    <Entry name="004050" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 2001"/>
+  </Table>
+
+  <Table name="T715">
+    <Entry name="A" value="Accepted"/>
+    <Entry name="E" value="Accepted, But Errors Were Noted."/>
+    <Entry name="M" value="Rejected, Message Authentication Code (MAC) Failed"/>
+    <Entry name="P" value="Partially Accepted, At Least One Transaction Set Was Rejected"/>
+    <Entry name="R" value="Rejected"/>
+    <Entry name="W" value="Rejected, Assurance Failed Validity Tests"/>
+    <Entry name="X" value="Rejected, Content After Decryption Could Not Be Analyzed"/>
+  </Table>
+
+  <Table name="T716">
+    <Entry name="1" value="Functional Group Not Supported"/>
+    <Entry name="2" value="Functional Group Version Not Supported"/>
+    <Entry name="3" value="Functional Group Trailer Missing"/>
+    <Entry name="4" value="Group Control Number in the Functional Group Header and Trailer Do Not Agree"/>
+    <Entry name="5" value="Number of Included Transaction Sets Does Not Match Actual Count"/>
+    <Entry name="6" value="Group Control Number Violates Syntax"/>
+    <Entry name="10" value="Authentication Key Name Unknown"/>
+    <Entry name="11" value="Encryption Key Name Unknown"/>
+    <Entry name="12" value="Requested Service (Authentication or Encryption) Not Available"/>
+    <Entry name="13" value="Unknown Security Recipient"/>
+    <Entry name="14" value="Unknown Security Originator"/>
+    <Entry name="15" value="Syntax Error in Decrypted Text"/>
+    <Entry name="16" value="Security Not Supported"/>
+    <Entry name="17" value="Incorrect Message Length (Encryption Only)"/>
+    <Entry name="18" value="Message Authentication Code Failed"/>
+    <Entry name="19" value="Functional Group Control Number not Unique within Interchange"/>
+    <Entry name="23" value="S3E Security End Segment Missing for S3S Security Start Segment"/>
+    <Entry name="24" value="S3S Security Start Segment Missing for S3E End Segment"/>
+    <Entry name="25" value="S4E Security End Segment Missing for S4S Security Start Segment"/>
+    <Entry name="26" value="S4S Security Start Segment Missing for S4E Security End Segment"/>
+  </Table>
+
+  <Table name="T720">
+    <Entry name="1" value="Unrecognized segment ID"/>
+    <Entry name="2" value="Unexpected segment"/>
+    <Entry name="3" value="Mandatory segment missing"/>
+    <Entry name="4" value="Loop Occurs Over Maximum Times"/>
+    <Entry name="5" value="Segment Exceeds Maximum Use"/>
+    <Entry name="6" value="Segment Not in Defined Transaction Set"/>
+    <Entry name="7" value="Segment Not in Proper Sequence"/>
+    <Entry name="8" value="Segment Has Data Element Errors"/>
+  </Table>
+
+  <Table name="T723">
+    <Entry name="1" value="Mandatory data element missing"/>
+    <Entry name="2" value="Conditional required data element missing."/>
+    <Entry name="3" value="Too many data elements."/>
+    <Entry name="4" value="Data element too short."/>
+    <Entry name="5" value="Data element too long."/>
+    <Entry name="6" value="Invalid character in data element."/>
+    <Entry name="7" value="Invalid code value."/>
+    <Entry name="8" value="Invalid Date"/>
+    <Entry name="9" value="Invalid Time"/>
+    <Entry name="10" value="Exclusion Condition Violated"/>
+    <Entry name="12" value="Too Many Repetitions"/>
+    <Entry name="13" value="Too Many Components"/>
+  </Table>
+
+  <Table name="T717">
+    <Entry name="A" value="Accepted"/>
+    <Entry name="E" value="Accepted But Errors Were Noted"/>
+    <Entry name="M" value="Rejected, Message Authentication Code (MAC) Failed"/>
+    <Entry name="R" value="Rejected"/>
+    <Entry name="W" value="Rejected, Assurance Failed Validity Tests"/>
+    <Entry name="X" value="Rejected, Content After Decryption Could Not Be Analyzed"/>
+  </Table>
+
+  <Table name="T718">
+    <Entry name="1" value="Transaction Set Not Supported"/>
+    <Entry name="2" value="Transaction Set Trailer Missing"/>
+    <Entry name="3" value="Transaction Set Control Number in Header and Trailer Do Not Match"/>
+    <Entry name="4" value="Number of Included Segments Does Not Match Actual Count"/>
+    <Entry name="5" value="One or More Segments in Error"/>
+    <Entry name="6" value="Missing or Invalid Transaction Set Identifier"/>
+    <Entry name="7" value="Missing or Invalid Transaction Set Control Number"/>
+    <Entry name="8" value="Authentication Key Name Unknown"/>
+    <Entry name="9" value="Encryption Key Name Unknown"/>
+    <Entry name="10" value="Requested Service (Authentication or Encrypted) Not Available"/>
+    <Entry name="11" value="Unknown Security Recipient"/>
+    <Entry name="12" value="Incorrect Message Length (Encryption Only)"/>
+    <Entry name="13" value="Message Authentication Code Failed"/>
+    <Entry name="15" value="Unknown Security Originator"/>
+    <Entry name="16" value="Syntax Error in Decrypted Text"/>
+    <Entry name="17" value="Security Not Supported"/>
+    <Entry name="18" value="Transaction Set not in Functional Group"/>
+    <Entry name="19" value="Invalid Transaction Set Implementation Convention Reference"/>
+    <Entry name="23" value="Transaction Set Control Number Not Unique within the Functional Group"/>
+    <Entry name="24" value="S3E Security End Segment Missing for S3S Security Start Segment"/>
+    <Entry name="25" value="S3S Security Start Segment Missing for S3E Security End Segment"/>
+    <Entry name="26" value="S4E Security End Segment Missing for S4S Security Start Segment"/>
+    <Entry name="27" value="S4S Security Start Segment Missing for S4E Security End Segment"/>
+  </Table>
+</Definition>

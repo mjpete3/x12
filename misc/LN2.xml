@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LN2.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LN2" comment="To provide specific information about a real estate loan">
+  <Field name="LienPriorityCode" min="1" max="1" validation="T1101" comment="Code identifying the rights and relationship of a loan to any other loan secured by the same property"/>
+  <Field name="RealEstateLoanTypeCode" min="1" max="1" validation="T1093" comment="Code identifying the loan product category"/>
+  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="FrequencyCode" required="y" min="1" max="1" validation="T594" comment="Code indicating frequency or type of activities or actions being reported"/>
+  <Field name="LoanPaymentTypeCode" required="y" min="2" max="2" validation="T1085" comment="Code identifying the nature of loan payment"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="AssumptionTermsCode" required="y" min="1" max="1" validation="T1080" comment="Code indicating the terms for loan assumption"/>
+  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="ReferenceIdentifier" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+  <Field name="QuantityQualifier" required="y" min="2" max="2" validation="T673" comment="Code specifying the type of quantity"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+</Segment>

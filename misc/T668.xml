@@ -1,0 +1,53 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T668.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T668">
+  <Entry name="AA" value="Item Accepted - Order Forwarded to Alternate Supplier Location"/>
+  <Entry name="AC" value="Item Accepted and Shipped"/>
+  <Entry name="AR" value="Item Accepted and Released for Shipment"/>
+  <Entry name="BP" value="Item Accepted - Partial Shipment, Balance Backordered"/>
+  <Entry name="DR" value="Item Accepted - Date Rescheduled"/>
+  <Entry name="IA" value="Item Accepted"/>
+  <Entry name="IB" value="Item Backordered"/>
+  <Entry name="IC" value="Item Accepted - Changes Made"/>
+  <Entry name="ID" value="Item Deleted"/>
+  <Entry name="IE" value="Item Accepted, Price Pending"/>
+  <Entry name="IF" value="Item on Hold, Incomplete Description"/>
+  <Entry name="IH" value="Item on Hold"/>
+  <Entry name="IP" value="Item Accepted - Price Changed"/>
+  <Entry name="IQ" value="Item Accepted - Quantity Changed"/>
+  <Entry name="IR" value="Item Rejected"/>
+  <Entry name="IS" value="Item Accepted - Substitution Made"/>
+  <Entry name="IW" value="Item on Hold-Waiver Required"/>
+  <Entry name="R1" value="Item Rejected, Not a Contract Item"/>
+  <Entry name="R2" value="Item Rejected, Invalid Item Product Number"/>
+  <Entry name="R3" value="Item Rejected, Invalid Unit of Issue"/>
+  <Entry name="R4" value="Item Rejected, Contract Item not Available"/>
+  <Entry name="R5" value="Item Rejected, Reorder Item as a Just in Time (JIT) Order"/>
+  <Entry name="R6" value="Item Rejected, Reorder Item as an Extended Delivery Order (EDO)"/>
+  <Entry name="R7" value="Item Rejected, Reorder Item as a Drop Shipment"/>
+  <Entry name="R8" value="Item Rejected, Reorder Item as a Surge Order"/>
+  <Entry name="SP" value="Item Accepted - Schedule Date Pending"/>
+</Table>

@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: NA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="NA" comment="To cross-reference additional equipment to a primary piece of equipment">
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="EquipmentInitial" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="CrossReferenceTypeCode" required="y" min="1" max="1" validation="T231" comment="Code defining relationship of equipment to equipment cross-referenced"/>
+  <Field name="Position" required="y" min="1" max="3" comment="Relative position of shipment in car, trailer, or container (mutually defined)"/>
+  <Field name="StandardCarrierAlphaCode1" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="EquipmentLength" type="long" required="y" min="4" max="5" comment="Length (in feet and inches) of equipment ordered or used to transport shipment (The format is FFFII where FFF is feet and II is inches; the range for II is 00 through 11)"/>
+  <Field name="StandardCarrierAlphaCode2" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="ChassisType" required="y" min="2" max="2" validation="T845" comment="Code identifying type of chassis"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="EquipmentNumberCheckDigit" type="long" required="y" min="1" max="1" comment="Number which designates the check digit applied to a piece of equipment"/>
+</Segment>

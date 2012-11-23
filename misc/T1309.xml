@@ -1,0 +1,144 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1309.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1309">
+  <Entry name="01" value="Government Property Required"/>
+  <Entry name="02" value="Government Property Not Required"/>
+  <Entry name="03" value="Contract Financing Required"/>
+  <Entry name="04" value="Contract Financing Not Required"/>
+  <Entry name="05" value="Awarded Contract for the Same or Similar Items"/>
+  <Entry name="06" value="Not Awarded Contract for the Same or Similar Items"/>
+  <Entry name="07" value="Proposal Consistent with Established Practices, Procedures, and Principles"/>
+  <Entry name="08" value="Proposal Not Consistent with Established Practices, Procedures, and Principles"/>
+  <Entry name="09" value="Contract Subject to Cost Accounting Standards Board (CASB) Regulations"/>
+  <Entry name="10" value="Contract Not Subject to Cost Accounting Standards Board (CASB) Regulations"/>
+  <Entry name="11" value="Adequate Cost Accounting Standards Board (CASB) Disclosure Statement Submitted"/>
+  <Entry name="12" value="Inadequate Cost Accounting Standards Board (CASB) Disclosure Statement Determined"/>
+  <Entry name="13" value="Cost Accounting Standards Board (CASB) Disclosure Statement Not Submitted"/>
+  <Entry name="14" value="Notified of Actual or Potential Disclosure Statement or Cost Accounting Standards Board (CASB) Noncompliance"/>
+  <Entry name="15" value="Not Notified of Actual or Potential Disclosure Statement or Cost Accounting Standards Board (CASB) Noncompliance"/>
+  <Entry name="16" value="Proposal Consistent with Disclosed Practices or Standards"/>
+  <Entry name="17" value="Proposal Not Consistent With Disclosed Practices or Standards"/>
+  <Entry name="18" value="Access to Communications Security Information Required"/>
+  <Entry name="19" value="Access to Communication Security Information Not Required"/>
+  <Entry name="20" value="Access to Restricted Data Required"/>
+  <Entry name="21" value="Access to Restricted Data Not Required"/>
+  <Entry name="22" value="Access to Critical Nuclear Weapon Design Information Required"/>
+  <Entry name="23" value="Access to Critical Nuclear Weapon Design Information Not Required"/>
+  <Entry name="24" value="Access to Formerly Restricted Data Required"/>
+  <Entry name="25" value="Access to Formerly Restricted Data Not Required"/>
+  <Entry name="26" value="Access to Sensitive Compartmented Information Required"/>
+  <Entry name="27" value="Access to Sensitive Compartmented Information Not Required"/>
+  <Entry name="28" value="Access to Non-sensitive Compartmented Information Required"/>
+  <Entry name="29" value="Access to Non-sensitive Compartmented Information Not Required"/>
+  <Entry name="30" value="Access to Special Access Information Required"/>
+  <Entry name="31" value="Access to Special Access Information Not Required"/>
+  <Entry name="32" value="Access to North Atlantic Treaty Organization Information Required"/>
+  <Entry name="33" value="Access to North Atlantic Treaty Organization Information Not Required"/>
+  <Entry name="34" value="Access to Foreign Government Information Required"/>
+  <Entry name="35" value="Access to Foreign Government Information Not Required"/>
+  <Entry name="36" value="Access to Limited Dissemination Information Required"/>
+  <Entry name="37" value="Access to Limited Dissemination Information Not Required"/>
+  <Entry name="38" value="Access to For Official Use Only Information Required"/>
+  <Entry name="39" value="Access to For Official Use Only Information Not Required"/>
+  <Entry name="40" value="Access to Other Type of Information Required"/>
+  <Entry name="41" value="Access to Other Type of Information Not Required"/>
+  <Entry name="42" value="Contractor Will Have Access to United States Classified Information at another Contractor's Facility or a Government Activity"/>
+  <Entry name="43" value="Contractor Will Not Have Access to United States Classified Information at another Contractor's Facility or a Government Activity"/>
+  <Entry name="44" value="Contractor Will Receive Classified Documents Only"/>
+  <Entry name="45" value="Contractor Will Not Receive Classified Documents Only"/>
+  <Entry name="46" value="Contractor Will Receive or Generate Classified Material"/>
+  <Entry name="47" value="Contractor Will Not Receive or Generate Classified Material"/>
+  <Entry name="48" value="Contractor Will Fabricate, Modify, or Store Classified Hardware"/>
+  <Entry name="49" value="Contractor Will Not Fabricate, Modify, or Store Classified Hardware"/>
+  <Entry name="50" value="Contractor Will Perform Services Only"/>
+  <Entry name="51" value="Contractor Will Not Perform Services Only"/>
+  <Entry name="52" value="Contractor Will Have Access to United States Classified Information outside the United States, Puerto Rico, United States Possessions and Trust Territories"/>
+  <Entry name="53" value="Contractor Will Not Have Access to United States Classified Information outside the United States, Puerto Rico, United States Possessions and Trust Territories"/>
+  <Entry name="54" value="Contractor Will Be Authorized to use the Services of Defense Technical Information Center or other Secondary Distribution Center"/>
+  <Entry name="55" value="Contractor Will Not Be Authorized to use the Services of Defense Technical Information Center or other Secondary Distribution Center"/>
+  <Entry name="56" value="Contractor Will Require a Communications Security Account"/>
+  <Entry name="57" value="Contractor Will Not Require a Communications Security Account"/>
+  <Entry name="58" value="Contractor Will Have Tempest Requirements"/>
+  <Entry name="59" value="Contractor Will Not Have Tempest Requirements"/>
+  <Entry name="60" value="Contractor Will Have Operations Security Requirements"/>
+  <Entry name="61" value="Contractor Will Not Have Operations Security Requirements"/>
+  <Entry name="62" value="Contractor Will Be Authorized to use the Defense Courier Service"/>
+  <Entry name="63" value="Contractor Will Not Be Authorized to use the Defense Courier Service"/>
+  <Entry name="64" value="Contractor Will Have some other Authorization in the Performance of the Contract"/>
+  <Entry name="65" value="Contractor Will Not Have some other Authorization in the Performance of the Contract"/>
+  <Entry name="66" value="Facility Clearance Required"/>
+  <Entry name="67" value="Facility Clearance Not Required"/>
+  <Entry name="68" value="Follow-on Contract"/>
+  <Entry name="69" value="Not a Follow-on Contract"/>
+  <Entry name="70" value="Final Contract Security Classification Specification"/>
+  <Entry name="71" value="Not a Final Contract Security Classification Specification"/>
+  <Entry name="72" value="Direct Public Release Authorized"/>
+  <Entry name="73" value="Direct Public Release Not Authorized"/>
+  <Entry name="74" value="Additional Materials being Forwarded"/>
+  <Entry name="75" value="No Additional Materials being Forwarded"/>
+  <Entry name="76" value="Additional Requirements Established"/>
+  <Entry name="77" value="Additional Requirements Not Established"/>
+  <Entry name="78" value="Elements of the Contract are outside the Inspection Responsibility of the Cognizant Security Office"/>
+  <Entry name="79" value="No Element of the Contract Is Outside the Inspection Responsibility of the Cognizant Security Office"/>
+  <Entry name="80" value="Contractor Distribution Required"/>
+  <Entry name="81" value="Contractor Distribution Not Required"/>
+  <Entry name="82" value="Subcontractor Distribution Required"/>
+  <Entry name="83" value="Subcontractor Distribution Not Required"/>
+  <Entry name="84" value="Cognizant Security Office for Prime and Subcontractor Distribution Required"/>
+  <Entry name="85" value="Cognizant Security Office for Prime and Subcontractor Distribution Not Required"/>
+  <Entry name="86" value="United States Activity Responsible for Overseas Security Administration Distribution Required"/>
+  <Entry name="87" value="United States Activity Responsible for Overseas Security Administration Distribution Not Required"/>
+  <Entry name="88" value="Administrative Contracting Office Distribution Required"/>
+  <Entry name="89" value="Administrative Contracting Office Distribution Not Required"/>
+  <Entry name="90" value="Other Distribution Required"/>
+  <Entry name="91" value="Other Distribution Not Required"/>
+  <Entry name="K1" value="Subcontract Costs"/>
+  <Entry name="K2" value="Inter-Division Transfer"/>
+  <Entry name="K3" value="Profit/Fee"/>
+  <Entry name="K4" value="Labor History"/>
+  <Entry name="K5" value="Bill of Materials and Purchase History"/>
+  <Entry name="K6" value="Other Unlisted Proposal Type"/>
+  <Entry name="KH" value="General and Administrative Expenses (G&amp;A)"/>
+  <Entry name="KI" value="Overhead Expenses"/>
+  <Entry name="KJ" value="Intermediate Expense Pool Allocation"/>
+  <Entry name="KK" value="Bases Used to Allocate Indirect Expense"/>
+  <Entry name="KL" value="Claimed Rates for Each Expense Pool"/>
+  <Entry name="KM" value="Facilities Capital Cost of Money Factors Computation"/>
+  <Entry name="KN" value="Reconciliation of Books of Account and Claimed Direct Cost-Incurred Costs"/>
+  <Entry name="KO" value="Contract Direct Costs Claimed and Not Claimed, IR&amp;D/B&amp;P Direct Costs Incurred (Overhead, G&amp;A and Cost of Money Applied at Claimed Rates)-Incurred Costs"/>
+  <Entry name="KP" value="Government Participation in Indirect Expense Pools-Incurred Costs"/>
+  <Entry name="KQ" value="Reconciliation of Claimed G&amp;A Pool to G&amp;A Claimed on Contracts-Incurred Costs"/>
+  <Entry name="KR" value="Schedule of Cumulative Direct and Indirect Costs Claimed and Billed-Incurred Costs"/>
+  <Entry name="KS" value="Computation of Allowable IR&amp;D/B&amp;P Costs-Incurred Costs"/>
+  <Entry name="KT" value="Summary of Hours and Amounts on T&amp;M/Labor Hour Contracts-Incurred Costs"/>
+  <Entry name="KU" value="Reconciliation of Total Payroll to Total Labor Distributed-Incurred Costs"/>
+  <Entry name="KV" value="Listing of Decisions/Agreements/Approvals and Description of Accounting/Organization Changes"/>
+  <Entry name="KW" value="Indirect Costs Certification"/>
+  <Entry name="KX" value="Direct Labor"/>
+  <Entry name="KY" value="Other Direct Costs"/>
+  <Entry name="KZ" value="Direct Material"/>
+  <Entry name="L2" value="Other Unlisted Type of Proposal"/>
+</Table>

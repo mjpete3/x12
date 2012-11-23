@@ -1,0 +1,49 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CDA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CDA" comment="To provide duration, amount and associated information on consumer credit accounts">
+  <Field name="AccountNumber" required="y" min="1" max="35" comment="Account number assigned"/>
+  <Field name="MonetaryAmount1" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="MonetaryAmount2" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="MonetaryAmount3" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="MonetaryAmount4" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="TypeOfAccountCode" required="y" min="2" max="2" validation="T1187" comment="Code defining the type of ownership"/>
+  <Field name="TypeOfCreditAccountCode" required="y" min="1" max="1" validation="T1189" comment="Code defining the type of credit account"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod1" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="DateTimePeriod2" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="DateTimePeriod3" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="DateTimePeriod4" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="DateTimePeriod5" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="ReferenceIdentification1" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="LoanTypeCode" required="y" min="1" max="2" validation="T1262" comment="This code identifies the loan program or type"/>
+  <Field name="FrequencyCode" required="y" min="1" max="1" validation="T594" comment="Code indicating frequency or type of activities or actions being reported"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="MaintenanceTypeCode" required="y" min="3" max="3" validation="T875" comment="Code identifying the specific type of item maintenance"/>
+  <Field name="StatusCode" required="y" min="2" max="2" validation="T546" comment="Code identifying the status of a business transaction, such as a claim, policy, real estate, or securities transaction"/>
+</Segment>

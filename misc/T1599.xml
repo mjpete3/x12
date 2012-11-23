@@ -1,0 +1,151 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1599.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1599">
+  <Entry name="A1" value="Aerial Application"/>
+  <Entry name="A2" value="Aerial Application Converted"/>
+  <Entry name="A3" value="Air Taxi"/>
+  <Entry name="A4" value="Airplane"/>
+  <Entry name="A5" value="Airship"/>
+  <Entry name="A6" value="All Cargo Carrier"/>
+  <Entry name="A7" value="Anti-submarine"/>
+  <Entry name="A8" value="Attack Aircraft"/>
+  <Entry name="A9" value="Alcohol Fuel Dragster"/>
+  <Entry name="AA" value="Alcohol Funny Car"/>
+  <Entry name="AB" value="Acrobatic"/>
+  <Entry name="B1" value="Bomber"/>
+  <Entry name="B2" value="B Fuel Dragster"/>
+  <Entry name="B3" value="Baby Grand Stock Car"/>
+  <Entry name="B4" value="Boat"/>
+  <Entry name="B5" value="Banner Towing"/>
+  <Entry name="B6" value="Bush Flying"/>
+  <Entry name="C1" value="Certified Route Air Carrier (Passenger &amp; Cargo)"/>
+  <Entry name="C2" value="Commuter Air Carrier"/>
+  <Entry name="C3" value="Corporate or Executive Aircraft"/>
+  <Entry name="C4" value="Crop Duster"/>
+  <Entry name="C5" value="Cargo or Transport Aircraft"/>
+  <Entry name="C6" value="Cold Weather Aircraft"/>
+  <Entry name="C7" value="Car"/>
+  <Entry name="C8" value="Canoe"/>
+  <Entry name="C9" value="Cartography"/>
+  <Entry name="D1" value="Dirt Car"/>
+  <Entry name="D2" value="Double-A Alcohol Dragster"/>
+  <Entry name="D3" value="Double-A Altered Dragster"/>
+  <Entry name="D4" value="Double-A Gas Dragster"/>
+  <Entry name="D5" value="Double-B Funny Car"/>
+  <Entry name="D6" value="Dragster"/>
+  <Entry name="D7" value="Dune Buggy"/>
+  <Entry name="D8" value="Demolition Derby"/>
+  <Entry name="E1" value="Experimental Aircraft"/>
+  <Entry name="E2" value="Early Warning or Electronic Aircraft"/>
+  <Entry name="F1" value="Free Balloon"/>
+  <Entry name="F2" value="Fighter Aircraft"/>
+  <Entry name="F3" value="Formula 400 Auto"/>
+  <Entry name="F4" value="Formula Atlantic Auto"/>
+  <Entry name="F5" value="Formula Continental Auto"/>
+  <Entry name="F6" value="Formula Ford Auto"/>
+  <Entry name="F7" value="Formula One Auto"/>
+  <Entry name="F8" value="Formula Super Vee Auto"/>
+  <Entry name="F9" value="Flat Bottom Boat"/>
+  <Entry name="FA" value="Fire Fighting"/>
+  <Entry name="FB" value="Float Plane"/>
+  <Entry name="G1" value="Glider"/>
+  <Entry name="G2" value="Gyrocopter"/>
+  <Entry name="G3" value="Gyroplane"/>
+  <Entry name="G4" value="Go-cart"/>
+  <Entry name="G5" value="Grand American Stock Car"/>
+  <Entry name="H1" value="Helicopter"/>
+  <Entry name="H2" value="High Performance Aircraft"/>
+  <Entry name="H3" value="Home Built Aircraft"/>
+  <Entry name="H4" value="Hot Air Balloon"/>
+  <Entry name="H5" value="Hobby Stock Car"/>
+  <Entry name="H6" value="Hydroplane"/>
+  <Entry name="I1" value="Indy Car (Turbo-Charged Engine)"/>
+  <Entry name="I2" value="Ice Boat"/>
+  <Entry name="I3" value="Inboard Boat"/>
+  <Entry name="J1" value="Jet Aircraft"/>
+  <Entry name="J2" value="Jalopy Stock Car"/>
+  <Entry name="J3" value="Jet Car"/>
+  <Entry name="J4" value="Jet Boat"/>
+  <Entry name="K1" value="Kayak"/>
+  <Entry name="L1" value="Lighter-than-air Balloon"/>
+  <Entry name="L2" value="Late Model Sportsman Car"/>
+  <Entry name="L3" value="Late Model Stock Car"/>
+  <Entry name="L4" value="Limited Sportsman Stock Car"/>
+  <Entry name="M1" value="Multiengine Land Aircraft"/>
+  <Entry name="M2" value="Multiengine Sea Aircraft"/>
+  <Entry name="M3" value="Missile Carrier Aircraft"/>
+  <Entry name="M4" value="Midget Car"/>
+  <Entry name="M5" value="Mini-stock Car"/>
+  <Entry name="M6" value="Modified Gas Coupe or Sedan"/>
+  <Entry name="M7" value="Modified Stock Car"/>
+  <Entry name="M8" value="Mini-boat"/>
+  <Entry name="M9" value="Modified Outboard Boat"/>
+  <Entry name="MA" value="Modified Motorcycle"/>
+  <Entry name="MB" value="Motorcycle"/>
+  <Entry name="MC" value="Mod-stock Snowmobile"/>
+  <Entry name="MD" value="Modified Snowmobile"/>
+  <Entry name="O1" value="Observation Aircraft"/>
+  <Entry name="O2" value="Off Road Vehicle"/>
+  <Entry name="O3" value="Outboard Boat"/>
+  <Entry name="O4" value="Open Modified Snowmobile"/>
+  <Entry name="P1" value="Paraplane"/>
+  <Entry name="P2" value="Plane"/>
+  <Entry name="P3" value="Prototype Aircraft"/>
+  <Entry name="P4" value="Patrol Aircraft"/>
+  <Entry name="P5" value="Drone Controller or Director Aircraft"/>
+  <Entry name="P6" value="Professional Outboard Boat"/>
+  <Entry name="R1" value="Radio Controlled Aircraft"/>
+  <Entry name="R2" value="Reconnaissance Aircraft"/>
+  <Entry name="R3" value="Runabout Boat"/>
+  <Entry name="S1" value="Single Engine Land Aircraft"/>
+  <Entry name="S2" value="Single Engine Sea Aircraft"/>
+  <Entry name="S3" value="Supplemental Air Carrier"/>
+  <Entry name="S4" value="Search and Rescue Aircraft"/>
+  <Entry name="S5" value="Sand Buggy"/>
+  <Entry name="S6" value="Sling-shot Dragster"/>
+  <Entry name="S7" value="Sports Car"/>
+  <Entry name="S8" value="Sprint Car"/>
+  <Entry name="S9" value="Stock Car"/>
+  <Entry name="SA" value="Street Stock Car"/>
+  <Entry name="SB" value="Super Stock Car"/>
+  <Entry name="SC" value="Super-charged Gas-burning Coupe or Sedan"/>
+  <Entry name="SD" value="Stock Division Motorcycle"/>
+  <Entry name="SE" value="Snowmobile"/>
+  <Entry name="SF" value="Stock Snowmobile"/>
+  <Entry name="SG" value="Stunt"/>
+  <Entry name="T1" value="Twin Engine Aircraft"/>
+  <Entry name="T2" value="Tanker Aircraft"/>
+  <Entry name="T3" value="Trainer Aircraft"/>
+  <Entry name="T4" value="Tunnel Boat"/>
+  <Entry name="U1" value="Ultralight Aircraft"/>
+  <Entry name="U2" value="Utility Aircraft"/>
+  <Entry name="U3" value="Unsuper-charged Gas-burning Altered Dragster"/>
+  <Entry name="U4" value="Unsuper-charged Gas-burning Dragster"/>
+  <Entry name="V1" value="Vintage Aircraft"/>
+  <Entry name="V2" value="Vertical Takeoff Aircraft"/>
+  <Entry name="V3" value="Vee-bottom Boat"/>
+  <Entry name="W1" value="Weather Aircraft"/>
+</Table>

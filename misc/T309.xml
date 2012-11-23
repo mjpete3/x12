@@ -1,0 +1,209 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T309.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T309">
+  <Entry name="A" value="Jurisdiction to Receive Credit for Uniform Commercial Code Filing"/>
+  <Entry name="B" value="Transmitting Utility"/>
+  <Entry name="C" value="Consignor"/>
+  <Entry name="D" value="Census Schedule D"/>
+  <Entry name="E" value="Uniform Commercial Code Filing Office"/>
+  <Entry name="F" value="Current Address"/>
+  <Entry name="G" value="Census Block Group"/>
+  <Entry name="H" value="Home Address"/>
+  <Entry name="I" value="Home Base Address"/>
+  <Entry name="J" value="Census Tract"/>
+  <Entry name="K" value="Census Schedule K"/>
+  <Entry name="L" value="Local Address"/>
+  <Entry name="M" value="Mailing Address"/>
+  <Entry name="O" value="Office Address"/>
+  <Entry name="P" value="Permanent Address"/>
+  <Entry name="Q" value="Birthplace"/>
+  <Entry name="W" value="Worldwide Geographic Location Code"/>
+  <Entry name="10" value="Nearest Cross Street"/>
+  <Entry name="11" value="Secondary Cross Street"/>
+  <Entry name="12" value="Range"/>
+  <Entry name="13" value="Section"/>
+  <Entry name="14" value="Quarter Section"/>
+  <Entry name="18" value="Marker Identifier Location"/>
+  <Entry name="19" value="Route"/>
+  <Entry name="20" value="Route Subdivision"/>
+  <Entry name="21" value="Grid Location"/>
+  <Entry name="22" value="Page"/>
+  <Entry name="27" value="Marker Type"/>
+  <Entry name="28" value="Latitude-Longitude Source"/>
+  <Entry name="29" value="Map Source"/>
+  <Entry name="30" value="Map Reference"/>
+  <Entry name="31" value="Grid Source"/>
+  <Entry name="32" value="Aliquot"/>
+  <Entry name="33" value="Block"/>
+  <Entry name="34" value="District"/>
+  <Entry name="35" value="Drainhole Number"/>
+  <Entry name="36" value="City Block"/>
+  <Entry name="38" value="Footage Call Direction"/>
+  <Entry name="39" value="Location Direction"/>
+  <Entry name="40" value="Outer Continental Lease Location"/>
+  <Entry name="41" value="Lot"/>
+  <Entry name="42" value="Map Quadrangle"/>
+  <Entry name="43" value="Principal Meridian"/>
+  <Entry name="44" value="Outer Continental Shelf Area"/>
+  <Entry name="45" value="Outer Continental Shelf Block"/>
+  <Entry name="46" value="Official Protraction Diagram"/>
+  <Entry name="47" value="Quarter Quarter Quarter Section"/>
+  <Entry name="48" value="Quarter Quarter Section"/>
+  <Entry name="49" value="Section Type"/>
+  <Entry name="50" value="Abstract"/>
+  <Entry name="52" value="Labor"/>
+  <Entry name="53" value="League"/>
+  <Entry name="54" value="Survey"/>
+  <Entry name="55" value="Tier"/>
+  <Entry name="57" value="Tract"/>
+  <Entry name="58" value="Universal Transverse Mercator Quadrant"/>
+  <Entry name="59" value="Course Direction"/>
+  <Entry name="60" value="Area"/>
+  <Entry name="93" value="Sender's Location Code"/>
+  <Entry name="94" value="Receiver's Location Code"/>
+  <Entry name="A1" value="Office"/>
+  <Entry name="AA" value="Annual Statements Mailing Address"/>
+  <Entry name="AC" value="City and State"/>
+  <Entry name="AP" value="All Points"/>
+  <Entry name="AR" value="Armed Services Location Designation"/>
+  <Entry name="B1" value="Branch"/>
+  <Entry name="BE" value="Business Economic Area (BEA) Region Code"/>
+  <Entry name="BL" value="Government Bill of Lading Office Code (GBLOC)"/>
+  <Entry name="BS" value="Place of Business"/>
+  <Entry name="C2" value="Geopolitical Name Code"/>
+  <Entry name="CA" value="Country of Origin"/>
+  <Entry name="CB" value="Confirmation Mailing Address"/>
+  <Entry name="CC" value="Country"/>
+  <Entry name="CD" value="Canada Customs Office Code"/>
+  <Entry name="CE" value="Correspondence Mailing Address"/>
+  <Entry name="CG" value="Congressional District"/>
+  <Entry name="CI" value="City"/>
+  <Entry name="CL" value="National Rate Basis (NRB)"/>
+  <Entry name="CM" value="Consolidated Metropolitan Statistical Area (CMSA)"/>
+  <Entry name="CO" value="County/Parish and State"/>
+  <Entry name="CR" value="In Tank Car"/>
+  <Entry name="CS" value="Canadian SPLC"/>
+  <Entry name="CY" value="County/Parish"/>
+  <Entry name="DC" value="Distribution Center Number"/>
+  <Entry name="DE" value="Destination (Shipping)"/>
+  <Entry name="DL" value="Delivery Location"/>
+  <Entry name="DO" value="District Office"/>
+  <Entry name="DP" value="Department"/>
+  <Entry name="DR" value="District of Residence"/>
+  <Entry name="DT" value="Domicile Type Code"/>
+  <Entry name="EA" value="Event Location"/>
+  <Entry name="EB" value="Borough"/>
+  <Entry name="EL" value="Employer Location"/>
+  <Entry name="FA" value="Factory"/>
+  <Entry name="FE" value="Freight Equalization Point"/>
+  <Entry name="FF" value="Foreign Freight Forwarder Location"/>
+  <Entry name="FI" value="Federal Information Processing Standards (FIPS) 55 (Named Populated Places)"/>
+  <Entry name="FR" value="U.S. Custom's Facilities Information and Resource Management Systems (FIRMS)"/>
+  <Entry name="FS" value="Freight Station Accounting Code"/>
+  <Entry name="FT" value="Foreign Trade Zone"/>
+  <Entry name="FV" value="Free Alongside Vessel (Free On Board [F.O.B.] Point)"/>
+  <Entry name="GL" value="Freight Station Geographic Location"/>
+  <Entry name="IA" value="International Air Transport Association (IATA) Location Qualifier"/>
+  <Entry name="IB" value="Issue Location"/>
+  <Entry name="IM" value="Military Standard Movement Procedures (MILSTAMP)"/>
+  <Entry name="IP" value="Postal"/>
+  <Entry name="IS" value="In Store"/>
+  <Entry name="IT" value="Intermediate FOB Point"/>
+  <Entry name="KE" value="Port of Embarkation"/>
+  <Entry name="KL" value="Port of Loading"/>
+  <Entry name="KP" value="Government Furnished Property FOB Point"/>
+  <Entry name="LO" value="Local Office"/>
+  <Entry name="MI" value="Mill"/>
+  <Entry name="MO" value="Main Campus"/>
+  <Entry name="MS" value="Metropolitan Sampling Area (MSA) Region Code"/>
+  <Entry name="MZ" value="Mexican Postal Code"/>
+  <Entry name="NS" value="City/State from Points"/>
+  <Entry name="OA" value="Origin (After Loading on Equipment)"/>
+  <Entry name="OF" value="Other Unlisted Free On Board (FOB) Point"/>
+  <Entry name="OL" value="Open and Prepay Station List Code(SCAC &amp; Number)"/>
+  <Entry name="OP" value="Other Unlisted Acceptance Point"/>
+  <Entry name="OR" value="Origin (Shipping Point)"/>
+  <Entry name="OV" value="On Vessel (Free On Board [FOB] point)"/>
+  <Entry name="PA" value="Port of Arrival"/>
+  <Entry name="PB" value="Port of Discharge"/>
+  <Entry name="PC" value="Policy Mailing Address"/>
+  <Entry name="PD" value="Place of Delivery"/>
+  <Entry name="PE" value="Port of Entry"/>
+  <Entry name="PF" value="Parents Address"/>
+  <Entry name="PG" value="Primary"/>
+  <Entry name="PH" value="Prior Business"/>
+  <Entry name="PL" value="Plant"/>
+  <Entry name="PM" value="Primary Metropolitan Statistical Area (PMSA)"/>
+  <Entry name="PO" value="Principal Servicing Office"/>
+  <Entry name="PP" value="Pool Point"/>
+  <Entry name="PQ" value="3 Digit U.S. ZIP"/>
+  <Entry name="PR" value="4 Digit U.S. ZIP"/>
+  <Entry name="PS" value="5 Digit U.S. ZIP"/>
+  <Entry name="PT" value="3 Digit Canadian Postal Code"/>
+  <Entry name="PU" value="6 Digit Canadian Postal Code"/>
+  <Entry name="RA" value="Rate Area Code"/>
+  <Entry name="RC" value="In Rail Car"/>
+  <Entry name="RE" value="Regional Education Service Agency"/>
+  <Entry name="RG" value="Region Code"/>
+  <Entry name="RJ" value="Region"/>
+  <Entry name="RL" value="Rural"/>
+  <Entry name="RS" value="Standard Carrier Alpha Code"/>
+  <Entry name="RT" value="Route Administrative Message To"/>
+  <Entry name="SA" value="Secondary"/>
+  <Entry name="SB" value="Suburban"/>
+  <Entry name="SC" value="City/State and Points Within"/>
+  <Entry name="SD" value="School District"/>
+  <Entry name="SE" value="Summer"/>
+  <Entry name="SG" value="Storage"/>
+  <Entry name="SH" value="School Campus Code"/>
+  <Entry name="SL" value="U.S. SPLC"/>
+  <Entry name="SN" value="Store Number"/>
+  <Entry name="SP" value="State/Province"/>
+  <Entry name="SS" value="School"/>
+  <Entry name="ST" value="In Storage Tank"/>
+  <Entry name="SW" value="Switching District"/>
+  <Entry name="TA" value="Tank"/>
+  <Entry name="TC" value="Transcontinental Freight Bureau"/>
+  <Entry name="TI" value="Tribal Land"/>
+  <Entry name="TL" value="Terminal Cargo Location"/>
+  <Entry name="TM" value="Terminal"/>
+  <Entry name="TN" value="Township"/>
+  <Entry name="TP" value="Temporary"/>
+  <Entry name="TR" value="Rail Territory"/>
+  <Entry name="TX" value="Taxing District"/>
+  <Entry name="UN" value="United Nations Location Code (UNLOCODE)"/>
+  <Entry name="UR" value="Urban"/>
+  <Entry name="UT" value="Business Unit"/>
+  <Entry name="VA" value="Vacation"/>
+  <Entry name="VI" value="Village"/>
+  <Entry name="VS" value="Vessel Stowage Location"/>
+  <Entry name="WF" value="Wharf"/>
+  <Entry name="WH" value="Warehouse"/>
+  <Entry name="WI" value="Winter"/>
+  <Entry name="X1" value="National Center for Education Statistics Locale Code"/>
+  <Entry name="ZN" value="Zone Code"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

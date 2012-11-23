@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: L13.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="L13" comment="To specify the commodity details">
+  <Field name="CommodityCodeQualifier" min="1" max="1" validation="T23" comment="Code identifying the commodity coding system used for Commodity Code"/>
+  <Field name="CommodityCode" min="1" max="30" comment="Code describing a commodity or group of commodities"/>
+  <Field name="UnitOrBasisForMeasurementCode1" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity1" type="double" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="AmountQualifierCode" min="1" max="3" validation="T522" comment="Code to qualify amount"/>
+  <Field name="MonetaryAmount" type="double" min="1" max="18" comment="Monetary amount"/>
+  <Field name="AssignedNumber" type="long" min="1" max="6" comment="Number assigned for differentiation within a transaction set"/>
+  <Field name="UnitOrBasisForMeasurementCode2" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="WeightUnitCode" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="FreeFormDescription" required="y" min="1" max="45" comment="Free-form descriptive text"/>
+  <Field name="ExportExceptionCode" required="y" min="2" max="2" validation="T1578" comment="Code specifying why a Shipper's Export Declaration (SED) is not required"/>
+  <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="HarborMaintenanceFee" required="y" min="1" max="2" comment="Code specifying the reason a commodity is exempt from Harbor Maintenance Fees"/>
+  <Field name="Amount" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+</Segment>

@@ -1,0 +1,55 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T52.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T52">
+  <Entry name="1" value="G-Dest - Shipments of Commodities to Destination Not Requiring a Validated License"/>
+  <Entry name="2" value="GLV - Shipments of Limited Value"/>
+  <Entry name="3" value="GIT - In-transit Shipments"/>
+  <Entry name="4" value="GUS - Shipments to Personnel and Agencies of the U.S. Government"/>
+  <Entry name="5" value="GLC - Exports of Commercial Vehicles by Certain Civil Airlines and by Private Common Carrier"/>
+  <Entry name="6" value="GTF-US - Goods Imported for Display at U.S. Exhibitions or Trade Fairs"/>
+  <Entry name="7" value="GLR - Return or Replacement of Certain Commodities"/>
+  <Entry name="8" value="GIFT - Shipment of Gift Parcels"/>
+  <Entry name="9" value="GATS - Aircraft on Temporary Sojourn"/>
+  <Entry name="G" value="General Export License Required"/>
+  <Entry name="V" value="Validated Export License Required"/>
+  <Entry name="10" value="GMS - Shipments Under the Mutual Security Act"/>
+  <Entry name="11" value="GTD &amp; GTDR - Technical Data"/>
+  <Entry name="12" value="State"/>
+  <Entry name="13" value="General License Non-naval Reserve (G-NNR)"/>
+  <Entry name="14" value="General License Cooperating Governments (GCG)"/>
+  <Entry name="15" value="Registered Carrier Stores (RCS)"/>
+  <Entry name="16" value="General License - Temporary (G-Temp)"/>
+  <Entry name="17" value="General License Free World (GFW)"/>
+  <Entry name="CN" value="Automated Export System (AES) Ultimate Destination Canada"/>
+  <Entry name="DP" value="Automated Export System (AES) Diplomatic Pouches"/>
+  <Entry name="GS" value="Automated Export System (AES) Shipments to U. S. Agencies"/>
+  <Entry name="HH" value="Automated Export System (AES) Household Shipment"/>
+  <Entry name="HR" value="Automated Export System (AES) Human Remains"/>
+  <Entry name="MS" value="Automated Export System (AES) U. S. Military Supplies"/>
+  <Entry name="PP" value="Automated Export System (AES) Personal Property"/>
+  <Entry name="UP" value="Automated Export System (AES) Shipments between US Possesions except Virgin Islands"/>
+  <Entry name="UR" value="Automated Export System (AES) Unreported Low Value Shipment"/>
+</Table>

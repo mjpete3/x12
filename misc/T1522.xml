@@ -1,0 +1,52 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1522.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1522">
+  <Entry name="AA" value="Checkout"/>
+  <Entry name="AB" value="Shelf"/>
+  <Entry name="AC" value="Front-end"/>
+  <Entry name="AD" value="Demonstration"/>
+  <Entry name="AE" value="In-advertising"/>
+  <Entry name="AF" value="Instant Redeemable"/>
+  <Entry name="BA" value="Without Sample"/>
+  <Entry name="BB" value="With Sample"/>
+  <Entry name="BC" value="Co-op"/>
+  <Entry name="BD" value="On Cart"/>
+  <Entry name="BE" value="Kiosk"/>
+  <Entry name="BF" value="Military"/>
+  <Entry name="BG" value="In Store with Sample"/>
+  <Entry name="BH" value="In Store without Sample"/>
+  <Entry name="BI" value="Off Location with Sample"/>
+  <Entry name="BJ" value="Off Location without Sample"/>
+  <Entry name="BK" value="Hospital"/>
+  <Entry name="BL" value="Cross-Ruff"/>
+  <Entry name="BM" value="On Page"/>
+  <Entry name="BN" value="Pop-up"/>
+  <Entry name="BO" value="Tip In"/>
+  <Entry name="BP" value="Color"/>
+  <Entry name="BQ" value="Sunday Comics"/>
+  <Entry name="BR" value="Supplement"/>
+  <Entry name="BS" value="Split Value"/>
+</Table>

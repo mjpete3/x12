@@ -1,0 +1,560 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T755.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T755">
+  <Entry name="01" value="Product Transfer"/>
+  <Entry name="02" value="Resale"/>
+  <Entry name="03" value="Report Justifying Treatment Beyond Utilization Guidelines"/>
+  <Entry name="04" value="Drugs Administered"/>
+  <Entry name="05" value="Treatment Diagnosis"/>
+  <Entry name="06" value="Initial Assessment"/>
+  <Entry name="07" value="Functional Goals"/>
+  <Entry name="08" value="Plan of Treatment"/>
+  <Entry name="09" value="Progress Report"/>
+  <Entry name="10" value="Continued Treatment"/>
+  <Entry name="11" value="Chemical Analysis"/>
+  <Entry name="12" value="Mechanical Properties"/>
+  <Entry name="13" value="Certified Test Report"/>
+  <Entry name="14" value="Core Loss Test Report"/>
+  <Entry name="15" value="Justification for Admission"/>
+  <Entry name="16" value="Western Region 01 (Internal Revenue Service Summary of line 31 on 1040)"/>
+  <Entry name="17" value="Return From Tax Payer Report (Internal Revenue Service Summary)"/>
+  <Entry name="18" value="Note Receivable"/>
+  <Entry name="19" value="Credit Report"/>
+  <Entry name="20" value="Process Plan"/>
+  <Entry name="21" value="Recovery Plan"/>
+  <Entry name="22" value="Functional Plan"/>
+  <Entry name="23" value="Contractual Plan"/>
+  <Entry name="24" value="Non-Contractual Plan"/>
+  <Entry name="25" value="Purchase Plan"/>
+  <Entry name="26" value="Production Plan"/>
+  <Entry name="27" value="Contract Delivery Schedule"/>
+  <Entry name="28" value="Master Delivery Schedule"/>
+  <Entry name="29" value="Assembly Plan"/>
+  <Entry name="30" value="Lead Time Chart"/>
+  <Entry name="31" value="Master Schedule"/>
+  <Entry name="32" value="Master Production Schedule"/>
+  <Entry name="33" value="Manufacturing Flow Diagram"/>
+  <Entry name="34" value="Lot Release Plan"/>
+  <Entry name="35" value="Subcontractor Plan"/>
+  <Entry name="36" value="Development Plan"/>
+  <Entry name="37" value="Lease Agreement"/>
+  <Entry name="38" value="Court Judgment"/>
+  <Entry name="39" value="Lottery Winning Letter"/>
+  <Entry name="40" value="Curb Side Inspection"/>
+  <Entry name="41" value="Statistical Model"/>
+  <Entry name="42" value="Interior and Exterior Inspection"/>
+  <Entry name="43" value="Non-Inspection Report"/>
+  <Entry name="44" value="Review Appraisal"/>
+  <Entry name="45" value="Investor Guidelines"/>
+  <Entry name="46" value="Sole Discretion Inspection"/>
+  <Entry name="47" value="Brokers Price Opinion"/>
+  <Entry name="48" value="Social Security Benefit Letter"/>
+  <Entry name="49" value="Divorce Decree"/>
+  <Entry name="50" value="Contract"/>
+  <Entry name="51" value="Gift Letter"/>
+  <Entry name="52" value="Will"/>
+  <Entry name="53" value="Trust Agreement"/>
+  <Entry name="54" value="Award Letter"/>
+  <Entry name="55" value="Rental Agreement"/>
+  <Entry name="56" value="Preliminary Real Estate Settlement Statement"/>
+  <Entry name="57" value="Income Statement (Internal Revenue Service Form 1099)"/>
+  <Entry name="58" value="Utility Bill"/>
+  <Entry name="59" value="Benefit Letter"/>
+  <Entry name="60" value="Canceled Check"/>
+  <Entry name="61" value="Individual Tax Return (Internal Revenue Service Form 1040)"/>
+  <Entry name="62" value="Asset Account Statement"/>
+  <Entry name="63" value="Statement of Profit and Loss"/>
+  <Entry name="64" value="Partner Share of Income, Credit, Deductions, (Internal Revenue Service Form K1)"/>
+  <Entry name="65" value="Partnership Tax Return (Internal Revenue Service Form 1120)"/>
+  <Entry name="66" value="Pay Stub"/>
+  <Entry name="67" value="Wage and Tax Statement (Internal Revenue Service Form W2)"/>
+  <Entry name="68" value="Year End Statement"/>
+  <Entry name="69" value="Bank Statement"/>
+  <Entry name="70" value="Verification of Loan/Installment Debt Form"/>
+  <Entry name="71" value="Verification of Deposit Form"/>
+  <Entry name="72" value="Verification of Mortgage/Rent Form"/>
+  <Entry name="73" value="Verification of Employment Form"/>
+  <Entry name="74" value="Corporation Tax Return (Internal Revenue Service Form 1065)"/>
+  <Entry name="75" value="Title Certificates"/>
+  <Entry name="76" value="Real Estate Settlement Statement (Housing and Urban Development Form - 1 &quot;HUD1&quot;)"/>
+  <Entry name="77" value="Support Data for Verification"/>
+  <Entry name="78" value="Visa/Export License"/>
+  <Entry name="79" value="Multi-Country Textile Declaration"/>
+  <Entry name="80" value="Single Country Textile Declaration"/>
+  <Entry name="81" value="Negative Textile Declaration"/>
+  <Entry name="82" value="Endangered Species Convention on International Trade in Endangered Species (CITES)"/>
+  <Entry name="83" value="Trademark Release"/>
+  <Entry name="84" value="Water Resistance Statement"/>
+  <Entry name="85" value="Certificate of Ceramicware Ceramics Commodities Inspection Bureau (CCIB)"/>
+  <Entry name="86" value="Wearing Apparel Detail Sheet (WADS)"/>
+  <Entry name="87" value="Interim Footwear Invoice"/>
+  <Entry name="88" value="Impact Resistance Statement"/>
+  <Entry name="89" value="Toxic Substance Compliance Statement"/>
+  <Entry name="90" value="Foreign Shippers Declaration"/>
+  <Entry name="91" value="Veterinarian Certificate"/>
+  <Entry name="92" value="Child Labor Certificate"/>
+  <Entry name="93" value="Prison Labor Certificate"/>
+  <Entry name="94" value="Purchase Order Copy"/>
+  <Entry name="95" value="Product Analysis"/>
+  <Entry name="96" value="American Automotive Labeling Act Certificate"/>
+  <Entry name="97" value="Broker Market Analysis"/>
+  <Entry name="A1" value="Air Emissions Statements"/>
+  <Entry name="A2" value="Anti-Dumping Gasoline Program Report"/>
+  <Entry name="A3" value="Allergies/Sensitivities Document"/>
+  <Entry name="A4" value="Autopsy Report"/>
+  <Entry name="AA" value="Agent Inventory Report"/>
+  <Entry name="AB" value="Assembly Drawing"/>
+  <Entry name="AC" value="Assay Certificate"/>
+  <Entry name="AD" value="Agent/Distributor Inventory Report"/>
+  <Entry name="AE" value="Attachment"/>
+  <Entry name="AF" value="Aid Form"/>
+  <Entry name="AG" value="Actual"/>
+  <Entry name="AH" value="Easement Report"/>
+  <Entry name="AI" value="Conditions, Covenant, and Restrictions Report"/>
+  <Entry name="AJ" value="Impound Account Escrow Analysis Report"/>
+  <Entry name="AK" value="Closing Escrow Analysis Report"/>
+  <Entry name="AL" value="Reserved Escrow Analysis Report"/>
+  <Entry name="AM" value="Ambulance Certification"/>
+  <Entry name="AN" value="Title Policy"/>
+  <Entry name="AO" value="Average Outgoing Quality Report"/>
+  <Entry name="AP" value="Advanced Problem Notification"/>
+  <Entry name="AQ" value="Housing and Urban Development (HUD) 1 Report"/>
+  <Entry name="AR" value="Asset Reclassification Extension Request"/>
+  <Entry name="AS" value="Admission Summary"/>
+  <Entry name="AT" value="Purchase Order Attachment"/>
+  <Entry name="AU" value="Automobile Claim Report"/>
+  <Entry name="AV" value="Averaging Areas Report"/>
+  <Entry name="AW" value="Air Waybill"/>
+  <Entry name="AX" value="Asset Reclassification Extension Response"/>
+  <Entry name="AY" value="Tax Certificate"/>
+  <Entry name="AZ" value="Home Owner Authorization"/>
+  <Entry name="B1" value="Batch Report"/>
+  <Entry name="B2" value="Prescription"/>
+  <Entry name="B3" value="Physician Order"/>
+  <Entry name="B4" value="Referral Form"/>
+  <Entry name="BA" value="Budget"/>
+  <Entry name="BB" value="Buy or Sell Exchange Contract Status Statement"/>
+  <Entry name="BC" value="Bill of Lading Copy"/>
+  <Entry name="BE" value="Benzene Content Averaging Report"/>
+  <Entry name="BF" value="Bailment Warehouse Withdrawal Request"/>
+  <Entry name="BL" value="Bill of Lading"/>
+  <Entry name="BM" value="Bill of Material"/>
+  <Entry name="BN" value="Beneficiary Certificate"/>
+  <Entry name="BO" value="Bill of Lading Original"/>
+  <Entry name="BR" value="Benchmark Testing Results"/>
+  <Entry name="BS" value="Baseline"/>
+  <Entry name="BT" value="Blanket Test Results"/>
+  <Entry name="BW" value="Bill of Sale"/>
+  <Entry name="BY" value="Biennial Report"/>
+  <Entry name="C1" value="Cost Data Summary"/>
+  <Entry name="C2" value="Functional Cost and Hour"/>
+  <Entry name="C3" value="Progress Curve"/>
+  <Entry name="C4" value="Plant-Wide Data"/>
+  <Entry name="C5" value="Certified Cost and Price Data"/>
+  <Entry name="C6" value="Wage Determination"/>
+  <Entry name="C7" value="Credit Transfer Summary Report"/>
+  <Entry name="C8" value="Chemical/Radiological Report"/>
+  <Entry name="C9" value="Certification/Authorization Document"/>
+  <Entry name="CA" value="Certificate of Analysis"/>
+  <Entry name="CB" value="Chiropractic Justification"/>
+  <Entry name="CC" value="C.A.A. Certificate of Conformance (British CAA)"/>
+  <Entry name="CD" value="Customer/Distributor Inventory Report"/>
+  <Entry name="CE" value="Constable Report"/>
+  <Entry name="CF" value="Capability"/>
+  <Entry name="CG" value="Certificate of Origin"/>
+  <Entry name="CH" value="Certificate of Weight"/>
+  <Entry name="CI" value="Certificate of Inspection Report"/>
+  <Entry name="CJ" value="Complications Document"/>
+  <Entry name="CK" value="Consent Form(s)"/>
+  <Entry name="CL" value="Cable"/>
+  <Entry name="CM" value="Customer/Manufacturer Inventory Report"/>
+  <Entry name="CN" value="Customer's Report of Nonconformance"/>
+  <Entry name="CO" value="Consignment Order"/>
+  <Entry name="CP" value="Certificate of Compliance (Material Certification)"/>
+  <Entry name="CQ" value="County Record"/>
+  <Entry name="CR" value="Letter of Credit"/>
+  <Entry name="CS" value="Consigned Inventory Sales Report"/>
+  <Entry name="CT" value="Certification"/>
+  <Entry name="CU" value="Customer Notification Letter"/>
+  <Entry name="CW" value="Corrective Work Order"/>
+  <Entry name="CX" value="Cost/Schedule Status Report (C/SSR)"/>
+  <Entry name="CY" value="Contract Funds Status Report (CFSR)"/>
+  <Entry name="CZ" value="Campus Police Report"/>
+  <Entry name="D2" value="Drug Profile Document"/>
+  <Entry name="DA" value="Dental Models"/>
+  <Entry name="DB" value="Durable Medical Equipment Prescription"/>
+  <Entry name="DC" value="Distributor/Customer Inventory Report"/>
+  <Entry name="DD" value="Distributor Inventory Report"/>
+  <Entry name="DE" value="Certificate of Quality"/>
+  <Entry name="DF" value="DA59 Special Customs Invoice for South Africa"/>
+  <Entry name="DG" value="Diagnostic Report"/>
+  <Entry name="DH" value="Nitrogen Certificate"/>
+  <Entry name="DI" value="Directory"/>
+  <Entry name="DJ" value="Discharge Monitoring Report"/>
+  <Entry name="DK" value="Drawback Affidavit"/>
+  <Entry name="DL" value="Draft and Transmittal Letter"/>
+  <Entry name="DM" value="Distributor/Manufacturer Inventory Report"/>
+  <Entry name="DN" value="Deviation/Nonconformance Test Results and Request for Action"/>
+  <Entry name="DQ" value="Delinquency"/>
+  <Entry name="DR" value="Datalog Report"/>
+  <Entry name="DS" value="Discharge Summary"/>
+  <Entry name="DT" value="Department of Transportation"/>
+  <Entry name="DU" value="Commercial"/>
+  <Entry name="DV" value="Condominium"/>
+  <Entry name="DW" value="Drawing(s)"/>
+  <Entry name="E1" value="Exporter's Certificate and Agreement"/>
+  <Entry name="EA" value="Electrical Average Outgoing Quality Report"/>
+  <Entry name="EB" value="Explanation of Benefits (Coordination of Benefits or Medicare Secondary Payor)"/>
+  <Entry name="EC" value="Engineering Change Order"/>
+  <Entry name="ED" value="Environmental Exposure Document"/>
+  <Entry name="EL" value="Eligibility"/>
+  <Entry name="EP" value="Experimental Material Purchase Order"/>
+  <Entry name="ER" value="Engineering Change Request"/>
+  <Entry name="EX" value="Shippers Export Declaration"/>
+  <Entry name="EY" value="Barrel for Barrel Exchange Contract Status Statement"/>
+  <Entry name="F1" value="Cost Performance Report (CPR) Format 1"/>
+  <Entry name="F2" value="Cost Performance Report (CPR) Format 2"/>
+  <Entry name="F3" value="Cost Performance Report (CPR) Format 3"/>
+  <Entry name="F4" value="Cost Performance Report (CPR) Format 4"/>
+  <Entry name="F5" value="Cost Performance Report (CPR) Format 5"/>
+  <Entry name="F6" value="Transportation Carrier Inspection Report"/>
+  <Entry name="F7" value="Government Inspection Report"/>
+  <Entry name="F8" value="Inspection Waiver (Written)"/>
+  <Entry name="F9" value="Inspection Waiver (Oral)"/>
+  <Entry name="FB" value="Federal Bureau of Investigation"/>
+  <Entry name="FC" value="Fumigation Certificate"/>
+  <Entry name="FD" value="Federal Specification Compliance"/>
+  <Entry name="FE" value="Federal Emergency Management Agency"/>
+  <Entry name="FH" value="Limitation of Heavy Elements"/>
+  <Entry name="FI" value="Fire Report"/>
+  <Entry name="FM" value="Family Medical History Document"/>
+  <Entry name="FS" value="Certificate of Free Sale"/>
+  <Entry name="G1" value="State Form"/>
+  <Entry name="G2" value="Clearance Letter"/>
+  <Entry name="G3" value="Background Release"/>
+  <Entry name="G4" value="Exam Results"/>
+  <Entry name="G5" value="Prelicense Certificate"/>
+  <Entry name="G6" value="National Association of Securities Dealers Certification"/>
+  <Entry name="G7" value="License Copy"/>
+  <Entry name="GP" value="Gas Processor's Report"/>
+  <Entry name="GT" value="Gas Transporter's Report"/>
+  <Entry name="HC" value="Health Certificate"/>
+  <Entry name="HI" value="Hazardous Material Incident"/>
+  <Entry name="HR" value="Health Clinic Records"/>
+  <Entry name="HW" value="Hazardous Waste Manifest"/>
+  <Entry name="I2" value="Consular Invoice"/>
+  <Entry name="I3" value="Customs Invoice"/>
+  <Entry name="I4" value="Forwarder's Invoice"/>
+  <Entry name="I5" value="Immunization Record"/>
+  <Entry name="I6" value="Carrier's Invoice"/>
+  <Entry name="IA" value="Insurance Attachment"/>
+  <Entry name="IC" value="Insurance Certificate"/>
+  <Entry name="IM" value="Import License"/>
+  <Entry name="IN" value="Inspection Request"/>
+  <Entry name="IP" value="Inventory Parameter Report"/>
+  <Entry name="IR" value="State School Immunization Records"/>
+  <Entry name="IS" value="Index System"/>
+  <Entry name="IT" value="Certified Inspection and Test Results"/>
+  <Entry name="IU" value="Inspection Result"/>
+  <Entry name="IV" value="Invoice"/>
+  <Entry name="JA" value="Certificate of Good Standing"/>
+  <Entry name="JB" value="Tax Status Clearance"/>
+  <Entry name="JC" value="Consent to Use Name"/>
+  <Entry name="JD" value="Certificate of Registration"/>
+  <Entry name="JE" value="Certificate of Existence"/>
+  <Entry name="JF" value="Certificate of Status"/>
+  <Entry name="JG" value="Certificate of Name Change"/>
+  <Entry name="JH" value="Certificate of Merger"/>
+  <Entry name="JI" value="Certificate of Significant Change"/>
+  <Entry name="JK" value="Balance Sheet"/>
+  <Entry name="JL" value="Application of Name Reservation"/>
+  <Entry name="JM" value="Schedule of Capital"/>
+  <Entry name="JN" value="Foreign Tax Return"/>
+  <Entry name="JO" value="Permit Application"/>
+  <Entry name="JP" value="Admission Tax Return"/>
+  <Entry name="JQ" value="Addendum to Articles"/>
+  <Entry name="JR" value="Articles and Amendments"/>
+  <Entry name="JS" value="Appointment of Commissioner as Registered Agent"/>
+  <Entry name="JT" value="Certificate of Disclosure"/>
+  <Entry name="JV" value="Notice of Registered Office"/>
+  <Entry name="JW" value="Notice of Directors"/>
+  <Entry name="JX" value="Organization and First Biennial Report"/>
+  <Entry name="JY" value="Agreement of Statutory Agent"/>
+  <Entry name="JZ" value="Consent to Act"/>
+  <Entry name="KA" value="Contract Data Requirements List (CDRL)"/>
+  <Entry name="KC" value="Kosher Certificate"/>
+  <Entry name="KD" value="Engineering Drawing List"/>
+  <Entry name="KE" value="Purchased Engineering Data List"/>
+  <Entry name="KF" value="Support Documents"/>
+  <Entry name="KG" value="Purchased Documents"/>
+  <Entry name="KH" value="Proposal Support Data"/>
+  <Entry name="KI" value="Purchased Drawings"/>
+  <Entry name="KJ" value="Change Proposal Data"/>
+  <Entry name="KY" value="Report of Assignment or Modification of Key Events"/>
+  <Entry name="KZ" value="Request for Assignment or Modification of Key Events"/>
+  <Entry name="LA" value="Laboratory Results"/>
+  <Entry name="LB" value="Legalized Bill of Lading"/>
+  <Entry name="LC" value="Location Inventory Report"/>
+  <Entry name="LD" value="Laboratory Quality Review Variation, Deviation"/>
+  <Entry name="LE" value="Latest Revised Estimate"/>
+  <Entry name="LG" value="Legalized Certificate of Origin"/>
+  <Entry name="LI" value="Legalized Invoice"/>
+  <Entry name="LO" value="Laboratory Quality Review Order, Waiver"/>
+  <Entry name="LP" value="Labor Plan"/>
+  <Entry name="LR" value="Laboratory Quality Review Order, Deviation"/>
+  <Entry name="LS" value="Lease Settlement Statement"/>
+  <Entry name="LT" value="License Application Attachment"/>
+  <Entry name="LW" value="Laboratory Quality Review Variation, Waiver"/>
+  <Entry name="M1" value="Medical Record Attachment"/>
+  <Entry name="MA" value="Manufacturer/Agent Inventory Report"/>
+  <Entry name="MB" value="Manufacturer/Distributor Inventory Report"/>
+  <Entry name="MC" value="Manufacturer/Customer Inventory Report"/>
+  <Entry name="MD" value="Material Data Sheets"/>
+  <Entry name="ME" value="Major Deviation Request"/>
+  <Entry name="MF" value="Manufacturing Specification"/>
+  <Entry name="MG" value="Migrant Student Records Transfer System (MSRTS) Record"/>
+  <Entry name="MH" value="Report of Full Maintenance Period Detail"/>
+  <Entry name="MI" value="Mortgage Insurance Certification"/>
+  <Entry name="MJ" value="Request for Maintenance Period Status"/>
+  <Entry name="MK" value="Report of Maintenance Period Status"/>
+  <Entry name="ML" value="Request for Full Maintenance Period Detail"/>
+  <Entry name="MM" value="Manufacturer Inventory Report"/>
+  <Entry name="MN" value="Minor Deviation Request"/>
+  <Entry name="MO" value="Manufacturer's Statement of Origin"/>
+  <Entry name="MP" value="Request for Establishment, Modification, or Cancellation of Maintenance Period"/>
+  <Entry name="MQ" value="Report of Establishment, Modification, or Cancellation of Maintenance Period"/>
+  <Entry name="MR" value="Material Inspection and Receiving Report"/>
+  <Entry name="MS" value="Material Safety Data Sheet"/>
+  <Entry name="MT" value="Models"/>
+  <Entry name="MV" value="Metered Volumes"/>
+  <Entry name="MZ" value="Motor Vehicle Report"/>
+  <Entry name="NA" value="National Insurance Crime Bureau Assignment"/>
+  <Entry name="NC" value="Certificate of Quantity"/>
+  <Entry name="ND" value="Commercial Invoice"/>
+  <Entry name="NI" value="National Insurance Crime Bureau"/>
+  <Entry name="NL" value="National Insurance Crime Bureau Total Loss"/>
+  <Entry name="NM" value="Monthly Contractor Financial Management Report"/>
+  <Entry name="NN" value="Nursing Notes"/>
+  <Entry name="NO" value="National Insurance Crime Bureau Other than Theft"/>
+  <Entry name="NQ" value="Quarterly Contractor Financial Management Report"/>
+  <Entry name="NR" value="NOx Emissions Averaging Report"/>
+  <Entry name="NT" value="National Insurance Crime Bureau Total Theft"/>
+  <Entry name="OB" value="Operative Note"/>
+  <Entry name="OC" value="Oxygen Content Averaging Report"/>
+  <Entry name="OD" value="Orders and Treatments Document"/>
+  <Entry name="OE" value="Objective Physical Examination (including vital signs) Document"/>
+  <Entry name="OL" value="Ocean Bill of Lading"/>
+  <Entry name="OP" value="Outside Production Operation Sheet"/>
+  <Entry name="OR" value="Oil Storer's Report"/>
+  <Entry name="OS" value="Organization Breakdown Structure"/>
+  <Entry name="OT" value="Oil Transporter's Report"/>
+  <Entry name="OX" value="Oxygen Therapy Certification"/>
+  <Entry name="OZ" value="Support Data for Claim"/>
+  <Entry name="P1" value="Packing List"/>
+  <Entry name="P2" value="Protest"/>
+  <Entry name="P3" value="Receipt"/>
+  <Entry name="P4" value="Pathology Report"/>
+  <Entry name="P5" value="Patient Medical History Document"/>
+  <Entry name="P6" value="Periodontal Charts"/>
+  <Entry name="P7" value="Periodontal Reports"/>
+  <Entry name="P8" value="Property Claim Report"/>
+  <Entry name="PA" value="Part Drawing"/>
+  <Entry name="PB" value="Product Catalog"/>
+  <Entry name="PC" value="Process Change Notice"/>
+  <Entry name="PD" value="Proof of Delivery"/>
+  <Entry name="PE" value="Parenteral or Enteral Certification"/>
+  <Entry name="PF" value="Product Specification"/>
+  <Entry name="PG" value="Packaging Specification"/>
+  <Entry name="PH" value="Production History - Property Level"/>
+  <Entry name="PI" value="Product Availability Inquiry"/>
+  <Entry name="PJ" value="Purchasing Specification"/>
+  <Entry name="PK" value="Storage Information Inquiry"/>
+  <Entry name="PL" value="Property Insurance Loss Register"/>
+  <Entry name="PM" value="Proof of Insurance"/>
+  <Entry name="PN" value="Physical Therapy Notes"/>
+  <Entry name="PO" value="Prosthetics or Orthotic Certification"/>
+  <Entry name="PP" value="Proposal"/>
+  <Entry name="PQ" value="Paramedical Results"/>
+  <Entry name="PR" value="Purchase Report"/>
+  <Entry name="PS" value="Pipeline/Shipper Inventory Report"/>
+  <Entry name="PT" value="Inter-Plant Inventory Report"/>
+  <Entry name="PV" value="Police Report"/>
+  <Entry name="PW" value="Production History - Well Level"/>
+  <Entry name="PX" value="Production, Injection and Disposition Report"/>
+  <Entry name="PY" value="Physician's Report"/>
+  <Entry name="PZ" value="Physical Therapy Certification"/>
+  <Entry name="QC" value="Cause and Corrective Action Report"/>
+  <Entry name="QD" value="Quality Review Order, Purchasing"/>
+  <Entry name="QE" value="Quality Detail"/>
+  <Entry name="QM" value="Quality Review Order, Manufacturing"/>
+  <Entry name="QR" value="Quality Report"/>
+  <Entry name="QS" value="Quality Review Order Supplement"/>
+  <Entry name="QT" value="Quality Summary"/>
+  <Entry name="R1" value="Reformulated Gasoline/Anti-Dumping Company Registration"/>
+  <Entry name="R2" value="Reformulated Gasoline/Anti-Dumping Facility Registration"/>
+  <Entry name="R3" value="Technical Information Package"/>
+  <Entry name="R4" value="Purchased Technical Information Package"/>
+  <Entry name="R5" value="Technical Information"/>
+  <Entry name="R6" value="Miscellaneous Information"/>
+  <Entry name="R7" value="Compliance Review"/>
+  <Entry name="R9" value="Accident"/>
+  <Entry name="RA" value="Revision Announcement"/>
+  <Entry name="RB" value="Radiology Films"/>
+  <Entry name="RC" value="Request for Cause and Corrective Action Report"/>
+  <Entry name="RD" value="Payment Bond"/>
+  <Entry name="RE" value="Performance Bond"/>
+  <Entry name="RF" value="Reliability Fail Rate Report"/>
+  <Entry name="RG" value="Residential"/>
+  <Entry name="RM" value="Request for Manufacturing Engineer Appraisal"/>
+  <Entry name="RN" value="Supplier's Report of Nonconformance"/>
+  <Entry name="RO" value="Regular Order"/>
+  <Entry name="RR" value="Radiology Reports"/>
+  <Entry name="RT" value="Report of Tests and Analysis Report"/>
+  <Entry name="RV" value="Reid Vapor Pressure (RVP) Averaging Report"/>
+  <Entry name="RX" value="Renewable Oxygen Content Averaging Report"/>
+  <Entry name="S1" value="Supply and Shipment Status Report"/>
+  <Entry name="S2" value="Supply Status Report"/>
+  <Entry name="S3" value="Exception Supply Status Report"/>
+  <Entry name="S4" value="Exception Supply and Shipment Status Report"/>
+  <Entry name="S5" value="Product Quality Deficiency Report Category I"/>
+  <Entry name="S6" value="Product Quality Deficiency Report Category II"/>
+  <Entry name="S7" value="Walsh-Healey Act"/>
+  <Entry name="S8" value="Report of Findings"/>
+  <Entry name="S9" value="Representation"/>
+  <Entry name="SA" value="State Police Report"/>
+  <Entry name="SB" value="Sample Approval and Rejection List"/>
+  <Entry name="SC" value="Sanitary Certificate"/>
+  <Entry name="SD" value="Support Data for a Request for Quote"/>
+  <Entry name="SE" value="Security Police Report"/>
+  <Entry name="SF" value="Contract Security Classification Specification"/>
+  <Entry name="SG" value="Symptoms Document"/>
+  <Entry name="SH" value="Sheriff Report"/>
+  <Entry name="SI" value="Seller Inventory Report"/>
+  <Entry name="SL" value="Sample Bale List"/>
+  <Entry name="SM" value="Shipping Manifests"/>
+  <Entry name="SN" value="Shipping Notice"/>
+  <Entry name="SO" value="Secretary Certificate"/>
+  <Entry name="SP" value="Specification"/>
+  <Entry name="SQ" value="Statistical Quality Documents"/>
+  <Entry name="SR" value="Statistical Report"/>
+  <Entry name="SS" value="Seller Sales Report"/>
+  <Entry name="ST" value="Student Educational Record (Transcript)"/>
+  <Entry name="SU" value="Supplier's Certificate"/>
+  <Entry name="SV" value="Survey"/>
+  <Entry name="SW" value="Sea Waybill"/>
+  <Entry name="SX" value="Steamship Due Bill"/>
+  <Entry name="SY" value="Train Sheet"/>
+  <Entry name="T1" value="Title Bill"/>
+  <Entry name="T2" value="Preliminary Title Work"/>
+  <Entry name="T3" value="Loan Documents"/>
+  <Entry name="T4" value="Tax Information"/>
+  <Entry name="T5" value="Toxics Emissions Performance Averaging Report"/>
+  <Entry name="T6" value="Toxics Release Inventory"/>
+  <Entry name="TA" value="Asset Support Inquiry"/>
+  <Entry name="TB" value="Asset Support Advice"/>
+  <Entry name="TC" value="Physical Inventory Request"/>
+  <Entry name="TD" value="Asset Reclassification Response"/>
+  <Entry name="TE" value="Asset Reclassification Request"/>
+  <Entry name="TF" value="Transaction History Request"/>
+  <Entry name="TG" value="Two to Four Family"/>
+  <Entry name="TH" value="Total Theft Claim Report"/>
+  <Entry name="TI" value="Asset Status Inquiry"/>
+  <Entry name="TJ" value="Asset Status Advice"/>
+  <Entry name="TK" value="Logistics Transfer Inquiry"/>
+  <Entry name="TL" value="Logistics Transfer Advice"/>
+  <Entry name="TM" value="Stock Sale Report"/>
+  <Entry name="TN" value="Delayed Sale Report"/>
+  <Entry name="TO" value="Demand Report"/>
+  <Entry name="TP" value="Treatments Certificate"/>
+  <Entry name="TQ" value="Storage Information Advice"/>
+  <Entry name="TR" value="Transmittal Letter"/>
+  <Entry name="TS" value="Sulfur, Olefins, and T90 Averaging Report"/>
+  <Entry name="TT" value="Title Transfer"/>
+  <Entry name="TX" value="Tax-exempt Certificate"/>
+  <Entry name="U1" value="Survey Report"/>
+  <Entry name="UA" value="Union Agreement"/>
+  <Entry name="UB" value="Certificate of Designation of Registered Agent"/>
+  <Entry name="UD" value="List of Officers and Directors"/>
+  <Entry name="UE" value="Resolution and Consent Form"/>
+  <Entry name="UF" value="Domestic Business Corporation Initial Report"/>
+  <Entry name="UG" value="Registered Agent Application"/>
+  <Entry name="UH" value="Articles of Incorporation"/>
+  <Entry name="UI" value="Certificate of Compliance"/>
+  <Entry name="UJ" value="Certificate of Authorization"/>
+  <Entry name="UK" value="Charter"/>
+  <Entry name="UL" value="Other Type of Report"/>
+  <Entry name="UM" value="Affidavit of Acceptance"/>
+  <Entry name="UN" value="Resolution Adopting Fictitious Name"/>
+  <Entry name="UO" value="Trade Name Application"/>
+  <Entry name="UP" value="Declaration of Solicitor"/>
+  <Entry name="UQ" value="Memorandum of Association"/>
+  <Entry name="UR" value="Notice of Registered Agent"/>
+  <Entry name="US" value="BUY AMERICA"/>
+  <Entry name="UT" value="Notice of Registered Office"/>
+  <Entry name="UU" value="Dissolution of Existing Registration"/>
+  <Entry name="UV" value="Appointment of Statutory Agent"/>
+  <Entry name="UX" value="Regulatory Approval for Professional Association"/>
+  <Entry name="UY" value="Initial Annual Report"/>
+  <Entry name="UZ" value="Certificate of Fact"/>
+  <Entry name="V1" value="Voter Registration Application"/>
+  <Entry name="V2" value="Voter Registration Application Disposition"/>
+  <Entry name="V3" value="Voter Information Record"/>
+  <Entry name="V4" value="Change of Name and/or Address"/>
+  <Entry name="V5" value="Death Notification"/>
+  <Entry name="V6" value="Felony Conviction Notification"/>
+  <Entry name="V7" value="Incompetency Notification"/>
+  <Entry name="VA" value="Variance Analysis"/>
+  <Entry name="VC" value="Volatile Organic Compounds (VOC) Emissions Averaging Report"/>
+  <Entry name="VD" value="Data Request for Vendor's Specifications or Drawings."/>
+  <Entry name="VM" value="Visual/Mechanical Average Outgoing Quality Report"/>
+  <Entry name="W1" value="Safe Drinking Water Bacteriological Report"/>
+  <Entry name="W2" value="Safe Drinking Water Report"/>
+  <Entry name="WA" value="Fictitious Name Statement"/>
+  <Entry name="WB" value="Work Breakdown Structure"/>
+  <Entry name="WC" value="Request for Assignment or Deletion of Work Candidate"/>
+  <Entry name="WD" value="Report of Assignment or Deletion of Work Candidate"/>
+  <Entry name="WE" value="Business Conducted Prior to Qualification Form"/>
+  <Entry name="WF" value="By-Laws"/>
+  <Entry name="WG" value="Appointment of Agent for Service and Consent to Act"/>
+  <Entry name="WH" value="Certificate of Name Clearance"/>
+  <Entry name="WI" value="Well Information"/>
+  <Entry name="WP" value="Work Progress"/>
+  <Entry name="WT" value="Well Test Information"/>
+  <Entry name="X1" value="Complete Appraisal"/>
+  <Entry name="X2" value="Limited Appraisal"/>
+  <Entry name="X3" value="Self-contained Report"/>
+  <Entry name="X4" value="Summary Report"/>
+  <Entry name="X5" value="Restricted Report"/>
+  <Entry name="XE" value="Equipment Test Results"/>
+  <Entry name="XP" value="Photographs"/>
+  <Entry name="Y1" value="Appraisal"/>
+  <Entry name="Y2" value="Broker Price Opinion"/>
+  <Entry name="Y3" value="Real Estate Property Information"/>
+  <Entry name="ZA" value="Flood Determination Report"/>
+  <Entry name="ZB" value="Conventional Ammunition Suspension Report"/>
+  <Entry name="ZC" value="Self Monitoring Report"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

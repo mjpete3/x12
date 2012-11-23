@@ -1,0 +1,136 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T752.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T752">
+  <Entry name="1S" value="Side One"/>
+  <Entry name="2S" value="Side Two"/>
+  <Entry name="A1" value="Single"/>
+  <Entry name="A2" value="Left Front"/>
+  <Entry name="A3" value="Right Front"/>
+  <Entry name="A4" value="Left Rear"/>
+  <Entry name="A5" value="Right Rear"/>
+  <Entry name="A6" value="Inside Left Rear"/>
+  <Entry name="A7" value="Outside Left Rear"/>
+  <Entry name="A8" value="Inside Right Rear"/>
+  <Entry name="A9" value="Outside Right Rear"/>
+  <Entry name="AL" value="All"/>
+  <Entry name="AO" value="Single End Overhang"/>
+  <Entry name="AS" value="Siding"/>
+  <Entry name="B1" value="Bolster"/>
+  <Entry name="BC" value="Back of Cab"/>
+  <Entry name="BI" value="Bilateral"/>
+  <Entry name="BK" value="Rear"/>
+  <Entry name="BL" value="Block"/>
+  <Entry name="BR" value="Brick"/>
+  <Entry name="BS" value="Both Sides"/>
+  <Entry name="BT" value="Bottom"/>
+  <Entry name="CH" value="Casing Head Flange"/>
+  <Entry name="CT" value="Center"/>
+  <Entry name="DO" value="Double End Overhang"/>
+  <Entry name="DT" value="Downstream Tap"/>
+  <Entry name="DU" value="Dual Fuel Tank Position"/>
+  <Entry name="EX" value="Exterior"/>
+  <Entry name="FR" value="Front"/>
+  <Entry name="FS" value="Front Spare"/>
+  <Entry name="GF" value="Rig Floor"/>
+  <Entry name="IN" value="Inside"/>
+  <Entry name="IT" value="Interior"/>
+  <Entry name="KB" value="Kelly Bushing"/>
+  <Entry name="LC" value="Less Critical Surface"/>
+  <Entry name="LO" value="Lower"/>
+  <Entry name="LT" value="Left"/>
+  <Entry name="M1" value="Multiple"/>
+  <Entry name="MC" value="More Critical Surface"/>
+  <Entry name="MD" value="Middle"/>
+  <Entry name="NS" value="Not Specified"/>
+  <Entry name="NT" value="Next Relative Position"/>
+  <Entry name="OA" value="Overall"/>
+  <Entry name="OS" value="One Side"/>
+  <Entry name="OT" value="Outside"/>
+  <Entry name="R0" value="Relative Position 10"/>
+  <Entry name="R1" value="Relative Position 1"/>
+  <Entry name="R2" value="Relative Position 2"/>
+  <Entry name="R3" value="Relative Position 3"/>
+  <Entry name="R4" value="Relative Position 4"/>
+  <Entry name="R5" value="Relative Position 5"/>
+  <Entry name="R6" value="Relative Position 6"/>
+  <Entry name="R7" value="Relative Position 7"/>
+  <Entry name="R8" value="Relative Position 8"/>
+  <Entry name="R9" value="Relative Position 9"/>
+  <Entry name="RA" value="Relative Position 11"/>
+  <Entry name="RB" value="Relative Position 12"/>
+  <Entry name="RC" value="Relative Position 13"/>
+  <Entry name="RD" value="Relative Position 14"/>
+  <Entry name="RE" value="Relative Position 15"/>
+  <Entry name="RF" value="Relative Position 16"/>
+  <Entry name="RG" value="Relative Position 17"/>
+  <Entry name="RH" value="Relative Position 18"/>
+  <Entry name="RI" value="Relative Position 19"/>
+  <Entry name="RJ" value="Relative Position 20"/>
+  <Entry name="RK" value="Relative Position 21"/>
+  <Entry name="RL" value="Relative Position 22"/>
+  <Entry name="RM" value="Relative Position 23"/>
+  <Entry name="RN" value="Relative Position 24"/>
+  <Entry name="RO" value="Relative Position 25"/>
+  <Entry name="RP" value="Relative Position 26"/>
+  <Entry name="RQ" value="Relative Position 27"/>
+  <Entry name="RR" value="Relative Position 28"/>
+  <Entry name="RS" value="Relative Position 29"/>
+  <Entry name="RT" value="Relative Position 30"/>
+  <Entry name="RU" value="Relative Position 31"/>
+  <Entry name="RV" value="Relative Position 32"/>
+  <Entry name="RW" value="Relative Position 33"/>
+  <Entry name="RX" value="Relative Position 34"/>
+  <Entry name="RY" value="Relative Position 35"/>
+  <Entry name="RZ" value="Relative Position 36"/>
+  <Entry name="S1" value="Relative Position 37"/>
+  <Entry name="S2" value="Relative Position 38"/>
+  <Entry name="S3" value="Relative Position 39"/>
+  <Entry name="S4" value="Relative Position 40"/>
+  <Entry name="S5" value="Relative Position 41"/>
+  <Entry name="S6" value="Relative Position 42"/>
+  <Entry name="S7" value="Relative Position 43"/>
+  <Entry name="S8" value="Relative Position 44"/>
+  <Entry name="S9" value="Relative Position 45"/>
+  <Entry name="SA" value="Relative Position 46"/>
+  <Entry name="SB" value="Right"/>
+  <Entry name="SC" value="Relative Position 47"/>
+  <Entry name="SD" value="Relative Position 48"/>
+  <Entry name="SE" value="Relative Position 49"/>
+  <Entry name="SF" value="Relative Position 50"/>
+  <Entry name="SN" value="Stone"/>
+  <Entry name="SP" value="Spare Tire Position"/>
+  <Entry name="SS" value="Rear Spare"/>
+  <Entry name="ST" value="Stucco"/>
+  <Entry name="SU" value="Sub-sea"/>
+  <Entry name="TB" value="Tank Bottom"/>
+  <Entry name="TP" value="Top"/>
+  <Entry name="TS" value="Two Sides"/>
+  <Entry name="UC" value="Under Cab"/>
+  <Entry name="UN" value="Unilateral"/>
+  <Entry name="UP" value="Upper"/>
+  <Entry name="UT" value="Upstream Tap"/>
+  <Entry name="WF" value="Wood"/>
+</Table>

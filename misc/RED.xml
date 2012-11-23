@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RED.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RED" comment="To provide business data related to an item within a transaction to which a business application editing process has been applied, and an error condition has resulted">
+  <Field name="Description" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="RelatedDataIdentificationCode" required="y" min="2" max="3" validation="T1609" comment="Code identifying the nature of data related to an application edit error condition"/>
+  <Field name="AgencyQualifierCode" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="CodeListQualifierCode" required="y" min="1" max="3" validation="T1270" comment="Code identifying a specific industry code list"/>
+  <Field name="IndustryCode" required="y" min="1" max="30" comment="Code indicating a code from a specific industry code list"/>
+</Segment>

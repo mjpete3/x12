@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1402.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1402">
+  <Entry name="N2" value="Nitrogen Gas"/>
+  <Entry name="ATM" value="Atmosphere Controlled"/>
+  <Entry name="C02" value="Carbon Dioxide Gas"/>
+  <Entry name="CLE" value="Clean Exterior"/>
+  <Entry name="DHT" value="Door Height Requirement"/>
+  <Entry name="DWI" value="Door Width Requirement"/>
+  <Entry name="FAP" value="Use Flatrack as Platform"/>
+  <Entry name="GEN" value="Genset Required"/>
+  <Entry name="LIN" value="Liner Attached"/>
+  <Entry name="MCP" value="Moisture Content Requirement"/>
+  <Entry name="MOI" value="Moisture Free"/>
+  <Entry name="NDO" value="Door Off"/>
+  <Entry name="NOI" value="Oil Stain Free"/>
+  <Entry name="ODF" value="Odor Free"/>
+  <Entry name="PCO" value="Pre-cooled"/>
+  <Entry name="PRE" value="Pre-mount Required"/>
+  <Entry name="PSE" value="Pre-set Temperature"/>
+  <Entry name="RAD" value="Reefer Used As Dry"/>
+  <Entry name="RUS" value="Rust Free"/>
+  <Entry name="SLI" value="Slider Chassis"/>
+  <Entry name="SMO" value="Smoke Test"/>
+  <Entry name="STE" value="Steam Cleaned"/>
+  <Entry name="SUB" value="Substitution Allowed"/>
+  <Entry name="SUR" value="Survey Required"/>
+  <Entry name="TBT" value="Timber Treated"/>
+  <Entry name="TEC" value="Tectrol Gas"/>
+  <Entry name="VOD" value="Dual Voltage Required"/>
+  <Entry name="VOS" value="Single Voltage Required"/>
+  <Entry name="YEA" value="Year of Manufacture Requirement"/>
+</Table>

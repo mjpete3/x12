@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LH.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LH" comment="To specify hazardous line items in terms of hazardous mnemonic, identification number, reportable quantities, and limited quantities">
+  <Field name="LadingLineItemNumber" type="long" min="1" max="3" comment="Sequential line number for a lading item"/>
+  <Field name="HazardousMnemonicCode" min="2" max="3" comment="Code identifying hazardous classification placard notation, and proper endorsements as required by the Federal Highway Railway Administration See Figures Appendix for the possible values to be used for data element 758"/>
+  <Field name="ReferenceIdentification" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReferenceIdentificationQualifier" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReportableQuantityCode" required="y" min="2" max="2" validation="T759" comment="Code to identify presence of hazardous substance"/>
+  <Field name="LimitedQuantityIndicationCode" required="y" min="1" max="1" validation="T760" comment="Code to indicate hazardous material that is packaged in limited quantities and is excluded from placarding requirements"/>
+</Segment>

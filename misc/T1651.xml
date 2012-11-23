@@ -1,0 +1,111 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1651.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1651">
+  <Entry name="A1" value="Missed Delivery"/>
+  <Entry name="A2" value="Incorrect Address"/>
+  <Entry name="A3" value="Indirect Delivery"/>
+  <Entry name="A5" value="Unable to Locate"/>
+  <Entry name="A6" value="Address Corrected - Delivery Attempted"/>
+  <Entry name="AA" value="Mis-sort"/>
+  <Entry name="AD" value="Customer Requested Future Delivery"/>
+  <Entry name="AE" value="Restricted Articles Unacceptable"/>
+  <Entry name="AF" value="Accident"/>
+  <Entry name="AG" value="Consignee Related"/>
+  <Entry name="AH" value="Driver Related"/>
+  <Entry name="AI" value="Mechanical Breakdown"/>
+  <Entry name="AJ" value="Other Carrier Related"/>
+  <Entry name="AK" value="Damaged, Rewrapped in Hub"/>
+  <Entry name="AL" value="Previous Stop"/>
+  <Entry name="AM" value="Shipper Related"/>
+  <Entry name="AN" value="Holiday - Closed"/>
+  <Entry name="AO" value="Weather or Natural Disaster Related"/>
+  <Entry name="AP" value="Awaiting Export"/>
+  <Entry name="AQ" value="Recipient Unavailable - Delivery Delayed"/>
+  <Entry name="AR" value="Improper International Paperwork"/>
+  <Entry name="AS" value="Hold Due to Customs Documentation Problems"/>
+  <Entry name="AT" value="Unable to Contact Recipient for Broker Information"/>
+  <Entry name="AU" value="Civil Event Related Delay"/>
+  <Entry name="AV" value="Exceeds Service Limitations"/>
+  <Entry name="AW" value="Past Cut-off Time"/>
+  <Entry name="AX" value="Insufficient Pick-up Time"/>
+  <Entry name="AY" value="Missed Pick-up"/>
+  <Entry name="AZ" value="Alternate Carrier Delivered"/>
+  <Entry name="B1" value="Consignee Closed"/>
+  <Entry name="B2" value="Trap for Customer"/>
+  <Entry name="B4" value="Held for Payment"/>
+  <Entry name="B5" value="Held for Consignee"/>
+  <Entry name="B8" value="Improper Unloading Facility or Equipment"/>
+  <Entry name="B9" value="Receiving Time Restricted"/>
+  <Entry name="BB" value="Held per Shipper"/>
+  <Entry name="BC" value="Missing Documents"/>
+  <Entry name="BD" value="Border Clearance"/>
+  <Entry name="BE" value="Road Conditions"/>
+  <Entry name="BF" value="Carrier Keying Error"/>
+  <Entry name="BG" value="Other"/>
+  <Entry name="BH" value="Insufficient Time to Complete Delivery"/>
+  <Entry name="BI" value="Cartage Agent"/>
+  <Entry name="BJ" value="Customer Wanted Earlier Delivery"/>
+  <Entry name="BK" value="Prearranged Appointment"/>
+  <Entry name="BL" value="Held for Protective Service"/>
+  <Entry name="BM" value="Flatcar Shortage"/>
+  <Entry name="BN" value="Failed to Release Billing"/>
+  <Entry name="BO" value="Railroad Failed to Meet Schedule"/>
+  <Entry name="BP" value="Load Shifted"/>
+  <Entry name="BQ" value="Shipment Overweight"/>
+  <Entry name="BR" value="Train Derailment"/>
+  <Entry name="BS" value="Refused by Customer"/>
+  <Entry name="BT" value="Returned to Shipper"/>
+  <Entry name="C1" value="Waiting for Customer Pick-up"/>
+  <Entry name="C2" value="Credit Hold"/>
+  <Entry name="C3" value="Suspended at Customer Request"/>
+  <Entry name="C4" value="Customer Vacation"/>
+  <Entry name="C5" value="Customer Strike"/>
+  <Entry name="C6" value="Waiting Shipping Instructions"/>
+  <Entry name="C7" value="Waiting for Customer Specified Carrier"/>
+  <Entry name="C8" value="Collect on Delivery Required"/>
+  <Entry name="C9" value="Cash Not Available From Consignee"/>
+  <Entry name="CA" value="Customs (Import or Export)"/>
+  <Entry name="CB" value="No Requested Arrival Date Provided by Shipper"/>
+  <Entry name="CC" value="No Requested Arrival Time Provided by Shipper"/>
+  <Entry name="D1" value="Carrier Dispatch Error"/>
+  <Entry name="D2" value="Driver Not Available"/>
+  <Entry name="F1" value="Non-Express Clearance Delay"/>
+  <Entry name="F2" value="International Non-carrier Delay"/>
+  <Entry name="HB" value="Held Pending Appointment"/>
+  <Entry name="P1" value="Processing Delay"/>
+  <Entry name="P2" value="Waiting Inspection"/>
+  <Entry name="P3" value="Production Falldown"/>
+  <Entry name="P4" value="Held for Full Carrier Load"/>
+  <Entry name="RC" value="Reconsigned"/>
+  <Entry name="S1" value="Delivery Shortage"/>
+  <Entry name="T1" value="Tractor With Sleeper Car Not Available"/>
+  <Entry name="T2" value="Tractor, Conventional, Not Available"/>
+  <Entry name="T3" value="Trailer not Available"/>
+  <Entry name="T4" value="Trailer Not Usable Due to Prior Product"/>
+  <Entry name="T5" value="Trailer Class Not Available"/>
+  <Entry name="T6" value="Trailer Volume Not Available"/>
+  <Entry name="T7" value="Insufficient Delivery Time"/>
+</Table>

@@ -1,0 +1,59 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T108.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T108">
+  <Entry name="H" value="Sunday and Holiday Pick-up Service"/>
+  <Entry name="J" value="Saturday Pick-up Service"/>
+  <Entry name="M" value="Multiple Shipment"/>
+  <Entry name="O" value="Other"/>
+  <Entry name="P" value="Cut Flowers"/>
+  <Entry name="S" value="Special Pick-up Service"/>
+  <Entry name="U" value="Container Shipment"/>
+  <Entry name="V" value="High Value Shipment"/>
+  <Entry name="AT" value="Airport Terminal"/>
+  <Entry name="BC" value="Canadian Business Delivery"/>
+  <Entry name="CA" value="Carrier Advance"/>
+  <Entry name="CB" value="Business Delivery (Contracted)"/>
+  <Entry name="CC" value="Convenience Center"/>
+  <Entry name="CP" value="Customer Counter Pickup"/>
+  <Entry name="CR" value="Residential Delivery (Contracted)"/>
+  <Entry name="CS" value="Contract Shipment Delivery"/>
+  <Entry name="CT" value="City Terminal"/>
+  <Entry name="DB" value="Drop Box"/>
+  <Entry name="DT" value="Drop Trailer"/>
+  <Entry name="IB" value="International Business Delivery"/>
+  <Entry name="IR" value="International Residential Delivery"/>
+  <Entry name="LD" value="Live Delivery"/>
+  <Entry name="LL" value="Live Load"/>
+  <Entry name="OC" value="On-call Pickup"/>
+  <Entry name="OT" value="Other Carrier's Terminal"/>
+  <Entry name="PB" value="Private Box"/>
+  <Entry name="RB" value="Business Delivery (Regular)"/>
+  <Entry name="RC" value="Canadian Residential Delivery"/>
+  <Entry name="RD" value="Residential Door"/>
+  <Entry name="RG" value="Regular Pickup"/>
+  <Entry name="RR" value="Residential Delivery (Regular)"/>
+  <Entry name="SD" value="Shippers Door"/>
+</Table>

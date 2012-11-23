@@ -1,0 +1,96 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1632.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1632">
+  <Entry name="0" value="Balkans"/>
+  <Entry name="1" value="Europe"/>
+  <Entry name="2" value="Hotel Zone"/>
+  <Entry name="3" value="Mediterranean"/>
+  <Entry name="4" value="North Africa"/>
+  <Entry name="5" value="Pacific"/>
+  <Entry name="6" value="South East Asia"/>
+  <Entry name="7" value="Southern Africa"/>
+  <Entry name="8" value="Urban Area"/>
+  <Entry name="9" value="Asia/Pacific"/>
+  <Entry name="A" value="Industrial Area"/>
+  <Entry name="B" value="Market"/>
+  <Entry name="C" value="Residential Area"/>
+  <Entry name="D" value="Suburban Area"/>
+  <Entry name="E" value="Rural Area"/>
+  <Entry name="F" value="Central Business Area"/>
+  <Entry name="G" value="North America"/>
+  <Entry name="H" value="State or Province"/>
+  <Entry name="I" value="International"/>
+  <Entry name="J" value="Africa"/>
+  <Entry name="K" value="Americas"/>
+  <Entry name="L" value="Local"/>
+  <Entry name="M" value="Metropolitan Area"/>
+  <Entry name="N" value="National"/>
+  <Entry name="O" value="Archeological Zone"/>
+  <Entry name="P" value="Asia"/>
+  <Entry name="Q" value="Atlantic"/>
+  <Entry name="R" value="Regional"/>
+  <Entry name="S" value="Shopping Center"/>
+  <Entry name="T" value="Benelux"/>
+  <Entry name="U" value="Caribbean"/>
+  <Entry name="V" value="Central America"/>
+  <Entry name="W" value="Central Asia"/>
+  <Entry name="X" value="Commercial Zone"/>
+  <Entry name="Y" value="Eastern Europe"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="11" value="Baltics"/>
+  <Entry name="12" value="Commonwealth of Independent States (CIS)"/>
+  <Entry name="13" value="European Community"/>
+  <Entry name="14" value="Far East"/>
+  <Entry name="15" value="Former Communist Countries"/>
+  <Entry name="16" value="Gulf of Mexico Region"/>
+  <Entry name="17" value="Harbor Area"/>
+  <Entry name="18" value="Latin America"/>
+  <Entry name="19" value="Middle East"/>
+  <Entry name="20" value="Near East"/>
+  <Entry name="21" value="New Zealand and Australia Region"/>
+  <Entry name="22" value="Newly Industrialized Economies (NIES) Countries"/>
+  <Entry name="23" value="Non-Commercial Area"/>
+  <Entry name="24" value="Northern Europe"/>
+  <Entry name="25" value="Oceania"/>
+  <Entry name="26" value="Unknown"/>
+  <Entry name="27" value="Scandinavia"/>
+  <Entry name="28" value="South America"/>
+  <Entry name="29" value="Agricultural Area"/>
+  <Entry name="30" value="Undeveloped Area"/>
+  <Entry name="31" value="Western Europe"/>
+  <Entry name="32" value="Worldwide"/>
+  <Entry name="33" value="Western Hemisphere"/>
+  <Entry name="34" value="Mercosul"/>
+  <Entry name="35" value="Free-trade Zone"/>
+  <Entry name="36" value="Border Countries"/>
+  <Entry name="37" value="Interior"/>
+  <Entry name="38" value="North East Asia"/>
+  <Entry name="39" value="East Asia"/>
+  <Entry name="40" value="East Africa"/>
+  <Entry name="41" value="West Africa"/>
+  <Entry name="42" value="ASEAN (Association of Southeast Asian Nations)"/>
+  <Entry name="43" value="North Pacific"/>
+</Table>

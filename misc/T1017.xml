@@ -1,0 +1,82 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1017.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1017">
+  <Entry name="A" value="Allowed Claim"/>
+  <Entry name="B" value="Protested Draft"/>
+  <Entry name="C" value="Combined Wage Claim"/>
+  <Entry name="D" value="Pre-protested Bill"/>
+  <Entry name="I" value="Interstate"/>
+  <Entry name="P" value="Prepetition Charges"/>
+  <Entry name="R" value="Regular"/>
+  <Entry name="T" value="Total Claim"/>
+  <Entry name="U" value="Unsecured Nonpriority Claim"/>
+  <Entry name="AL" value="Agricultural Lien"/>
+  <Entry name="AR" value="Arrearage"/>
+  <Entry name="BG" value="Basis of Claim: Goods Sold"/>
+  <Entry name="BM" value="Basis of Claim: Money Loaned"/>
+  <Entry name="BO" value="Other Basis of Claim"/>
+  <Entry name="BP" value="Basis of Claim: Personal Injury"/>
+  <Entry name="BR" value="Basis of Claim: Retiree Benefits per 11 USC"/>
+  <Entry name="BS" value="Basis of Claim: Services Performed"/>
+  <Entry name="BT" value="Basis of Claim: Taxes"/>
+  <Entry name="BW" value="Basis of Claim: Wages"/>
+  <Entry name="CH" value="Charge"/>
+  <Entry name="CM" value="Chattel Mortgage"/>
+  <Entry name="DA" value="Disaster Unemployment Assistance"/>
+  <Entry name="DB" value="Debenture"/>
+  <Entry name="EB" value="Extended Benefits"/>
+  <Entry name="EU" value="Emergency Unemployment Compensation"/>
+  <Entry name="GC" value="General Charge"/>
+  <Entry name="HL" value="Attachment Lien"/>
+  <Entry name="JL" value="Judgment Lien"/>
+  <Entry name="MG" value="Mortgage"/>
+  <Entry name="ML" value="Mechanics Lien"/>
+  <Entry name="NF" value="North American Free Trade Agreement Affected Unemployment Insurance"/>
+  <Entry name="OL" value="Other Lien"/>
+  <Entry name="OP" value="Official Promise"/>
+  <Entry name="PA" value="Unsecured Priority Claim: Alimony and Support"/>
+  <Entry name="PB" value="Unsecured Priority Claim: Employee Benefits"/>
+  <Entry name="PC" value="Unsecured Priority Claim: Commitments to Maintain Capital"/>
+  <Entry name="PD" value="Unsecured Priority Claim: Deposits"/>
+  <Entry name="PE" value="Unsecured Priority Claim: Extensions of Credit"/>
+  <Entry name="PF" value="Unsecured Priority Claim: Farmers or Fishermen"/>
+  <Entry name="PK" value="Protested Check"/>
+  <Entry name="PO" value="Other Unsecured Priority Claim"/>
+  <Entry name="PP" value="Personal Property Lien"/>
+  <Entry name="PT" value="Unsecured Priority Claim: Taxes"/>
+  <Entry name="PW" value="Unsecured Priority Claim: Wages"/>
+  <Entry name="PZ" value="Protested Bill"/>
+  <Entry name="SM" value="Secured Claim: Motor Vehicle"/>
+  <Entry name="SO" value="Other Secured Claim"/>
+  <Entry name="SR" value="Secured Claim: Real Estate"/>
+  <Entry name="SS" value="Social Security Claim"/>
+  <Entry name="TC" value="Treasury Claim"/>
+  <Entry name="TL" value="Tax Lien"/>
+  <Entry name="TR" value="Trade Affected Unemployment Insurance"/>
+  <Entry name="TX" value="Extended Trade Affected Unemployment Insurance"/>
+  <Entry name="VT" value="Value Added Tax (VAT)"/>
+  <Entry name="WP" value="Warrant Pledging"/>
+</Table>

@@ -1,0 +1,35 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T847.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T847">
+  <Entry name="AO" value="All orders - items with changed status"/>
+  <Entry name="CA" value="All Orders - All Items"/>
+  <Entry name="CI" value="All Orders - Shipped Items"/>
+  <Entry name="CO" value="All Orders - Unshipped Items"/>
+  <Entry name="PA" value="Selected Orders - All Items"/>
+  <Entry name="PI" value="Selected Orders - Shipped Orders"/>
+  <Entry name="PO" value="Selected Orders - Unshipped Items"/>
+  <Entry name="PP" value="Selected Orders - Selected Items"/>
+</Table>

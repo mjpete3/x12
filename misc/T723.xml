@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T723.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T723">
+  <Entry name="1" value="Mandatory data element missing"/>
+  <Entry name="2" value="Conditional required data element missing."/>
+  <Entry name="3" value="Too many data elements."/>
+  <Entry name="4" value="Data element too short."/>
+  <Entry name="5" value="Data element too long."/>
+  <Entry name="6" value="Invalid character in data element."/>
+  <Entry name="7" value="Invalid code value."/>
+  <Entry name="8" value="Invalid Date"/>
+  <Entry name="9" value="Invalid Time"/>
+  <Entry name="10" value="Exclusion Condition Violated"/>
+  <Entry name="12" value="Too Many Repetitions"/>
+  <Entry name="13" value="Too Many Components"/>
+</Table>

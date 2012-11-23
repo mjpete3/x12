@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1432.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1432">
+  <Entry name="AGR" value="Authorization Signature Appropriate to this Document, Receipt Requested"/>
+  <Entry name="APR" value="Authorization to Service Provider, Receipt Requested"/>
+  <Entry name="ASG" value="Authorization Signature Appropriate to this Document"/>
+  <Entry name="ASP" value="Authorization to Service Provider"/>
+  <Entry name="CGR" value="Authorization Co-signature Appropriate to this Document, Receipt Requested"/>
+  <Entry name="CSG" value="Authorization Co-signature Appropriate to this Document"/>
+  <Entry name="EAR" value="Approval Certification of Environmental Protection Agency, Receipt Requested"/>
+  <Entry name="EPA" value="Approval Certification of Environmental Protection Agency"/>
+  <Entry name="EPR" value="Export Approval Certification, Receipt Requested"/>
+  <Entry name="EXP" value="Export Approval Certification"/>
+  <Entry name="MCR" value="Medical Report Release Certification, Receipt Requested"/>
+  <Entry name="MRR" value="Medical Record Release Certification"/>
+  <Entry name="NRR" value="Non-repudiation of Receipt"/>
+  <Entry name="PPS" value="Paid Preparer's Signature"/>
+  <Entry name="PRP" value="Preparer's Signature"/>
+  <Entry name="PRR" value="Preparer's Signature, Receipt Requested"/>
+  <Entry name="PSR" value="Paid Preparer's Signature, Receipt Requested"/>
+  <Entry name="SFR" value="Signature Forwarded Independent of Referenced Document, Receipt Requested"/>
+  <Entry name="SFS" value="Signature Forwarded Independent of Referenced Document"/>
+  <Entry name="SIR" value="Non-repudiation of Receipt, Receipt Requested"/>
+  <Entry name="TAX" value="Authorization Signature Appropriate to Submitter of Filing of Taxation Return (TS 813 and others) and under Penalties Prescribed by the Relevant Laws"/>
+  <Entry name="TSO" value="Time Stamp Only (No Responsibility for Contents)"/>
+  <Entry name="ZZR" value="Mutually Defined, Receipt Requested"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

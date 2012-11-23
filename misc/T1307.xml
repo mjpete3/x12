@@ -1,0 +1,216 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1307.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1307">
+  <Entry name="1" value="Guaranteed"/>
+  <Entry name="2" value="Guaranteed with Changes"/>
+  <Entry name="3" value="Denied"/>
+  <Entry name="4" value="Rejected"/>
+  <Entry name="5" value="Pending"/>
+  <Entry name="6" value="Disbursed"/>
+  <Entry name="7" value="Grace"/>
+  <Entry name="8" value="Deferred"/>
+  <Entry name="9" value="Forbearance"/>
+  <Entry name="10" value="Preclaim"/>
+  <Entry name="11" value="Claim"/>
+  <Entry name="12" value="Repayment"/>
+  <Entry name="13" value="Paid in Full"/>
+  <Entry name="14" value="Current"/>
+  <Entry name="15" value="Preforeclosure Acceptance Plan Available"/>
+  <Entry name="16" value="Preforeclosure Acceptance Plan Not Available"/>
+  <Entry name="17" value="Preforeclosure Sale Closing Plan Accepted"/>
+  <Entry name="18" value="Preforeclosure Sale Closing Plan Rejected"/>
+  <Entry name="19" value="Partial Reinstatement"/>
+  <Entry name="1A" value="Foreclosure Sale Held"/>
+  <Entry name="1B" value="Foreclosure Sale Confirmed"/>
+  <Entry name="1C" value="Certificate of Title Issued"/>
+  <Entry name="1D" value="Eviction Referral Received"/>
+  <Entry name="1E" value="Eviction Started"/>
+  <Entry name="1F" value="Eviction Scheduled"/>
+  <Entry name="1G" value="Eviction Completed"/>
+  <Entry name="1H" value="Title Package Submitted"/>
+  <Entry name="1J" value="Attorney File Closed"/>
+  <Entry name="1K" value="Bankruptcy Referral Received"/>
+  <Entry name="1L" value="Proof Claim Filing Expires"/>
+  <Entry name="1M" value="Proof of Claim Filed"/>
+  <Entry name="1N" value="Petition Sent"/>
+  <Entry name="1P" value="Creditors Meeting"/>
+  <Entry name="1Q" value="Motion to Lift Bankruptcy Stay Filed"/>
+  <Entry name="1R" value="Preliminary Hearing for Motion to Lift Bankruptcy Stay"/>
+  <Entry name="1S" value="Final Hearing for Motion to Lift Bankruptcy Stay"/>
+  <Entry name="1T" value="Bankruptcy Discharge Hearing"/>
+  <Entry name="1U" value="Bankruptcy Discharge Entered"/>
+  <Entry name="1V" value="Adequate Protection Granted"/>
+  <Entry name="1W" value="Trustee's No Asset Report Filed"/>
+  <Entry name="1X" value="Trustee's Abandonment Requested"/>
+  <Entry name="1Y" value="Court File Closed"/>
+  <Entry name="1Z" value="Case Dismissed"/>
+  <Entry name="20" value="Reinstated by Mortgagor Who Retains Ownership"/>
+  <Entry name="21" value="Reinstated by Assumptor"/>
+  <Entry name="22" value="Servicing Transferred or Sold to Another Mortgagee"/>
+  <Entry name="23" value="Sold"/>
+  <Entry name="24" value="Government Seizure"/>
+  <Entry name="25" value="Cancel"/>
+  <Entry name="26" value="Refinance"/>
+  <Entry name="27" value="Assumption"/>
+  <Entry name="28" value="Modification"/>
+  <Entry name="29" value="Charge-off"/>
+  <Entry name="2A" value="Reaffirmation Hearing"/>
+  <Entry name="2B" value="Reaffirmation Agreement Approved"/>
+  <Entry name="2C" value="Bankruptcy Schedules Reviewed"/>
+  <Entry name="2D" value="Bankruptcy Schedules Sent"/>
+  <Entry name="2E" value="Bankruptcy Confirmation Hearing"/>
+  <Entry name="2F" value="Bankruptcy Objection Filed"/>
+  <Entry name="2G" value="Hearing on Bankruptcy Objection to Confirmation"/>
+  <Entry name="2H" value="Plan and Disclosure Statement Filed"/>
+  <Entry name="2I" value="Hearing on Disclosure Statement"/>
+  <Entry name="2J" value="Ballot Expires"/>
+  <Entry name="2K" value="Motion to Dismiss Bankruptcy Filed"/>
+  <Entry name="2L" value="Contested Bankruptcy"/>
+  <Entry name="2M" value="Deed in Lieu Referral Received"/>
+  <Entry name="2N" value="Deed in Lieu Documents Sent to Borrower"/>
+  <Entry name="2P" value="Deed in Lieu Documents Executed by Borrower"/>
+  <Entry name="2Q" value="Deed in Lieu Documents Received from Borrower"/>
+  <Entry name="2R" value="Deed in Lieu Documents Sent for Recording"/>
+  <Entry name="2S" value="Deed in Lieu Title Package Sent"/>
+  <Entry name="2U" value="Veterans Affairs Notice of Default Sent (VA 6850)"/>
+  <Entry name="2V" value="Veterans Affairs Intention to Foreclose Sent (VA 6851)"/>
+  <Entry name="2W" value="Veterans Affairs Notice of Election to Convey Sent"/>
+  <Entry name="2X" value="Sale of Converted Adjustable Rate Mortgage"/>
+  <Entry name="2Y" value="Resale of Converted Adjustable Rate Mortgage"/>
+  <Entry name="2Z" value="Foreclosure Status Reset"/>
+  <Entry name="30" value="Third Party Sale"/>
+  <Entry name="31" value="Probate"/>
+  <Entry name="32" value="Military Indulgence"/>
+  <Entry name="33" value="Contested Foreclosure"/>
+  <Entry name="34" value="Natural Disaster"/>
+  <Entry name="35" value="Expiration of Redemption"/>
+  <Entry name="36" value="Preclaim - Skip"/>
+  <Entry name="37" value="Preclaim - Past Due Repayment"/>
+  <Entry name="38" value="Preclaim - Failure to Pay Interest"/>
+  <Entry name="39" value="Preclaim - Enrolled"/>
+  <Entry name="3A" value="Reinstated or Modified - Not Reassigned to Mortgage Registrar"/>
+  <Entry name="3B" value="Pre-qualification"/>
+  <Entry name="3C" value="Application"/>
+  <Entry name="3D" value="Processing"/>
+  <Entry name="3E" value="Underwriting"/>
+  <Entry name="3F" value="Document Preparation"/>
+  <Entry name="3G" value="Loan Closing"/>
+  <Entry name="3H" value="Funding"/>
+  <Entry name="3I" value="Quality Control"/>
+  <Entry name="3J" value="Loan Delivery"/>
+  <Entry name="3K" value="Insuring"/>
+  <Entry name="40" value="Preclaim - Ineligible Borrower"/>
+  <Entry name="41" value="Supplemental Preclaim"/>
+  <Entry name="42" value="Delinquent"/>
+  <Entry name="43" value="Foreclosure Started"/>
+  <Entry name="44" value="Deed-in-Lieu Started"/>
+  <Entry name="45" value="Foreclosure Completed"/>
+  <Entry name="46" value="Property Conveyed to Insurer"/>
+  <Entry name="47" value="Deed-in-Lieu Completed"/>
+  <Entry name="48" value="Claims without Conveyance of Title"/>
+  <Entry name="49" value="Assignment Completed"/>
+  <Entry name="50" value="Claim Paid"/>
+  <Entry name="51" value="Claim - Closed School"/>
+  <Entry name="52" value="Claim - False Certification"/>
+  <Entry name="53" value="Claim - Non-payment"/>
+  <Entry name="54" value="Claim - Ineligible Borrower"/>
+  <Entry name="55" value="Claim - Death"/>
+  <Entry name="56" value="Claim - Disability"/>
+  <Entry name="57" value="Foreclosure Pending - Assigned to Servicer"/>
+  <Entry name="58" value="Foreclosure Pending - Retained by Mortgage Registrar"/>
+  <Entry name="59" value="Chapter 12 Bankruptcy"/>
+  <Entry name="60" value="Reinstated or Modified - Reassigned to Mortgage Registrar"/>
+  <Entry name="61" value="Second Lien Considerations"/>
+  <Entry name="62" value="Veterans Affairs -- No Bid"/>
+  <Entry name="63" value="Veterans Affairs -- Refund"/>
+  <Entry name="64" value="Veterans Affairs -- Buydown"/>
+  <Entry name="65" value="Chapter 7 Bankruptcy"/>
+  <Entry name="66" value="Chapter 11 Bankruptcy"/>
+  <Entry name="67" value="Chapter 13 Bankruptcy"/>
+  <Entry name="68" value="First Legal Action to Commence Foreclosure"/>
+  <Entry name="69" value="Bankruptcy Plan Confirmed"/>
+  <Entry name="70" value="Order Lifting Bankruptcy Stay Entered"/>
+  <Entry name="71" value="Foreclosure Sale Scheduled"/>
+  <Entry name="72" value="Redemption or Confirmation Post Sale Ended"/>
+  <Entry name="73" value="Property Redeemed"/>
+  <Entry name="74" value="Broker's Price Opinion or Appraisal Obtained"/>
+  <Entry name="75" value="No Delinquencies to Report"/>
+  <Entry name="76" value="Bankruptcy Court Clearance Obtained"/>
+  <Entry name="77" value="Deed Recorded"/>
+  <Entry name="78" value="State Housing Assistance Program"/>
+  <Entry name="79" value="Foreclosure File Received by Attorney"/>
+  <Entry name="80" value="Breach Letter Sent"/>
+  <Entry name="81" value="Breach Letter Expired"/>
+  <Entry name="82" value="Service By Publication"/>
+  <Entry name="83" value="Service Completed"/>
+  <Entry name="84" value="Hearing Scheduled"/>
+  <Entry name="85" value="Department of Housing and Urban Development Occupancy Letter Sent"/>
+  <Entry name="86" value="Title Search Ordered"/>
+  <Entry name="87" value="Power of Attorney or Substitute of Trustee Recorded"/>
+  <Entry name="88" value="Appraisal Ordered"/>
+  <Entry name="89" value="Veterans Affairs Holder's Statement of Account Sent (VA 567)"/>
+  <Entry name="90" value="Notice of Election and Demand Recorded"/>
+  <Entry name="91" value="Default Entered"/>
+  <Entry name="92" value="Hearing Held"/>
+  <Entry name="93" value="Writ of Seizure Issued"/>
+  <Entry name="94" value="Judgment or Decree Entered"/>
+  <Entry name="95" value="Foreclosure Sale Continued"/>
+  <Entry name="96" value="Foreclosure Publication Commenced"/>
+  <Entry name="97" value="Redemption Pre-sale Expired"/>
+  <Entry name="98" value="Reinstatement Funds Received"/>
+  <Entry name="99" value="Payoff Funds Received by Attorney"/>
+  <Entry name="AA" value="Conversion"/>
+  <Entry name="AB" value="Received Transmission From School"/>
+  <Entry name="AC" value="Received Application and Promissory Note"/>
+  <Entry name="AD" value="Received Application, Awaiting Promissory Note"/>
+  <Entry name="AE" value="Processing for Submission to Guarantor"/>
+  <Entry name="AF" value="Submitted to Guarantor"/>
+  <Entry name="AG" value="Awaiting Credit Approval"/>
+  <Entry name="AH" value="Credit Approved"/>
+  <Entry name="AI" value="Approved by Guarantor"/>
+  <Entry name="AJ" value="Awaiting First Disbursement"/>
+  <Entry name="AK" value="Application and Promissory Note have been Printed and Mailed"/>
+  <Entry name="AL" value="Reprint Request has been Denied"/>
+  <Entry name="AM" value="Servicing"/>
+  <Entry name="AN" value="Reduced Disbursement Amount"/>
+  <Entry name="AO" value="Rejected by Lender"/>
+  <Entry name="AP" value="Rejected by Guarantor"/>
+  <Entry name="AQ" value="Rejected Due to Processing Problems"/>
+  <Entry name="AR" value="Completing Telephone Follow-up to Resolve Problems"/>
+  <Entry name="AS" value="Holding While Resolving Outstanding Problems"/>
+  <Entry name="AT" value="Reprocessing"/>
+  <Entry name="AU" value="Terminated"/>
+  <Entry name="AV" value="Performing Exception Processing"/>
+  <Entry name="AW" value="First Right Party Contact with Delinquent Borrower Completed"/>
+  <Entry name="AX" value="Last Right Party Contact with Delinquent Borrower Completed"/>
+  <Entry name="AY" value="Property Securing the Loan is Listed For Sale"/>
+  <Entry name="BA" value="Foreclosure Resumed"/>
+  <Entry name="BB" value="Foreclosure Sale Requested"/>
+  <Entry name="BC" value="Promise to Pay Broken"/>
+  <Entry name="BD" value="Promise to Pay Made"/>
+  <Entry name="ZA" value="Title Search Received"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

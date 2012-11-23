@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T726.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T726">
+  <Entry name="01" value="Damaged"/>
+  <Entry name="02" value="Undamaged"/>
+  <Entry name="03" value="Excellent"/>
+  <Entry name="04" value="Good"/>
+  <Entry name="05" value="Fair"/>
+  <Entry name="06" value="Poor"/>
+  <Entry name="07" value="Stable"/>
+  <Entry name="08" value="Declining"/>
+  <Entry name="09" value="Improving"/>
+  <Entry name="10" value="Unknown"/>
+  <Entry name="11" value="Unsecured"/>
+  <Entry name="12" value="Secured"/>
+  <Entry name="13" value="Broken"/>
+  <Entry name="14" value="Unlocked"/>
+  <Entry name="15" value="Overgrown"/>
+  <Entry name="16" value="Littered"/>
+  <Entry name="17" value="Structure Missing"/>
+  <Entry name="18" value="Property Inaccessible"/>
+  <Entry name="20" value="Inferior"/>
+</Table>

@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: STS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="STS" comment="To identify activity taken with an interchange">
+  <Field name="ActionCode" min="2" max="2" validation="TI40" comment="Code indicating the action taken on the interchange or functional group by the service request handler or the receiver"/>
+  <Field name="ActionDate" min="6" max="6" comment="This is the UTC date when the service request handler took action on the reported interchange or functional group"/>
+  <Field name="ActionTime" min="4" max="6" comment="This is the UTC time when the service request handler took action on the reported interchange or functional group"/>
+  <Field name="TimeCode" required="y" min="2" max="2" validation="T623" comment="Code identifying the time. In accordance with International Standards Organization standard 8601, time can be specified by a + or - and an indication in hours in relation to Universal Time Coordinate (UTC) time; since + is a restricted character, + and - are substituted by P and M in the codes that follow"/>
+  <Field name="ErrorReasonCode" required="y" min="3" max="3" validation="TI43" comment="Code specifying the error found when processing the control structure or in delivery"/>
+</Segment>

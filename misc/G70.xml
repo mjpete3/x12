@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G70.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G70" comment="To provide for miscellaneous information relative to a line item">
+  <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+  <Field name="Size" type="double" required="y" min="1" max="8" comment="Size of supplier units in pack"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="PurchaseOrderInstructionCode" required="y" min="2" max="2" validation="T444" comment="Code defining the disposition of any difference between the quantity ordered and the quantity available for shipment"/>
+  <Field name="PriceReasonCode" required="y" min="1" max="1" validation="T381" comment="Code identifying reason for differences in price or coupons redeemed"/>
+  <Field name="TermsExceptionCode" required="y" min="2" max="2" validation="T445" comment="Code specifying the type of terms exception"/>
+  <Field name="TaxExemptCode" required="y" min="1" max="1" validation="T441" comment="Code identifying exemption status from sales and use tax"/>
+  <Field name="Color" required="y" min="1" max="10" comment="Free-form description of color"/>
+  <Field name="PalletBlockAndTiers" type="long" required="y" min="6" max="6" comment="Code indicating pallet and load structure; first three digits indicate the number of cases per layer, last three digits indicate the number of layers per pallet"/>
+  <Field name="InnerPack" type="long" required="y" min="1" max="6" comment="The number of eaches per inner container"/>
+</Segment>

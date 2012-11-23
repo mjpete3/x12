@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RDM.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RDM" comment="To identify remittance delivery when remittance is separate from payment">
+  <Field name="ReportTransmissionCode" min="1" max="2" validation="T756" comment="Code defining timing, transmission method or format by which reports are to be sent"/>
+  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="CommunicationNumber" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
+  <Field name="ReferenceIdentifier1" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+  <Field name="ReferenceIdentifier2" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+</Segment>

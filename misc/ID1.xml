@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ID1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="ID1" comment="To transmit information about the physical characteristics of items">
+  <Field name="UPCEanConsumerPackageCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) identifying the retail shelf unit; consists of 2 high order digits identifying the system (U.S. Grocery = 00, 06 or 07, U.S. Drug = 03); the next ten digits are manufacturer ID: 5, Item ID: 5"/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="FreeFormDescription" min="1" max="45" comment="Free-form descriptive text"/>
+  <Field name="Size" type="double" min="1" max="8" comment="Size of supplier units in pack"/>
+  <Field name="UnitOrBasisForMeasurementCode1" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Height" type="double" min="1" max="8" comment="Vertical dimension of an object measured when the object is in the upright position"/>
+  <Field name="Width" type="double" min="1" max="8" comment="Shorter measurement of the two horizontal dimensions measured with the object in the upright position"/>
+  <Field name="ItemDepth" type="double" min="1" max="6" comment="The depth is the thickness of the product; in the dimension coordinate axes represented by X, Y and Z, depth is measured along the Z axis where X is the horizontal axis and Y is the vertical axis"/>
+  <Field name="UnitOrBasisForMeasurementCode2" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="UnitOrBasisForMeasurementCode3" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="CategoryReferenceCode" required="y" min="1" max="1" comment="Code specifying whose coding system is being used for category and subcategory"/>
+  <Field name="Category" required="y" min="1" max="6" comment="An alphanumeric identifier to represent the category to which the item belongs"/>
+  <Field name="Subcategory" required="y" min="1" max="6" comment="An alphanumeric identifier to represent the subcategory to which the item belongs"/>
+  <Field name="UnitOrBasisForMeasurementCode4" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+  <Field name="InnerPack" type="long" required="y" min="1" max="6" comment="The number of eaches per inner container"/>
+  <Field name="DateQualifier" required="y" min="2" max="2" validation="T432" comment="Code specifying type of date"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="NestingCode" required="y" min="1" max="1" validation="T814" comment="Code indicating orientation of exposure"/>
+  <Field name="Nesting" type="double" required="y" min="1" max="6" comment="The amount of distance that one product fits into (or nests within) another product"/>
+  <Field name="UnitOrBasisForMeasurementCode5" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="PegCode" required="y" min="1" max="1" validation="T855" comment="Code indicating how the vertical or height distance is measured for peg hole items"/>
+  <Field name="UnitOrBasisForMeasurementCode6" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="ReferenceIdentification1" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="XPeg1" type="double" required="y" min="1" max="6" comment="Horizontal distance from the edge to the center of the peg hole (measured from the left)"/>
+  <Field name="YPeg1" type="double" required="y" min="1" max="6" comment="The vertical distance from the edge to the center of the peg hole as specified by the peg code"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="XPeg2" type="double" required="y" min="1" max="6" comment="Horizontal distance from the edge to the center of the peg hole (measured from the left)"/>
+  <Field name="YPeg2" type="double" required="y" min="1" max="6" comment="The vertical distance from the edge to the center of the peg hole as specified by the peg code"/>
+  <Field name="ReferenceIdentification3" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="XPeg3" type="double" required="y" min="1" max="6" comment="Horizontal distance from the edge to the center of the peg hole (measured from the left)"/>
+  <Field name="YPeg3" type="double" required="y" min="1" max="6" comment="The vertical distance from the edge to the center of the peg hole as specified by the peg code"/>
+</Segment>

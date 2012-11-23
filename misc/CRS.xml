@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CRS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CRS" comment="To provide the receiving institution or organization with information about courses taken and the status of those courses">
+  <Field name="BasisForAcademicCreditOrAwardOfCredentialCode" min="1" max="1" validation="T1147" comment="Code indicating how academic credit or a credential was granted by an institution or earned by an individual"/>
+  <Field name="AcademicCreditTypeCode" required="y" min="1" max="1" validation="T1141" comment="Code indicating the type of credit used (awarded) by the institution"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="AcademicGradeQualifier" required="y" min="1" max="3" comment="The grading scale used by an academic institution for an academic course"/>
+  <Field name="AcademicGrade" required="y" min="1" max="3" comment="This indicates the grade received in an academic course"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="AcademicGradeOrCourseLevelCode" required="y" min="1" max="2" validation="T1142" comment="Code indicating the level or type or both, of work which is reflected in the grade average and the credit hours or the credential assessment"/>
+  <Field name="CourseRepeatOrNoCountIndicatorCode" required="y" min="1" max="1" validation="T1150" comment="Code indicating when an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average"/>
+  <Field name="IdentificationCodeQualifier" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="Quantity3" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="LevelOfIndividualTestOrCourseCode" required="y" min="2" max="2" validation="T1131" comment="Code identifying level of course, test, or individual"/>
+  <Field name="Name1" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Name2" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="Quantity4" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity5" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="OverrideAcademicCourseSourceCode" required="y" min="2" max="2" validation="T1152" comment="Code indicating the source of academic credit if not from the sending educational institution"/>
+</Segment>

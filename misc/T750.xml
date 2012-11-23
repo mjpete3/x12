@@ -1,0 +1,263 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T750.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T750">
+  <Entry name="01" value="Limiting Operation"/>
+  <Entry name="02" value="General Product Form"/>
+  <Entry name="03" value="Preservative"/>
+  <Entry name="04" value="Parameter"/>
+  <Entry name="05" value="Category"/>
+  <Entry name="06" value="Sub-category"/>
+  <Entry name="08" value="Product"/>
+  <Entry name="09" value="Sub-product"/>
+  <Entry name="10" value="Major Grade"/>
+  <Entry name="11" value="Society, Government, Customer Specifications"/>
+  <Entry name="12" value="Type and/or Process"/>
+  <Entry name="13" value="Quality (Quality Level)"/>
+  <Entry name="14" value="Finish or Surface Roughness"/>
+  <Entry name="15" value="Heat Treat/Anneal"/>
+  <Entry name="16" value="Temper"/>
+  <Entry name="17" value="Coating"/>
+  <Entry name="18" value="Surface Treatment, Chemical"/>
+  <Entry name="19" value="Surface Treatment, Mechanical"/>
+  <Entry name="20" value="Ends: Slitting, Splitting, Cutting"/>
+  <Entry name="21" value="Forming"/>
+  <Entry name="22" value="Edge Treatment"/>
+  <Entry name="23" value="Welds/Splices"/>
+  <Entry name="25" value="End Treatment"/>
+  <Entry name="28" value="Test Sample Frequency"/>
+  <Entry name="29" value="Test Sample Location"/>
+  <Entry name="30" value="Test Sample Direction"/>
+  <Entry name="32" value="Type of Test/Inspection"/>
+  <Entry name="33" value="Testing and Inspection Agencies"/>
+  <Entry name="34" value="Filament"/>
+  <Entry name="35" value="Color"/>
+  <Entry name="36" value="Denier"/>
+  <Entry name="37" value="Fiber"/>
+  <Entry name="38" value="Grade"/>
+  <Entry name="39" value="Luster"/>
+  <Entry name="40" value="Shade"/>
+  <Entry name="41" value="Tint"/>
+  <Entry name="42" value="Tow"/>
+  <Entry name="43" value="Twist"/>
+  <Entry name="44" value="Bacteriology"/>
+  <Entry name="45" value="Whole Effluent Toxicity"/>
+  <Entry name="46" value="Sediment Toxicity"/>
+  <Entry name="54" value="Section Profile"/>
+  <Entry name="55" value="Alloy"/>
+  <Entry name="56" value="Special Processing"/>
+  <Entry name="58" value="Winding Instructions"/>
+  <Entry name="59" value="Surface Protection"/>
+  <Entry name="60" value="Machine Run"/>
+  <Entry name="61" value="End Use Application"/>
+  <Entry name="62" value="Corrosion Resistance"/>
+  <Entry name="63" value="Product Life Cycle"/>
+  <Entry name="64" value="Package Integrity"/>
+  <Entry name="65" value="Visual"/>
+  <Entry name="66" value="Electrical"/>
+  <Entry name="67" value="Functional Performance"/>
+  <Entry name="68" value="Chemistry"/>
+  <Entry name="69" value="Physical"/>
+  <Entry name="70" value="Magnetic"/>
+  <Entry name="71" value="Mechanical"/>
+  <Entry name="72" value="Metallography"/>
+  <Entry name="73" value="Vendor color description"/>
+  <Entry name="74" value="Vendor size description"/>
+  <Entry name="75" value="Buyer's Color Description"/>
+  <Entry name="76" value="Dye Lot Description"/>
+  <Entry name="77" value="Finish Description"/>
+  <Entry name="78" value="Pattern Description"/>
+  <Entry name="79" value="Put-up Description"/>
+  <Entry name="80" value="MILSPEC (Military Specification)"/>
+  <Entry name="81" value="FEDSPEC (Federal Specification)"/>
+  <Entry name="82" value="FED-STD (Federal Standard)"/>
+  <Entry name="83" value="CID (Commercial Item Description)"/>
+  <Entry name="84" value="Special Specification"/>
+  <Entry name="85" value="Appearance"/>
+  <Entry name="86" value="Dispersion"/>
+  <Entry name="87" value="Fluid"/>
+  <Entry name="88" value="Flow"/>
+  <Entry name="89" value="Moisture"/>
+  <Entry name="90" value="Density"/>
+  <Entry name="91" value="Buyer's Item Size Description"/>
+  <Entry name="92" value="Fabric Description"/>
+  <Entry name="93" value="Shipping Unit Component"/>
+  <Entry name="94" value="Type Spinning"/>
+  <Entry name="95" value="Wax Code"/>
+  <Entry name="96" value="Electronically Cleaned"/>
+  <Entry name="97" value="Conditioned Code"/>
+  <Entry name="99" value="Precautionary Instructions"/>
+  <Entry name="9A" value="Manufacturing Method"/>
+  <Entry name="9B" value="Product Application"/>
+  <Entry name="9C" value="Engine"/>
+  <Entry name="9D" value="Transmission"/>
+  <Entry name="AA" value="Assembly Required"/>
+  <Entry name="AB" value="Construction"/>
+  <Entry name="AC" value="Consumer Instructions"/>
+  <Entry name="AD" value="Shelf Tag"/>
+  <Entry name="AE" value="Fragrance"/>
+  <Entry name="AF" value="Editor"/>
+  <Entry name="AG" value="Translator"/>
+  <Entry name="AH" value="Material"/>
+  <Entry name="AI" value="Nutrition"/>
+  <Entry name="AJ" value="Recycle"/>
+  <Entry name="AK" value="Silhouette"/>
+  <Entry name="AL" value="Discharge"/>
+  <Entry name="AT" value="Process Action Taken"/>
+  <Entry name="B8" value="Bureau of Alcohol, Tobacco and Firearms Class Code"/>
+  <Entry name="BC" value="Behind-the-Counter Drugs"/>
+  <Entry name="BW" value="Basis Weight Size"/>
+  <Entry name="C2" value="Controlled Substance - Class 2"/>
+  <Entry name="C3" value="Controlled Substance-Class 3 (Narcotic)"/>
+  <Entry name="C4" value="Controlled Substance - Class 4"/>
+  <Entry name="C5" value="Controlled Substance - Class 5"/>
+  <Entry name="C6" value="Controlled Substance-Class 3N (Non-narcotic)"/>
+  <Entry name="CD" value="Collateral Description"/>
+  <Entry name="CH" value="Chassis"/>
+  <Entry name="CL" value="Color - Lower Body"/>
+  <Entry name="CM" value="Compliance Method"/>
+  <Entry name="CO" value="Collection Method Code"/>
+  <Entry name="CP" value="Coupling"/>
+  <Entry name="CS" value="Coating or Paint System Code"/>
+  <Entry name="CU" value="Color - Upper Body"/>
+  <Entry name="CW" value="Coating or Paint System Name"/>
+  <Entry name="DE" value="Drug Efficacy Study Implementation"/>
+  <Entry name="DF" value="Dosage Form"/>
+  <Entry name="DM" value="Dimensional"/>
+  <Entry name="EC" value="Escrow Code"/>
+  <Entry name="EN" value="Engine with Transmission"/>
+  <Entry name="FA" value="Failure Analysis Process"/>
+  <Entry name="FC" value="Fold Configurations"/>
+  <Entry name="FL" value="Fuel"/>
+  <Entry name="FQ" value="Quality"/>
+  <Entry name="GD" value="Grain Direction"/>
+  <Entry name="GM" value="General Merchandise"/>
+  <Entry name="GS" value="Goods"/>
+  <Entry name="HB" value="Health and Beauty Aids"/>
+  <Entry name="HY" value="Hydraulics"/>
+  <Entry name="HZ" value="Hazardous Material"/>
+  <Entry name="KI" value="Kit"/>
+  <Entry name="LC" value="Lead/Copper Sample Type"/>
+  <Entry name="LO" value="Coordinate Description Code"/>
+  <Entry name="MA" value="Material Status, Outside Processor"/>
+  <Entry name="MB" value="Marking"/>
+  <Entry name="MM" value="Multi-Media"/>
+  <Entry name="MS" value="Medical Supplies"/>
+  <Entry name="NH" value="Non-Hazardous Material"/>
+  <Entry name="OC" value="Options"/>
+  <Entry name="OD" value="Odorized"/>
+  <Entry name="OR" value="Orientation"/>
+  <Entry name="OT" value="Over-the-Counter Drug"/>
+  <Entry name="P6" value="Percentage of Alcohol"/>
+  <Entry name="PD" value="Physical Form: As Diluted"/>
+  <Entry name="PF" value="Physical Form: Concentrate"/>
+  <Entry name="PG" value="Program"/>
+  <Entry name="PP" value="Process/Production Unit"/>
+  <Entry name="PR" value="Manufacturing Process"/>
+  <Entry name="R3" value="Proof"/>
+  <Entry name="RA" value="Route of Administration"/>
+  <Entry name="RM" value="Results Method Code"/>
+  <Entry name="RR" value="Rejection Reason"/>
+  <Entry name="RX" value="Prescription Drug"/>
+  <Entry name="SC" value="Source"/>
+  <Entry name="SE" value="Services"/>
+  <Entry name="SF" value="Service Feature"/>
+  <Entry name="ST" value="Sample Type"/>
+  <Entry name="TC" value="Therapeutic Class"/>
+  <Entry name="TE" value="Therapeutic Equivalency Evaluation"/>
+  <Entry name="TF" value="Filtering"/>
+  <Entry name="TP" value="Typeface"/>
+  <Entry name="TR" value="Trimming"/>
+  <Entry name="TZ" value="Bureau of Alcohol, Tobacco and Firearms Type Code"/>
+  <Entry name="VA" value="Vehicle"/>
+  <Entry name="VC" value="Volatile Organic Compound Control"/>
+  <Entry name="VI" value="Vintage"/>
+  <Entry name="WD" value="Warranty Description"/>
+  <Entry name="WF" value="Wine Fruit"/>
+  <Entry name="WT" value="Waste"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="AGE" value="Age"/>
+  <Entry name="BCC" value="Beverage Contents Characteristics, (e.g., Kosher, No Sulfites, etc. (Industry List)"/>
+  <Entry name="BES" value="Beverage Segment"/>
+  <Entry name="BEV" value="Beverage Category"/>
+  <Entry name="BLM" value="Bottomhole Location Method Code"/>
+  <Entry name="BND" value="Brand Group"/>
+  <Entry name="BPI" value="Bottomhole Pressure Method Indicator Code"/>
+  <Entry name="BRG" value="Brand Group: A grouping of similar brands, (e.g., Johnnie Walker)"/>
+  <Entry name="CCN" value="Common Chemical Name"/>
+  <Entry name="CFC" value="Company Field Code"/>
+  <Entry name="CHF" value="Chemical Family"/>
+  <Entry name="CLT" value="Casing/Liner/Tubing Type"/>
+  <Entry name="CMS" value="Commercial Status"/>
+  <Entry name="DAC" value="Damage Code"/>
+  <Entry name="DAF" value="Damage Fault"/>
+  <Entry name="DIR" value="Directional Indicator"/>
+  <Entry name="FCD" value="Field Code (EIA/DOD)"/>
+  <Entry name="FDD" value="Forecast Deviation"/>
+  <Entry name="FLV" value="Flavor"/>
+  <Entry name="FMR" value="Formula"/>
+  <Entry name="GEN" value="General Description"/>
+  <Entry name="HZR" value="Hazard Rating System"/>
+  <Entry name="ING" value="Ingredient"/>
+  <Entry name="INJ" value="Injectables"/>
+  <Entry name="MAC" value="Material Classification"/>
+  <Entry name="MBU" value="Minerals Management Service/Bureau of Land Management (Indian Land) Property/Unit Number"/>
+  <Entry name="MSG" value="Market Segment"/>
+  <Entry name="ODR" value="Odor"/>
+  <Entry name="PFA" value="Physical Form"/>
+  <Entry name="PFC" value="Perforation Continuity Indicator"/>
+  <Entry name="PFG" value="Physical Form: Gas"/>
+  <Entry name="PFI" value="Perforation Interval(s)"/>
+  <Entry name="PFK" value="Physical Form: Aerosol"/>
+  <Entry name="PFL" value="Physical Form: Liquid"/>
+  <Entry name="PFM" value="Physical Form: Emulsion"/>
+  <Entry name="PFN" value="Physical Form: Semisolid"/>
+  <Entry name="PFP" value="Physical Form: Powder"/>
+  <Entry name="PFS" value="Physical Form: Solid"/>
+  <Entry name="PFT" value="Perforation Type"/>
+  <Entry name="PRI" value="Grape Variety"/>
+  <Entry name="PRO" value="Proprietary"/>
+  <Entry name="PSC" value="Pipeline Stream"/>
+  <Entry name="PUB" value="Public Information"/>
+  <Entry name="PUR" value="Pure Form"/>
+  <Entry name="QAS" value="Quality Assurance Status"/>
+  <Entry name="RCC" value="Reservoir Code (Company)"/>
+  <Entry name="RSD" value="Regulatory (State) District"/>
+  <Entry name="RSE" value="Regulatory (State) Entity Code"/>
+  <Entry name="SEC" value="Secret or Confidential Information"/>
+  <Entry name="SIZ" value="Sizing"/>
+  <Entry name="SLM" value="Surface Location Method Code"/>
+  <Entry name="SOL" value="Solubility"/>
+  <Entry name="STL" value="State Controlled"/>
+  <Entry name="SYN" value="Synonym"/>
+  <Entry name="THR" value="Threshold"/>
+  <Entry name="TIF" value="Title Insurance Form"/>
+  <Entry name="TIR" value="Tire"/>
+  <Entry name="TRM" value="Test Remarks"/>
+  <Entry name="TRN" value="Trade Name"/>
+  <Entry name="TWF" value="Theoretical Weight Formula"/>
+  <Entry name="WLC" value="Well Classification"/>
+  <Entry name="WTT" value="Well Test Type"/>
+</Table>

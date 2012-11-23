@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1487.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1487">
+  <Entry name="BO" value="Car Reported Bad Order"/>
+  <Entry name="CI" value="Change in Interchange Mode"/>
+  <Entry name="CU" value="Train Delay - Hold for Maintenance of Way Curfew"/>
+  <Entry name="DE" value="Train Delay - Derailment"/>
+  <Entry name="EA" value="Road Estimated Time of Arrival Available"/>
+  <Entry name="ET" value="Car Rescheduled to an Extra Train"/>
+  <Entry name="HL" value="Car Reported Held"/>
+  <Entry name="HR" value="Car Reported Released from Hold"/>
+  <Entry name="HW" value="Train Delay - High Wind"/>
+  <Entry name="ID" value="Scheduled Interchange did not Include Car"/>
+  <Entry name="MS" value="Car Manually Scheduled"/>
+  <Entry name="MV" value="Car Location Move (Without Train)"/>
+  <Entry name="OK" value="Car Reported Released from Bad Order"/>
+  <Entry name="OP" value="Operating Plan Change"/>
+  <Entry name="PE" value="Predictive Estimated Time of Arrival Used"/>
+  <Entry name="RR" value="Train Rerouted"/>
+  <Entry name="SI" value="Added Consignee Placement Instructions"/>
+  <Entry name="SK" value="Train Delay - Sun Kink"/>
+  <Entry name="SL" value="Train Delay - Washout or Slide"/>
+  <Entry name="SO" value="Train Block Set Out Location Changed"/>
+  <Entry name="TA" value="Train Annulment"/>
+  <Entry name="TC" value="Train Consolidation"/>
+  <Entry name="TD" value="Train Departed Without Car"/>
+  <Entry name="TM" value="Train Movement Reporting Deletion"/>
+  <Entry name="TR" value="Train Size Reduction (tonnage, length, number or cars)"/>
+  <Entry name="WA" value="Car Arrived on Different Train"/>
+  <Entry name="WC" value="Waybill Cancellation"/>
+  <Entry name="WD" value="Waybill Diversion or Correction"/>
+  <Entry name="WE" value="Train Delay - Weather"/>
+  <Entry name="WI" value="Car Included in Different Interchange"/>
+  <Entry name="WT" value="Car Departed on Different Train"/>
+</Table>

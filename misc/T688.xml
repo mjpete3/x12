@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T688.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T688">
+  <Entry name="AA" value="Paperwork"/>
+  <Entry name="BO" value="Bailment Order Only"/>
+  <Entry name="DO" value="Direct Only"/>
+  <Entry name="DW" value="Direct and Wholesaler"/>
+  <Entry name="NR" value="Nonreturnable"/>
+  <Entry name="NS" value="Nonservicable"/>
+  <Entry name="OR" value="Ordering"/>
+  <Entry name="SP" value="Special Order Only"/>
+  <Entry name="SR" value="Shipping"/>
+  <Entry name="SS" value="State Stock Plan"/>
+  <Entry name="WO" value="Wholesaler Only"/>
+</Table>

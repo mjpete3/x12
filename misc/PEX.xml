@@ -1,0 +1,35 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PEX.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PEX" comment="To provide housing expense information">
+  <Field name="GeneralExpenseQualifier" min="2" max="2" validation="T1071" comment="Code indicating general expense type"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="TaxTypeCode" required="y" min="2" max="2" validation="T963" comment="Code specifying the type of tax"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="EntityIdentifierCode" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+  <Field name="TaxExemptCode" required="y" min="1" max="1" validation="T441" comment="Code identifying exemption status from sales and use tax"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+</Segment>

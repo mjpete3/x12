@@ -1,0 +1,59 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1602.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1602">
+  <Entry name="ADF" value="Advance Fee"/>
+  <Entry name="ADV" value="Advance Amount"/>
+  <Entry name="BLK" value="Blocking and Bracing Charge"/>
+  <Entry name="COD" value="Cash on Delivery"/>
+  <Entry name="COL" value="Fee for Collecting COD"/>
+  <Entry name="DEL" value="Delivery Charge"/>
+  <Entry name="DEP" value="Detention of Power Unit"/>
+  <Entry name="DET" value="Detention of Trailer"/>
+  <Entry name="DIB" value="Diversion and Reconsignment"/>
+  <Entry name="DSC" value="Discount"/>
+  <Entry name="EIC" value="Export and/or Import Charge"/>
+  <Entry name="EXC" value="Exclusive Use Charge"/>
+  <Entry name="FLT" value="Flat Charge"/>
+  <Entry name="FSC" value="Fuel Surcharge"/>
+  <Entry name="IDL" value="Inside Delivery"/>
+  <Entry name="IPU" value="Inside Pick-up"/>
+  <Entry name="LDA" value="Loading Allowance"/>
+  <Entry name="LDL" value="Unloading Allowance"/>
+  <Entry name="MIL" value="Mileage Charge"/>
+  <Entry name="MIN" value="Minimum Charge"/>
+  <Entry name="MRK" value="Marking or Tagging Charge"/>
+  <Entry name="MSG" value="Miscellaneous Charge"/>
+  <Entry name="ONC" value="Order Notify Charge"/>
+  <Entry name="PLA" value="Placement Charge"/>
+  <Entry name="PWH" value="Pier Charges - Wharfage"/>
+  <Entry name="REP" value="Residential Pick-up"/>
+  <Entry name="RES" value="Residential Delivery"/>
+  <Entry name="SOC" value="Stop Charge"/>
+  <Entry name="SPU" value="Single Pick-up"/>
+  <Entry name="SRG" value="Storage"/>
+  <Entry name="SUF" value="Sufferance Warehouse"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

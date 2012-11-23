@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CRT.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CRT" comment="To identify the contractor report type, type of units reported, status information, and related reporting details">
+  <Field name="ReportTypeCode" min="2" max="2" validation="T755" comment="Code indicating the title or contents of a document, report or supporting item"/>
+  <Field name="CompositeUnitOfMeasure1" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="CompositeUnitOfMeasure2" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="BreakdownStructureDetailCode" required="y" min="2" max="2" validation="T1196" comment="Codes identifying details relating to a reporting breakdown structure tree"/>
+  <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="RateOrValueTypeCode" required="y" min="1" max="2" validation="T562" comment="Code identifying method used to determine the type of rate, value, or percent details"/>
+  <Field name="ContractActionCode" required="y" min="2" max="2" validation="T1308" comment="Code identifying the expected resultant type of contract action or current type of contract action"/>
+  <Field name="ProgramTypeCode" required="y" min="2" max="2" validation="T1193" comment="Codes identifying a program type"/>
+  <Field name="FreeFormDescription" required="y" min="1" max="45" comment="Free-form descriptive text"/>
+  <Field name="SecurityLevelCode" required="y" min="2" max="2" validation="T786" comment="Code indicating the level of confidentiality assigned by the sender to the information following"/>
+</Segment>

@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T820.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T820">
+  <Entry name="AM" value="Analytical Methods"/>
+  <Entry name="AP" value="Approvals"/>
+  <Entry name="CA" value="Carcinogenicity"/>
+  <Entry name="CI" value="Chemical Product and Company Information"/>
+  <Entry name="CM" value="General Information"/>
+  <Entry name="CO" value="Composition or Information on Ingredients"/>
+  <Entry name="DI" value="Disposal Considerations"/>
+  <Entry name="DM" value="Detection Methods"/>
+  <Entry name="DS" value="Disclaimer"/>
+  <Entry name="EI" value="Exposure Information, Effects of Overexposure, Exposure Limits"/>
+  <Entry name="EN" value="Ecological Information"/>
+  <Entry name="EO" value="Emergency Procedures"/>
+  <Entry name="EP" value="Exposure Controls or Personal Protection"/>
+  <Entry name="FA" value="First Aid Measures"/>
+  <Entry name="FE" value="Fire Fighting Measures"/>
+  <Entry name="HH" value="Hazards Identification"/>
+  <Entry name="HI" value="Potential Health Effects"/>
+  <Entry name="IA" value="Other Information"/>
+  <Entry name="KY" value="Key or Legend"/>
+  <Entry name="MI" value="Material or Product Identification"/>
+  <Entry name="MS" value="Material Safety Data Sheet"/>
+  <Entry name="PD" value="Physical and Chemical Properties"/>
+  <Entry name="PM" value="Preventive Measures"/>
+  <Entry name="PR" value="Preparation and Revision Information"/>
+  <Entry name="RE" value="Stability and Reactivity Information"/>
+  <Entry name="RG" value="Regulatory Information"/>
+  <Entry name="SH" value="Transport Information"/>
+  <Entry name="SL" value="Accidental Release Measures"/>
+  <Entry name="ST" value="Handling and Storage"/>
+  <Entry name="TS" value="Trade Secret Exemptions"/>
+  <Entry name="TX" value="Toxicological Information"/>
+</Table>

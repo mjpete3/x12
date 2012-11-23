@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1030.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1030">
+  <Entry name="999" value="Other Gasket Type"/>
+  <Entry name="ASB" value="Asbestos"/>
+  <Entry name="BUN" value="Buna"/>
+  <Entry name="BUT" value="Butyl Rubber"/>
+  <Entry name="EPD" value="Ethylene Propylene (EPDM)"/>
+  <Entry name="FDA" value="FDA White-Food Grade"/>
+  <Entry name="HYP" value="Hypolon"/>
+  <Entry name="KAL" value="Kalrez"/>
+  <Entry name="LEA" value="Leather"/>
+  <Entry name="NAT" value="Natural Rubber"/>
+  <Entry name="NEO" value="Neoprene"/>
+  <Entry name="SAN" value="Santoprene"/>
+  <Entry name="TEF" value="Teflon"/>
+  <Entry name="VIT" value="Viton"/>
+</Table>

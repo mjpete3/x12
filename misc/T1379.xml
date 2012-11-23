@@ -1,0 +1,49 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1379.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1379">
+  <Entry name="0" value="Match on Loan"/>
+  <Entry name="1" value="Social Security Number Does Not Match"/>
+  <Entry name="2" value="Loan ID Does Not Match"/>
+  <Entry name="3" value="Loan Program Does Not Match"/>
+  <Entry name="4" value="Borrower Name Does Not Match"/>
+  <Entry name="5" value="First Disbursement Date Does Not Match"/>
+  <Entry name="6" value="Guaranteed Amount Does Not Match"/>
+  <Entry name="7" value="Guarantee Date Does Not Match"/>
+  <Entry name="8" value="Outstanding Loan Balance Does Not Match"/>
+  <Entry name="9" value="Interest Rate Does Not Match"/>
+  <Entry name="10" value="Interest Schedule Does Not Match"/>
+  <Entry name="11" value="Grace Period Does Not Match"/>
+  <Entry name="12" value="Less-Than-Half Time Date Does Not Match"/>
+  <Entry name="13" value="Repayment Begin Date Does Not Match"/>
+  <Entry name="14" value="Borrower Status Does Not Match"/>
+  <Entry name="15" value="Borrower Status Date Does Not Match"/>
+  <Entry name="16" value="Servicer/Lender Department of Education (DOE) Number Does Not Match"/>
+  <Entry name="17" value="Seller Department of Education (DOE) Number Does Not Match"/>
+  <Entry name="18" value="Servicing Transfer Date Does Not Match"/>
+  <Entry name="19" value="Purchase Date Does Not Match"/>
+  <Entry name="20" value="Guarantee Fee Not Paid"/>
+  <Entry name="21" value="Birthdate Does Not Match"/>
+</Table>

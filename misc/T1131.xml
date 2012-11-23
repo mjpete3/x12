@@ -1,0 +1,120 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1131.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1131">
+  <Entry name="01" value="First grade"/>
+  <Entry name="02" value="Second grade"/>
+  <Entry name="03" value="Third grade"/>
+  <Entry name="04" value="Fourth grade"/>
+  <Entry name="05" value="Fifth grade"/>
+  <Entry name="06" value="Sixth grade"/>
+  <Entry name="07" value="Seventh grade"/>
+  <Entry name="08" value="Eighth grade"/>
+  <Entry name="09" value="Ninth grade"/>
+  <Entry name="0A" value="Administrative"/>
+  <Entry name="0K" value="Kindergarten"/>
+  <Entry name="10" value="Tenth grade"/>
+  <Entry name="11" value="Eleventh grade"/>
+  <Entry name="12" value="Twelfth grade"/>
+  <Entry name="14" value="Managerial"/>
+  <Entry name="15" value="Other Professional"/>
+  <Entry name="16" value="Clerical"/>
+  <Entry name="17" value="Technical"/>
+  <Entry name="18" value="Skilled Crafts"/>
+  <Entry name="19" value="Service Maintenance"/>
+  <Entry name="20" value="Non-Degree or Temporary Undergraduate in Postsecondary school"/>
+  <Entry name="21" value="Postsecondary First Year Student"/>
+  <Entry name="22" value="Postsecondary Sophomore"/>
+  <Entry name="23" value="Postsecondary Junior"/>
+  <Entry name="24" value="Postsecondary Senior"/>
+  <Entry name="25" value="Postsecondary Post-Baccalaureate Student"/>
+  <Entry name="26" value="Postsecondary Non-Degree Graduate Student"/>
+  <Entry name="27" value="Postsecondary Professional Student"/>
+  <Entry name="28" value="Postsecondary Master's Degree Student"/>
+  <Entry name="29" value="Postsecondary Doctoral Student"/>
+  <Entry name="30" value="Postdoctoral Student"/>
+  <Entry name="31" value="Postsecondary Bachelor Preliminary Year"/>
+  <Entry name="32" value="Postsecondary Fifth Year Student"/>
+  <Entry name="33" value="Postsecondary Masters Qualifying Year"/>
+  <Entry name="34" value="First-year Graduate"/>
+  <Entry name="35" value="Second-year Graduate"/>
+  <Entry name="36" value="Third-year Graduate"/>
+  <Entry name="37" value="Beyond Third-year Graduate"/>
+  <Entry name="38" value="First-year, Attended College Before"/>
+  <Entry name="39" value="First-year Professional"/>
+  <Entry name="40" value="Second-year Professional"/>
+  <Entry name="41" value="Third-year Professional"/>
+  <Entry name="42" value="Beyond Third-year Professional"/>
+  <Entry name="AA" value="High School"/>
+  <Entry name="AB" value="Middle School"/>
+  <Entry name="AC" value="Junior High School"/>
+  <Entry name="AD" value="Adult"/>
+  <Entry name="AS" value="Associate Degree"/>
+  <Entry name="BD" value="Baccalaureate (Bachelor's) Degree"/>
+  <Entry name="C2" value="Medical Test (Trial)"/>
+  <Entry name="CL" value="Clinical Medicine"/>
+  <Entry name="DD" value="Doctoral Degree"/>
+  <Entry name="EL" value="Elementary School"/>
+  <Entry name="EM" value="Employment"/>
+  <Entry name="EX" value="Executive"/>
+  <Entry name="FL" value="Fall Term First Professional"/>
+  <Entry name="FP" value="First Professional"/>
+  <Entry name="FT" value="Fall Term Graduate"/>
+  <Entry name="FU" value="Full-time First-time Degree-seeking Undergraduate"/>
+  <Entry name="FV" value="First-time Degree-seeking Undergraduate"/>
+  <Entry name="GR" value="Graduate"/>
+  <Entry name="HG" value="High School Graduate or Equivalent"/>
+  <Entry name="HS" value="Attended high school, but did not graduate."/>
+  <Entry name="IF" value="Infant (0 to age 2)"/>
+  <Entry name="IN" value="Intramural"/>
+  <Entry name="LA" value="Local Education Agency (LEA)"/>
+  <Entry name="MD" value="Master's Degree"/>
+  <Entry name="MG" value="Mixed Grades"/>
+  <Entry name="MS" value="Middle or Junior High School"/>
+  <Entry name="NO" value="None"/>
+  <Entry name="P0" value="Pre-Kindergarten Level 0"/>
+  <Entry name="P1" value="Pre-Kindergarten Level 1"/>
+  <Entry name="P2" value="Pre-Kindergarten Level 2"/>
+  <Entry name="P3" value="Pre-Kindergarten Level 3"/>
+  <Entry name="P4" value="Pre-Kindergarten Level 4"/>
+  <Entry name="P5" value="Pre-Kindergarten Level 5"/>
+  <Entry name="PC" value="Postsecondary Certificate or Diploma"/>
+  <Entry name="PD" value="Professional Degree or Certification"/>
+  <Entry name="PF" value="Professional"/>
+  <Entry name="PK" value="Pre-Kindergarten"/>
+  <Entry name="PM" value="Pre-clinical Medicine"/>
+  <Entry name="PO" value="Postsecondary"/>
+  <Entry name="PS" value="Some Postsecondary (e.g., college)"/>
+  <Entry name="SA" value="School"/>
+  <Entry name="SP" value="Instructional"/>
+  <Entry name="SS" value="Secondary School"/>
+  <Entry name="ST" value="Support Services"/>
+  <Entry name="TF" value="Twelve Month First Professional"/>
+  <Entry name="TW" value="Twelve Month Graduate"/>
+  <Entry name="UG" value="Undergraduate"/>
+  <Entry name="UN" value="Ungraded"/>
+  <Entry name="VR" value="Varsity"/>
+  <Entry name="VS" value="Vocational School"/>
+</Table>

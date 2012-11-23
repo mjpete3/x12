@@ -1,0 +1,55 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1376.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1376">
+  <Entry name="01" value="No Special Accounting Action"/>
+  <Entry name="02" value="Action Code Reset"/>
+  <Entry name="03" value="Relief Provisions"/>
+  <Entry name="04" value="Bankruptcy or Litigation"/>
+  <Entry name="05" value="Referred for Deed in Lieu of Foreclosure"/>
+  <Entry name="06" value="Referred for Foreclosure"/>
+  <Entry name="07" value="Loan Inactive for Accounting"/>
+  <Entry name="08" value="Loan Reinstated for Accounting"/>
+  <Entry name="09" value="Payoff"/>
+  <Entry name="10" value="Payoff - Repurchased"/>
+  <Entry name="1A" value="Payoff - Alternative Conversion Adjustable Rate Mortgage to Fixed Rate Mortgage"/>
+  <Entry name="1B" value="Real Estate Owned Property"/>
+  <Entry name="1C" value="Third-party Foreclosure Sale"/>
+  <Entry name="1D" value="Federal Housing Administration or Veterans Administration/Real Estate Owned or Conveyance"/>
+  <Entry name="1E" value="Short Payoff"/>
+  <Entry name="1F" value="Principal Balance Correction"/>
+  <Entry name="1G" value="Delinquency"/>
+  <Entry name="1H" value="Third Party Sale, Pre-Foreclosure Sale and Short Payoff"/>
+  <Entry name="1J" value="Payoff - Prepaid"/>
+  <Entry name="1K" value="Payoff - Matured"/>
+  <Entry name="1M" value="Mortgage Insurance Cancellation by Homeowner Based on Original Value of Property"/>
+  <Entry name="1N" value="Mortgage Insurance Cancellation by Homeowner Based on Current Value of Property"/>
+  <Entry name="1O" value="Mortgage Insurance Cancellation by Servicer Based on Automatic Cancellation Provisions"/>
+  <Entry name="1P" value="Mortgage Insurance Cancellation Based on Mandatory Termination for High Risk Loan"/>
+  <Entry name="1Q" value="Curtailment"/>
+  <Entry name="1R" value="Skip Payment"/>
+  <Entry name="1S" value="Mortgage Insurance Cancellation for Unspecified Reason"/>
+  <Entry name="IL" value="Substitution"/>
+</Table>

@@ -1,0 +1,65 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1142.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1142">
+  <Entry name="1" value="Remedial"/>
+  <Entry name="2" value="Basic"/>
+  <Entry name="3" value="Teacher's Aide"/>
+  <Entry name="4" value="General"/>
+  <Entry name="5" value="Applied"/>
+  <Entry name="6" value="Survey"/>
+  <Entry name="7" value="Regular"/>
+  <Entry name="8" value="Specialized Topics"/>
+  <Entry name="9" value="Advanced"/>
+  <Entry name="A" value="Summary of all courses taken at all institutions"/>
+  <Entry name="B" value="Summary of all courses taken at sending institution"/>
+  <Entry name="D" value="Dual Level (Upper Division and Graduate)"/>
+  <Entry name="E" value="Summary of All Courses Taken at All Institutions, Excluding Repeated and/or Forgiven Courses"/>
+  <Entry name="F" value="Summary of All Courses Taken at the Sending Institution, Excluding Repeated and/or Forgiven Courses"/>
+  <Entry name="G" value="Graduate (postsecondary)"/>
+  <Entry name="H" value="Higher or Upper division (postsecondary)"/>
+  <Entry name="I" value="Institutional Credit"/>
+  <Entry name="L" value="Lower division (postsecondary)"/>
+  <Entry name="M" value="Work in the Major or Program"/>
+  <Entry name="P" value="Professional"/>
+  <Entry name="R" value="Remedial (postsecondary)"/>
+  <Entry name="T" value="Summary of Transfer Work Only"/>
+  <Entry name="U" value="Undergraduate (postsecondary)"/>
+  <Entry name="V" value="Summary of Transfer Work Only, Excluding Repeated and/or Forgiven Courses"/>
+  <Entry name="10" value="Honors"/>
+  <Entry name="11" value="Gifted and Talented"/>
+  <Entry name="12" value="Advanced Placement"/>
+  <Entry name="13" value="Special Education"/>
+  <Entry name="14" value="Vocational Education"/>
+  <Entry name="15" value="Independent Study"/>
+  <Entry name="16" value="Work Experience"/>
+  <Entry name="17" value="Adult Basic"/>
+  <Entry name="18" value="Adult Secondary"/>
+  <Entry name="19" value="International Baccalaureate"/>
+  <Entry name="AR" value="Academic Renewal"/>
+  <Entry name="DL" value="Dual Level (Graduate and Professional)"/>
+  <Entry name="X1" value="Elementary"/>
+  <Entry name="X2" value="Secondary"/>
+</Table>

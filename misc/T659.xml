@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T659.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T659">
+  <Entry name="1" value="Birth Certificate"/>
+  <Entry name="2" value="Passport"/>
+  <Entry name="3" value="Hospital Certificate"/>
+  <Entry name="4" value="Affidavit"/>
+  <Entry name="5" value="Immigration Document"/>
+  <Entry name="6" value="Baptismal or Church Certificate"/>
+  <Entry name="7" value="Physician's Certificate"/>
+  <Entry name="8" value="Undocumented"/>
+  <Entry name="9" value="Driver's License"/>
+  <Entry name="A" value="Photo ID"/>
+  <Entry name="B" value="Social Insurance Certificate"/>
+  <Entry name="C" value="US Passport"/>
+  <Entry name="D" value="Certificate of US Citizenship"/>
+  <Entry name="E" value="Certificate of Naturalization"/>
+  <Entry name="F" value="Unexpired Foreign Passport with Stamp or Attached Immigration and Naturalization Service (INS) Form Indicating Unexpired Employment Authorization"/>
+  <Entry name="G" value="Alien Registration Receipt Card with Photograph"/>
+  <Entry name="H" value="Unexpired Temporary Resident Card"/>
+  <Entry name="I" value="Unexpired Employment Authorization Card"/>
+  <Entry name="J" value="Unexpired Reentry Permit"/>
+  <Entry name="K" value="Unexpired Refugee Travel Document"/>
+</Table>

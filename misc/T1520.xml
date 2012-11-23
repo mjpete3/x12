@@ -1,0 +1,52 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1520.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1520">
+  <Entry name="AA" value="End Cap - Front End"/>
+  <Entry name="AB" value="End Cap - Back End"/>
+  <Entry name="AC" value="End Cap - Middle"/>
+  <Entry name="AD" value="Free Standing"/>
+  <Entry name="AE" value="Shipper"/>
+  <Entry name="AF" value="Module Ready to Display"/>
+  <Entry name="AG" value="Refrigerated Display Case"/>
+  <Entry name="AH" value="Gondola (Island)"/>
+  <Entry name="AI" value="Sidestack"/>
+  <Entry name="AJ" value="Spinner Rack"/>
+  <Entry name="AK" value="Clip Strip"/>
+  <Entry name="AL" value="J-hook"/>
+  <Entry name="AM" value="Checkstand"/>
+  <Entry name="AN" value="Wing Display"/>
+  <Entry name="AO" value="Pallet"/>
+  <Entry name="AP" value="Dump Bin"/>
+  <Entry name="AQ" value="Other"/>
+  <Entry name="AR" value="Frozen Display Case"/>
+  <Entry name="AS" value="In-Aisle"/>
+  <Entry name="AT" value="Backroom Shelf"/>
+  <Entry name="AU" value="Backroom Cold Box Storage"/>
+  <Entry name="AV" value="Backroom Floor Space"/>
+  <Entry name="AW" value="Frontroom Shelf Space"/>
+  <Entry name="AX" value="Frontroom Cold Box Storage"/>
+  <Entry name="AY" value="Frontroom Floor Space"/>
+</Table>

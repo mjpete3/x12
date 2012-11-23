@@ -1,0 +1,53 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T943.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T943">
+  <Entry name="01" value="Round"/>
+  <Entry name="02" value="Rectangular"/>
+  <Entry name="03" value="Charpy-B"/>
+  <Entry name="04" value="Tubular"/>
+  <Entry name="05" value="Sand Cast"/>
+  <Entry name="06" value="Charpy Powdered Parts"/>
+  <Entry name="07" value="Izod Powdered Parts"/>
+  <Entry name="08" value="Irregular"/>
+  <Entry name="09" value="Spherical"/>
+  <Entry name="10" value="Charpy-C"/>
+  <Entry name="11" value="Die Cast"/>
+  <Entry name="12" value="Pressed"/>
+  <Entry name="13" value="Permanent Mold Cast"/>
+  <Entry name="14" value="Cylindrical"/>
+  <Entry name="15" value="Charpy-A"/>
+  <Entry name="16" value="Izod V-Notch"/>
+  <Entry name="17" value="Izod X-Notch"/>
+  <Entry name="18" value="Izod Y-Notch"/>
+  <Entry name="19" value="Izod Z-Notch"/>
+  <Entry name="20" value="Full Cross-Section"/>
+  <Entry name="21" value="Mill Annealed"/>
+  <Entry name="22" value="Heat Treated"/>
+  <Entry name="23" value="Aged"/>
+  <Entry name="24" value="Notched"/>
+  <Entry name="25" value="Smooth"/>
+  <Entry name="26" value="Combination"/>
+</Table>

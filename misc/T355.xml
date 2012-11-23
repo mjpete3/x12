@@ -1,0 +1,831 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T355.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T355">
+  <Entry name="01" value="Actual Pounds"/>
+  <Entry name="02" value="Statute Mile"/>
+  <Entry name="03" value="Seconds"/>
+  <Entry name="04" value="Small Spray"/>
+  <Entry name="05" value="Lifts"/>
+  <Entry name="06" value="Digits"/>
+  <Entry name="07" value="Strand"/>
+  <Entry name="08" value="Heat Lots"/>
+  <Entry name="09" value="Tire"/>
+  <Entry name="10" value="Group"/>
+  <Entry name="11" value="Outfit"/>
+  <Entry name="12" value="Packet"/>
+  <Entry name="13" value="Ration"/>
+  <Entry name="14" value="Shot"/>
+  <Entry name="15" value="Stick"/>
+  <Entry name="16" value="115 Kilogram Drum"/>
+  <Entry name="17" value="100 Pound Drum"/>
+  <Entry name="18" value="55 Gallon Drum"/>
+  <Entry name="19" value="Tank Truck"/>
+  <Entry name="1A" value="Car Mile"/>
+  <Entry name="1B" value="Car Count"/>
+  <Entry name="1C" value="Locomotive Count"/>
+  <Entry name="1D" value="Caboose Count"/>
+  <Entry name="1E" value="Empty Car"/>
+  <Entry name="1F" value="Train Mile"/>
+  <Entry name="1G" value="Fuel Usage (Gallons)"/>
+  <Entry name="1H" value="Caboose Mile"/>
+  <Entry name="1I" value="Fixed Rate"/>
+  <Entry name="1J" value="Ton Miles"/>
+  <Entry name="1K" value="Locomotive Mile"/>
+  <Entry name="1L" value="Total Car Count"/>
+  <Entry name="1M" value="Total Car Mile"/>
+  <Entry name="1N" value="Count"/>
+  <Entry name="1O" value="Season"/>
+  <Entry name="1P" value="Tank Car"/>
+  <Entry name="1Q" value="Frames"/>
+  <Entry name="1R" value="Transactions"/>
+  <Entry name="1T" value="Terabecquerel"/>
+  <Entry name="1X" value="Quarter Mile"/>
+  <Entry name="20" value="20 Foot Container"/>
+  <Entry name="21" value="40 Foot Container"/>
+  <Entry name="22" value="Deciliter per Gram"/>
+  <Entry name="23" value="Grams per Cubic Centimeter"/>
+  <Entry name="24" value="Theoretical Pounds"/>
+  <Entry name="25" value="Grams per Square Centimeter"/>
+  <Entry name="26" value="Actual Tons"/>
+  <Entry name="27" value="Theoretical Tons"/>
+  <Entry name="28" value="Kilograms per Square Meter"/>
+  <Entry name="29" value="Pounds per 1000 Square Feet"/>
+  <Entry name="2A" value="Radians Per Second"/>
+  <Entry name="2B" value="Radians Per Second Squared"/>
+  <Entry name="2C" value="Roentgen"/>
+  <Entry name="2D" value="Ship Set"/>
+  <Entry name="2F" value="Volts Per Meter"/>
+  <Entry name="2G" value="Volts (Alternating Current)"/>
+  <Entry name="2H" value="Volts (Direct Current)"/>
+  <Entry name="2I" value="British Thermal Units (BTUs) Per Hour"/>
+  <Entry name="2J" value="Cubic Centimeters Per Second"/>
+  <Entry name="2K" value="Cubic Feet Per Hour"/>
+  <Entry name="2L" value="Cubic Feet Per Minute"/>
+  <Entry name="2M" value="Centimeters Per Second"/>
+  <Entry name="2N" value="Decibels"/>
+  <Entry name="2P" value="Kilobyte"/>
+  <Entry name="2Q" value="Kilobecquerel"/>
+  <Entry name="2R" value="Kilocurie"/>
+  <Entry name="2U" value="Megagram"/>
+  <Entry name="2V" value="Megagrams Per Hour"/>
+  <Entry name="2W" value="Bin"/>
+  <Entry name="2X" value="Meters Per Minute"/>
+  <Entry name="2Y" value="Milliroentgen"/>
+  <Entry name="2Z" value="Millivolts"/>
+  <Entry name="30" value="Horsepower Days per Air Dry Metric Tons"/>
+  <Entry name="31" value="Catchweight"/>
+  <Entry name="32" value="Kilograms per Air Dry Metric Tons"/>
+  <Entry name="33" value="Kilopascal Square Meters per Gram"/>
+  <Entry name="34" value="Kilopascals per Millimeter"/>
+  <Entry name="35" value="Milliliters per Square Centimeter Second"/>
+  <Entry name="36" value="Cubic Feet per Minute per Square Foot"/>
+  <Entry name="37" value="Ounces per Square Foot"/>
+  <Entry name="38" value="Ounces per Square Foot per 0.01 Inch"/>
+  <Entry name="39" value="Basis Points"/>
+  <Entry name="3B" value="Megajoule"/>
+  <Entry name="3C" value="Manmonth"/>
+  <Entry name="3E" value="Pounds Per Pound of Product"/>
+  <Entry name="3F" value="Kilograms Per Liter of Product"/>
+  <Entry name="3G" value="Pounds Per Piece of Product"/>
+  <Entry name="3H" value="Kilograms Per Kilogram of Product"/>
+  <Entry name="3I" value="Kilograms Per Piece of Product"/>
+  <Entry name="40" value="Milliliter per Second"/>
+  <Entry name="41" value="Milliliter per Minute"/>
+  <Entry name="43" value="Super Bulk Bag"/>
+  <Entry name="44" value="500 Kilogram Bulk Bag"/>
+  <Entry name="45" value="300 Kilogram Bulk Bag"/>
+  <Entry name="46" value="25 Kilogram Bulk Bag"/>
+  <Entry name="47" value="50 Pound Bag"/>
+  <Entry name="48" value="Bulk Car Load"/>
+  <Entry name="4A" value="Bobbin"/>
+  <Entry name="4B" value="Cap"/>
+  <Entry name="4C" value="Centistokes"/>
+  <Entry name="4D" value="Curie"/>
+  <Entry name="4E" value="20-Pack"/>
+  <Entry name="4F" value="100-Pack"/>
+  <Entry name="4G" value="Microliter"/>
+  <Entry name="4I" value="Meters Per Second"/>
+  <Entry name="4J" value="Meters Per Second Per Second"/>
+  <Entry name="4K" value="Milliamperes"/>
+  <Entry name="4L" value="Megabyte"/>
+  <Entry name="4M" value="Milligrams Per Hour"/>
+  <Entry name="4N" value="Megabecquerel"/>
+  <Entry name="4O" value="Microfarad"/>
+  <Entry name="4P" value="Newtons Per Meter"/>
+  <Entry name="4Q" value="Ounce Inch"/>
+  <Entry name="4R" value="Ounce Foot"/>
+  <Entry name="4S" value="Pascal"/>
+  <Entry name="4T" value="Picofarad"/>
+  <Entry name="4U" value="Pounds Per Hour"/>
+  <Entry name="4V" value="Cubic Meter Per Hour"/>
+  <Entry name="4W" value="Ton Per Hour"/>
+  <Entry name="4X" value="Kiloliter Per Hour"/>
+  <Entry name="50" value="Actual Kilograms"/>
+  <Entry name="51" value="Actual Tonnes"/>
+  <Entry name="52" value="Credits"/>
+  <Entry name="53" value="Theoretical Kilograms"/>
+  <Entry name="54" value="Theoretical Tonnes"/>
+  <Entry name="56" value="Sitas"/>
+  <Entry name="57" value="Mesh"/>
+  <Entry name="58" value="Net Kilograms"/>
+  <Entry name="59" value="Parts Per Million"/>
+  <Entry name="5A" value="Barrels per Minute"/>
+  <Entry name="5B" value="Batch"/>
+  <Entry name="5C" value="Gallons per Thousand"/>
+  <Entry name="5D" value="Proof Gallons"/>
+  <Entry name="5E" value="MMSCF/Day"/>
+  <Entry name="5F" value="Pounds per Thousand"/>
+  <Entry name="5G" value="Pump"/>
+  <Entry name="5H" value="Stage"/>
+  <Entry name="5I" value="Standard Cubic Foot"/>
+  <Entry name="5J" value="Hydraulic Horse Power"/>
+  <Entry name="5K" value="Count per Minute"/>
+  <Entry name="5P" value="Seismic Level"/>
+  <Entry name="5Q" value="Seismic Line"/>
+  <Entry name="60" value="Percent Weight"/>
+  <Entry name="61" value="Parts Per Billion"/>
+  <Entry name="62" value="Percent Per 1000 Hours"/>
+  <Entry name="63" value="Failure Rate In Time"/>
+  <Entry name="64" value="Pounds Per Square Inch Gauge"/>
+  <Entry name="65" value="Coulomb"/>
+  <Entry name="66" value="Oersteds"/>
+  <Entry name="67" value="Siemens"/>
+  <Entry name="68" value="Ampere"/>
+  <Entry name="69" value="Test Specific Scale"/>
+  <Entry name="70" value="Volt"/>
+  <Entry name="71" value="Volt-Ampere Per Pound"/>
+  <Entry name="72" value="Watts Per Pound"/>
+  <Entry name="73" value="Ampere Turn Per Centimeter"/>
+  <Entry name="74" value="Milli Pascals"/>
+  <Entry name="76" value="Gauss"/>
+  <Entry name="77" value="Mil"/>
+  <Entry name="78" value="Kilogauss"/>
+  <Entry name="79" value="Electron Volt"/>
+  <Entry name="80" value="Pounds Per Square Inch Absolute"/>
+  <Entry name="81" value="Henry"/>
+  <Entry name="82" value="Ohm"/>
+  <Entry name="83" value="Farad"/>
+  <Entry name="84" value="Kilo Pounds Per Square Inch (KSI)"/>
+  <Entry name="85" value="Foot Pounds"/>
+  <Entry name="86" value="Joules"/>
+  <Entry name="87" value="Pounds per Cubic Foot"/>
+  <Entry name="89" value="Poise"/>
+  <Entry name="8C" value="Cord"/>
+  <Entry name="8D" value="Duty"/>
+  <Entry name="8P" value="Project"/>
+  <Entry name="8R" value="Program"/>
+  <Entry name="8S" value="Session"/>
+  <Entry name="8U" value="Square Kilometer"/>
+  <Entry name="90" value="Saybold Universal Second"/>
+  <Entry name="91" value="Stokes"/>
+  <Entry name="92" value="Calories per Cubic Centimeter"/>
+  <Entry name="93" value="Calories per Gram"/>
+  <Entry name="94" value="Curl Units"/>
+  <Entry name="95" value="20,000 Gallon Tankcar"/>
+  <Entry name="96" value="10,000 Gallon Tankcar"/>
+  <Entry name="97" value="10 Kilogram Drum"/>
+  <Entry name="98" value="15 Kilogram Drum"/>
+  <Entry name="99" value="Watt"/>
+  <Entry name="A8" value="Dollars per Hours"/>
+  <Entry name="AA" value="Ball"/>
+  <Entry name="AB" value="Bulk Pack"/>
+  <Entry name="AC" value="Acre"/>
+  <Entry name="AD" value="Bytes"/>
+  <Entry name="AE" value="Amperes per Meter"/>
+  <Entry name="AF" value="Centigram"/>
+  <Entry name="AG" value="Angstrom"/>
+  <Entry name="AH" value="Additional Minutes"/>
+  <Entry name="AI" value="Average Minutes Per Call"/>
+  <Entry name="AJ" value="Cop"/>
+  <Entry name="AK" value="Fathom"/>
+  <Entry name="AL" value="Access Lines"/>
+  <Entry name="AM" value="Ampoule"/>
+  <Entry name="AN" value="Minutes or Messages"/>
+  <Entry name="AO" value="Ampere-turn"/>
+  <Entry name="AP" value="Aluminum Pounds Only"/>
+  <Entry name="AQ" value="Anti-hemophilic Factor (AHF) Units"/>
+  <Entry name="AR" value="Suppository"/>
+  <Entry name="AS" value="Assortment"/>
+  <Entry name="AT" value="Atmosphere"/>
+  <Entry name="AU" value="Ocular Insert System"/>
+  <Entry name="AV" value="Capsule"/>
+  <Entry name="AW" value="Powder-Filled Vials"/>
+  <Entry name="AX" value="Twenty"/>
+  <Entry name="AY" value="Assembly"/>
+  <Entry name="AZ" value="British Thermal Units (BTUs) per Pound"/>
+  <Entry name="B0" value="British Thermal Units (BTUs) per Cubic Foot"/>
+  <Entry name="B1" value="Barrels per Day"/>
+  <Entry name="B2" value="Bunks"/>
+  <Entry name="B3" value="Batting Pound"/>
+  <Entry name="B4" value="Barrel, Imperial"/>
+  <Entry name="B5" value="Billet"/>
+  <Entry name="B6" value="Bun"/>
+  <Entry name="B7" value="Cycles"/>
+  <Entry name="B8" value="Board"/>
+  <Entry name="B9" value="Batt"/>
+  <Entry name="BA" value="Bale"/>
+  <Entry name="BB" value="Base Box"/>
+  <Entry name="BC" value="Bucket"/>
+  <Entry name="BD" value="Bundle"/>
+  <Entry name="BE" value="Beam"/>
+  <Entry name="BF" value="Board Feet"/>
+  <Entry name="BG" value="Bag"/>
+  <Entry name="BH" value="Brush"/>
+  <Entry name="BI" value="Bar"/>
+  <Entry name="BJ" value="Band"/>
+  <Entry name="BK" value="Book"/>
+  <Entry name="BL" value="Block"/>
+  <Entry name="BM" value="Bolt"/>
+  <Entry name="BN" value="Bulk"/>
+  <Entry name="BO" value="Bottle"/>
+  <Entry name="BP" value="100 Board Feet"/>
+  <Entry name="BQ" value="Brake horse power"/>
+  <Entry name="BR" value="Barrel"/>
+  <Entry name="BS" value="Basket"/>
+  <Entry name="BT" value="Belt"/>
+  <Entry name="BU" value="Bushel"/>
+  <Entry name="BV" value="Bushel, Dry Imperial"/>
+  <Entry name="BW" value="Base Weight"/>
+  <Entry name="BX" value="Box"/>
+  <Entry name="BY" value="British Thermal Unit (BTU)"/>
+  <Entry name="BZ" value="Million BTU's"/>
+  <Entry name="C0" value="Calls"/>
+  <Entry name="C1" value="Composite Product Pounds (Total Weight)"/>
+  <Entry name="C2" value="Carset"/>
+  <Entry name="C3" value="Centiliter"/>
+  <Entry name="C4" value="Carload"/>
+  <Entry name="C5" value="Cost"/>
+  <Entry name="C6" value="Cell"/>
+  <Entry name="C7" value="Centipoise (CPS)"/>
+  <Entry name="C8" value="Cubic Decimeter"/>
+  <Entry name="C9" value="Coil Group"/>
+  <Entry name="CA" value="Case"/>
+  <Entry name="CB" value="Carboy"/>
+  <Entry name="CC" value="Cubic Centimeter"/>
+  <Entry name="CD" value="Carat"/>
+  <Entry name="CE" value="Centigrade, Celsius"/>
+  <Entry name="CF" value="Cubic Feet"/>
+  <Entry name="CG" value="Card"/>
+  <Entry name="CH" value="Container"/>
+  <Entry name="CI" value="Cubic Inches"/>
+  <Entry name="CJ" value="Cone"/>
+  <Entry name="CK" value="Connector"/>
+  <Entry name="CL" value="Cylinder"/>
+  <Entry name="CM" value="Centimeter"/>
+  <Entry name="CN" value="Can"/>
+  <Entry name="CO" value="Cubic Meters (Net)"/>
+  <Entry name="CP" value="Crate"/>
+  <Entry name="CQ" value="Cartridge"/>
+  <Entry name="CR" value="Cubic Meter"/>
+  <Entry name="CS" value="Cassette"/>
+  <Entry name="CT" value="Carton"/>
+  <Entry name="CU" value="Cup"/>
+  <Entry name="CV" value="Cover"/>
+  <Entry name="CW" value="Hundred Pounds (CWT)"/>
+  <Entry name="CX" value="Coil"/>
+  <Entry name="CY" value="Cubic Yard"/>
+  <Entry name="CZ" value="Combo"/>
+  <Entry name="D1" value="Dollars, Canadian"/>
+  <Entry name="D2" value="Shares"/>
+  <Entry name="D3" value="Square Decimeter"/>
+  <Entry name="D5" value="Kilogram Per Square Centimeter"/>
+  <Entry name="D8" value="Draize Score"/>
+  <Entry name="D9" value="Dyne per Square Centimeter"/>
+  <Entry name="DA" value="Days"/>
+  <Entry name="DB" value="Dry Pounds"/>
+  <Entry name="DC" value="Disk (Disc)"/>
+  <Entry name="DD" value="Degree"/>
+  <Entry name="DE" value="Deal"/>
+  <Entry name="DF" value="Dram"/>
+  <Entry name="DG" value="Decigram"/>
+  <Entry name="DH" value="Miles"/>
+  <Entry name="DI" value="Dispenser"/>
+  <Entry name="DJ" value="Decagram"/>
+  <Entry name="DK" value="Kilometers"/>
+  <Entry name="DL" value="Deciliter"/>
+  <Entry name="DM" value="Decimeter"/>
+  <Entry name="DN" value="Deci Newton-Meter"/>
+  <Entry name="DO" value="Dollars, U.S."/>
+  <Entry name="DP" value="Dozen Pair"/>
+  <Entry name="DQ" value="Data Records"/>
+  <Entry name="DR" value="Drum"/>
+  <Entry name="DS" value="Display"/>
+  <Entry name="DT" value="Dry Ton"/>
+  <Entry name="DU" value="Dyne"/>
+  <Entry name="DW" value="Calendar Days"/>
+  <Entry name="DX" value="Dynes per Centimeter"/>
+  <Entry name="DY" value="Directory Books"/>
+  <Entry name="DZ" value="Dozen"/>
+  <Entry name="E1" value="Hectometer"/>
+  <Entry name="E3" value="Inches, Fraction--Average"/>
+  <Entry name="E4" value="Inches, Fraction--Minimum"/>
+  <Entry name="E5" value="Inches, Fraction--Actual"/>
+  <Entry name="E7" value="Inches, Decimal--Average"/>
+  <Entry name="E8" value="Inches, Decimal--Actual"/>
+  <Entry name="E9" value="English, (Feet, Inches)"/>
+  <Entry name="EA" value="Each"/>
+  <Entry name="EB" value="Electronic Mail Boxes"/>
+  <Entry name="EC" value="Each per Month"/>
+  <Entry name="ED" value="Inches, Decimal--Nominal"/>
+  <Entry name="EE" value="Employees"/>
+  <Entry name="EF" value="Inches, Fraction-Nominal"/>
+  <Entry name="EG" value="Double-time Hours"/>
+  <Entry name="EH" value="Knots"/>
+  <Entry name="EJ" value="Locations"/>
+  <Entry name="EM" value="Inches, Decimal-Minimum"/>
+  <Entry name="EP" value="Eleven pack"/>
+  <Entry name="EQ" value="Equivalent Gallons"/>
+  <Entry name="EV" value="Envelope"/>
+  <Entry name="EX" value="Feet, Inches and Fraction"/>
+  <Entry name="EY" value="Feet, Inches and Decimal"/>
+  <Entry name="EZ" value="Feet and Decimal"/>
+  <Entry name="F1" value="Thousand Cubic Feet Per Day"/>
+  <Entry name="F2" value="International Unit"/>
+  <Entry name="F3" value="Equivalent"/>
+  <Entry name="F4" value="Minim"/>
+  <Entry name="F5" value="MOL"/>
+  <Entry name="F6" value="Price Per Share"/>
+  <Entry name="F9" value="Fibers per Cubic Centimeter of Air"/>
+  <Entry name="FA" value="Fahrenheit"/>
+  <Entry name="FB" value="Fields"/>
+  <Entry name="FC" value="1000 Cubic Feet"/>
+  <Entry name="FD" value="Million Particles per Cubic Foot"/>
+  <Entry name="FE" value="Track Foot"/>
+  <Entry name="FF" value="Hundred Cubic Meters"/>
+  <Entry name="FG" value="Transdermal Patch"/>
+  <Entry name="FH" value="Micromolar"/>
+  <Entry name="FJ" value="Sizing Factor"/>
+  <Entry name="FK" value="Fibers"/>
+  <Entry name="FL" value="Flake Ton"/>
+  <Entry name="FM" value="Million Cubic Feet"/>
+  <Entry name="FO" value="Fluid Ounce"/>
+  <Entry name="FP" value="Pounds per Sq. Ft."/>
+  <Entry name="FR" value="Feet Per Minute"/>
+  <Entry name="FS" value="Feet Per Second"/>
+  <Entry name="FT" value="Foot"/>
+  <Entry name="FZ" value="Fluid Ounce (Imperial)"/>
+  <Entry name="G2" value="U.S. Gallons Per Minute"/>
+  <Entry name="G3" value="Imperial Gallons Per Minute"/>
+  <Entry name="G4" value="Gigabecquerel"/>
+  <Entry name="G5" value="Gill (Imperial)"/>
+  <Entry name="G6" value="Bit"/>
+  <Entry name="G7" value="Microfiche Sheet"/>
+  <Entry name="G8" value="Gigacalories"/>
+  <Entry name="G9" value="Gigabyte"/>
+  <Entry name="GA" value="Gallon"/>
+  <Entry name="GB" value="Gallons/Day"/>
+  <Entry name="GC" value="Grams per 100 Grams"/>
+  <Entry name="GD" value="Gross Barrels"/>
+  <Entry name="GE" value="Pounds per Gallon"/>
+  <Entry name="GF" value="Grams per 100 Centimeters"/>
+  <Entry name="GG" value="Great Gross (Dozen Gross)"/>
+  <Entry name="GH" value="Half Gallon"/>
+  <Entry name="GI" value="Imperial Gallons"/>
+  <Entry name="GJ" value="Grams per Milliliter"/>
+  <Entry name="GK" value="Grams per Kilogram"/>
+  <Entry name="GL" value="Grams per Liter"/>
+  <Entry name="GM" value="Grams per Sq. Meter"/>
+  <Entry name="GN" value="Gross Gallons"/>
+  <Entry name="GO" value="Milligrams per Square Meter"/>
+  <Entry name="GP" value="Milligrams per Cubic Meter"/>
+  <Entry name="GQ" value="Micrograms per Cubic Meter"/>
+  <Entry name="GR" value="Gram"/>
+  <Entry name="GS" value="Gross"/>
+  <Entry name="GT" value="Gross Kilogram"/>
+  <Entry name="GU" value="Gauss per Oersteds"/>
+  <Entry name="GV" value="Gigajoules"/>
+  <Entry name="GW" value="Gallons Per Thousand Cubic Feet"/>
+  <Entry name="GX" value="Grain"/>
+  <Entry name="GY" value="Gross Yard"/>
+  <Entry name="GZ" value="Gage Systems"/>
+  <Entry name="H1" value="Half Pages - Electronic"/>
+  <Entry name="H2" value="Half Liter"/>
+  <Entry name="H4" value="Hectoliter"/>
+  <Entry name="HA" value="Hank"/>
+  <Entry name="HB" value="Hundred Boxes"/>
+  <Entry name="HC" value="Hundred Count"/>
+  <Entry name="HD" value="Half Dozen"/>
+  <Entry name="HE" value="Hundredth of a Carat"/>
+  <Entry name="HF" value="Hundred Feet"/>
+  <Entry name="HG" value="Hectogram"/>
+  <Entry name="HH" value="Hundred Cubic Feet"/>
+  <Entry name="HI" value="Hundred Sheets"/>
+  <Entry name="HJ" value="Horsepower"/>
+  <Entry name="HK" value="Hundred Kilograms"/>
+  <Entry name="HL" value="Hundred Feet - Linear"/>
+  <Entry name="HM" value="Miles Per Hour"/>
+  <Entry name="HN" value="Millimeters of Mercury"/>
+  <Entry name="HO" value="Hundred Troy Ounces"/>
+  <Entry name="HP" value="Millimeter H20"/>
+  <Entry name="HQ" value="Hectare"/>
+  <Entry name="HR" value="Hours"/>
+  <Entry name="HS" value="Hundred Square Feet"/>
+  <Entry name="HT" value="Half Hour"/>
+  <Entry name="HU" value="Hundred"/>
+  <Entry name="HV" value="Hundred Weight (Short)"/>
+  <Entry name="HW" value="Hundred Weight (Long)"/>
+  <Entry name="HY" value="Hundred Yards"/>
+  <Entry name="HZ" value="Hertz"/>
+  <Entry name="IA" value="Inch Pound"/>
+  <Entry name="IB" value="Inches Per Second (Vibration Velocity)"/>
+  <Entry name="IC" value="Counts per Inch"/>
+  <Entry name="IE" value="Person"/>
+  <Entry name="IF" value="Inches of Water"/>
+  <Entry name="IG" value="Inner Package"/>
+  <Entry name="IH" value="Inhaler"/>
+  <Entry name="II" value="Column-Inches"/>
+  <Entry name="IK" value="Peaks per Inch (PPI)"/>
+  <Entry name="IL" value="Inches per Minute"/>
+  <Entry name="IM" value="Impressions"/>
+  <Entry name="IN" value="Inch"/>
+  <Entry name="IP" value="Insurance Policy"/>
+  <Entry name="IS" value="Stops"/>
+  <Entry name="IT" value="Counts per Centimeter"/>
+  <Entry name="IU" value="Inches Per Second (Linear Speed)"/>
+  <Entry name="IV" value="Inches Per Second Per Second (Acceleration)"/>
+  <Entry name="IW" value="Inches Per Second Per Second (Vibration Acceleration)"/>
+  <Entry name="J2" value="Joule Per Kilogram"/>
+  <Entry name="JA" value="Job"/>
+  <Entry name="JB" value="Jumbo"/>
+  <Entry name="JE" value="Joule Per Kelvin"/>
+  <Entry name="JG" value="Joule per Gram"/>
+  <Entry name="JK" value="Mega Joule per Kilogram"/>
+  <Entry name="JM" value="Megajoule/Cubic Meter"/>
+  <Entry name="JO" value="Joint"/>
+  <Entry name="JR" value="Jar"/>
+  <Entry name="JU" value="Jug"/>
+  <Entry name="K1" value="Kilowatt Demand"/>
+  <Entry name="K2" value="Kilovolt Amperes Reactive Demand"/>
+  <Entry name="K3" value="Kilovolt Amperes Reactive Hour"/>
+  <Entry name="K4" value="Kilovolt Amperes"/>
+  <Entry name="K5" value="Kilovolt Amperes Reactive"/>
+  <Entry name="K6" value="Kiloliter"/>
+  <Entry name="K7" value="Kilowatt"/>
+  <Entry name="K9" value="Kilograms per Millimeter Squared (KG/MM2)"/>
+  <Entry name="KA" value="Cake"/>
+  <Entry name="KB" value="Kilocharacters"/>
+  <Entry name="KC" value="Kilograms per Cubic Meter"/>
+  <Entry name="KD" value="Kilograms Decimal"/>
+  <Entry name="KE" value="Keg"/>
+  <Entry name="KF" value="Kilopackets"/>
+  <Entry name="KG" value="Kilogram"/>
+  <Entry name="KH" value="Kilowatt Hour"/>
+  <Entry name="KI" value="Kilograms/Millimeter Width"/>
+  <Entry name="KJ" value="Kilosegments"/>
+  <Entry name="KK" value="100 Kilograms"/>
+  <Entry name="KL" value="Kilograms/Meter"/>
+  <Entry name="KM" value="Kilograms per Square Meter, Kilograms, Decimal"/>
+  <Entry name="KO" value="Millequivalence Caustic Potash per Gram of Product"/>
+  <Entry name="KP" value="Kilometers Per Hour"/>
+  <Entry name="KQ" value="Kilopascal"/>
+  <Entry name="KR" value="Kiloroentgen"/>
+  <Entry name="KT" value="Kit"/>
+  <Entry name="KU" value="Task"/>
+  <Entry name="KV" value="Kelvin"/>
+  <Entry name="KW" value="Kilograms per Millimeter"/>
+  <Entry name="KX" value="Milliliters per Kilogram"/>
+  <Entry name="L2" value="Liters Per Minute"/>
+  <Entry name="LA" value="Pounds Per Cubic Inch"/>
+  <Entry name="LB" value="Pound"/>
+  <Entry name="LC" value="Linear Centimeter"/>
+  <Entry name="LE" value="Lite"/>
+  <Entry name="LF" value="Linear Foot"/>
+  <Entry name="LG" value="Long Ton"/>
+  <Entry name="LH" value="Labor Hours"/>
+  <Entry name="LI" value="Linear Inch"/>
+  <Entry name="LJ" value="Large Spray"/>
+  <Entry name="LK" value="Link"/>
+  <Entry name="LL" value="Lifetime"/>
+  <Entry name="LM" value="Linear Meter"/>
+  <Entry name="LN" value="Length"/>
+  <Entry name="LO" value="Lot"/>
+  <Entry name="LP" value="Liquid Pounds"/>
+  <Entry name="LQ" value="Liters Per Day"/>
+  <Entry name="LR" value="Layer(s)"/>
+  <Entry name="LS" value="Lump Sum"/>
+  <Entry name="LT" value="Liter"/>
+  <Entry name="LX" value="Linear Yards Per Pound"/>
+  <Entry name="LY" value="Linear Yard"/>
+  <Entry name="M0" value="Magnetic Tapes"/>
+  <Entry name="M1" value="Milligrams per Liter"/>
+  <Entry name="M2" value="Millimeter-Actual"/>
+  <Entry name="M3" value="Mat"/>
+  <Entry name="M4" value="Monetary Value"/>
+  <Entry name="M5" value="Microcurie"/>
+  <Entry name="M6" value="Millibar"/>
+  <Entry name="M7" value="Micro Inch"/>
+  <Entry name="M8" value="Mega Pascals"/>
+  <Entry name="M9" value="Million British Thermal Units per One Thousand Cubic Feet"/>
+  <Entry name="MA" value="Machine/Unit"/>
+  <Entry name="MB" value="Millimeter-Nominal"/>
+  <Entry name="MC" value="Microgram"/>
+  <Entry name="MD" value="Air Dry Metric Ton"/>
+  <Entry name="ME" value="Milligram"/>
+  <Entry name="MF" value="Milligram per Sq. Ft. per Side"/>
+  <Entry name="MG" value="Metric Gross Ton"/>
+  <Entry name="MH" value="Microns (Micrometers)"/>
+  <Entry name="MI" value="Metric"/>
+  <Entry name="MJ" value="Minutes"/>
+  <Entry name="MK" value="Milligrams Per Square Inch"/>
+  <Entry name="ML" value="Milliliter"/>
+  <Entry name="MM" value="Millimeter"/>
+  <Entry name="MN" value="Metric Net Ton"/>
+  <Entry name="MO" value="Months"/>
+  <Entry name="MP" value="Metric Ton"/>
+  <Entry name="MQ" value="1000 Meters"/>
+  <Entry name="MR" value="Meter"/>
+  <Entry name="MS" value="Square Millimeter"/>
+  <Entry name="MT" value="Metric Long Ton"/>
+  <Entry name="MU" value="Millicurie"/>
+  <Entry name="MV" value="Number of Mults"/>
+  <Entry name="MW" value="Metric Ton Kilograms"/>
+  <Entry name="MX" value="Mixed"/>
+  <Entry name="MY" value="Millimeter-Average"/>
+  <Entry name="MZ" value="Millimeter-minimum"/>
+  <Entry name="N1" value="Pen Calories"/>
+  <Entry name="N2" value="Number of Lines"/>
+  <Entry name="N3" value="Print Point"/>
+  <Entry name="N4" value="Pen Grams (Protein)"/>
+  <Entry name="N6" value="Megahertz"/>
+  <Entry name="N7" value="Parts"/>
+  <Entry name="N9" value="Cartridge Needle"/>
+  <Entry name="NA" value="Milligrams per Kilogram"/>
+  <Entry name="NB" value="Barge"/>
+  <Entry name="NC" value="Car"/>
+  <Entry name="ND" value="Net Barrels"/>
+  <Entry name="NE" value="Net Liters"/>
+  <Entry name="NF" value="Messages"/>
+  <Entry name="NG" value="Net Gallons"/>
+  <Entry name="NH" value="Message Hours"/>
+  <Entry name="NI" value="Net Imperial Gallons"/>
+  <Entry name="NJ" value="Number of Screens"/>
+  <Entry name="NK" value="Nights"/>
+  <Entry name="NL" value="Load"/>
+  <Entry name="NM" value="Nautical Mile"/>
+  <Entry name="NN" value="Train"/>
+  <Entry name="NQ" value="Mho"/>
+  <Entry name="NR" value="Micro Mho"/>
+  <Entry name="NS" value="Short Ton"/>
+  <Entry name="NT" value="Trailer"/>
+  <Entry name="NU" value="Newton-Meter"/>
+  <Entry name="NV" value="Vehicle"/>
+  <Entry name="NW" value="Newton"/>
+  <Entry name="NX" value="Parts Per Thousand"/>
+  <Entry name="NY" value="Pounds Per Air-Dry Metric Ton"/>
+  <Entry name="OA" value="Panel"/>
+  <Entry name="OC" value="Billboard"/>
+  <Entry name="ON" value="Ounces per Square Yard"/>
+  <Entry name="OP" value="Two pack"/>
+  <Entry name="OT" value="Overtime Hours"/>
+  <Entry name="OZ" value="Ounce - Av"/>
+  <Entry name="P0" value="Pages - Electronic"/>
+  <Entry name="P1" value="Percent"/>
+  <Entry name="P2" value="Pounds per Foot"/>
+  <Entry name="P3" value="Three pack"/>
+  <Entry name="P4" value="Four-pack"/>
+  <Entry name="P5" value="Five-pack"/>
+  <Entry name="P6" value="Six pack"/>
+  <Entry name="P7" value="Seven pack"/>
+  <Entry name="P8" value="Eight-pack"/>
+  <Entry name="P9" value="Nine pack"/>
+  <Entry name="PA" value="Pail"/>
+  <Entry name="PB" value="Pair Inches"/>
+  <Entry name="PC" value="Piece"/>
+  <Entry name="PD" value="Pad"/>
+  <Entry name="PE" value="Pounds Equivalent"/>
+  <Entry name="PF" value="Pallet (Lift)"/>
+  <Entry name="PG" value="Pounds Gross"/>
+  <Entry name="PH" value="Pack (PAK)"/>
+  <Entry name="PI" value="Pitch"/>
+  <Entry name="PJ" value="Pounds, Decimal - Pounds per Square Foot - Pound Gage"/>
+  <Entry name="PK" value="Package"/>
+  <Entry name="PL" value="Pallet/Unit Load"/>
+  <Entry name="PM" value="Pounds-Percentage"/>
+  <Entry name="PN" value="Pounds Net"/>
+  <Entry name="PO" value="Pounds per Inch of Length"/>
+  <Entry name="PP" value="Plate"/>
+  <Entry name="PQ" value="Pages per Inch"/>
+  <Entry name="PR" value="Pair"/>
+  <Entry name="PS" value="Pounds per Sq. Inch"/>
+  <Entry name="PT" value="Pint"/>
+  <Entry name="PU" value="Mass Pounds"/>
+  <Entry name="PV" value="Half Pint"/>
+  <Entry name="PW" value="Pounds per Inch of Width"/>
+  <Entry name="PX" value="Pint, Imperial"/>
+  <Entry name="PY" value="Peck, Dry U.S."/>
+  <Entry name="PZ" value="Peck, Dry Imperial"/>
+  <Entry name="Q1" value="Quarter (Time)"/>
+  <Entry name="Q2" value="Pint U.S. Dry"/>
+  <Entry name="Q3" value="Meal"/>
+  <Entry name="Q4" value="Fifty"/>
+  <Entry name="Q5" value="Twenty-Five"/>
+  <Entry name="Q6" value="Thirty-Six"/>
+  <Entry name="Q7" value="Twenty-Four"/>
+  <Entry name="QA" value="Pages - Facsimile"/>
+  <Entry name="QB" value="Pages - Hardcopy"/>
+  <Entry name="QC" value="Channel"/>
+  <Entry name="QD" value="Quarter Dozen"/>
+  <Entry name="QE" value="Photographs"/>
+  <Entry name="QH" value="Quarter Hours"/>
+  <Entry name="QK" value="Quarter Kilogram"/>
+  <Entry name="QR" value="Quire"/>
+  <Entry name="QS" value="Quart, Dry U.S."/>
+  <Entry name="QT" value="Quart"/>
+  <Entry name="QU" value="Quart, Imperial"/>
+  <Entry name="R1" value="Pica"/>
+  <Entry name="R2" value="Becquerel"/>
+  <Entry name="R3" value="Revolutions Per Minute"/>
+  <Entry name="R4" value="Calorie"/>
+  <Entry name="R5" value="Thousands of Dollars"/>
+  <Entry name="R6" value="Millions of Dollars"/>
+  <Entry name="R7" value="Billions of Dollars"/>
+  <Entry name="R8" value="Roentgen Equivalent in Man (REM)"/>
+  <Entry name="R9" value="Thousand Cubic Meters"/>
+  <Entry name="RA" value="Rack"/>
+  <Entry name="RB" value="Radian"/>
+  <Entry name="RC" value="Rod (area) - 16.25 Square Yards"/>
+  <Entry name="RD" value="Rod (length) - 5.5 Yards"/>
+  <Entry name="RE" value="Reel"/>
+  <Entry name="RG" value="Ring"/>
+  <Entry name="RH" value="Running or Operating Hours"/>
+  <Entry name="RK" value="Roll-Metric Measure"/>
+  <Entry name="RL" value="Roll"/>
+  <Entry name="RM" value="Ream"/>
+  <Entry name="RN" value="Ream-Metric Measure"/>
+  <Entry name="RO" value="Round"/>
+  <Entry name="RP" value="Pounds per Ream"/>
+  <Entry name="RS" value="Resets"/>
+  <Entry name="RT" value="Revenue Ton Miles"/>
+  <Entry name="RU" value="Run"/>
+  <Entry name="S1" value="Semester"/>
+  <Entry name="S2" value="Trimester"/>
+  <Entry name="S3" value="Square Feet per Second"/>
+  <Entry name="S4" value="Square Meters per Second"/>
+  <Entry name="S5" value="Sixty-fourths of an Inch"/>
+  <Entry name="S6" value="Sessions"/>
+  <Entry name="S7" value="Storage Units"/>
+  <Entry name="S8" value="Standard Advertising Units (SAUs)"/>
+  <Entry name="S9" value="Slip Sheet"/>
+  <Entry name="SA" value="Sandwich"/>
+  <Entry name="SB" value="Square Mile"/>
+  <Entry name="SC" value="Square Centimeter"/>
+  <Entry name="SD" value="Solid Pounds"/>
+  <Entry name="SE" value="Section"/>
+  <Entry name="SF" value="Square Foot"/>
+  <Entry name="SG" value="Segment"/>
+  <Entry name="SH" value="Sheet"/>
+  <Entry name="SI" value="Square Inch"/>
+  <Entry name="SJ" value="Sack"/>
+  <Entry name="SK" value="Split Tanktruck"/>
+  <Entry name="SL" value="Sleeve"/>
+  <Entry name="SM" value="Square Meter"/>
+  <Entry name="SN" value="Square Rod"/>
+  <Entry name="SO" value="Spool"/>
+  <Entry name="SP" value="Shelf Package"/>
+  <Entry name="SQ" value="Square"/>
+  <Entry name="SR" value="Strip"/>
+  <Entry name="SS" value="Sheet-Metric Measure"/>
+  <Entry name="ST" value="Set"/>
+  <Entry name="SV" value="Skid"/>
+  <Entry name="SW" value="Skein"/>
+  <Entry name="SX" value="Shipment"/>
+  <Entry name="SY" value="Square Yard"/>
+  <Entry name="SZ" value="Syringe"/>
+  <Entry name="T0" value="Telecommunications Lines in Service"/>
+  <Entry name="T1" value="Thousand pounds gross"/>
+  <Entry name="T2" value="Thousandths of an Inch"/>
+  <Entry name="T3" value="Thousand Pieces"/>
+  <Entry name="T4" value="Thousand Bags"/>
+  <Entry name="T5" value="Thousand Casings"/>
+  <Entry name="T6" value="Thousand Gallons"/>
+  <Entry name="T7" value="Thousand Impressions"/>
+  <Entry name="T8" value="Thousand Linear Inches"/>
+  <Entry name="T9" value="Thousand Kilowatt Hours"/>
+  <Entry name="TA" value="Tenth Cubic Foot"/>
+  <Entry name="TB" value="Tube"/>
+  <Entry name="TC" value="Truckload"/>
+  <Entry name="TD" value="Therms"/>
+  <Entry name="TE" value="Tote"/>
+  <Entry name="TF" value="Ten Square Yards"/>
+  <Entry name="TG" value="Gross Ton"/>
+  <Entry name="TH" value="Thousand"/>
+  <Entry name="TI" value="Thousand Square Inches"/>
+  <Entry name="TJ" value="Thousand Sq. Centimeters"/>
+  <Entry name="TK" value="Tank"/>
+  <Entry name="TL" value="Thousand Feet (Linear)"/>
+  <Entry name="TM" value="Thousand Feet (Board)"/>
+  <Entry name="TN" value="Net Ton (2,000 LB)."/>
+  <Entry name="TO" value="Troy Ounce"/>
+  <Entry name="TP" value="Ten-pack"/>
+  <Entry name="TQ" value="Thousand Feet"/>
+  <Entry name="TR" value="Ten Square Feet"/>
+  <Entry name="TS" value="Thousand Square Feet"/>
+  <Entry name="TT" value="Thousand Linear Meters"/>
+  <Entry name="TU" value="Thousand Linear Yards"/>
+  <Entry name="TV" value="Thousand Kilograms"/>
+  <Entry name="TW" value="Thousand Sheets"/>
+  <Entry name="TX" value="Troy Pound"/>
+  <Entry name="TY" value="Tray"/>
+  <Entry name="TZ" value="Thousand Cubic Feet"/>
+  <Entry name="U1" value="Treatments"/>
+  <Entry name="U2" value="Tablet"/>
+  <Entry name="U3" value="Ten"/>
+  <Entry name="U5" value="Two Hundred Fifty"/>
+  <Entry name="UA" value="Torr"/>
+  <Entry name="UB" value="Telecommunications Lines in Service - Average"/>
+  <Entry name="UC" value="Telecommunications Ports"/>
+  <Entry name="UD" value="Tenth Minutes"/>
+  <Entry name="UE" value="Tenth Hours"/>
+  <Entry name="UF" value="Usage per Telecommunications Line - Average"/>
+  <Entry name="UH" value="Ten Thousand Yards"/>
+  <Entry name="UL" value="Unitless"/>
+  <Entry name="UM" value="Million Units"/>
+  <Entry name="UN" value="Unit"/>
+  <Entry name="UP" value="Troche"/>
+  <Entry name="UQ" value="Wafer"/>
+  <Entry name="UR" value="Application"/>
+  <Entry name="US" value="Dosage Form"/>
+  <Entry name="UT" value="Inhalation"/>
+  <Entry name="UU" value="Lozenge"/>
+  <Entry name="UV" value="Percent Topical Only"/>
+  <Entry name="UW" value="Milliequivalent"/>
+  <Entry name="UX" value="Dram (Minim)"/>
+  <Entry name="UY" value="Fifty Square Feet"/>
+  <Entry name="UZ" value="Fifty Count"/>
+  <Entry name="V1" value="Flat"/>
+  <Entry name="V2" value="Pouch"/>
+  <Entry name="VA" value="Volt-ampere per Kilogram"/>
+  <Entry name="VC" value="Five Hundred"/>
+  <Entry name="VI" value="Vial"/>
+  <Entry name="VP" value="Percent Volume"/>
+  <Entry name="VR" value="Volt-ampere-reactive"/>
+  <Entry name="VS" value="Visit"/>
+  <Entry name="W2" value="Wet Kilo"/>
+  <Entry name="WA" value="Watts per Kilogram"/>
+  <Entry name="WB" value="Wet Pound"/>
+  <Entry name="WD" value="Work Days"/>
+  <Entry name="WE" value="Wet Ton"/>
+  <Entry name="WG" value="Wine Gallon"/>
+  <Entry name="WH" value="Wheel"/>
+  <Entry name="WI" value="Weight per Square Inch"/>
+  <Entry name="WK" value="Week"/>
+  <Entry name="WM" value="Working Months"/>
+  <Entry name="WP" value="Pennyweight"/>
+  <Entry name="WR" value="Wrap"/>
+  <Entry name="WW" value="Milliliters of Water"/>
+  <Entry name="X1" value="Chains (Land Survey)"/>
+  <Entry name="X2" value="Bunch"/>
+  <Entry name="X3" value="Clove"/>
+  <Entry name="X4" value="Drop"/>
+  <Entry name="X5" value="Head"/>
+  <Entry name="X6" value="Heart"/>
+  <Entry name="X7" value="Leaf"/>
+  <Entry name="X8" value="Loaf"/>
+  <Entry name="X9" value="Portion"/>
+  <Entry name="XP" value="Base Box per Pound"/>
+  <Entry name="Y1" value="Slice"/>
+  <Entry name="Y2" value="Tablespoon"/>
+  <Entry name="Y3" value="Teaspoon"/>
+  <Entry name="Y4" value="Tub"/>
+  <Entry name="YD" value="Yard"/>
+  <Entry name="YL" value="100 Lineal Yards"/>
+  <Entry name="YR" value="Years"/>
+  <Entry name="YT" value="Ten Yards"/>
+  <Entry name="Z1" value="Lift Van"/>
+  <Entry name="Z2" value="Chest"/>
+  <Entry name="Z3" value="Cask"/>
+  <Entry name="Z4" value="Hogshead"/>
+  <Entry name="Z5" value="Lug"/>
+  <Entry name="Z6" value="Conference Points"/>
+  <Entry name="Z8" value="Newspaper Agate Line"/>
+  <Entry name="ZA" value="Bimonthly"/>
+  <Entry name="ZB" value="Biweekly"/>
+  <Entry name="ZC" value="Semiannual"/>
+  <Entry name="ZD" value="Kilojoule"/>
+  <Entry name="ZE" value="Ping"/>
+  <Entry name="ZP" value="Page"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

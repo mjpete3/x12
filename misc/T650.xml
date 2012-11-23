@@ -1,0 +1,109 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T650.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T650">
+  <Entry name="01" value="Charge Off"/>
+  <Entry name="02" value="Collection Account"/>
+  <Entry name="03" value="Foreclosure"/>
+  <Entry name="04" value="Involuntary Repossession"/>
+  <Entry name="05" value="Repossession"/>
+  <Entry name="06" value="Voluntary Repossession"/>
+  <Entry name="07" value="Account Balance applied to Line of Credit"/>
+  <Entry name="08" value="Government Claim"/>
+  <Entry name="09" value="Paid Account"/>
+  <Entry name="10" value="Paid Charge-off"/>
+  <Entry name="11" value="Paid Collection"/>
+  <Entry name="12" value="Paid Dealer"/>
+  <Entry name="13" value="Paid Foreclosure"/>
+  <Entry name="14" value="Paid Not as Agreed"/>
+  <Entry name="15" value="Paid Repossession"/>
+  <Entry name="16" value="Paid Satisfactory"/>
+  <Entry name="17" value="Redeemed Repossession"/>
+  <Entry name="18" value="Revolving Account - Current"/>
+  <Entry name="19" value="Satisfactory"/>
+  <Entry name="20" value="Satisfactory Revolving Account - Current"/>
+  <Entry name="21" value="Too New to Rate"/>
+  <Entry name="22" value="Unpaid Collection"/>
+  <Entry name="24" value="Closed Not Paid"/>
+  <Entry name="25" value="Insurance Claim"/>
+  <Entry name="26" value="Partially Paid"/>
+  <Entry name="27" value="Account Included in Bankruptcy"/>
+  <Entry name="33" value="As Agreed"/>
+  <Entry name="35" value="No Status"/>
+  <Entry name="36" value="Not Paid as Agreed"/>
+  <Entry name="37" value="Past Due"/>
+  <Entry name="38" value="Settled"/>
+  <Entry name="39" value="Unpaid"/>
+  <Entry name="40" value="Card Lost"/>
+  <Entry name="41" value="Account in Dispute"/>
+  <Entry name="42" value="Bad Debt"/>
+  <Entry name="43" value="Bill of Exchange"/>
+  <Entry name="44" value="Cash per Owner's Option"/>
+  <Entry name="45" value="Credit Refused"/>
+  <Entry name="46" value="Draft"/>
+  <Entry name="47" value="Endorser"/>
+  <Entry name="48" value="First Sale"/>
+  <Entry name="49" value="Insufficient Funds"/>
+  <Entry name="50" value="Legal Action"/>
+  <Entry name="51" value="Letter of Credit"/>
+  <Entry name="52" value="Maturity Varies"/>
+  <Entry name="53" value="Overdraft"/>
+  <Entry name="54" value="Personal Guarantee"/>
+  <Entry name="55" value="Pro Forma"/>
+  <Entry name="56" value="Renegotiated Draft"/>
+  <Entry name="57" value="Reopening Draft"/>
+  <Entry name="58" value="Real Estate Tax"/>
+  <Entry name="59" value="Secured Account"/>
+  <Entry name="60" value="Suit Filed"/>
+  <Entry name="61" value="Took Deduction"/>
+  <Entry name="62" value="Took Excess Discount"/>
+  <Entry name="63" value="Unauthorized Deduction"/>
+  <Entry name="64" value="Unsatisfactory"/>
+  <Entry name="65" value="Credit Cancelled"/>
+  <Entry name="66" value="Credit is for Group"/>
+  <Entry name="67" value="Credit Refinanced"/>
+  <Entry name="68" value="Inactive Account"/>
+  <Entry name="69" value="Irregular Payments"/>
+  <Entry name="70" value="Long Time Client"/>
+  <Entry name="71" value="No longer Clients"/>
+  <Entry name="72" value="Post Dated Checks"/>
+  <Entry name="73" value="All Loans Repaid"/>
+  <Entry name="74" value="Long-term Loans Repaid"/>
+  <Entry name="75" value="Short-term Loans Repaid"/>
+  <Entry name="76" value="Support to Company to Continue"/>
+  <Entry name="77" value="Closed By Consumer"/>
+  <Entry name="78" value="Closed By Grantor"/>
+  <Entry name="79" value="Closed"/>
+  <Entry name="80" value="Protested Bill"/>
+  <Entry name="81" value="Pays Within Protested Bill Grace Period"/>
+  <Entry name="82" value="In Receivership"/>
+  <Entry name="83" value="Agreement Under Receivership Agreement"/>
+  <Entry name="84" value="High Insolvency Risk"/>
+  <Entry name="85" value="Potential Risk of Non-payment"/>
+  <Entry name="86" value="Possible Insolvency Risk"/>
+  <Entry name="87" value="Debt Being Renegotiated"/>
+  <Entry name="88" value="No Authorized Overdraft"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: REC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="REC" comment="To indicate the condition of real estate property and, if applicable, the actions needed to correct damage">
+  <Field name="OccupancyCode" min="2" max="2" validation="T689" comment="Code specifying occupancy status of real estate property"/>
+  <Field name="RealEstatePropertyConditionCode" required="y" min="2" max="2" validation="T726" comment="Code identifying property condition"/>
+  <Field name="PropertyDamageCode" required="y" min="1" max="2" validation="T448" comment="Code identifying the damage to property"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="PropertyInspectionQualifier" required="y" min="2" max="2" validation="T815" comment="Code indicating a part of the property being inspected"/>
+  <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="QuantityQualifier" required="y" min="2" max="2" validation="T673" comment="Code specifying the type of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="OccupancyVerificationCode" required="y" min="2" max="2" validation="T816" comment="Code indicating the method used to verify the occupancy of the property"/>
+  <Field name="NoteReferenceCode" required="y" min="3" max="3" validation="T363" comment="Code identifying the functional area or purpose for which the note applies"/>
+  <Field name="FreeFormMessage" required="y" min="1" max="60" comment="Free-form text"/>
+</Segment>

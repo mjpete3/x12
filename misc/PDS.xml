@@ -1,0 +1,30 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PDS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PDS" comment="To provide specifics on property or legal description; this segment provides for a simple legal description such as lot, block and subdivision">
+  <Field name="PropertyDescriptionQualifier" min="2" max="2" validation="T1496" comment="Type of reference or number used to describe real property"/>
+  <Field name="FreeFormMessageText" required="y" min="1" max="264" comment="Free-form message text"/>
+  <Field name="ReferenceIdentifier" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+</Segment>

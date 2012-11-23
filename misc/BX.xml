@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BX.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BX" comment="To transmit identification numbers and other basic shipment data">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="TransportationMethodTypeCode" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="ShipmentMethodOfPayment" min="2" max="2" validation="T146" comment="Code identifying payment terms for transportation charges"/>
+  <Field name="ShipmentIdentificationNumber" required="y" min="1" max="30" comment="Identification number assigned to the shipment by the shipper that uniquely identifies the shipment from origin to ultimate destination and is not subject to modification; (Does not contain blanks or special characters)"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="WeightUnitCode" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="ShipmentQualifier" required="y" min="1" max="1" validation="T147" comment="Code defining relationship of this shipment with respect to other shipments given to the carrier at the same time"/>
+  <Field name="SectionSevenCode" required="y" min="1" max="1" validation="T226" comment="Code indicating applicability of section seven option (if not transmitted assume not in effect)"/>
+  <Field name="CapacityLoadCode" required="y" min="1" max="1" validation="T195" comment="Code specifying type of capacity load"/>
+  <Field name="StatusReportRequestCode" required="y" min="1" max="1" validation="T160" comment="Code used by the shipper to specify that an automatic status report is requested when the shipment is delivered"/>
+  <Field name="CustomsDocumentationHandlingCode" required="y" min="2" max="2" validation="T501" comment="Code defining method of handling for documentation"/>
+  <Field name="ConfidentialBillingRequestCode" required="y" min="1" max="1" validation="T199" comment="Code used by the shipper to request that the carrier inhibit origin identification information from the invoice transaction sets and/or rate and charges from waybill documents and transaction sets when shipment moves under confidential contract rates"/>
+  <Field name="GoodsAndServicesTaxReasonCode" required="y" min="1" max="1" validation="T714" comment="Code required to identify the reason for a 0% rated goods and services tax"/>
+  <Field name="ApplicationType" required="y" min="2" max="2" validation="T346" comment="Code identifying an application"/>
+</Segment>

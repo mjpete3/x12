@@ -1,0 +1,74 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T221.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T221">
+  <Entry name="AR" value="Appurtenance (Enhancements/Additions to Equipment)"/>
+  <Entry name="BA" value="Barrels"/>
+  <Entry name="BX" value="Box"/>
+  <Entry name="CC" value="Cubic Centimeter"/>
+  <Entry name="CF" value="Cubic Foot"/>
+  <Entry name="CM" value="Centimeter"/>
+  <Entry name="DK" value="Kilometers"/>
+  <Entry name="DM" value="Miles"/>
+  <Entry name="DR" value="Drivers"/>
+  <Entry name="EA" value="Each"/>
+  <Entry name="FR" value="Flat Rate"/>
+  <Entry name="FT" value="Foot"/>
+  <Entry name="GC" value="100 Gallons"/>
+  <Entry name="GL" value="Gallon"/>
+  <Entry name="KG" value="Kilogram"/>
+  <Entry name="LB" value="Pound"/>
+  <Entry name="LC" value="100 Pounds"/>
+  <Entry name="LH" value="100 Liters"/>
+  <Entry name="LR" value="Liter"/>
+  <Entry name="MR" value="Mileage"/>
+  <Entry name="MT" value="Measurement Ton"/>
+  <Entry name="MV" value="Monetary Value"/>
+  <Entry name="NB" value="Barge"/>
+  <Entry name="NC" value="Car"/>
+  <Entry name="ND" value="Cord"/>
+  <Entry name="NG" value="Nights"/>
+  <Entry name="NL" value="Load"/>
+  <Entry name="NN" value="Train"/>
+  <Entry name="NP" value="Piece"/>
+  <Entry name="NR" value="Container"/>
+  <Entry name="NT" value="Trailer"/>
+  <Entry name="NU" value="Unit"/>
+  <Entry name="NV" value="Vehicle"/>
+  <Entry name="OR" value="Other"/>
+  <Entry name="PK" value="Package"/>
+  <Entry name="PR" value="Persons"/>
+  <Entry name="RV" value="Release Value"/>
+  <Entry name="SP" value="Stops"/>
+  <Entry name="ST" value="Number of States"/>
+  <Entry name="SY" value="Square Yards"/>
+  <Entry name="TD" value="Days"/>
+  <Entry name="TH" value="Hours"/>
+  <Entry name="TN" value="Tons"/>
+  <Entry name="TR" value="Time"/>
+  <Entry name="VA" value="Actual Volume"/>
+  <Entry name="VC" value="Chargeable Volume"/>
+  <Entry name="VM" value="Volume Metric Unit"/>
+</Table>

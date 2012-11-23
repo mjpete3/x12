@@ -1,0 +1,81 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T591.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T591">
+  <Entry name="ACH" value="Automated Clearing House (ACH)"/>
+  <Entry name="BKW" value="Book Entry"/>
+  <Entry name="BOP" value="Financial Institution Option"/>
+  <Entry name="CAS" value="Cash"/>
+  <Entry name="CCC" value="Credit Card"/>
+  <Entry name="CCF" value="Collect Payment by Certified Funds"/>
+  <Entry name="CCH" value="Cashier's Check"/>
+  <Entry name="CDA" value="Credit/Debit Account"/>
+  <Entry name="CHK" value="Check"/>
+  <Entry name="CLH" value="Clearinghouse"/>
+  <Entry name="CPC" value="Collect Payment by Company Check"/>
+  <Entry name="CWT" value="Clearing House Interbank Payment System (CHIPS) Funds/Wire Transfer"/>
+  <Entry name="DCC" value="ACH Demand Cash Concentration/Disbursement (CCD) Credit"/>
+  <Entry name="DCD" value="ACH Demand Cash Concentration/Disbursement (CCD) Debit"/>
+  <Entry name="DDP" value="Direct Deposit"/>
+  <Entry name="DEB" value="Debit Card"/>
+  <Entry name="DLC" value="Pre-Arranged Payment or Deposit Plus Addendum (PPD+) Credit to a Demand Deposit Account"/>
+  <Entry name="DLD" value="Pre-Arranged Payment or Deposit Plus Addendum (PPD+) Debit to a Demand Deposit Account"/>
+  <Entry name="DXC" value="ACH Demand Corporate Trade Exchange (CTX) Credit"/>
+  <Entry name="DXD" value="ACH Demand Corporate Trade Exchange (CTX) Debit"/>
+  <Entry name="DYC" value="Pre-Arranged Payment or Deposit (PPD) Credit to a Demand Deposit Account"/>
+  <Entry name="DYD" value="Pre-Arranged Payment or Deposit (PPD) Debit to a Demand Deposit Account"/>
+  <Entry name="DZC" value="ACH Demand Cash Concentration/Disbursement Plus (CCD+) Credit"/>
+  <Entry name="DZD" value="ACH Demand Cash Concentration/Disbursement Plus (CCD+) Debit"/>
+  <Entry name="EBX" value="EDIBANX Clearing Network"/>
+  <Entry name="EXC" value="1035 Exchange"/>
+  <Entry name="FEW" value="Federal Reserve Funds/Wire Transfer - Repetitive"/>
+  <Entry name="FWT" value="Federal Reserve Funds/Wire Transfer - Nonrepetitive"/>
+  <Entry name="FXP" value="Foreign Exchange Payments"/>
+  <Entry name="IWT" value="International Electronic Funds Transfer"/>
+  <Entry name="NON" value="Non-Payment Data"/>
+  <Entry name="PAC" value="Preauthorized Check (Draft)"/>
+  <Entry name="PBD" value="Draft"/>
+  <Entry name="PDC" value="ACH Savings Cash Concentration/Disbursement (PPD) Credit"/>
+  <Entry name="PDD" value="ACH Savings Cash Concentration/Disbursement (PDD) Debit"/>
+  <Entry name="PDE" value="Payroll Deduction"/>
+  <Entry name="PRO" value="Proprietary Network"/>
+  <Entry name="QDR" value="Qualified Direct Rollover"/>
+  <Entry name="QIR" value="Qualified Indirect Rollover"/>
+  <Entry name="REV" value="ACH Reversal"/>
+  <Entry name="SCC" value="ACH Savings Cash Concentration/Disbursement (CCD) Credit"/>
+  <Entry name="SCD" value="ACH Savings Cash Concentration/Disbursement (CCD) Debit"/>
+  <Entry name="SDC" value="ACH Savings Cash Concentration/Disbursement (PPD+) Credit"/>
+  <Entry name="SDD" value="ACH Savings Cash Concentration/Disbursement (PPD+) Debit"/>
+  <Entry name="SWT" value="Society for Worldwide Interbank Financial Telecommunications (S.W.I.F.T.)"/>
+  <Entry name="SXC" value="ACH Savings Corporate Trade Exchange (CTX) Credit"/>
+  <Entry name="SXD" value="ACH Savings Corporate Trade Exchange (CTX) Debit"/>
+  <Entry name="SYC" value="Pre-Arranged Payment or Deposit (PPD) Credit to Savings"/>
+  <Entry name="SZC" value="ACH Savings Cash Concentration/Disbursement Plus (CCD+) Credit"/>
+  <Entry name="SZD" value="ACH Savings Cash Concentration/Disbursement Plus (CCD+) Debit"/>
+  <Entry name="TRA" value="Traveler's Check"/>
+  <Entry name="VIS" value="VISA Special Electronic Funds Transfer Network"/>
+  <Entry name="X12" value="X12"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

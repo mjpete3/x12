@@ -1,0 +1,53 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1012.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1012">
+  <Entry name="A" value="Appearance"/>
+  <Entry name="C" value="Case Status"/>
+  <Entry name="D" value="Disposition"/>
+  <Entry name="H" value="Hearing"/>
+  <Entry name="I" value="Incident"/>
+  <Entry name="M" value="Marriage"/>
+  <Entry name="N" value="Notice"/>
+  <Entry name="O" value="Offense"/>
+  <Entry name="P" value="Pleading"/>
+  <Entry name="S" value="Judge Sentence"/>
+  <Entry name="W" value="Warrant"/>
+  <Entry name="AC" value="Accident"/>
+  <Entry name="AS" value="Asset Status"/>
+  <Entry name="CL" value="Claim Status"/>
+  <Entry name="DO" value="Document"/>
+  <Entry name="OP" value="Opinion"/>
+  <Entry name="OR" value="Order"/>
+  <Entry name="OT" value="Other Unlisted Event Type"/>
+  <Entry name="PA" value="Plea"/>
+  <Entry name="PD" value="Payment"/>
+  <Entry name="PE" value="Petition"/>
+  <Entry name="PY" value="Party Status"/>
+  <Entry name="SJ" value="Jury Sentence"/>
+  <Entry name="SU" value="Summons"/>
+  <Entry name="TR" value="Trial"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,194 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T236.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T236">
+  <Entry name="ACT" value="Actual"/>
+  <Entry name="AGC" value="Average Generic Product Price"/>
+  <Entry name="ALT" value="Alternate Price"/>
+  <Entry name="AWP" value="Average Wholesale Price"/>
+  <Entry name="BBP" value="Balance-Based Price"/>
+  <Entry name="BCH" value="Base Charge"/>
+  <Entry name="BID" value="Bid Price"/>
+  <Entry name="C01" value="Contract Tier 1"/>
+  <Entry name="C02" value="Contract Tier 2"/>
+  <Entry name="C03" value="Contract Tier 3"/>
+  <Entry name="C04" value="Contract Tier 4"/>
+  <Entry name="C05" value="Contract Tier 5"/>
+  <Entry name="C06" value="Contract Tier 6"/>
+  <Entry name="C07" value="Contract Tier 7"/>
+  <Entry name="C08" value="Contract Tier 8"/>
+  <Entry name="C09" value="Contract Tier 9"/>
+  <Entry name="C10" value="Contract Tier 10"/>
+  <Entry name="C11" value="Contract Tier 11"/>
+  <Entry name="C12" value="Contract Tier 12"/>
+  <Entry name="C13" value="Contract Tier 13"/>
+  <Entry name="C14" value="Contract Tier 14"/>
+  <Entry name="C15" value="Contract Tier 15"/>
+  <Entry name="C16" value="Contract Tier 16"/>
+  <Entry name="C17" value="Contract Tier 17"/>
+  <Entry name="C18" value="Contract Tier 18"/>
+  <Entry name="C19" value="Contract Tier 19"/>
+  <Entry name="C20" value="Contract Tier 20"/>
+  <Entry name="C21" value="Contract Tier 21"/>
+  <Entry name="C22" value="Contract Tier 22"/>
+  <Entry name="C23" value="Contract Tier 23"/>
+  <Entry name="C24" value="Contract Tier 24"/>
+  <Entry name="C25" value="Contract Tier 25"/>
+  <Entry name="C26" value="Contract Tier 26"/>
+  <Entry name="C27" value="Contract Tier 27"/>
+  <Entry name="C28" value="Contract Tier 28"/>
+  <Entry name="C29" value="Contract Tier 29"/>
+  <Entry name="C30" value="Contract Tier 30"/>
+  <Entry name="CAN" value="Cancellation Charge"/>
+  <Entry name="CAT" value="Catalog Price"/>
+  <Entry name="CDF" value="Central Distribution Facility (Warehouse)"/>
+  <Entry name="CDV" value="Current Domestic Value"/>
+  <Entry name="CHG" value="Changed Price"/>
+  <Entry name="CON" value="Contract Price"/>
+  <Entry name="CUP" value="Confirmed Unit Price"/>
+  <Entry name="CUS" value="Declared Customs Unit Value"/>
+  <Entry name="D01" value="Federal Supply Schedule (FSS) Price"/>
+  <Entry name="D02" value="Depot Price"/>
+  <Entry name="D03" value="Distribution and Pricing Agreement (DAPA) Price"/>
+  <Entry name="DAP" value="Dealer Adjusted Price"/>
+  <Entry name="DIS" value="Distributor's Price"/>
+  <Entry name="DPR" value="Discount Price"/>
+  <Entry name="DSC" value="Discount Amount Allowed"/>
+  <Entry name="DSD" value="Direct Store Delivery"/>
+  <Entry name="DSP" value="Direct Ship Program Price"/>
+  <Entry name="EDM" value="Emergency Direct Ship Price (Original Equipment Manufacturer)"/>
+  <Entry name="EDP" value="Emergency Direct Ship Price"/>
+  <Entry name="EDS" value="Emergency Direct Ship Price (Supplier)"/>
+  <Entry name="EDW" value="Emergency Direct Ship Price (Warehouse)"/>
+  <Entry name="ELC" value="Estimated Landed Cost"/>
+  <Entry name="EST" value="Estimated Price"/>
+  <Entry name="EUP" value="Expected Unit Price"/>
+  <Entry name="FCH" value="Flat Charge"/>
+  <Entry name="FCP" value="First Cost Price"/>
+  <Entry name="FDS" value="Frequent Delivery Service"/>
+  <Entry name="FET" value="Federal Excise Tax"/>
+  <Entry name="FGP" value="Free Goods Price"/>
+  <Entry name="FOR" value="Formula Price"/>
+  <Entry name="FSP" value="Free Service Price"/>
+  <Entry name="FUL" value="Federal Upper Limit Price (Maximum Allowable Cost Pricing for Drugs)"/>
+  <Entry name="FUP" value="Firm Price - Do Not Advise"/>
+  <Entry name="GAP" value="Advertising Price"/>
+  <Entry name="GDP" value="Display Price"/>
+  <Entry name="GOV" value="Government Price"/>
+  <Entry name="GSP" value="Shelf Price"/>
+  <Entry name="GTP" value="Temporary Price Reduction Price"/>
+  <Entry name="ICL" value="Unit Price Through Quantity"/>
+  <Entry name="IND" value="Industrial Price"/>
+  <Entry name="INS" value="Institutional Price"/>
+  <Entry name="INV" value="Invoice Billing Price"/>
+  <Entry name="LAR" value="Labor Rate"/>
+  <Entry name="LPP" value="Lease to Purchase Price"/>
+  <Entry name="LPR" value="List Price"/>
+  <Entry name="MAP" value="Mandatory to Advise Unit Price"/>
+  <Entry name="MAS" value="Minimum Activity Surcharge"/>
+  <Entry name="MAX" value="Maximum Order Quantity Price"/>
+  <Entry name="MIN" value="Minimum Order Quantity Price"/>
+  <Entry name="MNC" value="Minimum Charge"/>
+  <Entry name="MNR" value="Minimum Release Quantity Price"/>
+  <Entry name="MOD" value="Modal Premium"/>
+  <Entry name="MPR" value="Maximum Price Reduction"/>
+  <Entry name="MSR" value="Manufacturer's Suggested Retail"/>
+  <Entry name="MXR" value="Maximum Release Quantity Price"/>
+  <Entry name="N01" value="Noncontract Tier 1"/>
+  <Entry name="N02" value="Noncontract Tier 2"/>
+  <Entry name="N03" value="Noncontract Tier 3"/>
+  <Entry name="N04" value="Noncontract Tier 4"/>
+  <Entry name="N05" value="Noncontract Tier 5"/>
+  <Entry name="N06" value="Noncontract Tier 6"/>
+  <Entry name="N07" value="Noncontract Tier 7"/>
+  <Entry name="N08" value="Noncontract Tier 8"/>
+  <Entry name="N09" value="Noncontract Tier 9"/>
+  <Entry name="N10" value="Noncontract Tier 10"/>
+  <Entry name="N11" value="Noncontract Tier 11"/>
+  <Entry name="N12" value="Noncontract Tier 12"/>
+  <Entry name="N13" value="Noncontract Tier 13"/>
+  <Entry name="N14" value="Noncontract Tier 14"/>
+  <Entry name="N15" value="Noncontract Tier 15"/>
+  <Entry name="N16" value="Noncontract Tier 16"/>
+  <Entry name="N17" value="Noncontract Tier 17"/>
+  <Entry name="N18" value="Noncontract Tier 18"/>
+  <Entry name="N19" value="Noncontract Tier 19"/>
+  <Entry name="N20" value="Noncontract Tier 20"/>
+  <Entry name="N21" value="Noncontract Tier 21"/>
+  <Entry name="N22" value="Noncontract Tier 22"/>
+  <Entry name="N23" value="Noncontract Tier 23"/>
+  <Entry name="N24" value="Noncontract Tier 24"/>
+  <Entry name="N25" value="Noncontract Tier 25"/>
+  <Entry name="N26" value="Noncontract Tier 26"/>
+  <Entry name="N27" value="Noncontract Tier 27"/>
+  <Entry name="N28" value="Noncontract Tier 28"/>
+  <Entry name="N29" value="Noncontract Tier 29"/>
+  <Entry name="N30" value="Noncontract Tier 30"/>
+  <Entry name="N31" value="No Charge"/>
+  <Entry name="NET" value="Net Item Price"/>
+  <Entry name="OAP" value="Optional to Advise Unit Price"/>
+  <Entry name="OPP" value="Original Purchase Order Price"/>
+  <Entry name="PAP" value="Protection Level Price"/>
+  <Entry name="PAQ" value="Price Break Quantity(s)"/>
+  <Entry name="PBQ" value="Unit Price Beginning Quantity"/>
+  <Entry name="PBR" value="Price Break Purchase Order Count"/>
+  <Entry name="PHS" value="Public Health Service Price"/>
+  <Entry name="PIE" value="Price in Effect at Time of Shipment"/>
+  <Entry name="PLT" value="Producing Plant Price"/>
+  <Entry name="PPA" value="Packing Level Price"/>
+  <Entry name="PPD" value="Prepaid Freight Charges"/>
+  <Entry name="PRF" value="Professional Price"/>
+  <Entry name="PRO" value="Producer's Price"/>
+  <Entry name="PRP" value="Promotional price"/>
+  <Entry name="PUR" value="Purchase"/>
+  <Entry name="QTE" value="Quote Price"/>
+  <Entry name="REG" value="Regular Charge"/>
+  <Entry name="RES" value="Resale"/>
+  <Entry name="RPA" value="Rental Price, Annual"/>
+  <Entry name="RPM" value="Rental Price, Monthly"/>
+  <Entry name="RPP" value="Replacement Price"/>
+  <Entry name="RSH" value="Rush Charge"/>
+  <Entry name="RTL" value="Retail"/>
+  <Entry name="SAC" value="Service Attempted Charge"/>
+  <Entry name="SDP" value="Suggested Dealer Net Price"/>
+  <Entry name="SFP" value="Suggested Fleet Price"/>
+  <Entry name="SHD" value="Ship and Debit"/>
+  <Entry name="SLP" value="Suggested List Price"/>
+  <Entry name="SPC" value="Special Price"/>
+  <Entry name="SPE" value="Single Price (Factors Equalized)"/>
+  <Entry name="SSP" value="Secondary Supply Plant"/>
+  <Entry name="STA" value="Standard Price"/>
+  <Entry name="SUM" value="Sum of Line Items"/>
+  <Entry name="SWP" value="Suggested Wholesale Price"/>
+  <Entry name="THP" value="Threshold Price"/>
+  <Entry name="TOT" value="Total Invoice Amount Due"/>
+  <Entry name="TRF" value="Transfer"/>
+  <Entry name="UCP" value="Unit cost price"/>
+  <Entry name="ULC" value="Unsalable Item List Cost"/>
+  <Entry name="WAR" value="Public Warehouse Price"/>
+  <Entry name="WHL" value="Wholesale"/>
+  <Entry name="WSP" value="Waived Service Price"/>
+  <Entry name="ZNP" value="Zone Price"/>
+</Table>

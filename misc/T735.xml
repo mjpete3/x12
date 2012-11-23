@@ -1,0 +1,277 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T735.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T735">
+  <Entry name="0" value="Region"/>
+  <Entry name="1" value="Service/Billing Provider"/>
+  <Entry name="2" value="Billing Arrangement"/>
+  <Entry name="3" value="Sub-Billing Arrangement"/>
+  <Entry name="4" value="Group"/>
+  <Entry name="5" value="Category"/>
+  <Entry name="6" value="Sub-Category"/>
+  <Entry name="7" value="Type"/>
+  <Entry name="8" value="Charge Detail"/>
+  <Entry name="9" value="Line Detail"/>
+  <Entry name="A" value="Assembly"/>
+  <Entry name="B" value="Buyer's Location"/>
+  <Entry name="C" value="Date"/>
+  <Entry name="D" value="Product Description"/>
+  <Entry name="E" value="Transportation Equipment"/>
+  <Entry name="F" value="Component"/>
+  <Entry name="G" value="Quality Characteristics"/>
+  <Entry name="H" value="Bill of Materials"/>
+  <Entry name="I" value="Item"/>
+  <Entry name="J" value="Part Characteristic"/>
+  <Entry name="K" value="Kit"/>
+  <Entry name="L" value="Supplier's Location"/>
+  <Entry name="M" value="Measurement"/>
+  <Entry name="N" value="Site of Service"/>
+  <Entry name="O" value="Order"/>
+  <Entry name="P" value="Pack"/>
+  <Entry name="Q" value="Subpack"/>
+  <Entry name="R" value="Quantity"/>
+  <Entry name="S" value="Shipment"/>
+  <Entry name="T" value="Shipping Tare"/>
+  <Entry name="U" value="Subassembly"/>
+  <Entry name="V" value="Address Information"/>
+  <Entry name="W" value="Transaction Reference Number"/>
+  <Entry name="X" value="Serial Number"/>
+  <Entry name="Y" value="Suffix"/>
+  <Entry name="19" value="Provider of Service"/>
+  <Entry name="20" value="Information Source"/>
+  <Entry name="21" value="Information Receiver"/>
+  <Entry name="22" value="Subscriber"/>
+  <Entry name="23" value="Dependent"/>
+  <Entry name="24" value="Supergroup"/>
+  <Entry name="25" value="Subgroup"/>
+  <Entry name="26" value="Member"/>
+  <Entry name="27" value="Ancillary Facility or Department"/>
+  <Entry name="28" value="Hospital"/>
+  <Entry name="29" value="Franchisor"/>
+  <Entry name="2A" value="Branch"/>
+  <Entry name="2B" value="Direct Affiliate"/>
+  <Entry name="2C" value="Director"/>
+  <Entry name="2D" value="Headquarters"/>
+  <Entry name="2E" value="Indirect Affiliate"/>
+  <Entry name="2F" value="Management Antecedents"/>
+  <Entry name="2G" value="Management or Principal"/>
+  <Entry name="2H" value="Parent Company"/>
+  <Entry name="2I" value="Stockholder"/>
+  <Entry name="2J" value="Subsidiary"/>
+  <Entry name="2K" value="Ultimate Domestic Parent Company"/>
+  <Entry name="2L" value="Ultimate Parent Company"/>
+  <Entry name="30" value="Franchisee"/>
+  <Entry name="31" value="Franchisee Association"/>
+  <Entry name="32" value="Health Industry Business Communications Council (HIBCC) Health Industry Number (HIN) Database"/>
+  <Entry name="33" value="Activity"/>
+  <Entry name="34" value="Location Record"/>
+  <Entry name="35" value="Company/Corporation"/>
+  <Entry name="36" value="Operating Unit"/>
+  <Entry name="37" value="Property"/>
+  <Entry name="38" value="Tradename"/>
+  <Entry name="39" value="Accountant"/>
+  <Entry name="40" value="Financial Institution"/>
+  <Entry name="41" value="Product Level"/>
+  <Entry name="42" value="Activity Details"/>
+  <Entry name="43" value="Payment Summary Score"/>
+  <Entry name="44" value="Corporate Registration Filings"/>
+  <Entry name="45" value="Bankruptcy Details"/>
+  <Entry name="46" value="Company History"/>
+  <Entry name="47" value="Complete Financial History"/>
+  <Entry name="48" value="Balance Sheet"/>
+  <Entry name="49" value="Comparative Figures"/>
+  <Entry name="50" value="Payment Analysis"/>
+  <Entry name="51" value="Special Notification"/>
+  <Entry name="52" value="Public Record Financing Details"/>
+  <Entry name="53" value="Public Record Financing Summary"/>
+  <Entry name="54" value="Public Record Claim Details"/>
+  <Entry name="55" value="Public Record Claim Summary"/>
+  <Entry name="56" value="Statement of Work"/>
+  <Entry name="57" value="Legal Action Details"/>
+  <Entry name="58" value="Legal Action Summary"/>
+  <Entry name="59" value="Company Evaluation"/>
+  <Entry name="60" value="Company Summary"/>
+  <Entry name="61" value="Credit Scores"/>
+  <Entry name="62" value="Industry Averages"/>
+  <Entry name="63" value="Referring Provider"/>
+  <Entry name="64" value="Employee"/>
+  <Entry name="65" value="Insurance Policy"/>
+  <Entry name="66" value="Vehicle"/>
+  <Entry name="67" value="Key Contributor"/>
+  <Entry name="68" value="Public Record Summary"/>
+  <Entry name="69" value="Delinquency Projections"/>
+  <Entry name="70" value="Temporary Services Detail"/>
+  <Entry name="71" value="Overnight Shipping Detail"/>
+  <Entry name="72" value="Medical Supply Detail"/>
+  <Entry name="73" value="Equipment Leasing Detail"/>
+  <Entry name="AA" value="Insurer"/>
+  <Entry name="AB" value="Claim Administrator"/>
+  <Entry name="AC" value="Insured"/>
+  <Entry name="AD" value="Administrative Information"/>
+  <Entry name="AE" value="Car Rental Detail"/>
+  <Entry name="AF" value="Lodging Detail"/>
+  <Entry name="AG" value="Agent"/>
+  <Entry name="AH" value="Transportation Detail"/>
+  <Entry name="AI" value="Purchase Card Detail"/>
+  <Entry name="AJ" value="Alternate Taxing Authority"/>
+  <Entry name="AL" value="Alternate Specification - Lift Level"/>
+  <Entry name="AM" value="Amount Information"/>
+  <Entry name="AP" value="Credential Action"/>
+  <Entry name="AS" value="Animal Subject Group"/>
+  <Entry name="AT" value="Account"/>
+  <Entry name="BD" value="Building"/>
+  <Entry name="BE" value="Business Entity"/>
+  <Entry name="BP" value="Body Part"/>
+  <Entry name="CB" value="Contractholder Branch Office"/>
+  <Entry name="CC" value="Cost Center"/>
+  <Entry name="CE" value="Cost Element"/>
+  <Entry name="CH" value="Contractholder"/>
+  <Entry name="CI" value="Cause of Injury"/>
+  <Entry name="CL" value="Claimant"/>
+  <Entry name="CN" value="Container"/>
+  <Entry name="CO" value="Consortium"/>
+  <Entry name="CP" value="Client or Party"/>
+  <Entry name="CT" value="Cost Type"/>
+  <Entry name="CV" value="Coverage, Rider, or Supplementary Benefit"/>
+  <Entry name="DG" value="Drawing"/>
+  <Entry name="DM" value="Damage"/>
+  <Entry name="DP" value="Department"/>
+  <Entry name="DS" value="District"/>
+  <Entry name="EB" value="Filer"/>
+  <Entry name="EC" value="Receipts"/>
+  <Entry name="ED" value="Engineering Data List"/>
+  <Entry name="EF" value="Expenditures"/>
+  <Entry name="EG" value="Receivables"/>
+  <Entry name="EH" value="Payables"/>
+  <Entry name="EI" value="Organizational Information"/>
+  <Entry name="EL" value="Exhibit Line Item"/>
+  <Entry name="EM" value="Employer"/>
+  <Entry name="EN" value="End Item"/>
+  <Entry name="EV" value="Event"/>
+  <Entry name="EX" value="Exception"/>
+  <Entry name="FC" value="Function Code"/>
+  <Entry name="FG" value="Functional Group"/>
+  <Entry name="FI" value="Financial Information"/>
+  <Entry name="FL" value="Fleet"/>
+  <Entry name="FR" value="Frame"/>
+  <Entry name="GC" value="Group Coverage Options"/>
+  <Entry name="GP" value="Group Purchasing Organization"/>
+  <Entry name="GW" value="Group Work Candidate"/>
+  <Entry name="IA" value="Subline Item"/>
+  <Entry name="IB" value="Contract"/>
+  <Entry name="IC" value="Contract Data Requirements List (CDRL)"/>
+  <Entry name="IN" value="Interchange"/>
+  <Entry name="IS" value="Installments"/>
+  <Entry name="IT" value="Institution"/>
+  <Entry name="IV" value="Individual"/>
+  <Entry name="JU" value="Jurisdiction"/>
+  <Entry name="KA" value="Accident History"/>
+  <Entry name="KB" value="Chemical"/>
+  <Entry name="KC" value="Control Device"/>
+  <Entry name="KD" value="Discharge"/>
+  <Entry name="KE" value="Emergency Response Plan"/>
+  <Entry name="KF" value="Emission"/>
+  <Entry name="KG" value="Emission Activity"/>
+  <Entry name="KH" value="Emission Release Point"/>
+  <Entry name="KI" value="Emission Unit"/>
+  <Entry name="KJ" value="Flammable Mixture"/>
+  <Entry name="KK" value="Flammables Alternate Release"/>
+  <Entry name="KL" value="Flammables Worst Case"/>
+  <Entry name="KM" value="Hazardous Waste Generation"/>
+  <Entry name="KN" value="Hazardous Waste Received"/>
+  <Entry name="KO" value="Off-Site Process"/>
+  <Entry name="KP" value="On-Site Process"/>
+  <Entry name="KQ" value="Parameter"/>
+  <Entry name="KR" value="Prevention Program"/>
+  <Entry name="KS" value="Process"/>
+  <Entry name="KT" value="Reduction and Recycling"/>
+  <Entry name="KV" value="Toxics Alternate Release"/>
+  <Entry name="KW" value="Toxics Worst Case"/>
+  <Entry name="KX" value="Transfer"/>
+  <Entry name="LD" value="Lender or Mortgage Company"/>
+  <Entry name="LN" value="Loan Data"/>
+  <Entry name="LP" value="Party to the Loan"/>
+  <Entry name="ML" value="Manufacturing Level"/>
+  <Entry name="NI" value="Nature of Injury"/>
+  <Entry name="NS" value="National Stock Number"/>
+  <Entry name="OS" value="Support"/>
+  <Entry name="PA" value="Primary Administrator"/>
+  <Entry name="PB" value="Personal Property"/>
+  <Entry name="PC" value="Project Code"/>
+  <Entry name="PD" value="Procedure"/>
+  <Entry name="PE" value="Person"/>
+  <Entry name="PH" value="Product Characteristic"/>
+  <Entry name="PI" value="Property Identification"/>
+  <Entry name="PK" value="Property Tax"/>
+  <Entry name="PL" value="Primary Specification - Lift Level"/>
+  <Entry name="PP" value="Related Parties"/>
+  <Entry name="PR" value="Principal"/>
+  <Entry name="PS" value="Property Segment Group"/>
+  <Entry name="PT" value="Patient"/>
+  <Entry name="PY" value="Payment Detail"/>
+  <Entry name="RA" value="Reporting Agency"/>
+  <Entry name="RB" value="Response"/>
+  <Entry name="RC" value="Response Details"/>
+  <Entry name="RD" value="Response Sub-details"/>
+  <Entry name="RE" value="Response Particular"/>
+  <Entry name="RF" value="Medication"/>
+  <Entry name="RG" value="Recommendation"/>
+  <Entry name="RH" value="Review History"/>
+  <Entry name="RL" value="Reference Location"/>
+  <Entry name="RM" value="Room"/>
+  <Entry name="RP" value="Report"/>
+  <Entry name="S1" value="Site"/>
+  <Entry name="S2" value="Sample"/>
+  <Entry name="S3" value="Test"/>
+  <Entry name="SA" value="Secondary Administrator"/>
+  <Entry name="SB" value="Substitute"/>
+  <Entry name="SC" value="Subcontract Line Item"/>
+  <Entry name="SD" value="Support Document"/>
+  <Entry name="SE" value="Subexhibit Line Item"/>
+  <Entry name="SF" value="Safety Fitness"/>
+  <Entry name="SG" value="Safety Factor"/>
+  <Entry name="SH" value="Sheet"/>
+  <Entry name="SI" value="Source of Injury"/>
+  <Entry name="SL" value="Solicitation"/>
+  <Entry name="SP" value="Sub-Project"/>
+  <Entry name="SR" value="Subroom"/>
+  <Entry name="SS" value="Services"/>
+  <Entry name="ST" value="State"/>
+  <Entry name="SY" value="System"/>
+  <Entry name="TA" value="Taxing Authority"/>
+  <Entry name="TD" value="Tax Delinquency"/>
+  <Entry name="TI" value="Technical Information Package"/>
+  <Entry name="TS" value="Transaction Set"/>
+  <Entry name="TU" value="Traffic Unit"/>
+  <Entry name="TX" value="Tax Installment"/>
+  <Entry name="UT" value="Unit or Lot"/>
+  <Entry name="VI" value="Violation"/>
+  <Entry name="WB" value="Work Breakdown Structure"/>
+  <Entry name="WC" value="Work Candidate"/>
+  <Entry name="WL" value="Well"/>
+  <Entry name="WP" value="Well Completion"/>
+  <Entry name="WR" value="Wellbore"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

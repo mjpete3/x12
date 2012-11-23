@@ -1,0 +1,49 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: L1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="L1" comment="To specify rate and charges detail relative to a line item including freight charges, advances, special charges, and entitlements">
+  <Field name="LadingLineItemNumber" type="long" required="y" min="1" max="3" comment="Sequential line number for a lading item"/>
+  <Field name="FreightRate" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Charge" type="double" required="y" min="1" max="12" comment="For a line item: freight or special charge; for the total invoice: the total charges -- expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="Advances" type="double" required="y" min="1" max="9" comment="Incidental charges occurring during transportation which are not generally considered to be freight charges (examples - stop charges, diversion and reconsignment, icing) expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="PrepaidAmount" type="double" required="y" min="1" max="9" comment="Money paid at point of origin (usually by shipper) expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateCombinationPointCode" required="y" min="3" max="9" validation="T120" comment="The code denoting the connecting station for a joint rate obtained by combining two or more published rates which are used for the calculation of transportation charges"/>
+  <Field name="SpecialChargeOrAllowanceCode" required="y" min="3" max="3" validation="T150" comment="Code identifying type of special charge or allowance"/>
+  <Field name="RateClassCode" required="y" min="1" max="3" validation="T121" comment="Code identifying specifically designated class of goods; Note: For international air shipments, see IATA Resolution 600k"/>
+  <Field name="EntitlementCode" required="y" min="1" max="1" validation="T39" comment="Code identifying entitlement party"/>
+  <Field name="ChargeMethodOfPayment" required="y" min="1" max="1" validation="T16" comment="Code defining method of payment"/>
+  <Field name="SpecialChargeDescription" required="y" min="2" max="25" comment="Identification of special charge; this data element is used whenever an applicable code cannot be found in data element 150"/>
+  <Field name="TariffApplicationCode" required="y" min="1" max="1" validation="T257" comment="Code indicating to which traffic a tariff applies"/>
+  <Field name="DeclaredValue" type="double" required="y" min="2" max="12" comment="Monetary assigned value expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="LadingLiabilityCode" required="y" min="1" max="1" validation="T372" comment="Code identifying limits of liability"/>
+  <Field name="BilledRatedAsQuantity" type="double" required="y" min="1" max="11" comment="Basis for rating (miles, value, volume, etc.); Note: Weight may be defined by either data element 220 or 81"/>
+  <Field name="BilledRatedAsQualifier" required="y" min="2" max="2" validation="T221" comment="Code identifying the type of quantity or value on which the rate or item pricing is based"/>
+  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="CurrencyCode" required="y" min="3" max="3" comment="Code (Standard ISO) for country in whose currency the charges are specified"/>
+  <Field name="Amount" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="LadingValue" type="double" required="y" min="2" max="9" comment="Value of shipment for export, expressed in the standard monetary denomination for the currency specified"/>
+</Segment>

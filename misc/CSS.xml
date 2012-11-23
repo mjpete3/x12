@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CSS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CSS" comment="To specify a special sample-selection procedure to be followed at the start-up of a process, or following a process upset, such as a brief line power loss or product grade change">
+  <Field name="SamplingSequenceQualifier" min="2" max="2" validation="T1020" comment="Code indicating the circumstances under which the special sampling sequence is to be initiated"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="SamplingSequenceValue1" type="long" min="1" max="3" comment="A value identifying a unit to be sampled, according to its position in a prescribed sequence"/>
+  <Field name="SamplingSequenceValue2" type="long" required="y" min="1" max="3" comment="A value identifying a unit to be sampled, according to its position in a prescribed sequence"/>
+  <Field name="SamplingSequenceValue3" type="long" required="y" min="1" max="3" comment="A value identifying a unit to be sampled, according to its position in a prescribed sequence"/>
+  <Field name="SamplingSequenceValue4" type="long" required="y" min="1" max="3" comment="A value identifying a unit to be sampled, according to its position in a prescribed sequence"/>
+  <Field name="SamplingSequenceValue5" type="long" required="y" min="1" max="3" comment="A value identifying a unit to be sampled, according to its position in a prescribed sequence"/>
+</Segment>

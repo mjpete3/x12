@@ -1,0 +1,68 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1132.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1132">
+  <Entry name="1" value="Self-contained (Regular Class)"/>
+  <Entry name="2" value="Resource Class"/>
+  <Entry name="3" value="Separate Class"/>
+  <Entry name="4" value="Public Separate School Facility"/>
+  <Entry name="5" value="Private Separate School Facility"/>
+  <Entry name="6" value="Public Residential Facility"/>
+  <Entry name="7" value="Private Residential Facility"/>
+  <Entry name="8" value="Correction Facility"/>
+  <Entry name="9" value="Homebound or Hospital Environment"/>
+  <Entry name="10" value="Bilingual Class"/>
+  <Entry name="11" value="Departmentalized (Regular Class)"/>
+  <Entry name="12" value="Center-based Instruction"/>
+  <Entry name="13" value="Televised Instruction"/>
+  <Entry name="14" value="Individualized Instruction"/>
+  <Entry name="15" value="Independent Study"/>
+  <Entry name="16" value="Laboratory"/>
+  <Entry name="17" value="English as a Second Language (ESL) Class"/>
+  <Entry name="18" value="Discussion"/>
+  <Entry name="19" value="Residency"/>
+  <Entry name="20" value="Internship"/>
+  <Entry name="21" value="Practicum"/>
+  <Entry name="22" value="Work Study"/>
+  <Entry name="23" value="Co-operative Education"/>
+  <Entry name="24" value="Clinic"/>
+  <Entry name="25" value="Lecture and Laboratory"/>
+  <Entry name="26" value="Lecture and Discussion"/>
+  <Entry name="27" value="Lecture"/>
+  <Entry name="28" value="Other"/>
+  <Entry name="29" value="Classroom"/>
+  <Entry name="30" value="Home Study"/>
+  <Entry name="31" value="On-line Instruction"/>
+  <Entry name="32" value="Distance Learning"/>
+  <Entry name="33" value="Seminar"/>
+  <Entry name="34" value="Field Work Experience"/>
+  <Entry name="35" value="Group Projects"/>
+  <Entry name="36" value="Applied Learning"/>
+  <Entry name="37" value="Recital"/>
+  <Entry name="38" value="In-Service Training"/>
+  <Entry name="39" value="Workshop"/>
+  <Entry name="40" value="Self-contained Combined Resource"/>
+  <Entry name="41" value="Experiential Learning"/>
+</Table>

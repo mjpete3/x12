@@ -1,0 +1,189 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1196.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1196">
+  <Entry name="01" value="Labor"/>
+  <Entry name="02" value="Material"/>
+  <Entry name="03" value="Other Direct Costs (ODC)"/>
+  <Entry name="04" value="Subcontract"/>
+  <Entry name="05" value="Labor and Material"/>
+  <Entry name="06" value="Labor Overhead"/>
+  <Entry name="07" value="Material Overhead"/>
+  <Entry name="08" value="Other Overhead"/>
+  <Entry name="09" value="Total Overhead"/>
+  <Entry name="10" value="Total General and Administrative"/>
+  <Entry name="11" value="Engineering Labor"/>
+  <Entry name="12" value="Engineering Overhead"/>
+  <Entry name="13" value="Manufacturing Labor"/>
+  <Entry name="14" value="Manufacturing Overhead"/>
+  <Entry name="15" value="Interdivisional Work Authorization"/>
+  <Entry name="16" value="Intercomponent Work Authorization"/>
+  <Entry name="17" value="Change Document Number"/>
+  <Entry name="18" value="Funds Appropriation"/>
+  <Entry name="19" value="Nonrecurring Labor"/>
+  <Entry name="20" value="Nonrecurring Material"/>
+  <Entry name="21" value="Nonrecurring Other Direct Costs"/>
+  <Entry name="22" value="Nonrecurring Subcontract"/>
+  <Entry name="23" value="Nonrecurring Labor and Material"/>
+  <Entry name="24" value="Nonrecurring Engineering Labor"/>
+  <Entry name="25" value="Nonrecurring Manufacturing Labor"/>
+  <Entry name="26" value="Recurring"/>
+  <Entry name="27" value="Nonrecurring"/>
+  <Entry name="28" value="Total"/>
+  <Entry name="29" value="Nonrecurring and Total"/>
+  <Entry name="30" value="Recurring and Total"/>
+  <Entry name="31" value="Direct Cost or Hours"/>
+  <Entry name="32" value="Plant-wide Overhead"/>
+  <Entry name="33" value="General &amp; Administrative"/>
+  <Entry name="34" value="Cost of Money"/>
+  <Entry name="35" value="Profit or Fee"/>
+  <Entry name="36" value="Total Price"/>
+  <Entry name="37" value="Total Cost Less General &amp; Administrative"/>
+  <Entry name="38" value="Total Cost Plus General &amp; Administrative"/>
+  <Entry name="39" value="Other Costs"/>
+  <Entry name="40" value="Standard"/>
+  <Entry name="41" value="Variance"/>
+  <Entry name="42" value="Purchased Equipment"/>
+  <Entry name="43" value="Materials and Purchased Items"/>
+  <Entry name="44" value="Quality Control Labor"/>
+  <Entry name="45" value="Other Government Effort"/>
+  <Entry name="46" value="Commercial Effort"/>
+  <Entry name="47" value="Total Direct Cost Base"/>
+  <Entry name="48" value="Indirect Labor"/>
+  <Entry name="49" value="Employee Benefits"/>
+  <Entry name="50" value="Payroll Taxes"/>
+  <Entry name="51" value="Employment"/>
+  <Entry name="52" value="Communications and Travel"/>
+  <Entry name="53" value="Production Related"/>
+  <Entry name="54" value="Facilities - Building and Land"/>
+  <Entry name="55" value="Facilities - Furniture and Equipment"/>
+  <Entry name="56" value="Administration"/>
+  <Entry name="57" value="Future Business"/>
+  <Entry name="58" value="Credits"/>
+  <Entry name="59" value="Government Furnished Equipment"/>
+  <Entry name="60" value="Government Furnished Material"/>
+  <Entry name="61" value="Government Furnished Property"/>
+  <Entry name="62" value="Engineering"/>
+  <Entry name="63" value="Tooling"/>
+  <Entry name="64" value="Tooling Design"/>
+  <Entry name="65" value="Tooling Fabrication"/>
+  <Entry name="66" value="Quality Control"/>
+  <Entry name="67" value="Manufacturing"/>
+  <Entry name="70" value="Total Salaries and Wages"/>
+  <Entry name="71" value="Total Salaries and Wages and Employee Benefits"/>
+  <Entry name="72" value="Total Purchased Equipment"/>
+  <Entry name="73" value="Travel - Domestic"/>
+  <Entry name="74" value="Travel - Foreign"/>
+  <Entry name="75" value="Participant Stipends"/>
+  <Entry name="77" value="Participant Travel"/>
+  <Entry name="78" value="Participant Other"/>
+  <Entry name="79" value="Participant Total"/>
+  <Entry name="80" value="Publication Costs"/>
+  <Entry name="81" value="Consultant Services"/>
+  <Entry name="82" value="Computer Automated Data Processing (ADP) Services"/>
+  <Entry name="83" value="Funding From Non-Federal Sources"/>
+  <Entry name="84" value="Total Direct Costs"/>
+  <Entry name="85" value="Human Subject Costs"/>
+  <Entry name="86" value="Animal Costs"/>
+  <Entry name="87" value="Alternations and Renovations"/>
+  <Entry name="88" value="Cost Sharing"/>
+  <Entry name="89" value="Budget Line Item Identification"/>
+  <Entry name="90" value="Project/Task"/>
+  <Entry name="91" value="Advanced Procurement Indicator"/>
+  <Entry name="A1" value="Department Indicator"/>
+  <Entry name="A2" value="Transfer from Department"/>
+  <Entry name="A3" value="Fiscal Year Indicator"/>
+  <Entry name="A4" value="Basic Symbol Number"/>
+  <Entry name="A5" value="Sub-class"/>
+  <Entry name="A6" value="Sub-Account Symbol"/>
+  <Entry name="AT" value="Air Force Transportation Account Code (ATAC)"/>
+  <Entry name="AY" value="Advance Procurement Year"/>
+  <Entry name="B1" value="Budget Activity Number"/>
+  <Entry name="B2" value="Budget Sub-activity Number"/>
+  <Entry name="B3" value="Budget Line Item Identification"/>
+  <Entry name="B4" value="Project/Task/Budget Sub-Line"/>
+  <Entry name="B5" value="Advance Procurement Year"/>
+  <Entry name="B6" value="Fund Code"/>
+  <Entry name="BL" value="Billings"/>
+  <Entry name="BY" value="Base Year Costs"/>
+  <Entry name="C1" value="Program Element"/>
+  <Entry name="C2" value="Budgetary Restrictions"/>
+  <Entry name="C3" value="Funding Type"/>
+  <Entry name="CM" value="Commitments"/>
+  <Entry name="CY" value="Current Year Costs"/>
+  <Entry name="D1" value="Defense Agency Level Organization"/>
+  <Entry name="D2" value="Major Command Level Organization"/>
+  <Entry name="D3" value="Field Level Organization"/>
+  <Entry name="D4" value="Work Center"/>
+  <Entry name="D5" value="Allotment Recipient"/>
+  <Entry name="D6" value="Sub-allotment Recipient"/>
+  <Entry name="D7" value="Work Center Recipient"/>
+  <Entry name="E1" value="Major Reimbursement Source Code"/>
+  <Entry name="E2" value="Detail Reimbursement Source Code"/>
+  <Entry name="E3" value="Customer Indicator"/>
+  <Entry name="EH" value="Equipment Maintenance"/>
+  <Entry name="ES" value="Escalation"/>
+  <Entry name="EX" value="Expenditures"/>
+  <Entry name="F1" value="Object Class"/>
+  <Entry name="F2" value="Object Sub-class"/>
+  <Entry name="F3" value="Government or Public Sector Identifier"/>
+  <Entry name="F4" value="Foreign Currency Code"/>
+  <Entry name="F5" value="Country Code"/>
+  <Entry name="FE" value="Participant Fees"/>
+  <Entry name="FP" value="Fixed Price"/>
+  <Entry name="FR" value="Forward Priced"/>
+  <Entry name="FT" value="Funding Type"/>
+  <Entry name="G1" value="Program or Planning Code"/>
+  <Entry name="G2" value="Special Interest Code or Special Program Cost Code"/>
+  <Entry name="H1" value="Cost Code"/>
+  <Entry name="H2" value="Labor Type Code"/>
+  <Entry name="H3" value="Cost Allocation Code"/>
+  <Entry name="H4" value="Classification Code"/>
+  <Entry name="I1" value="Abbreviated Department of Defense (DoD) Budget and Accounting Classification Code (BACC)"/>
+  <Entry name="IN" value="Insurance"/>
+  <Entry name="J1" value="Document or Record Reference Number"/>
+  <Entry name="K6" value="Accounting Classification Reference Code"/>
+  <Entry name="L1" value="Accounting Installation Number"/>
+  <Entry name="LM" value="Labor - Military"/>
+  <Entry name="M1" value="Local Installation Data"/>
+  <Entry name="MD" value="Movement Designator Code (MDC)"/>
+  <Entry name="MR" value="Management Reserve"/>
+  <Entry name="N1" value="Transaction Type"/>
+  <Entry name="NP" value="Non-production"/>
+  <Entry name="P1" value="Disbursing Station Number"/>
+  <Entry name="P2" value="International Balance of Payments (IBOP) Code"/>
+  <Entry name="P3" value="Disbursing Office Voucher Number"/>
+  <Entry name="RL" value="Rental or Lease of Equipment or Facilities"/>
+  <Entry name="SC" value="Service Contracts"/>
+  <Entry name="TA" value="Transportation Account Code (TAC)"/>
+  <Entry name="TC" value="Termination Costs"/>
+  <Entry name="TD" value="Technical Data"/>
+  <Entry name="TR" value="Training"/>
+  <Entry name="TU" value="Participant Tuition"/>
+  <Entry name="UB" value="Undistributed Budget"/>
+  <Entry name="VN" value="Disbursing Office Voucher Number"/>
+  <Entry name="WC" value="Work Center"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

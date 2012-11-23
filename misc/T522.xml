@@ -1,0 +1,1767 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T522.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T522">
+  <Entry name="1" value="Line Item Total"/>
+  <Entry name="2" value="Batch Total"/>
+  <Entry name="3" value="Deposit Total"/>
+  <Entry name="4" value="Lock Box Total"/>
+  <Entry name="5" value="Total Invoice Amount"/>
+  <Entry name="6" value="Amount Subject to Total Monetary Discount"/>
+  <Entry name="7" value="Discount Amount Due"/>
+  <Entry name="8" value="Total Monetary Discount Amount"/>
+  <Entry name="9" value="Total Operational Statement Amount"/>
+  <Entry name="A" value="Adjusted Chargeback Claim Amount"/>
+  <Entry name="B" value="Estimated"/>
+  <Entry name="C" value="City"/>
+  <Entry name="D" value="Payor Amount Paid"/>
+  <Entry name="E" value="Estimated Credit"/>
+  <Entry name="F" value="Annual Limit"/>
+  <Entry name="G" value="Collateral"/>
+  <Entry name="H" value="Bid Amount"/>
+  <Entry name="I" value="Interest"/>
+  <Entry name="J" value="Trustee Fees"/>
+  <Entry name="K" value="Attorney and Trustee Fees"/>
+  <Entry name="L" value="Local"/>
+  <Entry name="M" value="Amount Due from Buyer at Appraisal Notice Date"/>
+  <Entry name="N" value="Net"/>
+  <Entry name="O" value="Court Cost"/>
+  <Entry name="P" value="Penalty"/>
+  <Entry name="Q" value="Amount Owed to Buyer at Appraisal Notice Date"/>
+  <Entry name="R" value="Spend Down"/>
+  <Entry name="S" value="Submitted Chargeback Claim Amount"/>
+  <Entry name="T" value="Tax"/>
+  <Entry name="U" value="Underpayment"/>
+  <Entry name="V" value="Cost of Deficiency"/>
+  <Entry name="W" value="Deficiency Judgment Fees"/>
+  <Entry name="X" value="Deficiency Judgment Expenses and Fees"/>
+  <Entry name="Y" value="Current List Price"/>
+  <Entry name="Z" value="List Price When Sold"/>
+  <Entry name="00" value="Downpayment on the Repayment Plan Amount"/>
+  <Entry name="01" value="Fixed Installment Control Accounting Error"/>
+  <Entry name="02" value="Graduated Payment Mortgage Adjustment"/>
+  <Entry name="03" value="Growing Equity Mortgage Adjustment"/>
+  <Entry name="04" value="Adjustable Rate Mortgage Change"/>
+  <Entry name="05" value="Fixed Installment Control Substitution Adjustment"/>
+  <Entry name="06" value="Interest Adjustment"/>
+  <Entry name="07" value="Deferred Graduated Payment Mortgage Interest Paid"/>
+  <Entry name="08" value="Interest Accounting Error"/>
+  <Entry name="09" value="Principal Accounting Error"/>
+  <Entry name="0A" value="Interest Substitution Adjustment"/>
+  <Entry name="0B" value="Principal Substitution Adjustment"/>
+  <Entry name="0C" value="Prepaid Interest"/>
+  <Entry name="0D" value="Prepaid Principal"/>
+  <Entry name="0E" value="Delinquent Interest"/>
+  <Entry name="0F" value="Delinquent Principal"/>
+  <Entry name="0G" value="Curtailment Adjustment"/>
+  <Entry name="0H" value="Serial Note Principal Available for Distribution"/>
+  <Entry name="0I" value="Servicing Fee"/>
+  <Entry name="0J" value="Guarantee Fee Adjustment"/>
+  <Entry name="0K" value="Amount Under-collateralized"/>
+  <Entry name="0L" value="Amount Over-collateralized"/>
+  <Entry name="0M" value="Trial Balance Adjustment"/>
+  <Entry name="0N" value="Custodial Bank Account Adjustment"/>
+  <Entry name="0P" value="Item"/>
+  <Entry name="0Q" value="Schedule"/>
+  <Entry name="0R" value="Regular Plan"/>
+  <Entry name="0S" value="Previously Billed"/>
+  <Entry name="0T" value="Currently Due"/>
+  <Entry name="0U" value="Coverage Premium"/>
+  <Entry name="10" value="Shipment Value in U.S. Dollars"/>
+  <Entry name="11" value="Liabilities at Bankruptcy"/>
+  <Entry name="12" value="Account Average Balance Account"/>
+  <Entry name="13" value="Outstanding Balance at Foreclosure"/>
+  <Entry name="14" value="Legal Obligation Debt Amount"/>
+  <Entry name="15" value="Estimated Closing Cost Amount"/>
+  <Entry name="16" value="Discount Fees Paid by Borrower Amount"/>
+  <Entry name="17" value="Closing Costs or Concessions Paid by Seller"/>
+  <Entry name="18" value="Prepaid Items Amount"/>
+  <Entry name="19" value="Federal Housing Administration, Mortgage Insurance Premium Funding Fee Financed Amount"/>
+  <Entry name="1A" value="Variance"/>
+  <Entry name="1B" value="Variance Adjustment Cost"/>
+  <Entry name="1C" value="Variance Adjustment Schedule"/>
+  <Entry name="1D" value="Escalation"/>
+  <Entry name="1E" value="Fixed Price"/>
+  <Entry name="1F" value="Lodging"/>
+  <Entry name="1G" value="Meals"/>
+  <Entry name="1H" value="Travel Expense"/>
+  <Entry name="1J" value="Insurance Expense"/>
+  <Entry name="1K" value="Union Dues"/>
+  <Entry name="1L" value="Regular Income"/>
+  <Entry name="1M" value="Income on Real Property"/>
+  <Entry name="1N" value="Income from Social Security and/or other Government Assistance"/>
+  <Entry name="1P" value="Total Monthly Income"/>
+  <Entry name="1Q" value="Electric and/or Fuel Payment"/>
+  <Entry name="1R" value="Water and/or Sewer Payment"/>
+  <Entry name="1S" value="Telephone Payment"/>
+  <Entry name="1T" value="Maintenance Expense"/>
+  <Entry name="1U" value="Food Expense"/>
+  <Entry name="1V" value="Clothing Expense"/>
+  <Entry name="1W" value="Laundry Expense"/>
+  <Entry name="1X" value="Medical and/or Dental Expense"/>
+  <Entry name="1Y" value="Recreation Expenses"/>
+  <Entry name="1Z" value="Charitable Contributions"/>
+  <Entry name="20" value="Federal Housing Administration, Mortgage Insurance Premium or Veteran's Administration Funding Fee Amount"/>
+  <Entry name="21" value="Original Cost of Property Amount"/>
+  <Entry name="22" value="Owner's Estimate of Value Amount"/>
+  <Entry name="23" value="Appraised Value Amount"/>
+  <Entry name="24" value="Gross Monthly Income Amount"/>
+  <Entry name="25" value="Assets at Bankruptcy"/>
+  <Entry name="26" value="Negotiated Cost"/>
+  <Entry name="27" value="Authorized Unpriced Work"/>
+  <Entry name="28" value="Target Price"/>
+  <Entry name="29" value="Estimated Price"/>
+  <Entry name="2A" value="Home Insurance Expense"/>
+  <Entry name="2B" value="Life Insurance Expense"/>
+  <Entry name="2C" value="Health Insurance Expense"/>
+  <Entry name="2D" value="Automobile Insurance Expense"/>
+  <Entry name="2E" value="Value of Property Claimed as Exempt"/>
+  <Entry name="2F" value="Automobile Payment"/>
+  <Entry name="2G" value="Other Type of Installment Payment"/>
+  <Entry name="2H" value="Operating Expenses"/>
+  <Entry name="2I" value="Total Projected Monthly Income"/>
+  <Entry name="2J" value="Total Projected Monthly Expenses"/>
+  <Entry name="2K" value="Excess Income"/>
+  <Entry name="2L" value="Value of Personal Property"/>
+  <Entry name="2M" value="Monthly Overtime"/>
+  <Entry name="2N" value="Total All Repairs"/>
+  <Entry name="2P" value="Total Recommended Repairs"/>
+  <Entry name="2Q" value="State Quarterly Total Gross Wages"/>
+  <Entry name="2R" value="State Quarterly Unemployment Insurance (UI) Total Wages"/>
+  <Entry name="2S" value="State Quarterly Unemployment Insurance (UI) Excess Wages"/>
+  <Entry name="2T" value="State Quarterly Unemployment Insurance (UI) Taxable Wages"/>
+  <Entry name="2U" value="State Quarterly Disability Insurance Taxable Wages"/>
+  <Entry name="2V" value="State Quarterly Tip Wages"/>
+  <Entry name="2W" value="Asset-Long Term"/>
+  <Entry name="2X" value="Asset-Short Term"/>
+  <Entry name="2Y" value="Base Coverage"/>
+  <Entry name="2Z" value="Commission Retained"/>
+  <Entry name="30" value="Contract Ceiling"/>
+  <Entry name="31" value="Estimated Contract Ceiling"/>
+  <Entry name="32" value="Target Fee or Profit Amount"/>
+  <Entry name="33" value="Original Contract Target Cost"/>
+  <Entry name="34" value="Negotiated Contract Changes"/>
+  <Entry name="35" value="Current Target Cost"/>
+  <Entry name="36" value="Contract Budget Base (CBB)"/>
+  <Entry name="37" value="Current Budgeted Cost for Work Scheduled (BCWS)"/>
+  <Entry name="38" value="Current Budgeted Cost for Work Performed (BCWP)"/>
+  <Entry name="39" value="Current Actual Cost of Work Performed (ACWP)"/>
+  <Entry name="3A" value="Accounting"/>
+  <Entry name="3B" value="Accounts Payable"/>
+  <Entry name="3C" value="Accounts Receivable"/>
+  <Entry name="3D" value="Advanced Dividends"/>
+  <Entry name="3E" value="Advertising Expenses"/>
+  <Entry name="3F" value="Amortization"/>
+  <Entry name="3G" value="Amortization Costs"/>
+  <Entry name="3H" value="Amount of Decree"/>
+  <Entry name="3I" value="Asset Investment"/>
+  <Entry name="3J" value="Authorized Capital"/>
+  <Entry name="3K" value="Available Reserves"/>
+  <Entry name="3L" value="Bad Debt Allowance"/>
+  <Entry name="3M" value="Bad Debts"/>
+  <Entry name="3N" value="Bank Account(s)"/>
+  <Entry name="3O" value="Long Term Assets"/>
+  <Entry name="3P" value="Long Term Liabilities"/>
+  <Entry name="3Q" value="Long Term Tangible Assets"/>
+  <Entry name="3R" value="Losses on Capital"/>
+  <Entry name="3S" value="Machines and Tools"/>
+  <Entry name="3T" value="Member Risk Capital"/>
+  <Entry name="3U" value="Miscellaneous After Tax Exempt"/>
+  <Entry name="3V" value="Mortgage"/>
+  <Entry name="3W" value="Nominal Capital"/>
+  <Entry name="3X" value="Nominal Damages"/>
+  <Entry name="3Y" value="Non-operational Fixed Assets"/>
+  <Entry name="3Z" value="Excess Amount Requested"/>
+  <Entry name="40" value="Current Schedule Variance (SV)"/>
+  <Entry name="41" value="Current Cost Variance (CV)"/>
+  <Entry name="42" value="Cumulative Budgeted Cost for Work Scheduled (BCWS)"/>
+  <Entry name="43" value="Cumulative Budgeted Cost for Work Performed (BCWP)"/>
+  <Entry name="44" value="Cumulative Actual Cost of Work Performed (ACWP)"/>
+  <Entry name="45" value="Cumulative Schedule Variance (SV)"/>
+  <Entry name="46" value="Cumulative Cost Variance (CV)"/>
+  <Entry name="47" value="Reprogram Cost Variance"/>
+  <Entry name="48" value="Reprogram Budget"/>
+  <Entry name="49" value="At Complete Budget (BAC)"/>
+  <Entry name="4A" value="Nonissued Capital"/>
+  <Entry name="4B" value="Notes Payable"/>
+  <Entry name="4C" value="Notes Receivable"/>
+  <Entry name="4D" value="Bank Debentures"/>
+  <Entry name="4E" value="Bank Obligations"/>
+  <Entry name="4F" value="Buildings"/>
+  <Entry name="4G" value="Buildings Under Construction"/>
+  <Entry name="4H" value="Capital"/>
+  <Entry name="4I" value="Capital Associated with Principal"/>
+  <Entry name="4J" value="Capital of Other Subsidiaries"/>
+  <Entry name="4K" value="Capital Stock"/>
+  <Entry name="4L" value="Cash"/>
+  <Entry name="4M" value="Capital Subsidies Received"/>
+  <Entry name="4N" value="Commercial Debt"/>
+  <Entry name="4O" value="Commercial Expenses"/>
+  <Entry name="4P" value="Common Stock"/>
+  <Entry name="4Q" value="Consequential Damages"/>
+  <Entry name="4R" value="Compensatory Damages"/>
+  <Entry name="4S" value="Convertible Debentures"/>
+  <Entry name="4T" value="Cost of Goods Sold"/>
+  <Entry name="4U" value="Cost of Sales"/>
+  <Entry name="4V" value="Cost(s)"/>
+  <Entry name="4W" value="Current Assets"/>
+  <Entry name="4X" value="Current Liabilities"/>
+  <Entry name="4Y" value="Damages"/>
+  <Entry name="4Z" value="Deferred Cost"/>
+  <Entry name="50" value="At Complete Latest Revised Estimate (LRE)"/>
+  <Entry name="51" value="At Complete Variance"/>
+  <Entry name="52" value="Total Allocated Budget"/>
+  <Entry name="53" value="Difference (Contract Budget Base - Total Allocated Budget)"/>
+  <Entry name="54" value="Forecast"/>
+  <Entry name="55" value="At Complete Forecast"/>
+  <Entry name="56" value="Current Cost Performance Index (CPIe) - Efficiency (BCWP/ACWP)"/>
+  <Entry name="57" value="Current Cost Performance Index (CPIp) - Planned (ACWP/BCWP)"/>
+  <Entry name="58" value="Current Schedule Performance Index (SPI)"/>
+  <Entry name="59" value="Cumulative Cost Performance Index (CPIe) - Efficiency (BCWP/ACWP)"/>
+  <Entry name="5A" value="Deferred Credit or Income"/>
+  <Entry name="5B" value="Deferred Taxation"/>
+  <Entry name="5C" value="Deposits"/>
+  <Entry name="5D" value="Depreciation"/>
+  <Entry name="5E" value="Depreciation of Fixed Assets"/>
+  <Entry name="5F" value="Depreciation of Revaluation of Fixed Assets"/>
+  <Entry name="5G" value="Director's Remuneration"/>
+  <Entry name="5H" value="Dividends"/>
+  <Entry name="5I" value="Doubtful Receivables"/>
+  <Entry name="5J" value="Equipment"/>
+  <Entry name="5K" value="Equipment Subsidies"/>
+  <Entry name="5L" value="Equities, Stocks"/>
+  <Entry name="5M" value="Equity"/>
+  <Entry name="5N" value="Exceptional Item"/>
+  <Entry name="5O" value="Exports"/>
+  <Entry name="5P" value="External Charge"/>
+  <Entry name="5Q" value="Extraordinary Charge"/>
+  <Entry name="5R" value="Extraordinary Current Asset Write Downs"/>
+  <Entry name="5S" value="Extraordinary Result"/>
+  <Entry name="5T" value="Financial Assets"/>
+  <Entry name="5U" value="Financial Charges"/>
+  <Entry name="5V" value="Financial Debt"/>
+  <Entry name="5W" value="Financial Expenses"/>
+  <Entry name="5X" value="Financial Income"/>
+  <Entry name="5Y" value="Finished Goods"/>
+  <Entry name="5Z" value="Fixed Asset Debts"/>
+  <Entry name="60" value="Cumulative Cost Performance Index (CPIp) - Planned (ACWP/BCWP)"/>
+  <Entry name="61" value="Cumulative Schedule Performance Index (SPI)"/>
+  <Entry name="62" value="To Complete Performance Index (TCPI) for Budget at Complete (BAC)"/>
+  <Entry name="63" value="To Complete Performance Index (TCPI) for Estimate At Complete (EAC)"/>
+  <Entry name="64" value="Initial Contract Price Target"/>
+  <Entry name="65" value="Initial Contract Price Ceiling"/>
+  <Entry name="66" value="Adjusted Contract Price Target"/>
+  <Entry name="67" value="Adjusted Contract Price Ceiling"/>
+  <Entry name="68" value="Funds Authorized to Date"/>
+  <Entry name="69" value="Accrued Expenditures"/>
+  <Entry name="6A" value="Fixed Assets"/>
+  <Entry name="6B" value="Fixed Assets for Sale"/>
+  <Entry name="6C" value="Fixtures"/>
+  <Entry name="6D" value="Fixtures and Equipment"/>
+  <Entry name="6E" value="Franchise"/>
+  <Entry name="6F" value="Franchise Tax Balance"/>
+  <Entry name="6G" value="Franchise Tax Paid"/>
+  <Entry name="6H" value="Free Reserves"/>
+  <Entry name="6I" value="Furniture"/>
+  <Entry name="6J" value="Future Loan"/>
+  <Entry name="6K" value="General Accounts"/>
+  <Entry name="6L" value="General Expenses"/>
+  <Entry name="6M" value="Goodwill"/>
+  <Entry name="6N" value="Grants for Operating Costs"/>
+  <Entry name="6O" value="Group Related Financial Income"/>
+  <Entry name="6P" value="Income Stated in Advance"/>
+  <Entry name="6Q" value="Income Tax"/>
+  <Entry name="6R" value="Income Tax, Corporate"/>
+  <Entry name="6S" value="Income Tax, Noncorporate"/>
+  <Entry name="6T" value="Injunction"/>
+  <Entry name="6U" value="Intangible Depreciation"/>
+  <Entry name="6V" value="Intangibles"/>
+  <Entry name="6W" value="Interest of Third Party"/>
+  <Entry name="6X" value="Interest on Loans"/>
+  <Entry name="6Y" value="Operating Income (Loss)"/>
+  <Entry name="6Z" value="Optional Reserves"/>
+  <Entry name="70" value="Open Commitments"/>
+  <Entry name="71" value="Forecast of Billings"/>
+  <Entry name="72" value="Estimated Termination Costs"/>
+  <Entry name="73" value="Accrued Expenditures plus Open Commitments"/>
+  <Entry name="74" value="Contract Work Authorized - Definitized"/>
+  <Entry name="75" value="Contract Work Authorized - Not Definitized"/>
+  <Entry name="76" value="Contract Work Authorized - Total"/>
+  <Entry name="77" value="Forecast of Work - Not Yet Authorized"/>
+  <Entry name="78" value="Forecast of Work - All Other"/>
+  <Entry name="79" value="Forecast of Work - Total"/>
+  <Entry name="7A" value="Organizational Expenses"/>
+  <Entry name="7B" value="Outside Share in Profit or Loss"/>
+  <Entry name="7C" value="Outstanding Debts against Board of Directors/Managers"/>
+  <Entry name="7D" value="Owing"/>
+  <Entry name="7E" value="Owing from Affiliates"/>
+  <Entry name="7F" value="Owing from Participants"/>
+  <Entry name="7G" value="Owing to Affiliates"/>
+  <Entry name="7H" value="Owing to Fiscal Office"/>
+  <Entry name="7I" value="Owing to National Social Security Office"/>
+  <Entry name="7J" value="Owing to Participants"/>
+  <Entry name="7K" value="Own Work Capitalized"/>
+  <Entry name="7L" value="Paid in Capital"/>
+  <Entry name="7M" value="Par Value"/>
+  <Entry name="7N" value="Participating Interest"/>
+  <Entry name="7O" value="Patents"/>
+  <Entry name="7P" value="Pension Debts"/>
+  <Entry name="7Q" value="Pensions Provision"/>
+  <Entry name="7R" value="Preferred Stock"/>
+  <Entry name="7S" value="Prepaid Orders in Progress"/>
+  <Entry name="7T" value="Prior Results Carried Forward"/>
+  <Entry name="7U" value="Profit or Loss"/>
+  <Entry name="7V" value="Profit or Loss after Taxes"/>
+  <Entry name="7W" value="Profit or Loss before Taxes"/>
+  <Entry name="7X" value="Profit or Loss on Ordinary Activities after Tax"/>
+  <Entry name="7Y" value="Progress Payments"/>
+  <Entry name="7Z" value="Proposed Dividend"/>
+  <Entry name="80" value="Funding - Total Requirements"/>
+  <Entry name="81" value="Funds Carryover"/>
+  <Entry name="82" value="Net Funds Required"/>
+  <Entry name="83" value="Contract Work Authorized (with fee/profit) Actual or Projected"/>
+  <Entry name="84" value="Contract Work Authorized (with fee/profit) Actual or Projected - At Complete"/>
+  <Entry name="85" value="Best Case Estimate"/>
+  <Entry name="86" value="Worst Case Estimate"/>
+  <Entry name="87" value="Most Likely Estimate"/>
+  <Entry name="88" value="As Is"/>
+  <Entry name="89" value="Subject To"/>
+  <Entry name="8A" value="Provision for Depreciation of Stock or Inventory"/>
+  <Entry name="8B" value="Provision for Future Purchases"/>
+  <Entry name="8C" value="Provision for Risks"/>
+  <Entry name="8D" value="Punitive Damages"/>
+  <Entry name="8E" value="Purchase Price"/>
+  <Entry name="8F" value="Purchases"/>
+  <Entry name="8G" value="Raw Materials"/>
+  <Entry name="8H" value="Real Estate"/>
+  <Entry name="8I" value="Receivables"/>
+  <Entry name="8J" value="Regularization Account"/>
+  <Entry name="8K" value="Research and Development"/>
+  <Entry name="8L" value="Restructuring Costs"/>
+  <Entry name="8M" value="Result"/>
+  <Entry name="8N" value="Retained Earnings"/>
+  <Entry name="8O" value="Revenues"/>
+  <Entry name="8P" value="Sales"/>
+  <Entry name="8Q" value="Sales and Use Tax"/>
+  <Entry name="8R" value="Savings"/>
+  <Entry name="8S" value="Secured Liability"/>
+  <Entry name="8T" value="Secured Loans"/>
+  <Entry name="8U" value="Selling Expenses"/>
+  <Entry name="8V" value="Services"/>
+  <Entry name="8W" value="Share Capital"/>
+  <Entry name="8X" value="Share in Profit or Loss of Minority Interest"/>
+  <Entry name="8Y" value="Share Premium Capital"/>
+  <Entry name="8Z" value="Shares in Affiliated Companies"/>
+  <Entry name="90" value="Completion Per Plans"/>
+  <Entry name="91" value="Site Value Amount"/>
+  <Entry name="92" value="Compensation"/>
+  <Entry name="93" value="Contribution"/>
+  <Entry name="94" value="Death Benefit"/>
+  <Entry name="95" value="Death Benefit Decrement"/>
+  <Entry name="96" value="Employee Account Balance"/>
+  <Entry name="97" value="Loan Repayment"/>
+  <Entry name="98" value="Prior W2"/>
+  <Entry name="99" value="Single Premium"/>
+  <Entry name="9A" value="Social Charges"/>
+  <Entry name="9B" value="Social Security (FICA)"/>
+  <Entry name="9C" value="Special Reserves"/>
+  <Entry name="9D" value="Specially Secured Creditors"/>
+  <Entry name="9E" value="Specific Performance"/>
+  <Entry name="9F" value="Starting Capital"/>
+  <Entry name="9G" value="Statutory Reserves"/>
+  <Entry name="9H" value="Subscribed Capital"/>
+  <Entry name="9I" value="Suit Amount"/>
+  <Entry name="9J" value="Supplies"/>
+  <Entry name="9K" value="Surplus of Revaluation"/>
+  <Entry name="9L" value="Tangible Net Worth"/>
+  <Entry name="9M" value="Tax Adjustments"/>
+  <Entry name="9N" value="Tax Balance"/>
+  <Entry name="9O" value="Tax Capital Amount"/>
+  <Entry name="9P" value="Tax on Extraordinary Items"/>
+  <Entry name="9Q" value="Tax Recoverable"/>
+  <Entry name="9R" value="Taxed Reserves"/>
+  <Entry name="9S" value="Trade Creditors"/>
+  <Entry name="9T" value="Inventory (Stock)"/>
+  <Entry name="9U" value="Inventory (Stock) Depreciation"/>
+  <Entry name="9V" value="Inventory (Stock) Purchases"/>
+  <Entry name="9W" value="Investment in Own Shares"/>
+  <Entry name="9X" value="Investments"/>
+  <Entry name="9Y" value="Issued Capital"/>
+  <Entry name="9Z" value="Labor Costs"/>
+  <Entry name="A0" value="Assistantship from Admitting Educational Institution"/>
+  <Entry name="A1" value="Average Negative Ledger Balance"/>
+  <Entry name="A2" value="Average Positive Collected Balance"/>
+  <Entry name="A3" value="Average Negative Collected Balance"/>
+  <Entry name="A4" value="Average Positive Ledger Balance"/>
+  <Entry name="A5" value="Disallowed - Estimated"/>
+  <Entry name="A6" value="Disallowed - Actual"/>
+  <Entry name="A7" value="Noncovered Charges - Estimated"/>
+  <Entry name="A8" value="Noncovered Charges - Actual"/>
+  <Entry name="A9" value="Allowed - Estimated"/>
+  <Entry name="AA" value="Allocated"/>
+  <Entry name="AB" value="Adjusted Collected Balance"/>
+  <Entry name="AC" value="Average Collected Balance"/>
+  <Entry name="AD" value="Adjusted Total"/>
+  <Entry name="AE" value="Arrearage"/>
+  <Entry name="AF" value="Average Float"/>
+  <Entry name="AG" value="Adjusted Gross Income"/>
+  <Entry name="AH" value="Loan Balance Difference"/>
+  <Entry name="AI" value="Sale Amount"/>
+  <Entry name="AJ" value="Funds Held by Mortgagee"/>
+  <Entry name="AK" value="Attorney Fees"/>
+  <Entry name="AL" value="Average Ledger Balance"/>
+  <Entry name="AM" value="Amount Financed"/>
+  <Entry name="AN" value="Bankruptcy Fee"/>
+  <Entry name="AO" value="Amount Override"/>
+  <Entry name="AP" value="Amount Prior to Fractionalization"/>
+  <Entry name="AQ" value="Average Price Per Call"/>
+  <Entry name="AR" value="Fees to Public Officials for Foreclosure"/>
+  <Entry name="AS" value="Average Price Per Minute"/>
+  <Entry name="AT" value="Total Received"/>
+  <Entry name="AU" value="Coverage Amount"/>
+  <Entry name="AV" value="Actual Cash Value"/>
+  <Entry name="AW" value="Replacement Cost"/>
+  <Entry name="AX" value="Previous Price"/>
+  <Entry name="AY" value="Title Cost"/>
+  <Entry name="AZ" value="Other Foreclosure and Acquisition Expenses"/>
+  <Entry name="B0" value="Bond"/>
+  <Entry name="B1" value="Benefit Amount"/>
+  <Entry name="B2" value="Bonuses and Commissions Divided Over 12 Months"/>
+  <Entry name="B3" value="Bonuses Divided Over 12 Months"/>
+  <Entry name="B4" value="Bonuses and Commissions"/>
+  <Entry name="B5" value="Budgeted"/>
+  <Entry name="B6" value="Allowed - Actual"/>
+  <Entry name="B7" value="Deductible - Estimated"/>
+  <Entry name="B8" value="Co-insurance - Estimated"/>
+  <Entry name="B9" value="Co-insurance - Actual"/>
+  <Entry name="BA" value="Bargain"/>
+  <Entry name="BB" value="Mortgage Insurance Premiums"/>
+  <Entry name="BC" value="Billing Cycle Net Fee Position (Excess/Deficit)"/>
+  <Entry name="BD" value="Balance Due"/>
+  <Entry name="BE" value="Disbursements for Authorized Repair"/>
+  <Entry name="BF" value="Hazard Insurance Premium"/>
+  <Entry name="BG" value="Eviction Attorney Fees"/>
+  <Entry name="BH" value="Eviction Expenses"/>
+  <Entry name="BI" value="Property Taxes"/>
+  <Entry name="BJ" value="Disbursements Not Shown Elsewhere"/>
+  <Entry name="BK" value="Disbursements for Protection and Preservation"/>
+  <Entry name="BL" value="Disbursements for Inspections and Boarding"/>
+  <Entry name="BM" value="Adjustments"/>
+  <Entry name="BN" value="Rental Income"/>
+  <Entry name="BO" value="Rental Expense"/>
+  <Entry name="BP" value="Average Net Collected Balance"/>
+  <Entry name="BQ" value="Bail"/>
+  <Entry name="BR" value="Adjusted Insured Loss Amount"/>
+  <Entry name="BS" value="Mortgage Note Interest"/>
+  <Entry name="BT" value="Bank Reject Total"/>
+  <Entry name="BU" value="Overhead Costs"/>
+  <Entry name="BV" value="Uncollected Interest"/>
+  <Entry name="BW" value="Amount Due from Buyer at Closing"/>
+  <Entry name="BX" value="Amount Owed to Buyer at Closing"/>
+  <Entry name="BY" value="Additional Closing Expenses"/>
+  <Entry name="BZ" value="Deficiency Judgment Expenses"/>
+  <Entry name="C0" value="Current Expenditures"/>
+  <Entry name="C1" value="Co-Payment Amount"/>
+  <Entry name="C2" value="Child Rider Coverage"/>
+  <Entry name="C3" value="Prior Payment - Estimated"/>
+  <Entry name="C4" value="Prior Payment - Actual"/>
+  <Entry name="C5" value="Claim Amount Due - Estimated"/>
+  <Entry name="C6" value="Claim Amount Due - Actual"/>
+  <Entry name="C7" value="Payor Responsibility - Estimated"/>
+  <Entry name="C8" value="Payor Responsibility - Actual"/>
+  <Entry name="C9" value="Disallowed Cost Containment - Actual"/>
+  <Entry name="CA" value="Contractor Cumulative to Date"/>
+  <Entry name="CB" value="Collected Balance Required"/>
+  <Entry name="CC" value="Chargeback Claim Amount"/>
+  <Entry name="CD" value="Overpaid Section 235 Subsidy"/>
+  <Entry name="CE" value="Summary Amount"/>
+  <Entry name="CF" value="Appraisal Fees"/>
+  <Entry name="CG" value="Commission Fees Deducted"/>
+  <Entry name="CH" value="Change Amount"/>
+  <Entry name="CI" value="Funds Held for Insured"/>
+  <Entry name="CJ" value="Other Deductions"/>
+  <Entry name="CK" value="Back End Load"/>
+  <Entry name="CL" value="Outstanding Balance Current Lender"/>
+  <Entry name="CM" value="Claimant Requested Total"/>
+  <Entry name="CN" value="Special Assessments"/>
+  <Entry name="CO" value="Taxes on Deed"/>
+  <Entry name="CP" value="Statutory Disbursements"/>
+  <Entry name="CQ" value="Net Claim Amount"/>
+  <Entry name="CR" value="Contractor at Complete"/>
+  <Entry name="CS" value="Commission Sales"/>
+  <Entry name="CT" value="Contract"/>
+  <Entry name="CU" value="Subcontractor Cumulative to Date"/>
+  <Entry name="CV" value="Subcontractor at Complete"/>
+  <Entry name="CW" value="Earned Value"/>
+  <Entry name="CX" value="Actual"/>
+  <Entry name="CY" value="Cumulative Budget"/>
+  <Entry name="CZ" value="Cumulative Earned Value"/>
+  <Entry name="D0" value="Administration and Management Costs"/>
+  <Entry name="D1" value="Deferred Compensation Commissions"/>
+  <Entry name="D2" value="Deductible Amount"/>
+  <Entry name="D3" value="Deferred Compensation Commissions and Bonuses"/>
+  <Entry name="D4" value="Deferred Compensation"/>
+  <Entry name="D5" value="Dependent Care Contribution"/>
+  <Entry name="D6" value="Disallowed Cost Containment - Estimated"/>
+  <Entry name="D7" value="Dispensing Fee"/>
+  <Entry name="D8" value="Discount Amount"/>
+  <Entry name="D9" value="Cumulative Actual"/>
+  <Entry name="DA" value="Original Mortgage"/>
+  <Entry name="DB" value="Unapplied Section 235 Funds"/>
+  <Entry name="DC" value="Unapplied Buydown Fund"/>
+  <Entry name="DD" value="Direct Deposit"/>
+  <Entry name="DE" value="Estimate of Damage"/>
+  <Entry name="DF" value="Authorized Bid"/>
+  <Entry name="DG" value="Escrow Balance"/>
+  <Entry name="DH" value="Total Disbursements"/>
+  <Entry name="DI" value="Charge Off"/>
+  <Entry name="DJ" value="Liens Amount Original"/>
+  <Entry name="DK" value="Release of Lien"/>
+  <Entry name="DL" value="Debit"/>
+  <Entry name="DM" value="Asset"/>
+  <Entry name="DN" value="Liability"/>
+  <Entry name="DO" value="Satisfaction"/>
+  <Entry name="DP" value="Exemption"/>
+  <Entry name="DQ" value="Settlement"/>
+  <Entry name="DR" value="Alimony Expense"/>
+  <Entry name="DS" value="Alimony Income"/>
+  <Entry name="DT" value="Child Support Expense"/>
+  <Entry name="DU" value="Child Support Income"/>
+  <Entry name="DV" value="Separate Maintenance Expense"/>
+  <Entry name="DW" value="Separate Maintenance Income"/>
+  <Entry name="DX" value="Deductible Waived"/>
+  <Entry name="DY" value="Per Day Limit"/>
+  <Entry name="DZ" value="Job-related Expense"/>
+  <Entry name="E0" value="Administration and Management Indemnity Charge"/>
+  <Entry name="E1" value="Employer Year to Date Contribution"/>
+  <Entry name="E2" value="Employee Annual Pledge Amount"/>
+  <Entry name="E3" value="Employee Current Contribution"/>
+  <Entry name="E4" value="Employer Pledge Amount"/>
+  <Entry name="E5" value="Employer Current Contribution"/>
+  <Entry name="E6" value="Eligible Wage Amount"/>
+  <Entry name="E7" value="Employee Year to Date Contribution"/>
+  <Entry name="E8" value="Education Contribution"/>
+  <Entry name="E9" value="Initial Fee"/>
+  <Entry name="EA" value="Earnings Allowance"/>
+  <Entry name="EB" value="Collected Balance (Excess/Deficit)"/>
+  <Entry name="EC" value="Allowance (Excess/Deficit)"/>
+  <Entry name="ED" value="Estimated Cost of Attendance"/>
+  <Entry name="EE" value="Other Expense"/>
+  <Entry name="EF" value="Estimated Financial Aid"/>
+  <Entry name="EG" value="Other Income"/>
+  <Entry name="EH" value="Amount of Mortgages and Liens"/>
+  <Entry name="EI" value="Mortgage Payment(s)"/>
+  <Entry name="EJ" value="Insurance, Maintenance, Taxes and Miscellaneous"/>
+  <Entry name="EK" value="Net Rental Income"/>
+  <Entry name="EL" value="Present Market Value"/>
+  <Entry name="EM" value="Gross Rental Income"/>
+  <Entry name="EN" value="Cancellation Fee"/>
+  <Entry name="EO" value="Capital Reserves"/>
+  <Entry name="EP" value="Employer Annual Pledge Amount"/>
+  <Entry name="EQ" value="Condominium Association Fees"/>
+  <Entry name="ER" value="Homeowner Association Fees"/>
+  <Entry name="ES" value="Mortgage Insurance Proceeds"/>
+  <Entry name="ET" value="Net Proceeds from Sale of Real Estate Property"/>
+  <Entry name="EU" value="Insurance Proceeds (Primary Settlement)"/>
+  <Entry name="EV" value="Presale Proceeds"/>
+  <Entry name="EW" value="Pledged Savings"/>
+  <Entry name="EX" value="As Is Broker's Opinion"/>
+  <Entry name="EY" value="Subject To Broker's Opinion"/>
+  <Entry name="EZ" value="Uniform Commercial Code Filing Office Fee"/>
+  <Entry name="F0" value="Commercial Staff Labor Costs"/>
+  <Entry name="F1" value="Maximum Allowable Cost (MAC) Penalty Copay"/>
+  <Entry name="F2" value="Patient Responsibility - Actual"/>
+  <Entry name="F3" value="Patient Responsibility - Estimated"/>
+  <Entry name="F4" value="Postage Claimed"/>
+  <Entry name="F5" value="Patient Amount Paid"/>
+  <Entry name="F6" value="Provider Reserves"/>
+  <Entry name="F7" value="Sales Tax"/>
+  <Entry name="F8" value="Usual and Customary Charge - Estimated"/>
+  <Entry name="F9" value="Usual and Customary - Actual"/>
+  <Entry name="FA" value="Coordination Fee"/>
+  <Entry name="FB" value="Calculation Fee"/>
+  <Entry name="FC" value="Expected Family Contribution"/>
+  <Entry name="FD" value="Direct Deposit Flipped to Check"/>
+  <Entry name="FE" value="Fee"/>
+  <Entry name="FF" value="Application Fee"/>
+  <Entry name="FG" value="Licensing Fee"/>
+  <Entry name="FH" value="Regulatory Fee"/>
+  <Entry name="FI" value="First Interest Payment Amount"/>
+  <Entry name="FJ" value="Waiver Fee"/>
+  <Entry name="FK" value="Other Unlisted Amount"/>
+  <Entry name="FL" value="Float"/>
+  <Entry name="FM" value="Fair Market Value"/>
+  <Entry name="FN" value="Fine"/>
+  <Entry name="FO" value="Fees Paid"/>
+  <Entry name="FP" value="Fees Paid Year to Date"/>
+  <Entry name="FQ" value="Firm Contractor Share"/>
+  <Entry name="FR" value="Estimated Government Share"/>
+  <Entry name="FS" value="Expense"/>
+  <Entry name="FT" value="Endorsement Premium Amount"/>
+  <Entry name="FU" value="Commercial Staff Indemnity Charge"/>
+  <Entry name="FV" value="Flat Fee Paid to Date"/>
+  <Entry name="FW" value="Flat Fee Paid Current Month"/>
+  <Entry name="FX" value="Endorsement"/>
+  <Entry name="FY" value="First Payment"/>
+  <Entry name="FZ" value="Earned Income"/>
+  <Entry name="G0" value="Initial Adjustment Total"/>
+  <Entry name="G1" value="Indicated Value by Sales Comparison Approach"/>
+  <Entry name="G2" value="Indicated Value by Income Approach"/>
+  <Entry name="G3" value="Price per Unit Area"/>
+  <Entry name="G4" value="Reconciliation of Final Value Estimate"/>
+  <Entry name="G5" value="Estimated Monthly Market Rent"/>
+  <Entry name="G6" value="Adjusted Sales Price"/>
+  <Entry name="G7" value="Sales or Financing Concessions"/>
+  <Entry name="G8" value="Indicated Value by Cost Approach"/>
+  <Entry name="G9" value="As-is Value of Site Improvements"/>
+  <Entry name="GA" value="Depreciated Value of Improvements"/>
+  <Entry name="GB" value="Price, High Value"/>
+  <Entry name="GC" value="Price, Low Value"/>
+  <Entry name="GD" value="Physical Depreciation"/>
+  <Entry name="GE" value="Functional Depreciation"/>
+  <Entry name="GF" value="External Depreciation"/>
+  <Entry name="GG" value="Adjusted Sales Price of Comparable Sales"/>
+  <Entry name="GH" value="Predominate Value"/>
+  <Entry name="GI" value="Average Customer Income"/>
+  <Entry name="GJ" value="Average Neighborhood Income"/>
+  <Entry name="GK" value="Average Customer Purchase"/>
+  <Entry name="GL" value="Weekly Dollar Sales"/>
+  <Entry name="GM" value="Average Case Sales"/>
+  <Entry name="GN" value="Buy-down"/>
+  <Entry name="GO" value="Credit Line"/>
+  <Entry name="GP" value="Appraisal Repair Amount"/>
+  <Entry name="GQ" value="Brokers Opinion Repair Amount"/>
+  <Entry name="GR" value="Credit Line Available"/>
+  <Entry name="GS" value="Subsequent Adjustments Total"/>
+  <Entry name="GT" value="Goods and Services Tax"/>
+  <Entry name="GU" value="Taxes Paid"/>
+  <Entry name="GV" value="Gross Value"/>
+  <Entry name="GW" value="Total Charge"/>
+  <Entry name="GX" value="Total Credit"/>
+  <Entry name="GY" value="Total Debit"/>
+  <Entry name="GZ" value="Total Finance Charge"/>
+  <Entry name="H0" value="Host Government (government of the institution) Financing for Education"/>
+  <Entry name="H1" value="Legal Reserves"/>
+  <Entry name="H2" value="Cancellation"/>
+  <Entry name="H3" value="Deposit Inception to Date"/>
+  <Entry name="H4" value="Deposit Year to Date"/>
+  <Entry name="H5" value="Dump in Remittance"/>
+  <Entry name="H6" value="Earnings"/>
+  <Entry name="H7" value="Life Insurance Cash Value"/>
+  <Entry name="H8" value="Structure Value"/>
+  <Entry name="H9" value="Original List Price"/>
+  <Entry name="HA" value="Coin"/>
+  <Entry name="HB" value="Currency"/>
+  <Entry name="HC" value="U.S. Treasury Checks"/>
+  <Entry name="HD" value="Postal Money Orders"/>
+  <Entry name="HE" value="City Checks"/>
+  <Entry name="HF" value="Other Checks"/>
+  <Entry name="HG" value="Home Government Financing for Education"/>
+  <Entry name="HH" value="Annual Social Security Wages"/>
+  <Entry name="HI" value="Annual Social Security Tips"/>
+  <Entry name="HJ" value="Annual Wages, Tips, and Other Compensation"/>
+  <Entry name="HK" value="Social Security Employee Tax Withheld"/>
+  <Entry name="HL" value="Federal Income Tax Withheld"/>
+  <Entry name="HM" value="Advance Earned Income Credit"/>
+  <Entry name="HN" value="Commission"/>
+  <Entry name="HO" value="Vacation Pay"/>
+  <Entry name="HP" value="Gross Pay Submitted"/>
+  <Entry name="HQ" value="Intersell Commission Sales"/>
+  <Entry name="HR" value="Total Payroll Approved"/>
+  <Entry name="HS" value="Holiday Pay"/>
+  <Entry name="HT" value="Overtime Pay"/>
+  <Entry name="HU" value="Regular Pay"/>
+  <Entry name="HV" value="Sick Pay"/>
+  <Entry name="HW" value="Special Pay"/>
+  <Entry name="HX" value="Contract Price"/>
+  <Entry name="HY" value="Commercial Space Income"/>
+  <Entry name="HZ" value="Utilities Paid by Owner"/>
+  <Entry name="I0" value="Life Insurance Coverage"/>
+  <Entry name="I1" value="Investment Income"/>
+  <Entry name="I2" value="Income"/>
+  <Entry name="I3" value="Price, Gross Living Area"/>
+  <Entry name="I4" value="Total Estimated Rent"/>
+  <Entry name="I5" value="Gross Annual Income"/>
+  <Entry name="I6" value="Custodian's Salary"/>
+  <Entry name="I7" value="Engineer's Salary"/>
+  <Entry name="I8" value="Elevator Operator's Salary"/>
+  <Entry name="I9" value="Indicated Value by Market Approach Estimate of Market Value"/>
+  <Entry name="IA" value="Adjusted Monthly Rent"/>
+  <Entry name="IB" value="Investable Balance"/>
+  <Entry name="IC" value="Accrued Unpaid Interest To Be Capitalized"/>
+  <Entry name="ID" value="Import Duty Amount"/>
+  <Entry name="IE" value="Excise Tax Amount"/>
+  <Entry name="IF" value="Inspection Fee"/>
+  <Entry name="IG" value="Adjustment for Gross Living Area"/>
+  <Entry name="IH" value="Predominant Price High"/>
+  <Entry name="II" value="Irregular Interest Payment Amount"/>
+  <Entry name="IJ" value="Net Adjusted Monthly Rent"/>
+  <Entry name="IK" value="Indicated Monthly Market Rent"/>
+  <Entry name="IL" value="Predominant Price Low"/>
+  <Entry name="IM" value="Adjustment for Rooms"/>
+  <Entry name="IN" value="Installment"/>
+  <Entry name="IO" value="Adjustment for Bedrooms"/>
+  <Entry name="IP" value="Interest Payable During Repayment Period"/>
+  <Entry name="IQ" value="Contingent Debt"/>
+  <Entry name="IR" value="Insurance Recovery"/>
+  <Entry name="IS" value="Independent Scholarship"/>
+  <Entry name="IT" value="Incentive Fee"/>
+  <Entry name="IU" value="Accrued Unpaid Interest Not To Be Capitalized"/>
+  <Entry name="IV" value="Utilities Allowance"/>
+  <Entry name="IW" value="Furniture Allowance"/>
+  <Entry name="IX" value="Indicated Value by Cost Approach"/>
+  <Entry name="IY" value="Debentures"/>
+  <Entry name="IZ" value="Account High Balance"/>
+  <Entry name="J0" value="Limited Partnership Capital"/>
+  <Entry name="J1" value="Current Face Amount"/>
+  <Entry name="J2" value="Original Face Amount"/>
+  <Entry name="J3" value="Fixed Default Note Holder's Amount"/>
+  <Entry name="J4" value="Initial Monthly Payment"/>
+  <Entry name="J5" value="Original Principal and Interest Payment"/>
+  <Entry name="J6" value="Final Principal and Interest Payment"/>
+  <Entry name="J7" value="Conversion Fee"/>
+  <Entry name="J8" value="Ending Balance"/>
+  <Entry name="J9" value="Beginning Balance"/>
+  <Entry name="JA" value="Assessment"/>
+  <Entry name="JB" value="Equity Claimed as Exempt"/>
+  <Entry name="JC" value="Counter Claim"/>
+  <Entry name="JD" value="Weekly Benefit"/>
+  <Entry name="JE" value="Lease"/>
+  <Entry name="JF" value="Administrative Load"/>
+  <Entry name="JG" value="Asset Cost Applicable to Entire Contract"/>
+  <Entry name="JH" value="Asset Cost Applicable to Portion of Contract"/>
+  <Entry name="JI" value="Annual Fee"/>
+  <Entry name="JJ" value="Cost Basis"/>
+  <Entry name="JK" value="Disability Premium"/>
+  <Entry name="JL" value="Employee Additional Contribution"/>
+  <Entry name="JM" value="Employee Match Contribution"/>
+  <Entry name="JN" value="Employer Contribution"/>
+  <Entry name="JO" value="Free Look Value"/>
+  <Entry name="JP" value="Free Withdrawal Value"/>
+  <Entry name="JQ" value="Front End Load"/>
+  <Entry name="JR" value="Guaranteed Minimum Death Benefit"/>
+  <Entry name="JS" value="Interim Value"/>
+  <Entry name="JT" value="Monthly Rent"/>
+  <Entry name="JU" value="Judgment"/>
+  <Entry name="JV" value="Loan Value"/>
+  <Entry name="JW" value="Market Value"/>
+  <Entry name="JX" value="Market Value Adjusted Value"/>
+  <Entry name="JY" value="Market Value Adjustment"/>
+  <Entry name="JZ" value="Net Contract Value"/>
+  <Entry name="K0" value="Discounted Bills not Due"/>
+  <Entry name="K1" value="Unpaid Security Balance"/>
+  <Entry name="K2" value="Total Unpaid Security Balance"/>
+  <Entry name="K3" value="Veterans Affairs Funding Fee"/>
+  <Entry name="K4" value="Initial Target Fee"/>
+  <Entry name="K5" value="Minimum Fee"/>
+  <Entry name="K6" value="Maximum Fee"/>
+  <Entry name="K7" value="Price"/>
+  <Entry name="K8" value="Special Accounting Classification Reference Number (ACRN) Amount"/>
+  <Entry name="K9" value="New Price"/>
+  <Entry name="KA" value="Estimated Contract"/>
+  <Entry name="KB" value="Estimated Net Adjustment"/>
+  <Entry name="KC" value="Obligated"/>
+  <Entry name="KD" value="Undefinitized"/>
+  <Entry name="KE" value="Annual Revenue"/>
+  <Entry name="KF" value="Net Paid Amount"/>
+  <Entry name="KG" value="Net Collected Amount"/>
+  <Entry name="KH" value="Deduction Amount"/>
+  <Entry name="KI" value="Net Variance Amount"/>
+  <Entry name="KJ" value="Minimum Contract Amount"/>
+  <Entry name="KK" value="Item Gross Amount"/>
+  <Entry name="KL" value="Collected Amount"/>
+  <Entry name="KM" value="Disbursed Amount"/>
+  <Entry name="KN" value="Gross Amount of Payment"/>
+  <Entry name="KO" value="Committed Amount"/>
+  <Entry name="KP" value="Principal and Interest"/>
+  <Entry name="KQ" value="Incremental Order Amount"/>
+  <Entry name="KR" value="Liability-Long Term"/>
+  <Entry name="KS" value="Taxes and Insurance"/>
+  <Entry name="KT" value="Default Principal"/>
+  <Entry name="KU" value="Default Interest"/>
+  <Entry name="KV" value="Liability-Short Term"/>
+  <Entry name="KW" value="Default Taxes and Insurance"/>
+  <Entry name="KX" value="Miscellaneous Fee Collections"/>
+  <Entry name="KY" value="Not-To-Exceed Price"/>
+  <Entry name="KZ" value="Mortgagor's Monthly Obligations"/>
+  <Entry name="L0" value="Liquid Assets"/>
+  <Entry name="L1" value="Legal Contribution"/>
+  <Entry name="L2" value="Leasehold Insurance Amount"/>
+  <Entry name="L3" value="Total Unidentified Payments Rejected"/>
+  <Entry name="L4" value="Total Credits Received"/>
+  <Entry name="L5" value="Total Debits Received"/>
+  <Entry name="L6" value="Total Pre-advices Received"/>
+  <Entry name="L7" value="Total Prenotes Received"/>
+  <Entry name="L8" value="Total Post-advices Received"/>
+  <Entry name="L9" value="Total Debit for Settlement"/>
+  <Entry name="LA" value="Definitized"/>
+  <Entry name="LB" value="Definitized Total"/>
+  <Entry name="LC" value="Lessor's Cost"/>
+  <Entry name="LD" value="Incremental"/>
+  <Entry name="LE" value="Loan Eligibility Amount"/>
+  <Entry name="LF" value="Loan Remittance or Repayment"/>
+  <Entry name="LG" value="Laundry Income"/>
+  <Entry name="LH" value="Baseline"/>
+  <Entry name="LI" value="Line Item Unit Price"/>
+  <Entry name="LJ" value="Legal and Audit"/>
+  <Entry name="LK" value="Loan Amount Requested"/>
+  <Entry name="LL" value="Lump Sum"/>
+  <Entry name="LM" value="Limit"/>
+  <Entry name="LN" value="Lien Payoff"/>
+  <Entry name="LO" value="Money Purchase"/>
+  <Entry name="LP" value="List Price"/>
+  <Entry name="LQ" value="Maximum Potential Liability"/>
+  <Entry name="LR" value="Total Credit for Settlement"/>
+  <Entry name="LS" value="Net Settlement"/>
+  <Entry name="LT" value="Total Award"/>
+  <Entry name="LU" value="Option Amount"/>
+  <Entry name="LV" value="Planned Periodic Payment"/>
+  <Entry name="LW" value="Tax and Insurance Escrow Fund Balance"/>
+  <Entry name="LX" value="Loan Expense"/>
+  <Entry name="LY" value="Total Remaining Principal Balance for the Issuer"/>
+  <Entry name="LZ" value="Delinquent Payment"/>
+  <Entry name="M0" value="Loans from Officers"/>
+  <Entry name="M1" value="Maximum Out of Pocket Amount"/>
+  <Entry name="M2" value="Medical Contribution"/>
+  <Entry name="M3" value="Tax rate expressed as a flat fee"/>
+  <Entry name="M4" value="Minimum amount of tax to be paid"/>
+  <Entry name="M5" value="Minimum amount to which tax rate is applied"/>
+  <Entry name="M6" value="Maximum amount of tax to be paid"/>
+  <Entry name="M7" value="Maximum amount to which tax rate is applied"/>
+  <Entry name="M8" value="Markup Amount"/>
+  <Entry name="M9" value="Net of Surrender Withdrawal"/>
+  <Entry name="MA" value="Maximum Amount"/>
+  <Entry name="MB" value="Undistributed Budget"/>
+  <Entry name="MC" value="Cost of Money"/>
+  <Entry name="MD" value="Minimum Due"/>
+  <Entry name="ME" value="Minimum Default Note Holder's Cost"/>
+  <Entry name="MF" value="Administrative Fees"/>
+  <Entry name="MG" value="Maximum Late Charge"/>
+  <Entry name="MH" value="Minimum Late Charge"/>
+  <Entry name="MI" value="Minimum Incentive Fee"/>
+  <Entry name="MJ" value="Maximum Default Note Holder's Cost"/>
+  <Entry name="MK" value="Gross to Pay"/>
+  <Entry name="ML" value="Prior Net Invoice Total"/>
+  <Entry name="MM" value="Payout"/>
+  <Entry name="MN" value="Monthly Limit"/>
+  <Entry name="MO" value="Minimum Order Value"/>
+  <Entry name="MP" value="Monthly Payment Amount"/>
+  <Entry name="MQ" value="Post Tax Equity and Fiscal Responsibility Act (TEFRA) Cost Basis"/>
+  <Entry name="MR" value="Management Reserve"/>
+  <Entry name="MS" value="Past-Due Taxes and Assessment Remaining Unpaid"/>
+  <Entry name="MT" value="Pre Tax Equity and Fiscal Responsibility Act (TEFRA) Cost Basis"/>
+  <Entry name="MU" value="Premium Tax Paid on Surrender"/>
+  <Entry name="MV" value="Premium Tax Paid up Front"/>
+  <Entry name="MW" value="Sales Loads"/>
+  <Entry name="MX" value="Maximum Incentive Fee"/>
+  <Entry name="MY" value="Surrender Value"/>
+  <Entry name="MZ" value="Valuation Price"/>
+  <Entry name="N0" value="Loans or Financial Borrowings"/>
+  <Entry name="N1" value="Net Worth"/>
+  <Entry name="N2" value="Individual Income Taxes and Other"/>
+  <Entry name="N3" value="Corporate Income and Excess Profits Tax"/>
+  <Entry name="N4" value="Excise Taxes"/>
+  <Entry name="N5" value="Estate and Gift Taxes"/>
+  <Entry name="N6" value="Carrier Tax Act Taxes"/>
+  <Entry name="N7" value="Federal Unemployment Tax Act Taxes"/>
+  <Entry name="N8" value="Miscellaneous Taxes"/>
+  <Entry name="N9" value="Withheld and Federal Insurance Contribution Act (FICA) Taxes"/>
+  <Entry name="NA" value="Net Adjustment"/>
+  <Entry name="NB" value="Net Compensation Position"/>
+  <Entry name="NC" value="Negative Collected Balance"/>
+  <Entry name="ND" value="Per Person Monthly Limit"/>
+  <Entry name="NE" value="Net Billed"/>
+  <Entry name="NF" value="Monthly Net Fee Position (Excess/Deficit)"/>
+  <Entry name="NG" value="Medicare Copayment"/>
+  <Entry name="NH" value="Medicare Deductible"/>
+  <Entry name="NI" value="Medicare Paid"/>
+  <Entry name="NJ" value="Other Insurance Paid Amount"/>
+  <Entry name="NK" value="Total in Force and Applied Coverage"/>
+  <Entry name="NL" value="Negative Ledger Balance"/>
+  <Entry name="NM" value="Non-collateralized Amount"/>
+  <Entry name="NN" value="Transaction Fee"/>
+  <Entry name="NO" value="Non Commission Sales"/>
+  <Entry name="NP" value="Net to Pay Total"/>
+  <Entry name="NQ" value="Adjusted Nonrecurring"/>
+  <Entry name="NR" value="Nonrecurring"/>
+  <Entry name="NS" value="Net Savings Amount"/>
+  <Entry name="NT" value="Unit Value"/>
+  <Entry name="NU" value="Reinsurance Amount"/>
+  <Entry name="NV" value="Renewal Amount"/>
+  <Entry name="NW" value="Retention Per Life"/>
+  <Entry name="NX" value="Retention Per Policy"/>
+  <Entry name="NY" value="Net Year to Date (Excess/Deficit)"/>
+  <Entry name="NZ" value="Equalization Account"/>
+  <Entry name="O0" value="Extraordinary Income"/>
+  <Entry name="O1" value="Amount of First Mortgage Being Refinanced"/>
+  <Entry name="O2" value="Other Family Financing for Education"/>
+  <Entry name="O3" value="Intangible Assets Written Off"/>
+  <Entry name="O4" value="Interest Payable"/>
+  <Entry name="O5" value="Interest Receivable"/>
+  <Entry name="O6" value="Joint Venture Results"/>
+  <Entry name="O7" value="Long Term Debt"/>
+  <Entry name="O8" value="Long Term Provisions"/>
+  <Entry name="O9" value="Loss"/>
+  <Entry name="OA" value="Principal Balance Amount"/>
+  <Entry name="OB" value="Outstanding Loan Balance"/>
+  <Entry name="OC" value="Opening Bank Charges"/>
+  <Entry name="OD" value="Draft Amount"/>
+  <Entry name="OE" value="Miscellaneous Charges"/>
+  <Entry name="OF" value="Contractor's Offer"/>
+  <Entry name="OG" value="Cable Charge"/>
+  <Entry name="OH" value="Handling Charges"/>
+  <Entry name="OI" value="Non-commission Charges"/>
+  <Entry name="OJ" value="Merchandise"/>
+  <Entry name="OK" value="Letter of Credit Amount"/>
+  <Entry name="OL" value="Outstanding Balance Other Lender"/>
+  <Entry name="OM" value="Other Monthly Income"/>
+  <Entry name="ON" value="Negotiating Bank Charges"/>
+  <Entry name="OO" value="Overdrafts"/>
+  <Entry name="OP" value="Original Payment Total"/>
+  <Entry name="OQ" value="Payroll Costs"/>
+  <Entry name="OR" value="Letter of Credit Remaining Amount"/>
+  <Entry name="OS" value="Other Salaries"/>
+  <Entry name="OT" value="Commission Amendment Charges"/>
+  <Entry name="OU" value="Profit"/>
+  <Entry name="OV" value="Profit and Loss Deficit"/>
+  <Entry name="OW" value="Profit after Extraordinary Items and before Tax"/>
+  <Entry name="OX" value="Profit after Tax and Before Extraordinary Items"/>
+  <Entry name="OY" value="Payment Commission"/>
+  <Entry name="OZ" value="Profit Distributed to Employees"/>
+  <Entry name="P0" value="Parental Financing for Education"/>
+  <Entry name="P1" value="Partner's Calendar Year Salary"/>
+  <Entry name="P2" value="Prior Plan Year Gross Salary"/>
+  <Entry name="P3" value="Premium Amount"/>
+  <Entry name="P4" value="Prior Year's Wage"/>
+  <Entry name="P5" value="Partner's Tax Year Salary"/>
+  <Entry name="P6" value="Premium Due"/>
+  <Entry name="P7" value="Partner's K1 Tax Year Amount"/>
+  <Entry name="P8" value="Partner's K1 Calendar Year Amount"/>
+  <Entry name="P9" value="Current Mortgage Principal Balance"/>
+  <Entry name="PA" value="Payment Cancellation Total"/>
+  <Entry name="PB" value="Billed Amount"/>
+  <Entry name="PC" value="Positive Collected Balance"/>
+  <Entry name="PD" value="Credit"/>
+  <Entry name="PE" value="Plan Period Election"/>
+  <Entry name="PF" value="Principal"/>
+  <Entry name="PG" value="Payoff"/>
+  <Entry name="PH" value="Per Occurrence Deductible"/>
+  <Entry name="PI" value="Per Occurrence Monthly Limit"/>
+  <Entry name="PJ" value="Past Due"/>
+  <Entry name="PK" value="Photograph Fee"/>
+  <Entry name="PL" value="Positive Ledger Balance"/>
+  <Entry name="PM" value="Last Premium Amount"/>
+  <Entry name="PN" value="Prior Gross Invoice Total"/>
+  <Entry name="PO" value="Percent Override"/>
+  <Entry name="PP" value="Payment Prior to Advance"/>
+  <Entry name="PQ" value="Advance Amount"/>
+  <Entry name="PR" value="Per Occurrence Limit"/>
+  <Entry name="PS" value="Per Occurrence per Day Limit"/>
+  <Entry name="PT" value="Per Occurrence Aggregate Limit"/>
+  <Entry name="PU" value="Unsecured Priority Claim"/>
+  <Entry name="PV" value="Prepetition Charges"/>
+  <Entry name="PW" value="Per Occurrence Maximum per Week Limit"/>
+  <Entry name="PX" value="Per Person Maximum per Week Limit"/>
+  <Entry name="PY" value="Per Person per Day Limit"/>
+  <Entry name="PZ" value="Original Principal Balance"/>
+  <Entry name="Q0" value="Loans to Affiliated Companies"/>
+  <Entry name="Q1" value="Proposed"/>
+  <Entry name="Q2" value="1035 Exchange"/>
+  <Entry name="Q3" value="401K Transfer"/>
+  <Entry name="Q4" value="Total Prenotes Accepted"/>
+  <Entry name="Q5" value="Total Prenotes Rejected"/>
+  <Entry name="Q6" value="Automatic Premium Deduction"/>
+  <Entry name="Q7" value="Total Post-advices Accepted"/>
+  <Entry name="Q8" value="Total Post-advices Rejected"/>
+  <Entry name="Q9" value="Cash With Application"/>
+  <Entry name="QA" value="Combined"/>
+  <Entry name="QB" value="Credit Card"/>
+  <Entry name="QC" value="Deposit Fund"/>
+  <Entry name="QD" value="Direct Billing"/>
+  <Entry name="QE" value="Disc Premium"/>
+  <Entry name="QF" value="Electronic Funds Transfer (EFT)"/>
+  <Entry name="QG" value="Government Allotment"/>
+  <Entry name="QH" value="Initial Premium"/>
+  <Entry name="QI" value="Individual Retirement Account 60 Day Rollover"/>
+  <Entry name="QJ" value="Individual Retirement Account Direct Transfer"/>
+  <Entry name="QK" value="Individual Retirement Account Regular Contribution"/>
+  <Entry name="QL" value="Keogh/HR 10"/>
+  <Entry name="QM" value="Keogh/HR 10 Transfer"/>
+  <Entry name="QN" value="Quarterly Net Fee Position (Excess/Deficit)"/>
+  <Entry name="QO" value="List Billing"/>
+  <Entry name="QP" value="Modal Premium"/>
+  <Entry name="QQ" value="Payroll Taxes"/>
+  <Entry name="QR" value="Parking Income"/>
+  <Entry name="QS" value="Non-Qualified (1035 Exchange)"/>
+  <Entry name="QT" value="PAC - Pre-Authorized Check"/>
+  <Entry name="QU" value="Payroll Deduction"/>
+  <Entry name="QV" value="Pension"/>
+  <Entry name="QW" value="Premium Received With Application"/>
+  <Entry name="QX" value="Profit Sharing Trust"/>
+  <Entry name="QY" value="Qualified"/>
+  <Entry name="QZ" value="Payment Amount"/>
+  <Entry name="R0" value="Loans to Participants"/>
+  <Entry name="R1" value="Fixed, Liquidated Secured Debt"/>
+  <Entry name="R2" value="Contingent Secured Debt"/>
+  <Entry name="R3" value="Disputed Secured Debt"/>
+  <Entry name="R4" value="Unliquidated Secured Debt"/>
+  <Entry name="R5" value="Fixed, Liquidated Unsecured Debt"/>
+  <Entry name="R6" value="Contingent Unsecured Debt"/>
+  <Entry name="R7" value="Disputed Unsecured Debt"/>
+  <Entry name="R8" value="Unliquidated Unsecured Debt"/>
+  <Entry name="R9" value="At Time of Filing"/>
+  <Entry name="RA" value="Accelerated Royalty"/>
+  <Entry name="RB" value="Per Person Deductible"/>
+  <Entry name="RC" value="Refund Check"/>
+  <Entry name="RD" value="Per Person Limit"/>
+  <Entry name="RE" value="Royalty Due"/>
+  <Entry name="RF" value="Restitution"/>
+  <Entry name="RG" value="Budgeted Redemption"/>
+  <Entry name="RH" value="Per Person Aggregate Limit"/>
+  <Entry name="RI" value="Residual Value"/>
+  <Entry name="RJ" value="Rate Amount"/>
+  <Entry name="RK" value="Provision for Long Term Depreciation"/>
+  <Entry name="RL" value="Regular Remittance"/>
+  <Entry name="RM" value="Remittance Refund"/>
+  <Entry name="RN" value="Resident Manager's Salary"/>
+  <Entry name="RO" value="Provisions"/>
+  <Entry name="RP" value="Repair"/>
+  <Entry name="RQ" value="Recommended Amount"/>
+  <Entry name="RR" value="Reserve Requirement Amount"/>
+  <Entry name="RS" value="Reserves"/>
+  <Entry name="RT" value="Last Payment"/>
+  <Entry name="RU" value="Total Debits Rejected"/>
+  <Entry name="RV" value="Total Payments Rejected"/>
+  <Entry name="RW" value="Total Delinquency"/>
+  <Entry name="RX" value="Total Pre-advices Accepted"/>
+  <Entry name="RY" value="Total Pre-advices Rejected"/>
+  <Entry name="RZ" value="Lender's Total Delinquency"/>
+  <Entry name="S0" value="Self-Financing for Education"/>
+  <Entry name="S1" value="Salary Amount"/>
+  <Entry name="S2" value="Salary with Bonuses"/>
+  <Entry name="S3" value="Salary with Commissions"/>
+  <Entry name="S4" value="Salary with Subchapter S Corporation Income"/>
+  <Entry name="S5" value="Salary with Partner's Bonuses"/>
+  <Entry name="S6" value="Subchapter S Corporation"/>
+  <Entry name="S7" value="Sole Proprietorship"/>
+  <Entry name="S8" value="Period Rental"/>
+  <Entry name="S9" value="Secured Claim Allowed"/>
+  <Entry name="SA" value="Campaign Summary Amount"/>
+  <Entry name="SB" value="Stated Amount"/>
+  <Entry name="SC" value="Total Service Charge"/>
+  <Entry name="SD" value="Sales Charge"/>
+  <Entry name="SE" value="Service Charges Which Cannot Be Compensated by Balances"/>
+  <Entry name="SF" value="Scholarship from Admitting Educational Institution"/>
+  <Entry name="SG" value="Sponsor-Financing for Education"/>
+  <Entry name="SH" value="Surrender Charge"/>
+  <Entry name="SI" value="Subsequent Interest Payment Amount"/>
+  <Entry name="SJ" value="Surrender Full"/>
+  <Entry name="SK" value="Surrender Partial"/>
+  <Entry name="SL" value="Security Personnel's Salary"/>
+  <Entry name="SM" value="Supplemental"/>
+  <Entry name="SN" value="Sales Administration Expense"/>
+  <Entry name="SO" value="Special Creditors Amount"/>
+  <Entry name="SP" value="Sales Price"/>
+  <Entry name="SQ" value="Special Debtors Amount"/>
+  <Entry name="SR" value="Secured Claim"/>
+  <Entry name="SS" value="Campaign Summary Amount to be Shared"/>
+  <Entry name="ST" value="State"/>
+  <Entry name="SU" value="Surcharge"/>
+  <Entry name="SV" value="Fixed Monthly Principal Payment"/>
+  <Entry name="SW" value="Base Award Fee"/>
+  <Entry name="SX" value="Severance Tax"/>
+  <Entry name="SY" value="Initial Buydown Balance"/>
+  <Entry name="SZ" value="Certification Fee"/>
+  <Entry name="T0" value="Third-Party Government-Financing for Education"/>
+  <Entry name="T1" value="Teacher"/>
+  <Entry name="T2" value="Total Claim Before Taxes"/>
+  <Entry name="T3" value="Total Submitted Charges"/>
+  <Entry name="T4" value="Total Current Balance"/>
+  <Entry name="T5" value="Total Claims"/>
+  <Entry name="T6" value="Claim"/>
+  <Entry name="T7" value="Total Credits Accepted"/>
+  <Entry name="T8" value="Total Credits Rejected"/>
+  <Entry name="T9" value="Total Debits Accepted"/>
+  <Entry name="TA" value="Total Annual Sales"/>
+  <Entry name="TB" value="Total Annual Sales to Customer"/>
+  <Entry name="TC" value="Proposed Cost"/>
+  <Entry name="TD" value="Proposed Profit"/>
+  <Entry name="TE" value="Proposed Fee"/>
+  <Entry name="TF" value="Total Proposed Price"/>
+  <Entry name="TG" value="Alternate Proposed Price"/>
+  <Entry name="TH" value="Total Claim Allowed"/>
+  <Entry name="TI" value="Title Insurance Amount on Loan"/>
+  <Entry name="TJ" value="Time and Expense Paid to Date"/>
+  <Entry name="TK" value="Total Amount of Contract"/>
+  <Entry name="TL" value="Total Prior Loan Amount Owed"/>
+  <Entry name="TM" value="Time and Expense Paid Current Month"/>
+  <Entry name="TO" value="Telephone Operator's Salary"/>
+  <Entry name="TP" value="Total payment amount"/>
+  <Entry name="TQ" value="Subsidies for Operating Costs"/>
+  <Entry name="TR" value="Target Cost"/>
+  <Entry name="TS" value="Total Sales"/>
+  <Entry name="TT" value="Total Transaction Amount"/>
+  <Entry name="TU" value="Transportation Cost per Unit of Measure"/>
+  <Entry name="TV" value="Level of Premium Insurance - Retention"/>
+  <Entry name="TW" value="Technicians Indemnity Provision"/>
+  <Entry name="TX" value="Total to Date"/>
+  <Entry name="TY" value="Total at Complete"/>
+  <Entry name="TZ" value="Transportation Cost Total"/>
+  <Entry name="U0" value="U.S. Government-Financing for Education"/>
+  <Entry name="U1" value="Unsecured, Priority Claim Allowed"/>
+  <Entry name="U2" value="Ingredient Cost Claimed"/>
+  <Entry name="U3" value="Miscellaneous Expenses"/>
+  <Entry name="U4" value="Present Value of Lot"/>
+  <Entry name="U5" value="Cost of Improvements"/>
+  <Entry name="U6" value="Alterations, Improvements, Repairs"/>
+  <Entry name="U7" value="Land"/>
+  <Entry name="U8" value="Refinance"/>
+  <Entry name="U9" value="Estimated Prepaid Items"/>
+  <Entry name="UA" value="Unliquidated Amount"/>
+  <Entry name="UB" value="Unpaid Principal Balance"/>
+  <Entry name="UC" value="Unspecified Aggregate Limit"/>
+  <Entry name="UD" value="Unsecured, Nonpriority Claim Allowed"/>
+  <Entry name="UE" value="Mortgage Insurance"/>
+  <Entry name="UF" value="Discount (If Borrower Paid)"/>
+  <Entry name="UG" value="Total Unpaid Principal Balance for Stafford Loans"/>
+  <Entry name="UH" value="Subordinate Financing"/>
+  <Entry name="UI" value="Total Costs"/>
+  <Entry name="UJ" value="Other Credits"/>
+  <Entry name="UK" value="Base Loan Amount (w/o financed Mortgage Insurance)"/>
+  <Entry name="UL" value="Mortgage Insurance Financed"/>
+  <Entry name="UM" value="Total Loan Amount"/>
+  <Entry name="UN" value="Unsecured, Nonpriority Claim"/>
+  <Entry name="UO" value="Cash from or to Borrower"/>
+  <Entry name="UP" value="Total Unpaid Principal Balance for Parental Loans for Students"/>
+  <Entry name="UQ" value="Monthly Income"/>
+  <Entry name="UR" value="Unearned Income"/>
+  <Entry name="US" value="Total Unpaid Principal Balance for Supplemental Loans for Students"/>
+  <Entry name="UT" value="Value Added Sales"/>
+  <Entry name="UU" value="Clearing House Settlement"/>
+  <Entry name="UV" value="Drawback"/>
+  <Entry name="UW" value="Total Monthly Liabilities"/>
+  <Entry name="UX" value="Utilities, Furniture, and Amenities Included in Rent"/>
+  <Entry name="UY" value="Total Assets"/>
+  <Entry name="UZ" value="Total Liquid Assets"/>
+  <Entry name="V0" value="Value Added"/>
+  <Entry name="V1" value="Tax and Insurance Escrow Fund"/>
+  <Entry name="V2" value="Interest Due to Investor"/>
+  <Entry name="V3" value="Total Principal Due to the Investor"/>
+  <Entry name="V4" value="Total Interest Due to the Investor"/>
+  <Entry name="V5" value="Total Curtailment Due to the Investor"/>
+  <Entry name="V6" value="Total Principal Payoff and Repurchase Due to the Investor"/>
+  <Entry name="V7" value="Total Interest Payoff and Repurchase Due to the Investor"/>
+  <Entry name="V8" value="Actual Outstanding Principal Balance"/>
+  <Entry name="V9" value="Face Amount"/>
+  <Entry name="VA" value="Total Current Rent or Mortgage Payment (Issue)"/>
+  <Entry name="VB" value="Total Non-liquid Assets"/>
+  <Entry name="VC" value="Authorized"/>
+  <Entry name="VD" value="Actual Person Day Rate"/>
+  <Entry name="VE" value="Estimated Person Day Rate"/>
+  <Entry name="VF" value="Total Monthly Expenses"/>
+  <Entry name="VG" value="Current Monthly Principal and Interest"/>
+  <Entry name="VH" value="Levy Amount"/>
+  <Entry name="VI" value="Current Support"/>
+  <Entry name="VJ" value="Past Due Support"/>
+  <Entry name="VK" value="Medical Support"/>
+  <Entry name="VL" value="Net Negative Amortization Amount"/>
+  <Entry name="VM" value="Withhold From Wages"/>
+  <Entry name="VN" value="Commission Basis"/>
+  <Entry name="VO" value="Commission Earned"/>
+  <Entry name="VP" value="Current Monthly Payment"/>
+  <Entry name="VQ" value="Commission Netted"/>
+  <Entry name="VR" value="Total Monthly Debt"/>
+  <Entry name="VS" value="Other Financing Payment"/>
+  <Entry name="VT" value="Current Value"/>
+  <Entry name="VU" value="Closing Cost"/>
+  <Entry name="VV" value="Capitalized Mortgage Amount"/>
+  <Entry name="VW" value="First Mortgage Monthly Principal and Interest"/>
+  <Entry name="VX" value="Interest Amount Paid to Date"/>
+  <Entry name="VY" value="Minimum Transfer"/>
+  <Entry name="VZ" value="Maximum Transfer"/>
+  <Entry name="W0" value="Trade Debtors"/>
+  <Entry name="W1" value="W-2"/>
+  <Entry name="W2" value="W-2 with Bonuses"/>
+  <Entry name="W3" value="W-2 with Deferred Compensation"/>
+  <Entry name="W4" value="W-2 without Bonuses"/>
+  <Entry name="W5" value="Deposit Sub Total"/>
+  <Entry name="W6" value="Direct Rollover"/>
+  <Entry name="W7" value="Direct Transfer"/>
+  <Entry name="W8" value="Discounted"/>
+  <Entry name="W9" value="Secondary Finance"/>
+  <Entry name="WA" value="Minimum Deposit"/>
+  <Entry name="WB" value="Sub-Agency Compensation"/>
+  <Entry name="WC" value="Buyers Agency Compensation"/>
+  <Entry name="WD" value="Variable Rate Compensation"/>
+  <Entry name="WE" value="Compensation Bonus on Sale of Property"/>
+  <Entry name="WF" value="Veterans Affairs Loan Guarantee"/>
+  <Entry name="WG" value="Security Trade Amount"/>
+  <Entry name="WH" value="Balance Owing All Other Liens, Subject Property"/>
+  <Entry name="WI" value="Other Financing"/>
+  <Entry name="WJ" value="Dual Agency Compensation"/>
+  <Entry name="WK" value="Per Week Limit"/>
+  <Entry name="WL" value="Lender's Opinion of Value"/>
+  <Entry name="WM" value="Total Original Principal Balance"/>
+  <Entry name="WN" value="Other Agent Compensation"/>
+  <Entry name="WO" value="Dock Usage Fee"/>
+  <Entry name="WP" value="Pool Usage Fee"/>
+  <Entry name="WQ" value="Clubhouse Fee"/>
+  <Entry name="WR" value="Optional Service Fee"/>
+  <Entry name="WS" value="Other Association Fees"/>
+  <Entry name="WT" value="Principal, Interest, Taxes"/>
+  <Entry name="WU" value="Principal, Interest, Taxes and Insurance"/>
+  <Entry name="WV" value="Total Points Paid at Closing"/>
+  <Entry name="WW" value="Amount that Would Have Been Paid in the Absence of Capitation"/>
+  <Entry name="WX" value="Points Paid by Seller"/>
+  <Entry name="WY" value="Loan Withdrawal"/>
+  <Entry name="WZ" value="Severance Pay"/>
+  <Entry name="X0" value="Treble Damages"/>
+  <Entry name="X1" value="Transfer to Untaxed Reserves"/>
+  <Entry name="X2" value="Reissued"/>
+  <Entry name="X3" value="Rollover Amount"/>
+  <Entry name="X4" value="Annual Rental"/>
+  <Entry name="X5" value="Gross Monthly Rent"/>
+  <Entry name="X6" value="SEP - Self Employee Pension"/>
+  <Entry name="X7" value="Single Premium"/>
+  <Entry name="X8" value="Funding Amount"/>
+  <Entry name="X9" value="Tax Sheltered Annuity (403B Transfer)"/>
+  <Entry name="XA" value="Maximum Award Fee"/>
+  <Entry name="XB" value="Maturity Value"/>
+  <Entry name="XC" value="Earned Wages"/>
+  <Entry name="XD" value="Base Period Wage"/>
+  <Entry name="XE" value="Withdrawal"/>
+  <Entry name="XF" value="Withdrawal Inception to Date"/>
+  <Entry name="XG" value="Withdrawal Less Market Value Adjustment"/>
+  <Entry name="XH" value="Withdrawal Less Surrender"/>
+  <Entry name="XI" value="Withdrawal Less Taxes"/>
+  <Entry name="XJ" value="Withdrawal Year to Date"/>
+  <Entry name="XK" value="Unavailable Reserves"/>
+  <Entry name="XL" value="Uncalled Capital"/>
+  <Entry name="XM" value="Unemployment Contribution"/>
+  <Entry name="XN" value="Unlimited Capital, Minimum Fixed"/>
+  <Entry name="XO" value="Unpaid Capital"/>
+  <Entry name="XP" value="Unsecured Liabilities"/>
+  <Entry name="XQ" value="Value Added Tax"/>
+  <Entry name="XR" value="Value of Shares"/>
+  <Entry name="XS" value="Vehicles"/>
+  <Entry name="XT" value="Voluntary Reserves"/>
+  <Entry name="XU" value="Wages"/>
+  <Entry name="XV" value="Withholding"/>
+  <Entry name="XW" value="Original Value"/>
+  <Entry name="XX" value="Working Capital"/>
+  <Entry name="XY" value="Sales Price Per Dwelling Unit"/>
+  <Entry name="XZ" value="Sales Price Per Room"/>
+  <Entry name="Y0" value="Self Insurance Amount"/>
+  <Entry name="Y1" value="Year to Date Eligible Salary"/>
+  <Entry name="Y2" value="Total Real Estate Owned"/>
+  <Entry name="Y3" value="Total Liabilities"/>
+  <Entry name="Y4" value="Total Liability Monthly Payments"/>
+  <Entry name="Y5" value="Total Real Estate Owned Market Value"/>
+  <Entry name="Y6" value="Total Real Estate Owned Gross Rental Income"/>
+  <Entry name="Y7" value="Total Real Estate Owned Mortgages and Liens"/>
+  <Entry name="Y8" value="Total Real Estate Owned Mortgage Payments"/>
+  <Entry name="Y9" value="Total Real Estate Owned Miscellaneous Expenses"/>
+  <Entry name="YA" value="Total Real Estate Owned Net Rental Income"/>
+  <Entry name="YB" value="Actual Unpaid Principal Balance"/>
+  <Entry name="YC" value="Scheduled Unpaid Principal Balance"/>
+  <Entry name="YD" value="Principal Due to Investor"/>
+  <Entry name="YE" value="Constant Principal and Interest"/>
+  <Entry name="YF" value="Other Fee Collection"/>
+  <Entry name="YG" value="Beginning Scheduled Unpaid Principal Balance"/>
+  <Entry name="YH" value="Tax and Insurance Principal Balance"/>
+  <Entry name="YI" value="New Principal and Interest"/>
+  <Entry name="YJ" value="Curtailment"/>
+  <Entry name="YK" value="Prepayment Penalty"/>
+  <Entry name="YL" value="Partial Annuitization"/>
+  <Entry name="YM" value="Partial Withdrawal"/>
+  <Entry name="YN" value="Post Tax Equity and Fiscal Responsibility Act (TEFRA) Gain"/>
+  <Entry name="YO" value="Pre Tax Equity and Fiscal Responsibility Act (TEFRA) Gain"/>
+  <Entry name="YP" value="Policy Amount"/>
+  <Entry name="YQ" value="Payments in Advance"/>
+  <Entry name="YR" value="Payments in Arrears"/>
+  <Entry name="YS" value="Cancelled"/>
+  <Entry name="YT" value="Denied"/>
+  <Entry name="YU" value="In Process"/>
+  <Entry name="YV" value="Requested"/>
+  <Entry name="YW" value="Paid"/>
+  <Entry name="YX" value="Paid for This Facility"/>
+  <Entry name="YY" value="Returned"/>
+  <Entry name="YZ" value="Total Aggregate Limit"/>
+  <Entry name="Z0" value="Insertion Cost"/>
+  <Entry name="Z1" value="Repackaging Labor Cost"/>
+  <Entry name="Z2" value="Repackaging Material Cost"/>
+  <Entry name="Z3" value="Unit Cost of Discrepant Material"/>
+  <Entry name="Z4" value="Liquidation Principal"/>
+  <Entry name="Z5" value="Remaining Pool Balance"/>
+  <Entry name="Z6" value="Remaining Security Balance"/>
+  <Entry name="Z7" value="Program Cost"/>
+  <Entry name="Z8" value="Override to Handling Fee"/>
+  <Entry name="Z9" value="Production Cost"/>
+  <Entry name="ZA" value="Federal Medicare or Medicaid Claim Mandate - Category 1"/>
+  <Entry name="ZB" value="Federal Medicare or Medicaid Claim Mandate - Category 2"/>
+  <Entry name="ZC" value="Federal Medicare or Medicaid Claim Mandate - Category 3"/>
+  <Entry name="ZD" value="Federal Medicare or Medicaid Claim Mandate - Category 4"/>
+  <Entry name="ZE" value="Federal Medicare or Medicaid Claim Mandate - Category 5"/>
+  <Entry name="ZF" value="Federal Pension Mandate - Category 1"/>
+  <Entry name="ZG" value="Federal Pension Mandate - Category 2"/>
+  <Entry name="ZH" value="Federal Pension Mandate - Category 3"/>
+  <Entry name="ZI" value="Federal Pension Mandate - Category 4"/>
+  <Entry name="ZJ" value="Federal Pension Mandate - Category 5"/>
+  <Entry name="ZK" value="Federal Medicare or Medicaid Payment Mandate - Category 1"/>
+  <Entry name="ZL" value="Federal Medicare or Medicaid Payment Mandate - Category 2"/>
+  <Entry name="ZM" value="Federal Medicare or Medicaid Payment Mandate - Category 3"/>
+  <Entry name="ZN" value="Federal Medicare or Medicaid Payment Mandate - Category 4"/>
+  <Entry name="ZO" value="Federal Medicare or Medicaid Payment Mandate - Category 5"/>
+  <Entry name="ZP" value="Coupon Face Value"/>
+  <Entry name="ZQ" value="Initial Target Cost"/>
+  <Entry name="ZR" value="Increase"/>
+  <Entry name="ZS" value="Decrease"/>
+  <Entry name="ZT" value="Prorated Amount"/>
+  <Entry name="ZU" value="Loan Charge"/>
+  <Entry name="ZV" value="Mortgage Recording Fee"/>
+  <Entry name="ZW" value="Deed Recording Fee"/>
+  <Entry name="ZX" value="Release Recording Fee"/>
+  <Entry name="ZY" value="Assumption"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="AA1" value="Excess Funds"/>
+  <Entry name="AA2" value="Cumulative Total"/>
+  <Entry name="AA3" value="Reimbursable Amount"/>
+  <Entry name="AA4" value="Total Reimbursable Amount"/>
+  <Entry name="AA5" value="Direct Citation Amount"/>
+  <Entry name="AA6" value="Total Direct Citation Funds"/>
+  <Entry name="AA7" value="Chargeable Amount"/>
+  <Entry name="AAA" value="Temporary Term Coverage"/>
+  <Entry name="AAB" value="Conditional Receipt Coverage"/>
+  <Entry name="AAC" value="Binding Interim Coverage"/>
+  <Entry name="AAD" value="Application Amount"/>
+  <Entry name="AAE" value="Approved Amount"/>
+  <Entry name="AAF" value="Ultimate Face Amount"/>
+  <Entry name="AAG" value="Requested Amount from All Reinsurers"/>
+  <Entry name="AAH" value="Replacement Amount"/>
+  <Entry name="AAI" value="Scheduled Contribution"/>
+  <Entry name="AAJ" value="Scheduled Disbursement"/>
+  <Entry name="AAK" value="Short Term Investment"/>
+  <Entry name="AAL" value="Subsequent Contribution"/>
+  <Entry name="AAM" value="Subsequent Distribution"/>
+  <Entry name="AAN" value="Tax-Federal"/>
+  <Entry name="AAO" value="Tax-Local"/>
+  <Entry name="AAP" value="Tax-State"/>
+  <Entry name="AAQ" value="Trust Fund"/>
+  <Entry name="AAR" value="Capital Leases"/>
+  <Entry name="AAS" value="Surplus"/>
+  <Entry name="AAT" value="Restated Assets"/>
+  <Entry name="AAU" value="Owing to Clients"/>
+  <Entry name="AAV" value="Shareholder Loans"/>
+  <Entry name="AAW" value="Accumulated Deficit"/>
+  <Entry name="AAX" value="Loan from Parent Company"/>
+  <Entry name="AAY" value="Contribution Not Subject to Repayment"/>
+  <Entry name="AAZ" value="Income Before Depreciation"/>
+  <Entry name="ABA" value="Income After Depreciation"/>
+  <Entry name="ABB" value="Profit (Loss) Before Financial Items"/>
+  <Entry name="ABC" value="Interest Expenses"/>
+  <Entry name="ABD" value="Profit (Loss) Before Extraordinary Items"/>
+  <Entry name="ABE" value="Profit (Loss) After Financial Items"/>
+  <Entry name="ABF" value="Income Before Allocations"/>
+  <Entry name="ABG" value="Income from Sale of Fixed Assets"/>
+  <Entry name="ABH" value="Contribution to Group"/>
+  <Entry name="ABI" value="Deferred Tax Assets"/>
+  <Entry name="ABJ" value="Blocked Accounts"/>
+  <Entry name="ABK" value="Non-taxed Reserves"/>
+  <Entry name="ABL" value="Pledged Assets"/>
+  <Entry name="ABM" value="Restricted Equity"/>
+  <Entry name="ABN" value="Non-restricted Equity"/>
+  <Entry name="ABO" value="Depreciable Assets"/>
+  <Entry name="ABP" value="Taxable Assets"/>
+  <Entry name="ABQ" value="Income from Business"/>
+  <Entry name="ABR" value="Income Subject to Taxes"/>
+  <Entry name="ABS" value="Taxable Amount of Real Estate"/>
+  <Entry name="ABT" value="Ending Principal Balance"/>
+  <Entry name="ABU" value="Average Daily Principal Balance"/>
+  <Entry name="ABV" value="Interest Amount"/>
+  <Entry name="ABW" value="Adjustments for Difference in Average Daily Principal Balance"/>
+  <Entry name="ABX" value="Beginning Principal Balance"/>
+  <Entry name="ABY" value="Loan Principal Disbursements"/>
+  <Entry name="ABZ" value="Principal Increases"/>
+  <Entry name="ACA" value="Principal of Loans Purchased"/>
+  <Entry name="ACB" value="Principal Cured"/>
+  <Entry name="ACC" value="Principal Sold"/>
+  <Entry name="ACD" value="Principal Insurance Claims"/>
+  <Entry name="ACE" value="Principal Guarantee Voided"/>
+  <Entry name="ACF" value="Principal Paid by Borrowers"/>
+  <Entry name="ACG" value="Loans in School and Grace"/>
+  <Entry name="ACH" value="Loans in Authorized Deferment"/>
+  <Entry name="ACI" value="Loans Repay or Forebearance - Current or Less than 31 Days"/>
+  <Entry name="ACJ" value="Loans Repay or Forebearance - 31 to 60 Days Past Due"/>
+  <Entry name="ACK" value="Loans Repay or Forebearance - 61 to 90 Days Past Due"/>
+  <Entry name="ACL" value="Loans Repay or Forebearance - 91 to 120 Days Past Due"/>
+  <Entry name="ACM" value="Loans Repay or Forebearance - 121 to 180 Days Past Due"/>
+  <Entry name="ACN" value="Loans Repay or Forebearance - 181 to 270 Days Past Due"/>
+  <Entry name="ACO" value="Loans Repay or Forebearance - 271 or More Days Past Due"/>
+  <Entry name="ACP" value="Loans Repay or Forebearance - Claims Filed, Not Yet Paid"/>
+  <Entry name="ACQ" value="Agent Sales"/>
+  <Entry name="ACR" value="Amount Involved"/>
+  <Entry name="ACS" value="Assigned Capital"/>
+  <Entry name="ACT" value="Credit Line Utilized"/>
+  <Entry name="ACU" value="Direct Sales"/>
+  <Entry name="ACV" value="Earnings per Share"/>
+  <Entry name="ACW" value="Inheritance"/>
+  <Entry name="ACX" value="Invested Capital"/>
+  <Entry name="ACY" value="Loan from Family Members"/>
+  <Entry name="ACZ" value="Non Depreciable Assets"/>
+  <Entry name="ADA" value="Partially Paid Amount per Share"/>
+  <Entry name="ADB" value="Pending Orders"/>
+  <Entry name="ADC" value="Personal Loan"/>
+  <Entry name="ADD" value="Plant and Machinery"/>
+  <Entry name="ADE" value="Pre-Tax Loss"/>
+  <Entry name="ADF" value="Pre-Tax Profit"/>
+  <Entry name="ADG" value="Registered Capital"/>
+  <Entry name="ADH" value="Revaluation Reserves"/>
+  <Entry name="ADI" value="Social Capital"/>
+  <Entry name="ADJ" value="Statutory Profit"/>
+  <Entry name="ADK" value="Training Pay"/>
+  <Entry name="ADL" value="Retroactive Pay"/>
+  <Entry name="ADM" value="Expected Reimbursement Amount"/>
+  <Entry name="ADN" value="Permit Cost"/>
+  <Entry name="ADO" value="Minimum"/>
+  <Entry name="ADP" value="Additional Amount to Meet Minimum"/>
+  <Entry name="ADQ" value="Labor Per Hour"/>
+  <Entry name="ADR" value="Non-recoverable Depreciation"/>
+  <Entry name="ADS" value="Recoverable Depreciation"/>
+  <Entry name="ADT" value="Overhead"/>
+  <Entry name="ADU" value="Indemnity Benefit"/>
+  <Entry name="ADW" value="Replacement Cost of Repairs"/>
+  <Entry name="ADX" value="Actual Cash Value of Repairs"/>
+  <Entry name="ADY" value="Recoverable Depreciation of Repairs"/>
+  <Entry name="ADZ" value="Non-recoverable Depreciation of Repairs"/>
+  <Entry name="AEA" value="Non-indemnity Benefit"/>
+  <Entry name="AEB" value="Actual Cash Value of Building"/>
+  <Entry name="AEC" value="Government Share"/>
+  <Entry name="AED" value="Contractor Share"/>
+  <Entry name="AEE" value="Award Fee"/>
+  <Entry name="AEF" value="Base Fee"/>
+  <Entry name="AEG" value="Target Profit Floor"/>
+  <Entry name="AEH" value="Target Profit Ceiling"/>
+  <Entry name="AEI" value="Labor Per Day"/>
+  <Entry name="AEJ" value="Difference in Interest Due"/>
+  <Entry name="AEK" value="Difference in Prepayment Penalty"/>
+  <Entry name="AEL" value="Difference in Principal Due"/>
+  <Entry name="AEM" value="Appropriation of Retained Earnings Less Reversals"/>
+  <Entry name="AEN" value="Appropriations"/>
+  <Entry name="AEO" value="Billings and Costs-Profit Differential"/>
+  <Entry name="AEP" value="Common Stock Par Value"/>
+  <Entry name="AEQ" value="Cost of Services Rendered"/>
+  <Entry name="AER" value="Creditors"/>
+  <Entry name="AES" value="Declared Profit"/>
+  <Entry name="AET" value="Discounted Notes"/>
+  <Entry name="AEU" value="Endorsed Notes"/>
+  <Entry name="AEV" value="General Reserves"/>
+  <Entry name="AEW" value="Import Volume"/>
+  <Entry name="AEX" value="Income Tax Credit"/>
+  <Entry name="AEY" value="Long-Term Deposits"/>
+  <Entry name="AEZ" value="Long-Term Loans"/>
+  <Entry name="AFA" value="Minority Interest"/>
+  <Entry name="AFB" value="Non-Operating Expense"/>
+  <Entry name="AFC" value="Non-Operating Income"/>
+  <Entry name="AFD" value="Operating Profit or Loss"/>
+  <Entry name="AFE" value="Preferred Stock Par Value"/>
+  <Entry name="AFF" value="Profit After Tax and Minority Interest"/>
+  <Entry name="AFG" value="Retained Earnings to be Appropriated"/>
+  <Entry name="AFH" value="Revaluation Surplus or Deficit"/>
+  <Entry name="AFI" value="Reversal of Voluntary Earned Surplus"/>
+  <Entry name="AFJ" value="Share Price"/>
+  <Entry name="AFK" value="Short-Term Deposits"/>
+  <Entry name="AFL" value="Short-Term Loans"/>
+  <Entry name="AFM" value="Tax Provisions"/>
+  <Entry name="AFN" value="Unallocated Profit"/>
+  <Entry name="AFO" value="Voluntary Earned Surplus"/>
+  <Entry name="AFP" value="Calculated Weekly Compensation Amount"/>
+  <Entry name="AFQ" value="Benefit Type Gross Weekly Amount"/>
+  <Entry name="AFR" value="Benefit Type Net Weekly Amount"/>
+  <Entry name="AFS" value="Employee Gross Wage"/>
+  <Entry name="AFT" value="Garage Gross Wages"/>
+  <Entry name="AFU" value="Officer Compensation - Actual Flat"/>
+  <Entry name="AFV" value="Officer Compensation - Statutory Maximum"/>
+  <Entry name="AFW" value="Officer Compensation - Statutory Minimum"/>
+  <Entry name="AFY" value="Previous Balance"/>
+  <Entry name="AFZ" value="Disputed Amount"/>
+  <Entry name="AGA" value="Non-Operating Income or Expense"/>
+  <Entry name="AGB" value="Operating Income or Expense"/>
+  <Entry name="AGC" value="Income or Expense"/>
+  <Entry name="AGD" value="Purchase Authority"/>
+  <Entry name="AGE" value="Capital Decrease"/>
+  <Entry name="AGF" value="Capital Increase"/>
+  <Entry name="AGG" value="Deed Capital"/>
+  <Entry name="AGH" value="Transferred Amount"/>
+  <Entry name="AGI" value="Unadjusted Sales Price"/>
+  <Entry name="AGJ" value="Sales Concessions"/>
+  <Entry name="AGK" value="Property Value"/>
+  <Entry name="AGM" value="Partial Release Amount"/>
+  <Entry name="AGN" value="Lien Filing Fee"/>
+  <Entry name="AGO" value="Additional Repair Price"/>
+  <Entry name="AGP" value="Qualified Tuition and Related Expenses"/>
+  <Entry name="AGQ" value="Qualified Financial Assistance"/>
+  <Entry name="AGR" value="Aggregate Reimbursements or Refunds"/>
+  <Entry name="AGS" value="New Loan Balance"/>
+  <Entry name="AGT" value="Raw Material Purchases"/>
+  <Entry name="AGU" value="Work in Progress Purchases"/>
+  <Entry name="AGV" value="Operating Cash Flow"/>
+  <Entry name="AGW" value="Payments for Outside Work"/>
+  <Entry name="AGX" value="Set Aside for Provisions"/>
+  <Entry name="AGY" value="Financial Income or Expense"/>
+  <Entry name="AGZ" value="Extraordinary Income or Expense"/>
+  <Entry name="AHA" value="Unfinished Production Carried Forward"/>
+  <Entry name="AHB" value="Installation Materials Cost"/>
+  <Entry name="AHC" value="New Mortgage Amount"/>
+  <Entry name="AHD" value="Capitalized Assets"/>
+  <Entry name="AHE" value="Profit Reserves"/>
+  <Entry name="AHF" value="Share in Profit or Loss in Other Companies"/>
+  <Entry name="AHG" value="Monetary Correction"/>
+  <Entry name="AHI" value="Scheduled Repayment Amount"/>
+  <Entry name="AHJ" value="Amounts Placed with Other Banks"/>
+  <Entry name="AHK" value="Due from Parent Company"/>
+  <Entry name="AHL" value="Owing from Subsidiary Companies"/>
+  <Entry name="AHM" value="Certificates of Deposit Amount"/>
+  <Entry name="AHN" value="Publicly Traded Shares Amount"/>
+  <Entry name="AHO" value="Non Publicly Traded Shares Amount"/>
+  <Entry name="AHP" value="Trading Securities Amount"/>
+  <Entry name="AHQ" value="Investment Securities Amount"/>
+  <Entry name="AHR" value="Earnings Per Share Minus Dividends"/>
+  <Entry name="AHS" value="Active Partner Capital"/>
+  <Entry name="ANC" value="Accrued Income"/>
+  <Entry name="APT" value="Amount of Purchase Exempt From Tax or Fee"/>
+  <Entry name="ASP" value="Annual Sales or Premiums"/>
+  <Entry name="ATF" value="Amount of Tax or Fee Exemption"/>
+  <Entry name="AVE" value="Average"/>
+  <Entry name="BAA" value="Net Taxable Income"/>
+  <Entry name="BAB" value="Original Amount of Instrument"/>
+  <Entry name="BAC" value="Addition to Tax"/>
+  <Entry name="BAD" value="Reinstatement Fee"/>
+  <Entry name="BAE" value="Permit Fee Due"/>
+  <Entry name="BAF" value="Permit Fee with Extension"/>
+  <Entry name="BAG" value="Net Annual Permit Fee Due"/>
+  <Entry name="BAH" value="Permit Fee Penalty Due"/>
+  <Entry name="BAI" value="Permit Fee Interest Due"/>
+  <Entry name="BAJ" value="Total Permit Fee Due"/>
+  <Entry name="BAK" value="Franchise Tax"/>
+  <Entry name="BAL" value="Unclaimed Franchise Tax Credit"/>
+  <Entry name="BAM" value="Net Franchise Tax Due"/>
+  <Entry name="BAN" value="Franchise Tax Penalty Due"/>
+  <Entry name="BAO" value="Total Franchise Tax Due"/>
+  <Entry name="BAP" value="Total Amount Due"/>
+  <Entry name="BAQ" value="Overpayment"/>
+  <Entry name="BAR" value="Amount to be Refunded"/>
+  <Entry name="BAS" value="Gross In-State Receipts"/>
+  <Entry name="BAT" value="Gross Receipts"/>
+  <Entry name="BAU" value="Occupation Fee"/>
+  <Entry name="BAV" value="Total Assessed Value"/>
+  <Entry name="BAW" value="Total Value of All Property"/>
+  <Entry name="BAX" value="Value of In-State Property"/>
+  <Entry name="BAY" value="Total Value of Out-of-State Property"/>
+  <Entry name="BAZ" value="Total Par Value"/>
+  <Entry name="BBA" value="Total Assessable Capital Stock"/>
+  <Entry name="BBB" value="Apportioned Value"/>
+  <Entry name="BBC" value="Estimated In-State Real Property Value"/>
+  <Entry name="BBD" value="Par Value of In-State Assets"/>
+  <Entry name="BBE" value="In-State Business Revenue"/>
+  <Entry name="BBF" value="Subscription Price"/>
+  <Entry name="BBG" value="Value of Authorized Shares"/>
+  <Entry name="BBH" value="Ordinance Amount"/>
+  <Entry name="BBI" value="Capital for a Cooperative"/>
+  <Entry name="BBJ" value="Directors Legal Obligation Debt"/>
+  <Entry name="BBK" value="Silent Partner Capital"/>
+  <Entry name="BLD" value="Bridge Loan Not Deposited"/>
+  <Entry name="BOR" value="Borrowed Amount"/>
+  <Entry name="BTR" value="Betterment"/>
+  <Entry name="BXP" value="Bills of Exchange Payable"/>
+  <Entry name="CJL" value="Collections, Judgments, and Liens"/>
+  <Entry name="COA" value="Corporate Assets"/>
+  <Entry name="CPO" value="Closing Costs Paid by Any Other Party Other Than Seller or Buyer"/>
+  <Entry name="CPS" value="Closing Costs Paid by Seller"/>
+  <Entry name="CRC" value="Container Replacement Cost"/>
+  <Entry name="CRL" value="Container Replacement Labor Cost"/>
+  <Entry name="CRM" value="Container Replacement Material Cost"/>
+  <Entry name="DFA" value="Deferred Assets"/>
+  <Entry name="DLQ" value="Delinquent Taxes"/>
+  <Entry name="DPF" value="Discount Points Financed"/>
+  <Entry name="DPN" value="Discount Points Not Financed"/>
+  <Entry name="DPP" value="Defaulted Tax Plan Payment"/>
+  <Entry name="DVP" value="Development Properties"/>
+  <Entry name="EAA" value="Administrative Expenses"/>
+  <Entry name="EAB" value="Air Travel Expenses"/>
+  <Entry name="EAC" value="Amount Forgiven"/>
+  <Entry name="EAD" value="Amount Guaranteed"/>
+  <Entry name="EAE" value="Amount Over Fair Market Value"/>
+  <Entry name="EAF" value="Amount Owed"/>
+  <Entry name="EAG" value="Amount Payable"/>
+  <Entry name="EAH" value="Amount Raised"/>
+  <Entry name="EAI" value="Amount Received"/>
+  <Entry name="EAJ" value="Amount Refunded"/>
+  <Entry name="EAK" value="Amount Rescinded"/>
+  <Entry name="EAL" value="Anonymous Contribution"/>
+  <Entry name="EAM" value="Balance Owed"/>
+  <Entry name="EAN" value="Bank Charges"/>
+  <Entry name="EAO" value="Bank Loan"/>
+  <Entry name="EAP" value="Brochure Expenses"/>
+  <Entry name="EAQ" value="Bus Travel Expenses"/>
+  <Entry name="EAR" value="Consultant Expenses"/>
+  <Entry name="EAS" value="Corrected Amount"/>
+  <Entry name="EAT" value="Disability Expenses"/>
+  <Entry name="EAU" value="Disposed Amount"/>
+  <Entry name="EAV" value="Draw Amount"/>
+  <Entry name="EAW" value="Election Expenses"/>
+  <Entry name="EAX" value="Endorsement Amount"/>
+  <Entry name="EAY" value="Entertainment Expenses"/>
+  <Entry name="EAZ" value="Excess Expenses"/>
+  <Entry name="EBA" value="Expected Expenditure Amount"/>
+  <Entry name="EBB" value="Expenditure Amount"/>
+  <Entry name="EBC" value="Family Care Expenses"/>
+  <Entry name="EBD" value="Federal Share Amount"/>
+  <Entry name="EBE" value="Filing Fee"/>
+  <Entry name="EBG" value="In-Kind Contribution"/>
+  <Entry name="EBH" value="Incurred Amount"/>
+  <Entry name="EBI" value="Loan Amount Plus Interest"/>
+  <Entry name="EBJ" value="Loan Balance"/>
+  <Entry name="EBK" value="Matching Contribution"/>
+  <Entry name="EBL" value="Meeting Expenses"/>
+  <Entry name="EBM" value="Miscellaneous Income"/>
+  <Entry name="EBN" value="Miscellaneous Receipts"/>
+  <Entry name="EBO" value="New Loan Amount"/>
+  <Entry name="EBP" value="New Unpaid Expenditure"/>
+  <Entry name="EBQ" value="Newsletter Expenses"/>
+  <Entry name="EBR" value="Newspaper Advertising Expenses"/>
+  <Entry name="EBS" value="Nomination Expenses"/>
+  <Entry name="EBT" value="Non-Federal Share"/>
+  <Entry name="EBU" value="Office Expenses"/>
+  <Entry name="EBV" value="Office Rental"/>
+  <Entry name="EBW" value="Original Asset Value"/>
+  <Entry name="EBX" value="Original Loan Amount"/>
+  <Entry name="EBY" value="Party Expenses"/>
+  <Entry name="EBZ" value="Payment"/>
+  <Entry name="ECA" value="Personal Expenses"/>
+  <Entry name="ECB" value="Personal Funds"/>
+  <Entry name="ECC" value="Pledged Amount"/>
+  <Entry name="ECD" value="Postage Expenses"/>
+  <Entry name="ECE" value="Printing Expenses"/>
+  <Entry name="ECF" value="Public Funds"/>
+  <Entry name="ECG" value="Radio Advertising Expenses"/>
+  <Entry name="ECH" value="Reimbursed Amount"/>
+  <Entry name="ECI" value="Reported Amount"/>
+  <Entry name="ECJ" value="Retainer"/>
+  <Entry name="ECK" value="Sign Expenses"/>
+  <Entry name="ECL" value="Sub-Contract Value"/>
+  <Entry name="ECM" value="Tax Receipts"/>
+  <Entry name="ECN" value="Taxi Travel Expenses"/>
+  <Entry name="ECO" value="Telecommunication Expenses"/>
+  <Entry name="ECP" value="Television Advertising Expenses"/>
+  <Entry name="ECQ" value="Unpaid Expenditure"/>
+  <Entry name="ECR" value="Utilities Expenses"/>
+  <Entry name="ECS" value="Total"/>
+  <Entry name="ECT" value="Subtotal"/>
+  <Entry name="ECU" value="Grand Total"/>
+  <Entry name="ECV" value="Incidental Expenses"/>
+  <Entry name="ECW" value="Transportation Expenses"/>
+  <Entry name="ECX" value="Gift Value"/>
+  <Entry name="ECY" value="Food and Refreshments"/>
+  <Entry name="ECZ" value="Polling Expenses"/>
+  <Entry name="ED4" value="Tuition and Required Fees"/>
+  <Entry name="EDB" value="Books and Supplies"/>
+  <Entry name="EIP" value="Maintenance Expense on Income Producing Property"/>
+  <Entry name="ENP" value="Maintenance Expense on Non-Income Producing Property"/>
+  <Entry name="ENT" value="Entitlement Amount"/>
+  <Entry name="ERN" value="Earnest Money"/>
+  <Entry name="EXC" value="Exploration Costs"/>
+  <Entry name="FAR" value="Federal Housing Administration (FHA) Appraiser Required Repairs and Improvements"/>
+  <Entry name="FBA" value="Final Balance"/>
+  <Entry name="FOA" value="Foreign Assets"/>
+  <Entry name="GAR" value="Garnishments"/>
+  <Entry name="GAT" value="Annual Tax"/>
+  <Entry name="GCB" value="Corrected Tax Bill"/>
+  <Entry name="GFD" value="Gifts Not Deposited"/>
+  <Entry name="GFT" value="Gift Amount"/>
+  <Entry name="GRD" value="Grants Not Deposited"/>
+  <Entry name="GRT" value="Grant Amount"/>
+  <Entry name="GSP" value="Good Standing Tax Plan Payment"/>
+  <Entry name="GTS" value="Total Supplemental Tax Due"/>
+  <Entry name="GUI" value="Tax Installment Due"/>
+  <Entry name="GUP" value="Tax Installment Paid"/>
+  <Entry name="GUS" value="Total Supplemental Tax Paid"/>
+  <Entry name="HDA" value="Home Equity Line of Credit Draw Amount"/>
+  <Entry name="HOA" value="Head Office Account"/>
+  <Entry name="HZC" value="Hazardous Clean-up Cost"/>
+  <Entry name="IBL" value="Inter-Bank Loans"/>
+  <Entry name="IVP" value="Investment Property"/>
+  <Entry name="LDR" value="Land Rights"/>
+  <Entry name="LOW" value="Lower Fund"/>
+  <Entry name="LPC" value="Total Subject Property Liens Paid by Closing"/>
+  <Entry name="LPF" value="Lease Purchase Funds"/>
+  <Entry name="LPY" value="Lease Payments"/>
+  <Entry name="LSP" value="Total Liabilities to be Paid at Closing Not Including Subject Property Liens"/>
+  <Entry name="MMA" value="Modified Mortgage Amount"/>
+  <Entry name="NBO" value="Net Worth of Business Owned"/>
+  <Entry name="NPP" value="No Tax Plan Payment"/>
+  <Entry name="OEQ" value="Office Equipment"/>
+  <Entry name="OLA" value="Other Liability Amounts"/>
+  <Entry name="PAN" value="Penalty and Interest"/>
+  <Entry name="PBG" value="Profit (Loss) Before Grants"/>
+  <Entry name="PCC" value="Prior Contract Cost Basis"/>
+  <Entry name="PCS" value="Prior Contract Surrender Charge"/>
+  <Entry name="PCV" value="Prior Contract Value"/>
+  <Entry name="PEX" value="Profit (Loss) after Extraordinary Items and Tax"/>
+  <Entry name="PGR" value="Proposed Gross Rent for the Subject Property"/>
+  <Entry name="PPN" value="Pending Net Sale Proceeds from Non-Real Estate Assets"/>
+  <Entry name="PPR" value="Pending Net Sale Proceeds from Real Estate Assets"/>
+  <Entry name="PRD" value="Property Damage"/>
+  <Entry name="PRL" value="Partial Payroll Payment"/>
+  <Entry name="RPC" value="Repackaging Cost"/>
+  <Entry name="SAG" value="Surplus (Deficit) after Grant"/>
+  <Entry name="SAL" value="Salvage"/>
+  <Entry name="SFD" value="Secured Borrowed Funds Not Deposited"/>
+  <Entry name="SOF" value="Setoff"/>
+  <Entry name="SSC" value="Shares in Subsidiary Companies"/>
+  <Entry name="TBC" value="Total Buyer Closing Costs"/>
+  <Entry name="TCS" value="Total Commission from Primary and Secondary Sources"/>
+  <Entry name="TDA" value="Total Depository Accounts"/>
+  <Entry name="TEN" value="Total Maintenance Expense on All Non-Income Producing Properties"/>
+  <Entry name="TEP" value="Total Maintenance Expense on All Income Producing Properties"/>
+  <Entry name="TGD" value="Total Gifts Not Deposited"/>
+  <Entry name="TIS" value="Total Self-employed Income from Primary and Secondary Sources"/>
+  <Entry name="TLA" value="Total Other Liquid Assets"/>
+  <Entry name="TLV" value="Total Life Insurance Net Cash Value"/>
+  <Entry name="TOL" value="Total Omitted Liabilities"/>
+  <Entry name="TPR" value="Total Net Proceeds from Real Estate Assets"/>
+  <Entry name="TRF" value="Total Retirement Funds"/>
+  <Entry name="TRI" value="Total Non-rental Income"/>
+  <Entry name="TRL" value="Total Resubordinated Liabilities"/>
+  <Entry name="TRP" value="Total Liabilities for Rental Properties"/>
+  <Entry name="TSB" value="Total Stocks and Bonds"/>
+  <Entry name="U8L" value="Tax Payment Refinanced by Same Lender"/>
+  <Entry name="UFD" value="Unsecured Borrowed Funds Not Deposited"/>
+  <Entry name="UHI" value="Unsecured Home Improvements"/>
+  <Entry name="UNK" value="Unknown Tax Plan Payment"/>
+  <Entry name="UPF" value="Upper Fund"/>
+  <Entry name="VES" value="Vested/Earned Upper Fund"/>
+  <Entry name="VSI" value="Value of Securities at Issue Date"/>
+  <Entry name="VSM" value="Value of Securities at Maturity"/>
+</Table>

@@ -1,0 +1,69 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1594.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1594">
+  <Entry name="A1" value="Alcohol"/>
+  <Entry name="A2" value="Amphetamines"/>
+  <Entry name="B1" value="Beer"/>
+  <Entry name="B2" value="Barbiturates"/>
+  <Entry name="B3" value="Benzedrine"/>
+  <Entry name="C1" value="Cocktail"/>
+  <Entry name="C2" value="Cannabis Sativa"/>
+  <Entry name="C3" value="Cocaine"/>
+  <Entry name="C4" value="Codeine"/>
+  <Entry name="C5" value="Crack"/>
+  <Entry name="C6" value="Chewing Tobacco"/>
+  <Entry name="C7" value="Cigar"/>
+  <Entry name="C8" value="Cigarette"/>
+  <Entry name="D1" value="Dexedrine"/>
+  <Entry name="H1" value="Hard Liquor"/>
+  <Entry name="H2" value="Hallucinogens"/>
+  <Entry name="H3" value="Hashish"/>
+  <Entry name="H4" value="Heroin"/>
+  <Entry name="H5" value="Hypnotics"/>
+  <Entry name="L1" value="Lysergic Acid Diethylamide (LSD)"/>
+  <Entry name="M1" value="Marijuana"/>
+  <Entry name="M2" value="Mescaline"/>
+  <Entry name="M3" value="Methadone"/>
+  <Entry name="N1" value="Narcotics"/>
+  <Entry name="N2" value="Nicotine Gum"/>
+  <Entry name="N3" value="Nicotine Patch"/>
+  <Entry name="O1" value="Opiates"/>
+  <Entry name="O2" value="Other"/>
+  <Entry name="P1" value="Phencyclidine (PCP)"/>
+  <Entry name="P2" value="Peyote"/>
+  <Entry name="P3" value="Phenobarb"/>
+  <Entry name="P4" value="Potent Non-opiate Analgesics"/>
+  <Entry name="P5" value="Pipe"/>
+  <Entry name="S1" value="Seconal"/>
+  <Entry name="S2" value="Sedatives"/>
+  <Entry name="S3" value="Shot"/>
+  <Entry name="S4" value="Stimulants"/>
+  <Entry name="S5" value="Smokeless Tobacco"/>
+  <Entry name="S6" value="Snuff"/>
+  <Entry name="T1" value="Tranquilizers"/>
+  <Entry name="T2" value="Tuinal"/>
+  <Entry name="W1" value="Wine"/>
+</Table>

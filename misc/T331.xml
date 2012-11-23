@@ -1,0 +1,49 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T331.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T331">
+  <Entry name="01" value="Bill Back"/>
+  <Entry name="02" value="Off Invoice"/>
+  <Entry name="03" value="Vendor Check to Customer"/>
+  <Entry name="04" value="Credit Customer Account"/>
+  <Entry name="05" value="Charge to be Paid by Vendor"/>
+  <Entry name="06" value="Charge to be Paid by Customer"/>
+  <Entry name="07" value="Optional"/>
+  <Entry name="08" value="Off Gross Quantity Invoiced"/>
+  <Entry name="09" value="Allowance To Be Issued by Vendor"/>
+  <Entry name="10" value="Allowance To Be Issued by Reseller"/>
+  <Entry name="11" value="Charge Denied by Vendor"/>
+  <Entry name="12" value="Cancel Allowance"/>
+  <Entry name="13" value="Provide Amount"/>
+  <Entry name="15" value="Information Only"/>
+  <Entry name="18" value="Non-Payable Tax"/>
+  <Entry name="20" value="Accrual Fund"/>
+  <Entry name="21" value="Flat Fund"/>
+  <Entry name="25" value="Cash in Advance"/>
+  <Entry name="CA" value="Calculate and Add to Invoice"/>
+  <Entry name="CC" value="Collect"/>
+  <Entry name="PP" value="Prepaid"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

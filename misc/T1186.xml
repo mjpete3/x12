@@ -1,0 +1,144 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1186.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1186">
+  <Entry name="02" value="Monthly Clothing Income"/>
+  <Entry name="03" value="Monthly Pro Pay"/>
+  <Entry name="04" value="Monthly Quarters"/>
+  <Entry name="06" value="Overseas Annual Income"/>
+  <Entry name="07" value="Monthly Ration"/>
+  <Entry name="08" value="Bonus Income"/>
+  <Entry name="09" value="Overtime Income"/>
+  <Entry name="10" value="Commission Income"/>
+  <Entry name="11" value="Income From Tips"/>
+  <Entry name="12" value="Alimony"/>
+  <Entry name="13" value="Child Support"/>
+  <Entry name="14" value="Law Suit"/>
+  <Entry name="15" value="Next Pay Increase"/>
+  <Entry name="16" value="Stock Options"/>
+  <Entry name="17" value="Dividends"/>
+  <Entry name="18" value="Profit Sharing"/>
+  <Entry name="19" value="Interest"/>
+  <Entry name="20" value="Base Employment Income"/>
+  <Entry name="21" value="Base Employment Income plus Overtime"/>
+  <Entry name="22" value="Base Employment Income plus Commissions, Bonus or Both"/>
+  <Entry name="23" value="Self-Employment Income"/>
+  <Entry name="24" value="W-2 Wage and Tax Statement"/>
+  <Entry name="25" value="W-2 Wage and Tax Statement with Deferred Compensation"/>
+  <Entry name="26" value="Income Eligible for Employer Matching"/>
+  <Entry name="27" value="Compensation Required for Nondiscrimination Testing"/>
+  <Entry name="28" value="Compensation Required for Internal Revenue Code 415 Testing"/>
+  <Entry name="29" value="Employment"/>
+  <Entry name="30" value="Real Estate"/>
+  <Entry name="31" value="Nonemployment"/>
+  <Entry name="32" value="Unknown Type of Income"/>
+  <Entry name="33" value="Net Rental Income"/>
+  <Entry name="34" value="Total Gross Income"/>
+  <Entry name="35" value="Total Monthly Income"/>
+  <Entry name="38" value="Veteran Affairs Benefits"/>
+  <Entry name="39" value="Mortgage Differential Payments"/>
+  <Entry name="40" value="Unemployment Compensation"/>
+  <Entry name="41" value="Pension"/>
+  <Entry name="42" value="Social Security"/>
+  <Entry name="43" value="Welfare"/>
+  <Entry name="44" value="Sale of Stocks and Bonds"/>
+  <Entry name="45" value="Other Type of Income"/>
+  <Entry name="46" value="Notes Receivable Income"/>
+  <Entry name="47" value="Toke Income (Gambling Tips)"/>
+  <Entry name="48" value="Last Pay Increase"/>
+  <Entry name="49" value="Monthly Variable Housing Allowance"/>
+  <Entry name="51" value="Highest Verified Income"/>
+  <Entry name="52" value="Salary at Termination"/>
+  <Entry name="53" value="Automobile Allowance"/>
+  <Entry name="54" value="Aid for Dependent Children Benefits"/>
+  <Entry name="55" value="Partnership Income"/>
+  <Entry name="56" value="Corporation Income"/>
+  <Entry name="57" value="S"/>
+  <Entry name="58" value="Lottery Winnings"/>
+  <Entry name="59" value="Trust Income"/>
+  <Entry name="60" value="Expense Account Payments"/>
+  <Entry name="61" value="Average Rent"/>
+  <Entry name="62" value="Net Operating Income"/>
+  <Entry name="63" value="Income Per Unit"/>
+  <Entry name="64" value="Income Per Building"/>
+  <Entry name="65" value="Income Per Area"/>
+  <Entry name="66" value="Income Per Suite"/>
+  <Entry name="67" value="Income Per Bay"/>
+  <Entry name="68" value="Income Per Slip or Dock"/>
+  <Entry name="69" value="Gross Sales"/>
+  <Entry name="70" value="Continuation of Pay"/>
+  <Entry name="71" value="Long Term Disability"/>
+  <Entry name="72" value="Short Term Disability"/>
+  <Entry name="73" value="Lump Sum Payment (Disability Event)"/>
+  <Entry name="74" value="Lump Sum Payment (Fatality Event)"/>
+  <Entry name="75" value="American Payroll Association Code"/>
+  <Entry name="76" value="Primary Employment Wage"/>
+  <Entry name="77" value="Concurrent Employment Wage"/>
+  <Entry name="78" value="Discontinued Fringe Benefit Income"/>
+  <Entry name="79" value="Continued Fringe Benefit Income"/>
+  <Entry name="80" value="Average Employment Wage"/>
+  <Entry name="81" value="Dividend and Interest"/>
+  <Entry name="82" value="Gross Rental Income on Existing Rental Property"/>
+  <Entry name="83" value="Insurance Payments"/>
+  <Entry name="84" value="Workman's Compensation"/>
+  <Entry name="85" value="Military Base Pay"/>
+  <Entry name="86" value="Foster Care"/>
+  <Entry name="87" value="Mortgage Credit Certificate"/>
+  <Entry name="88" value="Military Flight Pay"/>
+  <Entry name="89" value="Military Hazard Pay"/>
+  <Entry name="91" value="Employment - Total"/>
+  <Entry name="92" value="Earnings From Financial Assets - Total"/>
+  <Entry name="93" value="Windfall Income - Total"/>
+  <Entry name="94" value="Civil Action Income - Total"/>
+  <Entry name="95" value="Monthly Overseas Pay"/>
+  <Entry name="96" value="Military Combat Pay"/>
+  <Entry name="AI" value="Actual Income"/>
+  <Entry name="BF" value="Base Fringe Benefits"/>
+  <Entry name="BG" value="Budgeted Earnings"/>
+  <Entry name="BS" value="Beginning Salary Amount"/>
+  <Entry name="C0" value="Base Compensation"/>
+  <Entry name="C1" value="Supplemental Compensation"/>
+  <Entry name="EI" value="Estimated Income"/>
+  <Entry name="HR" value="Hourly Wage"/>
+  <Entry name="K1" value="K1 Earnings"/>
+  <Entry name="PD" value="Per Diem"/>
+  <Entry name="PS" value="Sick Pay"/>
+  <Entry name="S0" value="Supplement Excluding Fringe Benefits"/>
+  <Entry name="S1" value="Fringe Benefits Supplement"/>
+  <Entry name="S2" value="Co-curricular Activities Supplement"/>
+  <Entry name="S3" value="Extra-curricular Activities Supplement"/>
+  <Entry name="S4" value="Other Supplement"/>
+  <Entry name="S5" value="Summer Salary"/>
+  <Entry name="S6" value="Extended Salary"/>
+  <Entry name="S8" value="Selected Benefits"/>
+  <Entry name="SA" value="Salary"/>
+  <Entry name="SB" value="Salary Plus Bonus"/>
+  <Entry name="SC" value="Salary Plus Commission"/>
+  <Entry name="SL" value="Sabbatical"/>
+  <Entry name="SP" value="Separation Pay"/>
+  <Entry name="TC" value="Total Annual Compensation"/>
+  <Entry name="VP" value="Vacation Pay"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

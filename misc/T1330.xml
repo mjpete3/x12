@@ -1,0 +1,100 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1330.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1330">
+  <Entry name="01" value="Combination Forms"/>
+  <Entry name="02" value="Test Kits"/>
+  <Entry name="03" value="Contraceptive Devices"/>
+  <Entry name="04" value="Devices"/>
+  <Entry name="05" value="Patch or Disc"/>
+  <Entry name="06" value="Chewable (candy) Bar"/>
+  <Entry name="07" value="Dosepak"/>
+  <Entry name="10" value="Tablet"/>
+  <Entry name="11" value="Enteric Coated Tablet"/>
+  <Entry name="12" value="Sustained Release Tablet"/>
+  <Entry name="13" value="Buccal or Sublingual Tablet"/>
+  <Entry name="14" value="Chewable Tablet"/>
+  <Entry name="15" value="Soluble Tablet"/>
+  <Entry name="16" value="Tablet Unspecified"/>
+  <Entry name="20" value="Capsule"/>
+  <Entry name="21" value="Sustained Release Capsule"/>
+  <Entry name="22" value="Capsule Unspecified"/>
+  <Entry name="23" value="Tablet 21 Day Supply"/>
+  <Entry name="24" value="Tablet 28 Day Supply"/>
+  <Entry name="25" value="Enteric Coated Capsule"/>
+  <Entry name="30" value="Lozenge or Troche"/>
+  <Entry name="31" value="Internal Powder"/>
+  <Entry name="32" value="Chewing Gum"/>
+  <Entry name="33" value="Granules"/>
+  <Entry name="34" value="Swabs"/>
+  <Entry name="40" value="Injection"/>
+  <Entry name="41" value="Sustained Release Injection"/>
+  <Entry name="42" value="Injectable Unspecified"/>
+  <Entry name="43" value="Injectable Lyophilized Powder"/>
+  <Entry name="50" value="Ophthalmic"/>
+  <Entry name="51" value="Ophthalmic Liquid"/>
+  <Entry name="52" value="Ophthalmic or Otic"/>
+  <Entry name="53" value="Ophthalmic Liquid (Compliance Cap)"/>
+  <Entry name="60" value="Elixir"/>
+  <Entry name="61" value="Suspension"/>
+  <Entry name="62" value="Syrup"/>
+  <Entry name="63" value="Solution"/>
+  <Entry name="64" value="Emulsion"/>
+  <Entry name="65" value="Drops"/>
+  <Entry name="66" value="Pediatric Liquid"/>
+  <Entry name="67" value="Liquid"/>
+  <Entry name="68" value="Oral, Liquid and Sustained Release"/>
+  <Entry name="69" value="Rectal Cream or Ointment"/>
+  <Entry name="70" value="Rectal Suppository"/>
+  <Entry name="71" value="Vaginal Suppository"/>
+  <Entry name="72" value="Vaginal Tablet"/>
+  <Entry name="73" value="Vaginal Cream"/>
+  <Entry name="74" value="Vaginal Foam"/>
+  <Entry name="75" value="Urethral Suppository"/>
+  <Entry name="76" value="Enema"/>
+  <Entry name="77" value="Douche"/>
+  <Entry name="78" value="Vaginal Ointment"/>
+  <Entry name="79" value="Contraceptive Sponge"/>
+  <Entry name="80" value="External Ointment"/>
+  <Entry name="81" value="External Cream"/>
+  <Entry name="82" value="Dental Product"/>
+  <Entry name="83" value="Aerosol Powder"/>
+  <Entry name="84" value="Aerosol Spray"/>
+  <Entry name="85" value="External Liquid"/>
+  <Entry name="86" value="External Powder"/>
+  <Entry name="87" value="Dental Mouth Rinse"/>
+  <Entry name="88" value="Inhalant (Refill Canister Only)"/>
+  <Entry name="89" value="External Powder"/>
+  <Entry name="90" value="Irrigant"/>
+  <Entry name="91" value="Gargle"/>
+  <Entry name="92" value="Throat Spray and Swabs"/>
+  <Entry name="93" value="Nasal"/>
+  <Entry name="94" value="Inhalant"/>
+  <Entry name="95" value="Otic"/>
+  <Entry name="96" value="Soap"/>
+  <Entry name="97" value="Stick"/>
+  <Entry name="98" value="Dressing or Bandage"/>
+  <Entry name="99" value="Miscellaneous Unspecified"/>
+</Table>

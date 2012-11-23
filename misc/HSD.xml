@@ -1,0 +1,35 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: HSD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="HSD" comment="To specify the delivery pattern of health care services">
+  <Field name="QuantityQualifier" required="y" min="2" max="2" validation="T673" comment="Code specifying the type of quantity"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="SampleSelectionModulus" type="double" required="y" min="1" max="6" comment="To specify the sampling frequency in terms of a modulus of the Unit of Measure, e.g., every fifth bag, every 1.5 minutes"/>
+  <Field name="TimePeriodQualifier" required="y" min="1" max="2" validation="T615" comment="Code defining periods"/>
+  <Field name="NumberOfPeriods" type="long" required="y" min="1" max="3" comment="Total number of periods"/>
+  <Field name="ShipDeliveryOrCalendarPatternCode" required="y" min="1" max="2" validation="T678" comment="Code which specifies the routine shipments, deliveries, or calendar pattern"/>
+  <Field name="ShipDeliveryPatternTimeCode" required="y" min="1" max="1" validation="T679" comment="Code which specifies the time for routine shipments or deliveries"/>
+</Segment>

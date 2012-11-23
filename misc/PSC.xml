@@ -1,0 +1,52 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PSC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PSC" comment="To describe the conditions of a product service contract as in a warranty registration">
+  <Field name="ContractStatusCode" min="2" max="2" validation="T846" comment="Code designating the current status of the contract"/>
+  <Field name="TypeOfProductServiceCode1" min="2" max="4" validation="T1230" comment="Code specifying the type of product service contract or the basis of the product service claim"/>
+  <Field name="TypeOfProductServiceCode2" required="y" min="2" max="4" validation="T1230" comment="Code specifying the type of product service contract or the basis of the product service claim"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="EntityIdentifierCode" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+  <Field name="ContractNumber" required="y" min="1" max="30" comment="Contract number"/>
+  <Field name="CompositeUnitOfMeasure1" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="Count" type="long" required="y" min="1" max="9" comment="Occurrence counter"/>
+  <Field name="DateTimeQualifier" required="y" min="3" max="3" validation="T374" comment="Code specifying type of date or time, or both date and time"/>
+  <Field name="Date1" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="CompositeUnitOfMeasure2" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="RangeMaximum" type="double" required="y" min="1" max="20" comment="The value specifying the maximum of the measurement range"/>
+  <Field name="RangeMinimum" type="double" required="y" min="1" max="20" comment="The value specifying the minimum of the measurement range"/>
+  <Field name="MeasurementValue" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="AgencyQualifierCode" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="SourceSubqualifier" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+  <Field name="OperationEnvironmentCode" required="y" min="2" max="3" validation="T1231" comment="Code identifying the conditions under which this product will be used or the operating application of the product"/>
+  <Field name="SpecialServicesCode" required="y" min="2" max="10" validation="T560" comment="Code identifying the special service"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="ContactMethodCode" required="y" min="1" max="1" validation="T1079" comment="Code indicating the type of contact"/>
+</Segment>

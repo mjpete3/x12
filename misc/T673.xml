@@ -1,0 +1,1123 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T673.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T673">
+  <Entry name="00" value="Hospital/Homebound Individuals"/>
+  <Entry name="01" value="Discrete Quantity"/>
+  <Entry name="02" value="Cumulative Quantity"/>
+  <Entry name="03" value="Discreet Quantity - Rejected Material"/>
+  <Entry name="04" value="Discrete Quantity - Rejected Material: Disposition Replacement"/>
+  <Entry name="05" value="Discrete Quantity - Rejected Material: Disposition Credit"/>
+  <Entry name="06" value="Discrete Quantity - Rejected Material: Disposition Pending"/>
+  <Entry name="07" value="Cumulative Quantity - Rejected Material"/>
+  <Entry name="08" value="Cumulative Quantity - Rejected Material: Disposition Replacement"/>
+  <Entry name="09" value="Cumulative Quantity - Rejected Material: Disposition Credit"/>
+  <Entry name="0A" value="Number of Hours Per Day"/>
+  <Entry name="0B" value="Number of Hours Per Week"/>
+  <Entry name="0C" value="Number of Months Per Year"/>
+  <Entry name="0D" value="Number of Periods Per Week"/>
+  <Entry name="0F" value="Number of Hours Per Year"/>
+  <Entry name="0G" value="Pre-Kindergarten Students"/>
+  <Entry name="0H" value="First Grade Students"/>
+  <Entry name="0I" value="Second Grade Students"/>
+  <Entry name="0J" value="Third Grade Students"/>
+  <Entry name="0K" value="Fourth Grade Students"/>
+  <Entry name="0L" value="Fifth Grade Students"/>
+  <Entry name="0M" value="Sixth Grade Students"/>
+  <Entry name="0N" value="Seventh Grade Students"/>
+  <Entry name="0O" value="Eighth Grade Students"/>
+  <Entry name="0P" value="Ninth Grade Students"/>
+  <Entry name="0Q" value="Carnegie Units"/>
+  <Entry name="0R" value="Number of Disability Types"/>
+  <Entry name="0S" value="Number of Males"/>
+  <Entry name="0T" value="Number of Females"/>
+  <Entry name="0U" value="Individuals with Multiple Disabilities"/>
+  <Entry name="0V" value="Individuals with Serious Emotional Disturbance"/>
+  <Entry name="0W" value="Individuals with Speech or Language Impairment"/>
+  <Entry name="0X" value="Individuals with Traumatic Brain Injury"/>
+  <Entry name="0Y" value="Blind Individuals"/>
+  <Entry name="0Z" value="Deaf Individuals"/>
+  <Entry name="10" value="Cumulative Quantity - Rejected Material: Disposition Pending"/>
+  <Entry name="11" value="Split Quantity"/>
+  <Entry name="12" value="Ship Notice Quantity"/>
+  <Entry name="13" value="Collateral Requirements"/>
+  <Entry name="14" value="Quantity in Float"/>
+  <Entry name="15" value="Quantity in Hold Out"/>
+  <Entry name="16" value="Line Thread Quantity"/>
+  <Entry name="17" value="Quantity on Hand"/>
+  <Entry name="18" value="Previous Week Quantity"/>
+  <Entry name="19" value="Unverified Receipts"/>
+  <Entry name="1A" value="Original Duration (in calendar units)"/>
+  <Entry name="1B" value="Current Duration (in calendar units)"/>
+  <Entry name="1C" value="Remaining Duration (in calendar units)"/>
+  <Entry name="1D" value="Total Float (in calendar units)"/>
+  <Entry name="1E" value="Free Float (in calendar units)"/>
+  <Entry name="1F" value="Lag (as in Lag Time - in calendar units)"/>
+  <Entry name="1G" value="Lead Time (in calendar units)"/>
+  <Entry name="1H" value="Started"/>
+  <Entry name="1I" value="Completed"/>
+  <Entry name="1J" value="Due"/>
+  <Entry name="1K" value="Time Units"/>
+  <Entry name="1L" value="Shifts"/>
+  <Entry name="1M" value="Time units per shift"/>
+  <Entry name="1N" value="Scrap allowed"/>
+  <Entry name="1O" value="Calendar Units"/>
+  <Entry name="1P" value="Resource (Quantity) available"/>
+  <Entry name="1Q" value="Total Resource (Quantity)"/>
+  <Entry name="1R" value="Level Resource (Quantity)"/>
+  <Entry name="1S" value="Late"/>
+  <Entry name="1T" value="Number of Delinquent Installments"/>
+  <Entry name="1U" value="Number of Loans"/>
+  <Entry name="1V" value="Total Number of Mortgagees"/>
+  <Entry name="1W" value="Total Number of Loan Detail Records"/>
+  <Entry name="1X" value="Prescription Effective Period"/>
+  <Entry name="1Y" value="Rate Per Day (RPD)"/>
+  <Entry name="1Z" value="End Of Month Inventory Prior To Ship"/>
+  <Entry name="20" value="Unusable Quantity"/>
+  <Entry name="21" value="Cumulative Quantity Shipped Short - Disposition Pending"/>
+  <Entry name="22" value="Cumulative Quantity Shipped Short - Disposition Challenged"/>
+  <Entry name="23" value="Cumulative Quantity Shipped Long - Disposition Pending"/>
+  <Entry name="24" value="Cumulative Quantity Shipped Long - Disposition Challenged"/>
+  <Entry name="25" value="OEM Inventory"/>
+  <Entry name="26" value="Total Inventory"/>
+  <Entry name="27" value="Committed Quantity"/>
+  <Entry name="28" value="Quantity Available for Return"/>
+  <Entry name="29" value="Projected Available Inventory"/>
+  <Entry name="2A" value="Commitment Period"/>
+  <Entry name="2B" value="Number of Borrowers"/>
+  <Entry name="2C" value="Number of Adjustment Periods"/>
+  <Entry name="2D" value="Age Nearest"/>
+  <Entry name="2E" value="Total Other Properties Owned and Financed"/>
+  <Entry name="2F" value="Age Next"/>
+  <Entry name="2G" value="Reconsideration Period"/>
+  <Entry name="2H" value="Flat Extra Premium"/>
+  <Entry name="2I" value="CO2 Injection Volume"/>
+  <Entry name="2J" value="Accounts Placed for Collection"/>
+  <Entry name="2K" value="Changes"/>
+  <Entry name="2L" value="Companies in Same Activity for a Period"/>
+  <Entry name="2M" value="Comparison Period"/>
+  <Entry name="2N" value="Departments"/>
+  <Entry name="2O" value="Employees Shared"/>
+  <Entry name="2P" value="Estimated Accounts"/>
+  <Entry name="2Q" value="Installed Capacity"/>
+  <Entry name="2R" value="Levels Occupied"/>
+  <Entry name="2S" value="Registered Brands Distributed"/>
+  <Entry name="2T" value="Electronic Signatures"/>
+  <Entry name="2U" value="Bytes"/>
+  <Entry name="2V" value="Employed at this Location"/>
+  <Entry name="2W" value="Segments"/>
+  <Entry name="2X" value="Registered Brands Manufactured"/>
+  <Entry name="2Y" value="Functional Groups"/>
+  <Entry name="2Z" value="Transaction Sets"/>
+  <Entry name="30" value="Quote Quantity on Inventory"/>
+  <Entry name="31" value="Additional Demand Quantity"/>
+  <Entry name="32" value="Quantity Sold"/>
+  <Entry name="33" value="Quantity Available for Sale (stock quantity)"/>
+  <Entry name="34" value="Noncommitted Inventory on Shelf"/>
+  <Entry name="35" value="Inventory on Shelf + Work in Progress"/>
+  <Entry name="36" value="Distributor Inventory"/>
+  <Entry name="37" value="Work In Process"/>
+  <Entry name="38" value="Original Quantity"/>
+  <Entry name="39" value="Shipped Quantity"/>
+  <Entry name="3A" value="Total Credits Accepted"/>
+  <Entry name="3B" value="Total Credits Rejected"/>
+  <Entry name="3C" value="Total Debits Accepted"/>
+  <Entry name="3D" value="Total Debits Rejected"/>
+  <Entry name="3E" value="Total Payments Rejected"/>
+  <Entry name="3F" value="Total Pre-advices Accepted"/>
+  <Entry name="3G" value="Total Pre-advices Rejected"/>
+  <Entry name="3H" value="Total Prenotes Accepted"/>
+  <Entry name="3I" value="Total Prenotes Rejected"/>
+  <Entry name="3J" value="Total Post-advices Accepted"/>
+  <Entry name="3K" value="Total Post-advices Rejected"/>
+  <Entry name="3L" value="Total Unidentified Transactions Rejected"/>
+  <Entry name="3M" value="Total Credits Received"/>
+  <Entry name="3N" value="Total Debits Received"/>
+  <Entry name="3O" value="Individuals with Noncategorical Preschool Disability"/>
+  <Entry name="3P" value="Total Pre-advices Received"/>
+  <Entry name="3Q" value="Total Prenotes Received"/>
+  <Entry name="3R" value="Total Post-advices Received"/>
+  <Entry name="3S" value="Total Debits"/>
+  <Entry name="3T" value="Total Credits"/>
+  <Entry name="3V" value="Minimum Transfer"/>
+  <Entry name="3W" value="Maximum Transfer"/>
+  <Entry name="3X" value="Speed Capacity"/>
+  <Entry name="3Y" value="Subcontractors"/>
+  <Entry name="3Z" value="Students"/>
+  <Entry name="40" value="Remaining Quantity"/>
+  <Entry name="41" value="Number of Batches"/>
+  <Entry name="42" value="Number of Checks"/>
+  <Entry name="43" value="Talk Paths"/>
+  <Entry name="44" value="Number of Patient Admissions"/>
+  <Entry name="45" value="Cumulative quantity on order"/>
+  <Entry name="46" value="Total transactions"/>
+  <Entry name="47" value="Primary Net Quantity"/>
+  <Entry name="48" value="Secondary Net Quantity"/>
+  <Entry name="49" value="Number of Signed Bills of Lading"/>
+  <Entry name="4A" value="Accounts"/>
+  <Entry name="4B" value="Agents"/>
+  <Entry name="4C" value="Authorized Shares"/>
+  <Entry name="4D" value="Clerks"/>
+  <Entry name="4E" value="Design Employees"/>
+  <Entry name="4F" value="Foreign Related Entities"/>
+  <Entry name="4G" value="Group Employees"/>
+  <Entry name="4H" value="Issued Shares"/>
+  <Entry name="4I" value="Laborers"/>
+  <Entry name="4J" value="Other Employee Type"/>
+  <Entry name="4K" value="Part Time Employees"/>
+  <Entry name="4L" value="Related Entities"/>
+  <Entry name="4M" value="Relatives Employed"/>
+  <Entry name="4N" value="Salespersons"/>
+  <Entry name="4O" value="Space Occupied"/>
+  <Entry name="4P" value="Special Partners"/>
+  <Entry name="4Q" value="Suppliers' Credit"/>
+  <Entry name="4R" value="Technicians"/>
+  <Entry name="4S" value="Trainees"/>
+  <Entry name="4T" value="Warehouse Employees"/>
+  <Entry name="4U" value="Shareholders"/>
+  <Entry name="4V" value="Available Units"/>
+  <Entry name="4W" value="Total Unduplicated Headcount"/>
+  <Entry name="4X" value="Meals Per Week"/>
+  <Entry name="4Y" value="Programs Offered"/>
+  <Entry name="4Z" value="Typical Credit Hours Taken per Graduate Student (Full Time)"/>
+  <Entry name="50" value="Number of Copies of Bill of Lading"/>
+  <Entry name="51" value="Number of Unsigned Bills of Lading"/>
+  <Entry name="52" value="Number of Originals"/>
+  <Entry name="53" value="Original payment item count."/>
+  <Entry name="54" value="Bank reject item count."/>
+  <Entry name="55" value="Net to pay item count."/>
+  <Entry name="56" value="Minimum Contract Quantity"/>
+  <Entry name="57" value="Minimum Order Quantity"/>
+  <Entry name="58" value="Payment Cancellation Item Count"/>
+  <Entry name="59" value="Individuals with Developmental Delay"/>
+  <Entry name="5A" value="Aggregate Benefit Period"/>
+  <Entry name="5B" value="Anticipated Length of Service"/>
+  <Entry name="5C" value="Approval/Offer Duration"/>
+  <Entry name="5D" value="Benefit Amount"/>
+  <Entry name="5E" value="Benefit Period"/>
+  <Entry name="5F" value="Brothers Deceased"/>
+  <Entry name="5G" value="Brothers Living"/>
+  <Entry name="5H" value="Children"/>
+  <Entry name="5I" value="Citations"/>
+  <Entry name="5J" value="Claim Period"/>
+  <Entry name="5K" value="Coverage"/>
+  <Entry name="5L" value="Elimination Period"/>
+  <Entry name="5M" value="Elimination Period - Accident"/>
+  <Entry name="5N" value="Elimination Period - Sickness"/>
+  <Entry name="5O" value="Employees - Nonowner"/>
+  <Entry name="5P" value="Employees - Owner"/>
+  <Entry name="5Q" value="Employees - Part Time"/>
+  <Entry name="5R" value="Employees - Same Duties"/>
+  <Entry name="5S" value="Employees - Same Occupation"/>
+  <Entry name="5T" value="Expense"/>
+  <Entry name="5U" value="Frequency"/>
+  <Entry name="5V" value="General Elimination Period"/>
+  <Entry name="5W" value="Guarantee Period"/>
+  <Entry name="5X" value="Height"/>
+  <Entry name="5Y" value="Hours Flown - Aircraft Type/Life"/>
+  <Entry name="5Z" value="Hours Flown - Aircraft Type/Period"/>
+  <Entry name="60" value="Total Authorized Quantity"/>
+  <Entry name="61" value="Remaining Authorized Quantity"/>
+  <Entry name="62" value="Number of Days Covered by Inventory"/>
+  <Entry name="63" value="On Order Quantity"/>
+  <Entry name="64" value="Past Due Quantity"/>
+  <Entry name="65" value="Previous Month's Usage"/>
+  <Entry name="66" value="Minimum Fabrication Quantity"/>
+  <Entry name="67" value="Minimum Ship Quantity"/>
+  <Entry name="68" value="Maximum Number of Shipments Allowed"/>
+  <Entry name="69" value="Incremental Order Quantity"/>
+  <Entry name="6A" value="Hours Flown - Aircraft/Type Flying"/>
+  <Entry name="6B" value="Hours Flown - Lifetime"/>
+  <Entry name="6C" value="Hours Flown - Type Flying"/>
+  <Entry name="6D" value="Impairment Duration"/>
+  <Entry name="6E" value="Impairment Frequency"/>
+  <Entry name="6F" value="Installment Frequency"/>
+  <Entry name="6G" value="Installments"/>
+  <Entry name="6H" value="Intended Change Time Period"/>
+  <Entry name="6I" value="Interim Term Period"/>
+  <Entry name="6J" value="Involvement Period"/>
+  <Entry name="6K" value="Loan Rate"/>
+  <Entry name="6L" value="Maximum Age"/>
+  <Entry name="6M" value="Maximum Benefit Period - Accident"/>
+  <Entry name="6N" value="Maximum Benefit Period - Sickness"/>
+  <Entry name="6O" value="Maximum Benefit Period"/>
+  <Entry name="6P" value="Medication Duration"/>
+  <Entry name="6Q" value="Minimum Age"/>
+  <Entry name="6R" value="Own Occupation Qualification Period"/>
+  <Entry name="6S" value="Owner's Equity"/>
+  <Entry name="6T" value="Ownership Change Age"/>
+  <Entry name="6U" value="Ownership Duration"/>
+  <Entry name="6V" value="Ownership Percentage"/>
+  <Entry name="6W" value="Payment Frequency"/>
+  <Entry name="6X" value="Payments Number"/>
+  <Entry name="6Y" value="Arrests"/>
+  <Entry name="6Z" value="Placement Period Expiration"/>
+  <Entry name="70" value="Maximum Order Quantity"/>
+  <Entry name="71" value="Educable Mentally Retarded Individuals"/>
+  <Entry name="72" value="Minimum Stock Level"/>
+  <Entry name="73" value="Maximum Stock Level"/>
+  <Entry name="74" value="Damaged Goods"/>
+  <Entry name="75" value="Receipts"/>
+  <Entry name="76" value="Returns"/>
+  <Entry name="77" value="Stock Transfers In"/>
+  <Entry name="78" value="Stock Transfers Out"/>
+  <Entry name="79" value="Billing Unit(s) Per Pricing Unit"/>
+  <Entry name="7A" value="Previous Benefits"/>
+  <Entry name="7B" value="Qualification Period"/>
+  <Entry name="7C" value="Range Average"/>
+  <Entry name="7D" value="Range Maximum"/>
+  <Entry name="7E" value="Range Minimum"/>
+  <Entry name="7F" value="Relationship Duration"/>
+  <Entry name="7G" value="Replaced Amount"/>
+  <Entry name="7H" value="Residence Duration"/>
+  <Entry name="7I" value="Sisters Deceased"/>
+  <Entry name="7J" value="Sisters Living"/>
+  <Entry name="7K" value="Time Frame"/>
+  <Entry name="7L" value="Time in Country"/>
+  <Entry name="7M" value="Time Since Hospitalization"/>
+  <Entry name="7N" value="Time Since Last Application"/>
+  <Entry name="7O" value="Time Since Last Civilian Flight"/>
+  <Entry name="7P" value="Time Since Last Insurance Medical"/>
+  <Entry name="7Q" value="Time Since Last Military Flight"/>
+  <Entry name="7R" value="Time Since Medical Consult"/>
+  <Entry name="7S" value="Time Since Medication End"/>
+  <Entry name="7T" value="Time Since Medication Start"/>
+  <Entry name="7U" value="Time Since Onset"/>
+  <Entry name="7V" value="Time Since Surgery"/>
+  <Entry name="7W" value="Time Since Trip"/>
+  <Entry name="7X" value="Travel Frequency"/>
+  <Entry name="7Y" value="Travel Period"/>
+  <Entry name="7Z" value="Trip Duration"/>
+  <Entry name="80" value="Pricing Unit(s) Per Billing Unit"/>
+  <Entry name="81" value="Prepaid Quantity Shipped"/>
+  <Entry name="82" value="Prepaid Quantity Not Shipped"/>
+  <Entry name="83" value="Submitted Quantity Sold"/>
+  <Entry name="84" value="Submitted Quantity Returned"/>
+  <Entry name="85" value="Lot Size"/>
+  <Entry name="86" value="Nonconformance Quantity"/>
+  <Entry name="87" value="Quantity Received"/>
+  <Entry name="88" value="Beds"/>
+  <Entry name="89" value="Operating Beds"/>
+  <Entry name="8A" value="Visitation Frequency"/>
+  <Entry name="8B" value="Weight"/>
+  <Entry name="8C" value="Weight Change Period"/>
+  <Entry name="8D" value="Work Period"/>
+  <Entry name="8E" value="Existence Limit Period"/>
+  <Entry name="8F" value="Shares"/>
+  <Entry name="8G" value="Directors"/>
+  <Entry name="8H" value="Minimum"/>
+  <Entry name="8I" value="Voting Shares Held"/>
+  <Entry name="8J" value="Outstanding Shares"/>
+  <Entry name="8K" value="Shares Held as Treasury Stock"/>
+  <Entry name="8L" value="Shares Subscribed but Not Issued"/>
+  <Entry name="8M" value="Total Shares of Stock"/>
+  <Entry name="8N" value="Shares Owned by In-State Residents"/>
+  <Entry name="8O" value="Shares Owned by Out-of-State Residents"/>
+  <Entry name="8P" value="Partners"/>
+  <Entry name="8Q" value="Land Holding"/>
+  <Entry name="8R" value="Non-Domestic Stockholders"/>
+  <Entry name="8S" value="Shares Subscribed"/>
+  <Entry name="8T" value="Maximum Number Free Miles"/>
+  <Entry name="8U" value="Typical Credit Hours Taken per Undergraduate Student (Full Time)"/>
+  <Entry name="8V" value="Typical Credit Hours Taken per First-Professional Student (Full Time)"/>
+  <Entry name="8W" value="Full-time Equivalents"/>
+  <Entry name="8X" value="Total Credit Hours"/>
+  <Entry name="8Y" value="Total Non-Credit Hours"/>
+  <Entry name="8Z" value="Total Contact Hours"/>
+  <Entry name="90" value="Acknowledged Quantity"/>
+  <Entry name="91" value="Additional Usage Quantity"/>
+  <Entry name="92" value="Allotted Usage Quantity"/>
+  <Entry name="93" value="Attendant-Handled Quantity"/>
+  <Entry name="94" value="Billable Quantity"/>
+  <Entry name="95" value="Data Storage Quantity"/>
+  <Entry name="96" value="Non-Billable Quantity"/>
+  <Entry name="97" value="Non-Urgent Delivery Quantity"/>
+  <Entry name="98" value="Overflow Quantity"/>
+  <Entry name="99" value="Quantity Used"/>
+  <Entry name="9A" value="Time Expended"/>
+  <Entry name="9C" value="Primary Meter Reading Value"/>
+  <Entry name="9D" value="Engineered Standard"/>
+  <Entry name="9E" value="Active Maintenance Time"/>
+  <Entry name="9F" value="Actual Duration"/>
+  <Entry name="9H" value="Estimated Duration"/>
+  <Entry name="9J" value="Gross Estimate"/>
+  <Entry name="9K" value="Finish Offset"/>
+  <Entry name="9L" value="Start Offset"/>
+  <Entry name="9M" value="Picture Count"/>
+  <Entry name="9N" value="Component Meter Reading Count"/>
+  <Entry name="9P" value="Total Clock Hours"/>
+  <Entry name="9R" value="Enrollees"/>
+  <Entry name="A0" value="Severely Mentally Retarded Individuals"/>
+  <Entry name="A1" value="Acceptable Unserviceable Quantity"/>
+  <Entry name="A2" value="Optimistic Duration"/>
+  <Entry name="A3" value="Most Likely Duration"/>
+  <Entry name="A4" value="Pessimistic Duration"/>
+  <Entry name="A5" value="Adjusted Quantity"/>
+  <Entry name="A6" value="Accidents"/>
+  <Entry name="A7" value="Years in School"/>
+  <Entry name="A8" value="Number of Dependents"/>
+  <Entry name="A9" value="Years on Job"/>
+  <Entry name="AA" value="Unacknowledged Quantity"/>
+  <Entry name="AB" value="Urgent Delivery Quantity"/>
+  <Entry name="AC" value="Voice Storage Quantity"/>
+  <Entry name="AD" value="Maintenance Units"/>
+  <Entry name="AE" value="Minimum Average Time Requirement (MATR) Units"/>
+  <Entry name="AF" value="Wide Area Telephone Service (WATS)/800 Service Units"/>
+  <Entry name="AG" value="Number of End Users"/>
+  <Entry name="AH" value="Number of Message Recipients"/>
+  <Entry name="AI" value="Number of Operator Credits"/>
+  <Entry name="AJ" value="Daily Adjustments"/>
+  <Entry name="AK" value="Years in this Line of Work/Profession"/>
+  <Entry name="AL" value="Area per Units"/>
+  <Entry name="AM" value="Trainable Mentally Retarded Individuals"/>
+  <Entry name="AN" value="Age at Death"/>
+  <Entry name="AO" value="Verified Receipts"/>
+  <Entry name="AP" value="Order Quantity Multiple"/>
+  <Entry name="AQ" value="Contribution Total"/>
+  <Entry name="AR" value="Loan Repayment Total"/>
+  <Entry name="AS" value="Participant Total"/>
+  <Entry name="AT" value="Actual"/>
+  <Entry name="AU" value="Cumulative Actual"/>
+  <Entry name="AV" value="Budget"/>
+  <Entry name="AW" value="Cumulative Budget"/>
+  <Entry name="AX" value="Number of Insured Lives"/>
+  <Entry name="AY" value="Forecast"/>
+  <Entry name="AZ" value="Forecast at Complete"/>
+  <Entry name="B1" value="Number of Mortgagors"/>
+  <Entry name="B2" value="Mortgage Pool Count"/>
+  <Entry name="B3" value="Requested Amount"/>
+  <Entry name="B4" value="Approved Amount"/>
+  <Entry name="B5" value="Additional Amount"/>
+  <Entry name="B6" value="Pre-op Days"/>
+  <Entry name="B7" value="Post-op Days"/>
+  <Entry name="B8" value="Average"/>
+  <Entry name="BA" value="Due-In"/>
+  <Entry name="BB" value="Contractor Cumulative to Date"/>
+  <Entry name="BC" value="Budget At Complete"/>
+  <Entry name="BD" value="Contractor at Complete"/>
+  <Entry name="BE" value="Subcontractor Cumulative to Date"/>
+  <Entry name="BF" value="Age Modifying Units"/>
+  <Entry name="BG" value="Subcontractor at Complete"/>
+  <Entry name="BH" value="Book Order Quantity"/>
+  <Entry name="BI" value="Book Inventory"/>
+  <Entry name="BJ" value="Bedroom Count"/>
+  <Entry name="BK" value="Bathroom Count"/>
+  <Entry name="BQ" value="Backorder Quantity"/>
+  <Entry name="BR" value="Blood Record"/>
+  <Entry name="BW" value="Birth Weight"/>
+  <Entry name="C0" value="Creditors"/>
+  <Entry name="C1" value="Payment Experiences in Last 12 Months"/>
+  <Entry name="C2" value="Payment Experiences in Last 3 Months"/>
+  <Entry name="C3" value="Area Damaged"/>
+  <Entry name="C4" value="Other Unlisted Stockholders"/>
+  <Entry name="C5" value="Other Unlisted Participants"/>
+  <Entry name="CA" value="Covered - Actual"/>
+  <Entry name="CB" value="Closing Statement Balance"/>
+  <Entry name="CC" value="Current Days on Market"/>
+  <Entry name="CD" value="Co-insured - Actual"/>
+  <Entry name="CE" value="Covered - Estimated"/>
+  <Entry name="CF" value="Co-insured - Estimated"/>
+  <Entry name="CG" value="Cumulative Gas Volume"/>
+  <Entry name="CH" value="Cumulative Effect of Prior Period Adjustment"/>
+  <Entry name="CI" value="Cumulative Gas Injection Volume"/>
+  <Entry name="CL" value="Cumulative Liquid Injection Volume"/>
+  <Entry name="CN" value="Continuance Duration"/>
+  <Entry name="CO" value="Cumulative Oil/Condensate Volume"/>
+  <Entry name="CP" value="Current Period Imbalance"/>
+  <Entry name="CR" value="Certified Registered Nurse Anesthetist (CRNA) Number of Concurrent Procedures"/>
+  <Entry name="CS" value="Current Service Life"/>
+  <Entry name="CW" value="Cumulative Water Volume"/>
+  <Entry name="CY" value="Convictions Sent"/>
+  <Entry name="CZ" value="Total Number of Convictions"/>
+  <Entry name="D0" value="Engineers"/>
+  <Entry name="D1" value="Billed"/>
+  <Entry name="D2" value="Executives"/>
+  <Entry name="D3" value="Number of Co-insurance Days"/>
+  <Entry name="D4" value="Field Workers"/>
+  <Entry name="D5" value="Installers"/>
+  <Entry name="D6" value="Members in Group"/>
+  <Entry name="D7" value="Non-Consolidated Total-Domestic Subsidiaries"/>
+  <Entry name="D8" value="Non-Consolidated Total-Foreign Subsidiaries"/>
+  <Entry name="D9" value="Non-Union Employees"/>
+  <Entry name="DA" value="Dependent's Age"/>
+  <Entry name="DB" value="Deductible Blood Units"/>
+  <Entry name="DC" value="Dependent Count"/>
+  <Entry name="DD" value="Distributed"/>
+  <Entry name="DE" value="Debited"/>
+  <Entry name="DF" value="Deleted"/>
+  <Entry name="DG" value="Gas Used for Drilling"/>
+  <Entry name="DH" value="Maximum Benefit Period Accident to Age"/>
+  <Entry name="DI" value="Disposed"/>
+  <Entry name="DJ" value="Maximum Benefit Period Sickness to Age"/>
+  <Entry name="DK" value="Airline Attendants"/>
+  <Entry name="DL" value="Companies Included in Consolidation"/>
+  <Entry name="DM" value="Total Consolidated Domestic Subsidiaries"/>
+  <Entry name="DN" value="Default Notification Response Period"/>
+  <Entry name="DO" value="Days Operated"/>
+  <Entry name="DP" value="Days Produced"/>
+  <Entry name="DQ" value="Total Consolidated Foreign Subsidiaries"/>
+  <Entry name="DR" value="Direct Workers"/>
+  <Entry name="DS" value="Dose"/>
+  <Entry name="DT" value="Dependent Total"/>
+  <Entry name="DU" value="Counter Clerks"/>
+  <Entry name="DW" value="Domestic Affiliated Companies"/>
+  <Entry name="DX" value="Drivers"/>
+  <Entry name="DY" value="Days"/>
+  <Entry name="DZ" value="Employed at Location"/>
+  <Entry name="E1" value="Course Segments"/>
+  <Entry name="E2" value="Degree Segments"/>
+  <Entry name="E3" value="Employed on this job"/>
+  <Entry name="E4" value="Employed in this Profession"/>
+  <Entry name="E5" value="Employed by this Company"/>
+  <Entry name="E8" value="Number of Entitled Exemptions"/>
+  <Entry name="E9" value="Number of Withholding Exemptions"/>
+  <Entry name="EA" value="Exclusive Uses"/>
+  <Entry name="EB" value="Nonexclusive Uses"/>
+  <Entry name="EC" value="Use of Extracorporeal Circulation"/>
+  <Entry name="ED" value="Domestic Uses"/>
+  <Entry name="EE" value="Small Business Uses"/>
+  <Entry name="EF" value="Nurses"/>
+  <Entry name="EG" value="Office Workers"/>
+  <Entry name="EH" value="Paid in Common Shares"/>
+  <Entry name="EI" value="Paid in Preferred Shares"/>
+  <Entry name="EJ" value="Pilots"/>
+  <Entry name="EK" value="Plant Workers"/>
+  <Entry name="EL" value="Principals Included as Employees"/>
+  <Entry name="EM" value="Emergency Modifying Units"/>
+  <Entry name="EN" value="Suppliers"/>
+  <Entry name="EO" value="Teachers"/>
+  <Entry name="EP" value="Product Exchange Amount"/>
+  <Entry name="EQ" value="Equity Security Holder"/>
+  <Entry name="ER" value="Estimated Remaining Economic Life"/>
+  <Entry name="ES" value="Ending Stock"/>
+  <Entry name="ET" value="Employee Total"/>
+  <Entry name="EU" value="Total Consolidated Subsidiaries"/>
+  <Entry name="EV" value="Total Non-Consolidated Subsidiaries"/>
+  <Entry name="EW" value="Evaporated Water"/>
+  <Entry name="EX" value="Union Employees"/>
+  <Entry name="EY" value="Ported Telephone Lines"/>
+  <Entry name="EZ" value="Service Resale"/>
+  <Entry name="F0" value="Total claims with skin diseases or disorders"/>
+  <Entry name="F1" value="Off Lease Fuel"/>
+  <Entry name="F3" value="Total deaths as a Result of Injury"/>
+  <Entry name="F4" value="Total deaths as a Result of Illness"/>
+  <Entry name="F5" value="Total injury Claims with Days Away from Work or Restricted Work Activity"/>
+  <Entry name="F6" value="Total injury Claims with Days Away from Work"/>
+  <Entry name="F7" value="Total injury Claims without Lost Work Days"/>
+  <Entry name="F8" value="Total Days Away from Work Due to Injury"/>
+  <Entry name="F9" value="Total Days with Restricted Work Activity Due to Injury"/>
+  <Entry name="FA" value="Full Baths"/>
+  <Entry name="FB" value="Furnished Blood Units"/>
+  <Entry name="FC" value="Fuel Consumed or Burned Amount"/>
+  <Entry name="FD" value="Vehicular Radios"/>
+  <Entry name="FE" value="Portable Radios"/>
+  <Entry name="FF" value="Flare or Flash"/>
+  <Entry name="FG" value="Marine Radios"/>
+  <Entry name="FH" value="Pagers"/>
+  <Entry name="FI" value="Conventional Mobiles"/>
+  <Entry name="FJ" value="Trunked Channels"/>
+  <Entry name="FK" value="Mobile Loading Allocation"/>
+  <Entry name="FL" value="Units"/>
+  <Entry name="FM" value="Aircraft Radios"/>
+  <Entry name="FN" value="Total Claims with Dust Diseases of the Lungs"/>
+  <Entry name="FO" value="Total Claims with Respiratory Conditions Due to Toxic Agents"/>
+  <Entry name="FP" value="Total Claims with Poisoning Illnesses"/>
+  <Entry name="FQ" value="Total Claims with Disorders Due to Physical Agents"/>
+  <Entry name="FS" value="Gas Used for Fuel System"/>
+  <Entry name="FT" value="Forecast to Complete"/>
+  <Entry name="FU" value="Total Claims Associated with Repeated Trauma"/>
+  <Entry name="FV" value="Total illness Claims with occupational illnesses not otherwise classified"/>
+  <Entry name="FW" value="Total Days Away from Work Due to Illness"/>
+  <Entry name="FX" value="Total Days of Restricted Work Activity Due to Illness"/>
+  <Entry name="FY" value="Total illness with Lost Work Days or Restricted Work Activity"/>
+  <Entry name="FZ" value="Total illness Claims with Days Away from Work"/>
+  <Entry name="G0" value="Discharge Quantity"/>
+  <Entry name="G1" value="Estimated Discharge Quantity"/>
+  <Entry name="G2" value="Estimated Transfer Quantity"/>
+  <Entry name="G3" value="Excursions"/>
+  <Entry name="G4" value="Non-production Quantity"/>
+  <Entry name="G5" value="Number of Deaths"/>
+  <Entry name="G6" value="Number of Hospitalizations"/>
+  <Entry name="G7" value="Number of Injuries"/>
+  <Entry name="G8" value="Number of Injuries Requiring Medical Treatment"/>
+  <Entry name="G9" value="Number of People Evacuated"/>
+  <Entry name="GA" value="Gross Building Area"/>
+  <Entry name="GB" value="Gross Annual Income Multiplier"/>
+  <Entry name="GC" value="Gross Living Area"/>
+  <Entry name="GD" value="Total illness Claims without Lost Work Days"/>
+  <Entry name="GE" value="Original Term In Years"/>
+  <Entry name="GF" value="Years Remaining"/>
+  <Entry name="GG" value="Average Number of Employees"/>
+  <Entry name="GH" value="Total Worked by All Employees"/>
+  <Entry name="GI" value="Gas Injection Volume"/>
+  <Entry name="GL" value="Gas Lift Volume"/>
+  <Entry name="GP" value="Gross Production"/>
+  <Entry name="GQ" value="Government Reporting Quantity"/>
+  <Entry name="GR" value="Gas Receipt Volume"/>
+  <Entry name="GS" value="Gas Sold"/>
+  <Entry name="GT" value="Grade Transfer Amount"/>
+  <Entry name="GU" value="Employee Total First Month of Quarter"/>
+  <Entry name="GV" value="Gas Volume"/>
+  <Entry name="GW" value="Employee Total Second Month of Quarter"/>
+  <Entry name="GX" value="Employee Total Third Month of Quarter"/>
+  <Entry name="GZ" value="Active Listings"/>
+  <Entry name="H0" value="Number of People Sheltered-in-Place"/>
+  <Entry name="H1" value="Quantity Recovered"/>
+  <Entry name="H2" value="Quantity Recycled"/>
+  <Entry name="H3" value="Quantity Released"/>
+  <Entry name="H4" value="Quantity Treated"/>
+  <Entry name="H5" value="Total Hazardous Waste Generated"/>
+  <Entry name="HA" value="Market Price Change"/>
+  <Entry name="HB" value="Unpaid"/>
+  <Entry name="HC" value="Branches"/>
+  <Entry name="HD" value="Subsidiaries"/>
+  <Entry name="HE" value="Age of Financial Information"/>
+  <Entry name="HF" value="Invoices"/>
+  <Entry name="HG" value="Financial Coverage Period"/>
+  <Entry name="HH" value="Maximum Number of Employees at Location"/>
+  <Entry name="HI" value="Previous Number of Accounts"/>
+  <Entry name="HJ" value="Collection Period"/>
+  <Entry name="HK" value="Disbursement Period"/>
+  <Entry name="HL" value="Seats"/>
+  <Entry name="HM" value="Use of Hypothermia"/>
+  <Entry name="HN" value="Previous Number of Employees"/>
+  <Entry name="HO" value="Use of Hypotension"/>
+  <Entry name="HP" value="Use of Hyperbaric Pressurization"/>
+  <Entry name="HQ" value="Kindergarten Students"/>
+  <Entry name="HR" value="Use of Hypertension"/>
+  <Entry name="HS" value="Hours"/>
+  <Entry name="HT" value="Employee's Age"/>
+  <Entry name="HU" value="Employee's Number of Days Away from Work Due to Injury"/>
+  <Entry name="HV" value="Employee's Number of Days of Restricted Work Activity Due to Injury"/>
+  <Entry name="HW" value="Employee's Total Number of Days Away from Work Due to Illness"/>
+  <Entry name="HX" value="Employee's Number of Days of Restricted Work Activity Due to Injury"/>
+  <Entry name="HY" value="Total Death Claims"/>
+  <Entry name="HZ" value="Total Claims with Days Away from Work"/>
+  <Entry name="I0" value="Tenth Grade Students"/>
+  <Entry name="I1" value="Eleventh Grade Students"/>
+  <Entry name="I2" value="Twelfth Grade Students"/>
+  <Entry name="I3" value="Prior Teaching Experience"/>
+  <Entry name="I4" value="Prior Full-time Teaching Experience"/>
+  <Entry name="I5" value="Prior Part-time Teaching Experience"/>
+  <Entry name="I6" value="Prior Experience in Education"/>
+  <Entry name="I7" value="Prior Full-time Experience in Education"/>
+  <Entry name="I8" value="Prior Part-time Experience in Education"/>
+  <Entry name="I9" value="Prior Experience Related to Job"/>
+  <Entry name="IA" value="Local Country Employees"/>
+  <Entry name="IB" value="Foreign Employees"/>
+  <Entry name="IC" value="Prior Full-time Experience Related to Job"/>
+  <Entry name="ID" value="Prior Part-time Experience Related to Job"/>
+  <Entry name="IE" value="Total Prior Experience"/>
+  <Entry name="IF" value="Total Full-time Prior Experience"/>
+  <Entry name="IG" value="Total Part-time Prior Experience"/>
+  <Entry name="IH" value="Total Years of Educational Service"/>
+  <Entry name="II" value="Number of Irregular Interest Payments"/>
+  <Entry name="IJ" value="Total Years of Educational Service in this District"/>
+  <Entry name="IK" value="Years of Experience as School Principal"/>
+  <Entry name="IL" value="Years of Experience as Classroom Teacher"/>
+  <Entry name="IM" value="Years Worked for this System"/>
+  <Entry name="IN" value="Indirect Workers"/>
+  <Entry name="IP" value="Number of Interest Payments"/>
+  <Entry name="IQ" value="In-Transit Quantity"/>
+  <Entry name="IS" value="Information Provider Standardized Motor Vehicle Penalty Points"/>
+  <Entry name="IT" value="Intertank Transfer Amount"/>
+  <Entry name="JA" value="Activity Codes"/>
+  <Entry name="JB" value="Associates"/>
+  <Entry name="JC" value="Average Employees"/>
+  <Entry name="JD" value="Cooperative Shares"/>
+  <Entry name="JE" value="Estimated Employees at Location"/>
+  <Entry name="JF" value="Estimated Total Employees"/>
+  <Entry name="JG" value="Financial Institutions"/>
+  <Entry name="JH" value="Judgments"/>
+  <Entry name="JI" value="Land Size"/>
+  <Entry name="JJ" value="Liens"/>
+  <Entry name="JK" value="Minimum Employees at Location"/>
+  <Entry name="JL" value="Office Size"/>
+  <Entry name="JM" value="Owner"/>
+  <Entry name="JN" value="Plant Size"/>
+  <Entry name="JO" value="Previous Number of Branches"/>
+  <Entry name="JP" value="Protested Bills"/>
+  <Entry name="JQ" value="Suits"/>
+  <Entry name="JR" value="Uniform Commercial Code (UCC) Filings"/>
+  <Entry name="JS" value="Judicial Stay Duration"/>
+  <Entry name="JT" value="Warehouse Size"/>
+  <Entry name="JU" value="Total Days Away from Work"/>
+  <Entry name="JV" value="Total Days of Restricted Work Activity"/>
+  <Entry name="JW" value="Total Claims without Days Away from Work and without Restricted Work Activity"/>
+  <Entry name="JX" value="Secretaries"/>
+  <Entry name="JY" value="Mechanics"/>
+  <Entry name="JZ" value="Auditors"/>
+  <Entry name="K1" value="Messengers"/>
+  <Entry name="K2" value="Primary Managers"/>
+  <Entry name="K3" value="Participation Shares"/>
+  <Entry name="K4" value="Detrimental Legal Filings"/>
+  <Entry name="K5" value="Petitions Filed"/>
+  <Entry name="K6" value="Drafts"/>
+  <Entry name="K7" value="Business Failure National Average Incidence"/>
+  <Entry name="K8" value="Business Failure Industry Incidence"/>
+  <Entry name="K9" value="Business Failure Class Incidence"/>
+  <Entry name="KA" value="Estimated"/>
+  <Entry name="KB" value="Net Quantity Increase"/>
+  <Entry name="KC" value="Net Quantity Decrease"/>
+  <Entry name="KD" value="Expenditure Quantity"/>
+  <Entry name="KE" value="Originals"/>
+  <Entry name="KF" value="Duplicates"/>
+  <Entry name="KG" value="Completed Line Items"/>
+  <Entry name="KH" value="Completed Contracts"/>
+  <Entry name="KI" value="Active Contracts Delinquent-Buying Party Caused"/>
+  <Entry name="KJ" value="Active Contracts Delinquent"/>
+  <Entry name="KK" value="Active Contracts Delinquent-Contractor Caused"/>
+  <Entry name="KL" value="Active Contracts Delinquent-Unknown Causes"/>
+  <Entry name="KM" value="Active Line Items Delinquent"/>
+  <Entry name="KN" value="Active Line Items Delinquent-Buying Party Caused"/>
+  <Entry name="KO" value="Active Line Items Delinquent-Contractor Caused"/>
+  <Entry name="KP" value="Active Line Items Delinquent-Unknown Causes"/>
+  <Entry name="KQ" value="Contracts Completed Delinquent-Buying Party Caused"/>
+  <Entry name="KR" value="Contract Completed Delinquent-Contractor Caused"/>
+  <Entry name="KS" value="Contracts Completed Delinquent-Unknown Causes"/>
+  <Entry name="KU" value="Reported Deficiencies"/>
+  <Entry name="KV" value="Line Items Completed Delinquent-Buying Party Caused"/>
+  <Entry name="KW" value="Line Items Completed Delinquent-Contractor Caused"/>
+  <Entry name="KX" value="Line Items Completed Delinquent-Unknown Causes"/>
+  <Entry name="KY" value="Corrective Action Requests-Verbal"/>
+  <Entry name="KZ" value="Corrective Action Requests-Written"/>
+  <Entry name="L2" value="Guarantee Fee Buyup Maximum"/>
+  <Entry name="L3" value="Contract Buyup"/>
+  <Entry name="L4" value="Contract Buydown"/>
+  <Entry name="L5" value="Guarantee Fee Rate after Alternate Payment Method"/>
+  <Entry name="L6" value="Guarantee Fee Rate after Buyup or Buydown"/>
+  <Entry name="L7" value="Buyup or Buydown Rate per Basis Point"/>
+  <Entry name="L9" value="Subject to loss or elimination"/>
+  <Entry name="LA" value="Life-time Reserve - Actual"/>
+  <Entry name="LB" value="Loss Allowance"/>
+  <Entry name="LC" value="Late Payment Period"/>
+  <Entry name="LE" value="Life-time Reserve - Estimated"/>
+  <Entry name="LG" value="Loss or Gain"/>
+  <Entry name="LH" value="Lost Gas"/>
+  <Entry name="LI" value="Liquid Injection Volume"/>
+  <Entry name="LK" value="Corrective Action Requests-Method C"/>
+  <Entry name="LL" value="Corrective Action Requests-Method D"/>
+  <Entry name="LM" value="Corrective Action Requests-Method E"/>
+  <Entry name="LN" value="Aged Active Line Items Delinquent-Contractor Caused"/>
+  <Entry name="LO" value="Lost Oil"/>
+  <Entry name="LP" value="Lease Periods"/>
+  <Entry name="LQ" value="Aged Line Items Delinquent"/>
+  <Entry name="LR" value="Aged Line Items Completed-Contractor Caused"/>
+  <Entry name="LS" value="Oil Condensate Sold"/>
+  <Entry name="LT" value="Tariff Loss Allowance"/>
+  <Entry name="LU" value="Lifetime Reserve Days - Applied to this Claim"/>
+  <Entry name="LV" value="Oil/Condensate Volume"/>
+  <Entry name="LW" value="Lost Work Time Actual"/>
+  <Entry name="LX" value="Lost Work Time Estimated"/>
+  <Entry name="LY" value="Length of Residency"/>
+  <Entry name="LZ" value="Lanes"/>
+  <Entry name="M1" value="Matching Equipment"/>
+  <Entry name="M2" value="Maximum"/>
+  <Entry name="M3" value="Total Federal Points"/>
+  <Entry name="M4" value="Contributions"/>
+  <Entry name="M5" value="Contributors"/>
+  <Entry name="M6" value="Endorsers"/>
+  <Entry name="M7" value="Functions"/>
+  <Entry name="M8" value="Guarantors"/>
+  <Entry name="M9" value="Points"/>
+  <Entry name="MA" value="Miscellaneous Allowance"/>
+  <Entry name="MB" value="Number of Public Officials"/>
+  <Entry name="MC" value="Total Non-Federal Points"/>
+  <Entry name="MD" value="Million Dollar Roundtable Credits"/>
+  <Entry name="ME" value="Minimum Number of Employees"/>
+  <Entry name="MF" value="Manufactured"/>
+  <Entry name="MG" value="Pledges"/>
+  <Entry name="MH" value="Total Points"/>
+  <Entry name="MI" value="Miles"/>
+  <Entry name="MJ" value="Attendees"/>
+  <Entry name="MK" value="Tickets Sold"/>
+  <Entry name="MM" value="Maximum Maturity Extension"/>
+  <Entry name="MN" value="Month"/>
+  <Entry name="MO" value="Minimum Order Package Level"/>
+  <Entry name="MQ" value="Maximum Ship Quantity"/>
+  <Entry name="MX" value="Maximum Number of Employees"/>
+  <Entry name="N1" value="Number of Attacks or Occurrences"/>
+  <Entry name="N2" value="Number of Dead"/>
+  <Entry name="N3" value="Number of Living"/>
+  <Entry name="N4" value="Number of Times"/>
+  <Entry name="N5" value="Minimum Forecast Quantity"/>
+  <Entry name="N6" value="Maximum Forecast Quantity"/>
+  <Entry name="NA" value="Number of Non-covered Days"/>
+  <Entry name="NB" value="Number of Units (Housing)"/>
+  <Entry name="NC" value="Number of Claimants"/>
+  <Entry name="ND" value="Number of Late Charges"/>
+  <Entry name="NE" value="Non-Covered - Estimated"/>
+  <Entry name="NF" value="Number of Full-Time Employees"/>
+  <Entry name="NG" value="Number of Nonsufficient Fund Items"/>
+  <Entry name="NH" value="Noncovered - Actual"/>
+  <Entry name="NL" value="Number of Levels"/>
+  <Entry name="NN" value="Number of Hospitals"/>
+  <Entry name="NO" value="Number of Physicians"/>
+  <Entry name="NP" value="Number of Members"/>
+  <Entry name="NQ" value="Number of Franchisees"/>
+  <Entry name="NR" value="Not Replaced Blood Units"/>
+  <Entry name="NS" value="Number of Stations"/>
+  <Entry name="NT" value="Reports"/>
+  <Entry name="NU" value="Since Last Travel"/>
+  <Entry name="NV" value="Net"/>
+  <Entry name="NW" value="Until Next Travel"/>
+  <Entry name="O1" value="Scheduled Receipt"/>
+  <Entry name="O2" value="Scheduled Delivery"/>
+  <Entry name="O3" value="Operational Receipt"/>
+  <Entry name="O4" value="Operational Delivery"/>
+  <Entry name="O5" value="Allocated Receipt"/>
+  <Entry name="O6" value="Allocated Delivery"/>
+  <Entry name="O7" value="Distributed Confirmed Receipt"/>
+  <Entry name="O8" value="Distributed Confirmed Delivery"/>
+  <Entry name="O9" value="Scheduling Tolerance Receipt"/>
+  <Entry name="OA" value="Scheduling Tolerance Delivery"/>
+  <Entry name="OB" value="Energy"/>
+  <Entry name="OC" value="Order Count"/>
+  <Entry name="OD" value="Other Miscellaneous Disposition"/>
+  <Entry name="OE" value="Number of Weeks Per Year"/>
+  <Entry name="OF" value="Off Premise Sales Quantity"/>
+  <Entry name="OG" value="Other Gas Disposition"/>
+  <Entry name="OH" value="Other Injection Volume"/>
+  <Entry name="OI" value="Opening Statement Balance"/>
+  <Entry name="OL" value="Original Loan Term"/>
+  <Entry name="ON" value="On Premise Sales Quantity"/>
+  <Entry name="OO" value="Other Oil Condensate Disposition"/>
+  <Entry name="OQ" value="Optimum Order Quantity"/>
+  <Entry name="OR" value="Original"/>
+  <Entry name="OT" value="Number of Operating Periods at Failure"/>
+  <Entry name="OU" value="Outlier Days"/>
+  <Entry name="OV" value="Overage"/>
+  <Entry name="OW" value="Other Water Disposition"/>
+  <Entry name="P1" value="Project Phases"/>
+  <Entry name="P3" value="Physical Status III"/>
+  <Entry name="P4" value="Physical Status IV"/>
+  <Entry name="P5" value="Physical Status V"/>
+  <Entry name="P6" value="Number of Services or Procedures"/>
+  <Entry name="P7" value="Prescription Dosage"/>
+  <Entry name="P8" value="Prescription Frequency"/>
+  <Entry name="P9" value="Number of People Living at Residence"/>
+  <Entry name="PA" value="Pipeline Adjustment or Allowance"/>
+  <Entry name="PB" value="Pressure Base"/>
+  <Entry name="PC" value="Prior Cumulative Imbalance"/>
+  <Entry name="PD" value="Payment Duration Weeks"/>
+  <Entry name="PE" value="Period of Employment"/>
+  <Entry name="PF" value="Gas Used for Plant Fuel"/>
+  <Entry name="PG" value="Persistency"/>
+  <Entry name="PH" value="Promotional"/>
+  <Entry name="PK" value="Parking Spaces"/>
+  <Entry name="PL" value="Partial Baths"/>
+  <Entry name="PO" value="Percentage of Ordered Quantity"/>
+  <Entry name="PP" value="Purchase of Product"/>
+  <Entry name="PQ" value="Cumulative Quantity Required Prior to the First Scheduled Period"/>
+  <Entry name="PR" value="Requirement Quantity that was Previously Released"/>
+  <Entry name="PS" value="Prescription"/>
+  <Entry name="PT" value="Patients"/>
+  <Entry name="PW" value="Pitted Water"/>
+  <Entry name="PX" value="Prior Units Accepted"/>
+  <Entry name="PY" value="Paid"/>
+  <Entry name="Q1" value="Minimum quantity to which tax rate applies"/>
+  <Entry name="Q2" value="Maximum quantity to which tax rate applies"/>
+  <Entry name="Q3" value="Quantity Earned"/>
+  <Entry name="Q4" value="Quantity Carried Forward"/>
+  <Entry name="Q5" value="Number of 3 to 4 Year Olds"/>
+  <Entry name="Q6" value="Autistic Individuals"/>
+  <Entry name="Q7" value="Deaf-blind Individuals"/>
+  <Entry name="Q8" value="Hearing Impaired Individuals"/>
+  <Entry name="Q9" value="Mentally Retarded Individuals"/>
+  <Entry name="QA" value="Quantity Approved"/>
+  <Entry name="QB" value="Quantity Dispensed"/>
+  <Entry name="QC" value="Quantity Disapproved"/>
+  <Entry name="QD" value="Quantity Delivered"/>
+  <Entry name="QE" value="Quantity Deferred"/>
+  <Entry name="QF" value="High Fabrication Authorization Quantity"/>
+  <Entry name="QH" value="Quantity on Hold"/>
+  <Entry name="QI" value="Community Service Duration"/>
+  <Entry name="QJ" value="Number of Times Deported"/>
+  <Entry name="QL" value="Jail Sentence Duration"/>
+  <Entry name="QM" value="Probation Duration"/>
+  <Entry name="QN" value="Restriction Duration"/>
+  <Entry name="QO" value="Operating Quantity"/>
+  <Entry name="QP" value="Quantity by Position"/>
+  <Entry name="QQ" value="Suspended Duration"/>
+  <Entry name="QR" value="High Raw Material Authorization Quantity"/>
+  <Entry name="QS" value="Quantity Per Skid"/>
+  <Entry name="QT" value="Plant Thermal Reduction"/>
+  <Entry name="QU" value="Quantity Serviced"/>
+  <Entry name="QV" value="Quantity Cancelled"/>
+  <Entry name="QW" value="Quantity Withdrawn"/>
+  <Entry name="QX" value="Qualifying Weeks"/>
+  <Entry name="QY" value="Repayment Plan Term"/>
+  <Entry name="R1" value="Replenishment (Fill)"/>
+  <Entry name="R2" value="Individuals with Orthopedic Impairment"/>
+  <Entry name="R3" value="Estimated Remaining Physical Life"/>
+  <Entry name="R4" value="Individuals with Specific Learning Disability"/>
+  <Entry name="R5" value="Axles"/>
+  <Entry name="R6" value="Platform Count"/>
+  <Entry name="R7" value="Individuals with Visual Impairment"/>
+  <Entry name="R8" value="Individuals with Other Health Impairment"/>
+  <Entry name="R9" value="Fuel"/>
+  <Entry name="RA" value="Refills Authorized"/>
+  <Entry name="RB" value="Replaced Blood Units"/>
+  <Entry name="RC" value="Number of Items Authorized at Store"/>
+  <Entry name="RD" value="Number of Items Authorized at Warehouse"/>
+  <Entry name="RE" value="Gas Returned to Earth"/>
+  <Entry name="RF" value="Number of Items in Stock"/>
+  <Entry name="RG" value="Gas Used for Repressuring or Pressure Maintenance"/>
+  <Entry name="RH" value="Number of Shelf Tags"/>
+  <Entry name="RJ" value="Quantity Available on Shelf"/>
+  <Entry name="RL" value="Gas Returned to Property for fuel"/>
+  <Entry name="RM" value="Room Count"/>
+  <Entry name="RN" value="Units Rented"/>
+  <Entry name="RQ" value="Royalty"/>
+  <Entry name="RS" value="Number of Shelf Facings"/>
+  <Entry name="RT" value="Retail Sales Quantity"/>
+  <Entry name="RW" value="Water Re-injected on Property"/>
+  <Entry name="RY" value="Requirement Quantity"/>
+  <Entry name="S1" value="Planned Unit Development (PUD) Units"/>
+  <Entry name="S2" value="Rooms, Finished Area Above Grade"/>
+  <Entry name="S3" value="Dwelling Area"/>
+  <Entry name="S4" value="Garage or Carport Area"/>
+  <Entry name="S5" value="Units for Sale"/>
+  <Entry name="S6" value="Gross Rent Multiplier"/>
+  <Entry name="S7" value="Age, High Value"/>
+  <Entry name="S8" value="Age, Low Value"/>
+  <Entry name="S9" value="Bedrooms, Finished Area Above Grade"/>
+  <Entry name="SA" value="Shipments"/>
+  <Entry name="SB" value="Solicited"/>
+  <Entry name="SC" value="Bathrooms, Finished Area Above Grade"/>
+  <Entry name="SD" value="Criminal Sentence Duration"/>
+  <Entry name="SE" value="Gross Living, Finished Area Above Grade"/>
+  <Entry name="SF" value="Site"/>
+  <Entry name="SG" value="Swan-Ganz"/>
+  <Entry name="SH" value="Shortage"/>
+  <Entry name="SI" value="Rooms"/>
+  <Entry name="SJ" value="Area of Level"/>
+  <Entry name="SK" value="Gas Shrinkage"/>
+  <Entry name="SL" value="Predominate Age"/>
+  <Entry name="SM" value="Minimum Criminal Sentence Duration"/>
+  <Entry name="SN" value="Age"/>
+  <Entry name="SO" value="Oil Sedimentation"/>
+  <Entry name="SP" value="Days Supply"/>
+  <Entry name="SQ" value="Product Sales Amount"/>
+  <Entry name="SR" value="Effective Age"/>
+  <Entry name="SS" value="Shares of Preferred Stock"/>
+  <Entry name="ST" value="Standard"/>
+  <Entry name="SU" value="Forecasted Scanned Quantity"/>
+  <Entry name="SV" value="Shares of Common Stock"/>
+  <Entry name="SW" value="Sample Amount"/>
+  <Entry name="SX" value="Maximum Criminal Sentence Duration"/>
+  <Entry name="SY" value="State or Province Motor Vehicle Penalty Points"/>
+  <Entry name="SZ" value="Seasonal"/>
+  <Entry name="T1" value="Time Units Known"/>
+  <Entry name="T2" value="Time Units Spent on Duty"/>
+  <Entry name="T3" value="Total Days on Market"/>
+  <Entry name="T4" value="Total Rooms"/>
+  <Entry name="T5" value="Total Number of Units"/>
+  <Entry name="T6" value="Total Number of Units for Sale"/>
+  <Entry name="T7" value="Tires"/>
+  <Entry name="TA" value="Tank Allowance"/>
+  <Entry name="TB" value="Oil Theft"/>
+  <Entry name="TC" value="Total at Complete"/>
+  <Entry name="TD" value="Total to Date"/>
+  <Entry name="TE" value="Number of Theatres"/>
+  <Entry name="TG" value="Total Gas Injection Volume"/>
+  <Entry name="TH" value="Theoretical Quantity"/>
+  <Entry name="TI" value="Total Oil and/or Condensate Injection Volume"/>
+  <Entry name="TJ" value="Duration in Current Job"/>
+  <Entry name="TK" value="Total Oil and/or Condensate Disposition"/>
+  <Entry name="TM" value="Total Water Disposition"/>
+  <Entry name="TN" value="Total Beginning Inventory"/>
+  <Entry name="TO" value="Total"/>
+  <Entry name="TP" value="Time in Position"/>
+  <Entry name="TR" value="Trips"/>
+  <Entry name="TS" value="Total Number of Parking Spaces"/>
+  <Entry name="TT" value="Total Production Volume"/>
+  <Entry name="TU" value="Total Adjustments Volume"/>
+  <Entry name="TV" value="Total Gas Disposition"/>
+  <Entry name="TW" value="Total Water Injection Volume"/>
+  <Entry name="TX" value="Total Ending Inventory"/>
+  <Entry name="TY" value="Total Sales Volume"/>
+  <Entry name="U1" value="Freelance Collectors"/>
+  <Entry name="U2" value="Branch Locations Owned"/>
+  <Entry name="U3" value="Branch Locations Leased"/>
+  <Entry name="UA" value="Units Completed"/>
+  <Entry name="UB" value="Poultry"/>
+  <Entry name="UC" value="Livestock"/>
+  <Entry name="UD" value="Passengers"/>
+  <Entry name="UE" value="Trainers"/>
+  <Entry name="UF" value="Operators"/>
+  <Entry name="UG" value="Gas Used on Property"/>
+  <Entry name="UH" value="Inspectors"/>
+  <Entry name="UI" value="Collectors"/>
+  <Entry name="UJ" value="Professionals"/>
+  <Entry name="UK" value="Supervisors"/>
+  <Entry name="UL" value="Approximate Number of Units for Sale Projected"/>
+  <Entry name="UM" value="Administrators"/>
+  <Entry name="UN" value="Promoters"/>
+  <Entry name="UO" value="Oil Condensate Used on Property"/>
+  <Entry name="UP" value="Divisions"/>
+  <Entry name="UQ" value="Tables"/>
+  <Entry name="UR" value="Fuel Pumps"/>
+  <Entry name="US" value="In-Use"/>
+  <Entry name="UT" value="Machines"/>
+  <Entry name="UU" value="Used"/>
+  <Entry name="UV" value="Trademarks Used"/>
+  <Entry name="UW" value="Available for Cultivation"/>
+  <Entry name="UX" value="Foremen"/>
+  <Entry name="UY" value="Travelling Employees"/>
+  <Entry name="UZ" value="Freelance Salespersons"/>
+  <Entry name="V1" value="Retention Quantity"/>
+  <Entry name="V2" value="Available Quantity"/>
+  <Entry name="V3" value="Transfer Quantity"/>
+  <Entry name="V4" value="Surveys in Average Rating"/>
+  <Entry name="V5" value="Vacancies"/>
+  <Entry name="VA" value="Volume Shrinkage Adjustment or Allowance"/>
+  <Entry name="VB" value="Blank Votes"/>
+  <Entry name="VC" value="Cumulative Earned Value"/>
+  <Entry name="VD" value="Scattered Votes"/>
+  <Entry name="VE" value="Earned Value"/>
+  <Entry name="VF" value="Federal Votes"/>
+  <Entry name="VG" value="Gas Vented"/>
+  <Entry name="VH" value="Schedule Variance"/>
+  <Entry name="VI" value="Cumulative Schedule Variance"/>
+  <Entry name="VJ" value="Cumulative Variance"/>
+  <Entry name="VK" value="Estimate at Complete"/>
+  <Entry name="VL" value="At Complete Variance"/>
+  <Entry name="VM" value="Variance Adjustment"/>
+  <Entry name="VN" value="No Votes"/>
+  <Entry name="VP" value="Presidential Votes"/>
+  <Entry name="VR" value="Variance"/>
+  <Entry name="VS" value="Visits"/>
+  <Entry name="VT" value="Votes"/>
+  <Entry name="VV" value="Void Votes"/>
+  <Entry name="VY" value="Yes Votes"/>
+  <Entry name="W0" value="Bankruptcy Petitions"/>
+  <Entry name="W1" value="Buyers"/>
+  <Entry name="W2" value="Debentures"/>
+  <Entry name="W3" value="Debentures Filed against Directors"/>
+  <Entry name="W4" value="Detrimental Legal Filings against Directors"/>
+  <Entry name="W5" value="Failed Businesses of Directors"/>
+  <Entry name="W6" value="Professors"/>
+  <Entry name="W7" value="Sellers"/>
+  <Entry name="W8" value="Skilled Workers"/>
+  <Entry name="W9" value="Trademarks Represented"/>
+  <Entry name="WA" value="Total number of Workers' Compensation First Reports"/>
+  <Entry name="WB" value="Total number of Workers' Compensation Subsequent Reports"/>
+  <Entry name="WC" value="Total number of Workers' Compensation Combined Reports"/>
+  <Entry name="WD" value="Units Worked per Day"/>
+  <Entry name="WE" value="Limited Quantity"/>
+  <Entry name="WG" value="Weight Gain"/>
+  <Entry name="WL" value="Weight Loss"/>
+  <Entry name="WO" value="Operator's Working Interest"/>
+  <Entry name="WP" value="Number of Producing Wells Remaining on Property or Facility"/>
+  <Entry name="WR" value="Number of Producing Wells Remaining on Royalty Account"/>
+  <Entry name="WT" value="Total Working Interest"/>
+  <Entry name="WV" value="Water Volume"/>
+  <Entry name="WW" value="Weeks Worked"/>
+  <Entry name="WX" value="License Withdrawal Duration"/>
+  <Entry name="WY" value="License Withdrawals Sent"/>
+  <Entry name="X1" value="Producing Wells"/>
+  <Entry name="X6" value="Assessment Hours"/>
+  <Entry name="X7" value="Duty Days"/>
+  <Entry name="X8" value="Contract Days"/>
+  <Entry name="X9" value="Number of Days Employed"/>
+  <Entry name="XA" value="Total of Issuable Assets"/>
+  <Entry name="XB" value="Total System Backorder Quantity, High Priority"/>
+  <Entry name="XC" value="Total Service Backorder Quantity, High Priority"/>
+  <Entry name="XD" value="Total System Backorder Quantity, Low Priority"/>
+  <Entry name="XE" value="Total Service Backorder Quantity, Low Priority"/>
+  <Entry name="XG" value="On Hand and Due-In"/>
+  <Entry name="XI" value="Installment Payments"/>
+  <Entry name="XJ" value="Other War Reserve Material Requirements Protectable (OWRMRP) Quantity"/>
+  <Entry name="XL" value="Approximate Number of Units Projected"/>
+  <Entry name="XN" value="Approximate Number of Holders"/>
+  <Entry name="XO" value="Circulating Oil"/>
+  <Entry name="XT" value="Protected Quantity"/>
+  <Entry name="XU" value="Reserved"/>
+  <Entry name="XV" value="Requisitioning Objective"/>
+  <Entry name="XX" value="Authorized Retention Level"/>
+  <Entry name="XY" value="Safety Level"/>
+  <Entry name="XZ" value="Backorder Lines"/>
+  <Entry name="Y1" value="Number of Lost Cards"/>
+  <Entry name="Y2" value="Number of Stolen Cards"/>
+  <Entry name="Y3" value="Number of Cards not Received"/>
+  <Entry name="Y4" value="Number of Active Accounts This Cycle"/>
+  <Entry name="Y5" value="Number of Open Accounts"/>
+  <Entry name="Y6" value="Number of Accounts Past Due"/>
+  <Entry name="Y7" value="Number of Cards Outstanding"/>
+  <Entry name="YA" value="Total Demand Quantity"/>
+  <Entry name="YB" value="Total Demand Orders"/>
+  <Entry name="YC" value="First Quarter Recurring Demand"/>
+  <Entry name="YD" value="First Quarter Recurring Orders"/>
+  <Entry name="YE" value="First Quarter Non-recurring Demand"/>
+  <Entry name="YF" value="First Quarter Non-recurring Orders"/>
+  <Entry name="YG" value="Second Quarter Recurring Demand"/>
+  <Entry name="YH" value="Second Quarter Recurring Orders"/>
+  <Entry name="YJ" value="Second Quarter Non-recurring Demand"/>
+  <Entry name="YK" value="Second Quarter Non-recurring Orders"/>
+  <Entry name="YL" value="Third Quarter Recurring Demand"/>
+  <Entry name="YM" value="Third Quarter Recurring Orders"/>
+  <Entry name="YN" value="Third Quarter Non-recurring Demand"/>
+  <Entry name="YP" value="Third Quarter Non-recurring Orders"/>
+  <Entry name="YQ" value="Fourth Quarter Recurring Demand"/>
+  <Entry name="YR" value="Fourth Quarter Recurring Orders"/>
+  <Entry name="YS" value="Fourth Quarter Non-recurring Demand"/>
+  <Entry name="YT" value="Fourth Quarter Non-recurring Orders"/>
+  <Entry name="YU" value="Trailers"/>
+  <Entry name="YW" value="Reorder Point Quantity"/>
+  <Entry name="YX" value="Contract Line Item Quantity"/>
+  <Entry name="YY" value="Years"/>
+  <Entry name="Z1" value="Units Worked Last Day"/>
+  <Entry name="Z2" value="Units Worked per Week"/>
+  <Entry name="Z3" value="Units Worked per Quarter"/>
+  <Entry name="Z4" value="Number Weeks Paid"/>
+  <Entry name="Z6" value="Unused Accumulated Sick Days"/>
+  <Entry name="ZA" value="Federal Medicare or Medicaid Claim Mandate - Category 1"/>
+  <Entry name="ZB" value="Federal Medicare or Medicaid Claim Mandate - Category 2"/>
+  <Entry name="ZC" value="Federal Medicare or Medicaid Claim Mandate - Category 3"/>
+  <Entry name="ZD" value="Federal Medicare or Medicaid Claim Mandate - Category 4"/>
+  <Entry name="ZE" value="Federal Medicare or Medicaid Claim Mandate - Category 5"/>
+  <Entry name="ZF" value="Federal Pension Mandate - Category 1"/>
+  <Entry name="ZG" value="Federal Pension Mandate - Category 2"/>
+  <Entry name="ZH" value="Federal Pension Mandate - Category 3"/>
+  <Entry name="ZI" value="Holding Period"/>
+  <Entry name="ZJ" value="Federal Pension Mandate - Category 5"/>
+  <Entry name="ZK" value="Federal Medicare or Medicaid Payment Mandate - Category 1"/>
+  <Entry name="ZL" value="Federal Medicare or Medicaid Payment Mandate - Category 2"/>
+  <Entry name="ZM" value="Federal Medicare or Medicaid Payment Mandate - Category 3"/>
+  <Entry name="ZN" value="Federal Medicare or Medicaid Payment Mandate - Category 4"/>
+  <Entry name="ZO" value="Federal Medicare or Medicaid Payment Mandate - Category 5"/>
+  <Entry name="ZP" value="Federal Pension Mandate - Category 4"/>
+  <Entry name="ZQ" value="Shares Added"/>
+  <Entry name="ZR" value="Extended Term"/>
+  <Entry name="ZS" value="Amortization Term"/>
+  <Entry name="ZT" value="Beginning Shares"/>
+  <Entry name="ZU" value="Shares Deleted"/>
+  <Entry name="ZV" value="Quantity of Dealer License Plates"/>
+  <Entry name="ZW" value="Current Share Balance"/>
+  <Entry name="ZX" value="Size of Household"/>
+  <Entry name="ZY" value="Project Units Sold"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,53 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T23.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T23">
+  <Entry name="0" value="National Association of Convenience Stores"/>
+  <Entry name="2" value="Dun's SIC 2+2, Dun &amp; Bradstreet"/>
+  <Entry name="3" value="Empty Non-hazardous Last Contained (HMRC) Code"/>
+  <Entry name="4" value="Chemical Abstract Service Registry Number"/>
+  <Entry name="A" value="Harmonized Tariff Schedule of the United States Annotated"/>
+  <Entry name="B" value="U.S. Foreign Trade Schedule B, Statistical Classification of Domestic and Foreign Commodities Exported from the United States"/>
+  <Entry name="C" value="Canadian Freight Classification"/>
+  <Entry name="D" value="Department of Defense Unique Codes"/>
+  <Entry name="E" value="Coordinated Motor Freight Classification"/>
+  <Entry name="F" value="National Stock Number"/>
+  <Entry name="G" value="Canadian Wheat Board, Grain Code for Terminal Elevator Accounting"/>
+  <Entry name="H" value="Brussels Nomenclature"/>
+  <Entry name="I" value="Milstamp AITC or Water Commodity Code"/>
+  <Entry name="J" value="Harmonized System-Based Schedule B"/>
+  <Entry name="K" value="Federal Supply Classification"/>
+  <Entry name="L" value="Last Contained Contents STCC"/>
+  <Entry name="M" value="Dun &amp; Bradstreet Standard Product and Service Code"/>
+  <Entry name="N" value="National Motor Freight Classification (NMFC)"/>
+  <Entry name="P" value="Bulk Petroleum Codes"/>
+  <Entry name="Q" value="Quota Category"/>
+  <Entry name="S" value="Standard International Trade Classification (SITC)"/>
+  <Entry name="T" value="Standard Transportation Commodity Code (STCC)"/>
+  <Entry name="U" value="Uniform Freight Classification (UFC)"/>
+  <Entry name="V" value="Standard Industrial Classification (SIC) Code"/>
+  <Entry name="W" value="Department of Defense Commodities and Services Code"/>
+  <Entry name="Z" value="Mutually defined"/>
+</Table>

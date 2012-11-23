@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1181.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1181">
+  <Entry name="01" value="Consumable"/>
+  <Entry name="02" value="Recurring"/>
+  <Entry name="03" value="One of"/>
+  <Entry name="EA" value="Travel and Living Expenses, Actual"/>
+  <Entry name="EF" value="Equipment Founded"/>
+  <Entry name="EP" value="Travel and Living Expenses, Per Diem"/>
+  <Entry name="EU" value="Equipment Unfounded"/>
+  <Entry name="FR" value="Flat Rate"/>
+  <Entry name="LA" value="Labor"/>
+  <Entry name="LD" value="Labor Double Time"/>
+  <Entry name="LE" value="Lease"/>
+  <Entry name="LO" value="Labor Overtime (Time and a Half)"/>
+  <Entry name="LP" value="Labor Premium"/>
+  <Entry name="LS" value="Labor Straight Time"/>
+  <Entry name="MA" value="Material"/>
+  <Entry name="MC" value="Material, Consumable"/>
+  <Entry name="MN" value="Material, Nonconsumable"/>
+  <Entry name="OT" value="Other"/>
+  <Entry name="SC" value="Subcontract"/>
+</Table>

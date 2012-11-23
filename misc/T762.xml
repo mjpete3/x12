@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T762.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T762">
+  <Entry name="A" value="Full Waybill"/>
+  <Entry name="B" value="Trailing Car Waybill"/>
+  <Entry name="C" value="Concur"/>
+  <Entry name="D" value="Revenue Data Not Available"/>
+  <Entry name="E" value="Road Not Entitled to Data"/>
+  <Entry name="H" value="No Record of Haulage"/>
+  <Entry name="K" value="Processed Waybill"/>
+  <Entry name="M" value="Already Mailed"/>
+  <Entry name="N" value="No Record of Waybill"/>
+  <Entry name="O" value="Non-Concurrence, New Opinion"/>
+  <Entry name="R" value="Rule 11 Shipment"/>
+  <Entry name="S" value="Waybill Already Settled"/>
+  <Entry name="T" value="Destination Road Transition Waybill"/>
+  <Entry name="U" value="Other than Destination Road Transition Waybill"/>
+  <Entry name="W" value="Nonrevenue Waybill"/>
+</Table>

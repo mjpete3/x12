@@ -1,0 +1,86 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T246.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T246">
+  <Entry name="01" value="Shipper's Load and Count"/>
+  <Entry name="02" value="Shipper's Load, Stowage and Count"/>
+  <Entry name="03" value="Laden on Board"/>
+  <Entry name="04" value="Laden on Board Vessel"/>
+  <Entry name="05" value="Vessel Not Responsible for Freezing"/>
+  <Entry name="06" value="Container(s) Sealed by Shipper"/>
+  <Entry name="07" value="On Deck at Shipper's Risk"/>
+  <Entry name="08" value="Short-Shipped"/>
+  <Entry name="09" value="Sea Waybill"/>
+  <Entry name="10" value="This Shipment is Effected under a Sea Waybill"/>
+  <Entry name="11" value="Memo Bill of Lading Only"/>
+  <Entry name="12" value="Refrigerated Cargo"/>
+  <Entry name="13" value="Cool Cargo"/>
+  <Entry name="14" value="Freeze Cargo"/>
+  <Entry name="15" value="Inland Transportation Arranged as Agents Only with such Arranged Transportation Being Solely for Account and Risk of Cargo"/>
+  <Entry name="16" value="Sea-Air Cargo"/>
+  <Entry name="17" value="Freight Prepaid"/>
+  <Entry name="18" value="Freight Collect"/>
+  <Entry name="19" value="Freight as Agreed"/>
+  <Entry name="20" value="No Shipper's Export Declaration Required (Section 30.39)"/>
+  <Entry name="21" value="Carrier Reserves the Right to Place Container(s) in Heated Warehouse at a Set Cost"/>
+  <Entry name="22" value="On Board Rail"/>
+  <Entry name="23" value="On Board Truck"/>
+  <Entry name="24" value="On Board Vessel"/>
+  <Entry name="25" value="Received For Shipment"/>
+  <Entry name="26" value="On Board Container"/>
+  <Entry name="27" value="On Board Airplane"/>
+  <Entry name="28" value="On Board Boxcar"/>
+  <Entry name="29" value="Emergency Response Statement"/>
+  <Entry name="30" value="International Maritime Organization Certification"/>
+  <Entry name="31" value="Statement of Correctness"/>
+  <Entry name="32" value="Destination Control Statements"/>
+  <Entry name="33" value="Producing Country of Origin"/>
+  <Entry name="34" value="Laden on Board Named Vessel"/>
+  <Entry name="35" value="Age of Vessel"/>
+  <Entry name="36" value="Kosher"/>
+  <Entry name="37" value="Route"/>
+  <Entry name="38" value="Certification Statements"/>
+  <Entry name="39" value="Destination Country"/>
+  <Entry name="40" value="Title Passage Clause"/>
+  <Entry name="41" value="Container Safety Act"/>
+  <Entry name="42" value="Substantial Transformation"/>
+  <Entry name="43" value="Canada Value Added"/>
+  <Entry name="44" value="Mexican Value Added"/>
+  <Entry name="45" value="General Agreement on Tariff and Trade (GATT)"/>
+  <Entry name="46" value="Prior Damage Remarks"/>
+  <Entry name="AM" value="Administrative"/>
+  <Entry name="CB" value="Caribbean Basin Initiative (CBI)"/>
+  <Entry name="CC" value="Custom"/>
+  <Entry name="CP" value="Container Packing Certificate"/>
+  <Entry name="DC" value="Disclaimer"/>
+  <Entry name="DV" value="Delivery Order Liability Clause"/>
+  <Entry name="EE" value="Estimate Error"/>
+  <Entry name="ER" value="Estimate Remarks"/>
+  <Entry name="GS" value="General System of Preferences (GSP)"/>
+  <Entry name="HD" value="Heading"/>
+  <Entry name="HN" value="Hidden"/>
+  <Entry name="IS" value="Israeli Free Trade Agreement"/>
+  <Entry name="NF" value="North American Free Trade Agreement (NAFTA)"/>
+</Table>

@@ -1,0 +1,76 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1083.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1083">
+  <Entry name="01" value="Cash-Borrowed"/>
+  <Entry name="02" value="Cash"/>
+  <Entry name="03" value="Equity from Pending Sale of Property"/>
+  <Entry name="04" value="Cash-Gift"/>
+  <Entry name="05" value="Non-Cash"/>
+  <Entry name="06" value="Sweat Equity"/>
+  <Entry name="07" value="Trade Equity"/>
+  <Entry name="09" value="Secondary Financing Secured by Same Property"/>
+  <Entry name="10" value="Lot Equity"/>
+  <Entry name="11" value="Lease Payments"/>
+  <Entry name="12" value="Pledged Collateral"/>
+  <Entry name="14" value="Sale of Chattel"/>
+  <Entry name="27" value="Grant"/>
+  <Entry name="28" value="Proceeds of Loan Fully Secured by Borrower's Own Assets"/>
+  <Entry name="29" value="Grant From Non-Profit Organization"/>
+  <Entry name="30" value="Grant From Federal Government"/>
+  <Entry name="31" value="Grant From State Government Organization"/>
+  <Entry name="32" value="Grant From Local Government"/>
+  <Entry name="33" value="Grant From Employer"/>
+  <Entry name="35" value="Unsecured Loan"/>
+  <Entry name="43" value="Not Applicable"/>
+  <Entry name="44" value="Premium Pricing"/>
+  <Entry name="45" value="Closed End Second Mortgage"/>
+  <Entry name="46" value="Seller Take Back"/>
+  <Entry name="47" value="Affordable Second Mortgage"/>
+  <Entry name="48" value="Home Equity Line of Credit"/>
+  <Entry name="49" value="Gift of Equity"/>
+  <Entry name="50" value="Mortgage Insurance Premium or Veteran Administration Funding Fee Refund"/>
+  <Entry name="51" value="Commitment or Origination Fee"/>
+  <Entry name="52" value="Buydown Funds"/>
+  <Entry name="53" value="Closing Costs"/>
+  <Entry name="54" value="Discount Points"/>
+  <Entry name="55" value="Relocation Funds"/>
+  <Entry name="56" value="Employer Assisted Housing"/>
+  <Entry name="57" value="Lease Purchase Funds"/>
+  <Entry name="58" value="Other"/>
+  <Entry name="59" value="Savings"/>
+  <Entry name="60" value="Equity on Sold Property"/>
+  <Entry name="61" value="Equity from Subject Property"/>
+  <Entry name="62" value="Certificate of Deposit"/>
+  <Entry name="63" value="Financial Arrangement"/>
+  <Entry name="64" value="Stocks and Bonds"/>
+  <Entry name="65" value="Equity from Pending Home Sale"/>
+  <Entry name="66" value="Trust Funds"/>
+  <Entry name="67" value="Retirement Funds"/>
+  <Entry name="68" value="Life Insurance"/>
+  <Entry name="69" value="Secured Borrowed Funds"/>
+  <Entry name="70" value="Earnest Money"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

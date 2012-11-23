@@ -1,0 +1,508 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T426.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T426">
+  <Entry name="00" value="Automated Credit Card Transaction"/>
+  <Entry name="01" value="Pricing Error"/>
+  <Entry name="02" value="Allowance/Charge Error"/>
+  <Entry name="03" value="Extension Error"/>
+  <Entry name="04" value="Item Not Accepted - Damaged"/>
+  <Entry name="05" value="Item Not Accepted - Quality"/>
+  <Entry name="06" value="Quantity Contested"/>
+  <Entry name="07" value="Incorrect Product"/>
+  <Entry name="08" value="Substitute Product"/>
+  <Entry name="09" value="Terms of Sale Error"/>
+  <Entry name="10" value="Pallet/Container Charge Error"/>
+  <Entry name="11" value="Returns - Damage"/>
+  <Entry name="12" value="Returns - Quality"/>
+  <Entry name="13" value="Returns - Dating"/>
+  <Entry name="14" value="Returns - Promotion"/>
+  <Entry name="15" value="Returns - Recall"/>
+  <Entry name="16" value="Non-Invoice Related Allowance/Charge"/>
+  <Entry name="17" value="Required Data Missing"/>
+  <Entry name="18" value="Not Company Bill"/>
+  <Entry name="19" value="Duplicate Billing"/>
+  <Entry name="20" value="Balance Due Declined"/>
+  <Entry name="21" value="Shipment Method of Payment Incorrect"/>
+  <Entry name="22" value="Weight Error"/>
+  <Entry name="23" value="Special Charge Not Authorized"/>
+  <Entry name="24" value="Incorrect Discount"/>
+  <Entry name="25" value="Item Not Accepted"/>
+  <Entry name="26" value="Invoice Cancelled"/>
+  <Entry name="27" value="Product Transfers Subject to Charge Back"/>
+  <Entry name="28" value="Rebated Shipments"/>
+  <Entry name="29" value="Fee Incorrect"/>
+  <Entry name="30" value="Delivery Charge Incorrect"/>
+  <Entry name="31" value="Pickup Charge Incorrect"/>
+  <Entry name="32" value="Oversize Premium Invalid"/>
+  <Entry name="33" value="Currency Exchange Incorrect"/>
+  <Entry name="34" value="Declared Value Incorrect"/>
+  <Entry name="35" value="Commodity Code Incorrect"/>
+  <Entry name="36" value="Scale Number Incorrect"/>
+  <Entry name="37" value="Dimensions Incorrect"/>
+  <Entry name="38" value="Service Incorrect"/>
+  <Entry name="39" value="Shipper/Consignee Ref. Number Missing"/>
+  <Entry name="40" value="Address Incorrect"/>
+  <Entry name="41" value="Item Not Accepted-Delay"/>
+  <Entry name="42" value="Item Not Accepted - Loss"/>
+  <Entry name="43" value="Missing Discount"/>
+  <Entry name="44" value="Required Documents Missing"/>
+  <Entry name="45" value="Stale Bill Over 180 Days Old"/>
+  <Entry name="46" value="Transportation Charge Incorrect"/>
+  <Entry name="47" value="Advanced Charge Incorrect"/>
+  <Entry name="48" value="Service Charge"/>
+  <Entry name="49" value="Processing Charge"/>
+  <Entry name="50" value="Late Charge"/>
+  <Entry name="51" value="Interest Penalty Charge"/>
+  <Entry name="52" value="Credit for Overpayment"/>
+  <Entry name="53" value="Remittance for Previous Underpayment"/>
+  <Entry name="54" value="Freight Deducted"/>
+  <Entry name="55" value="Tax Deducted"/>
+  <Entry name="56" value="Advertising Allowance Taken"/>
+  <Entry name="57" value="Volume Discount Taken"/>
+  <Entry name="58" value="Invoice billing received after final billing"/>
+  <Entry name="59" value="Item not received"/>
+  <Entry name="60" value="No open item on file"/>
+  <Entry name="61" value="No open order on file"/>
+  <Entry name="62" value="Material/Item Description Error"/>
+  <Entry name="63" value="Customer Paid Invoice Which Was Previously Disputed"/>
+  <Entry name="64" value="Sale of Property"/>
+  <Entry name="65" value="Claim Paid on Appraisal"/>
+  <Entry name="66" value="Disability Insurance or Income"/>
+  <Entry name="68" value="Death Benefit Reduction"/>
+  <Entry name="69" value="Employer Provided Pension"/>
+  <Entry name="70" value="Advanced Ship Notice Not Received"/>
+  <Entry name="71" value="Advertising Allowance"/>
+  <Entry name="72" value="Authorized Return"/>
+  <Entry name="73" value="Bill of Lading Not Received"/>
+  <Entry name="74" value="Cancel or Adjust Prior Credit/Debit Adjustment"/>
+  <Entry name="75" value="Total Order Not Received"/>
+  <Entry name="76" value="Cash Discount"/>
+  <Entry name="77" value="Competitive Allowance"/>
+  <Entry name="78" value="Competitive Price"/>
+  <Entry name="79" value="Cooperative Advertising"/>
+  <Entry name="80" value="Overpayment"/>
+  <Entry name="81" value="Credit as Agreed"/>
+  <Entry name="82" value="Defective Allowance"/>
+  <Entry name="83" value="Evaluated Receipt Settlement (ERS) Delivery Charge"/>
+  <Entry name="84" value="Deviation from Order Date"/>
+  <Entry name="85" value="Distribution Discount/Allowance"/>
+  <Entry name="86" value="Duplicate Payment"/>
+  <Entry name="87" value="Duplicate Shipment"/>
+  <Entry name="88" value="Duty Charge Variance"/>
+  <Entry name="89" value="Early Buy Allowance"/>
+  <Entry name="90" value="Early Payment Allowance"/>
+  <Entry name="91" value="Engraving Charge"/>
+  <Entry name="92" value="Merchandise Not Ordered"/>
+  <Entry name="93" value="Field Destroy"/>
+  <Entry name="94" value="Fixtures Charge"/>
+  <Entry name="95" value="Floor Stock Protection"/>
+  <Entry name="96" value="Goods to Follow"/>
+  <Entry name="97" value="Handling Charge"/>
+  <Entry name="98" value="Labor Charges"/>
+  <Entry name="99" value="Late Shipment of Goods"/>
+  <Entry name="A1" value="Layout/Design Charge"/>
+  <Entry name="A2" value="Misshipped (Wrong Product Received)"/>
+  <Entry name="A3" value="New Store Allowance"/>
+  <Entry name="A4" value="Nonreceipt of Goods"/>
+  <Entry name="A5" value="Overage"/>
+  <Entry name="A6" value="Packing Violations"/>
+  <Entry name="A7" value="Payment on Account"/>
+  <Entry name="A8" value="Promotional Allowance"/>
+  <Entry name="A9" value="Proof of Delivery Not Received"/>
+  <Entry name="AA" value="Prepaid Benefit or Advances"/>
+  <Entry name="AB" value="Partial Wage Continuation"/>
+  <Entry name="AC" value="Apportionment or Contribution"/>
+  <Entry name="AD" value="Non-Automated Credit Card Transaction"/>
+  <Entry name="AE" value="Unemployment Compensation"/>
+  <Entry name="AF" value="Guarantee Fee"/>
+  <Entry name="AG" value="Guaranteed Amount"/>
+  <Entry name="AH" value="Origination Fee"/>
+  <Entry name="AL" value="Released to Borrower"/>
+  <Entry name="AM" value="Applied to Borrower's Account"/>
+  <Entry name="AN" value="Auto No Fault"/>
+  <Entry name="AO" value="Returned to Lender"/>
+  <Entry name="AP" value="Acceleration of Benefits"/>
+  <Entry name="AQ" value="Returns - Overstock"/>
+  <Entry name="AR" value="Acceleration of Reimbursement of Attorney Fees"/>
+  <Entry name="AS" value="Returns - Discontinued"/>
+  <Entry name="AT" value="Account Location Closed"/>
+  <Entry name="AU" value="Accessory Payment"/>
+  <Entry name="AV" value="Advertising Contribution"/>
+  <Entry name="AW" value="Student Card Payment"/>
+  <Entry name="AX" value="Person No Longer Employed"/>
+  <Entry name="AY" value="Employee on Leave"/>
+  <Entry name="AZ" value="Employee on Strike"/>
+  <Entry name="B1" value="Proof of Shipment Not Received"/>
+  <Entry name="B2" value="Rebate"/>
+  <Entry name="B3" value="Recovery Allowance"/>
+  <Entry name="B4" value="Refurbishing Charge"/>
+  <Entry name="B5" value="Repair of Goods"/>
+  <Entry name="B6" value="Repay Discount"/>
+  <Entry name="B7" value="Restocking Charge"/>
+  <Entry name="B8" value="Routing Violation"/>
+  <Entry name="B9" value="Samples Not Received"/>
+  <Entry name="BA" value="Canadian Goods and Services Tax"/>
+  <Entry name="BB" value="Quebec Goods and Services Tax"/>
+  <Entry name="BC" value="Canadian Harmonized Goods and Services Tax"/>
+  <Entry name="BD" value="Bad Debt Adjustment"/>
+  <Entry name="BE" value="Fixture Allowance"/>
+  <Entry name="BF" value="Return Allowance"/>
+  <Entry name="BG" value="Bag Charge"/>
+  <Entry name="BH" value="Opportunity Buy"/>
+  <Entry name="BI" value="Hanger Charge"/>
+  <Entry name="BJ" value="Insurance Charge"/>
+  <Entry name="BK" value="Postage Charge"/>
+  <Entry name="BL" value="Net Check Returned"/>
+  <Entry name="BM" value="Net Collection Expense (Factor)"/>
+  <Entry name="BN" value="Bonus"/>
+  <Entry name="BO" value="Change to Box Office Gross"/>
+  <Entry name="BP" value="Net Chargeback of Client Risk (Factor)"/>
+  <Entry name="BR" value="Benefit Rate"/>
+  <Entry name="BS" value="Paid During Period"/>
+  <Entry name="C1" value="Settlement of Account"/>
+  <Entry name="C2" value="Special Allowance"/>
+  <Entry name="C3" value="Special Finish"/>
+  <Entry name="C4" value="Stock Balance"/>
+  <Entry name="C5" value="Temporary Allowance"/>
+  <Entry name="C6" value="Testing Charge"/>
+  <Entry name="C7" value="Third Party Allowance"/>
+  <Entry name="C8" value="Ticketing Error"/>
+  <Entry name="C9" value="Ticketing Service"/>
+  <Entry name="CA" value="Cancelled Promotion"/>
+  <Entry name="CB" value="Collected Balance Adjustment Incorrect"/>
+  <Entry name="CE" value="Employer's Legal Expenses Paid to Date"/>
+  <Entry name="CK" value="Valuation As Of"/>
+  <Entry name="CM" value="Covered by Credit Memo"/>
+  <Entry name="CO" value="Adjusted Compensation Rate"/>
+  <Entry name="CP" value="Employer Paid Benefits due"/>
+  <Entry name="CQ" value="Change"/>
+  <Entry name="CR" value="Capitation Interest"/>
+  <Entry name="CS" value="Adjustment"/>
+  <Entry name="CT" value="Capitation Payment"/>
+  <Entry name="CU" value="Charge for Unrequested Service"/>
+  <Entry name="CV" value="Capital Passthru"/>
+  <Entry name="CW" value="Certified Registered Nurse Anesthetist Passthru"/>
+  <Entry name="D1" value="Transfer Between Accounts"/>
+  <Entry name="D2" value="Transportation Direct Billing"/>
+  <Entry name="D3" value="Unauthorized Deduction"/>
+  <Entry name="D4" value="Unauthorized Product"/>
+  <Entry name="D5" value="Volume Discount"/>
+  <Entry name="D6" value="Recovery of Standard Allowances"/>
+  <Entry name="D7" value="Cost Associated with Reworked Material"/>
+  <Entry name="D8" value="Count and Recount Allowance"/>
+  <Entry name="D9" value="Store Stock Price Protection"/>
+  <Entry name="DA" value="Daylight Overdraft Charge Reversed"/>
+  <Entry name="DB" value="Pension or Retirement Plan Disability Benefits"/>
+  <Entry name="DC" value="Canadian Pension Plan"/>
+  <Entry name="DD" value="Railroad Disability"/>
+  <Entry name="DE" value="Deposited Item Price Incorrect"/>
+  <Entry name="DF" value="Family Social Security"/>
+  <Entry name="DG" value="Deduction Film Rental"/>
+  <Entry name="DH" value="District Advance"/>
+  <Entry name="DI" value="Social Security Supplemental Income"/>
+  <Entry name="DJ" value="Jones Act (Merchant Seaman Injured on the Job)"/>
+  <Entry name="DK" value="Damaged Film"/>
+  <Entry name="DL" value="Deposited Item Volume Error"/>
+  <Entry name="DM" value="Direct Medical Education Passthru"/>
+  <Entry name="DO" value="Other Group Insurance"/>
+  <Entry name="DP" value="Pension or Retirement Benefits"/>
+  <Entry name="DR" value="Social Security Retirements"/>
+  <Entry name="DS" value="Social Security Disability"/>
+  <Entry name="DT" value="Railroad Retirement"/>
+  <Entry name="DU" value="Discontinued Product"/>
+  <Entry name="DV" value="Civil Servants Plan"/>
+  <Entry name="DW" value="Subrogation"/>
+  <Entry name="DX" value="Royalty Deduction Type"/>
+  <Entry name="DY" value="Distribution Issue"/>
+  <Entry name="E1" value="Recoupment"/>
+  <Entry name="E2" value="Covered By Debit Memo"/>
+  <Entry name="E3" value="Withholding"/>
+  <Entry name="E4" value="Warehouse Stock Price Protection"/>
+  <Entry name="E5" value="Invoice Price Protection"/>
+  <Entry name="E6" value="Goods and Services Tax 0% Rate, International Documentation Will Follow"/>
+  <Entry name="E7" value="Goods and Services Tax Decreased Due to Billing Error"/>
+  <Entry name="E8" value="Goods and Services Tax Increased Due to Billing Error"/>
+  <Entry name="E9" value="Order Cancelled"/>
+  <Entry name="EE" value="Encoding Error"/>
+  <Entry name="EP" value="Expanded Promotion"/>
+  <Entry name="ER" value="Employer Reimbursement"/>
+  <Entry name="EX" value="Expenses"/>
+  <Entry name="F1" value="Defective"/>
+  <Entry name="F3" value="Social Security"/>
+  <Entry name="F4" value="No-Fault"/>
+  <Entry name="F5" value="Other Long-term Disability Offset"/>
+  <Entry name="F6" value="Indirect Offset Excess"/>
+  <Entry name="F7" value="Black Lung Disease"/>
+  <Entry name="F8" value="Rehabilitation"/>
+  <Entry name="F9" value="Educational Benefit"/>
+  <Entry name="FA" value="Anticipation Taken"/>
+  <Entry name="FB" value="Forwarding Balance"/>
+  <Entry name="FC" value="Fund Allocation"/>
+  <Entry name="FI" value="Late Interest Paid"/>
+  <Entry name="FR" value="Film Rental"/>
+  <Entry name="FT" value="Change to Film Rental Terms"/>
+  <Entry name="FU" value="Forward Buy"/>
+  <Entry name="G1" value="Profit Sharing"/>
+  <Entry name="G2" value="Workmen's Compensation"/>
+  <Entry name="G3" value="Pension"/>
+  <Entry name="G4" value="Other Disability Plan"/>
+  <Entry name="G5" value="Other Income"/>
+  <Entry name="G6" value="Salary Continuance"/>
+  <Entry name="G7" value="Short-term Disability"/>
+  <Entry name="G8" value="Permanent and Total Disability"/>
+  <Entry name="G9" value="State Disability Plan"/>
+  <Entry name="GA" value="Free Goods"/>
+  <Entry name="GB" value="Coupon Related"/>
+  <Entry name="GC" value="Market Development Fund Deduction"/>
+  <Entry name="GD" value="Samples"/>
+  <Entry name="GE" value="Slotting Charge"/>
+  <Entry name="GF" value="Invalid"/>
+  <Entry name="GG" value="Unsalable Merchandise"/>
+  <Entry name="GH" value="Billback Allowance Deduction"/>
+  <Entry name="GJ" value="Unsalable Payments Deduction"/>
+  <Entry name="GK" value="Split Commission Deduction - Basis Amount"/>
+  <Entry name="GL" value="Unresolved Customer Deduction"/>
+  <Entry name="GM" value="Split Commissions Deduction - Commission Amount"/>
+  <Entry name="GN" value="General Advance"/>
+  <Entry name="GO" value="Graduate Medical Education Passthru"/>
+  <Entry name="GR" value="Guarantee"/>
+  <Entry name="H1" value="Information Forthcoming"/>
+  <Entry name="H2" value="Payment Previously Sent"/>
+  <Entry name="H3" value="Loan Paid in Full"/>
+  <Entry name="H4" value="Bill Insured"/>
+  <Entry name="H5" value="Loan Service Released"/>
+  <Entry name="H6" value="Partial Payment Remitted"/>
+  <Entry name="H7" value="Payment Forthcoming"/>
+  <Entry name="H8" value="Bill Mortgagee"/>
+  <Entry name="H9" value="Coverage Summary Needed"/>
+  <Entry name="HA" value="Change to House Allowance"/>
+  <Entry name="HB" value="Medical Payment"/>
+  <Entry name="HC" value="Indemnity Payment"/>
+  <Entry name="HD" value="Expense Payment"/>
+  <Entry name="HE" value="Comprehensive Payment"/>
+  <Entry name="HF" value="Collision Payment"/>
+  <Entry name="HG" value="Bodily Injury Payment"/>
+  <Entry name="HI" value="Property Damage Payment"/>
+  <Entry name="HM" value="Hemophilia Clotting Factor Supplement"/>
+  <Entry name="IA" value="Invoice Amount Does Not Match Account Analysis Statement"/>
+  <Entry name="IC" value="Interest Charge-Rate Reduced to New York Prime Rate"/>
+  <Entry name="IE" value="Interest Charge - Rate Reduced to Earnings Credit Rate"/>
+  <Entry name="IF" value="Insufficient Funds"/>
+  <Entry name="IL" value="Interest Charge-Rate Reduced to London Inter-bank Offer Rate (LIBOR)"/>
+  <Entry name="IN" value="Inventory Policy"/>
+  <Entry name="IP" value="Incentive Premium Payment"/>
+  <Entry name="IR" value="Internal Revenue Service Withholding"/>
+  <Entry name="IS" value="Interim Settlement"/>
+  <Entry name="J1" value="Nonreimbursable"/>
+  <Entry name="J2" value="Transportation Discrepancy Report (TDR) Submitted"/>
+  <Entry name="J3" value="Promised Adjustment Not Received"/>
+  <Entry name="J4" value="Deficiency Report Authorized Adjustment"/>
+  <Entry name="J5" value="Duplicate Summary Billing (Same Bill Number)"/>
+  <Entry name="J6" value="Duplicate Summary Billing (Different Bill Number)"/>
+  <Entry name="J7" value="Duplicate Summary Billing (Second Billing)"/>
+  <Entry name="J8" value="Unable to Process"/>
+  <Entry name="J9" value="Noninterfund Bill"/>
+  <Entry name="JE" value="Journal Entry"/>
+  <Entry name="K1" value="Other Coverage Placed"/>
+  <Entry name="K2" value="Invalid Policy Number"/>
+  <Entry name="K3" value="Renewal Not Received"/>
+  <Entry name="L1" value="Audit"/>
+  <Entry name="L2" value="Discount"/>
+  <Entry name="L3" value="Penalty"/>
+  <Entry name="L4" value="Administrative Fees"/>
+  <Entry name="L5" value="Interest Due"/>
+  <Entry name="L6" value="Interest Owed"/>
+  <Entry name="L7" value="Miscellaneous Deductions"/>
+  <Entry name="L8" value="Miscellaneous Credits"/>
+  <Entry name="L9" value="Military Distribution Adjustment"/>
+  <Entry name="LA" value="Loans against Future Compensations"/>
+  <Entry name="LE" value="Levy"/>
+  <Entry name="LF" value="Lawyer or Claimant Attorney Fees"/>
+  <Entry name="LO" value="Ledger Overdraft Charge"/>
+  <Entry name="LP" value="Late Payment"/>
+  <Entry name="LS" value="Lump Sum"/>
+  <Entry name="M1" value="Advertising - Unidentified"/>
+  <Entry name="M2" value="Commissions Deductions"/>
+  <Entry name="M3" value="Gift Certificates"/>
+  <Entry name="M4" value="Salary Deduction"/>
+  <Entry name="MA" value="Marketing Allowance"/>
+  <Entry name="MB" value="Pick up Allowance"/>
+  <Entry name="MC" value="Miscellaneous Costs"/>
+  <Entry name="MD" value="Incorrect Purchase Order Number on Bill of Lading"/>
+  <Entry name="ME" value="Purchase Order Number Not on Bill of Lading"/>
+  <Entry name="MF" value="Multiple Purchase Order Numbers on Invoice"/>
+  <Entry name="MG" value="Purchase Order Number Incorrect on Invoice"/>
+  <Entry name="MH" value="Purchase Order Number Not on Invoice"/>
+  <Entry name="MI" value="Transfer or Debit Balance"/>
+  <Entry name="MJ" value="Truckload Allowance"/>
+  <Entry name="MK" value="Warehouse Allowance"/>
+  <Entry name="ML" value="Maximum Allowable Levy Exceeded"/>
+  <Entry name="MM" value="Incorrect Product ID on Cartons"/>
+  <Entry name="MN" value="Incorrect Purchase Order Number on Carton"/>
+  <Entry name="MO" value="No Product ID on Cartons"/>
+  <Entry name="MP" value="No Purchase Order Number on Carton"/>
+  <Entry name="MQ" value="Storage Charges"/>
+  <Entry name="MR" value="Manufacturer to Retail Bill-Back Allowance"/>
+  <Entry name="MV" value="Miscellaneous Event"/>
+  <Entry name="N1" value="Second Injury Fund"/>
+  <Entry name="N2" value="Future Credit Amount"/>
+  <Entry name="N3" value="Vocational Rehabilitation"/>
+  <Entry name="N4" value="Uninsured Employer"/>
+  <Entry name="N5" value="Silicosis, Dust Diseases, and Logging Industry Fund"/>
+  <Entry name="N6" value="Vocationally Handicapped Fund"/>
+  <Entry name="N7" value="Non-designated Fund"/>
+  <Entry name="NA" value="Cash Receipt"/>
+  <Entry name="NB" value="Non-Billable"/>
+  <Entry name="NC" value="Negative Charge"/>
+  <Entry name="ND" value="Royalty"/>
+  <Entry name="NL" value="New Location"/>
+  <Entry name="NO" value="New Promotion"/>
+  <Entry name="NP" value="New Product"/>
+  <Entry name="NR" value="Negative Repayment"/>
+  <Entry name="OA" value="Organ Acquisition Passthru"/>
+  <Entry name="OB" value="Offset for Affiliated Providers"/>
+  <Entry name="OC" value="Overstock Condition"/>
+  <Entry name="OL" value="Court Ordered Lien"/>
+  <Entry name="OP" value="Order Policy"/>
+  <Entry name="OT" value="Other Trading-Partner Specific Reason"/>
+  <Entry name="P1" value="Price Change"/>
+  <Entry name="P2" value="Product Changeover"/>
+  <Entry name="P3" value="Production Issue"/>
+  <Entry name="PA" value="Picture Advance"/>
+  <Entry name="PB" value="Materials"/>
+  <Entry name="PC" value="Amendment of Limits"/>
+  <Entry name="PD" value="Paid to Date"/>
+  <Entry name="PE" value="Employment Benefits"/>
+  <Entry name="PF" value="Payment First"/>
+  <Entry name="PG" value="Carrier Filed Limitation"/>
+  <Entry name="PH" value="Commissions"/>
+  <Entry name="PI" value="Periodic Interim Payment"/>
+  <Entry name="PJ" value="Intercompany Sale"/>
+  <Entry name="PK" value="Lodging"/>
+  <Entry name="PL" value="Payment Final"/>
+  <Entry name="PM" value="Previous Month's Earnings Credit Carried Forward"/>
+  <Entry name="PN" value="Meals"/>
+  <Entry name="PO" value="Federal Deposit Insurance Corporation (FDIC) Premium Overcharge"/>
+  <Entry name="PP" value="Quebec Pension Plan"/>
+  <Entry name="PQ" value="Overtime"/>
+  <Entry name="PR" value="Prior Film Rental Payment"/>
+  <Entry name="PS" value="Product Exclusion"/>
+  <Entry name="PT" value="Payment"/>
+  <Entry name="PU" value="Severance"/>
+  <Entry name="PV" value="Special"/>
+  <Entry name="PW" value="State Limitation"/>
+  <Entry name="PX" value="Store Certificates"/>
+  <Entry name="PY" value="Tips"/>
+  <Entry name="PZ" value="Equipment Rental"/>
+  <Entry name="R1" value="Returned Deposited Item Price Incorrect"/>
+  <Entry name="R2" value="Returned Deposited Item Volume Error"/>
+  <Entry name="R3" value="Returned Deposited Item Notification Volume Error"/>
+  <Entry name="R4" value="Reduced Promotion"/>
+  <Entry name="R5" value="Revised Plan (Re-plan)"/>
+  <Entry name="R6" value="Revised Promotion"/>
+  <Entry name="RA" value="Retro-activity Adjustment"/>
+  <Entry name="RB" value="Agreed Freight Allowance"/>
+  <Entry name="RC" value="Authorized Air Shipment"/>
+  <Entry name="RD" value="Receiving Discrepancy"/>
+  <Entry name="RE" value="Return on Equity"/>
+  <Entry name="RF" value="Commission Discrepancy"/>
+  <Entry name="RG" value="Difference On Returns"/>
+  <Entry name="RH" value="Early Shipment of Goods"/>
+  <Entry name="RI" value="Excessive Packing Materials"/>
+  <Entry name="RJ" value="Failure to Consolidate"/>
+  <Entry name="RK" value="Freight on Returns Inbound Only"/>
+  <Entry name="RL" value="Freight on Returns Outbound Only"/>
+  <Entry name="RM" value="Returned Material"/>
+  <Entry name="RN" value="Handling Charge for Item Not Received"/>
+  <Entry name="RO" value="Handling Charge for Non Receipt of Goods"/>
+  <Entry name="RP" value="Handling Charge for Late Advance Ship Notice"/>
+  <Entry name="RQ" value="Handling Charge for Samples Not Received"/>
+  <Entry name="RR" value="Handling Charge for Unreadable Advance Ship Notice"/>
+  <Entry name="RS" value="Incorrect Packing Assortment"/>
+  <Entry name="RT" value="In-store Decoration Allowance"/>
+  <Entry name="RU" value="Interest"/>
+  <Entry name="RV" value="Label Placement"/>
+  <Entry name="RW" value="Margin Contribution"/>
+  <Entry name="RX" value="Mark Down Allowance"/>
+  <Entry name="RY" value="Multiple Shipment Penalty"/>
+  <Entry name="RZ" value="Opening Order Allowance"/>
+  <Entry name="SA" value="Paper Invoice Missing"/>
+  <Entry name="SC" value="Service Cancelled"/>
+  <Entry name="SD" value="Screening Deduction"/>
+  <Entry name="SE" value="Paper Packing Slip Missing"/>
+  <Entry name="SF" value="Shipping and Freight Charge"/>
+  <Entry name="SG" value="Pickup Charge or Advanced Charges"/>
+  <Entry name="SH" value="Presentation of Merchandise Not As Specified"/>
+  <Entry name="SI" value="Purchaser Supplied Raw Material"/>
+  <Entry name="SJ" value="Returns Freight Discrepancy"/>
+  <Entry name="SK" value="Salary Discrepancy"/>
+  <Entry name="SL" value="Student Loan Repayment"/>
+  <Entry name="SM" value="Shipped Past Purchase Order Cancellation Date"/>
+  <Entry name="SN" value="Should Be Shipped Collect, But Was Shipped Prepaid"/>
+  <Entry name="SO" value="Should be Shipped Prepaid, But Was Shipped Collect"/>
+  <Entry name="SP" value="Sales Promotion"/>
+  <Entry name="SR" value="Store Contest Allowance"/>
+  <Entry name="SS" value="Trade Discount"/>
+  <Entry name="ST" value="Unauthorized Air Shipment-Chargeback is the Difference Between Air and Ground"/>
+  <Entry name="SU" value="Unauthorized Air Shipment-Partial Freight Chargeback"/>
+  <Entry name="SV" value="Unauthorized Air Shipment-Full Freight Chargeback"/>
+  <Entry name="SW" value="Unauthorized or Incorrect Carrier"/>
+  <Entry name="SX" value="Volume Break Chargeback"/>
+  <Entry name="SY" value="Weight Break Chargeback"/>
+  <Entry name="TA" value="Theatre Advance"/>
+  <Entry name="TD" value="Total Deductions"/>
+  <Entry name="TI" value="Transportation Issue"/>
+  <Entry name="TL" value="Third Party Liability"/>
+  <Entry name="UB" value="Uncollected Balance Charge Reversed"/>
+  <Entry name="UL" value="Unable to Locate Account"/>
+  <Entry name="VC" value="Value Date Incorrect for Credit"/>
+  <Entry name="VD" value="Value Date Incorrect for Debit"/>
+  <Entry name="VO" value="Void"/>
+  <Entry name="W6" value="Safety Violations"/>
+  <Entry name="W8" value="Intoxication"/>
+  <Entry name="W9" value="Noncooperation: Rehabilitation, Training, Education, Medical"/>
+  <Entry name="WA" value="Actual Reduced Earnings"/>
+  <Entry name="WB" value="Regular Wage Minus Disability Benefit"/>
+  <Entry name="WC" value="Subrogation Recovery"/>
+  <Entry name="WE" value="Weather-related Event"/>
+  <Entry name="WH" value="Payment Partial"/>
+  <Entry name="WO" value="Overpayment Recovery"/>
+  <Entry name="WR" value="Deemed Reduced Earnings"/>
+  <Entry name="WS" value="Special Fund Recovery"/>
+  <Entry name="WT" value="Deductibles Recovery"/>
+  <Entry name="WU" value="Unspecified Recovery"/>
+  <Entry name="WW" value="Overpayment Credit"/>
+  <Entry name="WX" value="Cost of Living"/>
+  <Entry name="WY" value="Continuous Disability Period"/>
+  <Entry name="WZ" value="Illegally Employed Minor"/>
+  <Entry name="XA" value="Age 65 Reduction"/>
+  <Entry name="XB" value="Appeal"/>
+  <Entry name="XC" value="Advance Reimbursement"/>
+  <Entry name="XD" value="Individual Payment"/>
+  <Entry name="XE" value="Employer Credit"/>
+  <Entry name="XF" value="Outlier"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

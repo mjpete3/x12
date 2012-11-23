@@ -1,0 +1,101 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1074.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1074">
+  <Entry name="01" value="Manufactured"/>
+  <Entry name="02" value="Commercial - Non-Residential"/>
+  <Entry name="03" value="Commercial - Residential"/>
+  <Entry name="04" value="Condominium"/>
+  <Entry name="05" value="Farm"/>
+  <Entry name="06" value="Home &amp; Business Combined"/>
+  <Entry name="07" value="Land and Lots"/>
+  <Entry name="08" value="Mobile Home"/>
+  <Entry name="09" value="Deminimus Planned Unit Development (PUD)"/>
+  <Entry name="10" value="Attached"/>
+  <Entry name="11" value="Detached"/>
+  <Entry name="13" value="Cooperative"/>
+  <Entry name="14" value="Single-family Residence"/>
+  <Entry name="15" value="Two-to-Four-unit Residence"/>
+  <Entry name="16" value="Townhouse"/>
+  <Entry name="17" value="Apartment Condominium"/>
+  <Entry name="18" value="Multifamily (More than Four Units)"/>
+  <Entry name="19" value="Twin Home"/>
+  <Entry name="20" value="Bridges"/>
+  <Entry name="21" value="Dams"/>
+  <Entry name="22" value="Towers"/>
+  <Entry name="23" value="Tunnels"/>
+  <Entry name="24" value="Pipelines"/>
+  <Entry name="25" value="Drilling Rigs"/>
+  <Entry name="26" value="Antennas"/>
+  <Entry name="27" value="Storage Tanks"/>
+  <Entry name="28" value="Billboards and Signs"/>
+  <Entry name="29" value="Fixed Machinery"/>
+  <Entry name="30" value="Planned Unit Development"/>
+  <Entry name="31" value="Site Built"/>
+  <Entry name="32" value="High-rise"/>
+  <Entry name="33" value="Subdivision"/>
+  <Entry name="34" value="Stacked"/>
+  <Entry name="35" value="Zero Lot Line"/>
+  <Entry name="36" value="Row House"/>
+  <Entry name="39" value="Modular"/>
+  <Entry name="40" value="Yard"/>
+  <Entry name="41" value="Factory"/>
+  <Entry name="42" value="Garage"/>
+  <Entry name="43" value="Office"/>
+  <Entry name="44" value="Premises"/>
+  <Entry name="45" value="Shop"/>
+  <Entry name="46" value="Showroom"/>
+  <Entry name="47" value="Warehouse"/>
+  <Entry name="48" value="Works"/>
+  <Entry name="49" value="Workshop"/>
+  <Entry name="50" value="Residential"/>
+  <Entry name="51" value="Commercial"/>
+  <Entry name="52" value="Seasonal"/>
+  <Entry name="53" value="Timeshare"/>
+  <Entry name="54" value="Business Opportunity"/>
+  <Entry name="55" value="Industrial"/>
+  <Entry name="56" value="Ranch"/>
+  <Entry name="57" value="Industrial Building"/>
+  <Entry name="58" value="Semi Detached Building"/>
+  <Entry name="59" value="Detached Building"/>
+  <Entry name="60" value="Industrial Mall"/>
+  <Entry name="61" value="Shopping Plaza"/>
+  <Entry name="62" value="Shopping Mall"/>
+  <Entry name="63" value="Apartment Building"/>
+  <Entry name="64" value="Residential Buildings"/>
+  <Entry name="65" value="Other Property Type"/>
+  <Entry name="66" value="Coldstore"/>
+  <Entry name="67" value="Complex"/>
+  <Entry name="68" value="Forecourt"/>
+  <Entry name="69" value="Hotel"/>
+  <Entry name="70" value="Laboratory"/>
+  <Entry name="71" value="Stadium"/>
+  <Entry name="72" value="Store"/>
+  <Entry name="73" value="Low Rise"/>
+  <Entry name="74" value="Vacant Lot"/>
+  <Entry name="75" value="Mixed Use Residential"/>
+  <Entry name="UN" value="Unknown"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

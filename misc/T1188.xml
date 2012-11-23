@@ -1,0 +1,144 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1188.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1188">
+  <Entry name="01" value="Vehicle"/>
+  <Entry name="02" value="Furniture"/>
+  <Entry name="03" value="Boat"/>
+  <Entry name="04" value="Trailer"/>
+  <Entry name="05" value="Investment Art"/>
+  <Entry name="06" value="Collection of Objects"/>
+  <Entry name="07" value="Airplane"/>
+  <Entry name="08" value="Jewelery"/>
+  <Entry name="09" value="Antiques"/>
+  <Entry name="10" value="Other Property"/>
+  <Entry name="11" value="Livestock"/>
+  <Entry name="12" value="Camera Equipment"/>
+  <Entry name="13" value="Business Equipment"/>
+  <Entry name="14" value="Computer Equipment"/>
+  <Entry name="15" value="Currency (Cash)"/>
+  <Entry name="16" value="Silverware"/>
+  <Entry name="17" value="Clothing"/>
+  <Entry name="18" value="Furs"/>
+  <Entry name="19" value="Sports Equipment"/>
+  <Entry name="20" value="Guns"/>
+  <Entry name="21" value="Tools"/>
+  <Entry name="22" value="Electronics"/>
+  <Entry name="23" value="Appliance"/>
+  <Entry name="24" value="Liquor"/>
+  <Entry name="25" value="All Contents"/>
+  <Entry name="26" value="Service Truck"/>
+  <Entry name="27" value="Tanker"/>
+  <Entry name="28" value="Tractor"/>
+  <Entry name="29" value="Truck"/>
+  <Entry name="30" value="Accounts"/>
+  <Entry name="31" value="Accounts Receivable"/>
+  <Entry name="32" value="All Assets"/>
+  <Entry name="33" value="Aqua Culture Stock"/>
+  <Entry name="34" value="Building Materials"/>
+  <Entry name="35" value="Building(s)"/>
+  <Entry name="36" value="Capital Stock"/>
+  <Entry name="37" value="Chattel Paper"/>
+  <Entry name="38" value="Communications Equipment"/>
+  <Entry name="39" value="Consigned Merchandise"/>
+  <Entry name="40" value="Construction Equipment or Machinery or Both"/>
+  <Entry name="41" value="Contract Rights"/>
+  <Entry name="42" value="Endorsements"/>
+  <Entry name="43" value="Equipment"/>
+  <Entry name="44" value="Farm Products or Crops or Both"/>
+  <Entry name="45" value="Fixtures"/>
+  <Entry name="46" value="General Intangible(s)"/>
+  <Entry name="47" value="Guarantor"/>
+  <Entry name="48" value="Industrial Machinery or Equipment or both"/>
+  <Entry name="49" value="Inventory"/>
+  <Entry name="50" value="Lease"/>
+  <Entry name="51" value="Life Insurance"/>
+  <Entry name="52" value="Livestock Products or Crops or Both"/>
+  <Entry name="53" value="Machinery"/>
+  <Entry name="54" value="Mobile Homes"/>
+  <Entry name="55" value="Negotiable Instruments"/>
+  <Entry name="56" value="Notes Receivable"/>
+  <Entry name="57" value="Oil, Gas and Minerals"/>
+  <Entry name="58" value="Partnership Interest"/>
+  <Entry name="59" value="Proceeds"/>
+  <Entry name="60" value="Products"/>
+  <Entry name="61" value="Products and Proceeds"/>
+  <Entry name="62" value="Real Estate"/>
+  <Entry name="63" value="Real Property"/>
+  <Entry name="64" value="Savings"/>
+  <Entry name="65" value="Specified Assets"/>
+  <Entry name="66" value="Textile Goods"/>
+  <Entry name="67" value="Timber"/>
+  <Entry name="68" value="Transportation Equipment"/>
+  <Entry name="69" value="Unspecified Assets"/>
+  <Entry name="70" value="Agricultural Machinery or Equipment or both"/>
+  <Entry name="71" value="Debentures"/>
+  <Entry name="72" value="Guarantee from Affiliated Company"/>
+  <Entry name="73" value="Guarantee from Parent"/>
+  <Entry name="74" value="Personal Guarantees"/>
+  <Entry name="75" value="Pumps"/>
+  <Entry name="76" value="Security Agreement"/>
+  <Entry name="77" value="Service Bays"/>
+  <Entry name="78" value="Fixed Assets"/>
+  <Entry name="79" value="Land"/>
+  <Entry name="80" value="Agricultural Land"/>
+  <Entry name="81" value="Ambulance"/>
+  <Entry name="82" value="Automobile"/>
+  <Entry name="83" value="Barge"/>
+  <Entry name="84" value="Bus"/>
+  <Entry name="85" value="Business Assets"/>
+  <Entry name="86" value="Cement Truck"/>
+  <Entry name="87" value="Common Stock"/>
+  <Entry name="88" value="Delivery Vehicle"/>
+  <Entry name="89" value="Double Wheel Truck"/>
+  <Entry name="90" value="Freight Container"/>
+  <Entry name="91" value="Freight Train Car"/>
+  <Entry name="92" value="Industrial Vehicle"/>
+  <Entry name="93" value="Intangible Assets"/>
+  <Entry name="94" value="Lorry"/>
+  <Entry name="95" value="Motorcycle"/>
+  <Entry name="96" value="Passenger Vehicle"/>
+  <Entry name="97" value="Personal Assets"/>
+  <Entry name="98" value="Pick up Truck"/>
+  <Entry name="99" value="Preferred Stock"/>
+  <Entry name="AA" value="Tractor Trailer Truck"/>
+  <Entry name="AB" value="Van"/>
+  <Entry name="AC" value="Shipping Containers"/>
+  <Entry name="AD" value="Raw Materials"/>
+  <Entry name="AE" value="Office Fixtures"/>
+  <Entry name="AF" value="Ships"/>
+  <Entry name="AG" value="Residential Units"/>
+  <Entry name="AH" value="Commercial Units"/>
+  <Entry name="AI" value="Industrial Units"/>
+  <Entry name="AJ" value="Non-Voting Shares"/>
+  <Entry name="AK" value="Goods and Chattels Effects"/>
+  <Entry name="AL" value="Floating Charge"/>
+  <Entry name="AM" value="Canada Bank Act Section 427 Assets"/>
+  <Entry name="AN" value="Timberland"/>
+  <Entry name="AO" value="Other Liquid Assets"/>
+  <Entry name="AP" value="Other Non-Liquid Assets"/>
+  <Entry name="AQ" value="Voting Shares"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

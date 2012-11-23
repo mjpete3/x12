@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TXI.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TXI" comment="To specify tax information">
+  <Field name="TaxTypeCode" min="2" max="2" validation="T963" comment="Code specifying the type of tax"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="TaxJurisdictionCodeQualifier" required="y" min="2" max="2" validation="T955" comment="Code identifying the source of the data used in tax jurisdiction code"/>
+  <Field name="TaxJurisdictionCode" required="y" min="1" max="10" comment="Code identifying the taxing jurisdiction"/>
+  <Field name="TaxExemptCode" required="y" min="1" max="1" validation="T441" comment="Code identifying exemption status from sales and use tax"/>
+  <Field name="RelationshipCode" required="y" min="1" max="1" validation="T662" comment="Code indicating the relationship between entities"/>
+  <Field name="DollarBasisForPercent" type="double" required="y" min="1" max="9" comment="Dollar basis to be used in the percent calculation of the allowance, charge or tax"/>
+  <Field name="TaxIdentificationNumber" required="y" min="1" max="20" comment="Number assigned to a purchaser (buyer, orderer) by a taxing jurisdiction (state, county, etc.); often called a tax exemption number or certificate number"/>
+  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+</Segment>

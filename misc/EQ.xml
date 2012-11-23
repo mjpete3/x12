@@ -1,0 +1,31 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: EQ.xml 81 2009-05-13 18:05:32Z ikk $
+-->
+
+<Segment name="EQ" comment="To specify inquired eligibility or benefit information">
+  <Field name="ServiceTypeCode" required="n" min="1" max="2" validation="T1365" comment="Code identifying the classification of service"/>
+  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="n" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
+  <Field name="CoverageLevelCode" required="n" min="3" max="3" validation="T1207" comment="Code indicating the level of coverage being provided for this insured"/>
+  <Field name="InsuranceTypeCode" required="n" min="1" max="3" validation="T1336" comment="Code identifying the type of insurance policy within a specific insurance program"/>
+</Segment>

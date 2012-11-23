@@ -1,0 +1,98 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1262.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1262">
+  <Entry name="1" value="Subsidized Federal Stafford"/>
+  <Entry name="2" value="Federal Supplemental Loans for Students (SLS)"/>
+  <Entry name="3" value="Federal PLUS Loan to Parents"/>
+  <Entry name="4" value="Unsubsidized Federal Stafford"/>
+  <Entry name="5" value="Federal Consolidated Loan"/>
+  <Entry name="6" value="Residential Loan"/>
+  <Entry name="7" value="Personal Loan"/>
+  <Entry name="8" value="Automobile"/>
+  <Entry name="9" value="Unsecured"/>
+  <Entry name="10" value="Secured"/>
+  <Entry name="11" value="Partially Secured"/>
+  <Entry name="12" value="Home Improvement"/>
+  <Entry name="13" value="FHA Home Improvement"/>
+  <Entry name="14" value="Installment Sales Contract"/>
+  <Entry name="15" value="Charge Account"/>
+  <Entry name="16" value="Real Estate, Specific Type Unknown"/>
+  <Entry name="17" value="Secured by Co-signer"/>
+  <Entry name="18" value="Business"/>
+  <Entry name="19" value="Recreational"/>
+  <Entry name="20" value="Educational"/>
+  <Entry name="21" value="Lease"/>
+  <Entry name="22" value="Co-maker"/>
+  <Entry name="23" value="Check Credit or Line of Credit"/>
+  <Entry name="24" value="FHA Co-maker (Not Borrower)"/>
+  <Entry name="25" value="Mobile Home"/>
+  <Entry name="26" value="Credit Card"/>
+  <Entry name="27" value="FHA Real Estate Mortgage"/>
+  <Entry name="28" value="Note Loan"/>
+  <Entry name="29" value="Note Loan with Co-maker"/>
+  <Entry name="30" value="Household Good (Secured)"/>
+  <Entry name="31" value="Household Goods and Other Collateral Auto"/>
+  <Entry name="32" value="Veterans Administration Real Estate Mortgage"/>
+  <Entry name="33" value="Conventional Real Estate Mortgage"/>
+  <Entry name="34" value="Real Estate Mortgage without Other Collateral"/>
+  <Entry name="35" value="Rental Agreement"/>
+  <Entry name="36" value="Summary of Accounts with Same Status"/>
+  <Entry name="37" value="Unknown Loan Type"/>
+  <Entry name="38" value="Debt Counseling Service"/>
+  <Entry name="39" value="Employment"/>
+  <Entry name="40" value="Combined Credit Plan"/>
+  <Entry name="41" value="Debit Card"/>
+  <Entry name="42" value="Credit Line - Secured"/>
+  <Entry name="43" value="Collection Attorney"/>
+  <Entry name="44" value="Insurance Claims"/>
+  <Entry name="45" value="Child Support"/>
+  <Entry name="46" value="Government Unsecured Guarantee Loan"/>
+  <Entry name="47" value="Government Secured Guarantee Loan"/>
+  <Entry name="48" value="Government Secured Direct Loan"/>
+  <Entry name="49" value="Government Grant"/>
+  <Entry name="50" value="Government Overpayment"/>
+  <Entry name="51" value="Government Fine"/>
+  <Entry name="52" value="Government Fee for Service"/>
+  <Entry name="53" value="Government Employee Advance"/>
+  <Entry name="54" value="Government Miscellaneous Debt"/>
+  <Entry name="55" value="Government Benefit"/>
+  <Entry name="56" value="Returned Check"/>
+  <Entry name="57" value="Installment Loan"/>
+  <Entry name="58" value="Fully Amortized First"/>
+  <Entry name="59" value="Balloon First"/>
+  <Entry name="60" value="Subordinate Mortgage"/>
+  <Entry name="61" value="Home Equity Line of Credit"/>
+  <Entry name="62" value="Wrap Around"/>
+  <Entry name="63" value="Tax"/>
+  <Entry name="64" value="Mortgage"/>
+  <Entry name="65" value="Rehabilitation"/>
+  <Entry name="66" value="One to Four Servicing"/>
+  <Entry name="67" value="Special Service"/>
+  <Entry name="90" value="Other"/>
+  <Entry name="91" value="Refinance"/>
+  <Entry name="92" value="Sale"/>
+  <Entry name="93" value="Wholesale"/>
+</Table>

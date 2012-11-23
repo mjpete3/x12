@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TI43.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="TI43">
+  <Entry name="000" value="No Errors"/>
+  <Entry name="001" value="The Interchange Control Number in the Header and Trailer Do not Match; the Value from the Header is used in the Acknowledgment"/>
+  <Entry name="002" value="This Standard as Noted in the Control Standards Identifier is not Supported"/>
+  <Entry name="003" value="This Version of the Controls is not Supported"/>
+  <Entry name="004" value="The Segment Terminator is Invalid"/>
+  <Entry name="005" value="Invalid Value as Shown in the Reported Interchange Control Number"/>
+  <Entry name="006" value="Invalid Value as Shown in the Reported Interchange Date"/>
+  <Entry name="007" value="Invalid Value as Shown in the Reported Interchange Time"/>
+  <Entry name="008" value="Invalid Value as Shown in the Reported Interchange Sender ID Qualifier"/>
+  <Entry name="009" value="Invalid Value as Shown in the Reported Interchange Sender ID"/>
+  <Entry name="010" value="Invalid Value as Shown in the Reported Interchange Receiver ID Qualifier"/>
+  <Entry name="011" value="Invalid Value as Shown in the Reported Interchange Receiver ID"/>
+  <Entry name="012" value="Invalid Value as Shown in the First Reference ID Qualifier"/>
+  <Entry name="013" value="Invalid Value as Shown in the First Reference ID"/>
+  <Entry name="014" value="Invalid Value as Shown in the Second Reference ID Qualifier"/>
+  <Entry name="015" value="Invalid Value as Shown in the Second Reference ID"/>
+  <Entry name="016" value="Trading Partnership not Established"/>
+  <Entry name="017" value="Invalid Number of Included Groups Value"/>
+  <Entry name="018" value="Invalid Control Structure"/>
+  <Entry name="019" value="Improper (Premature) End-of-file (Transmission)"/>
+  <Entry name="020" value="Duplicate Interchange Control Number"/>
+  <Entry name="021" value="Invalid Data Element Separator"/>
+  <Entry name="022" value="Invalid Component Element Separator"/>
+  <Entry name="023" value="Failure to Transfer Interchange to the next Service Request Handler"/>
+  <Entry name="024" value="Invalid Delivery Date in Deferred Delivery Request"/>
+  <Entry name="025" value="Invalid Delivery Time in Deferred Delivery Request"/>
+  <Entry name="026" value="Invalid Delivery Time Code in Deferred Delivery Request"/>
+  <Entry name="027" value="Invalid Grade of Service Code"/>
+  <Entry name="028" value="Time Out, Not Delivered"/>
+  <Entry name="029" value="Time Out, Delivered"/>
+  <Entry name="030" value="Time Out, Processed"/>
+  <Entry name="031" value="Receiver Not On-line"/>
+  <Entry name="032" value="Abnormal Conditions"/>
+  <Entry name="033" value="Interchange Exceeds Maximum Size"/>
+</Table>

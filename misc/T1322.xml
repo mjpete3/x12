@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1322.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1322">
+  <Entry name="1" value="Appeal - Immediate"/>
+  <Entry name="2" value="Appeal - Standard"/>
+  <Entry name="3" value="Cancel"/>
+  <Entry name="4" value="Extension"/>
+  <Entry name="5" value="Notification"/>
+  <Entry name="6" value="Verification"/>
+  <Entry name="A" value="Certification of Current Cost and Pricing Data"/>
+  <Entry name="B" value="Certification of Overhead"/>
+  <Entry name="C" value="Certification Not Required"/>
+  <Entry name="D" value="Final"/>
+  <Entry name="E" value="Recertification"/>
+  <Entry name="I" value="Initial"/>
+  <Entry name="R" value="Renewal"/>
+  <Entry name="S" value="Revised"/>
+</Table>

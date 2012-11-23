@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: VR.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="VR" comment="To provide rate-origin information">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="TariffNumber" min="1" max="7" comment="Standard tariff number for the tariff which governs the rates applied to the commodity item(s)"/>
+  <Field name="StandardCarrierAlphaCode" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="IdentificationCodeQualifier" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="CurrencyCode" min="3" max="3" comment="Code (Standard ISO) for country in whose currency the charges are specified"/>
+  <Field name="TariffAgencyCode" required="y" min="1" max="4" comment="Code defining the tariff bureau or tariff publishing agent that governs the rates applied to this shipment"/>
+  <Field name="TariffSupplementIdentifier" required="y" min="1" max="4" comment="Identifier for the tariff supplement which contains the rate used"/>
+  <Field name="ExParte" required="y" min="4" max="4" comment="Level of rates as published in the tariff"/>
+</Segment>

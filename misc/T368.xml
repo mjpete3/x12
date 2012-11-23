@@ -1,0 +1,129 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T368.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T368">
+  <Entry name="AA" value="Multiple Pickup Same Destination"/>
+  <Entry name="AB" value="Available to Ship - Billed Quantity"/>
+  <Entry name="AN" value="Available Now - No Shipping Schedule"/>
+  <Entry name="AP" value="Allocation"/>
+  <Entry name="AS" value="Available Now - Scheduled to Ship (date)"/>
+  <Entry name="AU" value="Available to Ship - Unbilled Quantity"/>
+  <Entry name="AV" value="Available"/>
+  <Entry name="BK" value="Back Ordered from Previous Order"/>
+  <Entry name="BM" value="Backordered, Manufacturer, Out-of-Stock"/>
+  <Entry name="BO" value="Back Ordered"/>
+  <Entry name="BP" value="Shipment Partial, Back Order to Ship on (Date)"/>
+  <Entry name="BT" value="Billed total"/>
+  <Entry name="BW" value="Billed week-to-date"/>
+  <Entry name="CA" value="Customer Inquiry - All Items"/>
+  <Entry name="CB" value="Components Missing"/>
+  <Entry name="CC" value="Shipment Complete on (Date)"/>
+  <Entry name="CD" value="Consolidated Freight"/>
+  <Entry name="CE" value="Shipment Includes Extra Items to Meet Price Break"/>
+  <Entry name="CF" value="Consolidated Load"/>
+  <Entry name="CI" value="Customer Inquiry - Shipped Items Only"/>
+  <Entry name="CK" value="Cancelled from Previous Order"/>
+  <Entry name="CL" value="Complete"/>
+  <Entry name="CM" value="Shipment Complete with Additional Quantity"/>
+  <Entry name="CN" value="Next Carrier Move on (Date)"/>
+  <Entry name="CO" value="Customer Inquiry - Unshipped Items Only"/>
+  <Entry name="CP" value="Partial Shipment on (Date), Considered No Backorder"/>
+  <Entry name="CS" value="Shipment Complete with Substitution"/>
+  <Entry name="CT" value="Combination"/>
+  <Entry name="CU" value="Cancelled Line Item"/>
+  <Entry name="DA" value="Due for Assortment"/>
+  <Entry name="DD" value="Delivered to Destination on (Date)"/>
+  <Entry name="DE" value="Deleted Order"/>
+  <Entry name="DI" value="Discontinued"/>
+  <Entry name="DO" value="Diverted Order"/>
+  <Entry name="DP" value="Dispose"/>
+  <Entry name="DR" value="Dating Requirements"/>
+  <Entry name="DS" value="Out Of Stock Condition"/>
+  <Entry name="EC" value="Equipment Capacity"/>
+  <Entry name="ED" value="Expect to Ship By (Date)"/>
+  <Entry name="EW" value="Expect To Ship Week of (Date)"/>
+  <Entry name="EX" value="Expect to Deliver by"/>
+  <Entry name="FS" value="Units Not Shipped By Agent - To Be Shipped From Factory"/>
+  <Entry name="HQ" value="Held Awaiting Qualification"/>
+  <Entry name="IC" value="Item Canceled"/>
+  <Entry name="ID" value="Insufficient Information"/>
+  <Entry name="IN" value="In Process"/>
+  <Entry name="IP" value="Inquiry by Purchase Order"/>
+  <Entry name="IS" value="Item Represents Substitution from Original Order"/>
+  <Entry name="LM" value="Shipment late"/>
+  <Entry name="LS" value="Last Shipment on (Date)"/>
+  <Entry name="LW" value="Number of Late Weeks"/>
+  <Entry name="MC" value="Missing Components Furnished"/>
+  <Entry name="NF" value="Not Yet Published"/>
+  <Entry name="NN" value="Not in Process - No Shipping Schedule"/>
+  <Entry name="NS" value="Not In Process, Scheduled to Ship on (Date)"/>
+  <Entry name="NY" value="No Shipping Schedule"/>
+  <Entry name="OB" value="Out of Bill &amp; Hold Goods"/>
+  <Entry name="OF" value="Order Sent to Factory for Production on (Date)"/>
+  <Entry name="OP" value="Out of Print"/>
+  <Entry name="OR" value="Temporarily Out of Stock - Reorder"/>
+  <Entry name="PA" value="Purchase Order Inquiry - All Items"/>
+  <Entry name="PC" value="Production"/>
+  <Entry name="PD" value="Purchase Order Complete"/>
+  <Entry name="PH" value="Product On Hold"/>
+  <Entry name="PI" value="Purchase Order Inquiry - Shipped Items Only"/>
+  <Entry name="PK" value="Packed-to-Date as of (Date)"/>
+  <Entry name="PL" value="Part Lot, Stop Off"/>
+  <Entry name="PN" value="In Process - No Shipping Schedule"/>
+  <Entry name="PO" value="Purchase Order Inquiry - Unshipped Items Only"/>
+  <Entry name="PP" value="Purchase Order Inquiry - Specific Items"/>
+  <Entry name="PR" value="Partial Shipment"/>
+  <Entry name="PS" value="In Process, Scheduled to Ship On (Date)"/>
+  <Entry name="PT" value="Part Lot"/>
+  <Entry name="QN" value="Quantity Net Due"/>
+  <Entry name="QP" value="Quantity Past Due"/>
+  <Entry name="RC" value="Released to Carrier (Date)"/>
+  <Entry name="RD" value="Revised Expect to Ship By (Date)"/>
+  <Entry name="RI" value="Recall"/>
+  <Entry name="RT" value="Received Total"/>
+  <Entry name="RW" value="Revised Expect to Ship Week of (Date)"/>
+  <Entry name="SA" value="Shipment Quantity Increase"/>
+  <Entry name="SB" value="Seconds Available to Ship - Billed Quantity"/>
+  <Entry name="SC" value="Shipment Quantity Decrease"/>
+  <Entry name="SD" value="Shipped Damaged"/>
+  <Entry name="SE" value="Replacement Shipment"/>
+  <Entry name="SF" value="Shipped and Held in Bond at Contractor's Plant"/>
+  <Entry name="SG" value="Shipped and Held as Government-Furnished Property"/>
+  <Entry name="SH" value="Shipped (Date)"/>
+  <Entry name="SI" value="Shipment Late, Scheduled to Ship on (Date)"/>
+  <Entry name="SJ" value="Shipped or Performed as Indicated"/>
+  <Entry name="SK" value="Shipment Underrun Quantity"/>
+  <Entry name="SL" value="Shipped - to - Date through (Date)"/>
+  <Entry name="SP" value="Scheduled for Production at Factory on (Date)"/>
+  <Entry name="SQ" value="Scheduled to ship (Summary quantity)"/>
+  <Entry name="SS" value="Split Shipment"/>
+  <Entry name="ST" value="Stop Off"/>
+  <Entry name="SU" value="Seconds Available to Ship - Unbilled Quantity"/>
+  <Entry name="UB" value="Unbilled Quantity Balance"/>
+  <Entry name="UN" value="Unavailable"/>
+  <Entry name="UR" value="Unsolicited Report"/>
+  <Entry name="WS" value="Item Invoiced - Shipment to Follow"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,463 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T641.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T641">
+  <Entry name="001" value="Death of Principal Mortgagor"/>
+  <Entry name="002" value="Illness of Principal Mortgagor"/>
+  <Entry name="003" value="Illness of Mortgagor's Family Member"/>
+  <Entry name="004" value="Death of Mortgagor's Family Member"/>
+  <Entry name="005" value="Marital Difficulties"/>
+  <Entry name="006" value="Curtailment of Income"/>
+  <Entry name="007" value="Excessive Obligations - Same Income, Including Habitual Nonpayment of Debts"/>
+  <Entry name="008" value="Abandonment of Property"/>
+  <Entry name="009" value="Distant Employment Transfer"/>
+  <Entry name="010" value="Neighborhood Problem"/>
+  <Entry name="011" value="Property Problem"/>
+  <Entry name="012" value="Inability to Sell Property"/>
+  <Entry name="013" value="Inability to Rent Property"/>
+  <Entry name="014" value="Military Service"/>
+  <Entry name="015" value="Default Detail"/>
+  <Entry name="016" value="Unemployment"/>
+  <Entry name="017" value="Business Failure"/>
+  <Entry name="018" value="Bankruptcy"/>
+  <Entry name="019" value="Casualty Loss"/>
+  <Entry name="020" value="Moved - Vacated"/>
+  <Entry name="021" value="Dissatisfied with Property"/>
+  <Entry name="022" value="Energy-Environment Cost"/>
+  <Entry name="023" value="Servicing Problems"/>
+  <Entry name="024" value="Auto Repairs"/>
+  <Entry name="025" value="Extended Reasons"/>
+  <Entry name="026" value="Payment Adjustment"/>
+  <Entry name="027" value="Payment Dispute"/>
+  <Entry name="028" value="Due on Transfer"/>
+  <Entry name="029" value="Transfer of Ownership Pending"/>
+  <Entry name="030" value="Fraud"/>
+  <Entry name="031" value="Unable to Contact Borrower"/>
+  <Entry name="032" value="Air traffic control delay"/>
+  <Entry name="033" value="Delivery Commitment Waived by the Customer"/>
+  <Entry name="035" value="Borrower Action"/>
+  <Entry name="036" value="Automatic Conversion"/>
+  <Entry name="037" value="Lender Approval Required"/>
+  <Entry name="038" value="Lender Approval Not Required"/>
+  <Entry name="039" value="Owner-occupied Loan Outstanding"/>
+  <Entry name="040" value="Loan Reached Maturity"/>
+  <Entry name="041" value="Triggered by Interest Increase"/>
+  <Entry name="042" value="Specified Time Period Completed"/>
+  <Entry name="043" value="Transfer Without Written Notice"/>
+  <Entry name="044" value="Triggered by Payment Increase"/>
+  <Entry name="045" value="Facility Added"/>
+  <Entry name="046" value="Facility Changed"/>
+  <Entry name="047" value="Location Added"/>
+  <Entry name="048" value="Location Changed"/>
+  <Entry name="049" value="Merchandise Damaged or Destroyed"/>
+  <Entry name="050" value="Internal Systems Problems"/>
+  <Entry name="051" value="Vendor-Supplied Carrier Delay"/>
+  <Entry name="052" value="Import Container Delay"/>
+  <Entry name="053" value="Notice of Term Enrollment"/>
+  <Entry name="054" value="Term Grade Report"/>
+  <Entry name="055" value="Change of Venue Granted"/>
+  <Entry name="056" value="Removed to Federal Court"/>
+  <Entry name="057" value="Foreclosure Completed"/>
+  <Entry name="058" value="Servicing Rights Transferred to Non-member"/>
+  <Entry name="059" value="Investor is Pulling Servicing as a Result of Default"/>
+  <Entry name="060" value="Servicer Pulling Servicing from Sub-Servicer as a Result of Default"/>
+  <Entry name="061" value="Consolidation, Extension, Modification (CEM)"/>
+  <Entry name="062" value="Renewal and Extension"/>
+  <Entry name="063" value="Reinstatement - Loan Not Reassigned to Mortgage Electronic Registration System (MERS)"/>
+  <Entry name="064" value="Member Resignation or Expulsion"/>
+  <Entry name="068" value="State Action"/>
+  <Entry name="069" value="Company Action"/>
+  <Entry name="070" value="Voluntary Surrender"/>
+  <Entry name="071" value="Producer Requested"/>
+  <Entry name="072" value="Awaiting State Confirmation"/>
+  <Entry name="073" value="Continuing Education Non-compliance"/>
+  <Entry name="074" value="Non-renewal"/>
+  <Entry name="075" value="For Cause"/>
+  <Entry name="076" value="Lack of Production"/>
+  <Entry name="077" value="Retired"/>
+  <Entry name="078" value="Disability"/>
+  <Entry name="079" value="Requested in Error"/>
+  <Entry name="080" value="Continuing Medical Education (CME)"/>
+  <Entry name="081" value="Faculty Appointment"/>
+  <Entry name="082" value="Health Care Fellowship Appointment"/>
+  <Entry name="083" value="Health Care Internship Appointment"/>
+  <Entry name="084" value="Health Care Residency Appointment"/>
+  <Entry name="085" value="Ownership Change Due to Flow Sale of Servicing Rights"/>
+  <Entry name="086" value="Ownership Change Due to Bulk Sale of Servicing Rights"/>
+  <Entry name="087" value="College Preparatory Diploma"/>
+  <Entry name="088" value="Accurate"/>
+  <Entry name="089" value="Calculated"/>
+  <Entry name="090" value="Not Selected"/>
+  <Entry name="091" value="Reprocessed"/>
+  <Entry name="092" value="Selected"/>
+  <Entry name="093" value="Not Verified"/>
+  <Entry name="094" value="Within Tolerance"/>
+  <Entry name="095" value="Without Documentation"/>
+  <Entry name="096" value="Not Available"/>
+  <Entry name="097" value="Part-time"/>
+  <Entry name="A01" value="Missed Delivery"/>
+  <Entry name="A02" value="Release Signature or Release Number"/>
+  <Entry name="A03" value="Incorrect Address"/>
+  <Entry name="A04" value="Indirect Delivery"/>
+  <Entry name="A05" value="Unable To Locate"/>
+  <Entry name="A06" value="Address Corrected - Delivery Attempt"/>
+  <Entry name="A07" value="Refused by Consignee"/>
+  <Entry name="A08" value="Not In On Delivery Completed"/>
+  <Entry name="A09" value="Damaged - Delivery Completed"/>
+  <Entry name="A10" value="Damaged - Delivery Not Completed"/>
+  <Entry name="A11" value="Business Closed"/>
+  <Entry name="A12" value="Package Sorted To Wrong Route"/>
+  <Entry name="A13" value="Other"/>
+  <Entry name="A14" value="Returned to Shipper"/>
+  <Entry name="A15" value="Business On Strike"/>
+  <Entry name="A16" value="Payment Received"/>
+  <Entry name="A17" value="Customer Requested Future Delivery"/>
+  <Entry name="A18" value="Missort"/>
+  <Entry name="A19" value="Restricted Articles Incompatible"/>
+  <Entry name="A20" value="Restricted Articles Unacceptable"/>
+  <Entry name="A21" value="Bulk Plane"/>
+  <Entry name="A22" value="Package Missed Inbound Plane At Origin Station"/>
+  <Entry name="A23" value="Customer Dropped Off Package After Aircraft Depart"/>
+  <Entry name="A24" value="Accident"/>
+  <Entry name="A25" value="Package Received At Destination Station Without Airbill"/>
+  <Entry name="A26" value="Consignee Related"/>
+  <Entry name="A27" value="Driver Related"/>
+  <Entry name="A28" value="Package Missorted During Aircraft Unload"/>
+  <Entry name="A29" value="Hold Changed To Delivery Package"/>
+  <Entry name="A30" value="Mechanical Breakdown"/>
+  <Entry name="A31" value="Arrived In Station After Courier Dispatch"/>
+  <Entry name="A32" value="Aircraft Arrived Late In Hub"/>
+  <Entry name="A33" value="Other Carrier-Related"/>
+  <Entry name="A34" value="Package Shipped From Overgoods"/>
+  <Entry name="A36" value="Holding In Overgoods"/>
+  <Entry name="A37" value="Damaged Rewrapped In Hub"/>
+  <Entry name="A38" value="Detached Airbill"/>
+  <Entry name="A39" value="Previous Stop"/>
+  <Entry name="A40" value="Shipper Related"/>
+  <Entry name="A41" value="Standard Air Package"/>
+  <Entry name="A42" value="Holiday - Closed"/>
+  <Entry name="A43" value="Weather or Natural Disaster Related"/>
+  <Entry name="A45" value="Delivery Not Completed"/>
+  <Entry name="A46" value="Recipient Unavailable -- Delivery Delayed"/>
+  <Entry name="A49" value="ODA/Cartage Agent"/>
+  <Entry name="A50" value="Improper International Paperwork"/>
+  <Entry name="A51" value="Carrier Keying Error"/>
+  <Entry name="A52" value="No Requested Arrival Date"/>
+  <Entry name="A53" value="Shipper Changed Scheduled Shipment Date"/>
+  <Entry name="A55" value="Hold Due to Customs/Documentation"/>
+  <Entry name="A58" value="Unable to Contact Recipient For Broker Information"/>
+  <Entry name="A59" value="Hold At Location"/>
+  <Entry name="A61" value="International Manifest"/>
+  <Entry name="A63" value="Puerto Rican Tax Authorities Holding Package"/>
+  <Entry name="A64" value="Non-FEC Broker Advised"/>
+  <Entry name="A65" value="Customs Release"/>
+  <Entry name="A73" value="Package Delivered Before Commitment"/>
+  <Entry name="A74" value="Package Delivered After Commitment"/>
+  <Entry name="A75" value="Invalid Account Format"/>
+  <Entry name="A76" value="Account Not Found"/>
+  <Entry name="A77" value="Name Specified Does Not Match Account"/>
+  <Entry name="A78" value="Item or Service Already Established, Cannot Add"/>
+  <Entry name="A79" value="Item or Service Not Established, Cannot Modify"/>
+  <Entry name="A80" value="Item or Service Not Available"/>
+  <Entry name="A81" value="Item or Service Not Available on Requested Date"/>
+  <Entry name="A82" value="Address Specified Does Not Match Account"/>
+  <Entry name="A83" value="Unauthorized or Invalid Action"/>
+  <Entry name="A84" value="Civil Event Related Delay"/>
+  <Entry name="A85" value="Customer-requested Early Delivery"/>
+  <Entry name="A91" value="Exceeds Service Limitations"/>
+  <Entry name="A95" value="Past Cutoff Time"/>
+  <Entry name="A96" value="Insufficient Pickup Time"/>
+  <Entry name="A98" value="Missed Pickup"/>
+  <Entry name="A99" value="Alternate Carrier Delivered"/>
+  <Entry name="ABN" value="Abnormal"/>
+  <Entry name="ACC" value="Actual Contractor-Caused Delay"/>
+  <Entry name="ACD" value="Anticipated Contractor-Caused Delay"/>
+  <Entry name="AFR" value="Assignment Form Required"/>
+  <Entry name="AGC" value="Actual Government-Caused Delay"/>
+  <Entry name="AGD" value="Anticipated Government-Caused Delay"/>
+  <Entry name="ANA" value="Agent Not Appointed"/>
+  <Entry name="ANL" value="Agent Not Licensed"/>
+  <Entry name="API" value="Application Incomplete"/>
+  <Entry name="B01" value="Reconsigned"/>
+  <Entry name="B02" value="Appointment or Pre-Arranged Delivery Date"/>
+  <Entry name="B03" value="Trap for Customer"/>
+  <Entry name="B04" value="Held for Payment"/>
+  <Entry name="B05" value="Held for Consignee"/>
+  <Entry name="B06" value="Consignee Closed (Inventory, Vacation, Etc.)"/>
+  <Entry name="B07" value="Dock Pick-Up"/>
+  <Entry name="B08" value="Improper Unloading Facility or Equipment"/>
+  <Entry name="B09" value="Receiving Time Restricted"/>
+  <Entry name="B10" value="Order Notify"/>
+  <Entry name="B11" value="Held for Protective Service"/>
+  <Entry name="B12" value="Connecting Line or Cartage Pick-Up"/>
+  <Entry name="B13" value="Held per Shipper"/>
+  <Entry name="B14" value="Missing Documents"/>
+  <Entry name="B15" value="Border Clearance"/>
+  <Entry name="B16" value="Road Conditions"/>
+  <Entry name="B17" value="Did not complete secondary school"/>
+  <Entry name="B18" value="Standard high school diploma"/>
+  <Entry name="B19" value="Advanced or honors diploma"/>
+  <Entry name="B20" value="Vocational/Technical Preparatory Diploma"/>
+  <Entry name="B21" value="Special education diploma"/>
+  <Entry name="B22" value="Certificate of completion or attendance"/>
+  <Entry name="B23" value="Special certificate of completion"/>
+  <Entry name="B24" value="General Education Development Diploma (GED)"/>
+  <Entry name="B25" value="Other high school equivalency diploma"/>
+  <Entry name="B26" value="International diploma or certificate (such as International Baccalaureate)"/>
+  <Entry name="B27" value="Student is eligible to continue or return or both"/>
+  <Entry name="B28" value="Student is on suspension or dismissal"/>
+  <Entry name="B29" value="Student is expelled (from PreK - grade 12)"/>
+  <Entry name="B30" value="Currently enrolled but courses in progress not included"/>
+  <Entry name="B31" value="Not currently enrolled"/>
+  <Entry name="B32" value="Previous enrollment. Used for entry or exit or both at school other than the sending school"/>
+  <Entry name="B33" value="Unreported - Information is not available in record"/>
+  <Entry name="B34" value="Currently enrolled and courses in progress are included"/>
+  <Entry name="B35" value="Highest Honors"/>
+  <Entry name="B36" value="Second Highest Honors"/>
+  <Entry name="B37" value="Third Highest Honors"/>
+  <Entry name="B38" value="Dropped"/>
+  <Entry name="B39" value="Academic Probation"/>
+  <Entry name="B40" value="Suspended"/>
+  <Entry name="B41" value="Requested record will not be sent; Cannot identify student"/>
+  <Entry name="B42" value="Requested record will not be sent electronically; Paper copy will be sent"/>
+  <Entry name="B43" value="Requested record will not be sent; Have student contact us"/>
+  <Entry name="B44" value="Part of requested record being sent; Remainder to be sent by hard copy"/>
+  <Entry name="B45" value="Requested record will not be sent; No record of student"/>
+  <Entry name="B46" value="Requested record will not be sent; Degree or Diploma not yet awarded"/>
+  <Entry name="B47" value="Requested record will not be sent; Institutional policy requires student release. Have student contact us"/>
+  <Entry name="B48" value="Record being sent at request of student"/>
+  <Entry name="B49" value="Record being sent to replace one previously sent"/>
+  <Entry name="B50" value="Requested record being sent"/>
+  <Entry name="B51" value="Student on Suspension or Dismissal; Eligible to Apply for Re-entry"/>
+  <Entry name="B52" value="According to established regulations or statutes, the student is considered to be a &quot;dropout&quot;"/>
+  <Entry name="B53" value="Student Qualifies for Special Services"/>
+  <Entry name="B54" value="Passed Proficiency Test"/>
+  <Entry name="B55" value="Passed Screening"/>
+  <Entry name="B56" value="Better Features"/>
+  <Entry name="B57" value="Rating Changed"/>
+  <Entry name="BPR" value="Better Performance"/>
+  <Entry name="BW2" value="Bottom Well Cannot Handle Two or More Units"/>
+  <Entry name="BWL" value="Bottom Well Cannot Handle Unit Assigned because of Length"/>
+  <Entry name="BWT" value="Bottom Well Cannot Handle Unit Assigned because of Type"/>
+  <Entry name="BWW" value="Bottom Well Cannot Handle Unit Assigned because of Width"/>
+  <Entry name="C01" value="Waiting for Customer Pick-up"/>
+  <Entry name="C02" value="Credit Hold"/>
+  <Entry name="C03" value="Suspended at Customer Request"/>
+  <Entry name="C04" value="Customer Vacation"/>
+  <Entry name="C05" value="Customer Strike"/>
+  <Entry name="C06" value="Waiting Shipping Instructions"/>
+  <Entry name="C07" value="Waiting for Customer Specified Carrier"/>
+  <Entry name="C08" value="Collect on Delivery Required"/>
+  <Entry name="C09" value="Cash Not Available from Consignee"/>
+  <Entry name="C10" value="Customs (Import/Export)"/>
+  <Entry name="C11" value="No Requested Arrival Date Provided To Carrier By Shipper"/>
+  <Entry name="C12" value="No Requested Arrival Time Provided To Carrier By Shipper"/>
+  <Entry name="C13" value="Loan Paid in Full"/>
+  <Entry name="C14" value="Loan Refinanced, Insured by Insurer Receiving Report"/>
+  <Entry name="C15" value="Loan Refinanced, Insured by Other Insurance Carrier"/>
+  <Entry name="C16" value="Loan Refinanced, No Insurance Required"/>
+  <Entry name="C17" value="Coverage No Longer Required"/>
+  <Entry name="C18" value="No Outstanding Commitments"/>
+  <Entry name="C19" value="Court Probation"/>
+  <Entry name="C20" value="Complete"/>
+  <Entry name="CBD" value="Changed Broker Dealer"/>
+  <Entry name="CDE" value="Clearance to Destination Exceeded"/>
+  <Entry name="CHA" value="Changed Agent"/>
+  <Entry name="CIE" value="Conflict of Interest Exists"/>
+  <Entry name="CIM" value="Check in Mail"/>
+  <Entry name="CLA" value="Collateral Assignment"/>
+  <Entry name="CLP" value="Contract or Lost Policy Statement Required"/>
+  <Entry name="CLR" value="Clear - No motor vehicle violations"/>
+  <Entry name="COS" value="Cosmetic"/>
+  <Entry name="D01" value="Carrier Dispatch Error"/>
+  <Entry name="D02" value="Driver Not Available"/>
+  <Entry name="D03" value="Student has attended a nonpublic school or home education program in- or out-of-state this year, but is entering a public school in this state for the first time this school year"/>
+  <Entry name="D04" value="Student was received from another attendance reporting unit in the same school"/>
+  <Entry name="D05" value="Student was received from a school in the same district"/>
+  <Entry name="D06" value="Student was received from another public school outside the district either in- or out-of-state"/>
+  <Entry name="D07" value="Student was received from a nonpublic school either in or out of the district or has returned after having been enrolled in a home education program; The student must have been enrolled previously in a public school this year"/>
+  <Entry name="D08" value="Student unexpectedly reentered the same school after withdrawing or being discharged"/>
+  <Entry name="D09" value="Student was expected to attend a school but did not enter as expected for unknown reasons"/>
+  <Entry name="D10" value="Student was promoted, retained, or transferred to another attendance-reporting unit in the same school"/>
+  <Entry name="D11" value="Student was promoted, retained, or transferred to another school in the same district"/>
+  <Entry name="D12" value="Student withdrew to attend another public school in the same district"/>
+  <Entry name="D13" value="Student withdrew to attend another public school in- or out-of-state"/>
+  <Entry name="D14" value="Student Over Compulsory Attendance Age Left School Voluntarily with No Intention of Returning"/>
+  <Entry name="D15" value="Student Graduated from School with a Standard Diploma"/>
+  <Entry name="D16" value="Student Graduated from School with a Special Diploma"/>
+  <Entry name="D17" value="Student Left School with a Certificate of Completion"/>
+  <Entry name="D18" value="Student Left School with a Special Certificate of Completion"/>
+  <Entry name="D19" value="Student Left School with a State General Education Development (GED) High School Diploma"/>
+  <Entry name="D20" value="Student Withdrew to Attend a Non-Public School or Home Education Program In- or Out-of-State."/>
+  <Entry name="D21" value="Student withdrew from school due to hardship"/>
+  <Entry name="D22" value="Student has not entered any school in this or any other state this school year"/>
+  <Entry name="D23" value="Previously attended out-of-state public school but is entering a public school in this state for the first time this school year"/>
+  <Entry name="D24" value="Returned to Regular Education Program"/>
+  <Entry name="D25" value="Reclassified Fully English Proficient"/>
+  <Entry name="D26" value="Retained in Current Grade"/>
+  <Entry name="D27" value="Placed in Next Grade After Expected Grade"/>
+  <Entry name="D28" value="Placed in Transitional Program (K-1)"/>
+  <Entry name="D29" value="Status Pending Completion of Summer School (K-12)"/>
+  <Entry name="D30" value="Declined Services"/>
+  <Entry name="D31" value="Administratively Placed in a Higher Grade"/>
+  <Entry name="D32" value="Academically Placed in a Higher Grade"/>
+  <Entry name="D33" value="Promotion Status not Applicable"/>
+  <Entry name="D34" value="Promoted"/>
+  <Entry name="D50" value="Delayed"/>
+  <Entry name="D51" value="Currently Applying"/>
+  <Entry name="D52" value="Previously Applied"/>
+  <Entry name="D53" value="Graduate from a College"/>
+  <Entry name="D54" value="Transfer from a University Program"/>
+  <Entry name="D55" value="Graduate from a University Program"/>
+  <Entry name="D56" value="Exchange Student"/>
+  <Entry name="D57" value="Returning Student Admitted to a New Program"/>
+  <Entry name="D58" value="Returning Student Admitted to the Same Program"/>
+  <Entry name="D59" value="Returning or Continuing Student Changing to Unclassified or General or Unspecified Studies"/>
+  <Entry name="D60" value="Continuing Student Changing to a New Program"/>
+  <Entry name="D61" value="Special Permission"/>
+  <Entry name="D62" value="Graduate from a Technical Institute"/>
+  <Entry name="D63" value="Transfer from a College"/>
+  <Entry name="DEF" value="Deferred Maintenance"/>
+  <Entry name="EB1" value="Deceased"/>
+  <Entry name="EB2" value="Did not Attend this Semester"/>
+  <Entry name="EB3" value="Withdrawn"/>
+  <Entry name="EB4" value="Graduated"/>
+  <Entry name="EB5" value="Never Attended"/>
+  <Entry name="EB6" value="Full-Time Enrollment"/>
+  <Entry name="EB7" value="Half-Time Enrollment"/>
+  <Entry name="EB8" value="Less Than Half-Time Enrollment"/>
+  <Entry name="EB9" value="Approved Leave of Absence"/>
+  <Entry name="EBA" value="No Record Found"/>
+  <Entry name="EBO" value="Three-quarter Time"/>
+  <Entry name="ENR" value="Export Release Not Required"/>
+  <Entry name="ERR" value="Export Release Required"/>
+  <Entry name="EXD" value="Excessive Dimension Cannot be Accepted"/>
+  <Entry name="EXT" value="Enrolled at Extension"/>
+  <Entry name="F73" value="Non-express Clearance Delay"/>
+  <Entry name="F74" value="International Non-carrier Delay"/>
+  <Entry name="FCS" value="Flatcar Shortage"/>
+  <Entry name="FLE" value="Free Lunch Eligible"/>
+  <Entry name="FRB" value="Failed to Release Billing"/>
+  <Entry name="FZD" value="Freeze Damage"/>
+  <Entry name="HIT" value="Hit - At Least One Motor Vehicle Violation"/>
+  <Entry name="HZM" value="Hazardous Material Placement"/>
+  <Entry name="IBF" value="Irrevocable Beneficiary"/>
+  <Entry name="IEP" value="Individual Education Program"/>
+  <Entry name="INC" value="Incarceration"/>
+  <Entry name="INF" value="Incomplete - Final"/>
+  <Entry name="INP" value="Incomplete - In Progress"/>
+  <Entry name="INS" value="Investment Selections"/>
+  <Entry name="IOC" value="Investment Objectives Changed"/>
+  <Entry name="IRS" value="Internal Revenue Service Lien"/>
+  <Entry name="IV1" value="Failed Material Returned for Repair"/>
+  <Entry name="IV2" value="Material Shipped Between Intermediate Points"/>
+  <Entry name="JOW" value="Joint Ownership"/>
+  <Entry name="JVP" value="Juvenile Policy"/>
+  <Entry name="LEP" value="Limited English Proficient"/>
+  <Entry name="LIQ" value="Liquidated"/>
+  <Entry name="LSH" value="Load Shifted"/>
+  <Entry name="MAS" value="Multiple Assignments"/>
+  <Entry name="MEP" value="Migrant Education Program"/>
+  <Entry name="MIN" value="Mental Incompetency"/>
+  <Entry name="MP2" value="Middle Position Cannot Handle Two or More Units"/>
+  <Entry name="MPL" value="Middle Position Cannot Handle Unit Assigned because of Length"/>
+  <Entry name="MPT" value="Middle Position Cannot Handle Unit Assigned because of Type"/>
+  <Entry name="MPW" value="Middle Position Cannot Handle Unit Assigned because of Width"/>
+  <Entry name="MTC" value="Multiple Conditions"/>
+  <Entry name="NGP" value="New Generation Product"/>
+  <Entry name="NNM" value="No New Money (IRA &gt; 70 1/2)"/>
+  <Entry name="NOR" value="Normal"/>
+  <Entry name="NWD" value="No Withdrawals"/>
+  <Entry name="P01" value="Processing Delay"/>
+  <Entry name="P02" value="Waiting Inspection"/>
+  <Entry name="P03" value="Production Falldown"/>
+  <Entry name="P04" value="Held for Full Carrier Load"/>
+  <Entry name="P05" value="Waiting Test Results"/>
+  <Entry name="P06" value="Producer Strike"/>
+  <Entry name="P07" value="Producer Vacation"/>
+  <Entry name="PAA" value="Pending Agent Appointment"/>
+  <Entry name="PAL" value="Pending Agent License"/>
+  <Entry name="POA" value="Power of Attorney"/>
+  <Entry name="REJ" value="Rejected - Insufficient or Incorrect Information"/>
+  <Entry name="RFM" value="Railroad Failed to Meet Schedule"/>
+  <Entry name="RFR" value="Replacement Form Required"/>
+  <Entry name="RLE" value="Reduced Price Lunch Eligible"/>
+  <Entry name="RUN" value="Reason Unknown"/>
+  <Entry name="S01" value="Delivery Shortage"/>
+  <Entry name="SCH" value="Surrender Charges"/>
+  <Entry name="SFR" value="Surrender Form Required"/>
+  <Entry name="SGR" value="Signature Required"/>
+  <Entry name="SOW" value="Shipment Overweight"/>
+  <Entry name="STM" value="Storm"/>
+  <Entry name="T01" value="Tractor With Sleeper Car Not Available"/>
+  <Entry name="T02" value="Tractor, Conventional, Not Available"/>
+  <Entry name="T03" value="Trailer Not Available"/>
+  <Entry name="T04" value="Trailer Not Usable Due to Prior Product"/>
+  <Entry name="T05" value="Trailer Class Not Available"/>
+  <Entry name="T06" value="Trailer Volume Not Available"/>
+  <Entry name="T07" value="Insufficient Delivery Time"/>
+  <Entry name="TDR" value="Train Derailment"/>
+  <Entry name="THT" value="Theft"/>
+  <Entry name="TIL" value="Temporary Income Loss"/>
+  <Entry name="TP2" value="Top Position Cannot Handle Two or More Units"/>
+  <Entry name="TPL" value="Top Position Cannot Handle Unit Assigned because of Length"/>
+  <Entry name="TPT" value="Top Position Cannot Handle Unit Assigned because of Type"/>
+  <Entry name="TPW" value="Top Position Cannot Handle Unit Assigned because of Width"/>
+  <Entry name="UCD" value="Unknown Cause of Delay"/>
+  <Entry name="UND" value="Undetermined"/>
+  <Entry name="VAN" value="Vandalism"/>
+  <Entry name="W01" value="Out of Stock"/>
+  <Entry name="W02" value="Equipment Cut"/>
+  <Entry name="W03" value="Booking Location Request"/>
+  <Entry name="W04" value="On Hold"/>
+  <Entry name="W05" value="Order Discrepancy"/>
+  <Entry name="W06" value="Receiving Location Request"/>
+  <Entry name="W07" value="Inventory Discrepancy"/>
+  <Entry name="W08" value="Material Shortage"/>
+  <Entry name="W09" value="Substitution"/>
+  <Entry name="W10" value="Diverted Item"/>
+  <Entry name="W11" value="Loading Error"/>
+  <Entry name="W12" value="Inbound Carrier Failure"/>
+  <Entry name="W13" value="Product Allocation Exceeded"/>
+  <Entry name="W14" value="Improperly Sized Order"/>
+  <Entry name="W15" value="Wrong Equipment"/>
+  <Entry name="W16" value="Insufficient Equipment Space"/>
+  <Entry name="WAD" value="Waiting Application Delivery"/>
+  <Entry name="WLC" value="Weight Limit of Car Exceeded"/>
+  <Entry name="WLT" value="Weight Limit of Truck Exceeded"/>
+  <Entry name="WLW" value="Weight Limit of Well Exceeded"/>
+  <Entry name="WTP" value="Waiting for Proof"/>
+  <Entry name="X10" value="Alternative Career Exploration"/>
+  <Entry name="XX1" value="Educator in Another District"/>
+  <Entry name="XX2" value="Educator in Another State"/>
+  <Entry name="XX3" value="Educator Outside U.S."/>
+  <Entry name="XX4" value="Other Educational Occupation"/>
+  <Entry name="XX5" value="Not Offered Reemployment"/>
+  <Entry name="XX6" value="Long Term Substitute"/>
+  <Entry name="XX7" value="Intra-District Transfer from Licensed Position to Nonlicensed Position"/>
+  <Entry name="XX8" value="No Assignment"/>
+  <Entry name="XX9" value="Staff Reduction"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

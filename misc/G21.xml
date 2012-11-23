@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G21.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G21" comment="To specify authorize/de-authorize code and product information">
+  <Field name="AuthorizeDeAuthorizeCode" min="1" max="1" validation="T287" comment="Code specifying the function of the authorize/de-authorize transaction set"/>
+  <Field name="Date" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="UPCEanConsumerPackageCode" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) identifying the retail shelf unit; consists of 2 high order digits identifying the system (U.S. Grocery = 00, 06 or 07, U.S. Drug = 03); the next ten digits are manufacturer ID: 5, Item ID: 5"/>
+  <Field name="UPCCaseCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) including two high order digits identifying the &quot;system&quot; (U.S. Grocery = 00, 06 or 07; U.S. Drug = 03); using the U.S. Grocery system, the next ten digits are: Manufacturer (5) Case Code (5)"/>
+  <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="InnerPack" type="long" required="y" min="1" max="6" comment="The number of eaches per inner container"/>
+  <Field name="ItemDistributionCode" required="y" min="2" max="2" validation="T1727" comment="Code indicating the distribution of the item"/>
+</Segment>

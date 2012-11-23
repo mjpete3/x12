@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T887.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T887">
+  <Entry name="P" value="Prepare Claim"/>
+  <Entry name="CA" value="Conditional Use, As Is"/>
+  <Entry name="FR" value="Follow-up Report Request"/>
+  <Entry name="HE" value="Hold Exhibit"/>
+  <Entry name="IN" value="Investigate Deficiency"/>
+  <Entry name="RE" value="Reevaluate"/>
+  <Entry name="RJ" value="Reject"/>
+  <Entry name="RP" value="Repair"/>
+  <Entry name="RQ" value="Request for Disposition"/>
+  <Entry name="RS" value="Response Requirements Follow"/>
+  <Entry name="RT" value="Return"/>
+  <Entry name="RW" value="Rework"/>
+  <Entry name="SC" value="Scrap"/>
+  <Entry name="UA" value="Use As Is"/>
+  <Entry name="UC" value="Other Action"/>
+</Table>

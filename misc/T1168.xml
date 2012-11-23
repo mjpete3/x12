@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1168.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1168">
+  <Entry name="A1" value="(Boxcar) Sliding Door, Less than 9 Ft."/>
+  <Entry name="A2" value="(Boxcar) Sliding Door, Equal to 9 Ft. or Less than 11 Ft."/>
+  <Entry name="A3" value="(Boxcar) Sliding Door, Equal to or Greater than 11 Ft."/>
+  <Entry name="A4" value="(Boxcar) Plug Door Less than 9 Ft."/>
+  <Entry name="A5" value="(Boxcar) Plug Door Equal to 9 Ft. or Less than 11 Ft."/>
+  <Entry name="A6" value="(Boxcar) Plug Door Equal to 11 Ft. or Over 11 Ft."/>
+  <Entry name="A7" value="(Boxcar) Sliding and Plug"/>
+  <Entry name="AO" value="(Boxcar) Any Other Type Door"/>
+  <Entry name="B1" value="(Unequipped Boxcar) Door Less than 8 Ft."/>
+  <Entry name="B2" value="(Unequipped Boxcar) Door Equal to 8 Ft. and Less than 9 Ft."/>
+  <Entry name="B3" value="(Unequipped Boxcar) Door Equal to 9 Ft. and Less than 10 Ft."/>
+  <Entry name="B4" value="(Unequipped Boxcar) Door Equal to 10 Ft. and Less than 11 Ft."/>
+  <Entry name="B5" value="(Unequipped Boxcar) Door Equal to 11 Ft. and Less than 13 Ft."/>
+  <Entry name="B6" value="(Unequipped Boxcar) Door Equal to 13 Ft. and Less than 15 Ft."/>
+  <Entry name="B7" value="(Unequipped Boxcar) Door Equal to 1 Square Foot and Greater"/>
+  <Entry name="BO" value="(Unequipped Boxcar) Door Any Other Door Type"/>
+</Table>

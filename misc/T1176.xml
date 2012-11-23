@@ -1,0 +1,97 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1176.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1176">
+  <Entry name="01" value="Union"/>
+  <Entry name="02" value="Non-Union"/>
+  <Entry name="03" value="Executive"/>
+  <Entry name="04" value="Non-Executive"/>
+  <Entry name="05" value="Management"/>
+  <Entry name="06" value="Non-Management"/>
+  <Entry name="07" value="Hourly"/>
+  <Entry name="08" value="Salaried"/>
+  <Entry name="09" value="Administrative"/>
+  <Entry name="10" value="Non-Administrative"/>
+  <Entry name="11" value="Exempt"/>
+  <Entry name="12" value="Non-Exempt"/>
+  <Entry name="13" value="Seasonal"/>
+  <Entry name="14" value="Commissioned"/>
+  <Entry name="15" value="Collective Bargaining"/>
+  <Entry name="16" value="Officer"/>
+  <Entry name="17" value="Highly Compensated"/>
+  <Entry name="18" value="Key-Employee"/>
+  <Entry name="19" value="Bargaining"/>
+  <Entry name="20" value="Non-Bargaining"/>
+  <Entry name="21" value="Owner"/>
+  <Entry name="22" value="President"/>
+  <Entry name="23" value="Vice President"/>
+  <Entry name="24" value="Physician"/>
+  <Entry name="25" value="Retiree"/>
+  <Entry name="26" value="Treasurer"/>
+  <Entry name="27" value="Attorney"/>
+  <Entry name="28" value="Partner"/>
+  <Entry name="29" value="Controller"/>
+  <Entry name="30" value="Engineer"/>
+  <Entry name="31" value="Associate"/>
+  <Entry name="32" value="Principal"/>
+  <Entry name="33" value="Consultant"/>
+  <Entry name="34" value="Excluded From Top Paid"/>
+  <Entry name="35" value="Owner in Prior Plan Year"/>
+  <Entry name="36" value="Officer in Prior Plan Year"/>
+  <Entry name="37" value="Corporate Officer or Owner"/>
+  <Entry name="38" value="Open End Contract"/>
+  <Entry name="39" value="Partnership"/>
+  <Entry name="40" value="Regular Company Employee"/>
+  <Entry name="41" value="Self Employed"/>
+  <Entry name="42" value="Closed End Contract"/>
+  <Entry name="43" value="Professional"/>
+  <Entry name="44" value="Semi-Professional"/>
+  <Entry name="45" value="Skilled"/>
+  <Entry name="46" value="Unskilled"/>
+  <Entry name="47" value="Contractor"/>
+  <Entry name="48" value="Part Time"/>
+  <Entry name="49" value="Temporary"/>
+  <Entry name="50" value="Unemployed"/>
+  <Entry name="51" value="Board of Directors"/>
+  <Entry name="53" value="Driving"/>
+  <Entry name="54" value="Keyboard"/>
+  <Entry name="55" value="Manual or Physical"/>
+  <Entry name="56" value="Sales"/>
+  <Entry name="57" value="Supervisory"/>
+  <Entry name="58" value="Travel"/>
+  <Entry name="59" value="Lobbyist"/>
+  <Entry name="60" value="Teacher"/>
+  <Entry name="61" value="Research Professionals"/>
+  <Entry name="62" value="Specialist"/>
+  <Entry name="63" value="Support Professionals"/>
+  <Entry name="64" value="Technical"/>
+  <Entry name="65" value="Clerical"/>
+  <Entry name="66" value="Crafts"/>
+  <Entry name="67" value="Service"/>
+  <Entry name="68" value="Faculty"/>
+  <Entry name="69" value="Trades"/>
+  <Entry name="ZY" value="Other"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

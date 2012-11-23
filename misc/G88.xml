@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G88.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G88" comment="To transmit adjustments for identification data">
+  <Field name="PhysicalDeliveryOrReturnDate" required="y" min="8" max="8" comment="Actual or intended date of physical delivery or return expressed in format CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ProductOwnershipTransferDate" required="y" min="8" max="8" comment="Date which is meaningful for both supplier and distributor for various mutually defined purposes (i.e., date of product ownership transfer) expressed in format CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="PurchaseOrderNumber" required="y" min="1" max="22" comment="Identifying number for Purchase Order assigned by the orderer/purchaser"/>
+  <Field name="PurchaseOrderDate" required="y" min="8" max="8" comment="Date assigned by the purchaser to Purchase Order expressed in format CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ReceiversLocationNumber" required="y" min="1" max="6" comment="Number assigned by the customer that when combined with receiver Duns number uniquely identifies the receiving location"/>
+</Segment>

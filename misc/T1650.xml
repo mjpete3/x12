@@ -1,0 +1,73 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1650.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1650">
+  <Entry name="A3" value="Shipment Returned to Shipper"/>
+  <Entry name="A7" value="Refused by Consignee"/>
+  <Entry name="A9" value="Shipment Damaged"/>
+  <Entry name="AF" value="Carrier Departed Pick-up Location with Shipment"/>
+  <Entry name="AG" value="Estimated Delivery"/>
+  <Entry name="AH" value="Attempted Delivery"/>
+  <Entry name="AI" value="Shipment has been Reconsigned"/>
+  <Entry name="AJ" value="Tendered for Delivery"/>
+  <Entry name="AM" value="Loaded on Truck"/>
+  <Entry name="AN" value="Diverted to Air Carrier"/>
+  <Entry name="AP" value="Delivery Not Completed"/>
+  <Entry name="AR" value="Rail Arrival at Destination Intermodal Ramp"/>
+  <Entry name="AV" value="Available for Delivery"/>
+  <Entry name="B6" value="Estimated to Arrive at Carrier Terminal"/>
+  <Entry name="BA" value="Connecting Line or Cartage Pick-up"/>
+  <Entry name="BC" value="Storage in Transit"/>
+  <Entry name="C1" value="Estimated to Depart Terminal Location"/>
+  <Entry name="CA" value="Shipment Cancelled"/>
+  <Entry name="CB" value="Completed Shipment"/>
+  <Entry name="CD" value="Carrier Departed Delivery Location"/>
+  <Entry name="CL" value="Trailer Closed Out"/>
+  <Entry name="CP" value="Completed Loading at Pick-up Location"/>
+  <Entry name="D1" value="Completed Unloading at Delivery Location"/>
+  <Entry name="I1" value="In-Gate"/>
+  <Entry name="J1" value="Delivered to Connecting Line"/>
+  <Entry name="K1" value="Arrived at Customs"/>
+  <Entry name="L1" value="Loading"/>
+  <Entry name="OA" value="Out-Gate"/>
+  <Entry name="OO" value="Paperwork Received - Did not Receive Shipment or Equipment"/>
+  <Entry name="P1" value="Departed Terminal Location"/>
+  <Entry name="PA" value="Partial Shipment"/>
+  <Entry name="PR" value="U.S. Customs Hold at In-Bond Location"/>
+  <Entry name="R1" value="Received from Prior Carrier"/>
+  <Entry name="RA" value="Carrier Arrived at Rail Ramp"/>
+  <Entry name="RD" value="Carrier Departed Rail Ramp"/>
+  <Entry name="RL" value="Rail Departure from Origin Intermodal Ramp"/>
+  <Entry name="S1" value="Trailer Spotted at Consignee's Location"/>
+  <Entry name="SD" value="Shipment Delayed"/>
+  <Entry name="X1" value="Arrived at Delivery Location"/>
+  <Entry name="X2" value="Estimated Date and/or Time of Arrival at Consignee's Location"/>
+  <Entry name="X3" value="Arrived at Pick-up Location"/>
+  <Entry name="X4" value="Arrived at Terminal Location"/>
+  <Entry name="X5" value="Arrived at Delivery Location Loading Dock"/>
+  <Entry name="X6" value="En Route to Delivery Location"/>
+  <Entry name="X8" value="Arrived at Pick-up Location Loading Dock"/>
+  <Entry name="XB" value="Shipment Acknowledged"/>
+</Table>

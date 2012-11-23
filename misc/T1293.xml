@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1293.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1293">
+  <Entry name="BC" value="Beyond Code Date"/>
+  <Entry name="CO" value="Customer Ordering Error"/>
+  <Entry name="CV" value="Color Variance"/>
+  <Entry name="DA" value="Damaged Product"/>
+  <Entry name="DI" value="Discontinued Product"/>
+  <Entry name="DM" value="Defective Merchandise or Store Inspection"/>
+  <Entry name="DP" value="Defective Packaging"/>
+  <Entry name="DR" value="Defective Merchandise or Returned by Consumer"/>
+  <Entry name="DT" value="Damaged In Transit"/>
+  <Entry name="EI" value="Excess Inventory"/>
+  <Entry name="EO" value="End of Season"/>
+  <Entry name="EW" value="Excessive Wear"/>
+  <Entry name="LP" value="Label Problem"/>
+  <Entry name="MD" value="Mark Downs"/>
+  <Entry name="NA" value="Not as Expected"/>
+  <Entry name="OP" value="Outdated Packaging"/>
+  <Entry name="PE" value="Price Error"/>
+  <Entry name="PF" value="Poor Fit"/>
+  <Entry name="PR" value="Product Recall"/>
+  <Entry name="PS" value="Product Spoiled"/>
+  <Entry name="PW" value="Poor Workmanship"/>
+  <Entry name="RE" value="Recall"/>
+  <Entry name="SD" value="Short-Dated Product"/>
+  <Entry name="SM" value="Samples"/>
+  <Entry name="SP" value="Shipped past Cancel Date"/>
+  <Entry name="SR" value="Stock Reduction Agreement"/>
+  <Entry name="ST" value="Style Problem"/>
+  <Entry name="TE" value="Termination"/>
+  <Entry name="WG" value="Wrong Goods or Not Ordered"/>
+</Table>

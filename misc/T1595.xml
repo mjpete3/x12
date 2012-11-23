@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1595.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1595">
+  <Entry name="A" value="Air Force"/>
+  <Entry name="B" value="Air Force Reserves"/>
+  <Entry name="C" value="Army"/>
+  <Entry name="D" value="Army Reserves"/>
+  <Entry name="E" value="Coast Guard"/>
+  <Entry name="F" value="Marine Corps"/>
+  <Entry name="G" value="Marine Corps Reserves"/>
+  <Entry name="H" value="National Guard"/>
+  <Entry name="I" value="Navy"/>
+  <Entry name="J" value="Navy Reserves"/>
+  <Entry name="K" value="Other"/>
+  <Entry name="L" value="Peace Corp"/>
+  <Entry name="M" value="Regular Armed Forces"/>
+  <Entry name="N" value="Reserves"/>
+  <Entry name="O" value="U.S. Public Health Service"/>
+</Table>

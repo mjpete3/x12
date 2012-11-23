@@ -1,0 +1,151 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1590.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1590">
+  <Entry name="A1" value="Accounting Services"/>
+  <Entry name="A2" value="Accounts Payable"/>
+  <Entry name="A3" value="Accounts Receivable"/>
+  <Entry name="A4" value="After-tax Net Earnings or Losses"/>
+  <Entry name="A5" value="Alimony"/>
+  <Entry name="A6" value="Annuities"/>
+  <Entry name="A7" value="Auto"/>
+  <Entry name="A8" value="Automobile"/>
+  <Entry name="B1" value="Before-tax Pension Plan Cash Contributions"/>
+  <Entry name="B2" value="Before-tax Profit Sharing Cash Contributions"/>
+  <Entry name="B3" value="Bonds"/>
+  <Entry name="B4" value="Bonus"/>
+  <Entry name="B5" value="Building"/>
+  <Entry name="C1" value="Capital Gains"/>
+  <Entry name="C2" value="Car Loan"/>
+  <Entry name="C3" value="Cars"/>
+  <Entry name="C4" value="Cash"/>
+  <Entry name="C5" value="Casualty Insurance Premiums"/>
+  <Entry name="C6" value="Certificate of Deposit"/>
+  <Entry name="C7" value="Child Support"/>
+  <Entry name="C8" value="Collectibles"/>
+  <Entry name="C9" value="Commissions"/>
+  <Entry name="CA" value="Company Assets"/>
+  <Entry name="CB" value="Company Capital"/>
+  <Entry name="CC" value="Company Liability"/>
+  <Entry name="CD" value="Corporate Bonds"/>
+  <Entry name="CE" value="Cost of Goods Sold"/>
+  <Entry name="CF" value="Credit Card Debt"/>
+  <Entry name="D1" value="Deferred Compensation"/>
+  <Entry name="D2" value="Dental Insurance Premiums"/>
+  <Entry name="D3" value="Depreciation"/>
+  <Entry name="D4" value="Depreciation or Principle on Business Loans"/>
+  <Entry name="D5" value="Disability Insurance Premiums"/>
+  <Entry name="D6" value="Dividends"/>
+  <Entry name="E1" value="Earned Income"/>
+  <Entry name="E2" value="Electricity"/>
+  <Entry name="E3" value="Employee Benefits"/>
+  <Entry name="E4" value="Equipment Payments"/>
+  <Entry name="E5" value="Equities"/>
+  <Entry name="E6" value="Expenses"/>
+  <Entry name="F1" value="Federal Unemployment Tax (FUTA)"/>
+  <Entry name="G1" value="Gain or Loss from Sale of Fixed Assets"/>
+  <Entry name="G2" value="Gift"/>
+  <Entry name="G3" value="Government Bonds"/>
+  <Entry name="G4" value="Gross Profit"/>
+  <Entry name="G5" value="Gross Receipts"/>
+  <Entry name="G6" value="Gross Sales"/>
+  <Entry name="H1" value="Health Insurance Premiums"/>
+  <Entry name="H2" value="Heat"/>
+  <Entry name="H3" value="Home"/>
+  <Entry name="I1" value="Inheritance"/>
+  <Entry name="I2" value="Insurance Premiums"/>
+  <Entry name="I3" value="Intangible Assets"/>
+  <Entry name="I4" value="Interest"/>
+  <Entry name="I5" value="Interest on Loans"/>
+  <Entry name="I6" value="Inventory"/>
+  <Entry name="I7" value="Investment"/>
+  <Entry name="J1" value="Janitorial Services"/>
+  <Entry name="L1" value="Licenses and Fees"/>
+  <Entry name="L2" value="Life Insurance Cash Value"/>
+  <Entry name="L3" value="Limited Partnership Income"/>
+  <Entry name="L4" value="Loans"/>
+  <Entry name="M1" value="Maintenance"/>
+  <Entry name="M2" value="Malpractice or Liability Insurance Premiums"/>
+  <Entry name="M3" value="Money Market"/>
+  <Entry name="M4" value="Mortgage"/>
+  <Entry name="M5" value="Municipal Bonds"/>
+  <Entry name="M6" value="Mutual Funds"/>
+  <Entry name="N1" value="Net Profit or Loss After Taxes"/>
+  <Entry name="N2" value="Net Profit or Loss Before Taxes"/>
+  <Entry name="N3" value="Net Rental Income"/>
+  <Entry name="N4" value="Net Worth"/>
+  <Entry name="N5" value="Non-owner or Employees Compensation"/>
+  <Entry name="O1" value="Other"/>
+  <Entry name="O2" value="Other Taxes"/>
+  <Entry name="O3" value="Owner or Employees Compensation"/>
+  <Entry name="P1" value="Pension"/>
+  <Entry name="P2" value="Periodicals"/>
+  <Entry name="P3" value="Personal Liability"/>
+  <Entry name="P4" value="Personal Assets"/>
+  <Entry name="P5" value="Personal Property"/>
+  <Entry name="P6" value="Professional Dues"/>
+  <Entry name="P7" value="Professional Fees"/>
+  <Entry name="P8" value="Profit Sharing"/>
+  <Entry name="P9" value="Property Taxes"/>
+  <Entry name="PA" value="Publications"/>
+  <Entry name="R1" value="Real Estate"/>
+  <Entry name="R2" value="Rent"/>
+  <Entry name="R3" value="Rental Property"/>
+  <Entry name="R4" value="Retirement Plan"/>
+  <Entry name="R5" value="Royalties"/>
+  <Entry name="S1" value="Salary"/>
+  <Entry name="S2" value="Sales"/>
+  <Entry name="S3" value="Savings"/>
+  <Entry name="S4" value="Savings Bonds"/>
+  <Entry name="S5" value="Scheduled Principal Payments on Debt"/>
+  <Entry name="S6" value="Security Service"/>
+  <Entry name="S7" value="Self Employment Income"/>
+  <Entry name="S8" value="Share of After-tax C Corporation Net Income or Loss"/>
+  <Entry name="S9" value="Share of After-tax Corporation Earnings or Losses"/>
+  <Entry name="SA" value="Share of Partnership Net Profit or Loss"/>
+  <Entry name="SB" value="Share of Partnership Ordinary Income"/>
+  <Entry name="SC" value="Share of S Corporation Net Income or Loss"/>
+  <Entry name="SD" value="Social Security (FICA)"/>
+  <Entry name="SE" value="Sole Proprietorship Net Profit or Loss"/>
+  <Entry name="SF" value="State Unemployment Tax (SUTA)"/>
+  <Entry name="SG" value="Stocks"/>
+  <Entry name="T1" value="Tangible Assets - Non-current"/>
+  <Entry name="T2" value="Tangible Assets - Current"/>
+  <Entry name="T3" value="Taxes"/>
+  <Entry name="T4" value="Telephone"/>
+  <Entry name="T5" value="Telephone Answering Services"/>
+  <Entry name="T6" value="Total Assets"/>
+  <Entry name="T7" value="Total Earned Income"/>
+  <Entry name="T8" value="Total Income"/>
+  <Entry name="T9" value="Total Liability"/>
+  <Entry name="TA" value="Total Unearned Income"/>
+  <Entry name="TB" value="Treasury Bills"/>
+  <Entry name="TC" value="Trust"/>
+  <Entry name="U1" value="Unearned Income"/>
+  <Entry name="U2" value="Unemployment Compensation"/>
+  <Entry name="U3" value="Utilities"/>
+  <Entry name="W1" value="Workers Compensation"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

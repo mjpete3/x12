@@ -1,0 +1,72 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T753.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T753">
+  <Entry name="01" value="Casing Type"/>
+  <Entry name="02" value="Recycle Code"/>
+  <Entry name="10" value="Shipping Package Labeling"/>
+  <Entry name="11" value="Shipping Package Sealing"/>
+  <Entry name="12" value="Primary Marking"/>
+  <Entry name="13" value="Secondary Marking"/>
+  <Entry name="34" value="Product Marking"/>
+  <Entry name="35" value="Type of Package"/>
+  <Entry name="36" value="Package Specifications"/>
+  <Entry name="37" value="Package Protection"/>
+  <Entry name="38" value="Tarping"/>
+  <Entry name="39" value="Platform/Skid Location"/>
+  <Entry name="40" value="Bearing Piece Location"/>
+  <Entry name="42" value="Placement on Carrier"/>
+  <Entry name="43" value="Spacing Directions"/>
+  <Entry name="44" value="Unloading Device"/>
+  <Entry name="45" value="Unloading Equipment"/>
+  <Entry name="60" value="Product Marking Pattern"/>
+  <Entry name="61" value="Product Marking Location"/>
+  <Entry name="62" value="Package/Container Mark Location"/>
+  <Entry name="63" value="Marking Method"/>
+  <Entry name="65" value="Core Characteristics"/>
+  <Entry name="66" value="Receiving Facility Limitations"/>
+  <Entry name="67" value="Tagging/Bar Code Instructions"/>
+  <Entry name="68" value="Skid/Pallet Type"/>
+  <Entry name="CB" value="Container Type"/>
+  <Entry name="CC" value="Container Characteristics"/>
+  <Entry name="CD" value="Cleaning or Drying Procedure"/>
+  <Entry name="CS" value="Container Shape"/>
+  <Entry name="CT" value="Cushioning Thickness"/>
+  <Entry name="HM" value="Hazardous Material"/>
+  <Entry name="IC" value="Intermediate Container"/>
+  <Entry name="IP" value="Intermediate Pack"/>
+  <Entry name="LP" value="Level Of Preservation"/>
+  <Entry name="PK" value="Packing"/>
+  <Entry name="PM" value="Preservation Method"/>
+  <Entry name="PN" value="Promotional Marking"/>
+  <Entry name="UC" value="Unit Container"/>
+  <Entry name="UP" value="Unit Pack"/>
+  <Entry name="WM" value="Wrapping Material"/>
+  <Entry name="CUD" value="Cushioning and Dunnage"/>
+  <Entry name="OPI" value="Optional Procedure Indicator"/>
+  <Entry name="PML" value="Preservation Material"/>
+  <Entry name="SMK" value="Special Marking"/>
+  <Entry name="UCL" value="Unit Container Level"/>
+</Table>

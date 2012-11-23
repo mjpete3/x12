@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T305.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T305">
+  <Entry name="A" value="Off Invoice (Deduction from Original Invoice)"/>
+  <Entry name="B" value="Debit/Credit Advice No Remittance Detail"/>
+  <Entry name="C" value="Payment Accompanies Remittance Advice"/>
+  <Entry name="D" value="Make Payment Only"/>
+  <Entry name="E" value="Debit/Credit Advice with Remittance Detail"/>
+  <Entry name="F" value="Plan and Submit Suggested Purchase Order(s)"/>
+  <Entry name="G" value="Plan Order(s) and Ship Product"/>
+  <Entry name="H" value="Notification Only"/>
+  <Entry name="I" value="Remittance Information Only"/>
+  <Entry name="J" value="Payment Requested (Adjustment to Account)"/>
+  <Entry name="K" value="Reimbursement to Follow"/>
+  <Entry name="L" value="Apply on Account"/>
+  <Entry name="M" value="Memo/Additional Remittance Detail"/>
+  <Entry name="N" value="Check Issuance Notice"/>
+  <Entry name="O" value="Deduct from Next Remittance"/>
+  <Entry name="P" value="Prenotification of Future Transfers"/>
+  <Entry name="Q" value="Credit Due, Payment Being Issued"/>
+  <Entry name="R" value="Recurring Debit Authorization"/>
+  <Entry name="S" value="Single Debit Authorization"/>
+  <Entry name="T" value="Adjustment Requested"/>
+  <Entry name="U" value="Split Payment and Remittance"/>
+  <Entry name="X" value="Handling Party's Option to Split Payment and Remittance"/>
+  <Entry name="Z" value="Mutually Defined"/>
+</Table>

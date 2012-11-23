@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T460.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T460">
+  <Entry name="A" value="Shipper's Weight Agreement"/>
+  <Entry name="C" value="Consignee Scale Weight"/>
+  <Entry name="D" value="Destination Weight Agreement"/>
+  <Entry name="E" value="Estimated Weight"/>
+  <Entry name="F" value="Public Scale Weight on Behalf of Consignee"/>
+  <Entry name="G" value="Grain Exchange Weight"/>
+  <Entry name="H" value="Public Scale Weight on Behalf of Shipper"/>
+  <Entry name="M" value="Manifest Weight"/>
+  <Entry name="N" value="No Wt. Req., Ship. Moving on Contract or per car rate"/>
+  <Entry name="O" value="Official Weight"/>
+  <Entry name="R" value="Carrier Scale Weight"/>
+  <Entry name="S" value="Shipper Certified Scale Weights"/>
+  <Entry name="T" value="Tariff Authorized Weight"/>
+</Table>

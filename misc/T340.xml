@@ -1,0 +1,153 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T340.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T340">
+  <Entry name="1" value="Free Goods"/>
+  <Entry name="2" value="Shrink Allowance"/>
+  <Entry name="3" value="Count and Recount"/>
+  <Entry name="4" value="Fuel Allowance"/>
+  <Entry name="5" value="Allowance Non-Performance"/>
+  <Entry name="6" value="Pallet Charge"/>
+  <Entry name="7" value="Ocean Freight Charge"/>
+  <Entry name="10" value="Drayage"/>
+  <Entry name="11" value="Blast Freezing"/>
+  <Entry name="12" value="Communication Expense"/>
+  <Entry name="13" value="Handling In"/>
+  <Entry name="14" value="Handling Out"/>
+  <Entry name="15" value="Labor"/>
+  <Entry name="16" value="Minimum Charge"/>
+  <Entry name="17" value="Physical Inventory"/>
+  <Entry name="18" value="Pick Rate"/>
+  <Entry name="19" value="Postage"/>
+  <Entry name="20" value="Slow Freezing"/>
+  <Entry name="21" value="Storage"/>
+  <Entry name="22" value="Supplies"/>
+  <Entry name="23" value="Taking Weights"/>
+  <Entry name="24" value="Telephone, Telex, Fax"/>
+  <Entry name="25" value="United States Department of Agriculture (USDA) Inspection"/>
+  <Entry name="26" value="Unloading"/>
+  <Entry name="27" value="Withdrawal Line Item Rate"/>
+  <Entry name="28" value="Direct Product Handling (DPC)"/>
+  <Entry name="29" value="Price Adjustment Percent (PCT)"/>
+  <Entry name="30" value="Post Damaged Handling (PDC)"/>
+  <Entry name="31" value="Reclamation Center Handling (Chute)"/>
+  <Entry name="32" value="Reclamation Shared Responsibility (SRS)"/>
+  <Entry name="33" value="Maximum Price Percent (MAX)"/>
+  <Entry name="34" value="Minimum Price Percent (MIN)"/>
+  <Entry name="35" value="Conversion Allowance"/>
+  <Entry name="40" value="Slip Sheet Allowance"/>
+  <Entry name="41" value="Terms Allowance"/>
+  <Entry name="42" value="Central Buy"/>
+  <Entry name="43" value="Display Allowance"/>
+  <Entry name="44" value="Early Buy Allowance"/>
+  <Entry name="45" value="New Discount"/>
+  <Entry name="46" value="New Warehouse"/>
+  <Entry name="47" value="Competitive Marketing Allowance"/>
+  <Entry name="48" value="Special Buy"/>
+  <Entry name="50" value="Lump Sum"/>
+  <Entry name="51" value="Trade Discount"/>
+  <Entry name="52" value="Quantity Discount"/>
+  <Entry name="53" value="Freight Allowance"/>
+  <Entry name="54" value="Pick-up Allowance"/>
+  <Entry name="55" value="Warehouse Allowance"/>
+  <Entry name="57" value="Vehicle Load Allowance"/>
+  <Entry name="58" value="Unsaleable Merchandise Allowance"/>
+  <Entry name="60" value="Label Allowance"/>
+  <Entry name="61" value="Handling Allowance"/>
+  <Entry name="62" value="Freshness/Leaker Allowance"/>
+  <Entry name="63" value="Floor Stock Protection"/>
+  <Entry name="64" value="Truckload Allowance"/>
+  <Entry name="65" value="New Item Allowance"/>
+  <Entry name="66" value="Slotting Allowance"/>
+  <Entry name="67" value="New Distribution Allowance"/>
+  <Entry name="68" value="Scanner Allowance"/>
+  <Entry name="70" value="Allowance for Consignment Merchandise"/>
+  <Entry name="80" value="Combination Performance and Non-performance"/>
+  <Entry name="81" value="Direct Plant Ship Allowance"/>
+  <Entry name="88" value="Mutually Defined"/>
+  <Entry name="90" value="Performance Allowance"/>
+  <Entry name="91" value="Glaze Allowance"/>
+  <Entry name="92" value="In Transit Price Protection"/>
+  <Entry name="93" value="COOP Credit"/>
+  <Entry name="94" value="Cigarette Stamping"/>
+  <Entry name="95" value="Swell"/>
+  <Entry name="96" value="Grouped Items"/>
+  <Entry name="97" value="Cents Off"/>
+  <Entry name="100" value="Advertising Allowance"/>
+  <Entry name="101" value="Voluntary Price Reduction"/>
+  <Entry name="105" value="Pallet Allowance"/>
+  <Entry name="106" value="Show Allowance"/>
+  <Entry name="107" value="Indirect Customer Allowance"/>
+  <Entry name="110" value="Adjustment"/>
+  <Entry name="111" value="Check Adjustment"/>
+  <Entry name="112" value="Funds Return"/>
+  <Entry name="113" value="Generic Supply Charge"/>
+  <Entry name="114" value="Hardware Maintenance Charge"/>
+  <Entry name="116" value="Media Charge"/>
+  <Entry name="117" value="Per Claim Charge"/>
+  <Entry name="118" value="Per Item Media Charge"/>
+  <Entry name="119" value="Programming Charge"/>
+  <Entry name="120" value="Service Adjustment"/>
+  <Entry name="121" value="Software Maintenance Charge"/>
+  <Entry name="490" value="Goods and Services Credit Allowance"/>
+  <Entry name="491" value="Tax Credit Allowance"/>
+  <Entry name="499" value="Other Allowance"/>
+  <Entry name="501" value="Taxes"/>
+  <Entry name="502" value="Carrier"/>
+  <Entry name="503" value="Special Handling"/>
+  <Entry name="504" value="Freight"/>
+  <Entry name="505" value="Insurance"/>
+  <Entry name="506" value="Railcar Loading"/>
+  <Entry name="507" value="Switch Charge"/>
+  <Entry name="508" value="USDA Inspected, Stamping Certification"/>
+  <Entry name="509" value="Labeling"/>
+  <Entry name="510" value="Koshering"/>
+  <Entry name="511" value="Warehouse"/>
+  <Entry name="512" value="Palletizing"/>
+  <Entry name="513" value="Enclosure"/>
+  <Entry name="514" value="Surcharge"/>
+  <Entry name="515" value="Stopcharge"/>
+  <Entry name="516" value="Delivery Charge"/>
+  <Entry name="517" value="Demurrage"/>
+  <Entry name="518" value="Service Charge"/>
+  <Entry name="519" value="Less Than Truckload Charge"/>
+  <Entry name="520" value="Cut"/>
+  <Entry name="521" value="Paralleling"/>
+  <Entry name="522" value="Broken Lot"/>
+  <Entry name="523" value="Special Packaging"/>
+  <Entry name="524" value="Reel"/>
+  <Entry name="525" value="Deposit Charge - Resale Item"/>
+  <Entry name="526" value="Beverage Tax"/>
+  <Entry name="527" value="Environmental Handling Charge"/>
+  <Entry name="537" value="State or Province Tax"/>
+  <Entry name="550" value="Deposit Charge - Non-Resale Item"/>
+  <Entry name="560" value="Equipment Rental Charge"/>
+  <Entry name="561" value="Equipment Service Charge"/>
+  <Entry name="562" value="Inter-warehouse Freight Charge"/>
+  <Entry name="565" value="Inbound Postage"/>
+  <Entry name="566" value="Outbound Postage"/>
+  <Entry name="990" value="Goods and Services Charge"/>
+  <Entry name="999" value="Other Charges"/>
+</Table>

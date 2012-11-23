@@ -1,0 +1,138 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T304.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T304">
+  <Entry name="AAA" value="Requested Requirements"/>
+  <Entry name="AAD" value="Actual Arrival at POD"/>
+  <Entry name="ACA" value="Actual Conveyance Arrival"/>
+  <Entry name="ACC" value="Accepted"/>
+  <Entry name="ADR" value="Highway Departure"/>
+  <Entry name="ALR" value="Actually Loaded on Rail"/>
+  <Entry name="ALV" value="Actually Loaded on Vessel"/>
+  <Entry name="ANL" value="Train Annulment"/>
+  <Entry name="ANO" value="Arrived, Not Ordered, Placed by Destination Party"/>
+  <Entry name="APU" value="Anticipated Pick-up"/>
+  <Entry name="ARD" value="Actual Arrival Date at Final Destination"/>
+  <Entry name="ARI" value="Arrival Transit Location"/>
+  <Entry name="ARR" value="Arrival Final Destination"/>
+  <Entry name="ASO" value="Anticipated Set-out"/>
+  <Entry name="BAD" value="Bad Order"/>
+  <Entry name="BFR" value="Release from Bad Order"/>
+  <Entry name="BHV" value="Bad Order Heavy Repair"/>
+  <Entry name="BLG" value="Bad Order Light Repair"/>
+  <Entry name="BOH" value="Bad Order - Hours to Repair"/>
+  <Entry name="CCT" value="Crew Call"/>
+  <Entry name="CG1" value="Car Grade By Inspection"/>
+  <Entry name="COC" value="Cancellation of Conveyance"/>
+  <Entry name="CRD" value="Cargo Receipt Date"/>
+  <Entry name="CSL" value="Cargo Stripping"/>
+  <Entry name="CTU" value="Crew Tie Up"/>
+  <Entry name="DDL" value="Delivery Attempt"/>
+  <Entry name="DEC" value="Declined"/>
+  <Entry name="DEL" value="Deleted"/>
+  <Entry name="DEP" value="Delivery Pending"/>
+  <Entry name="DFL" value="Departure from Location"/>
+  <Entry name="DRM" value="Deramped"/>
+  <Entry name="DSI" value="Destination Switch Interchange"/>
+  <Entry name="EAD" value="Estimated Arrival Date"/>
+  <Entry name="EDD" value="Estimated Departure Date"/>
+  <Entry name="EFT" value="Estimated Free Time"/>
+  <Entry name="ERD" value="Estimated Arrival Date at Final Destination"/>
+  <Entry name="ETA" value="Advanced Estimated Time of Arrival"/>
+  <Entry name="EWI" value="Early Warning Inspections"/>
+  <Entry name="EWL" value="Association of American Railroads Early Warning Letter"/>
+  <Entry name="FOL" value="Follow Up"/>
+  <Entry name="FTE" value="Free Time Expired Date"/>
+  <Entry name="HAR" value="Highway Arrival RR Facility"/>
+  <Entry name="HMI" value="Hold or Miscellaneous"/>
+  <Entry name="HRE" value="Release from Hold or Miscellaneous"/>
+  <Entry name="IBD" value="In Bond"/>
+  <Entry name="ICH" value="Interchange Delivery"/>
+  <Entry name="ICR" value="Interchange Receipt"/>
+  <Entry name="IGT" value="Intermodal In-Gate Arrival at Railroad Intermodal Terminal"/>
+  <Entry name="INC" value="Incomplete"/>
+  <Entry name="INV" value="Association of American Railroads Inventory Move"/>
+  <Entry name="IRD" value="In Transit"/>
+  <Entry name="IRI" value="Ingate to Rail Interchange"/>
+  <Entry name="ITS" value="Ingate to Rail Terminal or Satellite"/>
+  <Entry name="MAL" value="Mailed"/>
+  <Entry name="MWY" value="Move Away"/>
+  <Entry name="NOB" value="No Bill at Location"/>
+  <Entry name="NOT" value="Notified Destination Party"/>
+  <Entry name="OCA" value="Overdue Conveyance Arrival"/>
+  <Entry name="OGT" value="Intermodal Out-Gate"/>
+  <Entry name="OID" value="Open Interchange Delivery"/>
+  <Entry name="OIR" value="Open Interchange Receipt"/>
+  <Entry name="ORI" value="Outgate to Rail Interchange"/>
+  <Entry name="OSI" value="Origin Switch Interchange"/>
+  <Entry name="OTS" value="Outgate to Rail Terminal or Satellite"/>
+  <Entry name="PAC" value="Placement Actual"/>
+  <Entry name="PCO" value="Placement Constructive"/>
+  <Entry name="PEN" value="Pending"/>
+  <Entry name="PFP" value="Pulled from Patron"/>
+  <Entry name="POS" value="Postpone"/>
+  <Entry name="PRB" value="Problem Log Created"/>
+  <Entry name="RAM" value="Ramped"/>
+  <Entry name="REC" value="Postal Reconsignment"/>
+  <Entry name="REJ" value="Rejected by Shipper"/>
+  <Entry name="REP" value="Repended"/>
+  <Entry name="RET" value="Receipted"/>
+  <Entry name="RLO" value="Released Loaded from Customer"/>
+  <Entry name="RMT" value="Released Empty from Customer"/>
+  <Entry name="RST" value="Restore Annulled Train"/>
+  <Entry name="RYD" value="Rail Yard Move"/>
+  <Entry name="SAD" value="Scheduled Arrival Date"/>
+  <Entry name="SAT" value="Satisfied"/>
+  <Entry name="SDD" value="Scheduled Departure Date"/>
+  <Entry name="SLD" value="Sailed"/>
+  <Entry name="SPD" value="Scheduled Passing"/>
+  <Entry name="SPT" value="Spot Date"/>
+  <Entry name="STA" value="To Storage - Actual"/>
+  <Entry name="STI" value="To Storage - Intend"/>
+  <Entry name="STN" value="Stored Unserviceable"/>
+  <Entry name="STP" value="Stored Prospective Load"/>
+  <Entry name="STS" value="Stored for Seasonal Use"/>
+  <Entry name="STU" value="Stored Serviceable"/>
+  <Entry name="SUS" value="Suspended"/>
+  <Entry name="TDC" value="Train Delay Cancelled"/>
+  <Entry name="TDL" value="Train Delay"/>
+  <Entry name="TMA" value="Train Move Arrival"/>
+  <Entry name="TMD" value="Train Move Departure"/>
+  <Entry name="TOD" value="Train Overdue"/>
+  <Entry name="TPL" value="Trip Planned"/>
+  <Entry name="TRN" value="Lading Transferred"/>
+  <Entry name="TRP" value="Train Reported Passing"/>
+  <Entry name="UFV" value="Unloaded From Vessel"/>
+  <Entry name="UNS" value="Unable to Schedule"/>
+  <Entry name="VAR" value="Vessel Arrival"/>
+  <Entry name="VDP" value="Vessel Departure"/>
+  <Entry name="WAI" value="Waived"/>
+  <Entry name="WGH" value="Weigh"/>
+  <Entry name="WIT" value="Withdrawn"/>
+  <Entry name="WYB" value="Waybilled"/>
+  <Entry name="ZZX" value="Refuel"/>
+  <Entry name="ZZY" value="Fuel Reading"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,117 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T584.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T584">
+  <Entry name="00" value="Substitute"/>
+  <Entry name="AA" value="Leave of Absence with Pay"/>
+  <Entry name="AB" value="Leave of Absence without Pay"/>
+  <Entry name="AC" value="Active"/>
+  <Entry name="AD" value="Apprenticeship Full-time"/>
+  <Entry name="AE" value="Active Reserve"/>
+  <Entry name="AF" value="Flexible Work Plan"/>
+  <Entry name="AG" value="Alerted"/>
+  <Entry name="AH" value="Assigned"/>
+  <Entry name="AI" value="Affiliated with Outside Organization"/>
+  <Entry name="AJ" value="Adjunct"/>
+  <Entry name="AO" value="Active Military - Overseas"/>
+  <Entry name="AP" value="Apprenticeship Part-time"/>
+  <Entry name="AQ" value="Apprenticeship"/>
+  <Entry name="AS" value="Academy Student"/>
+  <Entry name="AU" value="Active Military - USA"/>
+  <Entry name="CA" value="Non-applicable Employment Status Category"/>
+  <Entry name="CC" value="Contractor"/>
+  <Entry name="CO" value="Consolidated Omnibus Budget Reconciliation Act (COBRA)"/>
+  <Entry name="CT" value="Continued"/>
+  <Entry name="DC" value="Discharged or Terminated for Cause"/>
+  <Entry name="DD" value="Dishonorably Discharged"/>
+  <Entry name="DI" value="Deceased"/>
+  <Entry name="DQ" value="Disqualified: Medical or Physical Condition"/>
+  <Entry name="DR" value="Disqualified: Other"/>
+  <Entry name="DS" value="Disabled"/>
+  <Entry name="EO" value="Employed by Outside Organization"/>
+  <Entry name="FA" value="Furloughed: Job Abolished, Force Reduction"/>
+  <Entry name="FB" value="Furloughed: Bumped or Displaced"/>
+  <Entry name="FC" value="Furloughed: Facility Closed"/>
+  <Entry name="FO" value="Furloughed: Other"/>
+  <Entry name="FT" value="Full-time"/>
+  <Entry name="HD" value="Honorably Discharged"/>
+  <Entry name="IA" value="Inactive"/>
+  <Entry name="IR" value="Inactive Reserves"/>
+  <Entry name="L1" value="Leave of Absence"/>
+  <Entry name="L2" value="Administrative Leave of Absence"/>
+  <Entry name="L3" value="Annual Leave of Absence"/>
+  <Entry name="L4" value="Leave of Absence due to Bereavement"/>
+  <Entry name="L5" value="Jury Duty"/>
+  <Entry name="L6" value="Suspension"/>
+  <Entry name="L7" value="Sabbatical Leave of Absence"/>
+  <Entry name="LA" value="Leave of Absence: Personal"/>
+  <Entry name="LE" value="Leave of Absence: Education"/>
+  <Entry name="LF" value="Leave of Absence: Family Medical Leave Act (FMLA)"/>
+  <Entry name="LM" value="Leave of Absence: Maternity"/>
+  <Entry name="LO" value="Leave of Absence for Non-Military Government Request Other Than Jury Duty"/>
+  <Entry name="LS" value="Leave of Absence: Sickness"/>
+  <Entry name="LU" value="Leave of Absence: Union"/>
+  <Entry name="LW" value="Leave of Absence: Without Permission, Unauthorized"/>
+  <Entry name="LX" value="Leave of Absence: Military"/>
+  <Entry name="NE" value="Not Employed"/>
+  <Entry name="OS" value="On Strike"/>
+  <Entry name="OT" value="Other"/>
+  <Entry name="PA" value="Promoted"/>
+  <Entry name="PC" value="Part-time Contractual"/>
+  <Entry name="PE" value="Plan to Enlist"/>
+  <Entry name="PM" value="Permanent"/>
+  <Entry name="PN" value="Part-time Noncontractual"/>
+  <Entry name="PR" value="Probationary"/>
+  <Entry name="PT" value="Part-time"/>
+  <Entry name="PV" value="Previous"/>
+  <Entry name="PW" value="Piece Worker"/>
+  <Entry name="RA" value="Resigned: Retired"/>
+  <Entry name="RB" value="Relocated"/>
+  <Entry name="RC" value="Reassigned"/>
+  <Entry name="RD" value="Resigned: Moved"/>
+  <Entry name="RE" value="Recommissioned"/>
+  <Entry name="RI" value="Resigned: Injury"/>
+  <Entry name="RM" value="Retired Military - Overseas"/>
+  <Entry name="RP" value="Resigned: Personal Reasons"/>
+  <Entry name="RR" value="Retired Without Recall"/>
+  <Entry name="RT" value="Retired"/>
+  <Entry name="RU" value="Retired Military - USA"/>
+  <Entry name="RW" value="Dual Retired Status"/>
+  <Entry name="SA" value="Resigned: Accepted Separation Allowance"/>
+  <Entry name="SB" value="Separated"/>
+  <Entry name="SE" value="Self-Employed"/>
+  <Entry name="SL" value="Seasonal"/>
+  <Entry name="SU" value="Suspended"/>
+  <Entry name="TE" value="Terminated"/>
+  <Entry name="TF" value="Temporary Full-Time"/>
+  <Entry name="TM" value="Temporary"/>
+  <Entry name="TN" value="Tenured"/>
+  <Entry name="TP" value="Temporary Part-Time"/>
+  <Entry name="TR" value="Transferred"/>
+  <Entry name="UK" value="Unknown"/>
+  <Entry name="VO" value="Volunteer"/>
+  <Entry name="XD" value="Extra Duties Not Requiring Certification"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

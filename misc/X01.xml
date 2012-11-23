@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: X01.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="X01" comment="To specify the automated manifest in the U.S. Customs system that is pending archive or actually archived">
+  <Field name="StandardCarrierAlphaCode" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="LocationQualifier" min="1" max="2" validation="T309" comment="Code identifying type of location"/>
+  <Field name="LocationIdentifier" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="VesselCodeQualifier" required="y" min="1" max="1" validation="T897" comment="Code specifying vessel code source"/>
+  <Field name="VesselCode" required="y" min="1" max="8" comment="Code identifying vessel"/>
+  <Field name="VesselName" required="y" min="2" max="28" comment="Name of ship as documented in &quot;Lloyd's Register of Ships&quot;"/>
+  <Field name="FlightVoyageNumber" required="y" min="2" max="10" comment="Identifying designator for the particular flight or voyage on which the cargo travels"/>
+  <Field name="DateTimeQualifier" required="y" min="3" max="3" validation="T374" comment="Code specifying type of date or time, or both date and time"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+</Segment>

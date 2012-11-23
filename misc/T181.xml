@@ -1,0 +1,75 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T181.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T181">
+  <Entry name="03" value="Shipment Greater Than Previously Reported"/>
+  <Entry name="04" value="Receipt Less Than Previously Reported"/>
+  <Entry name="05" value="Product Put on Hold"/>
+  <Entry name="06" value="Book Adjustment Decrease"/>
+  <Entry name="07" value="Product Dumped or Destroyed"/>
+  <Entry name="51" value="Unable-to-Locate (UTL) Product Located"/>
+  <Entry name="52" value="Recoup/Rework of Damaged Product"/>
+  <Entry name="53" value="Shipment Less Than Previously Reported"/>
+  <Entry name="54" value="Receipt Greater Than Previously Reported"/>
+  <Entry name="55" value="Product Taken Off Hold"/>
+  <Entry name="56" value="Book Adjustment Increase"/>
+  <Entry name="AA" value="Physical Count"/>
+  <Entry name="AB" value="Accounting Error"/>
+  <Entry name="AC" value="Condition Change"/>
+  <Entry name="AD" value="Purpose Change"/>
+  <Entry name="AE" value="Reidentification"/>
+  <Entry name="AF" value="Stock Number Change"/>
+  <Entry name="AG" value="Ownership Change"/>
+  <Entry name="AH" value="Other"/>
+  <Entry name="AI" value="Disaster"/>
+  <Entry name="AJ" value="Survey"/>
+  <Entry name="AK" value="Transfer"/>
+  <Entry name="AL" value="Capitalization"/>
+  <Entry name="AN" value="Unit of Issue Change"/>
+  <Entry name="AP" value="Product/Formula Evaluation and Testing"/>
+  <Entry name="AR" value="Order Shipment Error"/>
+  <Entry name="AS" value="Recouping"/>
+  <Entry name="AT" value="Prepack Preparation"/>
+  <Entry name="AU" value="Damaged in Facility"/>
+  <Entry name="AV" value="Damaged in Transit"/>
+  <Entry name="AW" value="Product Recall"/>
+  <Entry name="AX" value="Shelf-life Obsolescence"/>
+  <Entry name="AY" value="Receipt Error"/>
+  <Entry name="BA" value="Operating Variance"/>
+  <Entry name="BD" value="Nonrecoverable"/>
+  <Entry name="BK" value="Off Specification"/>
+  <Entry name="BM" value="Replacement"/>
+  <Entry name="BN" value="Tariff Deduction"/>
+  <Entry name="BR" value="Regrade"/>
+  <Entry name="BS" value="Downgrade"/>
+  <Entry name="BT" value="Additive"/>
+  <Entry name="CD" value="Product Donations"/>
+  <Entry name="CO" value="Consignment"/>
+  <Entry name="CR" value="Customer Returned Inventory"/>
+  <Entry name="CS" value="Product Samples"/>
+  <Entry name="PC" value="Product Reserved for Customer"/>
+  <Entry name="TC" value="Tax Conversion"/>
+  <Entry name="UD" value="Unauthorized Destruction"/>
+</Table>

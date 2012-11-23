@@ -1,0 +1,79 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1205.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1205">
+  <Entry name="AC" value="Basic Life"/>
+  <Entry name="AF" value="Supplemental Life"/>
+  <Entry name="AG" value="Preventative Care/Wellness"/>
+  <Entry name="AH" value="24 Hour Care"/>
+  <Entry name="AI" value="Workers Compensation"/>
+  <Entry name="AJ" value="Medicare Risk"/>
+  <Entry name="AK" value="Mental Health"/>
+  <Entry name="AP" value="Paid Up Life"/>
+  <Entry name="AR" value="Dependent Life"/>
+  <Entry name="BC" value="Death and Dismemberment"/>
+  <Entry name="BE" value="Supplemental Death and Dismemberment"/>
+  <Entry name="BH" value="Weekly Indemnity"/>
+  <Entry name="BK" value="Weekly Indemnity - New York Employees"/>
+  <Entry name="CV" value="Employee Comprehensive"/>
+  <Entry name="HE" value="Hearing"/>
+  <Entry name="LL" value="Lifestyle Life (Individualized Basic Life)"/>
+  <Entry name="MM" value="Major Medical"/>
+  <Entry name="NQ" value="Non-Qualified"/>
+  <Entry name="UL" value="Universal Life"/>
+  <Entry name="UR" value="Utilization Review"/>
+  <Entry name="403" value="403(B) Tax Sheltered Annuity"/>
+  <Entry name="AAA" value="Durable Medical Equipment"/>
+  <Entry name="AAB" value="Foot Care"/>
+  <Entry name="AAC" value="Substance Abuse"/>
+  <Entry name="ADD" value="Accidental Death or Dismemberment"/>
+  <Entry name="CHU" value="403(C) Church Exempt Annuity Plans Covered by ERISA"/>
+  <Entry name="CLF" value="Contributory Life"/>
+  <Entry name="DCP" value="Dental Capitation"/>
+  <Entry name="DEN" value="Dental"/>
+  <Entry name="EMP" value="408(K) Employer Sponsored Qualified Defined Distribution Plans Funded with Individual IRA's"/>
+  <Entry name="EPO" value="Exclusive Provider Organization"/>
+  <Entry name="FAC" value="Facility"/>
+  <Entry name="FSA" value="Flexible Spending"/>
+  <Entry name="GDC" value="457(B) Government Deferred Compensation"/>
+  <Entry name="HLT" value="Health"/>
+  <Entry name="HMO" value="Health Maintenance Organization"/>
+  <Entry name="IRA" value="Group Individual Retirement Account"/>
+  <Entry name="IRC" value="408(B) Individual Retirement Account (IRA) Annuity Contract"/>
+  <Entry name="LTC" value="Long-Term Care"/>
+  <Entry name="LTD" value="Long-Term Disability"/>
+  <Entry name="MOD" value="Mail Order Drug"/>
+  <Entry name="NGD" value="457(F) Non-Government Deferred Compensation"/>
+  <Entry name="PDG" value="Prescription Drug"/>
+  <Entry name="POS" value="Point of Service"/>
+  <Entry name="PPO" value="Preferred Provider Organization"/>
+  <Entry name="PRA" value="Practitioners"/>
+  <Entry name="PSP" value="Profit-Sharing Plan"/>
+  <Entry name="QDA" value="401(K) Qualified Cash or Deferred Arrangement"/>
+  <Entry name="QDC" value="401(A) Qualified Defined Contribution"/>
+  <Entry name="STD" value="Short-Term Disability"/>
+  <Entry name="VIS" value="Vision"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

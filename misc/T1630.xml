@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1630.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1630">
+  <Entry name="1" value="One Way"/>
+  <Entry name="2" value="Secondary"/>
+  <Entry name="3" value="Alternate"/>
+  <Entry name="4" value="Business"/>
+  <Entry name="5" value="Divided with Barrier"/>
+  <Entry name="6" value="Divided without Barrier"/>
+  <Entry name="7" value="Government"/>
+  <Entry name="8" value="Limited Access"/>
+  <Entry name="9" value="Municipal"/>
+  <Entry name="A" value="District"/>
+  <Entry name="B" value="Gravel"/>
+  <Entry name="C" value="Interdistrict"/>
+  <Entry name="D" value="Dirt"/>
+  <Entry name="E" value="Dead End"/>
+  <Entry name="F" value="Interstate"/>
+  <Entry name="G" value="Lake Side"/>
+  <Entry name="H" value="Paved"/>
+  <Entry name="I" value="Rural"/>
+  <Entry name="J" value="State"/>
+  <Entry name="K" value="National"/>
+  <Entry name="L" value="Private"/>
+  <Entry name="M" value="Main"/>
+  <Entry name="N" value="Scenic"/>
+  <Entry name="O" value="Suburban"/>
+  <Entry name="P" value="Toll"/>
+  <Entry name="Q" value="Major"/>
+  <Entry name="R" value="Minor"/>
+  <Entry name="S" value="Side"/>
+  <Entry name="T" value="Local"/>
+  <Entry name="U" value="Undivided"/>
+  <Entry name="V" value="Service"/>
+  <Entry name="W" value="Well Traveled"/>
+  <Entry name="X" value="Hillside"/>
+  <Entry name="Z" value="Mutually Defined"/>
+</Table>

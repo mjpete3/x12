@@ -1,0 +1,31 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: E41.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="E41" comment="To provide for grouping the data elements by composite ID value for the electronic form of the X12 standards">
+  <Field name="MaintenanceOperationCode" min="1" max="1" validation="T487" comment="Code indicating the type maintenance operation"/>
+  <Field name="DataElementReferenceNumber" type="long" min="1" max="4" comment="Reference number used to locate the data element in the Data Element Dictionary"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="NoteIdentificationNumber" type="long" required="y" min="1" max="6" comment="A number providing a reference to a segment or file which contains notes or comments related to X12 standards documentation"/>
+</Segment>

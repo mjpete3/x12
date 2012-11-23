@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TOA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TOA" comment="To specify type of activity information">
+  <Field name="TypeOfActivityCode" min="2" max="2" validation="T1591" comment="Code specifying the type of activity"/>
+  <Field name="LicenseTypeCode" required="y" min="2" max="2" validation="T1553" comment="Code specifying the type of license"/>
+  <Field name="StatusCode" required="y" min="2" max="2" validation="T546" comment="Code identifying the status of a business transaction, such as a claim, policy, real estate, or securities transaction"/>
+  <Field name="TypeOfRatingCode1" required="y" min="2" max="2" validation="T1592" comment="Code specifying the level of participation"/>
+  <Field name="TypeOfRatingCode2" required="y" min="2" max="2" validation="T1592" comment="Code specifying the level of participation"/>
+</Segment>

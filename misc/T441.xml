@@ -1,0 +1,61 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T441.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T441">
+  <Entry name="0" value="Exempt (For Export)"/>
+  <Entry name="1" value="Yes (Tax Exempt)"/>
+  <Entry name="2" value="No (Not Tax Exempt)"/>
+  <Entry name="3" value="Exempt (For Resale)"/>
+  <Entry name="4" value="Not Exempt/For Resale"/>
+  <Entry name="5" value="Exempt (Not For Resale)"/>
+  <Entry name="6" value="Not Exempt, Not For Resale"/>
+  <Entry name="7" value="Direct Pay ID"/>
+  <Entry name="8" value="Exempt (Sale to U.S. Government)"/>
+  <Entry name="9" value="Exempt (Per State Law)"/>
+  <Entry name="A" value="Labor Taxable, Material Exempt"/>
+  <Entry name="B" value="Material Taxable, Labor Exempt"/>
+  <Entry name="C" value="Not Taxable"/>
+  <Entry name="D" value="Disabled"/>
+  <Entry name="E" value="Exempt Toll Service"/>
+  <Entry name="F" value="Exempt (Goods and Services Tax)"/>
+  <Entry name="G" value="Exempt (Provincial Sales Tax)"/>
+  <Entry name="H" value="Homestead"/>
+  <Entry name="I" value="Agriculture"/>
+  <Entry name="J" value="Working Farm"/>
+  <Entry name="K" value="Open Space"/>
+  <Entry name="L" value="Exempt Local Service"/>
+  <Entry name="M" value="Disabled Veteran"/>
+  <Entry name="N" value="Non-Homestead"/>
+  <Entry name="O" value="Over 65"/>
+  <Entry name="P" value="Exempt from School Property Tax"/>
+  <Entry name="Q" value="Exempt from Local Property Tax"/>
+  <Entry name="R" value="Recurring Exempt"/>
+  <Entry name="S" value="Exempt from County Property Tax"/>
+  <Entry name="T" value="Totally Exempt"/>
+  <Entry name="U" value="Usage Exempt"/>
+  <Entry name="V" value="Exempt from State Property Tax"/>
+  <Entry name="W" value="Other Property Tax Exemption"/>
+  <Entry name="X" value="Exempt - Letter on file"/>
+</Table>

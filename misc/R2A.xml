@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: R2A.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="R2A" comment="To specify the responsibilities and carrier preference">
+  <Field name="RoutingSequenceCode" min="1" max="2" validation="T133" comment="Code describing the relationship of a carrier to a specific shipment movement"/>
+  <Field name="Preference" min="1" max="1" validation="T1431" comment="Code specifying sender's preference"/>
+  <Field name="TransportationMethodTypeCode" required="y" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="LocationQualifier" required="y" min="1" max="2" validation="T309" comment="Code identifying type of location"/>
+  <Field name="LocationIdentifier" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="TypeOfServiceCode" required="y" min="2" max="2" validation="T56" comment="Code specifying extent of transportation service requested"/>
+  <Field name="RouteCode" required="y" min="1" max="13" comment="Mutually defined route code"/>
+  <Field name="RouteDescription" required="y" min="1" max="35" comment="Point to point routing description"/>
+  <Field name="EntityIdentifierCode" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+</Segment>

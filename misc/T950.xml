@@ -1,0 +1,75 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T950.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T950">
+  <Entry name="01" value="Cusum Delta"/>
+  <Entry name="02" value="Cusum - H"/>
+  <Entry name="03" value="Cusum - K"/>
+  <Entry name="04" value="Capability Ratio"/>
+  <Entry name="05" value="F-Test"/>
+  <Entry name="06" value="Control Limit Lower - Individual"/>
+  <Entry name="07" value="Control Limit Upper - Individual"/>
+  <Entry name="08" value="T-Test"/>
+  <Entry name="09" value="Grand Average (Double X Bar)"/>
+  <Entry name="10" value="Kurtosis"/>
+  <Entry name="11" value="Mean Average"/>
+  <Entry name="12" value="Median"/>
+  <Entry name="13" value="Minimum Average"/>
+  <Entry name="14" value="Median Range"/>
+  <Entry name="15" value="Maximum Average"/>
+  <Entry name="16" value="Process Capability Upper"/>
+  <Entry name="17" value="Process Capability Lower"/>
+  <Entry name="18" value="Process Capability CPK"/>
+  <Entry name="19" value="Range Average (R Bar)"/>
+  <Entry name="20" value="Control Limit Lower R-Bar"/>
+  <Entry name="21" value="Control Limit Upper R-Bar"/>
+  <Entry name="22" value="Range Value"/>
+  <Entry name="23" value="Standard Deviation"/>
+  <Entry name="24" value="Standard Error"/>
+  <Entry name="25" value="Skewness"/>
+  <Entry name="26" value="Control Limit Lower X-Bar"/>
+  <Entry name="27" value="Control Limit Upper X-Bar"/>
+  <Entry name="28" value="Failure Rate in Time"/>
+  <Entry name="29" value="Mode"/>
+  <Entry name="30" value="Average"/>
+  <Entry name="31" value="Mean"/>
+  <Entry name="32" value="Minimum Value"/>
+  <Entry name="33" value="Maximum Value"/>
+  <Entry name="34" value="Calculated"/>
+  <Entry name="40" value="Scalar"/>
+  <Entry name="41" value="Percentile"/>
+  <Entry name="42" value="Decile"/>
+  <Entry name="43" value="Quartile"/>
+  <Entry name="44" value="Quintile"/>
+  <Entry name="53" value="Probabililty"/>
+  <Entry name="AD" value="Anderson Darling Test"/>
+  <Entry name="CF" value="Cochran's Procedure"/>
+  <Entry name="CS" value="Chi-Square Test"/>
+  <Entry name="HG" value="Histogram"/>
+  <Entry name="KS" value="Kolmogrov-Smirnov Test"/>
+  <Entry name="SK" value="Moment Tests, Skewness and Kurtosis (Weighted Average)"/>
+  <Entry name="SW" value="Shapiro-Wilk Test"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1147.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1147">
+  <Entry name="1" value="Non-Credit Participation"/>
+  <Entry name="A" value="The College Board's Advance Placement (AP) Program"/>
+  <Entry name="B" value="Credit by Exam"/>
+  <Entry name="C" value="College Level Examination Program (CLEP)"/>
+  <Entry name="D" value="Credit Awarded for US Department of Defense DANTES Program"/>
+  <Entry name="E" value="Departmental or Institutional Credit based on experience (Life Experience)"/>
+  <Entry name="F" value="Study Abroad"/>
+  <Entry name="G" value="The College Board's (CEEB) Credit"/>
+  <Entry name="H" value="Completion or Removal of an Incomplete Grade"/>
+  <Entry name="I" value="International Baccalaureate"/>
+  <Entry name="M" value="Military Credit"/>
+  <Entry name="N" value="Correspondence"/>
+  <Entry name="P" value="American Council on Education Program on Noncollegiate Sponsored Instruction (ACE/PONSI) Credit Recommendation"/>
+  <Entry name="R" value="Regular Enrollment"/>
+  <Entry name="T" value="Academic Credits Transferred in From Another Institution"/>
+  <Entry name="V" value="Audit or Visitor Status (No Credit Awarded)"/>
+  <Entry name="W" value="Work Experience"/>
+  <Entry name="X" value="Not Applicable"/>
+  <Entry name="Y" value="Unknown"/>
+  <Entry name="Z" value="Other Types Not Included in Above List"/>
+</Table>

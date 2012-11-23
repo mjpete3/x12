@@ -1,0 +1,447 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1136.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1136">
+  <Entry name="00" value="Employee Mobility"/>
+  <Entry name="01" value="Pre-existing Conditions"/>
+  <Entry name="02" value="Diagnosis"/>
+  <Entry name="03" value="Condition"/>
+  <Entry name="04" value="Occurrence"/>
+  <Entry name="05" value="Occurrence Span"/>
+  <Entry name="06" value="Value"/>
+  <Entry name="07" value="Ambulance Certification"/>
+  <Entry name="08" value="Chiropractic Certification"/>
+  <Entry name="09" value="Durable Medical Equipment Certification"/>
+  <Entry name="10" value="Enteral or Parenteral Therapy Certification"/>
+  <Entry name="11" value="Oxygen Therapy Certification"/>
+  <Entry name="12" value="Admitting Diagnosis"/>
+  <Entry name="13" value="Principal Diagnosis"/>
+  <Entry name="14" value="Pre-Existing Physical Condition"/>
+  <Entry name="15" value="Pre-Existing Mental Condition"/>
+  <Entry name="16" value="Routine Foot Care Class Finding"/>
+  <Entry name="17" value="Systemic Condition for Routine Foot Care"/>
+  <Entry name="18" value="Co-op Advertising"/>
+  <Entry name="19" value="Commercial Advertising"/>
+  <Entry name="20" value="Specimen Kit Type Code"/>
+  <Entry name="21" value="Laboratory Test Condition Code"/>
+  <Entry name="22" value="Automobile Loss"/>
+  <Entry name="23" value="Laboratory Results Identification Code"/>
+  <Entry name="24" value="Line of Business Code"/>
+  <Entry name="25" value="United States Department of Vital Statistics E-Code"/>
+  <Entry name="26" value="Employment Status Information"/>
+  <Entry name="27" value="Income"/>
+  <Entry name="28" value="Loan Information"/>
+  <Entry name="29" value="Injury or Illness"/>
+  <Entry name="30" value="Benefit Adjustment"/>
+  <Entry name="31" value="Claimant"/>
+  <Entry name="32" value="Contractholder Branch"/>
+  <Entry name="33" value="Contractholder"/>
+  <Entry name="34" value="Secondary Claim Administrator"/>
+  <Entry name="35" value="Primary Claim Administrator"/>
+  <Entry name="36" value="Reporting Agency"/>
+  <Entry name="37" value="Process"/>
+  <Entry name="38" value="Hazardous Material"/>
+  <Entry name="39" value="Activity"/>
+  <Entry name="40" value="Accident"/>
+  <Entry name="41" value="Initial Treatment"/>
+  <Entry name="42" value="Cause of Injury"/>
+  <Entry name="43" value="Part of Body"/>
+  <Entry name="44" value="Nature of Injury"/>
+  <Entry name="45" value="Source of Injury"/>
+  <Entry name="46" value="Job"/>
+  <Entry name="47" value="Loss Prevention"/>
+  <Entry name="48" value="Managed Care"/>
+  <Entry name="49" value="Risk Management"/>
+  <Entry name="50" value="Claim Handling"/>
+  <Entry name="51" value="Event or Exposure"/>
+  <Entry name="52" value="Equipment or Materials or Chemicals"/>
+  <Entry name="53" value="Coverage"/>
+  <Entry name="54" value="Overbite"/>
+  <Entry name="55" value="Overjet"/>
+  <Entry name="56" value="Profile"/>
+  <Entry name="57" value="Crossbite"/>
+  <Entry name="58" value="Arch Asymmetry"/>
+  <Entry name="59" value="Dentition Midline"/>
+  <Entry name="60" value="Crowding"/>
+  <Entry name="61" value="Molars"/>
+  <Entry name="62" value="Cuspids"/>
+  <Entry name="63" value="Interviewee"/>
+  <Entry name="64" value="Verification of Deposit"/>
+  <Entry name="65" value="Verification of Mortgage"/>
+  <Entry name="66" value="Verification of Income or Employment or Both"/>
+  <Entry name="67" value="Verification of Rent"/>
+  <Entry name="68" value="Verification of Loan or Installment Debt or Both"/>
+  <Entry name="69" value="Anti-fungal Therapy"/>
+  <Entry name="70" value="Hospice"/>
+  <Entry name="71" value="Primary Diagnosis"/>
+  <Entry name="72" value="Secondary Diagnosis"/>
+  <Entry name="73" value="Tertiary Diagnosis"/>
+  <Entry name="74" value="Procedure Code"/>
+  <Entry name="75" value="Functional Limitations"/>
+  <Entry name="76" value="Activities Permitted"/>
+  <Entry name="77" value="Mental Status"/>
+  <Entry name="78" value="Manner Property Title Held"/>
+  <Entry name="79" value="Property Improvements"/>
+  <Entry name="80" value="Complete Appraisal"/>
+  <Entry name="81" value="Limited Appraisal"/>
+  <Entry name="82" value="Restricted Appraisal Report Limiting Conditions"/>
+  <Entry name="83" value="Route of Administration"/>
+  <Entry name="84" value="Borrower Information"/>
+  <Entry name="85" value="Contract Information"/>
+  <Entry name="86" value="Fannie Mae (Federal National Mortgage Association)"/>
+  <Entry name="87" value="Freddie Mac (Federal Home Loan Mortgage Corporation)"/>
+  <Entry name="88" value="Deductible"/>
+  <Entry name="89" value="Advertising Copy"/>
+  <Entry name="90" value="Private Remarks"/>
+  <Entry name="91" value="Compensation Notes"/>
+  <Entry name="92" value="Open House Notes"/>
+  <Entry name="93" value="Tour Notes"/>
+  <Entry name="94" value="Terms of Sale"/>
+  <Entry name="95" value="Restrictions"/>
+  <Entry name="96" value="Disclosures"/>
+  <Entry name="97" value="Exceptions"/>
+  <Entry name="98" value="Inclusions"/>
+  <Entry name="99" value="Lease Type"/>
+  <Entry name="A0" value="Contracting District Type"/>
+  <Entry name="A1" value="Mortgage Record Change"/>
+  <Entry name="A2" value="Mortgage Insurance Termination"/>
+  <Entry name="A3" value="Mortgage Insurance Cancellation"/>
+  <Entry name="A4" value="Mortgage Servicing Transfer"/>
+  <Entry name="A5" value="Appraisal"/>
+  <Entry name="A6" value="State License Disciplinary Action"/>
+  <Entry name="A7" value="Source of Data"/>
+  <Entry name="A8" value="Endorsement"/>
+  <Entry name="A9" value="Notification"/>
+  <Entry name="AA" value="All"/>
+  <Entry name="AB" value="Agent's Questions"/>
+  <Entry name="AC" value="Agent's Share"/>
+  <Entry name="AD" value="Benefits"/>
+  <Entry name="AE" value="Contact or Reference Information"/>
+  <Entry name="AF" value="Cost Basis"/>
+  <Entry name="AG" value="Driving Infractions"/>
+  <Entry name="AH" value="Excess Dividend Use"/>
+  <Entry name="AI" value="Home Health Aide"/>
+  <Entry name="AJ" value="Existing Coverage Information"/>
+  <Entry name="AK" value="Hospitalization"/>
+  <Entry name="AL" value="Activity Limitations"/>
+  <Entry name="AM" value="Juvenile Information"/>
+  <Entry name="AN" value="Occupation Information"/>
+  <Entry name="AO" value="Personal Finance and Business Information"/>
+  <Entry name="AP" value="Appearance"/>
+  <Entry name="AQ" value="Rating Information"/>
+  <Entry name="AR" value="Arrest"/>
+  <Entry name="AS" value="Replaced Amount"/>
+  <Entry name="AT" value="Authority"/>
+  <Entry name="AU" value="Automated Underwriting Information"/>
+  <Entry name="AV" value="Aviation"/>
+  <Entry name="AW" value="Surgery"/>
+  <Entry name="AX" value="Travel Information"/>
+  <Entry name="AY" value="Age Remark"/>
+  <Entry name="AZ" value="Property Remark"/>
+  <Entry name="B1" value="Audit Data"/>
+  <Entry name="B2" value="Declaration Sheet Indicator"/>
+  <Entry name="B3" value="Servicing Data"/>
+  <Entry name="B4" value="Single Family"/>
+  <Entry name="B5" value="Multifamily"/>
+  <Entry name="B6" value="Payment Handling"/>
+  <Entry name="B7" value="Ginnie Mae 1"/>
+  <Entry name="B8" value="Ginnie Mae 2"/>
+  <Entry name="B9" value="Ginnie Mae 2 Custom"/>
+  <Entry name="BA" value="Bankruptcy"/>
+  <Entry name="BB" value="Business Beneficiary"/>
+  <Entry name="BC" value="Building Condition"/>
+  <Entry name="BD" value="Buydown"/>
+  <Entry name="BE" value="Beneficiary"/>
+  <Entry name="BF" value="Tax Agency Parcel Identifier"/>
+  <Entry name="BG" value="Historical Performance"/>
+  <Entry name="BH" value="Product Rules"/>
+  <Entry name="BI" value="Commercial Property"/>
+  <Entry name="BJ" value="Unimproved Land"/>
+  <Entry name="BK" value="Banking"/>
+  <Entry name="BL" value="New Contract"/>
+  <Entry name="BM" value="Original Contract"/>
+  <Entry name="BN" value="Access"/>
+  <Entry name="BP" value="Bankruptcy Petition"/>
+  <Entry name="BQ" value="Agent Sales Trend"/>
+  <Entry name="BR" value="Broker's Price Opinion"/>
+  <Entry name="BS" value="Bankruptcy Statement of Financial Affairs"/>
+  <Entry name="BT" value="Billings Trend"/>
+  <Entry name="BU" value="Assets"/>
+  <Entry name="BV" value="Cash Flow"/>
+  <Entry name="BW" value="Competition"/>
+  <Entry name="BX" value="Credit Line"/>
+  <Entry name="BY" value="Creditors Arrangement"/>
+  <Entry name="BZ" value="Creditors Meeting"/>
+  <Entry name="C1" value="Depreciation Conditions"/>
+  <Entry name="C2" value="Adverse Environment Conditions"/>
+  <Entry name="C3" value="Miscellaneous Adverse Conditions"/>
+  <Entry name="C4" value="Site Conditions"/>
+  <Entry name="C5" value="Subject Property Conditions"/>
+  <Entry name="C6" value="Board of Directors"/>
+  <Entry name="C7" value="Reserve"/>
+  <Entry name="C8" value="Payment"/>
+  <Entry name="CA" value="Citizenship"/>
+  <Entry name="CB" value="Continuing Education"/>
+  <Entry name="CC" value="Compensation Calculation"/>
+  <Entry name="CD" value="Cause of Death"/>
+  <Entry name="CE" value="Condominium"/>
+  <Entry name="CF" value="Cooperative"/>
+  <Entry name="CG" value="Conviction"/>
+  <Entry name="CH" value="Direct Sales Trend"/>
+  <Entry name="CI" value="Export Trend"/>
+  <Entry name="CJ" value="Financial Embarrassment"/>
+  <Entry name="CK" value="Indebtedness"/>
+  <Entry name="CL" value="Cancellation"/>
+  <Entry name="CM" value="Claim Amounts"/>
+  <Entry name="CN" value="Comparison"/>
+  <Entry name="CO" value="County"/>
+  <Entry name="CP" value="Complications"/>
+  <Entry name="CQ" value="Initial Capital"/>
+  <Entry name="CR" value="Current Ratio"/>
+  <Entry name="CS" value="Common Stock"/>
+  <Entry name="CT" value="Commission Trend"/>
+  <Entry name="CU" value="Stockholders"/>
+  <Entry name="CV" value="Damage"/>
+  <Entry name="CW" value="Working Capital"/>
+  <Entry name="CX" value="Compensation Allocation"/>
+  <Entry name="CY" value="Dividend Use"/>
+  <Entry name="CZ" value="Excess Premium Use"/>
+  <Entry name="D1" value="Unpaid Invoices"/>
+  <Entry name="D2" value="Withdrawals"/>
+  <Entry name="D3" value="Imports"/>
+  <Entry name="D4" value="Placed for Collection"/>
+  <Entry name="DA" value="Drug Adjudication Information"/>
+  <Entry name="DB" value="Liquidation Proceedings"/>
+  <Entry name="DC" value="Location"/>
+  <Entry name="DD" value="Discharge Diagnosis"/>
+  <Entry name="DE" value="Departmental"/>
+  <Entry name="DF" value="Profit Margin"/>
+  <Entry name="DG" value="Proposal"/>
+  <Entry name="DH" value="Receivership"/>
+  <Entry name="DI" value="Driver Identification Information"/>
+  <Entry name="DJ" value="Provider Characteristics and Resources"/>
+  <Entry name="DK" value="Secondary Source of Injury"/>
+  <Entry name="DL" value="Petitiions"/>
+  <Entry name="DM" value="Registered Charges"/>
+  <Entry name="DN" value="Criminal Proceedings"/>
+  <Entry name="DO" value="Historical Criminal Proceedings"/>
+  <Entry name="DP" value="Directions to Property"/>
+  <Entry name="DR" value="Driving"/>
+  <Entry name="DV" value="Driver Record Information"/>
+  <Entry name="E1" value="Spectacle Lenses"/>
+  <Entry name="E2" value="Contact Lenses"/>
+  <Entry name="E3" value="Spectacle Frames"/>
+  <Entry name="E4" value="Employment"/>
+  <Entry name="E5" value="Examiner's Comments"/>
+  <Entry name="EB" value="Intercompany Relations"/>
+  <Entry name="EC" value="Judgments"/>
+  <Entry name="ED" value="Liens"/>
+  <Entry name="EE" value="Operating Surplus Trend"/>
+  <Entry name="EF" value="Participating Interest"/>
+  <Entry name="EG" value="Protested Bills"/>
+  <Entry name="EH" value="Subcontracting Details"/>
+  <Entry name="EI" value="Suits"/>
+  <Entry name="EJ" value="Uniform Commercial Code (UCC) Filings"/>
+  <Entry name="EK" value="Detrimental Legal Filings"/>
+  <Entry name="EL" value="Customer Details"/>
+  <Entry name="EM" value="Supplier Detail"/>
+  <Entry name="ER" value="Employee Relocation"/>
+  <Entry name="FA" value="Financial"/>
+  <Entry name="FC" value="Family Coverage"/>
+  <Entry name="FH" value="Family History"/>
+  <Entry name="FI" value="Financing"/>
+  <Entry name="FL" value="Flood Determination"/>
+  <Entry name="FP" value="Franchise Tax Payments"/>
+  <Entry name="FR" value="Financial Remarks"/>
+  <Entry name="FT" value="Foreign Travel"/>
+  <Entry name="GD" value="Demonstrations"/>
+  <Entry name="GS" value="Shelf Format"/>
+  <Entry name="GU" value="Guarantees"/>
+  <Entry name="HA" value="Fixed"/>
+  <Entry name="HB" value="Adjustable"/>
+  <Entry name="HC" value="Rate Adjustment"/>
+  <Entry name="HD" value="Payment Adjustment"/>
+  <Entry name="HE" value="Life of Loan"/>
+  <Entry name="HF" value="Periodic Interest Rate"/>
+  <Entry name="HG" value="Principal and Interest"/>
+  <Entry name="HH" value="Health or Medical"/>
+  <Entry name="HI" value="Late Charge"/>
+  <Entry name="HJ" value="Default Note Holder's Cost"/>
+  <Entry name="HK" value="Prepayment"/>
+  <Entry name="HL" value="Limited Payment"/>
+  <Entry name="HM" value="Rate Lookback"/>
+  <Entry name="HN" value="Payment Lookback"/>
+  <Entry name="HO" value="Index"/>
+  <Entry name="HP" value="Mortgage Margin"/>
+  <Entry name="HQ" value="Single Family 2-4 Units"/>
+  <Entry name="HR" value="Amortization"/>
+  <Entry name="HS" value="Rate Conversion"/>
+  <Entry name="HT" value="Interest Only"/>
+  <Entry name="HU" value="Premium Audit Key Question"/>
+  <Entry name="HY" value="History"/>
+  <Entry name="HZ" value="Hazardous Sports"/>
+  <Entry name="IC" value="Issued Capital"/>
+  <Entry name="ID" value="Identification"/>
+  <Entry name="IH" value="Insurance History or Other Coverage"/>
+  <Entry name="IM" value="Impairment"/>
+  <Entry name="IN" value="Insurance"/>
+  <Entry name="LA" value="License Revocation"/>
+  <Entry name="LC" value="Location Status"/>
+  <Entry name="LE" value="Level Remarks"/>
+  <Entry name="LI" value="Liability Status"/>
+  <Entry name="LL" value="Local Language Description"/>
+  <Entry name="LR" value="Listing Remarks"/>
+  <Entry name="LS" value="Life Style"/>
+  <Entry name="LT" value="Legal Type"/>
+  <Entry name="LZ" value="Loss Trend"/>
+  <Entry name="MA" value="Marital Status"/>
+  <Entry name="MI" value="Miscellaneous"/>
+  <Entry name="ML" value="Multiple Listing Service"/>
+  <Entry name="MN" value="Management"/>
+  <Entry name="MO" value="Modification"/>
+  <Entry name="MP" value="Medication or Prescription"/>
+  <Entry name="MS" value="Medical Social Worker"/>
+  <Entry name="MT" value="Military Status"/>
+  <Entry name="NC" value="Nominal Capital"/>
+  <Entry name="NL" value="New Licensed Staff"/>
+  <Entry name="NS" value="Nature of Suit"/>
+  <Entry name="NW" value="Not Work Related"/>
+  <Entry name="OA" value="Owner Pays Notes"/>
+  <Entry name="OC" value="Occupation Class"/>
+  <Entry name="OF" value="Outside Financing"/>
+  <Entry name="OI" value="Other Investor"/>
+  <Entry name="ON" value="Operations Trend"/>
+  <Entry name="OP" value="Operations"/>
+  <Entry name="OT" value="Occupational Therapy"/>
+  <Entry name="OU" value="Operations Outlook"/>
+  <Entry name="PA" value="Performance"/>
+  <Entry name="PB" value="Profitability"/>
+  <Entry name="PC" value="Paid in Capital"/>
+  <Entry name="PD" value="Public Records"/>
+  <Entry name="PE" value="Penalty"/>
+  <Entry name="PF" value="Profit Trend"/>
+  <Entry name="PG" value="Possession Notes"/>
+  <Entry name="PI" value="Photo Instructions"/>
+  <Entry name="PN" value="Parking Notes"/>
+  <Entry name="PO" value="Profit Outlook"/>
+  <Entry name="PR" value="Property"/>
+  <Entry name="PS" value="Preferred Stock"/>
+  <Entry name="PT" value="Physical Therapy"/>
+  <Entry name="R1" value="Reason for Weight Loss"/>
+  <Entry name="R2" value="Association of American Railroads Special Proper Shipping Name Flag"/>
+  <Entry name="R3" value="Association of American Railroads Intermodal Indicator"/>
+  <Entry name="R4" value="Association of American Railroads U.S. to Canada Flag"/>
+  <Entry name="R5" value="Residential Status"/>
+  <Entry name="RC" value="Revocation"/>
+  <Entry name="RE" value="Recovery"/>
+  <Entry name="RI" value="Real Estate Property Information"/>
+  <Entry name="RL" value="Radio License Application"/>
+  <Entry name="RM" value="Remedy"/>
+  <Entry name="RN" value="Related Entities"/>
+  <Entry name="RP" value="Retirement Plan Type"/>
+  <Entry name="RR" value="Reinstatement"/>
+  <Entry name="RS" value="Reason Last Seen"/>
+  <Entry name="RT" value="Registration Type"/>
+  <Entry name="RU" value="Results"/>
+  <Entry name="RV" value="Revenue Trend"/>
+  <Entry name="S1" value="Investment Trend"/>
+  <Entry name="S2" value="Royalty Trend"/>
+  <Entry name="S3" value="Purchases Trend"/>
+  <Entry name="S4" value="Labor Infraction"/>
+  <Entry name="S5" value="Debentures"/>
+  <Entry name="SA" value="Source Fund"/>
+  <Entry name="SD" value="Starting Details"/>
+  <Entry name="SE" value="Summary and Evaluation"/>
+  <Entry name="SI" value="Showing Instructions"/>
+  <Entry name="SJ" value="Suits, Judgments &amp; Liens"/>
+  <Entry name="SL" value="Supplement Note or Line"/>
+  <Entry name="SN" value="Skilled Nursing"/>
+  <Entry name="SP" value="Statement Preparation"/>
+  <Entry name="SR" value="Sales Trend"/>
+  <Entry name="SS" value="Suspension"/>
+  <Entry name="ST" value="Speech Therapy"/>
+  <Entry name="SU" value="Substance Use"/>
+  <Entry name="SW" value="Reported Statement of Witness"/>
+  <Entry name="SZ" value="Size"/>
+  <Entry name="TB" value="Tobacco"/>
+  <Entry name="TE" value="Tests"/>
+  <Entry name="TF" value="Target Fund"/>
+  <Entry name="TH" value="Therapy"/>
+  <Entry name="TI" value="Action"/>
+  <Entry name="TM" value="Terms"/>
+  <Entry name="TN" value="Trend"/>
+  <Entry name="TP" value="Tenant Pays Notes"/>
+  <Entry name="TR" value="Treatment"/>
+  <Entry name="TW" value="Two to Four Units"/>
+  <Entry name="TX" value="Tax Service"/>
+  <Entry name="UA" value="Production Capacity"/>
+  <Entry name="UB" value="Actual Production"/>
+  <Entry name="UC" value="Branch Trend"/>
+  <Entry name="UD" value="Retail Locations"/>
+  <Entry name="UE" value="Net Profit"/>
+  <Entry name="UF" value="Ordinary Profit"/>
+  <Entry name="UG" value="Declared Profit to Local Tax Office"/>
+  <Entry name="UH" value="Market Trend"/>
+  <Entry name="UI" value="Pre Tax Profit"/>
+  <Entry name="UJ" value="Net Worth"/>
+  <Entry name="UK" value="Debt to Equity"/>
+  <Entry name="UL" value="Equity Return"/>
+  <Entry name="UM" value="Stability"/>
+  <Entry name="UN" value="Efficiency"/>
+  <Entry name="UO" value="Outlook"/>
+  <Entry name="UP" value="Update"/>
+  <Entry name="UQ" value="Corporate Registration"/>
+  <Entry name="VA" value="Voter Registration Application"/>
+  <Entry name="VD" value="Voter Registration Application Disposition"/>
+  <Entry name="VO" value="Violation"/>
+  <Entry name="WA" value="Warning"/>
+  <Entry name="WB" value="Prognosis"/>
+  <Entry name="WC" value="Diagnosis"/>
+  <Entry name="WD" value="Treatment Plan"/>
+  <Entry name="WE" value="Work Restrictions"/>
+  <Entry name="WF" value="Witness Statement"/>
+  <Entry name="WG" value="Conditions Affecting Total Employees and Hours"/>
+  <Entry name="WH" value="Injury Work Related"/>
+  <Entry name="WI" value="Illness Work Related"/>
+  <Entry name="WK" value="Controvert Reason"/>
+  <Entry name="WL" value="Supervisor's Comments"/>
+  <Entry name="WM" value="Willful Misconduct"/>
+  <Entry name="WN" value="Supervisor's Exception"/>
+  <Entry name="WO" value="Claim Related Work Assignment Changes"/>
+  <Entry name="WP" value="30 Day Delay Reason"/>
+  <Entry name="WQ" value="Employee Comment"/>
+  <Entry name="WR" value="Employee Comment Not Provided Reason"/>
+  <Entry name="WS" value="Medical Records Not Attached Reason"/>
+  <Entry name="WT" value="Work Exposures and Duration"/>
+  <Entry name="X1" value="Letter of Credit Overdrawn"/>
+  <Entry name="X2" value="Cargo Receipt Not Signed"/>
+  <Entry name="X3" value="Customs Statement Missing from Invoice"/>
+  <Entry name="X4" value="Purchase Order Not on Letter of Credit (Except Masters)"/>
+  <Entry name="X5" value="Reduced Draft"/>
+  <Entry name="X6" value="Time Drafts"/>
+  <Entry name="X7" value="Demand for Payment"/>
+  <Entry name="X8" value="Early Presentation of Documents"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T240.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T240">
+  <Entry name="145" value="Empty car under directive CSD145"/>
+  <Entry name="150" value="Unassigned special equipped car that is to be handled in accordance with the provisions of directive CSD150"/>
+  <Entry name="155" value="Empty car under CSD155"/>
+  <Entry name="435" value="Empty car under directive CSD435"/>
+  <Entry name="439" value="Special heavy duty flat car that is to be handled under the provisions of directive CSD439"/>
+  <Entry name="145A" value="Loaded car under directive CSD145 that is to return to agent at city specified"/>
+  <Entry name="145S" value="Loaded car under directive CSD145 that is to return to shipper at billed origin"/>
+  <Entry name="145X" value="Assigned TTX car that is to be returned to shipper at billed origin by reverse of loaded move"/>
+  <Entry name="150X" value="Unassigned TTX car that is to be handled in accordance with trailer train directive 150"/>
+  <Entry name="155A" value="Loaded car under directive CSD155 that is to return to agent at city specified"/>
+  <Entry name="155S" value="Loaded car under directive CSD155 that is to return to shipper at billed origin"/>
+  <Entry name="435A" value="Loaded car under directive CSD435 that is to return to agent at city specified"/>
+  <Entry name="435S" value="Loaded car under directive CSD435 that is to return to shipper at billed origin"/>
+  <Entry name="CSR5" value="Empty Car Moving Under Car Service Rule 5 Charges"/>
+  <Entry name="34617" value="Car being returned per car owner's instructions"/>
+  <Entry name="34618" value="Car being returned per the pool operator's instructions"/>
+  <Entry name="34619" value="Car being returned per AAR/ICC instructions"/>
+  <Entry name="CMD1A" value="Loaded TTX cars under directive CMD1 that are to be returned to the origin road at the city specified"/>
+  <Entry name="CMD1S" value="Loaded TTX cars under directive CMD1 that are to be returned to shipper at billed origin"/>
+</Table>

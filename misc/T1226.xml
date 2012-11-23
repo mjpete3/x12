@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1226.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1226">
+  <Entry name="AL" value="Align"/>
+  <Entry name="CL" value="Calibrate"/>
+  <Entry name="CN" value="Clean"/>
+  <Entry name="IN" value="Install"/>
+  <Entry name="LB" value="Lubricate"/>
+  <Entry name="MD" value="Modify"/>
+  <Entry name="NT" value="No Trouble Found"/>
+  <Entry name="RM" value="Remove"/>
+  <Entry name="RP" value="Repair"/>
+  <Entry name="RT" value="Replace"/>
+  <Entry name="RW" value="Rewire"/>
+  <Entry name="SC" value="Scrap"/>
+  <Entry name="SD" value="Solder"/>
+  <Entry name="TT" value="Tighten"/>
+  <Entry name="UP" value="Update"/>
+  <Entry name="WD" value="Weld"/>
+</Table>

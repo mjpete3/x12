@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BIX.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BIX" comment="To transmit identifying numbers, dates, and other basic data relating to the transaction set">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="StandardCarrierAlphaCode" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="Date" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="InspectionLocationTypeCode" min="1" max="2" validation="T831" comment="Code to define the location where a type of inspection is performed"/>
+  <Field name="RampIdentification" required="y" min="1" max="9" comment="A mutually agreed upon ramp identity"/>
+  <Field name="CityName" required="y" min="2" max="30" comment="Free-form text for city name"/>
+  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="InspectorIdentityCode" required="y" min="1" max="6" comment="A code assigned by each inspection agency to each inspector"/>
+  <Field name="DamageCodeQualifier" required="y" min="1" max="1" validation="T927" comment="Code identifying the party maintaining damage area, damage type and damage severity code lists"/>
+  <Field name="IdentificationCodeQualifier" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
+</Segment>

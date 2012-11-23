@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TXP.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TXP" comment="To identify tax payment data">
+  <Field name="TaxIdentificationNumber" min="1" max="20" comment="Number assigned to a purchaser (buyer, orderer) by a taxing jurisdiction (state, county, etc.); often called a tax exemption number or certificate number"/>
+  <Field name="TaxPaymentTypeCode" min="1" max="5" comment="Code identifying type of tax being paid"/>
+  <Field name="Date" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="TaxInformationIdentificationNumber1" min="1" max="30" comment="Identifying number for Tax Information Field"/>
+  <Field name="TaxAmount1" type="double" min="1" max="10" comment="Amount of tax"/>
+  <Field name="TaxInformationIdentificationNumber2" required="y" min="1" max="30" comment="Identifying number for Tax Information Field"/>
+  <Field name="TaxAmount2" type="double" required="y" min="1" max="10" comment="Amount of tax"/>
+  <Field name="TaxInformationIdentificationNumber3" required="y" min="1" max="30" comment="Identifying number for Tax Information Field"/>
+  <Field name="TaxAmount3" type="double" required="y" min="1" max="10" comment="Amount of tax"/>
+  <Field name="TaxpayerVerification" required="y" min="1" max="6" comment="The taxpayer verification field may be used by the receiver to verify the taxpayer's identity"/>
+</Segment>

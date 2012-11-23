@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G17.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G17" comment="To specify the basic and most frequently used line item data for the invoice and related transactions">
+  <Field name="QuantityInvoiced" type="double" min="1" max="15" comment="Number of units invoiced (supplier units)"/>
+  <Field name="UnitOrBasisForMeasurementCode1" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="ItemListCost" type="double" required="y" min="1" max="9" comment="Gross unit cost within the appropriate price bracket for a line item"/>
+  <Field name="UPCCaseCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) including two high order digits identifying the &quot;system&quot; (U.S. Grocery = 00, 06 or 07; U.S. Drug = 03); using the U.S. Grocery system, the next ten digits are: Manufacturer (5) Case Code (5)"/>
+  <Field name="ProductServiceIdQualifier1" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId1" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier2" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="PriceBracketIdentifier" required="y" min="1" max="3" comment="Identifier assigned by the vendor for a specific price bracket"/>
+  <Field name="NumberOfUnitsShipped" type="double" required="y" min="1" max="10" comment="Numeric value of units shipped in manufacturer's shipping units for a line item or transaction set"/>
+  <Field name="UnitOrBasisForMeasurementCode2" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="PriceListNumber" required="y" min="1" max="16" comment="Identification number assigned by a vendor to a price list"/>
+  <Field name="PriceListIssueNumber" required="y" min="1" max="16" comment="Number assigned to revised or new issues of a price list"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+</Segment>

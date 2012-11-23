@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1197.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1197">
+  <Entry name="C" value="Canceled or Voided"/>
+  <Entry name="D" value="Miscellaneous Debit"/>
+  <Entry name="M" value="Miscellaneous Credit"/>
+  <Entry name="O" value="Outstanding"/>
+  <Entry name="P" value="Paid"/>
+  <Entry name="R" value="Reconciled"/>
+  <Entry name="S" value="Payment Stopped"/>
+  <Entry name="AD" value="Adjustment"/>
+  <Entry name="AV" value="Authorized"/>
+  <Entry name="BA" value="Back Value, Transactions had been Posted to Incorrect Account"/>
+  <Entry name="BM" value="Back Value, Miscellaneous"/>
+  <Entry name="BP" value="Back Value, Only Partial Amount Credited/Debited to Account"/>
+  <Entry name="BV" value="Back Value, Transaction Not Received by Bank"/>
+  <Entry name="NA" value="Nonauthorized"/>
+  <Entry name="RD" value="Return, Insufficient Data"/>
+  <Entry name="RE" value="Re-deposit"/>
+  <Entry name="RI" value="Return, Insufficient Funds"/>
+  <Entry name="RN" value="Return"/>
+  <Entry name="TR" value="Truncated"/>
+</Table>

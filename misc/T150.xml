@@ -1,0 +1,1125 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T150.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T150">
+  <Entry name="000" value="Pump Out Charge"/>
+  <Entry name="002" value="Renewal"/>
+  <Entry name="003" value="Account Number Correction Charge"/>
+  <Entry name="004" value="Dividend"/>
+  <Entry name="005" value="Activation of Carnet"/>
+  <Entry name="006" value="Overpayment"/>
+  <Entry name="007" value="Suspense"/>
+  <Entry name="008" value="Balance Forward"/>
+  <Entry name="009" value="Dividend Interest"/>
+  <Entry name="010" value="Add on - Destination"/>
+  <Entry name="011" value="Loan Interest"/>
+  <Entry name="012" value="Premium Waiver"/>
+  <Entry name="015" value="Add on - Origin"/>
+  <Entry name="016" value="Dividend Adjustment"/>
+  <Entry name="017" value="Interest"/>
+  <Entry name="020" value="Address Correction"/>
+  <Entry name="025" value="Advance Destination Amount"/>
+  <Entry name="026" value="Integrated Business Services (IBS) Service Charge"/>
+  <Entry name="027" value="Special Packaging"/>
+  <Entry name="028" value="Box Liners"/>
+  <Entry name="029" value="Product Personalization"/>
+  <Entry name="030" value="Advance Destination Fee"/>
+  <Entry name="031" value="Tape Charges"/>
+  <Entry name="032" value="Subject to Tax"/>
+  <Entry name="035" value="Advance Origin Amount"/>
+  <Entry name="040" value="Advance Origin Fee"/>
+  <Entry name="045" value="Advance Fee"/>
+  <Entry name="050" value="Agent Disbursement - Destination"/>
+  <Entry name="055" value="Agent Disbursement Fee - Destination"/>
+  <Entry name="060" value="Agent Disbursement - Origin"/>
+  <Entry name="065" value="Agent Disbursement Fee - Origin"/>
+  <Entry name="070" value="Air Export Certificate"/>
+  <Entry name="075" value="Air Express Charge"/>
+  <Entry name="080" value="Air Transportation Charge"/>
+  <Entry name="085" value="Airline Opening Fee"/>
+  <Entry name="090" value="Airport Tax - Destination"/>
+  <Entry name="095" value="Airport Tax - Origin"/>
+  <Entry name="100" value="Airport Terminal Handling Charge"/>
+  <Entry name="105" value="Acknowledgment of Delivery Fee (AOD)"/>
+  <Entry name="110" value="Amending Export Documentation"/>
+  <Entry name="115" value="Assembly Fee"/>
+  <Entry name="120" value="Banking Drafts"/>
+  <Entry name="135" value="Cables (sending of)"/>
+  <Entry name="140" value="Call Tag"/>
+  <Entry name="145" value="Canadian C.Q.Customs Clearance"/>
+  <Entry name="150" value="Canadian Currency Exchange"/>
+  <Entry name="155" value="Canadian Import Termination Fee"/>
+  <Entry name="160" value="Canadian Reconsignment Fee"/>
+  <Entry name="165" value="Canadian Remanifest Fee"/>
+  <Entry name="170" value="Certificate of Origin"/>
+  <Entry name="175" value="Certificate of Registration"/>
+  <Entry name="180" value="Chamber of Commerce Service Charge"/>
+  <Entry name="185" value="Change of Airbill - Service Fee"/>
+  <Entry name="186" value="Chemical Milling Charge"/>
+  <Entry name="190" value="City Terminal Charge"/>
+  <Entry name="205" value="Collect Surcharge"/>
+  <Entry name="210" value="Constant Surveillance Service"/>
+  <Entry name="215" value="Consular Legalization Service"/>
+  <Entry name="220" value="Consularization Fee"/>
+  <Entry name="225" value="Constant Surveillance Service - Armed"/>
+  <Entry name="230" value="Credit"/>
+  <Entry name="235" value="Customer Account Identification"/>
+  <Entry name="240" value="Customs Broker Fee"/>
+  <Entry name="245" value="Customs Invoice"/>
+  <Entry name="250" value="Customs Invoice - Additional Page"/>
+  <Entry name="255" value="Data/Drawing Charge"/>
+  <Entry name="260" value="Delivery Surcharge"/>
+  <Entry name="265" value="Development Charge"/>
+  <Entry name="270" value="Discount - Drop Box/Convenience Ctr."/>
+  <Entry name="275" value="Discount - Incentive"/>
+  <Entry name="280" value="Discount - Multiple Shipment"/>
+  <Entry name="285" value="Discount - Service Option (Delivery)"/>
+  <Entry name="290" value="Discount - Service Option (Pickup)"/>
+  <Entry name="295" value="Discount - Special"/>
+  <Entry name="297" value="Contingency Credit Charge"/>
+  <Entry name="300" value="Distribution Fee"/>
+  <Entry name="310" value="Dry Ice"/>
+  <Entry name="315" value="Duty Charge"/>
+  <Entry name="320" value="Endorsement Fee"/>
+  <Entry name="325" value="Eur1 Presentation Fee"/>
+  <Entry name="335" value="Excise Tax - Destination"/>
+  <Entry name="340" value="Excise Tax - Origin"/>
+  <Entry name="345" value="Expedited One Day Consular Service"/>
+  <Entry name="350" value="Expedited Shipments"/>
+  <Entry name="355" value="Extra Copies and Mailings"/>
+  <Entry name="360" value="Export Customs Clearance"/>
+  <Entry name="365" value="Export Declarations - Automated"/>
+  <Entry name="370" value="Export Declarations - U.S. Shippers"/>
+  <Entry name="375" value="Export License Application"/>
+  <Entry name="380" value="Extra Service - Counter-to-Counter"/>
+  <Entry name="385" value="Facsimile Charges"/>
+  <Entry name="390" value="Facsimile Charges - Additional Pages"/>
+  <Entry name="392" value="Failed Lamp Panel Charge"/>
+  <Entry name="393" value="First Article Charge"/>
+  <Entry name="395" value="Free Domicile Shipment Processing"/>
+  <Entry name="400" value="Freight"/>
+  <Entry name="405" value="Fuel Surcharge"/>
+  <Entry name="410" value="Government Warehouse Fee - Destination"/>
+  <Entry name="415" value="Government Warehouse Fee - Origin"/>
+  <Entry name="416" value="Grain Flow Charge"/>
+  <Entry name="420" value="Hazardous Materials Handling Fee - Domestic"/>
+  <Entry name="425" value="Hazardous Materials Handling Fee - International"/>
+  <Entry name="426" value="Heat Treat Charge"/>
+  <Entry name="430" value="IATA Airbill Preparation"/>
+  <Entry name="435" value="IATA Fee"/>
+  <Entry name="440" value="Import Service Fee"/>
+  <Entry name="445" value="Insurance Fee"/>
+  <Entry name="450" value="Inland Transportation"/>
+  <Entry name="455" value="Insurance Premium"/>
+  <Entry name="460" value="International Door-to-Door Handling Fee"/>
+  <Entry name="462" value="Incorrect Billing Account Charge"/>
+  <Entry name="465" value="Italian Release Charge"/>
+  <Entry name="470" value="Letter of Credit Processing"/>
+  <Entry name="475" value="Mailing - Postage Cost"/>
+  <Entry name="480" value="Mailing - Service Fee"/>
+  <Entry name="485" value="Messenger Service"/>
+  <Entry name="490" value="Minimum Air Transportation Charge"/>
+  <Entry name="495" value="Miscellaneous - Destination"/>
+  <Entry name="500" value="Miscellaneous - Origin"/>
+  <Entry name="505" value="Missing Account NBR Charge"/>
+  <Entry name="510" value="Offshore - Alaska/Hawaii"/>
+  <Entry name="515" value="On Hand Service"/>
+  <Entry name="520" value="Oversized Premium"/>
+  <Entry name="525" value="Passing Shippers Export Entry"/>
+  <Entry name="535" value="Pickup - Out of Area"/>
+  <Entry name="540" value="Pickup Surcharge"/>
+  <Entry name="545" value="Pre-Positioned Inventory Service"/>
+  <Entry name="550" value="Preparation of Air Waybill - Origin"/>
+  <Entry name="555" value="Preparation of Canadian Customs Invoice"/>
+  <Entry name="560" value="Preparation of Commercial Invoice"/>
+  <Entry name="565" value="Preparation of Export Entry"/>
+  <Entry name="570" value="Preparation of Insurance Certificate"/>
+  <Entry name="580" value="Priority Service"/>
+  <Entry name="585" value="Preparation of U.S. Export Documentation"/>
+  <Entry name="586" value="Processing Charge"/>
+  <Entry name="590" value="Rebilled Drayage - Destination"/>
+  <Entry name="593" value="Re-Bill Charge"/>
+  <Entry name="595" value="Proforma Invoice"/>
+  <Entry name="600" value="Recipient Address Correction"/>
+  <Entry name="605" value="Rebilled Drayage - Origin"/>
+  <Entry name="610" value="Record/Filing"/>
+  <Entry name="615" value="Recovery Fee"/>
+  <Entry name="620" value="Recrating/Recoopering - Destination"/>
+  <Entry name="625" value="Recrating/Recoopering - Origin"/>
+  <Entry name="635" value="Registration of Export Shipments"/>
+  <Entry name="640" value="Registration of Export for Reentry"/>
+  <Entry name="641" value="Reliability Charge"/>
+  <Entry name="645" value="Restricted Article Fee"/>
+  <Entry name="650" value="Repickup"/>
+  <Entry name="665" value="Saturday Delivery"/>
+  <Entry name="670" value="Saturday Pick-Up"/>
+  <Entry name="675" value="Security Signature Service"/>
+  <Entry name="680" value="Service Upgrade"/>
+  <Entry name="685" value="Special Delivery"/>
+  <Entry name="690" value="Special Handling Service"/>
+  <Entry name="695" value="Special Pickup"/>
+  <Entry name="696" value="Special Test Equipment Charge"/>
+  <Entry name="697" value="Special Tooling Charge"/>
+  <Entry name="700" value="Special Vehicle Rent"/>
+  <Entry name="705" value="Stamp Fee"/>
+  <Entry name="706" value="Straightening Charge"/>
+  <Entry name="720" value="Telephone - Destination"/>
+  <Entry name="725" value="Telephone - Origin"/>
+  <Entry name="730" value="Terminal Service Fee"/>
+  <Entry name="731" value="Test/Qualification Charge"/>
+  <Entry name="732" value="Tooling Rework Charge"/>
+  <Entry name="735" value="Tracing Inbound Via Other Carriers"/>
+  <Entry name="736" value="Tracing Service Fee"/>
+  <Entry name="740" value="Transfer of Lading Charge"/>
+  <Entry name="745" value="Valuation Fee"/>
+  <Entry name="750" value="Value Added Tax (VAT)"/>
+  <Entry name="760" value="Waybill and Invoice Distribution"/>
+  <Entry name="761" value="Written Proof of Delivery"/>
+  <Entry name="762" value="X-ray Charge"/>
+  <Entry name="763" value="Auto Towing Charge"/>
+  <Entry name="764" value="Late Return Charge"/>
+  <Entry name="765" value="One Way Drop Off Charge"/>
+  <Entry name="766" value="Business Center Charge"/>
+  <Entry name="767" value="Gift Shop Charge"/>
+  <Entry name="768" value="Health Club Charge"/>
+  <Entry name="769" value="Laundry and Dry Cleaning Charge"/>
+  <Entry name="770" value="In-room Mini-bar Charge"/>
+  <Entry name="771" value="In-room Movie Charge"/>
+  <Entry name="772" value="Passenger Facility Charge"/>
+  <Entry name="773" value="Prepaid Expenses"/>
+  <Entry name="999" value="Other (See related description)"/>
+  <Entry name="AAA" value="Advertising Allowance"/>
+  <Entry name="AAJ" value="Adjustments"/>
+  <Entry name="AAM" value="Additional Material"/>
+  <Entry name="AAN" value="Allowance Non-performance"/>
+  <Entry name="AAO" value="Allowance Advance"/>
+  <Entry name="AAS" value="Attendants Accompanying"/>
+  <Entry name="AAT" value="Handling Charge Tax"/>
+  <Entry name="ABC" value="Alcoholic Beverage Report Charge"/>
+  <Entry name="ABL" value="Attachments to Bill of Lading Charge"/>
+  <Entry name="ACD" value="Allegheny County, PA Delivery Charge"/>
+  <Entry name="ACF" value="Access Charge - Federal"/>
+  <Entry name="ACH" value="Access Charges"/>
+  <Entry name="ACL" value="Actual Labor Charge"/>
+  <Entry name="ACS" value="Access Charge - State"/>
+  <Entry name="ADH" value="Advance Charges Handling"/>
+  <Entry name="ADL" value="Advance Loading Charge"/>
+  <Entry name="ADV" value="Advances"/>
+  <Entry name="AFB" value="Additional Copies of Freight Bill"/>
+  <Entry name="AFC" value="Collect on Delivery Alteration Charge"/>
+  <Entry name="AFN" value="Aircraft Ordered But Not Used"/>
+  <Entry name="AGS" value="Armed Guard Service"/>
+  <Entry name="AIB" value="Additional Injection/Blending Service Charge"/>
+  <Entry name="AIC" value="Air Freight - Consolidation"/>
+  <Entry name="AIR" value="Air Freight"/>
+  <Entry name="ALC" value="Advance Lading Charge"/>
+  <Entry name="ALP" value="Use of Alternate Port"/>
+  <Entry name="AMB" value="Adjustment for Maximum Charges Billing"/>
+  <Entry name="AMC" value="Absolute Minimum Charge"/>
+  <Entry name="AMP" value="Adjustment for Minimum Average Time Requirement Billing"/>
+  <Entry name="ANB" value="Adjustment for Minimum Charges Billing"/>
+  <Entry name="ANC" value="Anchoring and Unanchoring"/>
+  <Entry name="ANS" value="Anodizing Charge"/>
+  <Entry name="APL" value="Appliance Servicing"/>
+  <Entry name="APT" value="Appointment (Notification)"/>
+  <Entry name="ARB" value="Arbitrary (In Addition to Through Rates and Charges)"/>
+  <Entry name="ARC" value="Air Conditioning Disconnect and Connect"/>
+  <Entry name="ARG" value="Rail Armed Guard Service"/>
+  <Entry name="ARR" value="Air Ride Tractor Service Charge"/>
+  <Entry name="ASC" value="Assembly Charge"/>
+  <Entry name="AUX" value="Auxiliary Service"/>
+  <Entry name="AVA" value="Ad Valorem"/>
+  <Entry name="BAA" value="Beaming Charge"/>
+  <Entry name="BAB" value="Brokerage or Duty"/>
+  <Entry name="BAC" value="Buyers Car Allowance"/>
+  <Entry name="BAD" value="Bad Debt"/>
+  <Entry name="BAF" value="Both-Flat"/>
+  <Entry name="BAP" value="Broken Package Charge"/>
+  <Entry name="BAS" value="Base Charge"/>
+  <Entry name="BBK" value="Break Bulk Surface Charge"/>
+  <Entry name="BCF" value="Border Crossing Fee"/>
+  <Entry name="BDX" value="Bordeaux Arbitraries"/>
+  <Entry name="BEY" value="Beyond Freight Charges"/>
+  <Entry name="BFD" value="Bedding/Feeding/Disinfecting"/>
+  <Entry name="BKA" value="Bulky Article"/>
+  <Entry name="BLA" value="Bill of Lading Attendancy"/>
+  <Entry name="BLC" value="Bill of Lading Charge"/>
+  <Entry name="BLD" value="Billed Demand"/>
+  <Entry name="BLK" value="Blocking and Bracing Charge"/>
+  <Entry name="BLW" value="Blower Charge"/>
+  <Entry name="BND" value="Bond Charges"/>
+  <Entry name="BOB" value="Bobtail Charges"/>
+  <Entry name="BOP" value="Bop Sheet Charge"/>
+  <Entry name="BRA" value="Basic Reorder Allowance"/>
+  <Entry name="BRD" value="Bridge Toll"/>
+  <Entry name="BRG" value="Aqua Train"/>
+  <Entry name="BSC" value="Bunker Surcharge"/>
+  <Entry name="BSS" value="Broker Selection Surcharge"/>
+  <Entry name="BTC" value="Bi-level, Tri-level Charges"/>
+  <Entry name="BU2" value="Bunker Adjustment - 20 Foot Container"/>
+  <Entry name="BU4" value="Bunker Adjustment - 40 Foot Container"/>
+  <Entry name="BUA" value="Bunker Adjustment"/>
+  <Entry name="BUR" value="Bureau Report Charge"/>
+  <Entry name="BYD" value="Beyond Charge"/>
+  <Entry name="CA1" value="Currency Adjustment - Break Bulk"/>
+  <Entry name="CA2" value="Currency Adjustment - 20 Foot Container"/>
+  <Entry name="CA4" value="Currency Adjustment - 40 Foot Container"/>
+  <Entry name="CAA" value="Cancellation Charge"/>
+  <Entry name="CAC" value="Cash Discount"/>
+  <Entry name="CAD" value="Certification Fee"/>
+  <Entry name="CAE" value="Co-manufacturing Discount"/>
+  <Entry name="CAF" value="Competitive Allowance"/>
+  <Entry name="CAG" value="Competitive Car Allowance"/>
+  <Entry name="CAH" value="Compressor Charge"/>
+  <Entry name="CAJ" value="Crafting"/>
+  <Entry name="CAK" value="Customer Equipment Allowance"/>
+  <Entry name="CAL" value="Cutting Charge"/>
+  <Entry name="CAO" value="Co-op Credit"/>
+  <Entry name="CAP" value="Car Loading"/>
+  <Entry name="CAQ" value="Contract Escalation"/>
+  <Entry name="CAR" value="Car Rental"/>
+  <Entry name="CAS" value="Container Deposits"/>
+  <Entry name="CAV" value="Contract Allowance"/>
+  <Entry name="CAW" value="Cooperative Advertising/Merchandising Allowance (Performance)"/>
+  <Entry name="CAZ" value="Claims Commercial Auto Report Charge"/>
+  <Entry name="CBL" value="Copy of Bill of Lading Charge"/>
+  <Entry name="CBO" value="Cents Off"/>
+  <Entry name="CBP" value="Competitive Price"/>
+  <Entry name="CBR" value="Carrier"/>
+  <Entry name="CBW" value="Container Allowance"/>
+  <Entry name="CBX" value="City Sales Tax (Only)"/>
+  <Entry name="CCA" value="Carrier Credit Allowance"/>
+  <Entry name="CCH" value="Certification Charge"/>
+  <Entry name="CCP" value="Claims Commercial Property Report Charge"/>
+  <Entry name="CCR" value="Concession Credit"/>
+  <Entry name="CCS" value="Carrier Caboose Charge"/>
+  <Entry name="CDA" value="Carrier Debit Allowance"/>
+  <Entry name="CDD" value="Corrosion Additive Service Charge"/>
+  <Entry name="CDF" value="Cancelled Order, Heavy Duty Flatcar"/>
+  <Entry name="CDR" value="Copy of Delivery Receipt Charge"/>
+  <Entry name="CER" value="Container Service Charge UK/EUR"/>
+  <Entry name="CFC" value="Customs Fees - Container Level"/>
+  <Entry name="CFL" value="Customs Fees - Lift Level"/>
+  <Entry name="CGC" value="Carrier Guard Car Charge"/>
+  <Entry name="CGL" value="Canada Great Lakes Additionals"/>
+  <Entry name="CGR" value="Return Carrier Guard Car Charge"/>
+  <Entry name="CGT" value="Cargo Taxes"/>
+  <Entry name="CHE" value="Chassis Equipment Lease Charge"/>
+  <Entry name="CHG" value="Charges Forward/Advance Charge"/>
+  <Entry name="CHN" value="Chain and Binders"/>
+  <Entry name="CIR" value="Special Circus Trains"/>
+  <Entry name="CIS" value="Constant Surveillance"/>
+  <Entry name="CLC" value="Chicago Loop Charge"/>
+  <Entry name="CLD" value="Container Loss/Damage"/>
+  <Entry name="CLN" value="Cleaning Charge"/>
+  <Entry name="CLS" value="Container Leasing"/>
+  <Entry name="CMC" value="Concession Money"/>
+  <Entry name="CMF" value="City maintenance fee"/>
+  <Entry name="CMI" value="Continuous Mileage"/>
+  <Entry name="CMP" value="Camp Arbitrary"/>
+  <Entry name="CNS" value="Consolidation"/>
+  <Entry name="CNV" value="Converting"/>
+  <Entry name="COA" value="Commission Amount"/>
+  <Entry name="COC" value="Connect Charge"/>
+  <Entry name="COD" value="COD Amount"/>
+  <Entry name="COF" value="Ocean Freight"/>
+  <Entry name="COL" value="Fee for Collecting COD Charge"/>
+  <Entry name="COM" value="Combination"/>
+  <Entry name="CON" value="Congestion Surcharge"/>
+  <Entry name="COP" value="Port Changes"/>
+  <Entry name="COR" value="Core Charge"/>
+  <Entry name="COU" value="Consignee Unload"/>
+  <Entry name="CPA" value="Claims Personal Auto Report Charge"/>
+  <Entry name="CPC" value="Copilot Service Charge"/>
+  <Entry name="CPE" value="Computer Processing Expense"/>
+  <Entry name="CPP" value="Claims Personal Property Report Charge"/>
+  <Entry name="CRA" value="Cost recovery/adjustment"/>
+  <Entry name="CRF" value="Cost Recovery Factor"/>
+  <Entry name="CRP" value="Court Reporter Charge"/>
+  <Entry name="CRR" value="Credit Report Charge"/>
+  <Entry name="CRS" value="Courier Services"/>
+  <Entry name="CSA" value="Closing &amp; Sealing"/>
+  <Entry name="CSC" value="Contract Service Charge"/>
+  <Entry name="CSE" value="Customs Entry"/>
+  <Entry name="CSF" value="Customs Formalities"/>
+  <Entry name="CSP" value="Government Caboose Charge"/>
+  <Entry name="CSR" value="Conservation research fee"/>
+  <Entry name="CST" value="Cassette"/>
+  <Entry name="CTA" value="Container/Trailer Allowance"/>
+  <Entry name="CTC" value="Container Service Charge USA/Canada"/>
+  <Entry name="CTD" value="Customer Required Special Truck at Destination"/>
+  <Entry name="CTE" value="Court or Trial Expense"/>
+  <Entry name="CTF" value="Chassis Transfer"/>
+  <Entry name="CTG" value="Cartage Charge"/>
+  <Entry name="CTL" value="Controlled Atmosphere"/>
+  <Entry name="CTO" value="Customer Required Special Truck at Origin"/>
+  <Entry name="CTR" value="Circuitous Routing Charge"/>
+  <Entry name="CTX" value="Customs Exams (Intensive, Tailgate)"/>
+  <Entry name="CUA" value="Currency Adjustment"/>
+  <Entry name="CUD" value="Currency Discount"/>
+  <Entry name="CUF" value="Currency Adjustment Factor"/>
+  <Entry name="CUP" value="Customer Paid Deductible"/>
+  <Entry name="CUS" value="Customs Charge"/>
+  <Entry name="DAA" value="Deficit Freight"/>
+  <Entry name="DAB" value="Deposit"/>
+  <Entry name="DAC" value="Distributor Discount/Allowance"/>
+  <Entry name="DAD" value="Drum Up Charge"/>
+  <Entry name="DAM" value="Damaged Merchandise"/>
+  <Entry name="DBD" value="Dockage - Boat Detention"/>
+  <Entry name="DBL" value="Double Wide Separate and Reassemble"/>
+  <Entry name="DBP" value="Delivery of Fuel from Barge to Pipeline Charge"/>
+  <Entry name="DCE" value="Damage to Carrier Equipment"/>
+  <Entry name="DCS" value="Disconnect charge"/>
+  <Entry name="DCT" value="City Delivery"/>
+  <Entry name="DCV" value="Damage to Carrier Vessel"/>
+  <Entry name="DDA" value="Defective Allowance"/>
+  <Entry name="DDC" value="Drum Cost"/>
+  <Entry name="DDD" value="Drum Deposit"/>
+  <Entry name="DDF" value="Dowel Pin Charge"/>
+  <Entry name="DDN" value="Dual Driver with National Agency Check"/>
+  <Entry name="DDP" value="Dual Driver Protectice Service"/>
+  <Entry name="DDS" value="Deaf and Disabled Surcharge"/>
+  <Entry name="DDZ" value="Drayage at Port of Debarkation (Zone Rate)"/>
+  <Entry name="DEA" value="Demurrage - Average Agreement"/>
+  <Entry name="DEB" value="Detention: Vehicle with Power Unit (Bulk Petroleum Product Shipments)"/>
+  <Entry name="DED" value="Deductible"/>
+  <Entry name="DEL" value="Delivery Charge"/>
+  <Entry name="DEM" value="Demurrage"/>
+  <Entry name="DEP" value="Detention of Power Units"/>
+  <Entry name="DER" value="Derrick Charge"/>
+  <Entry name="DES" value="Demurrage - Special"/>
+  <Entry name="DET" value="Detention of Trailers"/>
+  <Entry name="DEV" value="Texas Rail Commission Deviation Charge"/>
+  <Entry name="DEW" value="Detention Without Power Unit"/>
+  <Entry name="DEZ" value="Drayage at Port of Embarkation (Zone Rate)"/>
+  <Entry name="DFD" value="Keep from Freezing Percent Differential"/>
+  <Entry name="DFM" value="410 Dromedary with Mechanical Restraining Devices Charge"/>
+  <Entry name="DFS" value="410 Dromedary"/>
+  <Entry name="DFW" value="Delay Furnishing Destination Weights"/>
+  <Entry name="DGE" value="Damage to Government Equipment"/>
+  <Entry name="DGS" value="Dangerous Goods Surcharge"/>
+  <Entry name="DIC" value="Diversion Charge"/>
+  <Entry name="DIR" value="Direct Repair"/>
+  <Entry name="DIS" value="Distribution Service"/>
+  <Entry name="DIV" value="Diversion and Reconsignment"/>
+  <Entry name="DLH" value="Drayage/Line Haul"/>
+  <Entry name="DLP" value="Delivery of Fuel from Rail Tank Car to Pipeline Charge"/>
+  <Entry name="DMC" value="Deadhead Mileage Charge"/>
+  <Entry name="DMD" value="Demand charge"/>
+  <Entry name="DNA" value="Dunnage Allowance"/>
+  <Entry name="DOC" value="Documentation Charge"/>
+  <Entry name="DON" value="Deposit in Lieu of Order"/>
+  <Entry name="DOV" value="Container Diversion"/>
+  <Entry name="DPB" value="Delivery of Fuel from Pipeline to Barge Charge"/>
+  <Entry name="DPD" value="Drayage at Port of Debarkation"/>
+  <Entry name="DPE" value="Drayage at Port of Embarkation"/>
+  <Entry name="DPL" value="Delivery of Fuel from Pipeline to Rail Tank Car Charge"/>
+  <Entry name="DPR" value="Depreciation"/>
+  <Entry name="DPT" value="Delivery of Fuel from Pipeline to Tank Truck or Trailer Charge"/>
+  <Entry name="DPU" value="Detention with Power Units (30 minute periods) Charge"/>
+  <Entry name="DRC" value="Drayage"/>
+  <Entry name="DRP" value="Deramping"/>
+  <Entry name="DRV" value="Driver License Record Report Charge"/>
+  <Entry name="DRY" value="Dryer Charge"/>
+  <Entry name="DSC" value="Discount"/>
+  <Entry name="DSF" value="Detention - Special Type Flat Car"/>
+  <Entry name="DSM" value="Dromedary with Mechanical Restraining Devices Charge"/>
+  <Entry name="DSR" value="Dromedary Service Charge"/>
+  <Entry name="DST" value="Container Destuffing"/>
+  <Entry name="DTA" value="Diversion to Air Charge"/>
+  <Entry name="DTB" value="Detention (Labor)"/>
+  <Entry name="DTC" value="Destination Charge"/>
+  <Entry name="DTD" value="Destination Duty"/>
+  <Entry name="DTF" value="Destination Inland Freight"/>
+  <Entry name="DTL" value="Detention Loading"/>
+  <Entry name="DTP" value="Delivery of Fuel from Tank Truck or Trailer to Pipeline Charge"/>
+  <Entry name="DTU" value="Detention Unloading"/>
+  <Entry name="DTV" value="Detention (Vehicle)"/>
+  <Entry name="DWC" value="Driver's Wages"/>
+  <Entry name="DWP" value="Detention with Power Units (60 minute periods) Charge"/>
+  <Entry name="EAC" value="Exchange Access Credit"/>
+  <Entry name="EAX" value="Extra Axles"/>
+  <Entry name="EBD" value="Exhibition Delivery Charge"/>
+  <Entry name="EBP" value="Exhibition Pickup Charge"/>
+  <Entry name="ECC" value="Will Call Charge"/>
+  <Entry name="ECR" value="Escort/Courier Service Charge"/>
+  <Entry name="ECS" value="Empty Railcar Ordered But Not Used Charge"/>
+  <Entry name="EDD" value="Equipment Hose at Destination Charge"/>
+  <Entry name="EDO" value="Equipment Hose at Origin Charge"/>
+  <Entry name="EEA" value="Early Buy Allowance"/>
+  <Entry name="EEB" value="Early Payment Allowance"/>
+  <Entry name="EEC" value="Escalation"/>
+  <Entry name="EEF" value="Expediting Fee"/>
+  <Entry name="EEG" value="One Time Engineering Charge"/>
+  <Entry name="EEH" value="Engineering Charge"/>
+  <Entry name="EEP" value="Expediting Premium"/>
+  <Entry name="EEX" value="Export Shipping Charge"/>
+  <Entry name="EIC" value="Export/Import Charge"/>
+  <Entry name="ELS" value="Extra Lights"/>
+  <Entry name="EMR" value="Emergency Response Service"/>
+  <Entry name="EMS" value="Emergency Surcharge"/>
+  <Entry name="EMT" value="Empty Movement"/>
+  <Entry name="ENC" value="Energy charge"/>
+  <Entry name="ENS" value="Energy Surcharge (Fuel Adjustment Factor)"/>
+  <Entry name="EPC" value="Emergency Port Charge"/>
+  <Entry name="EPS" value="Environmental Protection Service"/>
+  <Entry name="ERS" value="Empty Return"/>
+  <Entry name="ERT" value="Satisfactory Service Standards Charge"/>
+  <Entry name="ESA" value="Early Ship Allowance"/>
+  <Entry name="ESC" value="Emergency Service"/>
+  <Entry name="ESD" value="Estimated Customs Duty (Dutypaid - Charge)"/>
+  <Entry name="ESE" value="External Service Expense"/>
+  <Entry name="ETR" value="Empty Trailer Returned Charge"/>
+  <Entry name="EUC" value="European Port Charges"/>
+  <Entry name="EVC" value="Excessive Value Charge"/>
+  <Entry name="EXC" value="Exclusive Use Charge"/>
+  <Entry name="EXD" value="Extra Driver"/>
+  <Entry name="EXL" value="Extra Length"/>
+  <Entry name="EXM" value="Excess Mileage Charge"/>
+  <Entry name="EXP" value="Expedited Service Charge"/>
+  <Entry name="EXS" value="Excess Periods"/>
+  <Entry name="EXW" value="Excess Weight"/>
+  <Entry name="EXZ" value="Expando Remove and Install"/>
+  <Entry name="FAB" value="F.E.T. Federal Excise Tax"/>
+  <Entry name="FAC" value="F.E.T. (Percent)"/>
+  <Entry name="FAD" value="F.E.T. (Dollar Value)"/>
+  <Entry name="FAE" value="Fabrication Charge"/>
+  <Entry name="FAF" value="F.E.T. Tires"/>
+  <Entry name="FAG" value="Freight Equalization"/>
+  <Entry name="FAH" value="Freight Surcharge"/>
+  <Entry name="FAK" value="Barge Freight All Kinds Service"/>
+  <Entry name="FBD" value="Freight, Based on Dollar Minimum"/>
+  <Entry name="FCB" value="Freight Charges to Border"/>
+  <Entry name="FCD" value="Freight Charges to Destination"/>
+  <Entry name="FCI" value="Freight Charges Inbound and Outbound"/>
+  <Entry name="FCS" value="Furnishing Chassis"/>
+  <Entry name="FDL" value="Food and Lodging"/>
+  <Entry name="FDS" value="Financial Document Surcharge"/>
+  <Entry name="FFC" value="Fuel Filters Furnished by Carrier Charge"/>
+  <Entry name="FFI" value="Finance Charge"/>
+  <Entry name="FFL" value="Freshness/Leaker Allowance"/>
+  <Entry name="FFN" value="Special Finish Charge"/>
+  <Entry name="FFP" value="Freight Passthrough"/>
+  <Entry name="FFR" value="Flat Rate"/>
+  <Entry name="FFS" value="Fuel Filters Furnished by Shipper Charge"/>
+  <Entry name="FIR" value="Fire Report"/>
+  <Entry name="FLS" value="Flatrack Surcharge"/>
+  <Entry name="FLT" value="Ferry Service"/>
+  <Entry name="FMR" value="Foreign Military Sales (FMS) Rental"/>
+  <Entry name="FMS" value="Foreign Military Sales (FMS) Special Charge"/>
+  <Entry name="FRC" value="Franchise fee"/>
+  <Entry name="FTC" value="Federal Transfer Surcharge"/>
+  <Entry name="FTR" value="Filtration Service Charge"/>
+  <Entry name="FUE" value="Fuel Charge"/>
+  <Entry name="FWA" value="Forwarding Agent Commission"/>
+  <Entry name="FWC" value="Forwarding Charge"/>
+  <Entry name="FXE" value="Texas Rail Commission Fixed Charge"/>
+  <Entry name="GAR" value="Garment District"/>
+  <Entry name="GAT" value="Gate Inspection Charge (Intermodal)"/>
+  <Entry name="GDR" value="Grain Doors"/>
+  <Entry name="GGA" value="Glaze Allowance"/>
+  <Entry name="GGF" value="Gold Factor"/>
+  <Entry name="GKT" value="Gasket"/>
+  <Entry name="GMS" value="Garment Surcharge"/>
+  <Entry name="GOC" value="Government-owned Containers"/>
+  <Entry name="GPD" value="Gulf Port Delivery Charge"/>
+  <Entry name="GRD" value="Groupage Discount"/>
+  <Entry name="GRS" value="Gross Receipts Surcharge"/>
+  <Entry name="GSP" value="Government Guard Car Charge"/>
+  <Entry name="GSS" value="Greater Security Service"/>
+  <Entry name="GST" value="Goods and Services Tax Charge"/>
+  <Entry name="HAN" value="Handling Charges on Distribution Freight Forwarded Beyond"/>
+  <Entry name="HAZ" value="Hazardous Cargo Charge"/>
+  <Entry name="HBD" value="Harbor Dues"/>
+  <Entry name="HDF" value="Heavy Duty Flat Car Charge"/>
+  <Entry name="HDG" value="Holding Charge"/>
+  <Entry name="HDH" value="Shipment Holdover Charge for Holidays"/>
+  <Entry name="HDW" value="Shipment Holdover Charge for Weekends"/>
+  <Entry name="HET" value="Heat in Transit Charges"/>
+  <Entry name="HFA" value="Handling Freight At Positions Not Immediately Adjacent To Vehicle Charge"/>
+  <Entry name="HHA" value="Hauling and Hoisting to be Direct Billed"/>
+  <Entry name="HHB" value="Handling"/>
+  <Entry name="HHG" value="Household Goods Pick-up or Delivery"/>
+  <Entry name="HIC" value="Highway Interchange"/>
+  <Entry name="HLF" value="Home Line Freight Charge"/>
+  <Entry name="HMA" value="Accessible Hazardous Material"/>
+  <Entry name="HMI" value="Inaccessible Hazardous Material"/>
+  <Entry name="HOC" value="Hook-up charge"/>
+  <Entry name="HOL" value="Sunday or Holiday Pick-up or Delivery"/>
+  <Entry name="HOS" value="Hose Charge"/>
+  <Entry name="HOX" value="Hose Charge Special"/>
+  <Entry name="HRS" value="Heater or Refrigeration"/>
+  <Entry name="HSC" value="High Security Red In-bond Seal Charge"/>
+  <Entry name="HUL" value="Heavy Lift"/>
+  <Entry name="HZC" value="Hazardous Materials Surcharge Charge"/>
+  <Entry name="HZD" value="Hazardous Cargo on Deck"/>
+  <Entry name="HZS" value="Hazardous Storage"/>
+  <Entry name="IAA" value="Industry Price Allowance"/>
+  <Entry name="IAB" value="Income Freight (Manufacturing to Shipping Point)"/>
+  <Entry name="IAC" value="Inspection Fee"/>
+  <Entry name="ICE" value="Cooling Service"/>
+  <Entry name="IDC" value="Idler Car Charge"/>
+  <Entry name="IDD" value="Improper Documentation"/>
+  <Entry name="IDL" value="Inside Delivery"/>
+  <Entry name="IDP" value="Interdivision Profit"/>
+  <Entry name="IFC" value="Inbound Freight Charges"/>
+  <Entry name="IHT" value="Interstate/Highway Toll"/>
+  <Entry name="IIA" value="Invoice Adjustment"/>
+  <Entry name="IIH" value="Icing Inhibitor Charge"/>
+  <Entry name="IIP" value="Item Percentage"/>
+  <Entry name="IIU" value="Item-Unit"/>
+  <Entry name="ILD" value="Island Delivery Charge"/>
+  <Entry name="ILF" value="Initial License Fee"/>
+  <Entry name="ILP" value="Island Pick-Up Charge"/>
+  <Entry name="IMP" value="Impactographs"/>
+  <Entry name="IMS" value="Intermodal Shipment Service Charge"/>
+  <Entry name="INC" value="Insurance Surcharge"/>
+  <Entry name="INP" value="Interplant Charge"/>
+  <Entry name="INR" value="Interest on refund"/>
+  <Entry name="INS" value="Insurance"/>
+  <Entry name="INT" value="Interpreter Expense"/>
+  <Entry name="IPC" value="Intra-plant Charge"/>
+  <Entry name="IPU" value="Inside Pick-up"/>
+  <Entry name="IRA" value="Irish Arbitraries"/>
+  <Entry name="ISD" value="Interest on security deposit"/>
+  <Entry name="ISO" value="Intermodal Storage (Origin)"/>
+  <Entry name="IST" value="Intermodal Storage (Destination)"/>
+  <Entry name="ITC" value="Insulated Tank Charge"/>
+  <Entry name="ITS" value="Interline Transfer Charge"/>
+  <Entry name="JST" value="Junction Settlement Charge"/>
+  <Entry name="KIT" value="Glass Kit"/>
+  <Entry name="LAA" value="Labor Charges"/>
+  <Entry name="LAB" value="Extra Labor (Helper Service)"/>
+  <Entry name="LAC" value="Lading Adjustment Charge"/>
+  <Entry name="LAD" value="Labor (Repair and Return Orders)"/>
+  <Entry name="LAE" value="One-Time License Fee"/>
+  <Entry name="LAL" value="Labor Adjustment Allowance"/>
+  <Entry name="LAS" value="Commingling/Loss Allowance Charge"/>
+  <Entry name="LAT" value="License and Title"/>
+  <Entry name="LAY" value="Layover Charges"/>
+  <Entry name="LBR" value="Light Bar Service Charge"/>
+  <Entry name="LC2" value="Land Currency Adjustment Factor - 20 Foot Container"/>
+  <Entry name="LC4" value="Land Currency Adjustment Factor - 40 Foot Container"/>
+  <Entry name="LCG" value="Late Order Charge"/>
+  <Entry name="LCL" value="Percent Differential - Less than Container"/>
+  <Entry name="LCR" value="Labor Cost of Removal"/>
+  <Entry name="LDA" value="Loading Allowance"/>
+  <Entry name="LDG" value="Loading"/>
+  <Entry name="LDL" value="Unloading Allowance"/>
+  <Entry name="LDS" value="Locomotive Delayed in Switching Service"/>
+  <Entry name="LEC" value="Less than Container"/>
+  <Entry name="LFC" value="Lift Charge (Intermodal)"/>
+  <Entry name="LFD" value="Linehaul from Port of Debarkation"/>
+  <Entry name="LFT" value="Lift Gate (Truck) or Forklift Service at Pick-up/Delivery"/>
+  <Entry name="LGD" value="Lodging"/>
+  <Entry name="LHS" value="Linehaul Service"/>
+  <Entry name="LID" value="Recurring License Fee"/>
+  <Entry name="LIE" value="Liability of Carrier Charge"/>
+  <Entry name="LLB" value="Limited Liability"/>
+  <Entry name="LLC" value="Lot Charge"/>
+  <Entry name="LLD" value="Lead Factor"/>
+  <Entry name="LLF" value="Loan Fee"/>
+  <Entry name="LLS" value="Local Sales Tax (All Applicable Sales Taxes by Taxing Authorities Below the State Level)"/>
+  <Entry name="LMC" value="Labor, Modify"/>
+  <Entry name="LMD" value="Liner Terms at Port of Debarkation"/>
+  <Entry name="LME" value="Liner Terms at Port of Embarkation"/>
+  <Entry name="LNT" value="Labor, No Trouble Found"/>
+  <Entry name="LOA" value="Loading (Labor Charges)"/>
+  <Entry name="LOC" value="Local Delivery/Drayage"/>
+  <Entry name="LPC" value="Late payment charge"/>
+  <Entry name="LPD" value="Linehaul Percent Differential"/>
+  <Entry name="LPF" value="Laboratory Pack Fee"/>
+  <Entry name="LQD" value="Liquidated Damages"/>
+  <Entry name="LSC" value="Labor Service"/>
+  <Entry name="LSH" value="Lashing"/>
+  <Entry name="LSS" value="Lifeline Surcharge"/>
+  <Entry name="LTC" value="Labor, Test and Calibrate"/>
+  <Entry name="LTE" value="Linehaul to Port of Embarkation"/>
+  <Entry name="LUB" value="Lubricant Charge"/>
+  <Entry name="LUP" value="Locomotive Under Own Power"/>
+  <Entry name="LUS" value="Leaking underground storage tax (LUST)"/>
+  <Entry name="LYC" value="Layover Service Charge"/>
+  <Entry name="MAA" value="Metals Surcharge"/>
+  <Entry name="MAB" value="Mileage or Travel"/>
+  <Entry name="MAC" value="Mileage Fee (For Repair and Return)"/>
+  <Entry name="MAD" value="Minimum Order/Minimum Billing Charge"/>
+  <Entry name="MAE" value="Monthly Rental"/>
+  <Entry name="MAR" value="Marriage Rule"/>
+  <Entry name="MAT" value="Modified Atmosphere"/>
+  <Entry name="MCC" value="Machining Charge"/>
+  <Entry name="MDG" value="Molding"/>
+  <Entry name="MDM" value="Mount/Demount"/>
+  <Entry name="MEA" value="Meals or Lodging Charge"/>
+  <Entry name="MEN" value="Escort Service with Overnight Subsistence"/>
+  <Entry name="MES" value="Escort Service"/>
+  <Entry name="MET" value="Escort Service (Telephone)"/>
+  <Entry name="MFC" value="Manifest Charge"/>
+  <Entry name="MFG" value="Manufacturing"/>
+  <Entry name="MGA" value="Message Rate Adjustment"/>
+  <Entry name="MGC" value="Message Charge"/>
+  <Entry name="MIC" value="Minimum Charge"/>
+  <Entry name="MIL" value="Special Mileage Movements"/>
+  <Entry name="MIN" value="Minimum Guarantee"/>
+  <Entry name="MKU" value="Markup Charge"/>
+  <Entry name="MLB" value="Minimum Bill of Lading Charge"/>
+  <Entry name="MLS" value="Meals"/>
+  <Entry name="MMC" value="Minimum/Maximum Charge"/>
+  <Entry name="MMF" value="Mill Freight"/>
+  <Entry name="MMS" value="Market Development Funds"/>
+  <Entry name="MMT" value="Metropolitan Transit Tax"/>
+  <Entry name="MNC" value="Notify Consignee"/>
+  <Entry name="MNS" value="Motor Surveillance Service"/>
+  <Entry name="MPC" value="Miscellaneous Parts Charge"/>
+  <Entry name="MRK" value="Marking or Tagging Charge"/>
+  <Entry name="MRP" value="Medical Report Charge"/>
+  <Entry name="MSC" value="Other Accessorial Service Charge"/>
+  <Entry name="MSG" value="Miscellaneous Charge"/>
+  <Entry name="MTR" value="Meter Charge"/>
+  <Entry name="MUS" value="Municipal Surcharge"/>
+  <Entry name="MVR" value="Motor Vehicle Report (MVR) Charge"/>
+  <Entry name="MVS" value="Special Motor Surveillance Charge"/>
+  <Entry name="MVT" value="Venting Instructions"/>
+  <Entry name="NAA" value="Non Generated Freight"/>
+  <Entry name="NAB" value="New Store Allowance"/>
+  <Entry name="NAL" value="Nozzle Charge"/>
+  <Entry name="NCH" value="Order Notify Charge"/>
+  <Entry name="NDA" value="Next Day Air Service"/>
+  <Entry name="NDS" value="Non-document Surcharge"/>
+  <Entry name="NFY" value="Carrier Notification Charge"/>
+  <Entry name="NHB" value="N.H.D. Wharfage"/>
+  <Entry name="NSD" value="New Store Discount"/>
+  <Entry name="NWD" value="New Warehouse Discount"/>
+  <Entry name="NYD" value="New York Delivery Charge"/>
+  <Entry name="NYP" value="New York Pick-up Charge"/>
+  <Entry name="OAA" value="O.T.O. Charge"/>
+  <Entry name="OAB" value="Overrun Charge"/>
+  <Entry name="OAC" value="Overtime Loading"/>
+  <Entry name="OCH" value="Ocean Charges -- Hazardous"/>
+  <Entry name="OCN" value="Over Height Container"/>
+  <Entry name="OCP" value="On Call Pickup Service"/>
+  <Entry name="ODF" value="Collect on Delivery Deletion Charge"/>
+  <Entry name="OFR" value="Official Report Charge"/>
+  <Entry name="OFU" value="Fumigation"/>
+  <Entry name="ONC" value="On Carriage"/>
+  <Entry name="OOC" value="Option Charge (Color Fabric Office Furniture)"/>
+  <Entry name="OOD" value="On Deck Break Bulk Differential"/>
+  <Entry name="OOF" value="Order-Flat"/>
+  <Entry name="OPC" value="Optional Charge"/>
+  <Entry name="ORC" value="Operator Credit"/>
+  <Entry name="ORM" value="Out of Route Miles"/>
+  <Entry name="ORS" value="Receipt/Issue Overtime Normal Business Hours Charge"/>
+  <Entry name="OSC" value="Outside Charge"/>
+  <Entry name="OSO" value="Optional Software Support for Operational Support Systems"/>
+  <Entry name="OSS" value="Optional Software Support for Switching Systems"/>
+  <Entry name="OUT" value="Out of Zone Pick-up or Delivery"/>
+  <Entry name="OVN" value="Overnight Service"/>
+  <Entry name="OVR" value="Over Dimension"/>
+  <Entry name="OWC" value="Over Width Container"/>
+  <Entry name="PAA" value="Percent of Product"/>
+  <Entry name="PAC" value="Pump Air Charge"/>
+  <Entry name="PAD" value="Premium Charge"/>
+  <Entry name="PAE" value="Premium Transportation"/>
+  <Entry name="PAF" value="Price Deviation"/>
+  <Entry name="PAG" value="Professional Fees"/>
+  <Entry name="PAH" value="Promotional Allowance"/>
+  <Entry name="PAI" value="Promotional Discount"/>
+  <Entry name="PAJ" value="Pump Charge"/>
+  <Entry name="PAK" value="Preparation and Delivery"/>
+  <Entry name="PAL" value="Parts Adjustment Allowance"/>
+  <Entry name="PAR" value="Parts Charge"/>
+  <Entry name="PAT" value="Priced Parts Charge"/>
+  <Entry name="PAV" value="Pickup of Shipments on Saturday, Sunday, and/or Holidays Requiring Absolute Next Day Delivery Charge"/>
+  <Entry name="PBA" value="Prior billing amount"/>
+  <Entry name="PBE" value="Permits Bonds Escort Attendant"/>
+  <Entry name="PBL" value="Pier Charges Other Than Wharfage"/>
+  <Entry name="PCH" value="Protective Service Charge"/>
+  <Entry name="PCT" value="City Pick-up"/>
+  <Entry name="PDB" value="Prior Delivery Of Bill Charge"/>
+  <Entry name="PDC" value="Preloading Charge"/>
+  <Entry name="PDS" value="Pickup and Delivery from Storage in Transit"/>
+  <Entry name="PDY" value="Pickup and Delivery Beyond Service Area Charge"/>
+  <Entry name="PEC" value="Pallet Exchange Charge"/>
+  <Entry name="PEN" value="Penalty Charge"/>
+  <Entry name="PER" value="Permit Charge"/>
+  <Entry name="PFA" value="Power Factor Adjustment"/>
+  <Entry name="PHC" value="Photocopy"/>
+  <Entry name="PHG" value="Photographs"/>
+  <Entry name="PIR" value="Pier Pick-up and/or Delivery"/>
+  <Entry name="PKS" value="Packing Surcharge"/>
+  <Entry name="PLC" value="Insurance Placement Cost Charge"/>
+  <Entry name="PLT" value="Pallets/Skids/Platforms"/>
+  <Entry name="PMC" value="Prior Month Credit"/>
+  <Entry name="PMR" value="Paint and Materials"/>
+  <Entry name="PMS" value="Pickup of Shipments Requiring Same Day Delivery Service Charge"/>
+  <Entry name="PMT" value="Pickup of Shipments Requiring Same Day Delivery Service and/or Delivery at a Specified Time Charge"/>
+  <Entry name="PMU" value="Normal Pump Charge"/>
+  <Entry name="PMX" value="Special Pump Charge"/>
+  <Entry name="PNA" value="Prior Period Net Adjustment"/>
+  <Entry name="POC" value="Piano/Organ Carry"/>
+  <Entry name="POD" value="Proof of Delivery"/>
+  <Entry name="POL" value="Police Report Charge"/>
+  <Entry name="POS" value="Positioning at Origin"/>
+  <Entry name="PPC" value="Per Pound Charge"/>
+  <Entry name="PPD" value="Pickup and Delivery Service for Perishables Charge"/>
+  <Entry name="PPH" value="Per Item Charge"/>
+  <Entry name="PPI" value="Pick/Up Allowance"/>
+  <Entry name="PPM" value="Precious Metal Content"/>
+  <Entry name="PPN" value="Pallet Charge"/>
+  <Entry name="PPO" value="Per Order Charge"/>
+  <Entry name="PPR" value="Performance Award"/>
+  <Entry name="PPS" value="Placement and/or Removal Charge"/>
+  <Entry name="PPT" value="Parish/County Sales Tax (only)"/>
+  <Entry name="PPU" value="Prepaid Usage Allowance"/>
+  <Entry name="PRB" value="Prior Balance"/>
+  <Entry name="PRC" value="Pre-carriage"/>
+  <Entry name="PRE" value="Pre-carriage Excess"/>
+  <Entry name="PRK" value="Parking"/>
+  <Entry name="PRL" value="Prelodge Charge"/>
+  <Entry name="PRM" value="Premise Use"/>
+  <Entry name="PRP" value="Prior Period Rebook"/>
+  <Entry name="PRS" value="Stuffing Charge"/>
+  <Entry name="PRV" value="Prior Period Reversal"/>
+  <Entry name="PSC" value="Protective Service - Cold"/>
+  <Entry name="PSD" value="Preparation of Special Documents"/>
+  <Entry name="PSG" value="Protective Service Security with Armed Guards"/>
+  <Entry name="PSH" value="Protective Service - Heat"/>
+  <Entry name="PSS" value="Protective Service Security"/>
+  <Entry name="PST" value="Postage"/>
+  <Entry name="PTC" value="Tobacco Products Report Charge"/>
+  <Entry name="PTS" value="Protective Tarp for Security Purposes"/>
+  <Entry name="PUC" value="Pick-up Charge"/>
+  <Entry name="PUD" value="Pick-up and Delivery"/>
+  <Entry name="PUK" value="Pack and Unpack"/>
+  <Entry name="PVB" value="Bonded Privately Owned Vehicle Charge"/>
+  <Entry name="PVD" value="Detention of Privately Owned Vehicle Charge"/>
+  <Entry name="PVI" value="Inoperable Privately Owned Vehicle Charge"/>
+  <Entry name="PVL" value="Loading/Unloading of Privately Owned Vehicle Charge"/>
+  <Entry name="PVP" value="Privately Owned Vehicle Processing"/>
+  <Entry name="PVS" value="Stop-offs for Privately Owned Vehicle Shipment Charge"/>
+  <Entry name="PVT" value="Privately Owned Vehicle in Truckaway Service Charge"/>
+  <Entry name="PWH" value="Pier Charges - Wharfage"/>
+  <Entry name="PWT" value="Pallet Allowance"/>
+  <Entry name="PYS" value="Priority Service Charge"/>
+  <Entry name="QAA" value="Quantity Surcharge"/>
+  <Entry name="QQD" value="Quantity Discount"/>
+  <Entry name="RAA" value="Rebate"/>
+  <Entry name="RAB" value="Reclamation, Federal"/>
+  <Entry name="RAC" value="Reclamation, State"/>
+  <Entry name="RAD" value="Recovery Allowance"/>
+  <Entry name="RAE" value="Redistribution Allowance"/>
+  <Entry name="RAF" value="Rental Deduction"/>
+  <Entry name="RAG" value="Repack Charge"/>
+  <Entry name="RAH" value="Retainer"/>
+  <Entry name="RAI" value="Resellers Discount"/>
+  <Entry name="RAJ" value="Restocking Charge"/>
+  <Entry name="RAK" value="Royalties"/>
+  <Entry name="RAL" value="Roll Rebate"/>
+  <Entry name="RAM" value="Ramping"/>
+  <Entry name="RCA" value="No Return Credit Allowance"/>
+  <Entry name="RCB" value="Repair at buyers expense charge"/>
+  <Entry name="RCC" value="Reconsignment Charge"/>
+  <Entry name="RCD" value="Reconsign Consignee Charge"/>
+  <Entry name="RCE" value="Repair at customer expense charge"/>
+  <Entry name="RCG" value="Repair at government expense charge"/>
+  <Entry name="RCL" value="Redelivery"/>
+  <Entry name="RCP" value="Recoopering (at Owner's or Shipper's Expense)"/>
+  <Entry name="RCS" value="Reconnect charge"/>
+  <Entry name="RDC" value="Reconsign Delivery Charge"/>
+  <Entry name="RDF" value="Research &amp; development fee"/>
+  <Entry name="RDH" value="Railhead Handling"/>
+  <Entry name="REC" value="Return Cargo Charge"/>
+  <Entry name="REE" value="Regulatory Fee"/>
+  <Entry name="REF" value="Refrigeration"/>
+  <Entry name="REG" value="Regulatory tax"/>
+  <Entry name="REL" value="Requested Labor Charge"/>
+  <Entry name="REP" value="Residential Pick-up"/>
+  <Entry name="REQ" value="Request Via Canada"/>
+  <Entry name="RES" value="Residential Delivery"/>
+  <Entry name="RET" value="Returned Load"/>
+  <Entry name="RFD" value="Refund"/>
+  <Entry name="RFM" value="Reefer Maintenance"/>
+  <Entry name="RGA" value="Regain Allowance"/>
+  <Entry name="RGC" value="Regain Charge"/>
+  <Entry name="RHM" value="Recurring Hardware Maintenance Charge"/>
+  <Entry name="RID" value="Riding Attendant Charge"/>
+  <Entry name="RIE" value="Released Value Charge in Excess of Carrier Maximum Liability Charge"/>
+  <Entry name="RIS" value="Rail Inspection Service"/>
+  <Entry name="RLA" value="Retail Loss Allowance"/>
+  <Entry name="RLC" value="Rents and Leases"/>
+  <Entry name="RLQ" value="Relinquishment Charge"/>
+  <Entry name="RLS" value="Relocation of Vehicle"/>
+  <Entry name="RMB" value="Rocky Mountain Bureau 583 Item 1100 Arbitrary Charge"/>
+  <Entry name="RMC" value="Return of Empty Container Charge"/>
+  <Entry name="RMD" value="Refrigeration/Mechanical Detention"/>
+  <Entry name="RMP" value="Return Movement of Pallet Charge"/>
+  <Entry name="RMS" value="Rail Surveillance"/>
+  <Entry name="ROC" value="Roll Out Adjustment"/>
+  <Entry name="RPC" value="Reduction Prepalletized Cargo"/>
+  <Entry name="RPD" value="Reefer Cargo Percent Differential"/>
+  <Entry name="RRC" value="Reel Cable"/>
+  <Entry name="RRD" value="Reel Deposit"/>
+  <Entry name="RRF" value="Refurbishing Charge"/>
+  <Entry name="RRN" value="Rental Charge"/>
+  <Entry name="RRP" value="Repair Charge"/>
+  <Entry name="RRR" value="Regulatory required refund"/>
+  <Entry name="RSM" value="Recurring Software Maintenance Charge"/>
+  <Entry name="RSP" value="Reshipment"/>
+  <Entry name="RSS" value="Restricted Speeds"/>
+  <Entry name="RST" value="Respotting"/>
+  <Entry name="RSV" value="Reservations"/>
+  <Entry name="RTC" value="Rate Code"/>
+  <Entry name="SAA" value="Subject to Cooperative Advertising Allowance"/>
+  <Entry name="SAB" value="Shipping and Handling"/>
+  <Entry name="SAC" value="Service Charge (with Cash Discount)"/>
+  <Entry name="SAD" value="Scrap Allowance"/>
+  <Entry name="SAE" value="Shrink-Wrap Charge"/>
+  <Entry name="SAF" value="Special Credit"/>
+  <Entry name="SAG" value="State Motor Fuel"/>
+  <Entry name="SAH" value="Stenciling Charge"/>
+  <Entry name="SAI" value="Super Fund Excise Tax"/>
+  <Entry name="SAJ" value="Surcharge (Dollar Value)"/>
+  <Entry name="SAK" value="Surcharge (Percentage)"/>
+  <Entry name="SAM" value="Stopcharge"/>
+  <Entry name="SAN" value="State Sales Charge"/>
+  <Entry name="SAP" value="Service Assistance Program Surcharge"/>
+  <Entry name="SAS" value="Shipment Holdover on Weekends Charge"/>
+  <Entry name="SAT" value="Saturday Pick-up or Delivery Charge"/>
+  <Entry name="SBC" value="Standby Charge"/>
+  <Entry name="SBL" value="Sublet"/>
+  <Entry name="SCC" value="Special Seal Charge"/>
+  <Entry name="SCD" value="Special Containers"/>
+  <Entry name="SCG" value="Small Order Charge"/>
+  <Entry name="SCL" value="Scale Charge"/>
+  <Entry name="SCN" value="Second Day Service"/>
+  <Entry name="SCU" value="Scale Charge Unloading"/>
+  <Entry name="SDC" value="Special Detention Charge"/>
+  <Entry name="SDL" value="Split Delivery"/>
+  <Entry name="SDS" value="Special Dromedary Service"/>
+  <Entry name="SDW" value="Second Day Hundredweight Service"/>
+  <Entry name="SEC" value="Special Equipment Charge"/>
+  <Entry name="SEE" value="Stairs, Elevator, Excess Carry"/>
+  <Entry name="SEG" value="Segregating (Sorting)"/>
+  <Entry name="SEL" value="Self Unloader"/>
+  <Entry name="SEQ" value="Ship Exact Quantity Charge"/>
+  <Entry name="SER" value="Service Charge"/>
+  <Entry name="SEV" value="Security Escort Vehicle Service"/>
+  <Entry name="SFB" value="Single Factor Origination/Destination"/>
+  <Entry name="SFC" value="Stuffing Charge"/>
+  <Entry name="SFD" value="Single Factor Origination/Port of Debarkation"/>
+  <Entry name="SFE" value="Single Factor Port of Embarkation/Destination"/>
+  <Entry name="SFT" value="Special Train Movement"/>
+  <Entry name="SGL" value="Single Pick-up"/>
+  <Entry name="SHH" value="Shipment Holdover on Holidays Charge"/>
+  <Entry name="SHL" value="Shipper Load"/>
+  <Entry name="SHS" value="State Hazardous Substance Tax"/>
+  <Entry name="SHW" value="Shipment Holdover on Weekdays Charge"/>
+  <Entry name="SKT" value="Skirting and Unskirting"/>
+  <Entry name="SLC" value="Street lamps charge"/>
+  <Entry name="SLP" value="Slip Sheet Charge"/>
+  <Entry name="SMS" value="State/Metropolitan Transit Authority Surcharge"/>
+  <Entry name="SNS" value="Satellite Surveillance Service"/>
+  <Entry name="SNT" value="Shipment from Non-temp Storage"/>
+  <Entry name="SOC" value="Stop-off Charge"/>
+  <Entry name="SOP" value="Stop-off at Pier Charge"/>
+  <Entry name="SPA" value="Special Allowance"/>
+  <Entry name="SPB" value="Special Buy"/>
+  <Entry name="SPC" value="Special Permits"/>
+  <Entry name="SPD" value="Spreader Charge"/>
+  <Entry name="SPL" value="Spool Charge"/>
+  <Entry name="SPP" value="Split Pick-Up at Pier Charge"/>
+  <Entry name="SPS" value="Special Freight Supplements"/>
+  <Entry name="SPT" value="Spotting of Trailer"/>
+  <Entry name="SPU" value="Split Pick-up"/>
+  <Entry name="SRG" value="Storage"/>
+  <Entry name="SRS" value="Surveying Routes"/>
+  <Entry name="SSA" value="Salvage"/>
+  <Entry name="SSB" value="Super Bag Charge"/>
+  <Entry name="SSC" value="Stripping, Sorting, and Consolidation"/>
+  <Entry name="SSF" value="Single Shipment Fee"/>
+  <Entry name="SSL" value="Select Charge"/>
+  <Entry name="SSO" value="Pole, Wood-service Charge"/>
+  <Entry name="SSP" value="Shipside Pickup"/>
+  <Entry name="SSS" value="Software Support Service"/>
+  <Entry name="SST" value="Sales Tax (State and Local)"/>
+  <Entry name="SSU" value="Pole Lashing Equipment (PLE) Surcharge"/>
+  <Entry name="SSX" value="Sales and Use Tax"/>
+  <Entry name="STA" value="Conductivity/Anti-static Additive"/>
+  <Entry name="STC" value="State Surcharge"/>
+  <Entry name="STD" value="Stop-off at Destination"/>
+  <Entry name="STF" value="Container Stuffing"/>
+  <Entry name="STG" value="Standard Ground Service"/>
+  <Entry name="STL" value="Standard Labor Charge"/>
+  <Entry name="STM" value="Steaming Charge"/>
+  <Entry name="STO" value="Stowage Charge"/>
+  <Entry name="STP" value="Stopping in Transit"/>
+  <Entry name="STQ" value="Stop-off at Origination"/>
+  <Entry name="STR" value="Storage in Transit"/>
+  <Entry name="STW" value="Special tooling rework charge"/>
+  <Entry name="SUC" value="Special Use"/>
+  <Entry name="SUF" value="Sufferance Warehouse Charge (Export or Import)"/>
+  <Entry name="SUP" value="Supervisor Charge"/>
+  <Entry name="SUR" value="Surcharge"/>
+  <Entry name="SVA" value="Single Invoice Allowance"/>
+  <Entry name="SVL" value="Manual Surveillance of Shipment"/>
+  <Entry name="SVS" value="Storage of Vehicles"/>
+  <Entry name="SWC" value="Switching Charge"/>
+  <Entry name="TAA" value="Telephone Charge"/>
+  <Entry name="TAB" value="Tank Rental"/>
+  <Entry name="TAC" value="Temporary Allowance"/>
+  <Entry name="TAD" value="Tax on Transportation"/>
+  <Entry name="TAE" value="Temporary Voluntary Allowance"/>
+  <Entry name="TAF" value="Terminal Differential"/>
+  <Entry name="TAG" value="Testing Charge"/>
+  <Entry name="TAH" value="Tool Charge"/>
+  <Entry name="TAI" value="Testing Allowance"/>
+  <Entry name="TAJ" value="Trade In"/>
+  <Entry name="TAK" value="Transportation and Setup"/>
+  <Entry name="TAL" value="Truckload Discount"/>
+  <Entry name="TAR" value="Tarping Charge"/>
+  <Entry name="TAX" value="Tax Charge"/>
+  <Entry name="TAY" value="Governmental Tax"/>
+  <Entry name="TCB" value="Telegram Chargeback"/>
+  <Entry name="TCM" value="Transportation Charge (Minimum Rate)"/>
+  <Entry name="TDT" value="Truck Detention"/>
+  <Entry name="TER" value="Terminal Charge"/>
+  <Entry name="TLC" value="Trimming Charge"/>
+  <Entry name="TMS" value="Multi-Tank Surveillance Service"/>
+  <Entry name="TMV" value="Tendering of Multiple Vehicles"/>
+  <Entry name="TOA" value="Total Assessorial Charges"/>
+  <Entry name="TOC" value="TOFC Service Charge"/>
+  <Entry name="TOW" value="Motor Tow Away Service"/>
+  <Entry name="TPA" value="Carrier Equipment Pool Charge"/>
+  <Entry name="TPC" value="Throughput Container Charge"/>
+  <Entry name="TPS" value="Third-Party Service"/>
+  <Entry name="TRA" value="Travel Charge"/>
+  <Entry name="TRC" value="Trailer Rental Charge"/>
+  <Entry name="TRE" value="Travel Expense"/>
+  <Entry name="TRF" value="Transfer Charge"/>
+  <Entry name="TRM" value="Termination"/>
+  <Entry name="TRN" value="Transit"/>
+  <Entry name="TRP" value="Process in Transit Privilege"/>
+  <Entry name="TRS" value="Transferred Charges"/>
+  <Entry name="TRU" value="Thruway Charge"/>
+  <Entry name="TSC" value="Testing Services Charge"/>
+  <Entry name="TSS" value="Tank Surveillance Service"/>
+  <Entry name="TST" value="Track Storage"/>
+  <Entry name="TTA" value="Tank Car Allowance"/>
+  <Entry name="TTB" value="Transportation-Direct Billing"/>
+  <Entry name="TTD" value="Trade Discount"/>
+  <Entry name="TTL" value="Local Tax"/>
+  <Entry name="TTM" value="Tax on Miscellaneous Charges"/>
+  <Entry name="TTP" value="Third Party Allowance"/>
+  <Entry name="TTR" value="Throughput Allowance"/>
+  <Entry name="TTS" value="State Tax"/>
+  <Entry name="TTT" value="Transportation - Third Party Billing"/>
+  <Entry name="TTU" value="Tire Repair and Replace"/>
+  <Entry name="TTV" value="Transportation - Vendor Provided"/>
+  <Entry name="TUR" value="Turning Charge"/>
+  <Entry name="TWO" value="Two Door Pick Up"/>
+  <Entry name="UFC" value="Under Carriage Furnished By Carrier Charge"/>
+  <Entry name="UND" value="Unloading"/>
+  <Entry name="UNL" value="Unloading (Labor Charges)"/>
+  <Entry name="UPD" value="Usage Plan Detail Charge"/>
+  <Entry name="UPK" value="Unpacking"/>
+  <Entry name="URC" value="Unloading/Reloading Charge"/>
+  <Entry name="USF" value="Use - Special Type Flat Car"/>
+  <Entry name="USV" value="U.S. Vehicles"/>
+  <Entry name="USW" value="Unabsorbed Switching"/>
+  <Entry name="UTL" value="Utilities Disconnect and Connect"/>
+  <Entry name="UTP" value="Use charge tooling/personnel"/>
+  <Entry name="UUC" value="Up Charge"/>
+  <Entry name="UUM" value="Unsalable Merchandise Allowance"/>
+  <Entry name="UUT" value="Use Tax"/>
+  <Entry name="VAA" value="Vendor Freight"/>
+  <Entry name="VAB" value="Volume Discount"/>
+  <Entry name="VCL" value="Van Cleaning"/>
+  <Entry name="VCR" value="Voluntary contribution charge"/>
+  <Entry name="VEX" value="Excess Mileage for Stop-off Delivery of Personal Vehicles Charge"/>
+  <Entry name="VFN" value="Vehicles Furnished But Not Used"/>
+  <Entry name="VIS" value="Vehicles Inoperable"/>
+  <Entry name="VIT" value="Virgin Island Transfer Charge"/>
+  <Entry name="VOR" value="Vehicle Ordered but Not Used"/>
+  <Entry name="VSO" value="Stop-off Delivery of Personal Vehicles Charge"/>
+  <Entry name="VTS" value="Vehicles in Truckway"/>
+  <Entry name="VVL" value="Vehicle Load Allowance"/>
+  <Entry name="VVP" value="Vehicle Prep Charge (courtesy delivery)"/>
+  <Entry name="WAR" value="War Risk Surcharge"/>
+  <Entry name="WAT" value="Wide Area Telephone Service (WATS) Usage Credit"/>
+  <Entry name="WBB" value="Wharfage - Breakbulk"/>
+  <Entry name="WCT" value="Wharfage - Container"/>
+  <Entry name="WDS" value="Waterfront Delivery Charge"/>
+  <Entry name="WEA" value="Weather Protection"/>
+  <Entry name="WEI" value="Weighing Charge (Intermodal)"/>
+  <Entry name="WFG" value="Wharfage"/>
+  <Entry name="WFH" value="Wharfage &amp; Handling"/>
+  <Entry name="WFT" value="Wasted/Futile Trip"/>
+  <Entry name="WHC" value="Warehouse Charge"/>
+  <Entry name="WRB" value="War Risk Crew Bonus"/>
+  <Entry name="WRC" value="Load Weighing Charge"/>
+  <Entry name="WRE" value="Empty Weighing Charge"/>
+  <Entry name="WRI" value="War Risk Insurance"/>
+  <Entry name="WSA" value="Warehouse Allowance"/>
+  <Entry name="WTG" value="Waiting Time"/>
+  <Entry name="WTM" value="Waiting Time Service Charge"/>
+  <Entry name="WTV" value="Weight Verification Charge"/>
+  <Entry name="WWC" value="Wharfage Charge"/>
+  <Entry name="Z01" value="Protective Service Rule 25"/>
+  <Entry name="Z02" value="Protective Service Rule 27"/>
+  <Entry name="Z03" value="Protective Service Rule 37"/>
+  <Entry name="Z04" value="Protective Service Rule 75"/>
+  <Entry name="Z05" value="Protective Service Rule 95"/>
+  <Entry name="Z06" value="Protective Service Rule 140"/>
+  <Entry name="Z07" value="Protective Service Rule 160"/>
+  <Entry name="Z08" value="Protective Service Rule 165"/>
+  <Entry name="Z09" value="Protective Service Rule 500"/>
+  <Entry name="Z10" value="Protective Service Rule 510"/>
+  <Entry name="Z11" value="Protective Service Rule 518"/>
+  <Entry name="Z12" value="Protective Service Rule 530"/>
+  <Entry name="Z13" value="Protective Service Rule 531"/>
+  <Entry name="Z14" value="Protective Service Rule 545"/>
+  <Entry name="Z15" value="Protective Service Rule 565"/>
+  <Entry name="Z16" value="Protective Service Rule 570"/>
+  <Entry name="Z17" value="Protective Service Rule 580"/>
+  <Entry name="Z18" value="Protective Service Rule 581"/>
+  <Entry name="Z19" value="Protective Service Rule 705"/>
+  <Entry name="Z20" value="Protective Service Rule 710"/>
+  <Entry name="Z21" value="Protective Service Rule 711"/>
+  <Entry name="Z22" value="Protective Service Rule 712"/>
+  <Entry name="Z23" value="Protective Service Rule 716"/>
+  <Entry name="Z24" value="Protective Service Rule 720"/>
+  <Entry name="Z25" value="Protective Service Rule 725"/>
+  <Entry name="Z26" value="Protective Service Rule 727"/>
+  <Entry name="Z27" value="Protective Service Rule 735"/>
+  <Entry name="Z28" value="Protective Service Rule 740"/>
+  <Entry name="Z29" value="Protective Service Rule 760"/>
+  <Entry name="Z30" value="Protective Service Rule 815"/>
+  <Entry name="Z31" value="Quality Differential"/>
+  <Entry name="Z32" value="Protective Service Rule 26"/>
+  <Entry name="Z33" value="Protective Service Rule 715"/>
+  <Entry name="Z34" value="Protective Service Rule 745"/>
+  <Entry name="Z35" value="Protective Service Rule 755"/>
+  <Entry name="ZFF" value="First Flight Out"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

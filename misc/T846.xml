@@ -1,0 +1,66 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T846.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T846">
+  <Entry name="AC" value="Address Change"/>
+  <Entry name="AN" value="Annuitized"/>
+  <Entry name="AW" value="Awaiting Initial Premium"/>
+  <Entry name="CA" value="Contract Award"/>
+  <Entry name="CB" value="Cancelled by IRS"/>
+  <Entry name="CC" value="Contract Cancelled"/>
+  <Entry name="CL" value="Closed contract - all quantities taken"/>
+  <Entry name="CM" value="Contract Modified"/>
+  <Entry name="CR" value="Contract Renewed"/>
+  <Entry name="CX" value="Contract Cancelled - Refund Due"/>
+  <Entry name="DA" value="Disabled"/>
+  <Entry name="DE" value="Death"/>
+  <Entry name="DL" value="Deleted Contract"/>
+  <Entry name="EX" value="Expired Contract"/>
+  <Entry name="FL" value="Free Look Period"/>
+  <Entry name="GS" value="General Suspension"/>
+  <Entry name="HO" value="Hold"/>
+  <Entry name="IA" value="Inactive"/>
+  <Entry name="IE" value="Internal Exchange"/>
+  <Entry name="IN" value="Invalid Contract Due To Terms"/>
+  <Entry name="MA" value="Matured"/>
+  <Entry name="NB" value="Contract Provider No Longer in Business"/>
+  <Entry name="NT" value="Not Taken"/>
+  <Entry name="OC" value="Original Contract"/>
+  <Entry name="PA" value="Paid Up"/>
+  <Entry name="PB" value="Pending"/>
+  <Entry name="PC" value="Pending Death Notification"/>
+  <Entry name="PD" value="Pending Exchange Transfer"/>
+  <Entry name="PP" value="Prepaid Service Authorization"/>
+  <Entry name="PR" value="Proposed Contract"/>
+  <Entry name="RA" value="Reissue"/>
+  <Entry name="RB" value="Rescinded"/>
+  <Entry name="RC" value="Restricted"/>
+  <Entry name="RO" value="Reopened Contract"/>
+  <Entry name="SC" value="Standard Contract"/>
+  <Entry name="SU" value="Surrendered"/>
+  <Entry name="TA" value="Terminated"/>
+  <Entry name="TR" value="Contract Transferred"/>
+  <Entry name="VA" value="Valid Open Contract"/>
+</Table>

@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CR6.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CR6" comment="To supply information related to the certification of a home health care patient">
+  <Field name="PrognosisCode" min="1" max="1" validation="T923" comment="Code indicating physician's prognosis for the patient"/>
+  <Field name="Date1" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="DateTimePeriodFormatQualifier1" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod1" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="YesNoConditionOrResponseCode2" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="CertificationTypeCode" min="1" max="1" validation="T1322" comment="Code indicating the type of certification"/>
+  <Field name="Date3" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="MedicalCodeValue" required="y" min="1" max="15" comment="Code value for describing a medical condition or procedure"/>
+  <Field name="Date4" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date5" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date6" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="DateTimePeriodFormatQualifier2" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod2" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="PatientLocationCode" required="y" min="1" max="1" validation="T1384" comment="Code identifying the location where patient is receiving medical treatment"/>
+  <Field name="Date7" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date8" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date9" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date10" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+</Segment>

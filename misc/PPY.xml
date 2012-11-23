@@ -1,0 +1,35 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PPY.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PPY" comment="To provide details of personal property">
+  <Field name="TypeOfPersonalOrBusinessAssetCode" min="2" max="2" validation="T1188" comment="Code defining the nature of personal or business property or asset"/>
+  <Field name="MonetaryAmount" type="double" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Description1" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Description2" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Description3" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+</Segment>

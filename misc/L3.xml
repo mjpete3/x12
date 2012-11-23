@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: L3.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="L3" comment="To specify the total shipment in terms of weight, volume, rates, charges, advances, and prepaid amounts applicable to one or more line items">
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="WeightQualifier" required="y" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+  <Field name="FreightRate" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Charge" type="double" required="y" min="1" max="12" comment="For a line item: freight or special charge; for the total invoice: the total charges -- expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="Advances" type="double" required="y" min="1" max="9" comment="Incidental charges occurring during transportation which are not generally considered to be freight charges (examples - stop charges, diversion and reconsignment, icing) expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="PrepaidAmount" type="double" required="y" min="1" max="9" comment="Money paid at point of origin (usually by shipper) expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="SpecialChargeOrAllowanceCode" required="y" min="3" max="3" validation="T150" comment="Code identifying type of special charge or allowance"/>
+  <Field name="Volume" type="double" required="y" min="1" max="8" comment="Value of volumetric measure"/>
+  <Field name="VolumeUnitQualifier" required="y" min="1" max="1" validation="T184" comment="Code identifying the volume unit"/>
+  <Field name="LadingQuantity" type="long" required="y" min="1" max="7" comment="Number of units (pieces) of the lading commodity"/>
+  <Field name="WeightUnitCode" required="y" min="1" max="1" validation="T188" comment="Code specifying the weight unit"/>
+  <Field name="TariffNumber" required="y" min="1" max="7" comment="Standard tariff number for the tariff which governs the rates applied to the commodity item(s)"/>
+  <Field name="DeclaredValue" type="double" required="y" min="2" max="12" comment="Monetary assigned value expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+</Segment>

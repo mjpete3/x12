@@ -1,0 +1,86 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T548.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T548">
+  <Entry name="AOG" value="Declined - Loss or Damage Due to Act of God - See Correspondence"/>
+  <Entry name="CAC" value="Amend - Correction to Amount Claimed - Keying or Transmission Error"/>
+  <Entry name="CCD" value="Declined - Carrier Disagrees with Consignee Damages Noted - Documentation to Follow"/>
+  <Entry name="CDC" value="Amend - Compromise Offered on Concealed Damage"/>
+  <Entry name="CDI" value="Declined - Carriers Not Given an opportunity to Inspect Claimed Damages"/>
+  <Entry name="CFO" value="Declined - Claim for Other than Loss, Damage or Delay to Shipment - See Correspondence"/>
+  <Entry name="CFT" value="Declined - Claim Not Filed within Time Limits of Contract of Carriage"/>
+  <Entry name="CIB" value="Amend - Claim on Incorrect Basis - Sales Loss vs Market Decline, or Retail vs Invoice"/>
+  <Entry name="CIC" value="Amend - Correction to Initial Claim Filed for Preliminary Estimate"/>
+  <Entry name="CNG" value="Amend - Destination Inspection Reveals Contributory Negligence - Compromise Settlement Offered"/>
+  <Entry name="CNL" value="Amend - Destination Inspection Reveals Not Carrier Liability - Salvage Proceeds Offered in Settlement"/>
+  <Entry name="CSD" value="Declined - Claim Supporting Documentation Required by Carrier"/>
+  <Entry name="CSO" value="Amend - Compromise Settlement Offered for Other Reasons - See Correspondence"/>
+  <Entry name="CSR" value="Amend - Clear Seal Record on Shortage Portion of Claim"/>
+  <Entry name="CTA" value="Amend - Coal Tolerance Allowance Deducted"/>
+  <Entry name="DAM" value="Amend - Damaged Merchandise Not Refused to Carrier Salvage Allowance Deducted"/>
+  <Entry name="DDO" value="Declined - Delay due to Owner in Releasing or Reconsigning Shipment - See Correspondence"/>
+  <Entry name="DMN" value="Amend - Part of Claim For Manufacturing Defect or Omission Not Noted During Inspection"/>
+  <Entry name="DNH" value="Declined - Did Not Handle Claimed Shipment - See Correspondence"/>
+  <Entry name="DNI" value="Declined - Did Not Handle Claimed Shipment - No Correspondence to Follow"/>
+  <Entry name="DNR" value="Amend - Concealed Damage or Shortage Not Reported to Carrier"/>
+  <Entry name="DNS" value="Declined - Claimed Damages Not Segregated for Inspection"/>
+  <Entry name="DOA" value="Declined - Shipment Involved in a Derailment or Another Carrier's Line"/>
+  <Entry name="DPS" value="Declined - No Market Decline on Delayed Perishable Shipments"/>
+  <Entry name="DSA" value="Amend - Invoice Discounts or Special Allowances Not Deducted"/>
+  <Entry name="DUP" value="Declined - Duplicate Claim - See Correspondence"/>
+  <Entry name="FIS" value="Declined - Claim for Delay Filed on Incorrect Schedule - See Correspondence"/>
+  <Entry name="GSA" value="Amend - Grain Shrinkage Allowance Deducted"/>
+  <Entry name="GWL" value="Amend - Settlement on Gross Weight Loss or Other Scale Differences"/>
+  <Entry name="IAW" value="Amend - Improper Average Weights Used in Determining Loss"/>
+  <Entry name="ICC" value="Amend - Incorrect Calculation of Claim - See Correspondence"/>
+  <Entry name="INC" value="Declined - Claim Filed with Intermediate Carrier"/>
+  <Entry name="INF" value="Declined - Request for Delayed Inspection Not Properly Filed"/>
+  <Entry name="MAN" value="Amend - Origin Inspection Reveals Part of Claim Due to Manufacturing Defects or Omissions"/>
+  <Entry name="MDD" value="Declined - Claimed Damage is Manufacturing Defect, Not Transportation Damage - See Report"/>
+  <Entry name="NCA" value="Declined - Non-Compliance with Memorandum of Agreement - See Correspondence"/>
+  <Entry name="NCR" value="Amend - Destination Inspection Reveals Part of Claim Not Carrier Responsibility"/>
+  <Entry name="NDI" value="Declined - Claimed Damage or Shortage Noted During Origin Inspection - See Report"/>
+  <Entry name="NFT" value="Amend - Claim Not Filed within Time Limits of Contract of Carriage - Salvage Proceeds Offered in Settlement"/>
+  <Entry name="NLI" value="Declined - No Liability Indicated - See Correspondence"/>
+  <Entry name="NNI" value="Declined - Claimed Damage or Shortage not Noted During Destination Inspection - See Report"/>
+  <Entry name="NRC" value="Declined - Claimed Damage or Shortage not Reported to Carrier"/>
+  <Entry name="OCC" value="Declined - No Answer to Outstanding Correspondence from Claimant"/>
+  <Entry name="OTH" value="Declined - Declined for Other Reasons - See Correspondence"/>
+  <Entry name="RAC" value="Declined - Refiled - Amended Claim - No Documentation to Follow"/>
+  <Entry name="RAD" value="Declined - Amended Claim - Documentation to Follow"/>
+  <Entry name="RUC" value="Declined - Refiled - Unamended Claim -No Documentation to Follow"/>
+  <Entry name="RUD" value="Declined - Refiled - Unamended Claim - Documentation to Follow"/>
+  <Entry name="SMA" value="Declined - Salvageable Material Not Available to Carrier"/>
+  <Entry name="SNA" value="Declined - Compromise Settlement Not Accepted"/>
+  <Entry name="SRD" value="Declined - Shipper Responsible for Damage - See Correspondence"/>
+  <Entry name="SRE" value="Amend - Origin Inspection Reveals Shipper Responsibility - Salvage Proceeds Offered in Settlement"/>
+  <Entry name="VDC" value="Declined - Vehicle Damage Claimed Does Not Qualify for Deferred Inspection"/>
+  <Entry name="VDD" value="Declined - Vehicle Delivered Subject to Inspection - Not Notified of Damage"/>
+  <Entry name="VDI" value="Declined - Vehicle Delivered Subject to Inspection - Not Notified within Required Time Period"/>
+  <Entry name="VDQ" value="Declined - Vehicle Damage Claimed Does Not Qualify as Concealed Damage"/>
+  <Entry name="VDS" value="Declined - Damage Severity of Vehicle Undercarriage Does Not Justify Part Replacement"/>
+  <Entry name="VIS" value="Declined - Nature or Location of Vehicle Interior Damage Not Carrier Liability"/>
+  <Entry name="VRP" value="Declined - Vehicle Repair Not Performed as Represented on Claim - Documentation to Follow"/>
+</Table>

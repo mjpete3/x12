@@ -1,0 +1,180 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T821.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T821">
+  <Entry name="ACT" value="Acute Toxicity Data"/>
+  <Entry name="AM2" value="Analytical Methods"/>
+  <Entry name="AP2" value="Approvals"/>
+  <Entry name="CAR" value="Carcinogenicity"/>
+  <Entry name="CI2" value="Chemical Product and Company Information"/>
+  <Entry name="CO2" value="Composition or Information on Ingredients"/>
+  <Entry name="CON" value="Conditions to Avoid"/>
+  <Entry name="CTD" value="Chronic Toxicity Data"/>
+  <Entry name="DCL" value="Disclaimer"/>
+  <Entry name="DEC" value="Decomposition, Decomposition Products"/>
+  <Entry name="DEH" value="Hazardous Decomposition Products"/>
+  <Entry name="DI2" value="Disposal Considerations"/>
+  <Entry name="DIS" value="Distribution of Chemical in Environment"/>
+  <Entry name="DM2" value="Detection Methods"/>
+  <Entry name="EDD" value="Sensitive to Static Charge"/>
+  <Entry name="EFA" value="Emergency and First Aid Procedures"/>
+  <Entry name="EFB" value="Emergency Procedures"/>
+  <Entry name="EFX" value="Effects of Overexposure"/>
+  <Entry name="EIM" value="Explosion Impact Sensitive Material"/>
+  <Entry name="EN2" value="Ecological Information"/>
+  <Entry name="ENA" value="Environmental - Acute Aquatic Effects"/>
+  <Entry name="ENB" value="Environmental - Bioconcentration Material"/>
+  <Entry name="ENG" value="Engineering Controls"/>
+  <Entry name="ENO" value="Environmental - Oxygen Demand"/>
+  <Entry name="ENS" value="Environmental - Summary"/>
+  <Entry name="EO2" value="Emergency Overview"/>
+  <Entry name="EP2" value="Exposure Controls or Personal Protection"/>
+  <Entry name="EPA" value="Employee Protection"/>
+  <Entry name="ESD" value="Static Sensitive Material"/>
+  <Entry name="EVP" value="Environmental Protection"/>
+  <Entry name="EXC" value="Ecotoxicological Information"/>
+  <Entry name="EXG" value="Exposure Guidelines"/>
+  <Entry name="EXI" value="Exposure Information"/>
+  <Entry name="EXL" value="Exposure Limits, Occupational Exposure Limits"/>
+  <Entry name="EYA" value="Eye Contact: Acute Exposure"/>
+  <Entry name="EYC" value="Eye Contact: Chronic Exposure"/>
+  <Entry name="EYF" value="Eye Contact"/>
+  <Entry name="EYZ" value="Eye"/>
+  <Entry name="FA2" value="First Aid Measures"/>
+  <Entry name="FAA" value="Extinguishing Media: All Fires"/>
+  <Entry name="FAL" value="Extinguishing Media: Large Fires"/>
+  <Entry name="FAS" value="Extinguishing Media: Small Fires"/>
+  <Entry name="FAT" value="Environmental Fate (i.e., Oxidized, Photodegraded, etc.)"/>
+  <Entry name="FAZ" value="Extinguishing Media"/>
+  <Entry name="FE2" value="Fire Fighting Measures"/>
+  <Entry name="FEH" value="Fire and Explosion Hazards"/>
+  <Entry name="FEZ" value="Fire and Explosion Data"/>
+  <Entry name="FLC" value="Flammability Conditions"/>
+  <Entry name="FLP" value="Flammable Properties"/>
+  <Entry name="GCA" value="General Controls"/>
+  <Entry name="GMA" value="General Measures"/>
+  <Entry name="GPI" value="General Safe Handling Procedures or Information"/>
+  <Entry name="HAI" value="Handling Information"/>
+  <Entry name="HCA" value="Hazardous Component or Ingredient"/>
+  <Entry name="HCP" value="Hazardous Product of Combustion"/>
+  <Entry name="HH2" value="Hazards Identification"/>
+  <Entry name="HHA" value="Health Hazard Information"/>
+  <Entry name="HI2" value="Potential Health Effects"/>
+  <Entry name="HZC" value="Hazard Class"/>
+  <Entry name="HZR" value="Hazard Rating System"/>
+  <Entry name="IA2" value="Other Information"/>
+  <Entry name="IGA" value="Ingestion: Acute Exposure"/>
+  <Entry name="IGC" value="Ingestion: Chronic Exposure"/>
+  <Entry name="IGZ" value="Ingestion"/>
+  <Entry name="IHA" value="Inhalation: Acute Exposure"/>
+  <Entry name="IHC" value="Inhalation: Chronic Exposure"/>
+  <Entry name="IHZ" value="Inhalation"/>
+  <Entry name="INC" value="Incompatibility"/>
+  <Entry name="INS" value="Instability"/>
+  <Entry name="INX" value="Incompatibility Conditions"/>
+  <Entry name="IRR" value="Irritancy"/>
+  <Entry name="KY2" value="Key or Legend"/>
+  <Entry name="LAB" value="Label Text"/>
+  <Entry name="LKI" value="Leak Avoidance, Remediation, or Hazards"/>
+  <Entry name="MAT" value="Material to Avoid"/>
+  <Entry name="MCE" value="Medical Conditions Aggravated by Exposure"/>
+  <Entry name="MUT" value="Mutagenicity"/>
+  <Entry name="NOT" value="Notification of Chemical Storage Amount, Spill or Release to the Environment"/>
+  <Entry name="NTE" value="Note to Physician: Eyes"/>
+  <Entry name="NTR" value="Note to Physician: Respiratory"/>
+  <Entry name="NTS" value="Note to Physician: Skin"/>
+  <Entry name="NTZ" value="Note to Physician"/>
+  <Entry name="OPH" value="Other Physical Hazards"/>
+  <Entry name="OPR" value="Other Precautions"/>
+  <Entry name="ORC" value="Other Regulatory Controls"/>
+  <Entry name="PD2" value="Physical and Chemical Properties"/>
+  <Entry name="PM2" value="Preventive Measures"/>
+  <Entry name="POL" value="Hazardous Polymerization"/>
+  <Entry name="PPA" value="Personal Protection: Additional Equipment"/>
+  <Entry name="PPB" value="Personal Protection: Boots"/>
+  <Entry name="PPC" value="Personal Protection: Clothing"/>
+  <Entry name="PPD" value="Personal Protection: Eye/Face"/>
+  <Entry name="PPE" value="Personal Protection: Eye"/>
+  <Entry name="PPF" value="Personal Protection: Face"/>
+  <Entry name="PPG" value="Personal Protection: Gloves"/>
+  <Entry name="PPR" value="Personal Protection: Respiratory"/>
+  <Entry name="PPS" value="Personal Protection: Skin"/>
+  <Entry name="PPZ" value="Personal Protection Equipment"/>
+  <Entry name="PR2" value="Preparation and Revision Information"/>
+  <Entry name="PRE" value="Primary Route(s) of Entry: Eye Contact"/>
+  <Entry name="PRF" value="Primary Route(s) of Entry: Eye, Inhalation"/>
+  <Entry name="PRG" value="Primary Route(s) of Entry: Eye, Oral"/>
+  <Entry name="PRH" value="Primary Route(s) of Entry: Eye, Oral, Skin"/>
+  <Entry name="PRI" value="Primary Route(s) of Entry: Inhalation"/>
+  <Entry name="PRJ" value="Primary Route(s) of Entry: Inhalation, Oral"/>
+  <Entry name="PRK" value="Primary Route(s) of Entry: Inhalation, Oral, Skin"/>
+  <Entry name="PRL" value="Primary Route(s) of Entry: Inhalation, Skin"/>
+  <Entry name="PRM" value="Primary Route(s) of Entry: Inhalation, Eye, Oral"/>
+  <Entry name="PRO" value="Primary Route(s) of Entry: Oral"/>
+  <Entry name="PRQ" value="Primary Route(s) of Entry: Oral, Skin"/>
+  <Entry name="PRS" value="Primary Route(s) of Entry: Skin Contact"/>
+  <Entry name="PRT" value="Primary Route(s) of Entry: Eye and Skin Contact"/>
+  <Entry name="PRU" value="Primary Route(s) of Entry: Eye, Skin, Inhalation"/>
+  <Entry name="PRZ" value="Primary Route(s) of Entry"/>
+  <Entry name="RE2" value="Stability and Reactivity Information"/>
+  <Entry name="REA" value="Reactivity"/>
+  <Entry name="REC" value="Reactivity Conditions"/>
+  <Entry name="REP" value="Reproduction"/>
+  <Entry name="RG2" value="Regulatory Information"/>
+  <Entry name="RLI" value="Release Information"/>
+  <Entry name="RTK" value="Right to Know Statement of Hazard Code/Information"/>
+  <Entry name="SAP" value="Safety Precautions"/>
+  <Entry name="SBY" value="Stability"/>
+  <Entry name="SCE" value="Sub-chronic Effects"/>
+  <Entry name="SGW" value="Signal Word"/>
+  <Entry name="SH2" value="Transport Information"/>
+  <Entry name="SHI" value="Shipping Information, Transportation Requirements"/>
+  <Entry name="SKA" value="Skin Contact: Acute Exposure"/>
+  <Entry name="SKC" value="Skin Contact: Chronic Exposure"/>
+  <Entry name="SKS" value="Skin Sensitization"/>
+  <Entry name="SKT" value="Skin Contact"/>
+  <Entry name="SKZ" value="Skin"/>
+  <Entry name="SL2" value="Accidental Release Measures"/>
+  <Entry name="SNS" value="Sensitization"/>
+  <Entry name="SPF" value="Special Fire Fighting Instructions"/>
+  <Entry name="SPI" value="Special Information"/>
+  <Entry name="SPJ" value="Spill Information"/>
+  <Entry name="SPL" value="Spill and Leak Information"/>
+  <Entry name="SPP" value="Special Precautions"/>
+  <Entry name="ST2" value="Handling and Storage"/>
+  <Entry name="STA" value="Storage Conditions"/>
+  <Entry name="SUB" value="Subchronic"/>
+  <Entry name="SYP" value="Synergistic Products"/>
+  <Entry name="SYS" value="Systematic Effects"/>
+  <Entry name="TER" value="Teratogenicity"/>
+  <Entry name="TOC" value="Toxicity of Other Components"/>
+  <Entry name="TOG" value="Target Organ"/>
+  <Entry name="TRH" value="Transportation Hazard"/>
+  <Entry name="TS2" value="Trade Secret Exemptions"/>
+  <Entry name="TX2" value="Toxicological Information"/>
+  <Entry name="VRZ" value="Ventilation Requirements"/>
+  <Entry name="WAR" value="Warning"/>
+  <Entry name="WDI" value="Waste Disposal Information"/>
+</Table>

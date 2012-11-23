@@ -1,0 +1,79 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T187.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T187">
+  <Entry name="A" value="Consolidated Weight"/>
+  <Entry name="B" value="Billed Weight"/>
+  <Entry name="C" value="Actual Net Repeated for Combination"/>
+  <Entry name="D" value="Destination Weight Agreement"/>
+  <Entry name="E" value="Estimated Net Weight"/>
+  <Entry name="F" value="Deficit Weight"/>
+  <Entry name="G" value="Gross Weight"/>
+  <Entry name="H" value="Weight Per 100 Feet"/>
+  <Entry name="I" value="Weight Per 1000 Feet"/>
+  <Entry name="J" value="Light Weight"/>
+  <Entry name="K" value="Clean Out"/>
+  <Entry name="L" value="Legal Weight"/>
+  <Entry name="M" value="Minimum Weight (for rate)"/>
+  <Entry name="N" value="Actual Net Weight"/>
+  <Entry name="O" value="Excess Weight Over Maximum"/>
+  <Entry name="P" value="Weight Per 100 Units"/>
+  <Entry name="Q" value="Weight Per 1000 Units"/>
+  <Entry name="R" value="Per Unit Dunnage"/>
+  <Entry name="S" value="State Weight"/>
+  <Entry name="T" value="Tare Weight"/>
+  <Entry name="U" value="Weight Per Unit"/>
+  <Entry name="V" value="Non Transit Weight (On Transit Bills Only)"/>
+  <Entry name="W" value="Transit Weight (On Transit Bills Only)"/>
+  <Entry name="X" value="Maximum Weight (for Rate)"/>
+  <Entry name="Y" value="Theoretical Weight"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="A1" value="Dimensional Weight"/>
+  <Entry name="A2" value="Reweighed By Carrier"/>
+  <Entry name="A3" value="Shippers Weight"/>
+  <Entry name="A4" value="Average Weight per Load"/>
+  <Entry name="CD" value="Chargeable Dunnage"/>
+  <Entry name="CE" value="Certified Weight of Cargo"/>
+  <Entry name="DR" value="Drained Weight"/>
+  <Entry name="FR" value="Freight Weight"/>
+  <Entry name="LC" value="Maximum Lading Capacity"/>
+  <Entry name="ND" value="Nonchargeable Dunnage"/>
+  <Entry name="NI" value="Non-Temporary Storage Weight In"/>
+  <Entry name="NR" value="Non-Temporary Storage Weight Re-handled"/>
+  <Entry name="NT" value="Non-Temporary Storage Weight Out"/>
+  <Entry name="PA" value="Pallet Weight"/>
+  <Entry name="RG" value="Reweigh Gross Weight"/>
+  <Entry name="RN" value="Reweigh Net Weight"/>
+  <Entry name="RT" value="Reweigh Tare Weight"/>
+  <Entry name="SF" value="Storage in Transit Final Weight Out"/>
+  <Entry name="SI" value="Storage in Transit Weight in"/>
+  <Entry name="SK" value="Skid Weight"/>
+  <Entry name="SO" value="Storage in Transit Weight Out"/>
+  <Entry name="WA" value="Administrative Weight Allowance"/>
+  <Entry name="WB" value="Unaccompanied Baggage Weight"/>
+  <Entry name="WG" value="Professional Gear Weight"/>
+  <Entry name="WJ" value="Joint Travel Regulation Weight"/>
+  <Entry name="WX" value="Net Explosive Weight"/>
+</Table>

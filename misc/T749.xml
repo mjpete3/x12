@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T749.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T749">
+  <Entry name="BLC" value="Bill of Lading Body Clause"/>
+  <Entry name="CIR" value="Certified Inspection Report"/>
+  <Entry name="COA" value="Certificate of Analysis"/>
+  <Entry name="COM" value="Commercial Invoice"/>
+  <Entry name="CON" value="Consular Invoice"/>
+  <Entry name="CTP" value="Certified Test Report"/>
+  <Entry name="CUS" value="Customs Invoice"/>
+  <Entry name="DOM" value="Domestic Routing Instructions"/>
+  <Entry name="EXP" value="Export Instructions"/>
+  <Entry name="FUM" value="Fumigation Certificate"/>
+  <Entry name="INS" value="Insurance Certificate"/>
+  <Entry name="IPI" value="Include Printing Instructions"/>
+  <Entry name="LOC" value="Letter of Credit"/>
+  <Entry name="MSD" value="Material Safety Data Sheet"/>
+  <Entry name="OBV" value="Onboard Validation"/>
+  <Entry name="ONR" value="Onward Routing Instructions"/>
+  <Entry name="ORI" value="Certificate of Origin"/>
+  <Entry name="PAK" value="Packing List"/>
+  <Entry name="QAL" value="Quality Report"/>
+  <Entry name="SAN" value="Sanitary Certificate"/>
+  <Entry name="SED" value="Shipper's Export Declaration"/>
+  <Entry name="SPI" value="Suppress Printing Instructions"/>
+  <Entry name="SUP" value="Supporting Detail"/>
+  <Entry name="SWB" value="Sea Waybill"/>
+</Table>

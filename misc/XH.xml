@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: XH.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="XH" comment="This segment is used to specify a pro forma invoice and B13 Canadian Customs Export Declaration information, required by U.S. and Canadian customs">
+  <Field name="CurrencyCode" min="3" max="3" comment="Code (Standard ISO) for country in whose currency the charges are specified"/>
+  <Field name="RelatedCompanyIndicationCode" required="y" min="1" max="1" validation="T645" comment="Code indicating parties to a transaction"/>
+  <Field name="SpecialChargeOrAllowanceCode" required="y" min="3" max="3" validation="T150" comment="Code identifying type of special charge or allowance"/>
+  <Field name="Amount" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="Block20Code" required="y" min="1" max="1" validation="T503" comment="Code defining Block 20 characteristics"/>
+  <Field name="ChemicalAnalysisPercentage" type="double" required="y" min="2" max="9" comment="Chemical analysis percentage"/>
+  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+</Segment>

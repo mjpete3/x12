@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T473.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T473">
+  <Entry name="A" value="Informational Only"/>
+  <Entry name="B" value="Backorder Original"/>
+  <Entry name="C" value="Confirmation"/>
+  <Entry name="D" value="Delete"/>
+  <Entry name="E" value="Backorder Confirmation"/>
+  <Entry name="F" value="Cancel"/>
+  <Entry name="G" value="Changes to Other than Line Items"/>
+  <Entry name="L" value="Line Item Replace"/>
+  <Entry name="N" value="Original"/>
+  <Entry name="R" value="Change"/>
+  <Entry name="S" value="Future Dated Order"/>
+  <Entry name="T" value="Resubmission"/>
+  <Entry name="X" value="Simulation Exercise"/>
+</Table>

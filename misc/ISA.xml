@@ -1,0 +1,43 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ISA.xml 81 2009-05-13 18:05:32Z ikk $
+-->
+
+<Segment name="ISA" comment="To start and identify an interchange of zero or more functional groups and interchange-related control segments">
+  <Field name="AuthorizationInformationQualifier"       required="y" min="2"  max="2"   validation="TI01" comment="Code to identify the type of information in the Authorization Information"/>
+  <Field name="AuthorizationInformation"                required="y" min="10" max="10"                    comment="Information used for additional identification or authorization of the interchange sender or the data in the interchange; the type of information is set by the Authorization Information Qualifier (I01)"/>
+  <Field name="SecurityInformationQualifier"            required="y" min="2"  max="2"   validation="TI03" comment="Code to identify the type of information in the Security Information"/>
+  <Field name="SecurityInformation"                     required="y" min="10" max="10"                    comment="This is used for identifying the security information about the interchange sender or the data in the interchange; the type of information is set by the Security Information Qualifier (I03)"/>
+  <Field name="InterchangeIdQualifier1"                 required="y" min="2"  max="2"   validation="TI05" comment="Qualifier to designate the system/method of code structure used to designate the sender or receiver ID element being qualified"/>
+  <Field name="InterchangeSenderId"                     required="y" min="15" max="15"                    comment="Identification code published by the sender for other parties to use as the receiver ID to route data to them; the sender always codes this value in the sender ID element"/>
+  <Field name="InterchangeIdQualifier2"                 required="y" min="2"  max="2"/>
+  <Field name="InterchangeReceiverId"                   required="y" min="15" max="15"                    comment="Identification code published by the receiver of the data; When sending, it is used by the sender as their sending ID, thus other parties sending to them will use this as a receiving ID to route data to them"/>
+  <Field name="InterchangeDate"                         required="y" min="6"  max="6"                     comment="Date of the interchange"/>
+  <Field name="InterchangeTime"                         required="y" min="4"  max="4"                     comment="Time of the interchange"/>
+  <Field name="InterchangeControlStandardsIdentifier"   required="y" min="1"  max="1"   validation="TI10" comment="Code to identify the agency responsible for the control standard used by the message that is enclosed by the interchange header and trailer"/>
+  <Field name="InterchangeControlVersionNumber"         required="y" min="5"  max="5"   validation="TI11" comment="This version number covers the interchange control segments"/>
+  <Field name="InterchangeControlNumber" type="int"     required="y" min="9"  max="9"                     comment="A control number assigned by the interchange sender"/>
+  <Field name="AcknowledgmentRuested"                   required="y" min="1"  max="1"   validation="TI13" comment="Code sent by the sender to request an interchange acknowledgment (TA1)"/>
+  <Field name="UsageIndicator"                          required="y" min="1"  max="1"   validation="TI14" comment="Code to indicate whether data enclosed by this interchange envelope is test, production or information"/>
+  <Field name="ComponentElementSeparator"               required="y" min="1"  max="1"                     comment="Type is not applicable; the component element separator is a delimiter and not a data element; this field provides the delimiter used to separate component data elements within a composite data structure; this value must be different than the data element separator and the segment terminator"/>
+</Segment>

@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CTC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CTC" comment="To transmit identifying parties and document types">
+  <Field name="StandardCarrierAlphaCode1" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="StandardCarrierAlphaCode2" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="CarHireDetailSummaryCode" min="1" max="1" validation="T1002" comment="Code identifying the car hire settlement transaction type"/>
+  <Field name="AccountTypeCode" min="2" max="2" comment="Code identifying type of car hire allowance or recovery"/>
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="Year1" type="long" min="4" max="4" comment="Four position designation of the year expressed as CCYY"/>
+  <Field name="MonthOfTheYearCode1" min="2" max="2" validation="T1108" comment="Code identifying the month of the year"/>
+  <Field name="Year2" type="long" required="y" min="4" max="4" comment="Four position designation of the year expressed as CCYY"/>
+  <Field name="MonthOfTheYearCode2" required="y" min="2" max="2" validation="T1108" comment="Code identifying the month of the year"/>
+  <Field name="AccountDescriptionCode" required="y" min="1" max="2" validation="T1006" comment="Code identifying car hire payment as current, reclaim or miscellaneous items"/>
+</Segment>

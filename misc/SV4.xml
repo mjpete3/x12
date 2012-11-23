@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SV4.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SV4" comment="To specify the claim service detail for prescription drugs">
+  <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="y" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="DispenseAsWrittenCode" required="y" min="1" max="1" validation="T1329" comment="Code indicating whether or not the prescriber's instructions regarding generic substitution were followed"/>
+  <Field name="LevelOfServiceCode" required="y" min="1" max="3" validation="T1338" comment="Code specifying the level of service rendered"/>
+  <Field name="PrescriptionOriginCode" required="y" min="1" max="1" validation="T1356" comment="Code indicating the origin of a prescription"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="YesNoConditionOrResponseCode3" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="UnitDoseCode" required="y" min="1" max="1" validation="T1370" comment="Code indicating the type of unit dose dispensing done"/>
+  <Field name="BasisOfCostDeterminationCode" required="y" min="1" max="2" validation="T1319" comment="Code indicating the method by which the ingredient cost was calculated"/>
+  <Field name="BasisOfDaysSupplyDeterminationCode" required="y" min="1" max="1" validation="T1320" comment="Code indicating the method by which the days supply was determined"/>
+  <Field name="DosageFormCode" required="y" min="2" max="2" validation="T1330" comment="Code indicating the form in which the drug is dispensed"/>
+  <Field name="CopayStatusCode" required="y" min="1" max="1" validation="T1327" comment="Code indicating whether or not co-payment requirements were met on a line by line basis"/>
+  <Field name="PatientLocationCode" required="y" min="1" max="1" validation="T1384" comment="Code identifying the location where patient is receiving medical treatment"/>
+  <Field name="LevelOfCareCode" required="y" min="1" max="1" validation="T1337" comment="Code specifying the level of care provided by a nursing home facility"/>
+  <Field name="PriorAuthorizationTypeCode" required="y" min="1" max="1" validation="T1357" comment="Code indicating the type of prior authorization or medical certification that has occurred"/>
+</Segment>

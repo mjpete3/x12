@@ -1,0 +1,72 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T480.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T480">
+  <Entry name="001000" value="ASC X12 Standards Approved by ANSI in 1983"/>
+  <Entry name="002000" value="ASC X12 Standards Approved by ANSI in 1986"/>
+  <Entry name="002001" value="Draft Standards Approved by ASC X12 in November 1987"/>
+  <Entry name="002002" value="Draft Standards Approved by ASC X12 through February 1988"/>
+  <Entry name="002003" value="Draft Standards Approved by ASC X12 through August 1988"/>
+  <Entry name="002031" value="Draft Standards Approved by ASC X12 through February 1989"/>
+  <Entry name="002040" value="Draft Standards Approved by ASC X12 through May 1989"/>
+  <Entry name="002041" value="Draft Standards Approved by ASC X12 through October 1989"/>
+  <Entry name="002042" value="Draft Standards Approved by ASC X12 through February 1990"/>
+  <Entry name="003000" value="ASC X12 Standards Approved by ANSI in 1992"/>
+  <Entry name="003010" value="Draft Standards Approved by ASC X12 through June 1990"/>
+  <Entry name="003011" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1991"/>
+  <Entry name="003012" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1991"/>
+  <Entry name="003020" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1991"/>
+  <Entry name="003021" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1992"/>
+  <Entry name="003022" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1992"/>
+  <Entry name="003030" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1992"/>
+  <Entry name="003031" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1993"/>
+  <Entry name="003032" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1993"/>
+  <Entry name="003040" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1993"/>
+  <Entry name="003041" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1994"/>
+  <Entry name="003042" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1994"/>
+  <Entry name="003050" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1994"/>
+  <Entry name="003051" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1995"/>
+  <Entry name="003052" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1995"/>
+  <Entry name="003060" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1995"/>
+  <Entry name="003061" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1996"/>
+  <Entry name="003062" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1996"/>
+  <Entry name="003070" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through October 1996"/>
+  <Entry name="003071" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through February 1997"/>
+  <Entry name="003072" value="Draft Standards Approved for Publication by ASC X12 Procedures Review Board through June 1997"/>
+  <Entry name="004000" value="ASC X12 Standards Approved by ANSI in 1997"/>
+  <Entry name="004010" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1997"/>
+  <Entry name="004011" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 1998"/>
+  <Entry name="004012" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 1998"/>
+  <Entry name="004020" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1998"/>
+  <Entry name="004021" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 1999"/>
+  <Entry name="004022" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 1999"/>
+  <Entry name="004030" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 1999"/>
+  <Entry name="004031" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 2000"/>
+  <Entry name="004032" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 2000"/>
+  <Entry name="004040" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 2000"/>
+  <Entry name="004041" value="Standards Approved for Publication by ASC X12 Procedures Review Board through February 2001"/>
+  <Entry name="004042" value="Standards Approved for Publication by ASC X12 Procedures Review Board through June 2001"/>
+  <Entry name="004050" value="Standards Approved for Publication by ASC X12 Procedures Review Board through October 2001"/>
+</Table>

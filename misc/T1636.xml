@@ -1,0 +1,54 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1636.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1636">
+  <Entry name="1" value="Checking Account"/>
+  <Entry name="2" value="Investment Account"/>
+  <Entry name="3" value="Liquid Assets Account"/>
+  <Entry name="4" value="Master Account"/>
+  <Entry name="5" value="Open Line of Credit"/>
+  <Entry name="6" value="Special Account"/>
+  <Entry name="A" value="Borrowing Account"/>
+  <Entry name="B" value="Borrowing Account with Established Credit Line"/>
+  <Entry name="C" value="Certificate of Deposit"/>
+  <Entry name="D" value="Checking"/>
+  <Entry name="E" value="Commercial Loan"/>
+  <Entry name="F" value="Credit Line"/>
+  <Entry name="G" value="Demand Loan"/>
+  <Entry name="H" value="Discount Note"/>
+  <Entry name="I" value="Floor Plan"/>
+  <Entry name="J" value="Installment Loan"/>
+  <Entry name="L" value="Mortgage"/>
+  <Entry name="M" value="Negotiable Order on Withdrawal (NOW) Account"/>
+  <Entry name="N" value="Savings"/>
+  <Entry name="O" value="Time Deposit"/>
+  <Entry name="P" value="Time Loan"/>
+  <Entry name="Q" value="Various"/>
+  <Entry name="R" value="Account Maintained"/>
+  <Entry name="S" value="Non-Borrowing Account"/>
+  <Entry name="T" value="Not Primary Account"/>
+  <Entry name="U" value="Primary Account"/>
+  <Entry name="Z" value="Mutually Defined"/>
+</Table>

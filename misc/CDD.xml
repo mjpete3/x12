@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CDD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CDD" comment="To provide information relative to a line item adjustment">
+  <Field name="AdjustmentReasonCode" min="2" max="2" validation="T426" comment="Code indicating reason for debit or credit memo or adjustment to invoice, debit or credit memo, or payment"/>
+  <Field name="CreditDebitFlagCode" min="1" max="1" validation="T478" comment="Code indicating whether amount is a credit or debit"/>
+  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+  <Field name="Amount" type="double" required="y" min="1" max="15" comment="Monetary amount"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="PriceBracketIdentifier" required="y" min="1" max="3" comment="Identifier assigned by the vendor for a specific price bracket"/>
+  <Field name="CreditDebitQuantity" type="double" required="y" min="1" max="10" comment="Number of supplier units credited or debited"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="UnitPriceDifference" type="double" required="y" min="1" max="15" comment="Per unit (case) price or allowance/charge difference between original billing and corrected amount (may be unit full list price or allowance/charge where item was not on original billing or where full credit/debit amount is being transacted, i.e., returns or contested quantities)"/>
+  <Field name="PriceIdentifierCode1" required="y" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
+  <Field name="UnitPrice1" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="PriceIdentifierCode2" required="y" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
+  <Field name="UnitPrice2" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="FreeFormMessageText" required="y" min="1" max="264" comment="Free-form message text"/>
+</Segment>

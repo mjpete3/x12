@@ -1,0 +1,93 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T353.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T353">
+  <Entry name="00" value="Original"/>
+  <Entry name="01" value="Cancellation"/>
+  <Entry name="02" value="Add"/>
+  <Entry name="03" value="Delete"/>
+  <Entry name="04" value="Change"/>
+  <Entry name="05" value="Replace"/>
+  <Entry name="06" value="Confirmation"/>
+  <Entry name="07" value="Duplicate"/>
+  <Entry name="08" value="Status"/>
+  <Entry name="10" value="Not Found"/>
+  <Entry name="11" value="Response"/>
+  <Entry name="12" value="Not Processed"/>
+  <Entry name="13" value="Request"/>
+  <Entry name="14" value="Advance Notification"/>
+  <Entry name="15" value="Re-Submission"/>
+  <Entry name="16" value="Proposed"/>
+  <Entry name="17" value="Cancel, to be Reissued"/>
+  <Entry name="18" value="Reissue"/>
+  <Entry name="19" value="Seller initiated change"/>
+  <Entry name="20" value="Final Transmission"/>
+  <Entry name="21" value="Transaction on Hold"/>
+  <Entry name="22" value="Information Copy"/>
+  <Entry name="24" value="Draft"/>
+  <Entry name="25" value="Incremental"/>
+  <Entry name="26" value="Replace - Specified Buyers Parts Only"/>
+  <Entry name="27" value="Verify"/>
+  <Entry name="28" value="Query"/>
+  <Entry name="30" value="Renewal"/>
+  <Entry name="31" value="Allowance/Addition"/>
+  <Entry name="32" value="Recovery/Deduction"/>
+  <Entry name="33" value="Request for Payment"/>
+  <Entry name="34" value="Payment Declined"/>
+  <Entry name="35" value="Request Authority"/>
+  <Entry name="36" value="Authority to Deduct (Reply)"/>
+  <Entry name="37" value="Authority Declined (Reply)"/>
+  <Entry name="38" value="No Financial Value"/>
+  <Entry name="39" value="Response to Proposed Trip Plan"/>
+  <Entry name="40" value="Commitment Advice"/>
+  <Entry name="41" value="Corrected and Verified"/>
+  <Entry name="42" value="Temporary Record"/>
+  <Entry name="43" value="Request Permission to Service"/>
+  <Entry name="44" value="Rejection"/>
+  <Entry name="45" value="Follow-up"/>
+  <Entry name="46" value="Cancellation with Refund"/>
+  <Entry name="47" value="Transfer"/>
+  <Entry name="48" value="Suspended"/>
+  <Entry name="49" value="Original - No Response Necessary"/>
+  <Entry name="50" value="Register"/>
+  <Entry name="51" value="Historical Inquiry"/>
+  <Entry name="52" value="Response to Historical Inquiry"/>
+  <Entry name="53" value="Completion"/>
+  <Entry name="54" value="Approval"/>
+  <Entry name="55" value="Excavation"/>
+  <Entry name="56" value="Expiration Notification"/>
+  <Entry name="57" value="Initial"/>
+  <Entry name="5C" value="Chargeable Resubmission"/>
+  <Entry name="77" value="Simulation Exercise"/>
+  <Entry name="CN" value="Completion Notification"/>
+  <Entry name="CO" value="Corrected"/>
+  <Entry name="EX" value="Final Loading Configuration"/>
+  <Entry name="GR" value="Granted"/>
+  <Entry name="PR" value="Proposed Loading Configuration"/>
+  <Entry name="RH" value="Release Hold"/>
+  <Entry name="RV" value="Revised Loading Configuration"/>
+  <Entry name="SU" value="Status Update"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

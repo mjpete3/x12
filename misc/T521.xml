@@ -1,0 +1,84 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T521.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T521">
+  <Entry name="BB" value="Demand Information Only"/>
+  <Entry name="BC" value="Issue - Other Agency"/>
+  <Entry name="BD" value="Issue - Other Department"/>
+  <Entry name="BE" value="Grant Aid"/>
+  <Entry name="BF" value="Foreign Military Sale"/>
+  <Entry name="BG" value="Test and Evaluation"/>
+  <Entry name="BH" value="Furnished Goods and Services"/>
+  <Entry name="BI" value="Reutilization and Marketing"/>
+  <Entry name="BJ" value="Relocation"/>
+  <Entry name="BK" value="Modification"/>
+  <Entry name="BL" value="Repair or Nondestructive Testing"/>
+  <Entry name="BM" value="Loan"/>
+  <Entry name="BN" value="Return"/>
+  <Entry name="BO" value="Designated Items"/>
+  <Entry name="BP" value="Broken Price"/>
+  <Entry name="BQ" value="Other"/>
+  <Entry name="BR" value="Exchange"/>
+  <Entry name="BS" value="Bailment Stock Withdrawal"/>
+  <Entry name="BT" value="Book Entry"/>
+  <Entry name="BU" value="Transfer via Depository Trust Company (DTC)"/>
+  <Entry name="BV" value="Physical Delivery"/>
+  <Entry name="CC" value="Transfer for Charitable Contribution"/>
+  <Entry name="CO" value="Replacement Due to Complaint"/>
+  <Entry name="CS" value="Contract Sale"/>
+  <Entry name="DL" value="Oil Deliveries"/>
+  <Entry name="DS" value="Drop Ship Sale"/>
+  <Entry name="FG" value="Flowing Gas Information"/>
+  <Entry name="GD" value="Gas Disposition"/>
+  <Entry name="GP" value="Gas Plant Liquids Summary"/>
+  <Entry name="GR" value="Gas Receipts"/>
+  <Entry name="IA" value="Inventory adjustment"/>
+  <Entry name="IB" value="Interbranch"/>
+  <Entry name="OF" value="Offshore Movement/Sale"/>
+  <Entry name="ON" value="Onshore Movement/Sale"/>
+  <Entry name="OT" value="Oil Transfer and Storage"/>
+  <Entry name="PA" value="Price adjustment"/>
+  <Entry name="PB" value="Price Book"/>
+  <Entry name="PL" value="Property Level Movement/Sale"/>
+  <Entry name="PM" value="Physical Meter Information"/>
+  <Entry name="PO" value="Production Origin"/>
+  <Entry name="PP" value="Pool Level Movement and/or Sale"/>
+  <Entry name="RA" value="Reapplication of Order"/>
+  <Entry name="RB" value="Return of Broken Price"/>
+  <Entry name="RC" value="Received From Vendor"/>
+  <Entry name="RP" value="Return of List Price"/>
+  <Entry name="RT" value="Oil Receipts"/>
+  <Entry name="RU" value="Return to Usable Inventory"/>
+  <Entry name="RV" value="Return to Vendor"/>
+  <Entry name="SA" value="Stocking adjustment"/>
+  <Entry name="SC" value="Scrap"/>
+  <Entry name="SD" value="Ship and Debit Sale"/>
+  <Entry name="SH" value="Ship and Debit"/>
+  <Entry name="SM" value="Sample"/>
+  <Entry name="SS" value="Stock Sale"/>
+  <Entry name="SU" value="Summary"/>
+  <Entry name="TD" value="Transfer for Disposal"/>
+  <Entry name="WL" value="Well Level Movement/Sale"/>
+</Table>

@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: VC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="VC" comment="To define motor vehicle identification and logistics">
+  <Field name="VehicleIdentificationNumber" min="1" max="30" comment="Unique identification number stamped on the vehicle by the manufacturer"/>
+  <Field name="VehicleDeckPositionCode" required="y" min="2" max="2" validation="T836" comment="Code to identify the specific position of a vehicle on multi-level equipment; when dealing with rail cars the front end will be defined as that end of the rail car which the vehicle faces"/>
+  <Field name="VehicleTypeCode" required="y" min="1" max="1" validation="T837" comment="Vehicle Type Code for freight rate and claims purposes"/>
+  <Field name="DealerCode" required="y" min="2" max="9" comment="A code assigned by a manufacturer to identify their dealers"/>
+  <Field name="RouteCode" required="y" min="1" max="13" comment="Mutually defined route code"/>
+  <Field name="BayLocation" required="y" min="1" max="6" comment="Location where the releasing agent placed the motor vehicle"/>
+  <Field name="AutomotiveManufacturersCode" required="y" min="2" max="2" comment="Code (ARR) used to identify vehicle manufacturer"/>
+  <Field name="DamageExceptionIndicator" required="y" min="1" max="1" validation="T308" comment="Code to indicate whether damage is being reported to a vehicle in this transaction set"/>
+  <Field name="SupplementalInspectionCode" required="y" min="1" max="1" validation="T835" comment="A code to indicate a supplemental inspection"/>
+  <Field name="FactoryCarOrderNumber" required="y" min="6" max="10" comment="This number to be supplied by the shipper for Canadian customer requirements at border points for all finished motor vehicles exported to the United States from Canada"/>
+  <Field name="VesselStowageLocation" required="y" min="1" max="12" comment="Location of cargo stowed on board an ocean vessel"/>
+  <Field name="EquipmentOrientationCode" required="y" min="1" max="1" validation="T1543" comment="Code indicating the direction the equipment is entrained or the lading is loaded;  When used to indicate the lading orientation, direction is defined relative to the equipment on which it is loaded"/>
+  <Field name="LocationIdentifier" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
+</Segment>

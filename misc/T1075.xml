@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1075.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1075">
+  <Entry name="A" value="For Sale"/>
+  <Entry name="B" value="For Lease"/>
+  <Entry name="C" value="For Rent"/>
+  <Entry name="D" value="Trade"/>
+  <Entry name="E" value="Timeshare"/>
+  <Entry name="F" value="Property Still Under Developer's Control, Project not Completed"/>
+  <Entry name="G" value="Project is Complete"/>
+  <Entry name="H" value="Will Remain or Become Primary or Additional"/>
+  <Entry name="J" value="Project is Completed and Controlled by Home Owner's Association Greater Than Two Years"/>
+  <Entry name="P" value="Pending Sale"/>
+  <Entry name="R" value="Rental Being Held for Income"/>
+  <Entry name="S" value="Already Sold"/>
+  <Entry name="T" value="Retained"/>
+</Table>

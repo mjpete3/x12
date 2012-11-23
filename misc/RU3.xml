@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RU3.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RU3" comment="To communicate employing carrier response to a sickness or unemployment claim">
+  <Field name="Date" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="PayrollStatusCode1" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode1" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode2" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode2" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode3" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode3" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode4" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode4" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode5" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode5" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode6" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode6" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode7" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode7" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode8" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode8" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode9" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode9" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode10" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode10" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode11" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode11" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode12" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode12" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode13" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode13" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+  <Field name="PayrollStatusCode14" required="y" min="2" max="2" validation="T585" comment="Code identifying work status according to payroll records"/>
+  <Field name="WagesPaidCode14" required="y" min="1" max="1" validation="T590" comment="Code identifying whether wages were paid"/>
+</Segment>

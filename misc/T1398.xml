@@ -1,0 +1,68 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1398.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1398">
+  <Entry name="0" value="Include Summary Totals"/>
+  <Entry name="1" value="Exclude Sublocation"/>
+  <Entry name="2" value="Exclude All Synonyms"/>
+  <Entry name="3" value="Include All Synonyms"/>
+  <Entry name="4" value="Stop Processing after Look-up"/>
+  <Entry name="5" value="Stop Processing after Machine Match"/>
+  <Entry name="6" value="Stop Processing after Merge/Purge"/>
+  <Entry name="7" value="Include Asset Details"/>
+  <Entry name="8" value="Include Breakdown of Capital"/>
+  <Entry name="9" value="Include Liability Details"/>
+  <Entry name="A" value="Include Capital"/>
+  <Entry name="B" value="Include Comparatives"/>
+  <Entry name="C" value="Include Current Assets"/>
+  <Entry name="D" value="Include Current Liabilities"/>
+  <Entry name="E" value="Include Facility Description"/>
+  <Entry name="F" value="Include Income Statement"/>
+  <Entry name="G" value="Include Insurance"/>
+  <Entry name="H" value="Include Loan Details"/>
+  <Entry name="I" value="Include Location Description"/>
+  <Entry name="J" value="Include Long Time Liabilities"/>
+  <Entry name="K" value="Include Net Worth Reconciliation"/>
+  <Entry name="L" value="Include Starting Capital"/>
+  <Entry name="M" value="Include Non-current Assets"/>
+  <Entry name="N" value="Include Percentages"/>
+  <Entry name="O" value="Include Ratios"/>
+  <Entry name="P" value="Include Sales and Net Worth"/>
+  <Entry name="Q" value="Include Statement Explanation"/>
+  <Entry name="R" value="Include Trends"/>
+  <Entry name="S" value="Include Updated Figures"/>
+  <Entry name="T" value="Include Tax Details"/>
+  <Entry name="U" value="Include Financing"/>
+  <Entry name="V" value="Include Term Detail"/>
+  <Entry name="W" value="Include Net Worth and Equity Details"/>
+  <Entry name="X" value="Include Credit Amounts"/>
+  <Entry name="Y" value="Include Evaluation"/>
+  <Entry name="AA" value="Include Forecasts"/>
+  <Entry name="AB" value="Include Ownership Breakdown"/>
+  <Entry name="AC" value="Include Historical Amounts"/>
+  <Entry name="AP" value="Manual Processing"/>
+  <Entry name="IN" value="Include Expense Breakdown"/>
+  <Entry name="OP" value="On-line Processing"/>
+</Table>

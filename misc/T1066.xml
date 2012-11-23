@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1066.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1066">
+  <Entry name="1" value="U.S. Citizen"/>
+  <Entry name="2" value="Non-Resident Alien"/>
+  <Entry name="3" value="Resident Alien"/>
+  <Entry name="4" value="Illegal Alien"/>
+  <Entry name="5" value="Alien"/>
+  <Entry name="6" value="U.S. Citizen - Non-Resident"/>
+  <Entry name="7" value="U.S. Citizen - Resident"/>
+  <Entry name="8" value="Citizen"/>
+  <Entry name="9" value="Non-citizen with Student Authorization"/>
+  <Entry name="A" value="Non-permanent Resident Alien"/>
+  <Entry name="B" value="Permanent Visa"/>
+  <Entry name="C" value="Temporary Visa"/>
+  <Entry name="D" value="Work Permit"/>
+  <Entry name="E" value="Nordic Citizen"/>
+  <Entry name="F" value="Non-Nordic Citizen"/>
+  <Entry name="G" value="Naturalized Citizen"/>
+  <Entry name="H" value="Eligible Non-citizen"/>
+  <Entry name="I" value="Ineligible Non-citizen"/>
+</Table>

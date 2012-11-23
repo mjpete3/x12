@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LC1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LC1" comment="To specify the details concerning the lane covered by this proposal">
+  <Field name="NumberOfShipments1" type="long" required="y" min="1" max="5" comment="Total number of shipments on this transaction"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Number" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="TransportationMethodTypeCode" required="y" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="NumberOfShipments2" type="long" required="y" min="1" max="5" comment="Total number of shipments on this transaction"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="LaneRanking" type="double" required="y" min="1" max="4" comment="Number indicating the rank of the carrier's rate proposal compared to the rate proposals of the other carriers"/>
+  <Field name="FreightRate1" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate2" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+</Segment>

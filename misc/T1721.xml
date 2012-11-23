@@ -1,0 +1,67 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1721.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1721">
+  <Entry name="00" value="County"/>
+  <Entry name="01" value="City"/>
+  <Entry name="02" value="Town"/>
+  <Entry name="03" value="Village"/>
+  <Entry name="04" value="Borough"/>
+  <Entry name="05" value="Township"/>
+  <Entry name="09" value="Other Municipality"/>
+  <Entry name="10" value="School District"/>
+  <Entry name="11" value="Junior Colleges"/>
+  <Entry name="19" value="Other Schools"/>
+  <Entry name="20" value="Water Control"/>
+  <Entry name="21" value="Utility District"/>
+  <Entry name="22" value="Sanitation"/>
+  <Entry name="23" value="Water or Sewer District"/>
+  <Entry name="24" value="Reclamation District"/>
+  <Entry name="25" value="Fire or Police"/>
+  <Entry name="26" value="Roads or Bridges"/>
+  <Entry name="27" value="Hospitals"/>
+  <Entry name="29" value="Other Municipal Services"/>
+  <Entry name="40" value="Township and County"/>
+  <Entry name="41" value="City and School"/>
+  <Entry name="42" value="County Collected by Other Taxing Authority"/>
+  <Entry name="43" value="State and County"/>
+  <Entry name="44" value="Central Collection Taxing Authority"/>
+  <Entry name="45" value="State Taxing Authority"/>
+  <Entry name="49" value="Other Combination Collection"/>
+  <Entry name="50" value="Bond Authority"/>
+  <Entry name="51" value="Annual County Bond Authority"/>
+  <Entry name="52" value="Semi-annual County Bond Authority"/>
+  <Entry name="53" value="Annual City Bond Authority"/>
+  <Entry name="54" value="Semi-annual City Bond Authority"/>
+  <Entry name="59" value="Other Bond Authority"/>
+  <Entry name="61" value="Assessment District"/>
+  <Entry name="62" value="Homeowner's Association"/>
+  <Entry name="63" value="Special District"/>
+  <Entry name="69" value="Other Special Districts"/>
+  <Entry name="70" value="Central Appraisal Taxing Authority"/>
+  <Entry name="71" value="Unsecured County Taxes"/>
+  <Entry name="72" value="Mobile Home Authority"/>
+  <Entry name="79" value="Other Special Applications"/>
+</Table>

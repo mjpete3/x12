@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: APE.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="APE" comment="To report assurance protocol errors in a security structure">
+  <Field name="BusinessPurposeOfAssurance" min="3" max="3" validation="T1432" comment="Code specifying the business purpose of the appended assurance to an existing secured-entity (whether functional group or transaction set); the codes represent the intention of the business or application that has control over the assurance originator"/>
+  <Field name="DomainOfComputationOfAssurance" min="1" max="2" validation="T1434" comment="Code specifying the bounds of the text, whether contiguous or not, over which the computation of the Assurance Token is computed using the defined methodology of computation and any relevant Assurance Token parameters The &quot;body&quot; is defined as a transaction set, beginning with the first byte of the segment immediately following the ST segment terminator and including all segments up to but not including the &quot;S&quot; in the first SVA segment; DO NOT include any S4A segments The &quot;body&quot; can also be defined as a functional group, beginning with the first byte of the segment immediately following the GS segment terminator and including all transaction sets up to but not including the &quot;S&quot; in the first SVA segment at the functional group level; DO NOT include any S3A segments &quot;This Assurance&quot; is defined as from the &quot;S&quot; in S3A or S4A up to and including the segment terminator of that segment &quot;Previous Assurance(s)&quot; is defined as including the entire S3A or S4A segment and the entire corresponding SVA segment that is associated with the S3A or S4A at the same level"/>
+  <Field name="SecurityOrAssuranceProtocolErrorCode" min="1" max="2" validation="T1714" comment="Code identifying a specific security protocol error"/>
+  <Field name="AssuranceOriginator" required="y" min="1" max="64" comment="Unique designation (identity) of the cryptographic process that performs the stated assurance on data to be interchanged Note: X9 has a required minimum length of 4 characters for a security originator; no mechanism, or registration method, is provided by X9 or X12 to guarantee uniqueness of the identifier"/>
+  <Field name="AssuranceRecipient" required="y" min="1" max="64" comment="Unique designation (identity) of the cryptographic process that performs validation of the stated assurance on received data. In the absence of an Assurance Recipient all potential receivers will often be able to validate the assurance because the cryptographic technique is based on a &quot;public&quot; (as opposed to &quot;secret&quot;) technology Note: X9 has required minimum length of 4 characters for a security recipient; no mechanism, or registration method, is provided by X9 or X12 to guarantee uniqueness of the identifier"/>
+</Segment>

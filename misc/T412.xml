@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T412.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T412">
+  <Entry name="01" value="Damaged Product or Container"/>
+  <Entry name="02" value="Quantity Short"/>
+  <Entry name="03" value="Quantity Over"/>
+  <Entry name="04" value="Quality Problem"/>
+  <Entry name="05" value="Incorrect Product"/>
+  <Entry name="06" value="Non-standard Container"/>
+  <Entry name="07" value="Good Condition"/>
+  <Entry name="08" value="Rejected"/>
+  <Entry name="09" value="Hold"/>
+  <Entry name="10" value="Material Scrapped"/>
+  <Entry name="11" value="Adjust Supplier Shipped Cumulative Quantity"/>
+  <Entry name="12" value="Quantity Over - Returned to Supplier"/>
+  <Entry name="13" value="Quantity Received, But Cannot Process Because No Matching Ship Notice"/>
+  <Entry name="14" value="Quantity Received and Processed with No Matching Ship Notice/Manifest"/>
+  <Entry name="16" value="Not Received - Ship Notice Required"/>
+</Table>

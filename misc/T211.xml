@@ -1,0 +1,161 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T211.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T211">
+  <Entry name="AMM" value="Ammo Pack"/>
+  <Entry name="BAG" value="Bag"/>
+  <Entry name="BAL" value="Bale"/>
+  <Entry name="BBL" value="Barrel"/>
+  <Entry name="BDL" value="Bundle"/>
+  <Entry name="BEM" value="Beam"/>
+  <Entry name="BIC" value="Bing Chest"/>
+  <Entry name="BIN" value="Bin"/>
+  <Entry name="BKG" value="Bulk Bag"/>
+  <Entry name="BLK" value="Bulk"/>
+  <Entry name="BOB" value="Bobbin"/>
+  <Entry name="BOT" value="Bottle"/>
+  <Entry name="BOX" value="Box"/>
+  <Entry name="BRG" value="Barge"/>
+  <Entry name="BSK" value="Basket or hamper"/>
+  <Entry name="BXI" value="Box, with inner container"/>
+  <Entry name="BXT" value="Bucket"/>
+  <Entry name="CAB" value="Cabinet"/>
+  <Entry name="CAG" value="Cage"/>
+  <Entry name="CAN" value="Can"/>
+  <Entry name="CAR" value="Carrier"/>
+  <Entry name="CAS" value="Case"/>
+  <Entry name="CBC" value="Containers of Bulk Cargo"/>
+  <Entry name="CBY" value="Carboy"/>
+  <Entry name="CCS" value="Can Case"/>
+  <Entry name="CHE" value="Cheeses"/>
+  <Entry name="CHS" value="Chest"/>
+  <Entry name="CLD" value="Car Load, Rail"/>
+  <Entry name="CNA" value="Household Goods Containers, Wood"/>
+  <Entry name="CNB" value="Container, MAC-ISO (Military Airlift Container - International Standards Organization) Light Weight 8x8x20 Foot Air"/>
+  <Entry name="CNC" value="Container, Navy Cargo Transporter"/>
+  <Entry name="CND" value="Container, Commercial Highway Lift"/>
+  <Entry name="CNE" value="Engine Container"/>
+  <Entry name="CNF" value="Multiwall Container Secured to Warehouse Pallet"/>
+  <Entry name="CNT" value="Container"/>
+  <Entry name="CNX" value="CONEX - Container Express"/>
+  <Entry name="COL" value="Coil"/>
+  <Entry name="CON" value="Cones"/>
+  <Entry name="COR" value="Core"/>
+  <Entry name="CRD" value="Cradle"/>
+  <Entry name="CRT" value="Crate"/>
+  <Entry name="CSK" value="Cask"/>
+  <Entry name="CTN" value="Carton"/>
+  <Entry name="CUB" value="Cube"/>
+  <Entry name="CYL" value="Cylinder"/>
+  <Entry name="DBK" value="Dry Bulk"/>
+  <Entry name="DRK" value="Double-length Rack"/>
+  <Entry name="DRM" value="Drum"/>
+  <Entry name="DSK" value="Double-length Skid"/>
+  <Entry name="DTB" value="Double-length Tote Bin"/>
+  <Entry name="DUF" value="Duffle Bag"/>
+  <Entry name="ENV" value="Envelope"/>
+  <Entry name="FIR" value="Firkin"/>
+  <Entry name="FLO" value="Flo-bin"/>
+  <Entry name="FLX" value="Liner Bag Liquid"/>
+  <Entry name="FRM" value="Frame"/>
+  <Entry name="FSK" value="Flask"/>
+  <Entry name="FWR" value="Forward Reel"/>
+  <Entry name="GOH" value="Garments on Hangers"/>
+  <Entry name="HED" value="Heads of Beef"/>
+  <Entry name="HGH" value="Hogshead"/>
+  <Entry name="HPR" value="Hamper"/>
+  <Entry name="HPT" value="Hopper Truck"/>
+  <Entry name="HRB" value="On Hanger or Rack in Boxes"/>
+  <Entry name="HRK" value="Half-standard Rack"/>
+  <Entry name="HTB" value="Half-Standard Tote Bin"/>
+  <Entry name="JAR" value="Jar"/>
+  <Entry name="JUG" value="Jug"/>
+  <Entry name="KEG" value="Keg"/>
+  <Entry name="KIT" value="Kit"/>
+  <Entry name="KRK" value="Knockdown Rack"/>
+  <Entry name="KTB" value="Knockdown Tote Bin"/>
+  <Entry name="LBK" value="Liquid Bulk"/>
+  <Entry name="LIF" value="Lifts"/>
+  <Entry name="LOG" value="Log"/>
+  <Entry name="LSE" value="Loose"/>
+  <Entry name="LUG" value="Lug"/>
+  <Entry name="LVN" value="Lift Van"/>
+  <Entry name="MLV" value="MILVAN - Military Van"/>
+  <Entry name="MRP" value="Multi-Roll Pack"/>
+  <Entry name="MSV" value="MSCVAN - Military Sealift Command Van"/>
+  <Entry name="MXD" value="Mixed Type Pack"/>
+  <Entry name="NOL" value="Noil"/>
+  <Entry name="OVW" value="Overwrap"/>
+  <Entry name="PAL" value="Pail"/>
+  <Entry name="PCK" value="Packed - not otherwise specified"/>
+  <Entry name="PCS" value="Pieces"/>
+  <Entry name="PIR" value="Pims"/>
+  <Entry name="PKG" value="Package"/>
+  <Entry name="PLF" value="Platform"/>
+  <Entry name="PLN" value="Pipeline"/>
+  <Entry name="PLT" value="Pallet"/>
+  <Entry name="POV" value="Private Vehicle"/>
+  <Entry name="PRK" value="Pipe Rack"/>
+  <Entry name="QTR" value="Quarter of Beef"/>
+  <Entry name="RAL" value="Rail (Semiconductor)"/>
+  <Entry name="RCK" value="Rack"/>
+  <Entry name="REL" value="Reel"/>
+  <Entry name="ROL" value="Roll"/>
+  <Entry name="RVR" value="Reverse Reel"/>
+  <Entry name="SAK" value="Sack"/>
+  <Entry name="SBC" value="Liner Bag Dry"/>
+  <Entry name="SCS" value="Suitcase"/>
+  <Entry name="SHK" value="Shook"/>
+  <Entry name="SHT" value="Sheet"/>
+  <Entry name="SID" value="Side of Beef"/>
+  <Entry name="SKD" value="Skid"/>
+  <Entry name="SKE" value="Skid, elevating or lift truck"/>
+  <Entry name="SLP" value="Slip Sheet"/>
+  <Entry name="SLV" value="Sleeve"/>
+  <Entry name="SPI" value="Spin Cylinders"/>
+  <Entry name="SPL" value="Spool"/>
+  <Entry name="SVN" value="SEAVAN - Sea Van"/>
+  <Entry name="TBE" value="Tube"/>
+  <Entry name="TBN" value="Tote Bin"/>
+  <Entry name="TKR" value="Tank Car"/>
+  <Entry name="TKT" value="Tank Truck"/>
+  <Entry name="TLD" value="Intermodal Trailer/Container Load (Rail)"/>
+  <Entry name="TNK" value="Tank"/>
+  <Entry name="TRC" value="Tierce"/>
+  <Entry name="TRI" value="Triwall Box"/>
+  <Entry name="TRK" value="Trunk and Chest"/>
+  <Entry name="TRU" value="Truck"/>
+  <Entry name="TRY" value="Tray"/>
+  <Entry name="TSS" value="Trunk, Salesmen Sample"/>
+  <Entry name="TTC" value="Tote Can"/>
+  <Entry name="TUB" value="Tub"/>
+  <Entry name="UNP" value="Unpacked"/>
+  <Entry name="UNT" value="Unit"/>
+  <Entry name="VEH" value="Vehicles"/>
+  <Entry name="VPK" value="Van Pack"/>
+  <Entry name="WHE" value="On Own Wheel"/>
+  <Entry name="WLC" value="Wheeled Carrier"/>
+  <Entry name="WRP" value="Wrapped"/>
+</Table>

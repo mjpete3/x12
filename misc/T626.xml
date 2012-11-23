@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T626.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T626">
+  <Entry name="A" value="Schedule Increase, Forecast Change or Special Car Order"/>
+  <Entry name="B" value="Engineering Change or Late Release"/>
+  <Entry name="C" value="Specification (Schedule) Error/Overbuilding"/>
+  <Entry name="D" value="Shipment Tracing Delay"/>
+  <Entry name="E" value="Plant Inventory Loss"/>
+  <Entry name="F" value="Building Ahead of Schedule"/>
+  <Entry name="G" value="Vendor Behind Schedule"/>
+  <Entry name="H" value="Failed to Include In Last Shipment or Unauthorized Premium"/>
+  <Entry name="I" value="Carrier Loss Claim"/>
+  <Entry name="J" value="Transportation Failure"/>
+  <Entry name="K" value="Insufficient Weight For Carload"/>
+  <Entry name="L" value="Reject or Discrepancy"/>
+  <Entry name="M" value="Transportation Delay"/>
+  <Entry name="N" value="Lack of Railcar or Railroad Equipment"/>
+  <Entry name="P" value="Releasing Error"/>
+  <Entry name="R" value="Record Error or Late Reported Discrepancy Report"/>
+  <Entry name="T" value="Common or Peculiar Part Schedule Increase"/>
+  <Entry name="U" value="Alternate Supplier Shipping for Responsible Supplier"/>
+  <Entry name="V" value="Direct Schedule or Locally Controlled"/>
+  <Entry name="W" value="Purchasing Waiver Approval"/>
+  <Entry name="X" value="Authorization Code to be Determined"/>
+  <Entry name="Y" value="Pilot Material, Samples or Pre-Production"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

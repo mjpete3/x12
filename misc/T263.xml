@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T263.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T263">
+  <Entry name="00" value="Not Used, Too New to Rate, or Unclassified"/>
+  <Entry name="01" value="Current or Account Paid According to Terms"/>
+  <Entry name="02" value="30-59 Days Past Due"/>
+  <Entry name="03" value="60-89 Days Past Due"/>
+  <Entry name="04" value="90-119 Days Past Due"/>
+  <Entry name="05" value="120 Days or More Past Due"/>
+  <Entry name="07" value="Making Payments Under Wage Earner Plan"/>
+  <Entry name="08" value="Repossession"/>
+  <Entry name="09" value="Bad Debt Placed for Collection"/>
+  <Entry name="10" value="Currently Active"/>
+  <Entry name="11" value="Currently Owing"/>
+  <Entry name="12" value="Currently Past Due"/>
+  <Entry name="13" value="Paid Anticipate"/>
+  <Entry name="14" value="Paid Discount"/>
+  <Entry name="15" value="Paid in Cash"/>
+  <Entry name="16" value="Paid Prompt"/>
+  <Entry name="17" value="Paid Slow"/>
+  <Entry name="18" value="Placed for Collection Paid"/>
+  <Entry name="19" value="Placed for Collection Partially Paid"/>
+  <Entry name="20" value="Unfavorable Comments"/>
+  <Entry name="21" value="Inconclusive - Refer to Other Information in Report"/>
+</Table>

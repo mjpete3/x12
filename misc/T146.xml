@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T146.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T146">
+  <Entry name="11" value="Rule 11 Shipment"/>
+  <Entry name="BP" value="Paid by Buyer"/>
+  <Entry name="CA" value="Advance Collect"/>
+  <Entry name="CC" value="Collect"/>
+  <Entry name="CD" value="Collect on Delivery"/>
+  <Entry name="CF" value="Collect, Freight Credited Back to Customer"/>
+  <Entry name="CN" value="Cost and Freight"/>
+  <Entry name="DD" value="Delivered Duty Paid"/>
+  <Entry name="DE" value="Per Contract"/>
+  <Entry name="DF" value="Defined by Buyer and Seller"/>
+  <Entry name="FO" value="FOB Port of Call"/>
+  <Entry name="HP" value="Half Prepaid"/>
+  <Entry name="MX" value="Mixed"/>
+  <Entry name="NC" value="Service Freight, No Charge"/>
+  <Entry name="NR" value="Non Revenue"/>
+  <Entry name="PA" value="Advance Prepaid"/>
+  <Entry name="PB" value="Customer Pick-up/Backhaul"/>
+  <Entry name="PC" value="Prepaid but Charged to Customer"/>
+  <Entry name="PD" value="Prepaid by Processor"/>
+  <Entry name="PE" value="Prepaid and Summary Bill"/>
+  <Entry name="PL" value="Prepaid Local, Collect Outstate"/>
+  <Entry name="PO" value="Prepaid Only"/>
+  <Entry name="PP" value="Prepaid (by Seller)"/>
+  <Entry name="PS" value="Paid by Seller"/>
+  <Entry name="PU" value="Pickup"/>
+  <Entry name="RC" value="Return Container Freight Paid by Customer"/>
+  <Entry name="RF" value="Return Container Freight Free"/>
+  <Entry name="RS" value="Return Container Freight Paid by Supplier"/>
+  <Entry name="SD" value="Free Domicile (Shipper pays duty, tax and freight)"/>
+  <Entry name="TP" value="Third Party Pay"/>
+  <Entry name="WC" value="Weight Condition"/>
+</Table>

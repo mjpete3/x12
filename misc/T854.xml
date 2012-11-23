@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T854.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T854">
+  <Entry name="BC" value="Barge Carrying Vessels (Lash &amp; Seabee)"/>
+  <Entry name="BD" value="Bulk-Dry"/>
+  <Entry name="BI" value="Barge-Inland"/>
+  <Entry name="BK" value="Bulk-Undetermined"/>
+  <Entry name="BL" value="Bulk-Liquid"/>
+  <Entry name="BO" value="Barge-Oceangoing"/>
+  <Entry name="CB" value="Conbulk"/>
+  <Entry name="CT" value="Container"/>
+  <Entry name="DG" value="Dredge"/>
+  <Entry name="DP" value="Display Vessels"/>
+  <Entry name="FH" value="Fishing"/>
+  <Entry name="GC" value="General Cargo"/>
+  <Entry name="GT" value="Government-Non-Military"/>
+  <Entry name="MT" value="Military"/>
+  <Entry name="PC" value="Partial Container"/>
+  <Entry name="PS" value="Passenger"/>
+  <Entry name="RR" value="Roll on/Roll off"/>
+  <Entry name="SP" value="Supply Ship"/>
+  <Entry name="TG" value="Tug"/>
+  <Entry name="VH" value="Vehicle Carrier"/>
+</Table>

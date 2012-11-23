@@ -1,0 +1,60 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1592.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1592">
+  <Entry name="A1" value="Amateur"/>
+  <Entry name="A2" value="Air Transport Rating (ATR)"/>
+  <Entry name="A3" value="Airplane"/>
+  <Entry name="A4" value="American Motorcyclist Association (AMA)"/>
+  <Entry name="A5" value="American Powerboat Association (APBA)"/>
+  <Entry name="B1" value="Boeing 747"/>
+  <Entry name="D1" value="Deep Water Diver Club"/>
+  <Entry name="D2" value="Diving Advanced Open Water Certification"/>
+  <Entry name="D3" value="Diving Open Water Certification"/>
+  <Entry name="D4" value="Diving Rescue Diver Certification"/>
+  <Entry name="D5" value="Diving Underwater Hunter Certification"/>
+  <Entry name="F1" value="Federal Aviation Administration Medical Class 1"/>
+  <Entry name="F2" value="Federal Aviation Administration Medical Class 2"/>
+  <Entry name="F3" value="Federal Aviation Administration Medical Class 3"/>
+  <Entry name="G1" value="Glider"/>
+  <Entry name="I1" value="Instructor"/>
+  <Entry name="I2" value="International Motor Sports Association (IMSA)"/>
+  <Entry name="I3" value="Instrument"/>
+  <Entry name="I4" value="Instrument Flight Rating Airplane"/>
+  <Entry name="I5" value="Instrument Flight Rating Helicopter"/>
+  <Entry name="L1" value="Lighter Than Air"/>
+  <Entry name="M1" value="Multiengine Land"/>
+  <Entry name="M2" value="Multiengine Sea"/>
+  <Entry name="N1" value="National Association Stock Car Auto Racing (NASCAR)"/>
+  <Entry name="N2" value="National Hot Rod Association (NHRA)"/>
+  <Entry name="P1" value="Professional"/>
+  <Entry name="R1" value="Rotorcraft"/>
+  <Entry name="S1" value="Student"/>
+  <Entry name="S2" value="Sports Car Club of America (SCCA)"/>
+  <Entry name="S3" value="Single Engine Land"/>
+  <Entry name="S4" value="Single Engine Sea"/>
+  <Entry name="U1" value="United States Auto Club (USAC)"/>
+  <Entry name="V1" value="Visual"/>
+</Table>

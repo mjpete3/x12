@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LH4.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LH4" comment="To specify additional Transport Canada requirements covering transportation of dangerous goods in Canada">
+  <Field name="EmergencyResponsePlanNumber" required="y" min="1" max="12" comment="The identity number of a specific hazardous emergency response plan that is assigned by the Director General of Canada"/>
+  <Field name="CommunicationNumber1" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
+  <Field name="PackingGroupCode" required="y" min="1" max="3" comment="Code indicating degree of danger in terms of Roman number I, II or III"/>
+  <Field name="SubsidiaryClassification1" required="y" min="1" max="3" comment="Code indicating the classification of dangerous goods, other than the primary classification, that is associated with a number or a set of numbers"/>
+  <Field name="SubsidiaryClassification2" required="y" min="1" max="3" comment="Code indicating the classification of dangerous goods, other than the primary classification, that is associated with a number or a set of numbers"/>
+  <Field name="SubsidiaryClassification3" required="y" min="1" max="3" comment="Code indicating the classification of dangerous goods, other than the primary classification, that is associated with a number or a set of numbers"/>
+  <Field name="SubsidiaryRiskIndicator" required="y" min="1" max="2" validation="T271" comment="Code identifying the type of subsidiary risk"/>
+  <Field name="NetExplosiveQuantity" type="long" required="y" min="1" max="10" comment="Net weight of the explosive quantity of the hazardous commodity"/>
+  <Field name="CanadianHazardousNotation" required="y" min="1" max="25" comment="Notation required by Canadian regulatory agencies"/>
+  <Field name="SpecialCommodityIndicatorCode" required="y" min="1" max="1" validation="T986" comment="Code indicating 'Special Commodity' notation on operational waybill as identified by the Transportation of Dangerous Goods Act and Regulation (TDG)"/>
+  <Field name="CommunicationNumber2" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+</Segment>

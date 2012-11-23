@@ -1,0 +1,82 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T756.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T756">
+  <Entry name="1" value="Summary Electronic Invoice"/>
+  <Entry name="2" value="Full Electronic Invoice"/>
+  <Entry name="3" value="Printed Invoice Sent by Mail"/>
+  <Entry name="4" value="Summary Electronic Invoice and Printed Invoice Sent by Mail"/>
+  <Entry name="5" value="Full Electronic Invoice and Printed Invoice Sent by Mail"/>
+  <Entry name="6" value="No paper Invoice"/>
+  <Entry name="7" value="Summary Electronic Invoice and No paper Invoice"/>
+  <Entry name="8" value="Full Electronic Invoice and No Paper Invoice"/>
+  <Entry name="9" value="Electronic Mail"/>
+  <Entry name="AA" value="Available on Request at Provider Site"/>
+  <Entry name="AB" value="Previously Submitted to Payer"/>
+  <Entry name="AC" value="American College of Radiology/National Electronic Manufacturers Association (ACR/NEMA DICOM) Format"/>
+  <Entry name="AD" value="Certification Included in this Claim"/>
+  <Entry name="AE" value="Electronically After Shipping"/>
+  <Entry name="AF" value="Narrative Segment Included in this Claim"/>
+  <Entry name="AG" value="No Documentation is Required"/>
+  <Entry name="AM" value="By Mail After Shipping"/>
+  <Entry name="AS" value="American Society for Testing and Materials Format (ASTM E1238)"/>
+  <Entry name="AT" value="American Society for Testing and Materials Format (ASTM E1384)"/>
+  <Entry name="AU" value="By Data Pattern"/>
+  <Entry name="BE" value="By Mail and Electronically"/>
+  <Entry name="BM" value="By Mail"/>
+  <Entry name="BW" value="Best Way (Sender's Option)"/>
+  <Entry name="CD" value="Courier Diskette"/>
+  <Entry name="CF" value="Courier"/>
+  <Entry name="CP" value="Courier Paper"/>
+  <Entry name="CT" value="Courier Tape"/>
+  <Entry name="DA" value="Data"/>
+  <Entry name="EL" value="Electronically Only"/>
+  <Entry name="EM" value="E-Mail"/>
+  <Entry name="FT" value="File Transfer"/>
+  <Entry name="FX" value="By Fax"/>
+  <Entry name="GS" value="On General Services Administration (GSA) Form 10050"/>
+  <Entry name="HL" value="Health Industry Level 7 Interface Standards (HL/7) Format"/>
+  <Entry name="IA" value="Electronic Image"/>
+  <Entry name="IE" value="Electronically with Invoice"/>
+  <Entry name="IM" value="By Mail with Invoice"/>
+  <Entry name="MB" value="Binary Image"/>
+  <Entry name="MD" value="Mail Diskette"/>
+  <Entry name="MN" value="Magnetic Media"/>
+  <Entry name="MP" value="Mail Paper"/>
+  <Entry name="MT" value="Mail Tape"/>
+  <Entry name="NS" value="Not Specified"/>
+  <Entry name="OL" value="On-Line"/>
+  <Entry name="PO" value="Printed Original Required"/>
+  <Entry name="SE" value="Electronically Before Shipping"/>
+  <Entry name="SM" value="By Mail Before Shipping"/>
+  <Entry name="SN" value="With Ship Notice"/>
+  <Entry name="SW" value="Society for Worldwide Interbank Financial Telecommunication (SWIFT)"/>
+  <Entry name="TA" value="Telex"/>
+  <Entry name="TE" value="Separately, Electronically at Time of Shipping"/>
+  <Entry name="TM" value="Separately, by Mail at Time of Shipping"/>
+  <Entry name="TX" value="Text"/>
+  <Entry name="VO" value="Voice"/>
+  <Entry name="WS" value="With Shipment (With Package)"/>
+</Table>

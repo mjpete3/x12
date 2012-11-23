@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: DEL.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="DEL" comment="To define delivery logistics">
+  <Field name="Quantity" type="double" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="IdentificationCodeQualifier" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
+  <Field name="IdentificationCode" min="2" max="80" comment="Code identifying a party or other code"/>
+  <Field name="InvoiceNumber" required="y" min="1" max="22" comment="Identifying number assigned by issuer"/>
+  <Field name="MoveTypeCode" required="y" min="1" max="1" validation="T1237" comment="Code identifying type of move performed by the carrier"/>
+</Segment>

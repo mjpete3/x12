@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1552.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1552">
+  <Entry name="1" value="Assumability"/>
+  <Entry name="2" value="Callability"/>
+  <Entry name="3" value="Prepayment"/>
+  <Entry name="4" value="Convertibility"/>
+  <Entry name="5" value="Limited Payment"/>
+  <Entry name="6" value="Adjustability"/>
+  <Entry name="7" value="User-defined"/>
+  <Entry name="8" value="Negative Amortization"/>
+  <Entry name="9" value="Automatic Refinance"/>
+  <Entry name="10" value="Modification"/>
+  <Entry name="11" value="Construction Phase"/>
+  <Entry name="12" value="Permanent Phase"/>
+  <Entry name="13" value="Payment Frequency"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

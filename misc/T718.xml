@@ -1,0 +1,50 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T718.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T718">
+  <Entry name="1" value="Transaction Set Not Supported"/>
+  <Entry name="2" value="Transaction Set Trailer Missing"/>
+  <Entry name="3" value="Transaction Set Control Number in Header and Trailer Do Not Match"/>
+  <Entry name="4" value="Number of Included Segments Does Not Match Actual Count"/>
+  <Entry name="5" value="One or More Segments in Error"/>
+  <Entry name="6" value="Missing or Invalid Transaction Set Identifier"/>
+  <Entry name="7" value="Missing or Invalid Transaction Set Control Number"/>
+  <Entry name="8" value="Authentication Key Name Unknown"/>
+  <Entry name="9" value="Encryption Key Name Unknown"/>
+  <Entry name="10" value="Requested Service (Authentication or Encrypted) Not Available"/>
+  <Entry name="11" value="Unknown Security Recipient"/>
+  <Entry name="12" value="Incorrect Message Length (Encryption Only)"/>
+  <Entry name="13" value="Message Authentication Code Failed"/>
+  <Entry name="15" value="Unknown Security Originator"/>
+  <Entry name="16" value="Syntax Error in Decrypted Text"/>
+  <Entry name="17" value="Security Not Supported"/>
+  <Entry name="18" value="Transaction Set not in Functional Group"/>
+  <Entry name="19" value="Invalid Transaction Set Implementation Convention Reference"/>
+  <Entry name="23" value="Transaction Set Control Number Not Unique within the Functional Group"/>
+  <Entry name="24" value="S3E Security End Segment Missing for S3S Security Start Segment"/>
+  <Entry name="25" value="S3S Security Start Segment Missing for S3E Security End Segment"/>
+  <Entry name="26" value="S4E Security End Segment Missing for S4S Security Start Segment"/>
+  <Entry name="27" value="S4S Security Start Segment Missing for S4E Security End Segment"/>
+</Table>

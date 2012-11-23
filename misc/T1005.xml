@@ -1,0 +1,107 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1005.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1005">
+  <Entry name="0001" value="Shipment, Order, Packaging, Item"/>
+  <Entry name="0002" value="Shipment, Order, Item, Packaging"/>
+  <Entry name="0003" value="Shipment, Packaging, Order, Item"/>
+  <Entry name="0004" value="Shipment, Order, Item"/>
+  <Entry name="0005" value="Financial Institution; Client or Party; Contract; Component; Account; Item; Coverage, Rider or Supplementary Benefit"/>
+  <Entry name="0006" value="Financial Institution; Client or Party; Contract; Account; Coverage, Rider or Supplementary Benefit"/>
+  <Entry name="0010" value="Information Source, Information Receiver, Provider of Service, Subscriber, Dependent"/>
+  <Entry name="0011" value="Information Receiver, Information Source, Provider of Service, Subscriber, Dependent"/>
+  <Entry name="0012" value="Information Source, Provider of Service, Subscriber, Dependent"/>
+  <Entry name="0013" value="Provider of Service, Information Source, Subscriber, Dependent"/>
+  <Entry name="0014" value="Provider of Service, Information Source, Information Receiver, Subscriber, Dependent"/>
+  <Entry name="0015" value="Information Receiver, Provider of Service, Subscriber, Dependent"/>
+  <Entry name="0016" value="Provider of Service, Subscriber, Dependent"/>
+  <Entry name="0017" value="Subscriber, Dependent"/>
+  <Entry name="0018" value="Information Receiver, Subscriber, Dependent"/>
+  <Entry name="0019" value="Information Source, Subscriber, Dependent"/>
+  <Entry name="0020" value="Information Source, Information Receiver, Group Coverage Options, Subscriber, Dependent"/>
+  <Entry name="0021" value="Information Source, Information Receiver, Group Coverage Options"/>
+  <Entry name="0022" value="Information Source, Information Receiver, Subscriber, Dependent"/>
+  <Entry name="0023" value="Information Receiver, Information Source, Subscriber, Dependent"/>
+  <Entry name="0024" value="Information Source, Information Receiver, Provider, Group, Site of Service"/>
+  <Entry name="0025" value="Information Source, Information Receiver, Group, Provider, Site of Service"/>
+  <Entry name="0026" value="Information Source, Information Receiver, Site of Service, Provider, Group"/>
+  <Entry name="0027" value="Information Source, Information Receiver, Provider, Site of Service, Group"/>
+  <Entry name="0028" value="Information Source, Information Receiver, Group, Site of Service, Provider"/>
+  <Entry name="0029" value="Information Source, Information Receiver, Site of Service, Group, Provider"/>
+  <Entry name="0035" value="Address, Shipment, Order"/>
+  <Entry name="0036" value="Address, Transaction Reference Number, Suffix, Serial Number"/>
+  <Entry name="0055" value="Supergroup, Group, Subgroup, Member"/>
+  <Entry name="0056" value="Supergroup, subgroup, member, ancillary facility or department"/>
+  <Entry name="0057" value="Supergroup, subgroup, member"/>
+  <Entry name="0058" value="Group, member, ancillary facility or department"/>
+  <Entry name="0059" value="Group, member"/>
+  <Entry name="0060" value="Hospital, ancillary facility or department"/>
+  <Entry name="0061" value="Health Industry Business Communications Council (HIBCC) Health Industry Number (HIN) database, facility record, location record"/>
+  <Entry name="0062" value="Franchisor, franchisee"/>
+  <Entry name="0063" value="Franchisee association, franchisee"/>
+  <Entry name="0064" value="Company, Company"/>
+  <Entry name="0065" value="Company, Operating Unit"/>
+  <Entry name="0066" value="Operating Unit, Operating Unit"/>
+  <Entry name="0067" value="Company, Property"/>
+  <Entry name="0068" value="Company, Property Property, Property"/>
+  <Entry name="0069" value="Operating Unit, Property"/>
+  <Entry name="0070" value="Property, Property"/>
+  <Entry name="0071" value="Company, Tradename"/>
+  <Entry name="0072" value="Operating Unit, Tradename"/>
+  <Entry name="0073" value="Property, Tradename"/>
+  <Entry name="0074" value="Company, Operating Unit, Operating Unit, Operating Unit"/>
+  <Entry name="0075" value="Operating Unit, Operating Unit, Operating Unit, Operating Unit"/>
+  <Entry name="0076" value="Company, Operating Unit, Operating Unit, Property"/>
+  <Entry name="0077" value="Tradename, Property"/>
+  <Entry name="0078" value="Information Source, Information Receiver, Subscriber, Dependent, Provider of Service, Services"/>
+  <Entry name="0079" value="Information Source, Information Receiver, Company/Corporation, Operating Unit"/>
+  <Entry name="0080" value="Information Source, Employer, Patient"/>
+  <Entry name="0081" value="Information Source, Patient"/>
+  <Entry name="0082" value="Information Source, Employer, Subscriber, Dependent"/>
+  <Entry name="0083" value="Information Source, Information Receiver, Subscriber, Dependent, Referring Provider, Provider of Service, Services"/>
+  <Entry name="0084" value="Report, Site, Sample, Test"/>
+  <Entry name="0085" value="Information Source, Information Receiver, Provider of Service, Patient"/>
+  <Entry name="0200" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E), Fleet (FL), Jurisdiction (JU)"/>
+  <Entry name="0201" value="Credential Action (AP), Company/Corporation (35), Transportation Equipment (E)"/>
+  <Entry name="0202" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E), Jurisdiction (JU)"/>
+  <Entry name="0203" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E)"/>
+  <Entry name="0204" value="Report (RP), Jurisdiction (JU), Company/Corporation (35)"/>
+  <Entry name="0205" value="Report (RP), Company/Corporation (35), Fleet (FL), Jurisdiction (JU), Transportation Equipment (E)"/>
+  <Entry name="0206" value="Credential Action (AP), Company/Corporation (35), Jurisdiction (JU), Transportation Equipment (E)"/>
+  <Entry name="0207" value="Credential Action (AP), Company/Corporation (35), Transportation Equipment (E), Component (F), Measurement (M), Jurisdiction (JU)"/>
+  <Entry name="0208" value="Credential Action (AP), Company/Corporation (35), Cost Type (CT), Jurisdiction (JU)"/>
+  <Entry name="0209" value="Credential Action (AP), Company/Corporation (35)"/>
+  <Entry name="0210" value="Credential Action (AP)"/>
+  <Entry name="0211" value="Reporting Agency, Claim Administrator, Insurer, Insured, Employer, Claimant, Payment"/>
+  <Entry name="0212" value="Reporting Agency, Employer, Claimant"/>
+  <Entry name="0213" value="Reporting Agency, Claim Administrator, Employer, Claimant"/>
+  <Entry name="0214" value="Information Source, Information Receiver, Response Details"/>
+  <Entry name="0400" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E), Fleet (FL), Jurisdiction (JU), Payment Detail (PY)"/>
+  <Entry name="0401" value="Credential Action (AP), Company/Corporation (35), Transportation Equipment (E), Payment Detail (PY)"/>
+  <Entry name="0402" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E), Jurisdiction (JU), Payment Detail (PY)"/>
+  <Entry name="0403" value="Credential Action (AP), Company/Corporation (35), Quantity (R), Transportation Equipment (E), Payment Detail (PY)"/>
+  <Entry name="0407" value="Credential Action (AP), Company/Corporation (35), Transportation Equipment (E), Component (F), Measurement (M), Jurisdiction (JU), Payment Detail (PY)"/>
+  <Entry name="ZZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,65 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TI05.xml 80 2009-05-13 18:04:35Z ikk $
+-->
+
+<Table name="TI05">
+  <Entry name="01" value="Duns (Dun &amp; Bradstreet)"/>
+  <Entry name="02" value="SCAC (Standard Carrier Alpha Code)"/>
+  <Entry name="03" value="FMC (Federal Maritime Commission)"/>
+  <Entry name="04" value="IATA (International Air Transport Association)"/>
+  <Entry name="08" value="UCC EDI Communications ID (Comm ID)"/>
+  <Entry name="09" value="X.121 (CCITT)"/>
+  <Entry name="10" value="Department of Defense (DoD) Activity Address Code"/>
+  <Entry name="11" value="DEA (Drug Enforcement Administration)"/>
+  <Entry name="12" value="Phone (Telephone Companies)"/>
+  <Entry name="13" value="UCS Code (The UCS Code is a Code Used for UCS Transmissions; it includes the Area Code and Telephone Number of a Modem; it Does Not Include Punctuation, Blanks or Access Code)"/>
+  <Entry name="14" value="Duns Plus Suffix"/>
+  <Entry name="15" value="Petroleum Accountants Society of Canada Company Code"/>
+  <Entry name="16" value="Duns Number With 4-Character Suffix"/>
+  <Entry name="17" value="American Bankers Association (ABA) Transit Routing Number (Including Check Digit, 9 Digit)"/>
+  <Entry name="18" value="Association of American Railroads (AAR) Standard Distribution Code"/>
+  <Entry name="19" value="EDI Council of Australia (EDICA) Communications ID Number (COMM ID)"/>
+  <Entry name="20" value="Health Industry Number (HIN)"/>
+  <Entry name="21" value="Integrated Postsecondary Education Data System, or (IPEDS)"/>
+  <Entry name="22" value="Federal Interagency Commission on Education, or FICE"/>
+  <Entry name="23" value="National Center for Education Statistics Common Core of Data 12-Digit Number for Pre-K-Grade 12 Institutes, or NCES"/>
+  <Entry name="24" value="The College Board's Admission Testing Program 4-Digit Code of Postsecondary Institutes, or ATP"/>
+  <Entry name="25" value="American College Testing Program 4-Digit Code of Postsecondary Institutions, or ACT"/>
+  <Entry name="26" value="Statistics of Canada List of Postsecondary Institutions"/>
+  <Entry name="27" value="Carrier Identification Number as assigned by Health Care Financing Administration (HCFA)"/>
+  <Entry name="28" value="Fiscal Intermediary Identification Number as assigned by Health Care Financing Administration (HCFA)"/>
+  <Entry name="29" value="Medicare Provider and Supplier Identification Number as assigned by Health Care Financing Administration (HCFA)"/>
+  <Entry name="30" value="U.S. Federal Tax Identification Number"/>
+  <Entry name="31" value="Jurisdiction Identification Number Plus 4 as assigned by the International Association of Industrial Accident Boards and Commissions (IAIABC)"/>
+  <Entry name="32" value="U.S. Federal Employer Identification Number (FEIN)"/>
+  <Entry name="33" value="National Association of Insurance Commissioners Company Code (NAIC)"/>
+  <Entry name="34" value="Medicaid Provider and Supplier Identification Number as assigned by individual State Medicaid Agencies in conjunction with Health Care Financing Administration (HCFA)"/>
+  <Entry name="35" value="Statistics Canada Canadian College Student Information System Institution Codes"/>
+  <Entry name="36" value="Statistics Canada University Student Information System Institution Codes"/>
+  <Entry name="37" value="Society of Property Information Compilers and Analysts"/>
+  <Entry name="AM" value="Association Mexicana del Codigo de Producto (AMECOP) Communication ID"/>
+  <Entry name="NR" value="National Retail Merchants Association (NRMA) - Assigned"/>
+  <Entry name="SN" value="Standard Address Number"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

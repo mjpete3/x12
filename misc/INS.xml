@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: INS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="INS" comment="To provide benefit information on insured entities">
+  <Field name="YesNoConditionOrResponseCode1" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="IndividualRelationshipCode" min="2" max="2" validation="T1069" comment="Code indicating the relationship between two individuals or entities"/>
+  <Field name="MaintenanceTypeCode" required="y" min="3" max="3" validation="T875" comment="Code identifying the specific type of item maintenance"/>
+  <Field name="MaintenanceReasonCode" required="y" min="2" max="3" validation="T1203" comment="Code identifying the reason for the maintenance change"/>
+  <Field name="BenefitStatusCode" required="y" min="1" max="1" validation="T1216" comment="The type of coverage under which benefits are paid"/>
+  <Field name="MedicareStatusCode" type="C052" required="y" min="0" max="inf" comment="To provide Medicare coverage and associated reason for Medicare eligibility"/>
+  <Field name="ConsolidatedOmnibusBudgetReconciliationAct" required="y" min="1" max="2" validation="T1219" comment="A Qualifying Event is any of the following which results in loss of coverage for a Qualified Beneficiary"/>
+  <Field name="EmploymentStatusCode" required="y" min="2" max="2" validation="T584" comment="Code showing the general employment status of an employee/claimant"/>
+  <Field name="StudentStatusCode" required="y" min="1" max="1" validation="T1220" comment="Code indicating the student status of the patient if 19 years of age or older, not handicapped and not the insured"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="ConfidentialityCode" required="y" min="1" max="1" validation="T1165" comment="Code indicating the access to insured information"/>
+  <Field name="CityName" required="y" min="2" max="30" comment="Free-form text for city name"/>
+  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="CountryCode" required="y" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="Number" type="long" required="y" min="1" max="9" comment="A generic number"/>
+</Segment>

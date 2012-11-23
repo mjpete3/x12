@@ -1,0 +1,62 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T147.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T147">
+  <Entry name="1" value="Master Bill for Empty Non-Revenue Equipment"/>
+  <Entry name="2" value="Sea Waybill"/>
+  <Entry name="3" value="Intermodal/Combined Transport Bill of Lading"/>
+  <Entry name="4" value="Household Goods Bill of Lading"/>
+  <Entry name="5" value="Load Handled as Empty"/>
+  <Entry name="6" value="First Bill for Split Shipment"/>
+  <Entry name="7" value="Subordinate Bill for Split Shipment"/>
+  <Entry name="8" value="Master Bill, Revenue Empty"/>
+  <Entry name="9" value="Reload"/>
+  <Entry name="A" value="Sub for Assembly"/>
+  <Entry name="B" value="Bill of Lading for Individual Shipment"/>
+  <Entry name="C" value="Consolidated Shipment"/>
+  <Entry name="D" value="Sub for Distribution"/>
+  <Entry name="E" value="Empty Equipment Billing (Non-Revenue)"/>
+  <Entry name="F" value="Stop-off Shipment"/>
+  <Entry name="G" value="Switch Waybill"/>
+  <Entry name="H" value="Company Business (Non-revenue)"/>
+  <Entry name="I" value="Intermodal"/>
+  <Entry name="J" value="Charity Load (Non-revenue)"/>
+  <Entry name="K" value="Free Astray (Non-revenue)"/>
+  <Entry name="L" value="Single Load (Blind Memo) Memo--Incomplete Documentation"/>
+  <Entry name="M" value="Master Bill of Lading for Assembly, Distribution and Volume Shipment"/>
+  <Entry name="N" value="Multiple Loads (Blind Memo) Memo--Incomplete Documentation"/>
+  <Entry name="O" value="Memo Bill (Not Used for Rail)"/>
+  <Entry name="P" value="PTF Bill of Lading"/>
+  <Entry name="Q" value="Continuous Movement"/>
+  <Entry name="R" value="Supplemental Billing"/>
+  <Entry name="S" value="Submaster Bill of Lading for Volume Shipment"/>
+  <Entry name="T" value="Freight Claim Rule 93-B (Free Return)"/>
+  <Entry name="U" value="Roundtrip Movement"/>
+  <Entry name="V" value="Void Bill"/>
+  <Entry name="W" value="Revenue Empty"/>
+  <Entry name="X" value="Empty Switch Waybill"/>
+  <Entry name="Y" value="Advance/Prepaid Only Waybill"/>
+  <Entry name="Z" value="Commercial Zone Pick-up"/>
+</Table>

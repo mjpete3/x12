@@ -1,0 +1,150 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T875.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T875">
+  <Entry name="001" value="Change"/>
+  <Entry name="002" value="Delete"/>
+  <Entry name="003" value="Add Full Item Detail"/>
+  <Entry name="004" value="Withdraw Item (Temporary)"/>
+  <Entry name="005" value="Restore Item"/>
+  <Entry name="006" value="Membership Type"/>
+  <Entry name="007" value="Purchase Eligibility"/>
+  <Entry name="008" value="Verified"/>
+  <Entry name="009" value="Not Verified"/>
+  <Entry name="010" value="Periodic Report"/>
+  <Entry name="011" value="All Items Refresh"/>
+  <Entry name="012" value="Medical Noncompliance"/>
+  <Entry name="013" value="Administrative Noncompliance"/>
+  <Entry name="014" value="Suspended Pending Settlement Approval"/>
+  <Entry name="015" value="Suspended Pending Appeal or Judicial Review"/>
+  <Entry name="016" value="Injury Report Creation"/>
+  <Entry name="017" value="Illness Report Creation"/>
+  <Entry name="018" value="Transfer of Beneficial Rights"/>
+  <Entry name="019" value="Record Security Instrument"/>
+  <Entry name="020" value="Assignment"/>
+  <Entry name="021" value="Addition"/>
+  <Entry name="022" value="Change in Status"/>
+  <Entry name="023" value="Change in Rate Factors"/>
+  <Entry name="024" value="Cancellation or Termination"/>
+  <Entry name="025" value="Reinstatement"/>
+  <Entry name="026" value="Correction"/>
+  <Entry name="028" value="Policy Adjustment"/>
+  <Entry name="029" value="Inquiry"/>
+  <Entry name="030" value="Audit or Compare"/>
+  <Entry name="031" value="Medical Examination Authorization"/>
+  <Entry name="032" value="Employee Information Not Applicable"/>
+  <Entry name="033" value="Release of Interim Funding Interest"/>
+  <Entry name="050" value="Original"/>
+  <Entry name="051" value="Denial"/>
+  <Entry name="052" value="Initial Payment"/>
+  <Entry name="053" value="Change in Benefit Amount"/>
+  <Entry name="054" value="Change in Benefit Type"/>
+  <Entry name="055" value="Reinstatement of Benefit"/>
+  <Entry name="056" value="Reduced Earnings"/>
+  <Entry name="057" value="Final"/>
+  <Entry name="059" value="Suspension Medically Determined or Qualified to Return to Work"/>
+  <Entry name="060" value="Non-compliance of Medical Requirements"/>
+  <Entry name="061" value="Non-compliance of Administrative Requirements"/>
+  <Entry name="062" value="Compensable Death"/>
+  <Entry name="063" value="Incarceration"/>
+  <Entry name="064" value="Claimant's Whereabouts Unknown"/>
+  <Entry name="065" value="Volunteer"/>
+  <Entry name="066" value="Status Request"/>
+  <Entry name="067" value="Benefits Exhausted"/>
+  <Entry name="068" value="Jurisdictional Change"/>
+  <Entry name="069" value="Payment Notification"/>
+  <Entry name="070" value="Status Request Response"/>
+  <Entry name="071" value="Re-issue Identification Card(s)"/>
+  <Entry name="072" value="Suspension Due to Claimant Death"/>
+  <Entry name="073" value="Partial Denial"/>
+  <Entry name="074" value="Partial Suspension, Returned to Work, or Medically Determined or Qualified to Return to Work"/>
+  <Entry name="075" value="Partial Suspension, Medical Non-compliance"/>
+  <Entry name="076" value="Partial Suspension, Administrative Non-compliance"/>
+  <Entry name="077" value="Partial Suspension, Claimant Death"/>
+  <Entry name="078" value="Partial Suspension, Incarceration"/>
+  <Entry name="079" value="Partial Suspension, Claimant's whereabouts Unknown"/>
+  <Entry name="080" value="Partial Suspension, Benefits Exhausted"/>
+  <Entry name="081" value="Partial Suspension, Jurisdiction Change"/>
+  <Entry name="082" value="Partially Suspended, Benefits Pending Settlement Approval"/>
+  <Entry name="083" value="Partially Suspended, Pending Appeal or Judicial Review"/>
+  <Entry name="084" value="Lump Sum Benefit Payment"/>
+  <Entry name="085" value="Suspension Denial"/>
+  <Entry name="100" value="Sale of Mortgage Change"/>
+  <Entry name="101" value="Servicer Change"/>
+  <Entry name="102" value="Mortgagor Change"/>
+  <Entry name="104" value="Prepayment Termination"/>
+  <Entry name="105" value="Non-conveyance Termination"/>
+  <Entry name="106" value="Voluntary Action Termination"/>
+  <Entry name="107" value="Loan Refinanced Termination"/>
+  <Entry name="108" value="Transfer Due to Interest and Servicing Sold"/>
+  <Entry name="109" value="Retain Servicing"/>
+  <Entry name="110" value="Transfer Servicing"/>
+  <Entry name="111" value="Assign Servicing"/>
+  <Entry name="112" value="Servicer Loan Number Change"/>
+  <Entry name="113" value="Merger"/>
+  <Entry name="114" value="Acquisition"/>
+  <Entry name="115" value="Receivership"/>
+  <Entry name="116" value="Loan Maturity Maintenance"/>
+  <Entry name="117" value="Binder"/>
+  <Entry name="118" value="New Policy"/>
+  <Entry name="119" value="Renewal Policy"/>
+  <Entry name="123" value="Canceled by Administrator"/>
+  <Entry name="124" value="Canceled by Insured"/>
+  <Entry name="125" value="Re-Write"/>
+  <Entry name="126" value="Non-renewal"/>
+  <Entry name="127" value="Termination of All Endorsements"/>
+  <Entry name="128" value="Termination of Lessor Interest"/>
+  <Entry name="129" value="Termination of Additional Insured Interest"/>
+  <Entry name="130" value="Termination of Lienholder or Loss Payee"/>
+  <Entry name="131" value="Addition of Lessor Endorsement"/>
+  <Entry name="132" value="Addition of Lienholder Endorsement"/>
+  <Entry name="133" value="Addition of Additional Insured Endorsement"/>
+  <Entry name="134" value="Change of Lessor Endorsement"/>
+  <Entry name="135" value="Change of Lienholder Endorsement"/>
+  <Entry name="136" value="Change of Additional Insured Endorsement"/>
+  <Entry name="137" value="Acquired Unallocated"/>
+  <Entry name="138" value="Acquired Payment"/>
+  <Entry name="139" value="Investigation Pending"/>
+  <Entry name="140" value="Concurrent Benefit"/>
+  <Entry name="141" value="Abbreviated First Report on an Acquired Claim"/>
+  <Entry name="142" value="Employer Paid"/>
+  <Entry name="143" value="Employer Reinstatement"/>
+  <Entry name="144" value="Suspension Directed by Agency"/>
+  <Entry name="145" value="Occupational Safety and Health Administration Injury and Illness Log (OSHA-300)"/>
+  <Entry name="146" value="Occupational Injury Survey"/>
+  <Entry name="147" value="Bureau of Labor and Statistics Survey"/>
+  <Entry name="148" value="First Payment on an Acquired Claim"/>
+  <Entry name="149" value="First Report on an Acquired Claim"/>
+  <Entry name="150" value="Impairment Report"/>
+  <Entry name="151" value="Return to Work Report"/>
+  <Entry name="152" value="Office of Workers Compensation Program Injury Claim Report (OWCP CA-1)"/>
+  <Entry name="153" value="Office of Workers Compensation Program Illness Claim Report (OWCP CA-2)"/>
+  <Entry name="154" value="Occupational Safety and Health Administration Injury and Illness Record (OSHA-301)"/>
+  <Entry name="155" value="First Aid Injury Only"/>
+  <Entry name="CEP" value="Change Excluding Price"/>
+  <Entry name="PRI" value="Price Change Only"/>
+  <Entry name="TBV" value="To Be Verified"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,60 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1127.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1127">
+  <Entry name="CA" value="Carrier Initiated Revenue Waybill Cancel"/>
+  <Entry name="CC" value="System Initiated Cancelled and Fully Concurred"/>
+  <Entry name="CD" value="System Initiated Cancelled Disputed Status"/>
+  <Entry name="CH" value="Carrier Initiated Challenge"/>
+  <Entry name="CO" value="Carrier Initiated Concurrence Without Opinion"/>
+  <Entry name="CP" value="Carrier Initiated Concurrence With Opinion"/>
+  <Entry name="CS" value="System Initiated Settlement, Child Settled, Parent in Dispute Status"/>
+  <Entry name="CT" value="Carrier Initiated Concurrence to Date Change Only"/>
+  <Entry name="CU" value="Currency Dispute"/>
+  <Entry name="DA" value="System Initiated Settlement, Active Road on Silent Concurrence, Divisions Generated"/>
+  <Entry name="DG" value="System Initiated Settlement, Silent Road on Silent Concurrence, Divisions Generated"/>
+  <Entry name="DO" value="System Initiated Deletion From Route by Another Carrier"/>
+  <Entry name="DR" value="Carrier Initiated Deletion from Route (Not in Interline Movement)"/>
+  <Entry name="DT" value="Carrier Initiated Settlement Date Change"/>
+  <Entry name="GD" value="System Initiated Government Dispute"/>
+  <Entry name="LT" value="Delay Shipment Dispute"/>
+  <Entry name="NP" value="Null Settled Due to AAR Rule 11 Parent Null Settled"/>
+  <Entry name="NR" value="New Road, Route Dispute"/>
+  <Entry name="OP" value="Carrier Initiated Waybill Opinion"/>
+  <Entry name="OR" value="Carrier Initiated Revenue Waybill"/>
+  <Entry name="PS" value="System Initiated Postponement to Settlement Due to AAR Rule 11 Notify Party"/>
+  <Entry name="PT" value="Prepaid or Collect Dispute"/>
+  <Entry name="RT" value="Route Dispute"/>
+  <Entry name="SA" value="System Initiated Settlement, Active Road on Silent Concurrence"/>
+  <Entry name="SC" value="System Initiated Settlement, Composite Version Due to Forced Settlement"/>
+  <Entry name="SF" value="System Initiated Settlement, Force Settled on Dispute"/>
+  <Entry name="SN" value="System Initiated Settlement, Null Value"/>
+  <Entry name="SS" value="System Initiated Settlement, Silent Road on Silent Concurrence"/>
+  <Entry name="ST" value="System Initiated Settlement, Fully Concurred"/>
+  <Entry name="T1" value="System Initiated Trace for Concurrence to AAR Rule 11 Notify"/>
+  <Entry name="TD" value="Transit Dispute"/>
+  <Entry name="TR" value="System Initiated Trace for Concurrence to Revenue Waybill"/>
+  <Entry name="UT" value="AAR Rule 11 Dispute"/>
+</Table>

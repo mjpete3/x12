@@ -1,0 +1,577 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T152.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T152">
+  <Entry name="00" value="Delivery of Fuel into Underground Storage Tank"/>
+  <Entry name="01" value="Delivery of Fuel into Above Ground Storage Tank"/>
+  <Entry name="15" value="Speed Restricted to 15 Miles per Hour"/>
+  <Entry name="25" value="Speed Restricted to 25 Miles per Hour"/>
+  <Entry name="35" value="Speed Restricted to 35 Miles per Hour"/>
+  <Entry name="45" value="Speed Restricted to 45 Miles per Hour"/>
+  <Entry name="AA" value="No Facial Hair"/>
+  <Entry name="AB" value="Car is Air Brake Controlled"/>
+  <Entry name="AC" value="Customer Required Packing List"/>
+  <Entry name="AD" value="Customer Required PRO Number"/>
+  <Entry name="AE" value="Customer Required Appointment Number"/>
+  <Entry name="AF" value="Load on Top of Residue (Heel)"/>
+  <Entry name="AG" value="Dispose of Residue (Heel)"/>
+  <Entry name="AH" value="Humidity Sensitive Shipment"/>
+  <Entry name="AK" value="Attachment - Auto Keys"/>
+  <Entry name="AT" value="Attachment to Move with Car"/>
+  <Entry name="AV" value="Annual Volume"/>
+  <Entry name="AW" value="Attachments - Advance Only Waybill"/>
+  <Entry name="BA" value="Clearinghouse Balance"/>
+  <Entry name="BL" value="Blowable Load"/>
+  <Entry name="BN" value="If Bad Ordered Notify Shipper"/>
+  <Entry name="BW" value="Bill Shipper for Weigh Charge"/>
+  <Entry name="CC" value="Container, Consolidator Load"/>
+  <Entry name="CD" value="Attachment - Customer's Document"/>
+  <Entry name="CE" value="Cleared for Export"/>
+  <Entry name="CF" value="Container, Factory Load"/>
+  <Entry name="CH" value="Carrier"/>
+  <Entry name="CI" value="Customs Inspection"/>
+  <Entry name="CM" value="Attachment - Cotton Manifest"/>
+  <Entry name="CO" value="No Marshalling Required for Hazardous Materials"/>
+  <Entry name="CR" value="Circus Ramp Only (TOFC Van)"/>
+  <Entry name="CW" value="Bill Consignee for Weigh Charges"/>
+  <Entry name="CX" value="Top Load Only"/>
+  <Entry name="CY" value="Certification that this Shipment is for Recycling as Defined in Applicable Tariffs Containing Such Provisions"/>
+  <Entry name="DA" value="Dangerous"/>
+  <Entry name="DE" value="Demurrage"/>
+  <Entry name="DM" value="Domestic"/>
+  <Entry name="DN" value="Shipper Authorization Required for Diversion or Consignment"/>
+  <Entry name="DR" value="Drop Yard"/>
+  <Entry name="DS" value="Delivery Only on Surrender of Written Order"/>
+  <Entry name="DT" value="Dead in Tow"/>
+  <Entry name="DU" value="Do Not Uncouple"/>
+  <Entry name="DV" value="Equipment"/>
+  <Entry name="DW" value="Destination Weights Apply"/>
+  <Entry name="ED" value="Excessive Dimensions"/>
+  <Entry name="EE" value="Electronic Equipment Transfer"/>
+  <Entry name="EL" value="Environmental Control Limits"/>
+  <Entry name="EP" value="Expedite"/>
+  <Entry name="ER" value="Return Empty Via Reverse Route"/>
+  <Entry name="EV" value="Damages Incurred if Shipment Fails to Meet Vessel Loading"/>
+  <Entry name="EW" value="Excessive Weight"/>
+  <Entry name="EX" value="Explosive Flammable Gas"/>
+  <Entry name="FA" value="Face &quot;A-end&quot; to Head of Train"/>
+  <Entry name="FB" value="Face &quot;B-end&quot; to Head of Train"/>
+  <Entry name="FC" value="Moving Under &quot;For Furtherance Instructions&quot; and May Be Delivered"/>
+  <Entry name="FD" value="Full Service"/>
+  <Entry name="FG" value="Flammable Gas"/>
+  <Entry name="FL" value="Flammable"/>
+  <Entry name="FP" value="Flammable Poison Gas"/>
+  <Entry name="FR" value="Fragile - Handle with Care"/>
+  <Entry name="FS" value="Nontransit Flat Shipment"/>
+  <Entry name="GI" value="Grain Inspection"/>
+  <Entry name="HE" value="Head End Car"/>
+  <Entry name="HH" value="Household"/>
+  <Entry name="HM" value="Endorsed as Hazardous Material"/>
+  <Entry name="HO" value="Hold for Orders"/>
+  <Entry name="HP" value="Heated Prior to Loading"/>
+  <Entry name="HR" value="Home for Repair"/>
+  <Entry name="HT" value="Heat"/>
+  <Entry name="HV" value="High Value Load"/>
+  <Entry name="HW" value="High Wide Load"/>
+  <Entry name="IB" value="In-bond"/>
+  <Entry name="IC" value="Ice"/>
+  <Entry name="ID" value="Shipment to be Inspected at Destination and Disposition Instructions will be Furnished"/>
+  <Entry name="IM" value="Interoffice Move"/>
+  <Entry name="IP" value="Import Shipment"/>
+  <Entry name="IR" value="Rail Incentive Rate"/>
+  <Entry name="IS" value="Surveillance Service"/>
+  <Entry name="JS" value="Junction Settlement Account"/>
+  <Entry name="LB" value="Land Bridge (Import/Export)"/>
+  <Entry name="LC" value="Car Trip Leased to Consignee"/>
+  <Entry name="LD" value="Loading Devices"/>
+  <Entry name="LF" value="Loaded to Full Visible Capacity"/>
+  <Entry name="LN" value="Less Than Container, Consolidator Load"/>
+  <Entry name="LP" value="Protect Lowest Through Rate"/>
+  <Entry name="LR" value="Less Than Container, Factory Load"/>
+  <Entry name="LS" value="Local Service Only"/>
+  <Entry name="LT" value="Less Than Full Carload"/>
+  <Entry name="MC" value="Person in Charge of Car"/>
+  <Entry name="MF" value="Cleared for Border Crossing"/>
+  <Entry name="MP" value="Multiple Pickup"/>
+  <Entry name="MR" value="Mechanical Refrigeration"/>
+  <Entry name="NC" value="Notify Consignee Before Delivery"/>
+  <Entry name="ND" value="Do Not Divert"/>
+  <Entry name="NE" value="No Special Entrainment Required"/>
+  <Entry name="NH" value="Do Not Hump"/>
+  <Entry name="NI" value="New Equipment First Transborder Movement"/>
+  <Entry name="NP" value="Do Not Pool"/>
+  <Entry name="NS" value="Notify Shipper Before Reconsignment"/>
+  <Entry name="NT" value="Do Not Transfer Contents"/>
+  <Entry name="NW" value="In Case of Fire Do Not Use Water"/>
+  <Entry name="NX" value="Not for Export"/>
+  <Entry name="OS" value="Commodity Loaded Less Than or Equal To the Car Ordered"/>
+  <Entry name="OV" value="Overweight"/>
+  <Entry name="PB" value="Perishable in Box Car"/>
+  <Entry name="PD" value="Privately Controlled Private Equipment Subject to Demurrage"/>
+  <Entry name="PG" value="Poisonous Gas"/>
+  <Entry name="PI" value="Iced Prior to Loading"/>
+  <Entry name="PS" value="Product Protection Service"/>
+  <Entry name="PW" value="Attachment - Prepaid Waybill"/>
+  <Entry name="RA" value="Return Authorization"/>
+  <Entry name="RB" value="Render Bill for Charges"/>
+  <Entry name="RC" value="Railroad Controlled Private Equipment Subject to Demurrage"/>
+  <Entry name="RM" value="Radioactive Material"/>
+  <Entry name="RO" value="Rush Order"/>
+  <Entry name="RR" value="Rear Rider"/>
+  <Entry name="RS" value="Inspect Hourly if Car Stopped"/>
+  <Entry name="RT" value="Record for Transit"/>
+  <Entry name="SB" value="Shipper Load/Carrier Count"/>
+  <Entry name="SC" value="Shove to Rest and Cover"/>
+  <Entry name="SD" value="Subject to Special Detention Rules/Charges"/>
+  <Entry name="SE" value="Attachment - Shipper's Export Document"/>
+  <Entry name="SH" value="Shiftable Load"/>
+  <Entry name="SI" value="Ship to Cross Dock or Pool"/>
+  <Entry name="SJ" value="Ship to Furthest Destination First"/>
+  <Entry name="SK" value="Requires Shelf Couplers"/>
+  <Entry name="SM" value="Attachment - Shipper's Manifest"/>
+  <Entry name="SP" value="Attachment - Shipper's Packing Instructions"/>
+  <Entry name="SR" value="Speed Restricted"/>
+  <Entry name="ST" value="Stack Train"/>
+  <Entry name="SW" value="Stretch Wrap"/>
+  <Entry name="TA" value="Cars Temporarily Articulated"/>
+  <Entry name="TC" value="Trailer, Consolidator Load"/>
+  <Entry name="TF" value="Trailer, Factory Load"/>
+  <Entry name="TN" value="Turn Car"/>
+  <Entry name="TS" value="Transit Shipment"/>
+  <Entry name="TT" value="Team Track Delivery"/>
+  <Entry name="TV" value="Time Volume Rates Only"/>
+  <Entry name="UB" value="Unload at Bumper (Circus Ramp)"/>
+  <Entry name="UI" value="Unitized"/>
+  <Entry name="UL" value="Unload from Left Side of Car"/>
+  <Entry name="UN" value="Unload as Placarded"/>
+  <Entry name="UP" value="Unprotected Perishable"/>
+  <Entry name="UR" value="Unload from Right Side of Car"/>
+  <Entry name="US" value="Shipper Certifies Gross Weight under 240,000 pounds"/>
+  <Entry name="UT" value="Unit Train"/>
+  <Entry name="VN" value="Verification Weigh"/>
+  <Entry name="VT" value="Ventilation Instructions"/>
+  <Entry name="WB" value="Wide-Body Pickup Truck (Applies to Finished Vehicle Loading"/>
+  <Entry name="WD" value="Waived Inspection - Set Direct"/>
+  <Entry name="WE" value="Weigh Empty"/>
+  <Entry name="WH" value="Attachments - High Wide Notice"/>
+  <Entry name="WI" value="Waive Inspection"/>
+  <Entry name="WM" value="Manifest Must Accompany Waybill"/>
+  <Entry name="WO" value="Weigh to Check for Overload"/>
+  <Entry name="WW" value="Waste Water"/>
+  <Entry name="XP" value="Export"/>
+  <Entry name="XT" value="Cross Town"/>
+  <Entry name="045" value="Advanced Fee"/>
+  <Entry name="170" value="Certificate of Origin"/>
+  <Entry name="405" value="Fuel Surcharge Authorized"/>
+  <Entry name="510" value="Offshore - Alaska/Hawaii Service"/>
+  <Entry name="520" value="Oversized Premium"/>
+  <Entry name="550" value="Preparation of Air Waybill - Origin"/>
+  <Entry name="555" value="Preparation of Canadian Customs Invoice"/>
+  <Entry name="565" value="Preparation of Export Entry"/>
+  <Entry name="570" value="Preparation of Insurance Certificate"/>
+  <Entry name="585" value="Preparation of U.S. Export Documentation"/>
+  <Entry name="665" value="Saturday Delivery"/>
+  <Entry name="670" value="Saturday Pick-Up"/>
+  <Entry name="675" value="Security Signature Service"/>
+  <Entry name="761" value="Written Proof of Delivery"/>
+  <Entry name="A1M" value="Aggregate 1000"/>
+  <Entry name="A3M" value="Aggregate 3000"/>
+  <Entry name="A5M" value="Aggregate 5000"/>
+  <Entry name="AAS" value="Attendants Accompanying"/>
+  <Entry name="ADL" value="Advance Loading"/>
+  <Entry name="AFN" value="Air Craft Furnished and Not Used"/>
+  <Entry name="AGG" value="Aggregate Tender Discount"/>
+  <Entry name="AGS" value="Armed Guard Service"/>
+  <Entry name="AIB" value="Additional Injection/Blending Service"/>
+  <Entry name="ALP" value="Port Changes"/>
+  <Entry name="ALT" value="Use of Alternate Terminal"/>
+  <Entry name="AMM" value="A.M. Delivery Requirement"/>
+  <Entry name="ANC" value="Anchoring and Unanchoring"/>
+  <Entry name="APD" value="Additional Copy of Shipping Papers for Proof of Delivery"/>
+  <Entry name="APL" value="Appliance Servicing"/>
+  <Entry name="ARC" value="Air Conditioning Disconnect and Connect"/>
+  <Entry name="ARG" value="Rail Armed Guard Service"/>
+  <Entry name="ARR" value="Air Ride Tractor Service"/>
+  <Entry name="ART" value="Air Ride Truck Service"/>
+  <Entry name="ASY" value="Assembly Service Requested"/>
+  <Entry name="AUX" value="Auxiliary Service"/>
+  <Entry name="BCP" value="Bypass Consolidation Point"/>
+  <Entry name="BKA" value="Bulky Article"/>
+  <Entry name="BLK" value="Blocking and Bracing"/>
+  <Entry name="BLS" value="Blind Shipment"/>
+  <Entry name="BNS" value="Bolster Load, Do Not Switch"/>
+  <Entry name="BOX" value="Boxing Service - Dry Bulk"/>
+  <Entry name="BSC" value="Bunker Surcharge Authorized"/>
+  <Entry name="BU2" value="Bunker Adjustment - 20 Foot Container"/>
+  <Entry name="BU4" value="Bunker Adjustment - 40 Foot Container"/>
+  <Entry name="BUA" value="Bunker Adjustment"/>
+  <Entry name="CA2" value="Currency Adjustment - 20 Foot Container"/>
+  <Entry name="CA4" value="Currency Adjustment - 40 Foot Container"/>
+  <Entry name="CAR" value="ROEE Car or Pick-up Truck"/>
+  <Entry name="CBC" value="Case Label Bar Code"/>
+  <Entry name="CCB" value="Convert Commercial Bill of Lading (BOL) to Government BOL"/>
+  <Entry name="CCH" value="Certification"/>
+  <Entry name="CCS" value="Carrier Caboose"/>
+  <Entry name="CDD" value="Corrosion Additive Service"/>
+  <Entry name="CFC" value="Customs Fees - Container Level"/>
+  <Entry name="CFL" value="Customs Fees - Lift Level"/>
+  <Entry name="CGC" value="Carrier Guard Car Service"/>
+  <Entry name="CGR" value="Return Carrier Guard Car Service"/>
+  <Entry name="CGT" value="Cargo Taxes"/>
+  <Entry name="CHN" value="Chain and Binders"/>
+  <Entry name="CIP" value="Commercial Invoice Preparation"/>
+  <Entry name="CIS" value="Constant Surveillance"/>
+  <Entry name="CLN" value="Cleaning"/>
+  <Entry name="CLS" value="Class Rates Applied"/>
+  <Entry name="CMD" value="Comb. Rates over Detroit"/>
+  <Entry name="CNL" value="Consolidation and Line Haul"/>
+  <Entry name="CNS" value="Consolidation"/>
+  <Entry name="CON" value="Contract Rates Apply"/>
+  <Entry name="COR" value="Certification That the Newsprint Winding Cores Being Returned Empty Were Received Filled by Rail Freight Service"/>
+  <Entry name="COU" value="Consignee Unload"/>
+  <Entry name="COV" value="Courier, Overnight"/>
+  <Entry name="CPC" value="Copilot Service"/>
+  <Entry name="CPM" value="Customs Papers Mailed"/>
+  <Entry name="CRL" value="Container Lease"/>
+  <Entry name="CSD" value="Courier, Same Day"/>
+  <Entry name="CSP" value="Government Caboose"/>
+  <Entry name="CTL" value="Controlled Atmosphere"/>
+  <Entry name="CTM" value="Container Mounting"/>
+  <Entry name="CTR" value="Circuitous Routing"/>
+  <Entry name="CUF" value="Currency Adjustment - Break Bulk"/>
+  <Entry name="DBL" value="Double Wide Separate and Reassemble"/>
+  <Entry name="DBP" value="Delivery of Fuel From Barge to Pipeline"/>
+  <Entry name="DCS" value="DOD Constant Surveillance Service"/>
+  <Entry name="DDN" value="Dual Driver with National Agency Check"/>
+  <Entry name="DDP" value="Dual Driver Protective Service"/>
+  <Entry name="DDS" value="Direct Delivery"/>
+  <Entry name="DDZ" value="Drayage at Port of Debarkation (Rate Zone)"/>
+  <Entry name="DEL" value="Delivery Service"/>
+  <Entry name="DEP" value="Detention of Conveying Equipment and the Power Unit"/>
+  <Entry name="DET" value="Detention of Conveying Equipment Excluding the Power Unit"/>
+  <Entry name="DEZ" value="Drayage at Port of Embarkation (Rate Zone)"/>
+  <Entry name="DFD" value="Keep From Freezing Percent Differential"/>
+  <Entry name="DFM" value="410 Dromedary with Mechanical Restraining Devices"/>
+  <Entry name="DFS" value="410 Dromedary"/>
+  <Entry name="DIS" value="Distribution Service Requested"/>
+  <Entry name="DLP" value="Delivery of Fuel From Rail Tank Car to Pipeline"/>
+  <Entry name="DLR" value="Notify Shipper Immediately if Shipment is Delayed en Route"/>
+  <Entry name="DNC" value="Do Not Couple to Other Diaphragmed Cars"/>
+  <Entry name="DNF" value="Do Not Freeze"/>
+  <Entry name="DNT" value="Do Not Couple to Tank Cars"/>
+  <Entry name="DOC" value="Documentation - Special"/>
+  <Entry name="DOV" value="Container Diversion"/>
+  <Entry name="DPB" value="Delivery of Fuel From Pipeline to Barge"/>
+  <Entry name="DPD" value="Drayage at Port of Debarkation"/>
+  <Entry name="DPE" value="Drayage at Port of Embarkation"/>
+  <Entry name="DPL" value="Delivery of Fuel From Pipeline to Rail Tank Car"/>
+  <Entry name="DPT" value="Delivery of Fuel From Pipeline to Tank Truck or Trailer"/>
+  <Entry name="DPU" value="Detention With Power Units (30 minute periods)"/>
+  <Entry name="DRO" value="Drop-Off Delivery"/>
+  <Entry name="DRU" value="Drumming Service"/>
+  <Entry name="DSK" value="Do Not Couple to Double Shelf Couples"/>
+  <Entry name="DSM" value="Dromedary with Mechanical Restraining Devices"/>
+  <Entry name="DSR" value="Dromedary Service Requested"/>
+  <Entry name="DSV" value="Door Side Vanning"/>
+  <Entry name="DTB" value="Labor Associated with Detention of Conveying Equipment"/>
+  <Entry name="DTP" value="Delivery of Fuel From Tank Truck or Trailer to Pipeline"/>
+  <Entry name="DTV" value="Detention (Vehicle)"/>
+  <Entry name="DWP" value="Detention With Power Units (60 minute periods)"/>
+  <Entry name="EAX" value="Extra Axles"/>
+  <Entry name="ECR" value="Escort/Courier Service"/>
+  <Entry name="ECS" value="Empty Railcar Ordered But Not Used"/>
+  <Entry name="EDD" value="Equipment Hose at Destination"/>
+  <Entry name="EDO" value="Equipment Hose at Origin"/>
+  <Entry name="EED" value="Exclusive Use"/>
+  <Entry name="ELS" value="Extra Lights"/>
+  <Entry name="EMR" value="Emergency Service"/>
+  <Entry name="EMT" value="Empty Movement"/>
+  <Entry name="END" value="Endorsement"/>
+  <Entry name="ERS" value="Empty Return"/>
+  <Entry name="ERT" value="Satisfactory Service Standards"/>
+  <Entry name="EVC" value="Excessive Valuation Authorized"/>
+  <Entry name="EXC" value="Exclusive Use of Vehicle"/>
+  <Entry name="EXD" value="Extra Driver"/>
+  <Entry name="EXL" value="Extra Length Surcharge"/>
+  <Entry name="EXO" value="Export Preparation"/>
+  <Entry name="EXP" value="Expedited Rates Applied"/>
+  <Entry name="EXQ" value="Expedited Service"/>
+  <Entry name="EXT" value="Extra Labor"/>
+  <Entry name="EXU" value="Exclusive Use of Vehicle Damaged"/>
+  <Entry name="EXZ" value="Expand Remove and Install"/>
+  <Entry name="EZE" value="Roadway Easy Rates Applied"/>
+  <Entry name="FAK" value="Barge Freight All Kinds Service"/>
+  <Entry name="FAS" value="Firearms"/>
+  <Entry name="FCS" value="Furnishing Chassis"/>
+  <Entry name="FFC" value="Fuel Filters Furnished by Carrier"/>
+  <Entry name="FFS" value="Fuel Filters Furnished by Shipper"/>
+  <Entry name="FLS" value="Flatrack Surcharge"/>
+  <Entry name="FPT" value="For Processing in Transit"/>
+  <Entry name="FRZ" value="Accepted by Carrier at Owner's Risk of Freezing"/>
+  <Entry name="FST" value="For Storage in Transit"/>
+  <Entry name="FTR" value="Filtration Service"/>
+  <Entry name="GMS" value="Garment Surcharge"/>
+  <Entry name="GOC" value="Government-Owned Containers"/>
+  <Entry name="GSP" value="Government Guard Car"/>
+  <Entry name="GSS" value="Greater Security Service"/>
+  <Entry name="HAL" value="Hold at Location"/>
+  <Entry name="HAN" value="Handling"/>
+  <Entry name="HAZ" value="Hazardous Cargo"/>
+  <Entry name="HBB" value="Handling Freight Not Adjacent to Vehicle"/>
+  <Entry name="HBR" value="Hand Brakes at Each End Must Be Released"/>
+  <Entry name="HDH" value="Shipment Holdover for Holidays"/>
+  <Entry name="HDW" value="Shipment Holdover for Weekends"/>
+  <Entry name="HEA" value="Heat in Transit"/>
+  <Entry name="HES" value="Heat - Special"/>
+  <Entry name="HET" value="Heat With Steam"/>
+  <Entry name="HMA" value="Accessible Hazardous Material"/>
+  <Entry name="HMI" value="Inaccessible Hazardous Material"/>
+  <Entry name="HOL" value="Sunday or Holiday Pickup or Delivery"/>
+  <Entry name="HOR" value="24 Hour Availability"/>
+  <Entry name="HOS" value="Hose"/>
+  <Entry name="HOX" value="Special Hose"/>
+  <Entry name="HQT" value="High Cube Trailer Rates"/>
+  <Entry name="HRS" value="Heater or Refrigeration"/>
+  <Entry name="HTI" value="Hitch Installation"/>
+  <Entry name="HZC" value="Hazardous Materials Surcharge"/>
+  <Entry name="HZD" value="Hazardous Cargo On Deck"/>
+  <Entry name="IDC" value="Idler Car"/>
+  <Entry name="IDL" value="Inside Delivery"/>
+  <Entry name="IIH" value="Icing Inhibitor Service"/>
+  <Entry name="IMP" value="Impactographs"/>
+  <Entry name="IMS" value="Intermodal Shipment Service"/>
+  <Entry name="INT" value="Intra-Plant Move"/>
+  <Entry name="IPU" value="Inside Pickup"/>
+  <Entry name="ITS" value="Interline Transfer Service"/>
+  <Entry name="JIT" value="Just-In-Time (JIT)"/>
+  <Entry name="JLX" value="Joint Line Exception"/>
+  <Entry name="KEG" value="Certification that the Containers Being Returned Empty Were Received Filled by Rail Freight Service"/>
+  <Entry name="KMD" value="Keep Material Dry"/>
+  <Entry name="LAB" value="Labor Disturbance"/>
+  <Entry name="LAS" value="Commingling/Loss Allowance"/>
+  <Entry name="LAY" value="Layover"/>
+  <Entry name="LBL" value="Apply a Uniform Code Council/International Article Numbering Association (UCC/EAN) Serial Shipping Container Label to the Shipping Containers"/>
+  <Entry name="LBR" value="Light Bar Service"/>
+  <Entry name="LBT" value="Low Boy Trailer/Flat Bed"/>
+  <Entry name="LC2" value="Land Currency Adjustment Factor - 20 Foot Container"/>
+  <Entry name="LC4" value="Land Currency Adjustment - 40 Foot Container"/>
+  <Entry name="LCL" value="Percent Differential - Less Than Container"/>
+  <Entry name="LEC" value="Less Than Container"/>
+  <Entry name="LFD" value="Linehaul from Port of Debarkation"/>
+  <Entry name="LHS" value="Linehaul Service"/>
+  <Entry name="LIE" value="Liability of Carrier"/>
+  <Entry name="LMD" value="Liner Terms at Port of Debarkation"/>
+  <Entry name="LME" value="Liner Terms at Port of Embarkation"/>
+  <Entry name="LPD" value="Linehaul Percent Differential"/>
+  <Entry name="LTE" value="Linehaul To Port of Embarkation"/>
+  <Entry name="LTT" value="Less Than Truckload"/>
+  <Entry name="LYC" value="Layover Service"/>
+  <Entry name="MAT" value="Modified Atmosphere"/>
+  <Entry name="MEN" value="Escort Service with Overnight Subsistence"/>
+  <Entry name="MES" value="Escort"/>
+  <Entry name="MET" value="Escort Services (Telephone)"/>
+  <Entry name="MIN" value="Insulated"/>
+  <Entry name="MNS" value="Motor Surveillance Service"/>
+  <Entry name="MOT" value="Other"/>
+  <Entry name="MRF" value="Refrigerated"/>
+  <Entry name="MTE" value="Military Traffic Expediting Service"/>
+  <Entry name="MVS" value="Special Motor Surveillance"/>
+  <Entry name="NHC" value="Do not Hump or Hump into"/>
+  <Entry name="NHL" value="Do Not Use Helper Locomotive to Push"/>
+  <Entry name="NPR" value="No Placards Required"/>
+  <Entry name="NSV" value="Nose Side Vanning"/>
+  <Entry name="OAH" value="Stow Away from Heat"/>
+  <Entry name="OBL" value="Block Stowage"/>
+  <Entry name="OCA" value="Cargo Aboard"/>
+  <Entry name="OCL" value="Carrier Load and Consignee Unload"/>
+  <Entry name="OCN" value="Over Height Container"/>
+  <Entry name="OCS" value="Completing Shipment"/>
+  <Entry name="OCV" value="Delivery Verification Not Required"/>
+  <Entry name="ODI" value="Stow with Doors Facing Inward"/>
+  <Entry name="OEH" value="Exempt Commodity"/>
+  <Entry name="OFH" value="In Front of House Stowage"/>
+  <Entry name="OFU" value="Fumigation"/>
+  <Entry name="OHC" value="Harmless"/>
+  <Entry name="OIL" value="Oil Field Service"/>
+  <Entry name="ONC" value="Use No Hooks"/>
+  <Entry name="ONS" value="Not Restricted Cargo"/>
+  <Entry name="OOB" value="Cargo on Board Certification Required"/>
+  <Entry name="OOD" value="On Deck Stowage"/>
+  <Entry name="OOL" value="Carrier Load and Carrier Unload"/>
+  <Entry name="OPR" value="Perishable"/>
+  <Entry name="OPT" value="Partial Shipment"/>
+  <Entry name="ORS" value="Receipt/Issue Overtime Normal Business Hours"/>
+  <Entry name="OSB" value="Stow Below Deck"/>
+  <Entry name="OST" value="Stow Between Decks"/>
+  <Entry name="OTC" value="Temperature Control"/>
+  <Entry name="OTD" value="Time of Delivery and Signature Required"/>
+  <Entry name="OTH" value="On Top In-hatch Stowage"/>
+  <Entry name="OTO" value="On Top On-deck Stowage"/>
+  <Entry name="OTS" value="Total Shipment"/>
+  <Entry name="OUC" value="Under Container On-deck Stowage"/>
+  <Entry name="OUW" value="Below Water Line Stowage"/>
+  <Entry name="OVR" value="Overflow"/>
+  <Entry name="OWC" value="Over Width Container"/>
+  <Entry name="OWR" value="One Way Rates Applied"/>
+  <Entry name="PAJ" value="Pumping Equipment"/>
+  <Entry name="PAV" value="Pickup of Shipments on Saturday, Sunday, and/or Holidays Requiring Absolute Next Day Delivery"/>
+  <Entry name="PBC" value="Pallet Label Bar Code"/>
+  <Entry name="PDS" value="Pickup and Delivery From Storage in Transit"/>
+  <Entry name="PDY" value="Pickup and Delivery Beyond Service Area"/>
+  <Entry name="PER" value="Special Permits"/>
+  <Entry name="PFH" value="Protect From Heat"/>
+  <Entry name="PHR" value="Per Hour Rates Applied"/>
+  <Entry name="PIR" value="Pier Time"/>
+  <Entry name="PLT" value="Pallets/Skids/Platforms"/>
+  <Entry name="PMM" value="P.M. Delivery Requirement"/>
+  <Entry name="PMR" value="Per Mile Rates Apply"/>
+  <Entry name="PMS" value="Pickup of Shipments Requiring Same Day Delivery Service"/>
+  <Entry name="PMT" value="Pickup of Shipments Requiring Same Day Delivery Service and/or Delivery at a Specified Time"/>
+  <Entry name="POC" value="Piano/Organ Carry"/>
+  <Entry name="POS" value="Positioning at Origin"/>
+  <Entry name="PPD" value="Pickup and Delivery Service for Perishables"/>
+  <Entry name="PRL" value="Prelodge"/>
+  <Entry name="PRT" value="Stuffing Charge"/>
+  <Entry name="PSG" value="Protective Service Security with Armed Guards"/>
+  <Entry name="PSS" value="Protective Security Service"/>
+  <Entry name="PTS" value="Protective Tarp For Security Purposes"/>
+  <Entry name="PUC" value="Pickup"/>
+  <Entry name="PUD" value="Pickup and Delivery"/>
+  <Entry name="PUK" value="Pack and Unpack"/>
+  <Entry name="PUP" value="PUP Trailer Rates Apply"/>
+  <Entry name="PVB" value="Bonded Privately Owned Vehicle"/>
+  <Entry name="PVD" value="Detention of Privately Owned Vehicle"/>
+  <Entry name="PVI" value="Inoperable Privately Owned Vehicle"/>
+  <Entry name="PVL" value="Loading/Unloading of Privately Owned Vehicle"/>
+  <Entry name="PVP" value="Private Owned Vehicle Processing"/>
+  <Entry name="PVS" value="Stop-offs for Privately Owned Vehicle Shipment"/>
+  <Entry name="PVT" value="Privately Owned Vehicle in Truckaway Service"/>
+  <Entry name="PYS" value="Priority Service"/>
+  <Entry name="RCC" value="Reconsignment"/>
+  <Entry name="RCL" value="Redelivery"/>
+  <Entry name="RDH" value="Railhead Handling"/>
+  <Entry name="RDR" value="Roadrailer Service"/>
+  <Entry name="REP" value="Respotting"/>
+  <Entry name="RES" value="Residential Delivery"/>
+  <Entry name="RFM" value="Reefer Maintenance"/>
+  <Entry name="RIE" value="Released Value Charge in Excess of Carrier Maximum Liability"/>
+  <Entry name="RIS" value="Rail Inspection Service"/>
+  <Entry name="RLS" value="Relocation of Vehicle"/>
+  <Entry name="RMC" value="Return of Empty Container"/>
+  <Entry name="RMP" value="Return Movement of Pallet"/>
+  <Entry name="RMS" value="Rail Surveillance"/>
+  <Entry name="RPD" value="Reefer Cargo Percent Differential"/>
+  <Entry name="RRR" value="Round Trip Service"/>
+  <Entry name="RSP" value="Reshipment"/>
+  <Entry name="RSS" value="Restricted Speeds"/>
+  <Entry name="RSV" value="Reservations"/>
+  <Entry name="RWR" value="Reweight Requested"/>
+  <Entry name="SAS" value="Shipment Holdover on Weekends"/>
+  <Entry name="SAT" value="Saturday Pickup or Delivery"/>
+  <Entry name="SCC" value="Special Containers"/>
+  <Entry name="SCL" value="Shipper Load and Consignee Unload"/>
+  <Entry name="SDL" value="Split Delivery"/>
+  <Entry name="SDS" value="Special Dromedary Service"/>
+  <Entry name="SEC" value="Special Equipment Charge"/>
+  <Entry name="SED" value="Shipper Export Declaration Required"/>
+  <Entry name="SEE" value="Stairs, Elevator, Excess Carry"/>
+  <Entry name="SER" value="Service Charge Applies"/>
+  <Entry name="SEV" value="Security Escort Vehicle Service"/>
+  <Entry name="SFB" value="Single Factor Origination/Destination"/>
+  <Entry name="SFD" value="Single Factor Origination/Port of Debarkation"/>
+  <Entry name="SFE" value="Single Factor Port of Embarkation/Destination"/>
+  <Entry name="SFT" value="Special Train Movement"/>
+  <Entry name="SGL" value="Single Shipment"/>
+  <Entry name="SHH" value="Shipment Holdover on Holidays"/>
+  <Entry name="SHL" value="Shipper Load"/>
+  <Entry name="SHW" value="Shipment Holdover on Weekdays"/>
+  <Entry name="SKT" value="Skirting and Unskirting"/>
+  <Entry name="SLC" value="Shipper Load and Count"/>
+  <Entry name="SMP" value="Small Package"/>
+  <Entry name="SNM" value="Transmit a Ship Notice/Manifest Transaction Set"/>
+  <Entry name="SNS" value="Satellite Surveillance Service"/>
+  <Entry name="SNT" value="Shipment from Non-Temp Storage"/>
+  <Entry name="SOC" value="Stop-off"/>
+  <Entry name="SOL" value="Shipper Load and Carrier Unload"/>
+  <Entry name="SPA" value="Special Allowance"/>
+  <Entry name="SPC" value="Special Permit"/>
+  <Entry name="SPR" value="Spreader Service"/>
+  <Entry name="SPT" value="Spot for Storage - No Shipment"/>
+  <Entry name="SPU" value="Split Pickup"/>
+  <Entry name="SRG" value="Storage"/>
+  <Entry name="SRS" value="Surveying Routes"/>
+  <Entry name="SSC" value="Stripping, Sorting &amp; Consolidation"/>
+  <Entry name="SSN" value="Substitute Service Not to be Used"/>
+  <Entry name="SSU" value="Pole Lashing Equipment (PLE) Surcharge"/>
+  <Entry name="STA" value="Conductivity/Anti-static Additive"/>
+  <Entry name="STD" value="Stop-off at Destination"/>
+  <Entry name="STO" value="Stowage"/>
+  <Entry name="STP" value="Stop-off at Origination"/>
+  <Entry name="STR" value="Signature and Tally Record"/>
+  <Entry name="SUA" value="Spot for Unloading from A End"/>
+  <Entry name="SUB" value="Spot for Unloading from B Brake End"/>
+  <Entry name="SUP" value="Supervisor Requested"/>
+  <Entry name="SVS" value="Storage of Vehicles"/>
+  <Entry name="TDC" value="Truckload-Double Operator-Common Carrier"/>
+  <Entry name="TDP" value="Truckload-Double Operator-Padded Van"/>
+  <Entry name="TER" value="Terminal Handling Charges"/>
+  <Entry name="TLS" value="Tendered as Truckload (Truckload Service Requested)"/>
+  <Entry name="TMS" value="Multi-Tank Surveillance Service"/>
+  <Entry name="TMV" value="Tendering of Multiple Vehicles"/>
+  <Entry name="TOF" value="Trailer on Flat Car"/>
+  <Entry name="TOW" value="Motor Tow Away Service"/>
+  <Entry name="TPS" value="Third Party Service"/>
+  <Entry name="TRA" value="Tractor Only"/>
+  <Entry name="TRK" value="Truck Rates Applicable"/>
+  <Entry name="TRL" value="Trailer Preparation - Special"/>
+  <Entry name="TRM" value="Termination"/>
+  <Entry name="TRN" value="Transfer Product"/>
+  <Entry name="TRP" value="Tire Repair and Replace"/>
+  <Entry name="TRS" value="Trade Show"/>
+  <Entry name="TRT" value="Tractor and Trailer"/>
+  <Entry name="TSC" value="Truckload-Single Operator-Common Carrier"/>
+  <Entry name="TSP" value="Truckload-Single Operator-Padded Van"/>
+  <Entry name="TSS" value="Tank Surveillance Service"/>
+  <Entry name="UFC" value="Under Carriage Furnished By Carrier"/>
+  <Entry name="UPK" value="Unpacking"/>
+  <Entry name="URC" value="Unloading or Reloading"/>
+  <Entry name="UTL" value="Utilities Disconnect and Connect"/>
+  <Entry name="VAC" value="Vacuum Service"/>
+  <Entry name="VAN" value="ROEE Van Type Truck"/>
+  <Entry name="VCL" value="Van Cleaning"/>
+  <Entry name="VFN" value="Vehicles Furnished But Not Used"/>
+  <Entry name="VIS" value="Vehicles Inoperable"/>
+  <Entry name="VSO" value="Stop-off Delivery of Personal Vehicles"/>
+  <Entry name="VTS" value="Vehicles in Truckaway"/>
+  <Entry name="WBB" value="Wharfage - Breakbulk"/>
+  <Entry name="WCT" value="Wharfage - Container"/>
+  <Entry name="WDS" value="Waterfront Delivery"/>
+  <Entry name="WFG" value="Wharfage"/>
+  <Entry name="WRB" value="War Risk Crew Bonus"/>
+  <Entry name="WRI" value="War Risk Insurance"/>
+  <Entry name="WTG" value="Waiting Time Authorized"/>
+  <Entry name="WTV" value="Weight Verification"/>
+  <Entry name="ZZZ" value="Mutually Defined"/>
+</Table>

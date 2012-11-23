@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CDI.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CDI" comment="To provide information on changes or adjustments">
+  <Field name="OptionTypeCode" required="y" min="1" max="2" validation="T1552" comment="Code indicating the type of option provided"/>
+  <Field name="ConditionsIndicated" type="C045" required="y" min="0" max="inf" comment="To identify one or more conditions qualifying an option or event"/>
+  <Field name="ConvertibilityRateTypeCode" required="y" min="1" max="2" validation="T1549" comment="Code indicating the type of rate used in a convertibility option"/>
+  <Field name="StatusReasonCode" required="y" min="3" max="3" validation="T641" comment="Code indicating the status reason"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Number1" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number2" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="IndexIdentityCode" required="y" min="2" max="2" validation="T1089" comment="Code identifying the index value used for adjustable rate mortgage rate changes"/>
+  <Field name="PrimarySourceOfIndexCode" required="y" min="2" max="2" validation="T1681" comment="Code identifying the source of the index value used for adjustable rate mortgage changes"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+</Segment>

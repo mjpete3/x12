@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SRD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SRD" comment="To specify the rate base, rates, and maximum miles in the scale tables">
+  <Field name="DistanceQualifier1" min="1" max="1" validation="T295" comment="Code identifying the distance unit"/>
+  <Field name="RateBasisNumber1" min="1" max="6" comment="The (mileage) factor published for rating purposes in the appropriate tariff"/>
+  <Field name="DistanceQualifier2" required="y" min="1" max="1" validation="T295" comment="Code identifying the distance unit"/>
+  <Field name="RateBasisNumber2" required="y" min="1" max="6" comment="The (mileage) factor published for rating purposes in the appropriate tariff"/>
+  <Field name="FreightRate1" type="double" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate2" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate3" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate4" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate5" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate6" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate7" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate8" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate9" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate10" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate11" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate12" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate13" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate14" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate15" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="FreightRate16" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+</Segment>

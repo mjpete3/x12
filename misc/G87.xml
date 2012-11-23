@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G87.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G87" comment="To transmit identifying numbers, dates, and other basic data relating to the transaction set">
+  <Field name="InitiatorCode" min="1" max="1" validation="T868" comment="Code identifying initiator of the transaction"/>
+  <Field name="CreditDebitFlagCode" min="1" max="1" validation="T478" comment="Code indicating whether amount is a credit or debit"/>
+  <Field name="SuppliersDeliveryReturnNumber" min="1" max="22" comment="Identifying number assigned by the supplier to the transaction"/>
+  <Field name="IntegrityCheckValue" min="1" max="12" comment="Data element providing secure method for identifying authenticity of content. Value calculated by using CRC 16 algorithm"/>
+  <Field name="AdjustmentNumber" type="long" min="1" max="1" comment="Sequential number for adjustment beginning with 1 and incremented by 1 for each additional adjustment regardless of which party is the originator"/>
+  <Field name="ReceiverDeliveryReturnNumber" required="y" min="1" max="22" comment="Identifying number assigned by the customer to the transaction"/>
+</Segment>

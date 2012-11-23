@@ -1,0 +1,57 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T371.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T371">
+  <Entry name="AQ" value="Alternate Quantity and Unit of Measure"/>
+  <Entry name="BB" value="Balancing Quantity"/>
+  <Entry name="BD" value="Blueprint Deviation"/>
+  <Entry name="C1" value="Transportation Limitations"/>
+  <Entry name="C2" value="Source Limitations"/>
+  <Entry name="C3" value="Contract Limitations"/>
+  <Entry name="C4" value="Destination Limitations"/>
+  <Entry name="C5" value="Confirmation Limitations"/>
+  <Entry name="C6" value="Other Limitations"/>
+  <Entry name="DC" value="Date Change"/>
+  <Entry name="EV" value="Estimated Quantity"/>
+  <Entry name="FE" value="Feasibility Issue"/>
+  <Entry name="GU" value="Gross Volume per Pack and Unit of Measure"/>
+  <Entry name="GW" value="Gross Weight per Pack"/>
+  <Entry name="LD" value="Length Difference"/>
+  <Entry name="MC" value="Pack/Size Measure Difference"/>
+  <Entry name="MP" value="Minimum Order"/>
+  <Entry name="PC" value="Pack Difference"/>
+  <Entry name="PQ" value="Pack Qualifier"/>
+  <Entry name="PS" value="Product/Services ID Change"/>
+  <Entry name="QH" value="Quantity on Hand"/>
+  <Entry name="QO" value="Quantity Ordered"/>
+  <Entry name="QP" value="Quantity Based on Price Qualifier"/>
+  <Entry name="QT" value="Quantity Price Break"/>
+  <Entry name="SC" value="Size Difference"/>
+  <Entry name="UM" value="Unit of Measure Difference"/>
+  <Entry name="UP" value="Unit Price"/>
+  <Entry name="WD" value="Width Difference"/>
+  <Entry name="WO" value="Weight Qualifier/Gross Weight per Package"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,112 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1133.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1133">
+  <Entry name="1" value="Alternative Education"/>
+  <Entry name="2" value="Gifted or Talented"/>
+  <Entry name="3" value="Limited English Proficiency"/>
+  <Entry name="4" value="Migrant Program"/>
+  <Entry name="5" value="Pre-Kindergarten"/>
+  <Entry name="6" value="Remedial or Compensatory Program"/>
+  <Entry name="7" value="Vocational Program"/>
+  <Entry name="8" value="General Education Development (GED) Preparation"/>
+  <Entry name="9" value="At-Risk or Dropout Prevention Program"/>
+  <Entry name="10" value="Discipline or Disruptive Program"/>
+  <Entry name="11" value="English as a Second Language Program"/>
+  <Entry name="12" value="Bilingual Education Program"/>
+  <Entry name="13" value="Adult High School Education Program"/>
+  <Entry name="14" value="Adult Basic Education Program"/>
+  <Entry name="15" value="Title 1 or Chapter 1 Program, Elementary and Secondary Act of 1965 (ESEA) (P.L 89-10)"/>
+  <Entry name="16" value="State Compensatory Education"/>
+  <Entry name="17" value="Indian Education"/>
+  <Entry name="18" value="Transitional Bilingual Education"/>
+  <Entry name="19" value="Specially Designed Academic Instruction in English (Sheltered English)"/>
+  <Entry name="20" value="Primary Language Support (Bilingual Aide)"/>
+  <Entry name="21" value="Academic Subjects through Primary Language"/>
+  <Entry name="22" value="Early Intervention Services"/>
+  <Entry name="23" value="Related Services"/>
+  <Entry name="24" value="Individual and Small Group Instruction"/>
+  <Entry name="25" value="Tutorial Services"/>
+  <Entry name="26" value="Note-taking Assistance"/>
+  <Entry name="27" value="Test-taking Assistance"/>
+  <Entry name="28" value="Educational Therapy"/>
+  <Entry name="29" value="Study Skills Assistance"/>
+  <Entry name="30" value="Instruction in the Home or Hospital"/>
+  <Entry name="31" value="School Clothing"/>
+  <Entry name="32" value="Child Care or Center Services"/>
+  <Entry name="33" value="Language, Speech Development and Remediation"/>
+  <Entry name="34" value="Audiological Services"/>
+  <Entry name="35" value="Orientation and Mobility Instruction"/>
+  <Entry name="36" value="Adapted Physical Education"/>
+  <Entry name="37" value="Vision Services"/>
+  <Entry name="38" value="Specialized Driver Training Instruction"/>
+  <Entry name="39" value="Counseling and Guidance"/>
+  <Entry name="40" value="Psychological Services Other than Assessment and Development of the Individualized Education Program (IEP)"/>
+  <Entry name="41" value="Family Counseling and Training"/>
+  <Entry name="42" value="Health and Nursing Services"/>
+  <Entry name="43" value="Social Worker Services"/>
+  <Entry name="44" value="Specially Designed Vocational Education and Career Development"/>
+  <Entry name="45" value="Recreation Services"/>
+  <Entry name="46" value="Specialized Services for Low-incidence Disabilities such as Readers, Transcribers and Vision and Hearing Services"/>
+  <Entry name="47" value="Transportation"/>
+  <Entry name="48" value="Children's Protective Services"/>
+  <Entry name="49" value="Substance Abuse Education and Prevention"/>
+  <Entry name="50" value="Teen or Adolescent Family Planning"/>
+  <Entry name="51" value="Speech Therapy"/>
+  <Entry name="52" value="Occupational Therapy"/>
+  <Entry name="53" value="Physical Therapy"/>
+  <Entry name="54" value="Music Therapy"/>
+  <Entry name="55" value="Art Therapy"/>
+  <Entry name="56" value="Dance Therapy"/>
+  <Entry name="57" value="Interpreter for the Hearing Impaired"/>
+  <Entry name="58" value="Rehabilitation Counseling Services"/>
+  <Entry name="59" value="Orientation and Mobility Services"/>
+  <Entry name="60" value="Case Management Services"/>
+  <Entry name="61" value="Mental Health Services"/>
+  <Entry name="62" value="Vocational Rehabilitation Training and Job Placement"/>
+  <Entry name="63" value="Supported Employment Services"/>
+  <Entry name="64" value="Independent Living Services"/>
+  <Entry name="65" value="Residential Services"/>
+  <Entry name="66" value="Communication Services"/>
+  <Entry name="67" value="Technological Aids"/>
+  <Entry name="68" value="Community Recreational Services"/>
+  <Entry name="69" value="Community-based Instruction"/>
+  <Entry name="70" value="Pre-College Development Program"/>
+  <Entry name="71" value="State or Province Defined Program"/>
+  <Entry name="72" value="Local or District Defined Program"/>
+  <Entry name="73" value="Other Program"/>
+  <Entry name="74" value="Lender Provided Counseling Program"/>
+  <Entry name="75" value="Non-profit Organization Counseling Program"/>
+  <Entry name="76" value="Public or Government Agency"/>
+  <Entry name="77" value="Other Organization Program"/>
+  <Entry name="78" value="Borrower Counseling Program Not Provided"/>
+  <Entry name="79" value="Third Party Provided Counseling Program"/>
+  <Entry name="80" value="American Homeowner Education Institute Approved Counseling Program"/>
+  <Entry name="81" value="Academic or Career Counseling"/>
+  <Entry name="82" value="Employment Services for Current Students"/>
+  <Entry name="83" value="Placement Services for Completers"/>
+  <Entry name="84" value="Library"/>
+  <Entry name="85" value="Shared Library"/>
+</Table>

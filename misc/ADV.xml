@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: ADV.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="ADV" comment="To convey advertising demographic information">
+  <Field name="AgencyQualifierCode" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="ServiceCharacteristicsQualifier1" min="2" max="3" comment="Code from an industry code list qualifying the type of service characteristics"/>
+  <Field name="RangeMinimum" type="double" required="y" min="1" max="20" comment="The value specifying the minimum of the measurement range"/>
+  <Field name="RangeMaximum" type="double" required="y" min="1" max="20" comment="The value specifying the maximum of the measurement range"/>
+  <Field name="Category" required="y" min="1" max="6" comment="An alphanumeric identifier to represent the category to which the item belongs"/>
+  <Field name="ServiceCharacteristicsQualifier2" required="y" min="2" max="3" comment="Code from an industry code list qualifying the type of service characteristics"/>
+  <Field name="MeasurementValue" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+</Segment>

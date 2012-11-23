@@ -1,0 +1,208 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T546.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T546">
+  <Entry name="01" value="Accepted"/>
+  <Entry name="02" value="Approved"/>
+  <Entry name="03" value="Back Bill"/>
+  <Entry name="04" value="Conditional Issue"/>
+  <Entry name="05" value="Converted"/>
+  <Entry name="06" value="Deceased"/>
+  <Entry name="07" value="Deleted"/>
+  <Entry name="08" value="Delivery Pending"/>
+  <Entry name="09" value="Double Jeopardy"/>
+  <Entry name="10" value="Extended Term"/>
+  <Entry name="11" value="Automatic"/>
+  <Entry name="12" value="Follow Up"/>
+  <Entry name="13" value="Facultative"/>
+  <Entry name="14" value="Group Expired"/>
+  <Entry name="15" value="Incomplete"/>
+  <Entry name="16" value="In Force"/>
+  <Entry name="17" value="Facultative Placed"/>
+  <Entry name="18" value="Issued"/>
+  <Entry name="19" value="New Business"/>
+  <Entry name="20" value="Lapsed"/>
+  <Entry name="21" value="Mailed"/>
+  <Entry name="22" value="Policy Change"/>
+  <Entry name="23" value="Not Taken"/>
+  <Entry name="24" value="Offer Final"/>
+  <Entry name="25" value="Offer - First Subject To"/>
+  <Entry name="26" value="Paid"/>
+  <Entry name="27" value="Paid Up"/>
+  <Entry name="28" value="Payor Death"/>
+  <Entry name="29" value="Payor Disabled"/>
+  <Entry name="30" value="Pending"/>
+  <Entry name="31" value="Placed"/>
+  <Entry name="32" value="Postpone"/>
+  <Entry name="33" value="Premium Paying"/>
+  <Entry name="34" value="Quoted"/>
+  <Entry name="35" value="Reduced Paid up"/>
+  <Entry name="36" value="Reinstatement"/>
+  <Entry name="37" value="Reapproved"/>
+  <Entry name="38" value="Receipted"/>
+  <Entry name="39" value="Reissue"/>
+  <Entry name="40" value="Repended"/>
+  <Entry name="41" value="Satisfied"/>
+  <Entry name="42" value="Trial Application"/>
+  <Entry name="43" value="Limited"/>
+  <Entry name="44" value="Terminated"/>
+  <Entry name="45" value="Waived"/>
+  <Entry name="46" value="Contingent"/>
+  <Entry name="47" value="Sold"/>
+  <Entry name="48" value="Rented"/>
+  <Entry name="49" value="On Probation"/>
+  <Entry name="50" value="Under Contract"/>
+  <Entry name="51" value="Deposit"/>
+  <Entry name="52" value="Continue to Show"/>
+  <Entry name="53" value="Temporarily off the Market"/>
+  <Entry name="54" value="Leased"/>
+  <Entry name="55" value="Off-Market"/>
+  <Entry name="56" value="Forwarded"/>
+  <Entry name="57" value="Not Required"/>
+  <Entry name="58" value="Ordered"/>
+  <Entry name="59" value="Outstanding"/>
+  <Entry name="60" value="Pending 1035 Exchange"/>
+  <Entry name="61" value="Required"/>
+  <Entry name="62" value="Do Not Mail"/>
+  <Entry name="63" value="Do Not Rent or Exchange"/>
+  <Entry name="64" value="Filed"/>
+  <Entry name="65" value="Facultative Submission"/>
+  <Entry name="66" value="Additional Information"/>
+  <Entry name="67" value="Status Request"/>
+  <Entry name="68" value="Submission Change"/>
+  <Entry name="69" value="Rating Reduction Requested"/>
+  <Entry name="70" value="Facultative Opinion"/>
+  <Entry name="71" value="Reserve Facilities"/>
+  <Entry name="72" value="Offer Accepted"/>
+  <Entry name="73" value="Placed Other Carrier"/>
+  <Entry name="74" value="Capacity Unavailable"/>
+  <Entry name="75" value="Retained"/>
+  <Entry name="76" value="Death"/>
+  <Entry name="77" value="Disabled"/>
+  <Entry name="78" value="Divorced"/>
+  <Entry name="79" value="Free Look Canceled"/>
+  <Entry name="80" value="Processed"/>
+  <Entry name="81" value="Rejected"/>
+  <Entry name="82" value="Reversed"/>
+  <Entry name="83" value="Non-Transferable"/>
+  <Entry name="84" value="Sent for Registration Transfer to be Delivered at a Later Date"/>
+  <Entry name="85" value="In Transfer at Time of Request"/>
+  <Entry name="86" value="Temporary"/>
+  <Entry name="87" value="Legal Description Provided"/>
+  <Entry name="88" value="Legal Description Incomplete"/>
+  <Entry name="89" value="Legal Description Provided Via Paper"/>
+  <Entry name="90" value="Inactive Taxing Authority"/>
+  <Entry name="91" value="Inactive Taxing Authority - No longer collects separate city tax"/>
+  <Entry name="92" value="Inactive Taxing Authority - No longer collects separate school tax"/>
+  <Entry name="93" value="Inactive Taxing Authority - No longer collects separate special district tax"/>
+  <Entry name="94" value="Inactive Taxing Authority - No longer collects separate combined city and school tax"/>
+  <Entry name="95" value="Inactive Taxing Authority - No longer collects separate county tax"/>
+  <Entry name="96" value="Foreclosure"/>
+  <Entry name="98" value="Under Appeal"/>
+  <Entry name="99" value="Other Status"/>
+  <Entry name="AA" value="Annuitized"/>
+  <Entry name="AB" value="Arrived"/>
+  <Entry name="AC" value="Active"/>
+  <Entry name="AD" value="Applicant Denied"/>
+  <Entry name="AE" value="Multiple Delinquency"/>
+  <Entry name="AF" value="Legal Description Not Provided"/>
+  <Entry name="AG" value="Partial Payment"/>
+  <Entry name="AH" value="Deeded Property"/>
+  <Entry name="AI" value="Money In-house"/>
+  <Entry name="AJ" value="Returned Check"/>
+  <Entry name="AK" value="Bankruptcy"/>
+  <Entry name="AL" value="Current Tax Open"/>
+  <Entry name="AM" value="Current Tax Paid"/>
+  <Entry name="AN" value="Tax Delinquent"/>
+  <Entry name="AO" value="Tax Exception or Protest"/>
+  <Entry name="AP" value="Tax Paid"/>
+  <Entry name="AR" value="Assuming Company Review"/>
+  <Entry name="C1" value="Contemplated"/>
+  <Entry name="C2" value="Contained in Record"/>
+  <Entry name="C3" value="Current"/>
+  <Entry name="CC" value="Ceding Company Review - With Copy to Assuming Company"/>
+  <Entry name="CD" value="Canceled"/>
+  <Entry name="CE" value="Ceding Company Review - No Copy to Assuming Company"/>
+  <Entry name="CF" value="Canceled Free Look Cash"/>
+  <Entry name="CH" value="Changeable"/>
+  <Entry name="CI" value="Canceled by Internal Revenue Service"/>
+  <Entry name="CL" value="Closed"/>
+  <Entry name="CO" value="Complete"/>
+  <Entry name="CR" value="Closed Record"/>
+  <Entry name="CT" value="Contained in Transaction"/>
+  <Entry name="DC" value="Declined"/>
+  <Entry name="DN" value="Declined - No Response from Claimant to Correspondence"/>
+  <Entry name="DS" value="Declined/Paid Salvage Only"/>
+  <Entry name="DU" value="Duplicate"/>
+  <Entry name="EF" value="Equipment Failed"/>
+  <Entry name="ES" value="Estimated"/>
+  <Entry name="EW" value="Exchange or Transfer Withdrawn"/>
+  <Entry name="EX" value="Expired"/>
+  <Entry name="F0" value="Follow Up 10 or More"/>
+  <Entry name="F1" value="Follow Up 1"/>
+  <Entry name="F2" value="Follow Up 2"/>
+  <Entry name="F3" value="Follow Up 3"/>
+  <Entry name="F4" value="Follow Up 4"/>
+  <Entry name="F5" value="Follow Up 5"/>
+  <Entry name="F6" value="Follow Up 6"/>
+  <Entry name="F7" value="Follow Up 7"/>
+  <Entry name="F8" value="Follow Up 8"/>
+  <Entry name="F9" value="Follow Up 9"/>
+  <Entry name="FL" value="Free Look"/>
+  <Entry name="FP" value="Filed Pending Further Correspondence"/>
+  <Entry name="FT" value="Future"/>
+  <Entry name="FX" value="Faxed"/>
+  <Entry name="IA" value="Inactive"/>
+  <Entry name="LA" value="Letter of Acceptance Sent"/>
+  <Entry name="MT" value="Matured"/>
+  <Entry name="NA" value="Not in Good Order"/>
+  <Entry name="NP" value="New Premium Only"/>
+  <Entry name="NR" value="No Record Claim Receipt"/>
+  <Entry name="NT" value="No Longer Under Treatment"/>
+  <Entry name="OF" value="On File"/>
+  <Entry name="OH" value="On Hand - Under Investigation"/>
+  <Entry name="OP" value="Other Parties Obligations Have Been Excluded"/>
+  <Entry name="PD" value="Pending Death"/>
+  <Entry name="PF" value="Paid in Full"/>
+  <Entry name="PM" value="Partial Payment Received"/>
+  <Entry name="PP" value="Paid in Part/Denied in Part"/>
+  <Entry name="PR" value="Paperwork Received"/>
+  <Entry name="PW" value="Paperwork Pending"/>
+  <Entry name="RA" value="Rated"/>
+  <Entry name="RC" value="Rescinded"/>
+  <Entry name="RE" value="Received"/>
+  <Entry name="RQ" value="Request"/>
+  <Entry name="RS" value="Restricted"/>
+  <Entry name="RV" value="Revoked"/>
+  <Entry name="SP" value="Suspense"/>
+  <Entry name="SR" value="Signature Required"/>
+  <Entry name="SS" value="Suspended"/>
+  <Entry name="SU" value="Surrendered"/>
+  <Entry name="UT" value="Under Treatment"/>
+  <Entry name="WD" value="Withdrawn"/>
+  <Entry name="WI" value="Waiting Initial Payment"/>
+  <Entry name="WP" value="Waiting Period"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

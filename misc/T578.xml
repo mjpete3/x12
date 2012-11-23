@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T578.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T578">
+  <Entry name="D" value="Deadhead Locomotive or Caboose"/>
+  <Entry name="E" value="Empty"/>
+  <Entry name="L" value="Load"/>
+  <Entry name="O" value="Operating Locomotive or Caboose"/>
+  <Entry name="W" value="Revenue Empty"/>
+  <Entry name="AA" value="Empty and Available at Pool"/>
+  <Entry name="AB" value="Out Empty to Pick Up Cargo from the Shipper"/>
+  <Entry name="AC" value="Loaded en route to port of loading or baseport"/>
+  <Entry name="AG" value="Received at port of discharge or baseport"/>
+  <Entry name="AH" value="Loaded en route to consignee"/>
+  <Entry name="AI" value="Stripped and en route to pool from a consignee"/>
+  <Entry name="AJ" value="Empty Positioning"/>
+  <Entry name="AK" value="Out of Service"/>
+  <Entry name="AL" value="Empty Non-hazardous Last Contained"/>
+  <Entry name="HR" value="Held for Reload"/>
+  <Entry name="LI" value="Loaded Inbound"/>
+  <Entry name="LO" value="Loaded Outbound"/>
+  <Entry name="RJ" value="Rejected/Unusable"/>
+</Table>

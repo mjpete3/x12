@@ -1,0 +1,544 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T235.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T235">
+  <Entry name="00" value="Credit Card"/>
+  <Entry name="A1" value="Plant Equipment Number"/>
+  <Entry name="A2" value="Department of Defense Identification Code (DoDIC)"/>
+  <Entry name="A3" value="Locally Assigned Control Number"/>
+  <Entry name="A4" value="Subsistence Identification Number"/>
+  <Entry name="A5" value="Application State"/>
+  <Entry name="A6" value="Document Identification Code"/>
+  <Entry name="A7" value="Subline Item Number"/>
+  <Entry name="A8" value="Exhibit Line Item Number"/>
+  <Entry name="AA" value="Assembly Level Code, Vehicle Maintenance Reporting Standards (VMRS) 2000 Code Key 32"/>
+  <Entry name="AB" value="Assembly"/>
+  <Entry name="AC" value="Aggregation Code (Used to Consolidate Part Families)"/>
+  <Entry name="AD" value="American Dental Association Codes"/>
+  <Entry name="AE" value="Serial Item and Contribution Identifier (Defined in ANSI 239.56)"/>
+  <Entry name="AF" value="Front Axle Serial Number"/>
+  <Entry name="AG" value="Age"/>
+  <Entry name="AH" value="Billboards Commercial"/>
+  <Entry name="AI" value="Alternate ISBN"/>
+  <Entry name="AJ" value="Piggyback Commercial"/>
+  <Entry name="AK" value="Refined Product Code"/>
+  <Entry name="AL" value="Axle Serial Number"/>
+  <Entry name="AM" value="Allocation Methodology Identification Code"/>
+  <Entry name="AN" value="Asset Number"/>
+  <Entry name="AP" value="Component Level Code, Vehicle Maintenance Reporting Standards (VMRS) 2000 Code Key 33"/>
+  <Entry name="AQ" value="Appraisal Product Type"/>
+  <Entry name="AR" value="ARINC Part Number"/>
+  <Entry name="AS" value="Rear Axle Serial Number"/>
+  <Entry name="AT" value="Assortability Code"/>
+  <Entry name="AU" value="Appraisal Service"/>
+  <Entry name="AV" value="Additional Product Identification Assigned by the Manufacturer"/>
+  <Entry name="AW" value="Well Number"/>
+  <Entry name="AX" value="Assembly Lot Number"/>
+  <Entry name="AY" value="System Level Code, Vehicle Maintenance Reporting Standards (VMRS) 2000 Code Key 31"/>
+  <Entry name="AZ" value="Axle Ratio"/>
+  <Entry name="B1" value="Volume Set"/>
+  <Entry name="B2" value="Library of Congress Code"/>
+  <Entry name="B3" value="Edition Code"/>
+  <Entry name="B4" value="Binding Code"/>
+  <Entry name="B5" value="Title Code"/>
+  <Entry name="B6" value="Author Code"/>
+  <Entry name="B7" value="Publisher Code"/>
+  <Entry name="B8" value="Batch Number"/>
+  <Entry name="B9" value="Front Axle Driven Serial Number"/>
+  <Entry name="BA" value="Bale Number"/>
+  <Entry name="BB" value="Print Color Standard Reference"/>
+  <Entry name="BC" value="Supplier Brand Code"/>
+  <Entry name="BD" value="Buyer Ground Shade Identifier"/>
+  <Entry name="BE" value="Buyer's Engineering Change Level Number"/>
+  <Entry name="BF" value="Vendor Ground Shade Identifier"/>
+  <Entry name="BG" value="Ground Shade Standard Reference"/>
+  <Entry name="BH" value="Finish/Hand Standard Reference"/>
+  <Entry name="BI" value="Rear Axle Rear Non Driven Serial Number"/>
+  <Entry name="BJ" value="Application Completion Method"/>
+  <Entry name="BK" value="Backing"/>
+  <Entry name="BL" value="Brand/Label"/>
+  <Entry name="BM" value="Beam Number"/>
+  <Entry name="BN" value="Bar-Coded Serial Number"/>
+  <Entry name="BO" value="Buyers Color"/>
+  <Entry name="BP" value="Buyer's Part Number"/>
+  <Entry name="BQ" value="Benefit ID"/>
+  <Entry name="BR" value="Compensation Type Code"/>
+  <Entry name="BS" value="Bill Subgroup Code"/>
+  <Entry name="BT" value="Volume Type Identification Code"/>
+  <Entry name="BU" value="Bus Body Serial Number"/>
+  <Entry name="BV" value="Beverage Common Code"/>
+  <Entry name="BW" value="Compensation Allocation Code"/>
+  <Entry name="BX" value="Bill Credit Code"/>
+  <Entry name="BY" value="Concept Code"/>
+  <Entry name="BZ" value="Coverage Type"/>
+  <Entry name="C1" value="Channel"/>
+  <Entry name="C2" value="Connector Type"/>
+  <Entry name="C3" value="Classification"/>
+  <Entry name="C4" value="Configuration Item Identifier"/>
+  <Entry name="C5" value="Insurance Plan Description Characteristics"/>
+  <Entry name="C6" value="Asset Type"/>
+  <Entry name="C7" value="Asset Category"/>
+  <Entry name="C8" value="Fund Sub-Advisor"/>
+  <Entry name="C9" value="Dun &amp; Bradstreet Standard Product and Service Code"/>
+  <Entry name="CA" value="Case"/>
+  <Entry name="CB" value="Buyer's Catalog Number"/>
+  <Entry name="CC" value="Compatible Cut Number"/>
+  <Entry name="CD" value="Motor Vehicle-Line Designator"/>
+  <Entry name="CE" value="Class of Contract Code"/>
+  <Entry name="CF" value="Chassis Serial Number"/>
+  <Entry name="CG" value="Commodity Grouping"/>
+  <Entry name="CH" value="Country of Origin Code"/>
+  <Entry name="CI" value="Common Language Equipment Identifier (CLEI)"/>
+  <Entry name="CJ" value="Current Procedural Terminology (CPT) Codes"/>
+  <Entry name="CK" value="Candidate Oil"/>
+  <Entry name="CL" value="Color"/>
+  <Entry name="CM" value="National Retail Federation Color Code"/>
+  <Entry name="CN" value="Commodity Name"/>
+  <Entry name="CO" value="Chemical Abstract Service (CAS) Registry Number"/>
+  <Entry name="CP" value="Carry-over Part Number"/>
+  <Entry name="CQ" value="Equipment Code per COPAS standard"/>
+  <Entry name="CR" value="Contract Number"/>
+  <Entry name="CS" value="Service code per COPAS standard"/>
+  <Entry name="CT" value="Continuation (ID Number Spans Multiple Product ID Data Elements)"/>
+  <Entry name="CU" value="Cut Number"/>
+  <Entry name="CV" value="Customer Provided Equipment"/>
+  <Entry name="CW" value="Contract Activity Code"/>
+  <Entry name="CX" value="Completion Number"/>
+  <Entry name="CY" value="Customer Company Registry Number"/>
+  <Entry name="CZ" value="Country from which Procured"/>
+  <Entry name="D1" value="Underwriting Method of Direct Writer"/>
+  <Entry name="D2" value="Medical Information Bureau (MIB) Authorization"/>
+  <Entry name="D3" value="Policy Form"/>
+  <Entry name="D4" value="Plan Code"/>
+  <Entry name="D5" value="Coverage Risk Type"/>
+  <Entry name="D6" value="Medical Stop Loss Level Codes"/>
+  <Entry name="D7" value="Medical Stop Loss Coverage Codes"/>
+  <Entry name="D8" value="Medical Stop Loss Product Line Codes"/>
+  <Entry name="DA" value="Automobile Repair Product Code"/>
+  <Entry name="DD" value="Distributor"/>
+  <Entry name="DE" value="Design Number"/>
+  <Entry name="DF" value="Device Family"/>
+  <Entry name="DG" value="Discount Grouping"/>
+  <Entry name="DH" value="Transport4 Commodity Code"/>
+  <Entry name="DI" value="Deposit Item Number"/>
+  <Entry name="DL" value="Dye Lot Number"/>
+  <Entry name="DM" value="Committee for Uniform Security Identification Procedure Number (CUSIP) Number"/>
+  <Entry name="DN" value="Die Number"/>
+  <Entry name="DO" value="Dividend Use"/>
+  <Entry name="DP" value="Discontinued Part Number"/>
+  <Entry name="DQ" value="Event Type"/>
+  <Entry name="DR" value="Drawing Revision Number"/>
+  <Entry name="DS" value="Group ID"/>
+  <Entry name="DT" value="Device Type"/>
+  <Entry name="DU" value="Joint Life Type"/>
+  <Entry name="DV" value="Location Code"/>
+  <Entry name="DW" value="Nonforfeiture Option"/>
+  <Entry name="DX" value="International Classification of Diseases Clinical Modification (ICD-9-CM) - Diagnosis"/>
+  <Entry name="DY" value="Premium Rate Type"/>
+  <Entry name="DZ" value="Diagnosis Code Pointer"/>
+  <Entry name="E1" value="Contract Change Authorization Type"/>
+  <Entry name="E2" value="Fund Abbreviation"/>
+  <Entry name="E3" value="Fund Type"/>
+  <Entry name="E4" value="Related Policy Identification"/>
+  <Entry name="E5" value="Tax Code"/>
+  <Entry name="E6" value="Contract Transfer Reason Code"/>
+  <Entry name="EA" value="EAN-99 In-store Coupon Code"/>
+  <Entry name="EB" value="Fuel Tank Serial Number"/>
+  <Entry name="EC" value="Engineering Change Level"/>
+  <Entry name="ED" value="Engine Displacement Identification"/>
+  <Entry name="EE" value="Premium Use"/>
+  <Entry name="EF" value="Exhibit Identifier"/>
+  <Entry name="EG" value="Purpose of Insurance"/>
+  <Entry name="EH" value="Sales Presentation ID"/>
+  <Entry name="EI" value="Expense Identifier"/>
+  <Entry name="EJ" value="Service Feature ID"/>
+  <Entry name="EK" value="Settlement/Payout Option"/>
+  <Entry name="EL" value="Buyer's Subline Item Number"/>
+  <Entry name="EM" value="Equipment Identification Number"/>
+  <Entry name="EN" value="EAN/UCC - 13"/>
+  <Entry name="EO" value="EAN/UCC - 8"/>
+  <Entry name="EP" value="Buyer's End Product Number"/>
+  <Entry name="EQ" value="Equipment Type"/>
+  <Entry name="ER" value="Jurisdiction Specific Procedure and Supply Codes"/>
+  <Entry name="ES" value="Engine Serial Number"/>
+  <Entry name="EU" value="Skill Code"/>
+  <Entry name="EX" value="Exchanged Part, Assembly or Product"/>
+  <Entry name="EZ" value="Shift Worked"/>
+  <Entry name="F1" value="Catalog Number"/>
+  <Entry name="F2" value="Technical Order Number"/>
+  <Entry name="F3" value="Technical Manual Number"/>
+  <Entry name="F4" value="Series Identifier"/>
+  <Entry name="F5" value="Obligation Authority Number"/>
+  <Entry name="F6" value="First Prior Identifier"/>
+  <Entry name="F7" value="End-Item Description"/>
+  <Entry name="F8" value="Next Higher Used Assembly"/>
+  <Entry name="F9" value="Former Publisher"/>
+  <Entry name="FA" value="Failed Subassembly Serial Number"/>
+  <Entry name="FB" value="Form Number"/>
+  <Entry name="FC" value="Coupon Family Code"/>
+  <Entry name="FD" value="Fund"/>
+  <Entry name="FE" value="Feature"/>
+  <Entry name="FF" value="Fifth Wheel Serial Number"/>
+  <Entry name="FG" value="Fund Manager"/>
+  <Entry name="FH" value="Freddie Mac Affordable Lending Product Code"/>
+  <Entry name="FI" value="Finish Number"/>
+  <Entry name="FJ" value="Fannie Mae Affordable Lending Product Code"/>
+  <Entry name="FK" value="Freddie Mac Project Condominium Classification Code"/>
+  <Entry name="FL" value="Finish Lot Number"/>
+  <Entry name="FM" value="Failed Subassembly Model Number"/>
+  <Entry name="FN" value="Final Test Lot Number"/>
+  <Entry name="FP" value="Fabric Pieces Per Roll"/>
+  <Entry name="FQ" value="Fannie Mae Project Condominium Classification Code"/>
+  <Entry name="FR" value="Front Axle, Rear"/>
+  <Entry name="FS" value="National Stock Number"/>
+  <Entry name="FT" value="Federal Supply Classification"/>
+  <Entry name="FU" value="National Alcohol Beverage Control Association (NABCA) Product Code"/>
+  <Entry name="FV" value="Drug Identification Number (DIN)"/>
+  <Entry name="FW" value="New Microcode"/>
+  <Entry name="GA" value="Gathering"/>
+  <Entry name="GC" value="Grade Code"/>
+  <Entry name="GD" value="Grain Direction"/>
+  <Entry name="GE" value="Generic Name Description"/>
+  <Entry name="GI" value="Graphics Industry Bar Code (GIBC)"/>
+  <Entry name="GK" value="Glider Kit"/>
+  <Entry name="GN" value="Grade Name"/>
+  <Entry name="GQ" value="Group Qualifier Code"/>
+  <Entry name="GR" value="Gear Ratio"/>
+  <Entry name="GS" value="General Specification Number"/>
+  <Entry name="GU" value="Volume Usage Identification Code"/>
+  <Entry name="HC" value="Health Care Financing Administration Common Procedural Coding System (HCPCS) Codes"/>
+  <Entry name="HD" value="International Harmonized Commodity Code"/>
+  <Entry name="HI" value="HIBC (Health Care Industry Bar Code) Supplier Labeling Standard Primary Data Message"/>
+  <Entry name="HN" value="Heat Number"/>
+  <Entry name="HP" value="Health Insurance Prospective Payment System (HIPPS) Skilled Nursing Facility Rate Code"/>
+  <Entry name="IA" value="Information Media Type"/>
+  <Entry name="IB" value="International Standard Book Number (ISBN)"/>
+  <Entry name="IC" value="Interior Color Number"/>
+  <Entry name="ID" value="International Classification of Diseases Clinical Modification (ICD-9-CM) - Procedure"/>
+  <Entry name="IE" value="Insurer's Fund Code"/>
+  <Entry name="IF" value="Investment Fund Type"/>
+  <Entry name="IG" value="Ignition Key Number"/>
+  <Entry name="II" value="Commodity Item Identification"/>
+  <Entry name="IM" value="Imprint (Trademark Code of Subsidiary)"/>
+  <Entry name="IN" value="Buyer's Item Number"/>
+  <Entry name="IQ" value="IRS Qualification Code"/>
+  <Entry name="IR" value="Ingredient"/>
+  <Entry name="IS" value="International Standard Serial Number (ISSN)"/>
+  <Entry name="IT" value="Buyer's Style Number"/>
+  <Entry name="IV" value="Home Infusion EDI Coalition (HIEC) Product/Service Code"/>
+  <Entry name="IW" value="Interchangeability Code"/>
+  <Entry name="IZ" value="Buyer's Size Code"/>
+  <Entry name="JA" value="Anniversary"/>
+  <Entry name="JB" value="Commission Identifier"/>
+  <Entry name="JC" value="Commission Year"/>
+  <Entry name="JD" value="Contribution Year"/>
+  <Entry name="JN" value="Job Number"/>
+  <Entry name="JP" value="Package Type Code"/>
+  <Entry name="JS" value="Job Sequence Number"/>
+  <Entry name="KA" value="Engineering Data List"/>
+  <Entry name="KB" value="Data Category Code"/>
+  <Entry name="KD" value="Replacement National Stock Number"/>
+  <Entry name="KE" value="Military Standard"/>
+  <Entry name="KF" value="Item Type Number"/>
+  <Entry name="KG" value="Time Compliant Technical Order"/>
+  <Entry name="KI" value="Cognizance Symbol"/>
+  <Entry name="KJ" value="Material Control Code"/>
+  <Entry name="KK" value="Special Material Identification Code"/>
+  <Entry name="KL" value="Item Management Code"/>
+  <Entry name="KM" value="Shelf-Life Code"/>
+  <Entry name="KN" value="Shelf-Life Action Code"/>
+  <Entry name="KP" value="Kanban Plan Number"/>
+  <Entry name="L1" value="Program Level"/>
+  <Entry name="L2" value="Topic Level"/>
+  <Entry name="L3" value="Subtopic Level"/>
+  <Entry name="L4" value="Life/Annuity Service Features"/>
+  <Entry name="L5" value="Line of Authority"/>
+  <Entry name="L6" value="Lube, Synthetic"/>
+  <Entry name="LA" value="Labor Group"/>
+  <Entry name="LB" value="Logical Observation Identifier Names and Codes (LOINC) Codes"/>
+  <Entry name="LC" value="Laboratory Test Condition Code"/>
+  <Entry name="LD" value="SNOMED, Systematized Nomenclature of Medicine"/>
+  <Entry name="LG" value="Lift Gate Serial Number"/>
+  <Entry name="LM" value="Lottery Game Number"/>
+  <Entry name="LN" value="Lottery Pack/Book Number"/>
+  <Entry name="LP" value="Life/Annuity Product Code"/>
+  <Entry name="LR" value="Lease Number"/>
+  <Entry name="LS" value="Load Sequence"/>
+  <Entry name="LT" value="Lot Number"/>
+  <Entry name="LU" value="Lot Pricing Unit Number"/>
+  <Entry name="MA" value="Machine Number"/>
+  <Entry name="MB" value="Measurement Type Code"/>
+  <Entry name="MC" value="Mortgage Credit Data Order Type"/>
+  <Entry name="MD" value="Method of Delivery Code"/>
+  <Entry name="ME" value="Market Program Code"/>
+  <Entry name="MF" value="Manufacturer"/>
+  <Entry name="MG" value="Manufacturer's Part Number"/>
+  <Entry name="MH" value="Medication Code"/>
+  <Entry name="MI" value="Mortgage Insurance Product Code or Number"/>
+  <Entry name="MJ" value="Manual Transmission Serial Number"/>
+  <Entry name="MK" value="Front Axle Non Driven Serial Number"/>
+  <Entry name="MM" value="Motor Equipment Manufacturing Association (MEMA) Product Type Code"/>
+  <Entry name="MN" value="Model Number"/>
+  <Entry name="MO" value="Movement Type Code"/>
+  <Entry name="MP" value="Mortgage Product Code"/>
+  <Entry name="MQ" value="Mortgage Underwriting Type"/>
+  <Entry name="MR" value="Maintenance Index Page Reference Number"/>
+  <Entry name="MS" value="Military Specification (MILSPEC) Number"/>
+  <Entry name="MT" value="Major Product/Material/Machine Type"/>
+  <Entry name="MU" value="Authorized Parts List Number"/>
+  <Entry name="MV" value="Equipment Location"/>
+  <Entry name="MW" value="Equipment Hierarchical Sequence Identifier"/>
+  <Entry name="MX" value="Repair Induction Identifier"/>
+  <Entry name="N1" value="National Drug Code in 4-4-2 Format"/>
+  <Entry name="N2" value="National Drug Code in 5-3-2 Format"/>
+  <Entry name="N3" value="National Drug Code in 5-4-1 Format"/>
+  <Entry name="N4" value="National Drug Code in 5-4-2 Format"/>
+  <Entry name="N5" value="National Health Related Item Code in 5-5 Format"/>
+  <Entry name="N6" value="National Health Related Item Code in 4-6 Format"/>
+  <Entry name="NC" value="Treasury Management Association"/>
+  <Entry name="ND" value="National Drug Code (NDC)"/>
+  <Entry name="NE" value="Yarn Count - English"/>
+  <Entry name="NG" value="National Glass Association (NAGS) Number"/>
+  <Entry name="NH" value="National Health Related Item Code"/>
+  <Entry name="NM" value="Yarn Count - Metric"/>
+  <Entry name="NR" value="Non-resaleable item (excluding deposit) number"/>
+  <Entry name="NU" value="National Uniform Billing Committee (NUBC) UB92 Codes"/>
+  <Entry name="NW" value="New Replacement Part or Assembly Defective"/>
+  <Entry name="NZ" value="Combined NCCMA/Bank Service Code"/>
+  <Entry name="O0" value="Old UCC-12"/>
+  <Entry name="O7" value="Old EAN/UCC-13"/>
+  <Entry name="O8" value="Old EAN/UCC-14"/>
+  <Entry name="O9" value="Old Vendor's (Seller's) Item Number"/>
+  <Entry name="OA" value="Old U.P.C./EAN Case Code"/>
+  <Entry name="OB" value="Old U.P.C./EAN Multipack Code"/>
+  <Entry name="OC" value="Old U.P.C./EAN Consumer Package Code"/>
+  <Entry name="OD" value="Old U.P.C./EAN Module Code"/>
+  <Entry name="OE" value="Original Equipment Number"/>
+  <Entry name="OF" value="Old Common Language Equipment Identifier (CLEI) Code"/>
+  <Entry name="OG" value="Old Microcode"/>
+  <Entry name="OH" value="Opposite-Hand Part Number"/>
+  <Entry name="OI" value="Optical Industry Product Code"/>
+  <Entry name="OL" value="Optical Cable Code"/>
+  <Entry name="ON" value="Customer Order Number"/>
+  <Entry name="OO" value="Outside Production Operation Sheet Number"/>
+  <Entry name="OP" value="Obsolete Part Number"/>
+  <Entry name="OR" value="Offer Number"/>
+  <Entry name="OT" value="Internal Number"/>
+  <Entry name="P1" value="Petroleum Accountants Society of Canada Operating and Maintenance Code - Goods and Services Tax Not Applicable"/>
+  <Entry name="P2" value="Petroleum Accountants Society of Canada Capital Expenditure Code - Goods and Services Tax Not Applicable"/>
+  <Entry name="P3" value="Petroleum Accountants Society of Canada Tubular Code"/>
+  <Entry name="P4" value="Petroleum Accountants Society of Canada Non-Tubular Code"/>
+  <Entry name="P5" value="Material Discharge Number"/>
+  <Entry name="P6" value="Pump, Fire"/>
+  <Entry name="P7" value="Previous Carrier"/>
+  <Entry name="P8" value="Retail Price Look Up Number (PLU)"/>
+  <Entry name="P9" value="Ply"/>
+  <Entry name="PA" value="Pattern Number"/>
+  <Entry name="PB" value="Petroleum Accountants Society of Canada Operating and Maintenance Code - Goods and Services Tax Forwarded"/>
+  <Entry name="PC" value="Prime Contractor Part Number"/>
+  <Entry name="PD" value="Part Number Description"/>
+  <Entry name="PE" value="Pieces in Roll"/>
+  <Entry name="PF" value="Petroleum Accountants Society of Canada Capital Expenditure Code - Goods and Services Tax Forwarded"/>
+  <Entry name="PG" value="Packaging Specification Number"/>
+  <Entry name="PH" value="Property and Casualty Service Code"/>
+  <Entry name="PI" value="Purchaser's Item Code"/>
+  <Entry name="PJ" value="Product Date Code (A code indicating the period during which a product was manufactured.)"/>
+  <Entry name="PK" value="Packaging Drawing"/>
+  <Entry name="PL" value="Purchaser's Order Line Number"/>
+  <Entry name="PM" value="Number of Positions on Machine"/>
+  <Entry name="PN" value="Company Part Number"/>
+  <Entry name="PO" value="Purchase Order Number"/>
+  <Entry name="PP" value="Air Transportation Association Proprietary Rights Code"/>
+  <Entry name="PQ" value="Product ID Attribute Code"/>
+  <Entry name="PR" value="Process Number"/>
+  <Entry name="PS" value="Position"/>
+  <Entry name="PT" value="Print or Drawing"/>
+  <Entry name="PU" value="Part Reference Number"/>
+  <Entry name="PV" value="Advertising Package Identification Code"/>
+  <Entry name="PW" value="Part Drawing"/>
+  <Entry name="PX" value="Secondary Ply"/>
+  <Entry name="PY" value="Operator Assigned Property Identification"/>
+  <Entry name="PZ" value="Product Change Notice Number"/>
+  <Entry name="R0" value="Replacement UCC-12"/>
+  <Entry name="R1" value="Replacement Subassembly Model Number"/>
+  <Entry name="R2" value="Replacement Subassembly Serial Number"/>
+  <Entry name="R3" value="Rear Axle, Middle"/>
+  <Entry name="R4" value="Rear Axle, Pusher"/>
+  <Entry name="R5" value="Rear Axle, Tag"/>
+  <Entry name="R6" value="Rear Axle, Extended Tag"/>
+  <Entry name="R7" value="Replacement EAN/UCC-13"/>
+  <Entry name="R8" value="Replacement EAN/UCC-14"/>
+  <Entry name="R9" value="Replacement Vendor's (Seller's) Item Number"/>
+  <Entry name="RA" value="Return Code"/>
+  <Entry name="RB" value="National Uniform Billing Committee (NUBC) UB82 Codes"/>
+  <Entry name="RC" value="Returnable Container Number"/>
+  <Entry name="RD" value="Reel Number"/>
+  <Entry name="RE" value="Reefer Serial Number"/>
+  <Entry name="RF" value="Repair From Product Code"/>
+  <Entry name="RG" value="Reference Oil"/>
+  <Entry name="RH" value="Radiator Serial Number"/>
+  <Entry name="RI" value="Rear Axle Front Rear Driven Serial Number"/>
+  <Entry name="RJ" value="Rear Axle Rear Driven Serial Number"/>
+  <Entry name="RK" value="Rack Number"/>
+  <Entry name="RL" value="Rate Detail Card"/>
+  <Entry name="RM" value="Related Model Number"/>
+  <Entry name="RN" value="Release Number"/>
+  <Entry name="RO" value="Roll Number"/>
+  <Entry name="RP" value="Replaced Part Number"/>
+  <Entry name="RQ" value="Automobile Rental Charge Item Code"/>
+  <Entry name="RR" value="Replacement Product Number"/>
+  <Entry name="RS" value="Set Number"/>
+  <Entry name="RT" value="Reel Type"/>
+  <Entry name="RU" value="Run Number"/>
+  <Entry name="RV" value="Repair Tag Number"/>
+  <Entry name="RW" value="Relative Value Units"/>
+  <Entry name="RY" value="Record Keeping or Model Year"/>
+  <Entry name="RZ" value="Related Model Type"/>
+  <Entry name="S1" value="Shipper's Item Number"/>
+  <Entry name="S2" value="Second Prior Identifier"/>
+  <Entry name="S3" value="Phase"/>
+  <Entry name="S4" value="Laboratory Sample Identification"/>
+  <Entry name="S5" value="State Sample Identification"/>
+  <Entry name="S6" value="Previous Sample Identification"/>
+  <Entry name="S7" value="Source of Deposit Code"/>
+  <Entry name="S8" value="Source of Lead Code"/>
+  <Entry name="SA" value="Schematic Diagram Reference Number"/>
+  <Entry name="SB" value="Submission Number"/>
+  <Entry name="SC" value="Seller's Date Code"/>
+  <Entry name="SD" value="Supplier Company Registry Number"/>
+  <Entry name="SE" value="Section Print Number"/>
+  <Entry name="SF" value="Surface Finish"/>
+  <Entry name="SG" value="Seat Serial Number"/>
+  <Entry name="SH" value="Service Requested"/>
+  <Entry name="SI" value="Standard Industrial Classification Code"/>
+  <Entry name="SJ" value="Religious Retail Non-book Item"/>
+  <Entry name="SK" value="Stock Keeping Unit (SKU)"/>
+  <Entry name="SL" value="Seller's Lot Number"/>
+  <Entry name="SM" value="National Retail Federation Size Code"/>
+  <Entry name="SN" value="Serial Number"/>
+  <Entry name="SO" value="System Identifier"/>
+  <Entry name="SP" value="Superseded Purchase Order Number"/>
+  <Entry name="SQ" value="Roll Sequence Number"/>
+  <Entry name="SR" value="Substitute Product Number"/>
+  <Entry name="SS" value="Superseded Part Number"/>
+  <Entry name="ST" value="Style Number"/>
+  <Entry name="SU" value="Side Up/Side Down"/>
+  <Entry name="SV" value="Service Rendered"/>
+  <Entry name="SW" value="Stock Number"/>
+  <Entry name="SX" value="Sleeper Box Key Number"/>
+  <Entry name="SY" value="Sleeper Box Serial Number"/>
+  <Entry name="SZ" value="Vendor Alphanumeric Size Code"/>
+  <Entry name="T2" value="Tex"/>
+  <Entry name="T3" value="Third Prior Identifier"/>
+  <Entry name="TA" value="Pipeline Transaction Code"/>
+  <Entry name="TB" value="Treasury Management Association Service Code and Bank Service Code"/>
+  <Entry name="TC" value="Telecommunications Circuit ID"/>
+  <Entry name="TD" value="Treatment Codes"/>
+  <Entry name="TE" value="Treasury Management Association Service Code"/>
+  <Entry name="TF" value="The Air Cargo Tariff (TACT) Commodity Code"/>
+  <Entry name="TG" value="Automatic Transmission Serial Number"/>
+  <Entry name="TH" value="Transfer Case Serial Number"/>
+  <Entry name="TI" value="Trade In Identifier"/>
+  <Entry name="TJ" value="Auxiliary Transmission Serial Number"/>
+  <Entry name="TK" value="Transmission, Auxillary"/>
+  <Entry name="TM" value="Telephone Industry Manufacturer Code"/>
+  <Entry name="TN" value="Railroad-Owned Unit Train Number"/>
+  <Entry name="TP" value="Product Type Code"/>
+  <Entry name="TR" value="Truck Body Serial Number"/>
+  <Entry name="TS" value="Transmission Serial Number"/>
+  <Entry name="TT" value="Type Selvage"/>
+  <Entry name="TU" value="Tested Material Identification Number"/>
+  <Entry name="TV" value="Line of Business"/>
+  <Entry name="TW" value="Program Code"/>
+  <Entry name="TX" value="Federal Aviation Administration (FAA) Service Bulletin Number"/>
+  <Entry name="TY" value="Telecommunications Industry Service Code"/>
+  <Entry name="TZ" value="Program Description Identifier"/>
+  <Entry name="U2" value="U.P.C. Shipping Container Code (1-2-5-5)"/>
+  <Entry name="U3" value="United Nations Common Coding System (UNCCS)"/>
+  <Entry name="U5" value="Broker Price Opinion Service"/>
+  <Entry name="U6" value="Real Estate Property Information Service"/>
+  <Entry name="UA" value="U.P.C./EAN Case Code (2-5-5)"/>
+  <Entry name="UB" value="U.P.C./EAN Multipack Code"/>
+  <Entry name="UC" value="U.P.C. Suffix (Defines Packing Variations)"/>
+  <Entry name="UD" value="U.P.C./EAN Consumer Package Code (2-5-5)"/>
+  <Entry name="UE" value="U.P.C./EAN Module Code (2-5-5)"/>
+  <Entry name="UF" value="User-Defined Shipping Container Identifier"/>
+  <Entry name="UG" value="Drug U.P.C. Consumer Package Code (1-4-6-1)"/>
+  <Entry name="UH" value="Drug U.P.C. Shipping Container Code (1-2-4-6-1)"/>
+  <Entry name="UI" value="U.P.C. Consumer Package Code (1-5-5)"/>
+  <Entry name="UJ" value="U.P.C./EAN Coupon Code (2-5-5)"/>
+  <Entry name="UK" value="EAN/UCC - 14"/>
+  <Entry name="UL" value="U.P.C. Coupon Code (1-5-5-1)"/>
+  <Entry name="UM" value="Universal Vendor Marking, Short Code (UVM; U Line)"/>
+  <Entry name="UN" value="U.P.C. Case Code Number (1-1-5-5)"/>
+  <Entry name="UO" value="SSCC-18 and Application Identifier"/>
+  <Entry name="UP" value="UCC - 12"/>
+  <Entry name="UQ" value="United Nations (UN) Number (Dangerous Goods)"/>
+  <Entry name="UR" value="UCC/EAN-128 Coupon Extended Code"/>
+  <Entry name="US" value="Uniform Stock Symbol System Code Number"/>
+  <Entry name="UT" value="Company-Owned Unit Train Number"/>
+  <Entry name="UV" value="Universal Vendor Marking, Long Code (UVM; R,P,M Lines)"/>
+  <Entry name="UX" value="Universal Product Number"/>
+  <Entry name="VA" value="Vendor's Style Number"/>
+  <Entry name="VB" value="Vendor's Engineering Change Level Number"/>
+  <Entry name="VC" value="Vendor's (Seller's) Catalog Number"/>
+  <Entry name="VE" value="Vendor Color"/>
+  <Entry name="VI" value="Vary Item Product Number"/>
+  <Entry name="VM" value="Vehicle Maintenance Reporting Standards"/>
+  <Entry name="VN" value="Vendor's (Seller's) Item Number"/>
+  <Entry name="VO" value="Vendor's Order Number"/>
+  <Entry name="VP" value="Vendor's (Seller's) Part Number"/>
+  <Entry name="VS" value="Vendor's Supplemental Item Number"/>
+  <Entry name="VT" value="Vintage"/>
+  <Entry name="VU" value="Vendor's Basic Unit Number"/>
+  <Entry name="VV" value="Motor Vehicle ID Number"/>
+  <Entry name="VX" value="Vendor's Specification Number"/>
+  <Entry name="W1" value="End Item Serial Number"/>
+  <Entry name="W2" value="Work Unit Number"/>
+  <Entry name="W5" value="Reclamation Process"/>
+  <Entry name="W6" value="Woolen Run"/>
+  <Entry name="W7" value="Woolen Cut"/>
+  <Entry name="WA" value="Random Weight Aggregation Code"/>
+  <Entry name="WB" value="Car Class Code"/>
+  <Entry name="WC" value="World Code"/>
+  <Entry name="WD" value="Airline Flight Code"/>
+  <Entry name="WE" value="Fare Basis Code"/>
+  <Entry name="WF" value="Service Class Code"/>
+  <Entry name="WG" value="Stop Over Code"/>
+  <Entry name="WJ" value="Telecom Service Type"/>
+  <Entry name="WK" value="Complimentary, Alternative, or Holistic Procedure Codes"/>
+  <Entry name="WL" value="Wafer Lot Identifier"/>
+  <Entry name="WR" value="Yarn Count Worsted"/>
+  <Entry name="WS" value="Wheel Chair Lift Serial Number"/>
+  <Entry name="XA" value="Preferred Part Number"/>
+  <Entry name="XC" value="Expendable Container Identification"/>
+  <Entry name="XP" value="Preferred National Stock Number"/>
+  <Entry name="XQ" value="Preferred Manufacturer"/>
+  <Entry name="XZ" value="Contractor Establishment Code"/>
+  <Entry name="YP" value="Publication Number"/>
+  <Entry name="ZB" value="Commercial and Government Entity (CAGE) Code"/>
+  <Entry name="ZR" value="Service Control Identification"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

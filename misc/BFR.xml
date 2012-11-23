@@ -1,0 +1,40 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BFR.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BFR" comment="To indicate the beginning of a planning schedule transaction set; whether a ship or delivery based forecast; and related forecast envelope dates">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReleaseNumber" required="y" min="1" max="30" comment="Number identifying a release against a Purchase Order previously placed by the parties involved in the transaction"/>
+  <Field name="ScheduleTypeQualifier" min="2" max="2" validation="T675" comment="Code identifying the type of dates used when defining a shipping or delivery time in a schedule or forecast"/>
+  <Field name="ScheduleQuantityQualifier" min="1" max="1" validation="T676" comment="Code identifying the type of quantities used when defining a schedule or forecast"/>
+  <Field name="Date1" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date3" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date4" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ContractNumber" required="y" min="1" max="30" comment="Contract number"/>
+  <Field name="PurchaseOrderNumber" required="y" min="1" max="22" comment="Identifying number for Purchase Order assigned by the orderer/purchaser"/>
+  <Field name="PlanningScheduleTypeCode" required="y" min="2" max="2" validation="T783" comment="Code identifying type of planning schedule used"/>
+  <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+</Segment>

@@ -1,0 +1,78 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T623.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T623">
+  <Entry name="01" value="Equivalent to ISO P01"/>
+  <Entry name="02" value="Equivalent to ISO P02"/>
+  <Entry name="03" value="Equivalent to ISO P03"/>
+  <Entry name="04" value="Equivalent to ISO P04"/>
+  <Entry name="05" value="Equivalent to ISO P05"/>
+  <Entry name="06" value="Equivalent to ISO P06"/>
+  <Entry name="07" value="Equivalent to ISO P07"/>
+  <Entry name="08" value="Equivalent to ISO P08"/>
+  <Entry name="09" value="Equivalent to ISO P09"/>
+  <Entry name="10" value="Equivalent to ISO P10"/>
+  <Entry name="11" value="Equivalent to ISO P11"/>
+  <Entry name="12" value="Equivalent to ISO P12"/>
+  <Entry name="13" value="Equivalent to ISO M12"/>
+  <Entry name="14" value="Equivalent to ISO M11"/>
+  <Entry name="15" value="Equivalent to ISO M10"/>
+  <Entry name="16" value="Equivalent to ISO M09"/>
+  <Entry name="17" value="Equivalent to ISO M08"/>
+  <Entry name="18" value="Equivalent to ISO M07"/>
+  <Entry name="19" value="Equivalent to ISO M06"/>
+  <Entry name="20" value="Equivalent to ISO M05"/>
+  <Entry name="21" value="Equivalent to ISO M04"/>
+  <Entry name="22" value="Equivalent to ISO M03"/>
+  <Entry name="23" value="Equivalent to ISO M02"/>
+  <Entry name="24" value="Equivalent to ISO M01"/>
+  <Entry name="AD" value="Alaska Daylight Time"/>
+  <Entry name="AS" value="Alaska Standard Time"/>
+  <Entry name="AT" value="Alaska Time"/>
+  <Entry name="CD" value="Central Daylight Time"/>
+  <Entry name="CS" value="Central Standard Time"/>
+  <Entry name="CT" value="Central Time"/>
+  <Entry name="ED" value="Eastern Daylight Time"/>
+  <Entry name="ES" value="Eastern Standard Time"/>
+  <Entry name="ET" value="Eastern Time"/>
+  <Entry name="GM" value="Greenwich Mean Time"/>
+  <Entry name="HD" value="Hawaii-Aleutian Daylight Time"/>
+  <Entry name="HS" value="Hawaii-Aleutian Standard Time"/>
+  <Entry name="HT" value="Hawaii-Aleutian Time"/>
+  <Entry name="LT" value="Local Time"/>
+  <Entry name="MD" value="Mountain Daylight Time"/>
+  <Entry name="MS" value="Mountain Standard Time"/>
+  <Entry name="MT" value="Mountain Time"/>
+  <Entry name="ND" value="Newfoundland Daylight Time"/>
+  <Entry name="NS" value="Newfoundland Standard Time"/>
+  <Entry name="NT" value="Newfoundland Time"/>
+  <Entry name="PD" value="Pacific Daylight Time"/>
+  <Entry name="PS" value="Pacific Standard Time"/>
+  <Entry name="PT" value="Pacific Time"/>
+  <Entry name="TD" value="Atlantic Daylight Time"/>
+  <Entry name="TS" value="Atlantic Standard Time"/>
+  <Entry name="TT" value="Atlantic Time"/>
+  <Entry name="UT" value="Universal Time Coordinate"/>
+</Table>

@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SUM.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SUM" comment="To provide summary information for an academic session, a postsecondary degree, or for the entire student academic record">
+  <Field name="AcademicCreditTypeCode" required="y" min="1" max="1" validation="T1141" comment="Code indicating the type of credit used (awarded) by the institution"/>
+  <Field name="AcademicGradeOrCourseLevelCode" required="y" min="1" max="2" validation="T1142" comment="Code indicating the level or type or both, of work which is reflected in the grade average and the credit hours or the credential assessment"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity3" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="RangeMinimum" type="double" required="y" min="1" max="20" comment="The value specifying the minimum of the measurement range"/>
+  <Field name="RangeMaximum" type="double" required="y" min="1" max="20" comment="The value specifying the maximum of the measurement range"/>
+  <Field name="AcademicGradePointAverage" type="double" required="y" min="1" max="6" comment="The grade point average of a student"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="ClassRank" type="long" required="y" min="1" max="4" comment="This is a student's numerical class rank with the highest student in the class having a rank or position of 1"/>
+  <Field name="Quantity4" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="NumberOfDays" type="long" required="y" min="1" max="3" comment="Count of Days"/>
+  <Field name="Quantity5" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity6" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="AcademicSummarySource" required="y" min="1" max="1" validation="T1558" comment="Code used to indicate the source of the summary data"/>
+</Segment>

@@ -1,0 +1,59 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1264.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1264">
+  <Entry name="1" value="Full-Time Student"/>
+  <Entry name="2" value="At Least Half-time Student"/>
+  <Entry name="3" value="Graduate Fellowship"/>
+  <Entry name="4" value="Internship or Residency"/>
+  <Entry name="5" value="Rehabilitation Training"/>
+  <Entry name="6" value="Armed Forces or Public Health Services or National Oceanic and Atmospheric Administration"/>
+  <Entry name="9" value="Peace Corps"/>
+  <Entry name="11" value="Tax-Exempt Organization Volunteer"/>
+  <Entry name="12" value="Teacher Shortage"/>
+  <Entry name="13" value="Temporarily Totally Disabled"/>
+  <Entry name="14" value="Parental Leave"/>
+  <Entry name="15" value="Mother of Preschool Child Re-entering Workforce"/>
+  <Entry name="16" value="Unemployment - 36 months"/>
+  <Entry name="17" value="Unemployment - 24 months"/>
+  <Entry name="20" value="Persian Gulf War Active Duty"/>
+  <Entry name="21" value="Pre-Bankruptcy"/>
+  <Entry name="22" value="Bankruptcy"/>
+  <Entry name="23" value="Special Case"/>
+  <Entry name="24" value="Economic Hardship"/>
+  <Entry name="25" value="Incarceration"/>
+  <Entry name="26" value="Intent to Re-Enroll in School"/>
+  <Entry name="27" value="ACTION Programs"/>
+  <Entry name="28" value="Pre-deferment Delinquency"/>
+  <Entry name="29" value="Late Repayment Start"/>
+  <Entry name="30" value="Medical Problems"/>
+  <Entry name="31" value="Interval between Disbursements"/>
+  <Entry name="32" value="National Emergency (Military or Natural)"/>
+  <Entry name="33" value="Due Diligence Cure"/>
+  <Entry name="34" value="Conform Differing Due Dates"/>
+  <Entry name="35" value="National Community Service"/>
+  <Entry name="36" value="Education Loan Debt Burden"/>
+  <Entry name="37" value="Revoked Deferment"/>
+</Table>

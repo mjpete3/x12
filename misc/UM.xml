@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: UM.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="UM" comment="To specify health care services review information">
+  <Field name="RequestCategoryCode" min="1" max="2" validation="T1525" comment="Code indicating a type of request"/>
+  <Field name="CertificationTypeCode" required="y" min="1" max="1" validation="T1322" comment="Code indicating the type of certification"/>
+  <Field name="ServiceTypeCode" required="y" min="1" max="2" validation="T1365" comment="Code identifying the classification of service"/>
+  <Field name="HealthCareServiceLocationInformation" type="C023" required="y" min="0" max="inf" comment="To provide information that identifies the place of service or the type of bill related to the location at which a health care service was rendered"/>
+  <Field name="RelatedCausesInformation" type="C024" required="y" min="0" max="inf" comment="To identify one or more related causes and associated state or country information"/>
+  <Field name="LevelOfServiceCode" required="y" min="1" max="3" validation="T1338" comment="Code specifying the level of service rendered"/>
+  <Field name="CurrentHealthConditionCode" required="y" min="1" max="1" validation="T1213" comment="Code indicating current health condition of the individual"/>
+  <Field name="PrognosisCode" required="y" min="1" max="1" validation="T923" comment="Code indicating physician's prognosis for the patient"/>
+  <Field name="ReleaseOfInformationCode" required="y" min="1" max="1" validation="T1363" comment="Code indicating whether the provider has on file a signed statement by the patient authorizing the release of medical data to other organizations"/>
+  <Field name="DelayReasonCode" required="y" min="1" max="2" validation="T1514" comment="Code indicating the reason why a request was delayed"/>
+</Segment>

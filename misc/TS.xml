@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TS" comment="To define the beginning of a section that contains specific tariff information; it will define tariff information that follows">
+  <Field name="TariffSection" required="y" min="1" max="4" comment="Tariff section identifier as mutually agreed upon by sender and receiver"/>
+  <Field name="TariffItemNumber" required="y" min="1" max="16" comment="Number assigned in the tariff to specific rate or group of rates that applies to one or more items in the shipment"/>
+  <Field name="TariffItemSuffix" required="y" min="1" max="4" comment="Tariff item descriptor"/>
+  <Field name="TariffSectionIdCode" required="y" min="2" max="2" validation="T980" comment="Code identifying type of tariff information contained in the segments that follow"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="EquipmentDescriptionCode" required="y" min="2" max="2" validation="T40" comment="Code identifying type of equipment used for shipment"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+</Segment>

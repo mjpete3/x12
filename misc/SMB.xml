@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SMB.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SMB" comment="To identify the type of transaction update and type of station">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="StationTypeCode1" min="1" max="1" validation="T813" comment="Code identifying the type of geographic location"/>
+  <Field name="StandardPointLocationCode" required="y" min="6" max="9" comment="Code (Standard Point Location) defined by National Motor Freight Tariff Association (NMFTA) or the Canadian Transportation Agency (CTA) point development group as the official code assigned to a city or point (for ratemaking purposes) within a city"/>
+  <Field name="StationTypeCode2" required="y" min="1" max="1" validation="T813" comment="Code identifying the type of geographic location"/>
+  <Field name="StationTypeCode3" required="y" min="1" max="1" validation="T813" comment="Code identifying the type of geographic location"/>
+  <Field name="StationTypeCode4" required="y" min="1" max="1" validation="T813" comment="Code identifying the type of geographic location"/>
+  <Field name="YesNoConditionOrResponseCode" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="Rule260JunctionCode" required="y" min="1" max="5" comment="Code indicating railroad interchange locations"/>
+  <Field name="StationTypeCode5" required="y" min="1" max="1" validation="T813" comment="Code identifying the type of geographic location"/>
+</Segment>

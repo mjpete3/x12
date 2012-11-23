@@ -1,0 +1,34 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T6.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="T6" comment="To identify the transit inbound prior origin point and waybill reference of movement to the point specified in T1 segment">
+  <Field name="AssignedNumber" type="long" min="1" max="6" comment="Number assigned for differentiation within a transaction set"/>
+  <Field name="FreightRate1" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="CityName1" required="y" min="2" max="30" comment="Free-form text for city name"/>
+  <Field name="FreightRate2" type="double" required="y" min="1" max="9" comment="Rate that applies to the specific commodity"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="CityName2" required="y" min="2" max="30" comment="Free-form text for city name"/>
+</Segment>

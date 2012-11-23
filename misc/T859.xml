@@ -1,0 +1,69 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T859.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T859">
+  <Entry name="AA" value="Quantity Stolen"/>
+  <Entry name="AB" value="Quantity Shipped"/>
+  <Entry name="BS" value="Bailment Sales Quantity"/>
+  <Entry name="BT" value="Transportation Sales Quantity"/>
+  <Entry name="DG" value="Quantity Damaged"/>
+  <Entry name="HL" value="Quantity on Hold"/>
+  <Entry name="LS" value="Lost Sales"/>
+  <Entry name="MS" value="Military Sales Quantity"/>
+  <Entry name="OF" value="Off Premise Quantity"/>
+  <Entry name="OH" value="Gross Quantity On Hand"/>
+  <Entry name="OP" value="On Premise Sales Quantity"/>
+  <Entry name="OQ" value="Planned Order Quantity"/>
+  <Entry name="PA" value="Production Quantity Adjustment"/>
+  <Entry name="PO" value="Calculated Reorder Point"/>
+  <Entry name="Q1" value="Quantity Sold (Net)"/>
+  <Entry name="Q2" value="Quantity Returned"/>
+  <Entry name="Q3" value="Quantity Returned (Defective/Damaged)"/>
+  <Entry name="Q4" value="Quantity Ordered"/>
+  <Entry name="QA" value="Current Inventory Quantity Available for Shipment or Sale"/>
+  <Entry name="QB" value="Beginning Balance Quantity"/>
+  <Entry name="QC" value="Quantity Committed"/>
+  <Entry name="QD" value="Additional Demand Quantity"/>
+  <Entry name="QE" value="Ending Balance Quantity"/>
+  <Entry name="QF" value="Quantity In-bond"/>
+  <Entry name="QH" value="Quantity Damaged or On Hold"/>
+  <Entry name="QI" value="Quantity in Transit"/>
+  <Entry name="QK" value="Quantity Not Listed"/>
+  <Entry name="QL" value="Minimum Inventory Quantity"/>
+  <Entry name="QM" value="Maximum Inventory Quantity"/>
+  <Entry name="QN" value="Planned Inventory Quantity"/>
+  <Entry name="QO" value="Quantity Out of Stock"/>
+  <Entry name="QP" value="Quantity On Order, Not Yet Received"/>
+  <Entry name="QR" value="Quantity Received"/>
+  <Entry name="QS" value="Quantity Sold"/>
+  <Entry name="QT" value="Adjustment to Inventory Quantity"/>
+  <Entry name="QU" value="Quantity Returned By Consumer"/>
+  <Entry name="QW" value="Quantity Withdrawn from Warehouse Inventory"/>
+  <Entry name="QX" value="Quantity Requested (Will Override Replenishment Planning)"/>
+  <Entry name="QZ" value="Quantity Transferred"/>
+  <Entry name="RE" value="Retail Sales Quantity"/>
+  <Entry name="TS" value="Total Sales Quantity"/>
+  <Entry name="WQ" value="Wholesale Sales Quantity"/>
+</Table>

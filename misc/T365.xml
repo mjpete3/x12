@@ -1,0 +1,69 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T365.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T365">
+  <Entry name="AA" value="International Telephone Access Code"/>
+  <Entry name="AB" value="Joint Facsimile and Phone Number"/>
+  <Entry name="AC" value="Message Only Voice Number"/>
+  <Entry name="AD" value="Delivery Location Phone"/>
+  <Entry name="AE" value="Area Code"/>
+  <Entry name="AP" value="Alternate Telephone"/>
+  <Entry name="AS" value="Answering Service"/>
+  <Entry name="AU" value="Defense Switched Network"/>
+  <Entry name="BN" value="Beeper Number"/>
+  <Entry name="BT" value="BTX Number"/>
+  <Entry name="CA" value="Cable"/>
+  <Entry name="CP" value="Cellular Phone"/>
+  <Entry name="DN" value="Defense Data Network (DDN)"/>
+  <Entry name="EA" value="Internet Email Address"/>
+  <Entry name="ED" value="Electronic Data Interchange Access Number"/>
+  <Entry name="EM" value="Electronic Mail"/>
+  <Entry name="EX" value="Telephone Extension"/>
+  <Entry name="FT" value="Federal Telecommunications System (FTS)"/>
+  <Entry name="FU" value="Facsimile User Identifier"/>
+  <Entry name="FX" value="Facsimile"/>
+  <Entry name="HF" value="Home Facsimile Number"/>
+  <Entry name="HP" value="Home Phone Number"/>
+  <Entry name="IT" value="International Telephone"/>
+  <Entry name="MN" value="Modem Number"/>
+  <Entry name="NP" value="Night Telephone"/>
+  <Entry name="OF" value="Other Residential Facsimile Number"/>
+  <Entry name="OT" value="Other Residential Telephone Number"/>
+  <Entry name="PA" value="Appointment Phone"/>
+  <Entry name="PC" value="Personal Cellular"/>
+  <Entry name="PP" value="Personal Phone"/>
+  <Entry name="PS" value="Packet Switching"/>
+  <Entry name="SP" value="Showing Phone"/>
+  <Entry name="TE" value="Telephone"/>
+  <Entry name="TL" value="Telex"/>
+  <Entry name="TM" value="Telemail"/>
+  <Entry name="TN" value="Teletex Number"/>
+  <Entry name="TX" value="TWX"/>
+  <Entry name="UR" value="Uniform Resource Locator (URL)"/>
+  <Entry name="VM" value="Voice Mail"/>
+  <Entry name="WC" value="Work Cellular"/>
+  <Entry name="WF" value="Work Facsimile Number"/>
+  <Entry name="WP" value="Work Phone Number"/>
+</Table>

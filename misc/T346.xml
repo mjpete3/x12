@@ -1,0 +1,111 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T346.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T346">
+  <Entry name="21" value="Vessel Import Manifest (Canadian)"/>
+  <Entry name="22" value="Vessel Export Manifest (Canadian)"/>
+  <Entry name="23" value="Vessel In-Transit Manifest (Canadian)"/>
+  <Entry name="24" value="Vessel Consignment Import Manifest (Canadian)"/>
+  <Entry name="25" value="Vessel Consignment Export Manifest (Canadian)"/>
+  <Entry name="26" value="Vessel Consignment In-Transit Manifest (Canadian)"/>
+  <Entry name="27" value="Rail Import Manifest (Canadian)"/>
+  <Entry name="28" value="Rail Export Manifest (Canadian)"/>
+  <Entry name="29" value="Rail In-Transit Manifest (Canadian)"/>
+  <Entry name="30" value="House Bill of Lading (Canada)"/>
+  <Entry name="31" value="Re-Manifest Manifest (Canadian)"/>
+  <Entry name="32" value="Abstract Bill of Lading (Canada)"/>
+  <Entry name="33" value="Rail Consignment Import"/>
+  <Entry name="34" value="Rail Consignment Export"/>
+  <Entry name="35" value="Rail Consignment In-Transit"/>
+  <Entry name="36" value="Rail Manifest"/>
+  <Entry name="37" value="Highway Import"/>
+  <Entry name="38" value="Highway Export"/>
+  <Entry name="39" value="Highway In-Transit"/>
+  <Entry name="40" value="Highway Consignment Import"/>
+  <Entry name="41" value="Highway Consignment Export"/>
+  <Entry name="42" value="Highway Consignment In-Transit"/>
+  <Entry name="43" value="Air Import"/>
+  <Entry name="44" value="Air Export"/>
+  <Entry name="45" value="Air In-Transit"/>
+  <Entry name="46" value="Air Consignment Import"/>
+  <Entry name="47" value="Air Consignment Export"/>
+  <Entry name="48" value="Air Consignment In-Transit"/>
+  <Entry name="AN" value="Arrival Notice"/>
+  <Entry name="AT" value="Appointment"/>
+  <Entry name="BD" value="Financial Institution Account Statement"/>
+  <Entry name="BG" value="Government Bill of Lading"/>
+  <Entry name="BH" value="Privately Owned Personal Property Bill of Lading"/>
+  <Entry name="BL" value="Bill of Lading"/>
+  <Entry name="BN" value="Booking"/>
+  <Entry name="BR" value="Accounts Reconciliation"/>
+  <Entry name="BT" value="Balance and Transaction Reporting"/>
+  <Entry name="CD" value="Consolidator's Invoice"/>
+  <Entry name="CF" value="Controlled Disbursement Funding"/>
+  <Entry name="CI" value="Commercial Invoice"/>
+  <Entry name="CL" value="Cash Letter"/>
+  <Entry name="CO" value="Consolidation"/>
+  <Entry name="DL" value="Deposit List"/>
+  <Entry name="DO" value="Delivery Order"/>
+  <Entry name="DT" value="Depository Transfer"/>
+  <Entry name="EP" value="Electronic Presentments"/>
+  <Entry name="FA" value="Full Account Reconciliation"/>
+  <Entry name="FR" value="Freight Tender"/>
+  <Entry name="HR" value="Personal Property Tender"/>
+  <Entry name="IS" value="Transportation Control Movement Document (TCMD)"/>
+  <Entry name="LB" value="Lockbox Summary"/>
+  <Entry name="LS" value="Load Summary"/>
+  <Entry name="LT" value="Load Tender - Truckload (TL) Carrier Only"/>
+  <Entry name="MF" value="Manifest"/>
+  <Entry name="PC" value="Partial Load Tender, Carrier Consolidate"/>
+  <Entry name="PI" value="Pro Forma Invoice"/>
+  <Entry name="PL" value="Paid List (All Debits)"/>
+  <Entry name="PP" value="Point to Point Rate Application"/>
+  <Entry name="PS" value="Partial Load Tender, Shipper Consolidate"/>
+  <Entry name="R1" value="Simulation of Single Shipment Less Release Units (U.S. Department of Defense)"/>
+  <Entry name="R2" value="Simulation of Consolidation of Vans, Trailers, or Pallets (U.S. Department of Defense)"/>
+  <Entry name="R3" value="Simulation of Consolidation of Packaging Containers (U.S. Department of Defense)"/>
+  <Entry name="R4" value="Simulation of Multiple Level Consolidation (U.S. Department of Defense)"/>
+  <Entry name="RD" value="Deposit Reconciliation"/>
+  <Entry name="RO" value="Reassociation Report"/>
+  <Entry name="RP" value="Partial Account Reconciliation"/>
+  <Entry name="RQ" value="Simulation Single Shipment Release Unit (U.S. Department of Defense)"/>
+  <Entry name="RR" value="Range Reconciliation"/>
+  <Entry name="RS" value="Scale Rate Application"/>
+  <Entry name="S1" value="Single Package Shipment Status"/>
+  <Entry name="S2" value="Multiple Package Shipment Status"/>
+  <Entry name="SI" value="Single Shipment Invoice"/>
+  <Entry name="SL" value="Shipper's Letter of Instruction"/>
+  <Entry name="SP" value="Multiple Shipment Invoice"/>
+  <Entry name="SS" value="Single Shipment Status"/>
+  <Entry name="T1" value="Single Shipment Less Release Units (U.S. Department of Defense)"/>
+  <Entry name="T2" value="Consolidation of Vans, Trailers, or Pallets (U.S. Department of Defense)"/>
+  <Entry name="T3" value="Consolidation of Packaging Containers (U.S. Department of Defense)"/>
+  <Entry name="T4" value="Multiple Level Consolidation (U.S. Department of Defense)"/>
+  <Entry name="TF" value="Trailer Forecast"/>
+  <Entry name="TG" value="Government Guaranteed Traffic Tender"/>
+  <Entry name="TM" value="Trailer Manifest"/>
+  <Entry name="TQ" value="Single Shipment Release Unit (U.S. Department of Defense)"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

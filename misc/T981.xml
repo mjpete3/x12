@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T981.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T981">
+  <Entry name="AC" value="Advanced Charges"/>
+  <Entry name="AM" value="Amount Collected"/>
+  <Entry name="CH" value="Charge Minimum And Maximum Specifications"/>
+  <Entry name="HA" value="Half Hour"/>
+  <Entry name="HR" value="Hour"/>
+  <Entry name="HU" value="Hundredweight"/>
+  <Entry name="II" value="Long Ton"/>
+  <Entry name="MA" value="Man-hour (Monday Through Friday, 8 AM to 5 PM)"/>
+  <Entry name="MH" value="Man-hour (Saturdays)"/>
+  <Entry name="MI" value="Miles"/>
+  <Entry name="MN" value="Man-hour (Monday Through Friday, 5 PM to 8 AM)"/>
+  <Entry name="NO" value="Notification"/>
+  <Entry name="PA" value="Package"/>
+  <Entry name="RB" value="Rate Basis"/>
+  <Entry name="SE" value="Seal"/>
+  <Entry name="SH" value="Shipment"/>
+  <Entry name="ST" value="Stop"/>
+  <Entry name="TN" value="Ton"/>
+  <Entry name="VE" value="Vehicle"/>
+</Table>

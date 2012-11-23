@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T853.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T853">
+  <Entry name="BD" value="Bulkhead Doors Not Secured"/>
+  <Entry name="CC" value="Case Crushing (Exterior/Secondary Packaging)"/>
+  <Entry name="CD" value="Case Design"/>
+  <Entry name="DL" value="Damage Loading"/>
+  <Entry name="DP" value="Defective Pallets of Slip Sheets"/>
+  <Entry name="FL" value="Flaps Loose"/>
+  <Entry name="HD" value="Hidden Damage (Suspected or Actual)"/>
+  <Entry name="ID" value="Improper Doorway Protection"/>
+  <Entry name="IL" value="Improper Loading"/>
+  <Entry name="IU" value="Improper Unloading"/>
+  <Entry name="LD" value="Lack of Cardboard Dividers/Dunnage"/>
+  <Entry name="LS" value="Load Shift"/>
+  <Entry name="NO" value="Nails or Other Hardware"/>
+  <Entry name="NR" value="Not Reported"/>
+  <Entry name="PP" value="Pallet Pattern"/>
+  <Entry name="PS" value="Punctured Bailers/Cases"/>
+  <Entry name="SF" value="Side Fillers Not Extended"/>
+  <Entry name="TE" value="Temperature Exposure"/>
+  <Entry name="UE" value="Unsuitable Equipment"/>
+  <Entry name="VI" value="Vehicle Impact"/>
+  <Entry name="WC" value="Wet or Stained (Shipping Containers or Secondary Packaging)"/>
+</Table>

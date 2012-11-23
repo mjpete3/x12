@@ -1,0 +1,30 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SVA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SVA" comment="To provide the encoded output of a cryptographic algorithm">
+  <Field name="FilterIdCode" min="3" max="3" validation="T1570" comment="Code specifying the type of filter used to convert data code values"/>
+  <Field name="VersionIdentifier" min="1" max="30" comment="Revision level of a particular format, program, technique or algorithm"/>
+  <Field name="SecurityValue" type="C033" min="0" max="inf" comment="Value of the Security Token"/>
+</Segment>

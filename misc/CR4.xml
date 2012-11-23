@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CR4.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CR4" comment="To supply information regarding certification of medical necessity for enteral or parenteral nutrition therapy">
+  <Field name="YesNoConditionOrResponseCode" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="CertificationTypeCode" required="y" min="1" max="1" validation="T1322" comment="Code indicating the type of certification"/>
+  <Field name="UnitOrBasisForMeasurementCode1" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="UnitOrBasisForMeasurementCode2" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="NonVisitCode" required="y" min="1" max="1" validation="T1344" comment="Code indicating on what a medical evaluation is based, when not based on a physician's visit"/>
+  <Field name="UnitOrBasisForMeasurementCode3" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity3" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="UnitOrBasisForMeasurementCode4" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Height" type="double" required="y" min="1" max="8" comment="Vertical dimension of an object measured when the object is in the upright position"/>
+  <Field name="UnitOrBasisForMeasurementCode5" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="Quantity4" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Description1" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="NutrientAdministrationMethodCode" required="y" min="1" max="1" validation="T1346" comment="Code indicating the method used to administer nutrient to a patient"/>
+  <Field name="NutrientAdministrationTechniqueCode" required="y" min="1" max="1" validation="T1347" comment="Code indicating the technique used to administer nutrient to a patient"/>
+  <Field name="Quantity5" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity6" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Description2" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Quantity7" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Percent1" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Quantity8" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity9" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Percent2" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Quantity10" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Percent3" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Quantity11" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Description3" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+</Segment>

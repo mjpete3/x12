@@ -1,0 +1,118 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T639.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T639">
+  <Entry name="AA" value="Bill"/>
+  <Entry name="AB" value="Pay"/>
+  <Entry name="AP" value="Advise Price"/>
+  <Entry name="AW" value="Average Wholesale Price"/>
+  <Entry name="BD" value="Before Discount"/>
+  <Entry name="BR" value="Broker"/>
+  <Entry name="BW" value="Biweekly Price per Unit"/>
+  <Entry name="CA" value="Catalog"/>
+  <Entry name="CP" value="Current Price (Subject to Change)"/>
+  <Entry name="CR" value="Carnet"/>
+  <Entry name="CT" value="Contract"/>
+  <Entry name="DI" value="Distributor"/>
+  <Entry name="DP" value="Daily Price per Unit"/>
+  <Entry name="DR" value="Dealer"/>
+  <Entry name="DS" value="Discount"/>
+  <Entry name="EC" value="Estimated Credit"/>
+  <Entry name="EH" value="Shift Differential"/>
+  <Entry name="ES" value="Estimated"/>
+  <Entry name="FB" value="Fabrication Cost"/>
+  <Entry name="FO" value="Formula"/>
+  <Entry name="FX" value="Fixed Price"/>
+  <Entry name="HF" value="Per 100 Feet"/>
+  <Entry name="HP" value="Price per Hundred"/>
+  <Entry name="HT" value="Price Per 100,000"/>
+  <Entry name="KA" value="Price with Government Furnished Property"/>
+  <Entry name="KP" value="Escalated Price"/>
+  <Entry name="KR" value="In Stock"/>
+  <Entry name="LC" value="Catalog Price per Hundred"/>
+  <Entry name="LD" value="Catalog Price per Dozen"/>
+  <Entry name="LE" value="Catalog Price per Each"/>
+  <Entry name="LM" value="Catalog Price per Thousand"/>
+  <Entry name="LR" value="Previous Catalog Price"/>
+  <Entry name="ME" value="Midterm Endorsement Price per Unit"/>
+  <Entry name="ML" value="Price per Milliliter"/>
+  <Entry name="NC" value="No Charge"/>
+  <Entry name="NE" value="Not to Exceed"/>
+  <Entry name="NQ" value="No Quote"/>
+  <Entry name="NS" value="Not Separately Priced"/>
+  <Entry name="NT" value="Net"/>
+  <Entry name="PA" value="Price per Troy Ounce"/>
+  <Entry name="PB" value="Annual Price Per Unit"/>
+  <Entry name="PD" value="Price per Dozen"/>
+  <Entry name="PE" value="Price per Each"/>
+  <Entry name="PF" value="Price Per Foot"/>
+  <Entry name="PG" value="Price per Gram"/>
+  <Entry name="PK" value="Price per Kilogram"/>
+  <Entry name="PL" value="Price per Liter"/>
+  <Entry name="PM" value="Monthly Price Per Unit"/>
+  <Entry name="PN" value="Price per Ten"/>
+  <Entry name="PO" value="Price per Ounce"/>
+  <Entry name="PP" value="Price per Pound"/>
+  <Entry name="PQ" value="Posted"/>
+  <Entry name="PR" value="Promotion"/>
+  <Entry name="PS" value="Price Per Thousand Square Foot"/>
+  <Entry name="PT" value="Price per Ton"/>
+  <Entry name="PU" value="Quarterly Price per Unit"/>
+  <Entry name="PV" value="Provisional Price"/>
+  <Entry name="PY" value="Price per Yard"/>
+  <Entry name="QE" value="Quoted Price per Each"/>
+  <Entry name="QH" value="Quoted Price per Hundred"/>
+  <Entry name="QR" value="Previous Quoted Price"/>
+  <Entry name="QS" value="Quoted Price per Thousand"/>
+  <Entry name="QT" value="Quoted"/>
+  <Entry name="RC" value="Retail Price per Hundred"/>
+  <Entry name="RD" value="Retail Price per Dozen"/>
+  <Entry name="RE" value="Retail Price per Each"/>
+  <Entry name="RM" value="Retail Price per Thousand"/>
+  <Entry name="RS" value="Resale Price"/>
+  <Entry name="RT" value="Retail"/>
+  <Entry name="SA" value="Semi Annual Price per Unit"/>
+  <Entry name="SC" value="Submitted Contract"/>
+  <Entry name="SM" value="Semi Monthly Price per Unit"/>
+  <Entry name="SR" value="Suggested Retail"/>
+  <Entry name="ST" value="Standard"/>
+  <Entry name="SW" value="Submitted Wholesale"/>
+  <Entry name="TB" value="To be negotiated."/>
+  <Entry name="TC" value="Contract Price per Hundred"/>
+  <Entry name="TD" value="Contract Price per Dozen"/>
+  <Entry name="TE" value="Contract Price per Each"/>
+  <Entry name="TF" value="Per 1000 Feet"/>
+  <Entry name="TM" value="Contract Price per Thousand"/>
+  <Entry name="TP" value="Price per Thousand"/>
+  <Entry name="TT" value="Price Per 10,000"/>
+  <Entry name="UM" value="Price per Unit of Measure"/>
+  <Entry name="VQ" value="Verbal Quote"/>
+  <Entry name="WC" value="Wholesale Price per Hundred"/>
+  <Entry name="WD" value="Wholesale Price per Dozen"/>
+  <Entry name="WE" value="Wholesale Price per Each"/>
+  <Entry name="WH" value="Wholesale"/>
+  <Entry name="WI" value="Weekly Price per Unit"/>
+  <Entry name="WM" value="Wholesale Price per Thousand"/>
+</Table>

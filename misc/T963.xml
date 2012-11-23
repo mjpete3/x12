@@ -1,0 +1,129 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T963.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T963">
+  <Entry name="AA" value="Stadium Tax"/>
+  <Entry name="AB" value="Surtax"/>
+  <Entry name="AC" value="Departure"/>
+  <Entry name="AD" value="Accommodations Tax"/>
+  <Entry name="AE" value="Ad Valorem Tax"/>
+  <Entry name="AF" value="Alcoholic Beverage Tax"/>
+  <Entry name="AG" value="Coin Operated Device Tax"/>
+  <Entry name="AH" value="Corporate Income Tax"/>
+  <Entry name="AI" value="Employment Tax"/>
+  <Entry name="AJ" value="Estate Tax"/>
+  <Entry name="AK" value="Fee-in-Lieu"/>
+  <Entry name="AL" value="Gaming Tax"/>
+  <Entry name="AM" value="Gift Tax"/>
+  <Entry name="AN" value="Highway (Fuel) Use Tax"/>
+  <Entry name="AO" value="International Fuel Tax Agreement (IFTA) Tax"/>
+  <Entry name="AP" value="Individual Income Tax"/>
+  <Entry name="AQ" value="Inheritance Tax"/>
+  <Entry name="AR" value="Motor Fuel Tax"/>
+  <Entry name="AS" value="Personal Property Tax"/>
+  <Entry name="AT" value="Assessment"/>
+  <Entry name="AU" value="Real Property Tax"/>
+  <Entry name="AV" value="Severance Tax"/>
+  <Entry name="AW" value="Solid Waste Tax"/>
+  <Entry name="AX" value="Tobacco Tax"/>
+  <Entry name="AY" value="Tourism Tax"/>
+  <Entry name="AZ" value="Transit Tax"/>
+  <Entry name="BA" value="Unemployment Tax"/>
+  <Entry name="BB" value="Use Tax"/>
+  <Entry name="BC" value="Withholding Tax"/>
+  <Entry name="BD" value="Worker's Compensation Tax"/>
+  <Entry name="BE" value="Harmonized Sales Tax"/>
+  <Entry name="BP" value="Business Privilege Tax"/>
+  <Entry name="CA" value="City Tax"/>
+  <Entry name="CB" value="Threshold Tax"/>
+  <Entry name="CG" value="Federal Value-added Tax (GST) on Goods"/>
+  <Entry name="CI" value="City Rental Tax"/>
+  <Entry name="CP" value="County/Parish Sales Tax"/>
+  <Entry name="CR" value="County Rental Tax"/>
+  <Entry name="CS" value="City Sales Tax"/>
+  <Entry name="CT" value="County Tax"/>
+  <Entry name="CV" value="Federal Value-added Tax (GST) on Services"/>
+  <Entry name="DL" value="Default Labor Tax"/>
+  <Entry name="EQ" value="Equipment Tax"/>
+  <Entry name="ET" value="Energy Tax"/>
+  <Entry name="EV" value="Environmental Tax"/>
+  <Entry name="F1" value="FICA Tax"/>
+  <Entry name="F2" value="FICA Medicare Tax"/>
+  <Entry name="F3" value="FICA Social Security Tax"/>
+  <Entry name="FD" value="Federal Tax"/>
+  <Entry name="FF" value="Fuel Super Fund Tax"/>
+  <Entry name="FI" value="Federal Income Tax Withholding"/>
+  <Entry name="FL" value="Fuel L.U.S.T. Tax (Leaking Underground Storage Tank)"/>
+  <Entry name="FR" value="Franchise Tax"/>
+  <Entry name="FS" value="Fuel Spill Tax"/>
+  <Entry name="FT" value="Federal Excise Tax"/>
+  <Entry name="GR" value="Gross Receipts Tax"/>
+  <Entry name="GS" value="Goods and Services Tax"/>
+  <Entry name="HS" value="Public Health and Education Tax"/>
+  <Entry name="HT" value="Handicap Tax"/>
+  <Entry name="HZ" value="Hazardous Waste Tax"/>
+  <Entry name="LB" value="Labor By Trade Tax"/>
+  <Entry name="LO" value="Local Tax (Not Sales Tax)"/>
+  <Entry name="LS" value="State and Local Sales Tax"/>
+  <Entry name="LT" value="Local Sales Tax (All Applicable Sales Taxes by Taxing Authority Below the State Level)"/>
+  <Entry name="LU" value="Leaky Underground Storage Tank (LUST) Tax (federal)"/>
+  <Entry name="LV" value="Leaky Underground Storage Tank (LUST) Tax (state)"/>
+  <Entry name="MA" value="Material Tax"/>
+  <Entry name="MN" value="Minimum Tax"/>
+  <Entry name="MP" value="Municipal Tax"/>
+  <Entry name="MS" value="Miscellaneous State Tax"/>
+  <Entry name="MT" value="Metropolitan Transit Tax"/>
+  <Entry name="OH" value="Other Taxes"/>
+  <Entry name="OT" value="Occupational Tax"/>
+  <Entry name="PG" value="State or Provincial Tax on Goods"/>
+  <Entry name="PS" value="State or Provincial Tax on Services"/>
+  <Entry name="SA" value="State or Provincial Fuel Tax"/>
+  <Entry name="SB" value="Secondary Percentage Tax"/>
+  <Entry name="SC" value="School Tax"/>
+  <Entry name="SE" value="State Excise Tax"/>
+  <Entry name="SF" value="Superfund Tax"/>
+  <Entry name="SL" value="State and Local Tax"/>
+  <Entry name="SP" value="State/Provincial Tax"/>
+  <Entry name="SR" value="State Rental Tax"/>
+  <Entry name="SS" value="State Tax on Specific Labor"/>
+  <Entry name="ST" value="State Sales Tax"/>
+  <Entry name="SU" value="Sales and Use Tax"/>
+  <Entry name="SX" value="Enhanced 911 - State Excise Tax"/>
+  <Entry name="T1" value="Pre-threshold Tax"/>
+  <Entry name="T2" value="Post Threshold Tax"/>
+  <Entry name="TD" value="Telecommunications Device for the Deaf (TDD) Service Excise Tax"/>
+  <Entry name="TT" value="Telecommunications Tax"/>
+  <Entry name="TX" value="All Taxes"/>
+  <Entry name="UL" value="License Tax"/>
+  <Entry name="UT" value="Utility Users' Tax"/>
+  <Entry name="VA" value="Value Added Tax"/>
+  <Entry name="WS" value="Well Service"/>
+  <Entry name="ZA" value="911-City Tax"/>
+  <Entry name="ZB" value="911-County Tax"/>
+  <Entry name="ZC" value="911-Excise Tax"/>
+  <Entry name="ZD" value="911-State Tax"/>
+  <Entry name="ZE" value="911-Tax"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

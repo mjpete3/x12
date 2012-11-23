@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T629.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T629">
+  <Entry name="A" value="Indicates Alternation between all Lower Levels"/>
+  <Entry name="B" value="Price Application Hierarchy Rules Apply - Do Not Alternate between Levels"/>
+  <Entry name="L" value="A rate with this element indicating an &quot;L&quot; value will be applied only in the absence of rate application by any with this element indicating &quot;N&quot; or &quot;S&quot;"/>
+  <Entry name="N" value="A rate with this element indicating an &quot;N&quot; value will be applied to the exclusion of all other rates with this data element indicating other values"/>
+  <Entry name="P" value="Only Applicable for Contracts - Indicates that Alternation between Levels applies to Contracts and Customer Specific Prices (&quot;CT&quot; and &quot;PR&quot;) Only"/>
+  <Entry name="S" value="A rate with this element indicating an &quot;S&quot; value will be applied to the exclusion of all other rates except those indicated as &quot;N&quot;"/>
+</Table>

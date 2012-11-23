@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1383.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1383">
+  <Entry name="00" value="Original"/>
+  <Entry name="01" value="Cancellation"/>
+  <Entry name="02" value="Corrected and Verified Original Claim"/>
+  <Entry name="03" value="Corrected and Verified Final Claim"/>
+  <Entry name="05" value="Replace"/>
+  <Entry name="07" value="Duplicate"/>
+  <Entry name="08" value="Pre-Determination"/>
+  <Entry name="09" value="Encounter"/>
+  <Entry name="15" value="Resubmission"/>
+  <Entry name="16" value="Proposed"/>
+  <Entry name="17" value="Cancel to be Reissued"/>
+  <Entry name="18" value="Reissue"/>
+  <Entry name="20" value="Final Transmission"/>
+  <Entry name="22" value="Information Copy"/>
+  <Entry name="27" value="Verify"/>
+  <Entry name="28" value="Late Charges"/>
+  <Entry name="29" value="Adjustment"/>
+  <Entry name="PB" value="Predetermination of Dental Benefits"/>
+</Table>

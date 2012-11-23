@@ -1,0 +1,74 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T562.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T562">
+  <Entry name="1" value="Base Coverage"/>
+  <Entry name="2" value="Coverage for Rider"/>
+  <Entry name="3" value="Coverage in Units"/>
+  <Entry name="4" value="Retention Per Life"/>
+  <Entry name="5" value="Retention Per Policy"/>
+  <Entry name="6" value="Total Reinsurance Amount"/>
+  <Entry name="7" value="Face Amount"/>
+  <Entry name="8" value="Coverage Amount"/>
+  <Entry name="9" value="Specified Amount"/>
+  <Entry name="A" value="Daily Basis Rate"/>
+  <Entry name="B" value="Bailout"/>
+  <Entry name="D" value="Declared"/>
+  <Entry name="E" value="Earned"/>
+  <Entry name="F" value="Fixed"/>
+  <Entry name="G" value="Guaranteed"/>
+  <Entry name="I" value="Indexed"/>
+  <Entry name="O" value="Original"/>
+  <Entry name="P" value="Paid"/>
+  <Entry name="T" value="Tiered"/>
+  <Entry name="W" value="Withheld"/>
+  <Entry name="AB" value="Average Basic Rate"/>
+  <Entry name="AC" value="Actual"/>
+  <Entry name="AD" value="Advance"/>
+  <Entry name="AE" value="Average Effective Rate"/>
+  <Entry name="AR" value="Age Reduced Rate"/>
+  <Entry name="BL" value="Blended"/>
+  <Entry name="BO" value="Bonus"/>
+  <Entry name="CB" value="Chargeback"/>
+  <Entry name="CR" value="Conversion Rate"/>
+  <Entry name="DR" value="Direct Rate"/>
+  <Entry name="DT" value="Deferred Trail Rate"/>
+  <Entry name="ES" value="Estimated"/>
+  <Entry name="IN" value="Initial"/>
+  <Entry name="OI" value="Overhead or Indirect Rate"/>
+  <Entry name="OT" value="Other"/>
+  <Entry name="PA" value="Participation"/>
+  <Entry name="PO" value="Portfolio Rate"/>
+  <Entry name="RF" value="Renewal First Year Rate"/>
+  <Entry name="RR" value="Renewal Rate"/>
+  <Entry name="RS" value="Renewal Subsequent Year Rate"/>
+  <Entry name="SA" value="Special"/>
+  <Entry name="SP" value="Split"/>
+  <Entry name="SR" value="Standard Rate"/>
+  <Entry name="TR" value="Trail Rate"/>
+  <Entry name="UA" value="Unit or Lot Average"/>
+  <Entry name="UT" value="Unit Total"/>
+  <Entry name="VA" value="Variable"/>
+</Table>

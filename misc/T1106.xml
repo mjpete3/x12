@@ -1,0 +1,101 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1106.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1106">
+  <Entry name="01" value="Street Number"/>
+  <Entry name="02" value="Street Name"/>
+  <Entry name="03" value="Prefix Direction"/>
+  <Entry name="04" value="Suffix Direction"/>
+  <Entry name="05" value="P.O. Box Number"/>
+  <Entry name="06" value="Rural Route Number"/>
+  <Entry name="07" value="City Name"/>
+  <Entry name="08" value="State Name"/>
+  <Entry name="09" value="State Postal Code"/>
+  <Entry name="10" value="Zip Code (5 Digit)"/>
+  <Entry name="11" value="Zip Code Addendum (4 Digit)"/>
+  <Entry name="12" value="Building Name"/>
+  <Entry name="13" value="Apartment Number"/>
+  <Entry name="14" value="Suite Number"/>
+  <Entry name="15" value="Unstructured Street Address"/>
+  <Entry name="16" value="Unstructured City and State and Zip Code"/>
+  <Entry name="17" value="Unstructured City and State"/>
+  <Entry name="18" value="Unstructured Mailing Address"/>
+  <Entry name="19" value="Zip Code (9 Digit)"/>
+  <Entry name="20" value="County"/>
+  <Entry name="21" value="Subdivision"/>
+  <Entry name="22" value="Map Coordinates and Directions"/>
+  <Entry name="23" value="Continent"/>
+  <Entry name="24" value="State or Province Abbreviation"/>
+  <Entry name="25" value="Township"/>
+  <Entry name="26" value="Municipality"/>
+  <Entry name="27" value="Sub-barrio"/>
+  <Entry name="28" value="Association Name"/>
+  <Entry name="29" value="Parking Unit Number"/>
+  <Entry name="30" value="Pier"/>
+  <Entry name="31" value="Wing"/>
+  <Entry name="32" value="Floor"/>
+  <Entry name="33" value="Driveway"/>
+  <Entry name="34" value="Lot"/>
+  <Entry name="35" value="Room"/>
+  <Entry name="36" value="Slip"/>
+  <Entry name="37" value="Unit"/>
+  <Entry name="38" value="Property Address"/>
+  <Entry name="39" value="Unstructured Property"/>
+  <Entry name="40" value="Street Suffix"/>
+  <Entry name="41" value="Country"/>
+  <Entry name="42" value="House Number Prefix"/>
+  <Entry name="43" value="House Number Suffix"/>
+  <Entry name="51" value="Drawer Number"/>
+  <Entry name="52" value="Foreign Region or Province"/>
+  <Entry name="53" value="Postal District"/>
+  <Entry name="54" value="Street Number Alpha"/>
+  <Entry name="56" value="Province"/>
+  <Entry name="57" value="Cross Street"/>
+  <Entry name="58" value="International Postal Code"/>
+  <Entry name="59" value="Street Number Low"/>
+  <Entry name="60" value="Street Number High"/>
+  <Entry name="61" value="Street Number Fraction"/>
+  <Entry name="62" value="Street Name Suffix"/>
+  <Entry name="63" value="Secondary Unit Identifier"/>
+  <Entry name="64" value="Secondary Unit Number"/>
+  <Entry name="65" value="ZIP Code Delivery Point Addendum"/>
+  <Entry name="66" value="ZIP Code Delivery Point BarCode (DPBC) Checkdigit"/>
+  <Entry name="67" value="Postal Service Carrier Route"/>
+  <Entry name="68" value="Postal Service Carrier Route Line of Travel (LOT)"/>
+  <Entry name="69" value="Postal Service Address Change Service (ACS) Keyline"/>
+  <Entry name="71" value="Congressional District Code"/>
+  <Entry name="74" value="Zip Code (11 digit)"/>
+  <Entry name="79" value="International Organization for Standardization (ISO) Country Code"/>
+  <Entry name="80" value="Street Name Prefix"/>
+  <Entry name="83" value="Private Mail Box (PMB)"/>
+  <Entry name="85" value="Urbanization"/>
+  <Entry name="90" value="Access Customer Terminal Location (ACTL)"/>
+  <Entry name="91" value="Additional Point of Termination (APOT)"/>
+  <Entry name="92" value="Local Service Termination (LST)"/>
+  <Entry name="93" value="Specific Point of Interface (XPOI)"/>
+  <Entry name="94" value="Section"/>
+  <Entry name="96" value="Range"/>
+  <Entry name="97" value="Geographical Area"/>
+</Table>

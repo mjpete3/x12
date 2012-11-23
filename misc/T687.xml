@@ -1,0 +1,89 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T687.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T687">
+  <Entry name="AA" value="Branches"/>
+  <Entry name="AB" value="Members"/>
+  <Entry name="AC" value="Commercial Enterprises"/>
+  <Entry name="AD" value="Special Trades"/>
+  <Entry name="AE" value="Financial Institutions"/>
+  <Entry name="AF" value="Fast Food"/>
+  <Entry name="AG" value="Agent"/>
+  <Entry name="AH" value="Non-Profit"/>
+  <Entry name="AI" value="Importer"/>
+  <Entry name="AJ" value="Schools"/>
+  <Entry name="AL" value="Gaming"/>
+  <Entry name="AM" value="Prisons"/>
+  <Entry name="AN" value="Theme Park"/>
+  <Entry name="AO" value="Multi-Purpose"/>
+  <Entry name="AP" value="Purchaser"/>
+  <Entry name="AQ" value="Restaurant"/>
+  <Entry name="AR" value="Vending"/>
+  <Entry name="AS" value="Seller"/>
+  <Entry name="BG" value="Buying Group"/>
+  <Entry name="BR" value="Broker"/>
+  <Entry name="CB" value="Combined"/>
+  <Entry name="CN" value="Consolidator (Master Distributor)"/>
+  <Entry name="CO" value="Contractor"/>
+  <Entry name="CR" value="Chain Store Retail"/>
+  <Entry name="CX" value="Confection"/>
+  <Entry name="CY" value="Convenience Store"/>
+  <Entry name="DE" value="Dealer"/>
+  <Entry name="DF" value="Doctors' Offices"/>
+  <Entry name="DI" value="Distributor"/>
+  <Entry name="DR" value="Drug Store"/>
+  <Entry name="EX" value="Exporter"/>
+  <Entry name="FS" value="Food Service"/>
+  <Entry name="GA" value="Grocery Accounts"/>
+  <Entry name="GM" value="General Merchandise"/>
+  <Entry name="GR" value="General Retail"/>
+  <Entry name="GV" value="Government"/>
+  <Entry name="HS" value="Hospitals"/>
+  <Entry name="ID" value="Industrial"/>
+  <Entry name="IN" value="Institutional"/>
+  <Entry name="IR" value="Independent Retail"/>
+  <Entry name="JB" value="Jobber"/>
+  <Entry name="LC" value="Long-term Care"/>
+  <Entry name="MC" value="Managed Care"/>
+  <Entry name="MF" value="Manufacturer"/>
+  <Entry name="ML" value="Military"/>
+  <Entry name="OE" value="OEM"/>
+  <Entry name="OF" value="Off Premise"/>
+  <Entry name="ON" value="On Premise"/>
+  <Entry name="PF" value="Professional"/>
+  <Entry name="PH" value="Outpatient Pharmacy"/>
+  <Entry name="PT" value="Pet Supply Store"/>
+  <Entry name="PY" value="Private Label"/>
+  <Entry name="RS" value="Resale"/>
+  <Entry name="SA" value="Services"/>
+  <Entry name="SB" value="Support"/>
+  <Entry name="SE" value="Securities"/>
+  <Entry name="ST" value="Stationer"/>
+  <Entry name="TR" value="General Trade"/>
+  <Entry name="WA" value="Warehousing"/>
+  <Entry name="WC" value="Warehouse Clubs"/>
+  <Entry name="WH" value="Wholesaler"/>
+  <Entry name="WS" value="User"/>
+</Table>

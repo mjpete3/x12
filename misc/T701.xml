@@ -1,0 +1,118 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T701.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T701">
+  <Entry name="01" value="Shipment Method of Payment"/>
+  <Entry name="02" value="Transportation Responsibility Location"/>
+  <Entry name="03" value="Title Passage Location"/>
+  <Entry name="04" value="Sales Contact"/>
+  <Entry name="05" value="Special Services that will be Required"/>
+  <Entry name="06" value="Special Charges that will be Required"/>
+  <Entry name="07" value="Allowance or Charge Method of Handling"/>
+  <Entry name="08" value="Allowance or Charge Rate per Unit, Basis of Calculation or Total Amount"/>
+  <Entry name="09" value="Type of Payment Terms"/>
+  <Entry name="10" value="Beginning of Terms Period"/>
+  <Entry name="11" value="Complete Discount Detail (Terms, Base/Value, Limits)"/>
+  <Entry name="12" value="Hazardous Material"/>
+  <Entry name="13" value="Non-Hazardous Material"/>
+  <Entry name="14" value="As Indicated by the Cited Reference"/>
+  <Entry name="15" value="Affiliated Companies"/>
+  <Entry name="16" value="All Information"/>
+  <Entry name="17" value="Background"/>
+  <Entry name="18" value="Bank Name and Address"/>
+  <Entry name="19" value="Bankruptcy"/>
+  <Entry name="20" value="Bankruptcy Plan"/>
+  <Entry name="21" value="Bankruptcy Schedule"/>
+  <Entry name="22" value="Branches"/>
+  <Entry name="23" value="Buying Details"/>
+  <Entry name="24" value="Companies Dealt With"/>
+  <Entry name="25" value="Completed Projects"/>
+  <Entry name="26" value="Corporate Registration"/>
+  <Entry name="27" value="Credit Score"/>
+  <Entry name="28" value="Criminal Proceedings"/>
+  <Entry name="29" value="Employees"/>
+  <Entry name="30" value="Equipment"/>
+  <Entry name="31" value="Financial Information"/>
+  <Entry name="32" value="Legal Claim"/>
+  <Entry name="33" value="Legal Details and Capital"/>
+  <Entry name="34" value="Lien"/>
+  <Entry name="35" value="Line of Business Codes"/>
+  <Entry name="36" value="Line of Credit Details"/>
+  <Entry name="37" value="Management Comments"/>
+  <Entry name="38" value="Management Partial Figures"/>
+  <Entry name="39" value="Other Public Record"/>
+  <Entry name="40" value="Outside Comments"/>
+  <Entry name="41" value="Ownership"/>
+  <Entry name="42" value="Payment Breakdown"/>
+  <Entry name="43" value="Payment Breakdown by Industry"/>
+  <Entry name="44" value="Payment Score"/>
+  <Entry name="45" value="Placed for Collection Details"/>
+  <Entry name="46" value="Pledging"/>
+  <Entry name="47" value="Preferential Claims"/>
+  <Entry name="48" value="Protested Bills"/>
+  <Entry name="49" value="Financial Update"/>
+  <Entry name="50" value="Financing Statement (Uniform Commercial Code)"/>
+  <Entry name="51" value="Full Financial Statement"/>
+  <Entry name="52" value="General Information"/>
+  <Entry name="53" value="Identification Numbers"/>
+  <Entry name="54" value="Indirect Affiliate"/>
+  <Entry name="55" value="Individual Experience"/>
+  <Entry name="56" value="Judgment"/>
+  <Entry name="57" value="Law Suit"/>
+  <Entry name="58" value="Rating"/>
+  <Entry name="59" value="Record Item"/>
+  <Entry name="60" value="Reporting Agency Analysis"/>
+  <Entry name="61" value="Secured Charges"/>
+  <Entry name="62" value="Selling Details"/>
+  <Entry name="63" value="Special Events"/>
+  <Entry name="64" value="Subsidiaries"/>
+  <Entry name="65" value="Summary Information"/>
+  <Entry name="66" value="Work in Progress"/>
+  <Entry name="67" value="Operation Details"/>
+  <Entry name="68" value="Interview"/>
+  <Entry name="69" value="Vendors"/>
+  <Entry name="70" value="Slowness Comments"/>
+  <Entry name="71" value="Subordination Agreement"/>
+  <Entry name="72" value="Guarantees"/>
+  <Entry name="73" value="Signing Authority"/>
+  <Entry name="74" value="Ratios"/>
+  <Entry name="75" value="Industry Averages"/>
+  <Entry name="76" value="Petitions"/>
+  <Entry name="77" value="Claims on Other Companies"/>
+  <Entry name="78" value="Specific Details"/>
+  <Entry name="79" value="Acquisitions"/>
+  <Entry name="80" value="Financial Embarrassment Details"/>
+  <Entry name="81" value="Offshore Company Details"/>
+  <Entry name="82" value="Receivership"/>
+  <Entry name="83" value="Ship Details"/>
+  <Entry name="84" value="No Other Information"/>
+  <Entry name="85" value="Ranking Details"/>
+  <Entry name="86" value="Transportation Equipment"/>
+  <Entry name="87" value="Delinquency Details"/>
+  <Entry name="88" value="Failure Projection Details"/>
+  <Entry name="89" value="Board of Directors' Details"/>
+  <Entry name="91" value="Property Details"/>
+  <Entry name="92" value="Management Council Details"/>
+</Table>

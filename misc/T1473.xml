@@ -1,0 +1,42 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1473.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1473">
+  <Entry name="00" value="Zero Pricing (Not Covered Under Contract)"/>
+  <Entry name="01" value="Priced as Billed at 100%"/>
+  <Entry name="02" value="Priced at the Standard Fee Schedule"/>
+  <Entry name="03" value="Priced at a Contractual Percentage"/>
+  <Entry name="04" value="Bundled Pricing"/>
+  <Entry name="05" value="Peer Review Pricing"/>
+  <Entry name="06" value="Per Diem Pricing"/>
+  <Entry name="07" value="Flat Rate Pricing"/>
+  <Entry name="08" value="Combination Pricing"/>
+  <Entry name="09" value="Maternity Pricing"/>
+  <Entry name="10" value="Other Pricing"/>
+  <Entry name="11" value="Lower of Cost"/>
+  <Entry name="12" value="Ratio of Cost"/>
+  <Entry name="13" value="Cost Reimbursed"/>
+  <Entry name="14" value="Adjustment Pricing"/>
+</Table>

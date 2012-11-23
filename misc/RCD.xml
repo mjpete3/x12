@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RCD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RCD" comment="To report receiving conditions and specify contested quantities">
+  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+  <Field name="QuantityUnitsReceivedOrAccepted" type="double" required="y" min="1" max="9" comment="Number of Units Received or Accepted"/>
+  <Field name="CompositeUnitOfMeasure1" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="QuantityUnitsReturned" type="double" required="y" min="1" max="9" comment="Number of units returned"/>
+  <Field name="CompositeUnitOfMeasure2" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="QuantityInQuestion1" type="double" required="y" min="1" max="9" comment="Number of units contested because of physical condition or status of units"/>
+  <Field name="CompositeUnitOfMeasure3" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReceivingConditionCode1" required="y" min="2" max="2" validation="T412" comment="Code designating physical condition or status of units received in a specific shipment"/>
+  <Field name="QuantityInQuestion2" type="double" required="y" min="1" max="9" comment="Number of units contested because of physical condition or status of units"/>
+  <Field name="CompositeUnitOfMeasure4" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReceivingConditionCode2" required="y" min="2" max="2" validation="T412" comment="Code designating physical condition or status of units received in a specific shipment"/>
+  <Field name="QuantityInQuestion3" type="double" required="y" min="1" max="9" comment="Number of units contested because of physical condition or status of units"/>
+  <Field name="CompositeUnitOfMeasure5" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReceivingConditionCode3" required="y" min="2" max="2" validation="T412" comment="Code designating physical condition or status of units received in a specific shipment"/>
+  <Field name="QuantityInQuestion4" type="double" required="y" min="1" max="9" comment="Number of units contested because of physical condition or status of units"/>
+  <Field name="CompositeUnitOfMeasure6" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReceivingConditionCode4" required="y" min="2" max="2" validation="T412" comment="Code designating physical condition or status of units received in a specific shipment"/>
+  <Field name="QuantityInQuestion5" type="double" required="y" min="1" max="9" comment="Number of units contested because of physical condition or status of units"/>
+  <Field name="CompositeUnitOfMeasure7" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReceivingConditionCode5" required="y" min="2" max="2" validation="T412" comment="Code designating physical condition or status of units received in a specific shipment"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+</Segment>

@@ -1,0 +1,84 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T103.2.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T103.2">
+  <Entry name="01" value="Aluminum"/>
+  <Entry name="03" value="Hard Wood"/>
+  <Entry name="04" value="As Specified by the DOT"/>
+  <Entry name="05" value="Soft Wood"/>
+  <Entry name="07" value="Burlap"/>
+  <Entry name="10" value="Chemically Hardened Fibre"/>
+  <Entry name="13" value="Cloth"/>
+  <Entry name="16" value="Cloth Top"/>
+  <Entry name="19" value="Cloth or Fabric"/>
+  <Entry name="22" value="Compressed"/>
+  <Entry name="25" value="Corrugated or Solid"/>
+  <Entry name="28" value="Double-wall Paper"/>
+  <Entry name="31" value="Fibre"/>
+  <Entry name="34" value="Fibre (Paperboard)"/>
+  <Entry name="37" value="Fiberboard"/>
+  <Entry name="40" value="Fiberboard Metal"/>
+  <Entry name="43" value="Glass"/>
+  <Entry name="46" value="In Inner Containers"/>
+  <Entry name="48" value="Wire/Cord"/>
+  <Entry name="49" value="Insulated"/>
+  <Entry name="50" value="Steel - Vinyl Coated"/>
+  <Entry name="51" value="Wire Mesh"/>
+  <Entry name="52" value="Iron or Steel"/>
+  <Entry name="53" value="Jumbo"/>
+  <Entry name="54" value="Special Jumbo"/>
+  <Entry name="55" value="Lead"/>
+  <Entry name="58" value="Metal"/>
+  <Entry name="59" value="Metal Cans"/>
+  <Entry name="61" value="Moisture Resistant"/>
+  <Entry name="64" value="Molded Plastic"/>
+  <Entry name="67" value="Multiple-wall Paper (2 or more walls)"/>
+  <Entry name="70" value="Multiple-wall Paper (3 or more walls)"/>
+  <Entry name="71" value="Not Otherwise Specified"/>
+  <Entry name="72" value="Paper - VCI"/>
+  <Entry name="73" value="Other than Glass"/>
+  <Entry name="74" value="Other than Metal or Plastic Tubes, or Glass"/>
+  <Entry name="75" value="Plastic - Vacuum Formed"/>
+  <Entry name="76" value="Paper"/>
+  <Entry name="77" value="Plastic - Structural Foam"/>
+  <Entry name="78" value="Plastic - Injection Molded"/>
+  <Entry name="79" value="Plastic"/>
+  <Entry name="80" value="Polyethylene Lined"/>
+  <Entry name="81" value="Plastic - Virgin"/>
+  <Entry name="82" value="Pulpboard"/>
+  <Entry name="83" value="Plastic - Regrind"/>
+  <Entry name="84" value="Polystyrene"/>
+  <Entry name="85" value="Rubber"/>
+  <Entry name="86" value="Foam"/>
+  <Entry name="88" value="Rubber and Fabric"/>
+  <Entry name="89" value="Special"/>
+  <Entry name="90" value="Standard"/>
+  <Entry name="91" value="Stainless Steel"/>
+  <Entry name="92" value="Tubes, Metal or Plastic"/>
+  <Entry name="94" value="Wood"/>
+  <Entry name="95" value="Single Wall Corrugated Board"/>
+  <Entry name="96" value="Double Wall Corrugated Board"/>
+  <Entry name="97" value="Triple Wall Corrugated Board"/>
+</Table>

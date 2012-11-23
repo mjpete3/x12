@@ -1,0 +1,115 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T707.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T707">
+  <Entry name="A1" value="Bank Account Relations"/>
+  <Entry name="A2" value="Credit Limit"/>
+  <Entry name="A3" value="Credit Rating"/>
+  <Entry name="A4" value="Credit Worthiness"/>
+  <Entry name="A5" value="Liquidity"/>
+  <Entry name="A6" value="Loan Payment History"/>
+  <Entry name="AA" value="Overall Composite"/>
+  <Entry name="AB" value="Quality"/>
+  <Entry name="AC" value="Delivery Timeliness"/>
+  <Entry name="AD" value="Percentage Rejections to Receipts"/>
+  <Entry name="AE" value="Contract Administration"/>
+  <Entry name="AF" value="Corrective Action"/>
+  <Entry name="AG" value="Technology"/>
+  <Entry name="AH" value="Audits"/>
+  <Entry name="AI" value="Financial Conditions"/>
+  <Entry name="AJ" value="Service"/>
+  <Entry name="AK" value="Products"/>
+  <Entry name="AL" value="Trade Payments"/>
+  <Entry name="AM" value="Accounting"/>
+  <Entry name="AN" value="Failure Risk Ranking"/>
+  <Entry name="AO" value="Revenue Ranking"/>
+  <Entry name="AP" value="Sales Growth Ranking"/>
+  <Entry name="AQ" value="Asset Ranking"/>
+  <Entry name="AR" value="Profit Margin Ranking"/>
+  <Entry name="AS" value="Attitude of Supplier Personnel"/>
+  <Entry name="AT" value="Post Tax Profit Ranking"/>
+  <Entry name="AU" value="Import and Export Ranking"/>
+  <Entry name="AV" value="Invoice Collection"/>
+  <Entry name="AW" value="Average Trade Payment for all Businesses"/>
+  <Entry name="AX" value="Pretax Profit Ranking"/>
+  <Entry name="BA" value="Billing Accuracy"/>
+  <Entry name="BC" value="Bid Conformance"/>
+  <Entry name="BD" value="Delinquency Risk Score"/>
+  <Entry name="BE" value="Billing Errors"/>
+  <Entry name="BF" value="Delinquency Performance Score"/>
+  <Entry name="BG" value="Delinquency Ranking"/>
+  <Entry name="BH" value="Delinquency Incidence"/>
+  <Entry name="BI" value="Projected Trade Payments"/>
+  <Entry name="BJ" value="Financing Resources"/>
+  <Entry name="BK" value="Failure Risk Score"/>
+  <Entry name="C2" value="Customer Service Index"/>
+  <Entry name="CD" value="Credit Risk"/>
+  <Entry name="CH" value="Claims Handling"/>
+  <Entry name="CL" value="Class Level"/>
+  <Entry name="CO" value="Claims Outstanding"/>
+  <Entry name="CP" value="Crew Professionalism"/>
+  <Entry name="CR" value="Contract Refund Timeliness"/>
+  <Entry name="CT" value="Claims Timeliness"/>
+  <Entry name="DP" value="Damage Percentage"/>
+  <Entry name="DQ" value="Delivery Quantity"/>
+  <Entry name="DS" value="Days Supply"/>
+  <Entry name="EA" value="Equipment Availability"/>
+  <Entry name="EC" value="Equipment Condition"/>
+  <Entry name="EE" value="EDI Errors"/>
+  <Entry name="EI" value="Assigned Equipment Inventory"/>
+  <Entry name="FA" value="Facility Audit"/>
+  <Entry name="IF" value="Lag Timeliness"/>
+  <Entry name="IN" value="Innovation"/>
+  <Entry name="LT" value="Loading Timeliness"/>
+  <Entry name="PA" value="Procedure Audit"/>
+  <Entry name="PC" value="Packaging Discrepancies"/>
+  <Entry name="PD" value="Past-due Claims"/>
+  <Entry name="PF" value="Premium Freight"/>
+  <Entry name="PK" value="Packaging"/>
+  <Entry name="PR" value="Production"/>
+  <Entry name="PS" value="Price Stability"/>
+  <Entry name="PT" value="Placement Timeliness"/>
+  <Entry name="PU" value="Pickup Timeliness"/>
+  <Entry name="PY" value="Property"/>
+  <Entry name="RC" value="Claims Ratio"/>
+  <Entry name="RO" value="Routing Compliance"/>
+  <Entry name="RS" value="Response Timeliness"/>
+  <Entry name="RT" value="Release Timeliness"/>
+  <Entry name="SD" value="Item Discrepancies"/>
+  <Entry name="SE" value="Syntax Errors"/>
+  <Entry name="SF" value="Service Failure"/>
+  <Entry name="SN" value="Shipment Notices"/>
+  <Entry name="SP" value="Safety Performance"/>
+  <Entry name="SS" value="Shipping Schedule Compliance"/>
+  <Entry name="ST" value="Switch Timeliness"/>
+  <Entry name="SV" value="Solvency"/>
+  <Entry name="TC" value="Total Cost"/>
+  <Entry name="TR" value="Transportation"/>
+  <Entry name="TS" value="Technical Support"/>
+  <Entry name="TT" value="Transit Timeliness"/>
+  <Entry name="UT" value="Unloading Timeliness"/>
+  <Entry name="WR" value="Warranty"/>
+  <Entry name="WT" value="Waiting Timeliness"/>
+</Table>

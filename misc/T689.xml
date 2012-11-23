@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T689.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T689">
+  <Entry name="01" value="Vacant"/>
+  <Entry name="02" value="Occupied"/>
+  <Entry name="03" value="Borrower Occupied"/>
+  <Entry name="04" value="Tenant Occupied"/>
+  <Entry name="05" value="Adverse Occupied"/>
+  <Entry name="06" value="Unknown"/>
+  <Entry name="07" value="Original Veteran Occupied"/>
+  <Entry name="08" value="Transferee Occupied"/>
+  <Entry name="09" value="Unoccupied"/>
+  <Entry name="10" value="Abandoned"/>
+  <Entry name="11" value="Condemned"/>
+  <Entry name="12" value="Under Construction"/>
+  <Entry name="13" value="Temporary Residence"/>
+  <Entry name="14" value="Partially Occupied"/>
+  <Entry name="15" value="Owner Occupied, Primary Residence"/>
+  <Entry name="16" value="Owner Occupied, Secondary Residence"/>
+  <Entry name="17" value="Owner Occupied"/>
+</Table>

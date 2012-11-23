@@ -1,0 +1,107 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T91.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T91">
+  <Entry name="6" value="Military Official Mail"/>
+  <Entry name="7" value="Mail"/>
+  <Entry name="A" value="Air"/>
+  <Entry name="B" value="Barge"/>
+  <Entry name="C" value="Consolidation"/>
+  <Entry name="D" value="Parcel Post"/>
+  <Entry name="E" value="Expedited Truck"/>
+  <Entry name="F" value="Flyaway"/>
+  <Entry name="G" value="Consignee Option"/>
+  <Entry name="H" value="Customer Pickup"/>
+  <Entry name="I" value="Common Irregular Carrier"/>
+  <Entry name="J" value="Motor"/>
+  <Entry name="K" value="Backhaul"/>
+  <Entry name="L" value="Contract Carrier"/>
+  <Entry name="M" value="Motor (Common Carrier)"/>
+  <Entry name="N" value="Private Vessel"/>
+  <Entry name="O" value="Containerized Ocean"/>
+  <Entry name="P" value="Private Carrier"/>
+  <Entry name="Q" value="Conventional Ocean"/>
+  <Entry name="R" value="Rail"/>
+  <Entry name="S" value="Ocean"/>
+  <Entry name="T" value="Best Way (Shippers Option)"/>
+  <Entry name="U" value="Private Parcel Service"/>
+  <Entry name="W" value="Inland Waterway"/>
+  <Entry name="X" value="Intermodal (Piggyback)"/>
+  <Entry name="Y" value="Military Intratheater Airlift Service"/>
+  <Entry name="AC" value="Air Charter"/>
+  <Entry name="AE" value="Air Express"/>
+  <Entry name="AF" value="Air Freight"/>
+  <Entry name="AH" value="Air Taxi"/>
+  <Entry name="AP" value="Air (Package Carrier)"/>
+  <Entry name="AR" value="Armed Forces Courier Service (ARFCOS)"/>
+  <Entry name="BB" value="Breakbulk Ocean"/>
+  <Entry name="BP" value="Book Postal"/>
+  <Entry name="BU" value="Bus"/>
+  <Entry name="CC" value="Commingled Ocean"/>
+  <Entry name="CE" value="Customer Pickup / Customer's Expense"/>
+  <Entry name="DA" value="Driveaway Service"/>
+  <Entry name="DW" value="Driveaway, Truckaway, Towaway"/>
+  <Entry name="ED" value="Air Mobility Command (AMC) Channel and Special Assignment Airlift Mission"/>
+  <Entry name="FA" value="Air Freight Forwarder"/>
+  <Entry name="FL" value="Motor (Flatbed)"/>
+  <Entry name="GG" value="Geographic Receiving/Shipping"/>
+  <Entry name="GR" value="Geographic Receiving"/>
+  <Entry name="GS" value="Geographic Shipping"/>
+  <Entry name="HH" value="Household Goods Truck"/>
+  <Entry name="IP" value="Intermodal (Personal Property)"/>
+  <Entry name="LA" value="Military Air"/>
+  <Entry name="LD" value="Local Delivery"/>
+  <Entry name="LT" value="Less Than Trailer Load (LTL)"/>
+  <Entry name="MB" value="Motor (Bulk Carrier)"/>
+  <Entry name="MP" value="Motor (Package Carrier)"/>
+  <Entry name="MS" value="Military Sealift Command (MSC)"/>
+  <Entry name="PA" value="Pooled Air"/>
+  <Entry name="PG" value="Pooled Piggyback"/>
+  <Entry name="PL" value="Pipeline"/>
+  <Entry name="PP" value="Pool to Pool"/>
+  <Entry name="PR" value="Pooled Rail"/>
+  <Entry name="PT" value="Pooled Truck"/>
+  <Entry name="RC" value="Rail, Less than Carload"/>
+  <Entry name="RO" value="Ocean (Roll on - Roll off)"/>
+  <Entry name="RR" value="Roadrailer"/>
+  <Entry name="SB" value="Shipper Agent"/>
+  <Entry name="SC" value="Shipper Agent (Truck)"/>
+  <Entry name="SD" value="Shipper Association"/>
+  <Entry name="SE" value="Sea/Air"/>
+  <Entry name="SF" value="Surface Freight Forwarder"/>
+  <Entry name="SR" value="Supplier Truck"/>
+  <Entry name="SS" value="Steamship"/>
+  <Entry name="ST" value="Stack Train"/>
+  <Entry name="TA" value="Towaway Service"/>
+  <Entry name="TC" value="Cab (Taxi)"/>
+  <Entry name="TT" value="Tank Truck"/>
+  <Entry name="VA" value="Motor (Van)"/>
+  <Entry name="VE" value="Vessel, Ocean"/>
+  <Entry name="VL" value="Vessel, Lake"/>
+  <Entry name="WP" value="Water or Pipeline Intermodal Movement"/>
+  <Entry name="Y1" value="Ocean Conference Carrier"/>
+  <Entry name="Y2" value="Ocean Non-Conference Carrier"/>
+  <Entry name="ZZ" value="Mutually defined"/>
+</Table>

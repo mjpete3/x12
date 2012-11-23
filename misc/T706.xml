@@ -1,0 +1,151 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T706.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T706">
+  <Entry name="01" value="Parent"/>
+  <Entry name="02" value="Child"/>
+  <Entry name="03" value="Corporation"/>
+  <Entry name="04" value="Subsidiary"/>
+  <Entry name="05" value="Wholly-Owned Subsidiary"/>
+  <Entry name="06" value="Division"/>
+  <Entry name="07" value="Company"/>
+  <Entry name="08" value="Doing Business As"/>
+  <Entry name="09" value="Component"/>
+  <Entry name="10" value="Partnership"/>
+  <Entry name="11" value="Partner"/>
+  <Entry name="12" value="Member"/>
+  <Entry name="13" value="Association"/>
+  <Entry name="14" value="Headquarters"/>
+  <Entry name="15" value="Profit Center"/>
+  <Entry name="16" value="Cost Center"/>
+  <Entry name="17" value="Product Line"/>
+  <Entry name="18" value="Union"/>
+  <Entry name="19" value="Group"/>
+  <Entry name="20" value="Department"/>
+  <Entry name="21" value="Multinational Corporation"/>
+  <Entry name="22" value="Sibling"/>
+  <Entry name="23" value="Affiliate"/>
+  <Entry name="24" value="Direct Affiliate"/>
+  <Entry name="25" value="Established Patient"/>
+  <Entry name="26" value="Not Established Patient"/>
+  <Entry name="27" value="Domestic Partner"/>
+  <Entry name="29" value="Power of Attorney Delegee"/>
+  <Entry name="30" value="Significant Other"/>
+  <Entry name="31" value="Ultimate Parent Company"/>
+  <Entry name="32" value="Branch"/>
+  <Entry name="33" value="Owned"/>
+  <Entry name="34" value="Managed"/>
+  <Entry name="35" value="Leased"/>
+  <Entry name="36" value="Group Affiliate"/>
+  <Entry name="37" value="Owner Affiliate"/>
+  <Entry name="38" value="Owner"/>
+  <Entry name="39" value="Related for U.S. Customs Purposes"/>
+  <Entry name="40" value="Related for U.S. Bureau of the Census Purposes"/>
+  <Entry name="41" value="Spouse"/>
+  <Entry name="42" value="Adoptive Parent"/>
+  <Entry name="43" value="Bank"/>
+  <Entry name="44" value="Brother"/>
+  <Entry name="45" value="Business Associate"/>
+  <Entry name="46" value="Daughter"/>
+  <Entry name="47" value="Dependent"/>
+  <Entry name="48" value="Employee"/>
+  <Entry name="49" value="Employer"/>
+  <Entry name="50" value="Father"/>
+  <Entry name="51" value="Fianc?e"/>
+  <Entry name="52" value="Foreman"/>
+  <Entry name="53" value="Foster Parent"/>
+  <Entry name="54" value="Friend"/>
+  <Entry name="55" value="Grand Child"/>
+  <Entry name="56" value="Grand Parent"/>
+  <Entry name="57" value="Guardian"/>
+  <Entry name="58" value="Inforce Policyholder"/>
+  <Entry name="59" value="Institution"/>
+  <Entry name="60" value="Minister"/>
+  <Entry name="61" value="Mother"/>
+  <Entry name="62" value="Neighbor"/>
+  <Entry name="63" value="Non Family"/>
+  <Entry name="64" value="None"/>
+  <Entry name="65" value="Other"/>
+  <Entry name="66" value="Other Family"/>
+  <Entry name="67" value="Self"/>
+  <Entry name="68" value="Sister"/>
+  <Entry name="69" value="Step Child"/>
+  <Entry name="70" value="Supervisor"/>
+  <Entry name="71" value="Teacher"/>
+  <Entry name="72" value="Unknown"/>
+  <Entry name="73" value="Business Name"/>
+  <Entry name="74" value="Counselor"/>
+  <Entry name="75" value="Sanctioning Organization"/>
+  <Entry name="76" value="Sponsoring Organization"/>
+  <Entry name="77" value="Same Job as Applicant"/>
+  <Entry name="78" value="Stockholder"/>
+  <Entry name="79" value="Attorney"/>
+  <Entry name="80" value="Aunt"/>
+  <Entry name="81" value="Brother-in-law"/>
+  <Entry name="82" value="Cousin"/>
+  <Entry name="83" value="Daughter-in-law"/>
+  <Entry name="84" value="Family"/>
+  <Entry name="85" value="Father-in-law"/>
+  <Entry name="86" value="Financial Interest"/>
+  <Entry name="87" value="Marketing Unit"/>
+  <Entry name="88" value="Mother-in-law"/>
+  <Entry name="89" value="Nephew"/>
+  <Entry name="90" value="Niece"/>
+  <Entry name="91" value="Officer"/>
+  <Entry name="92" value="Principal Customer"/>
+  <Entry name="93" value="Principal Supplier"/>
+  <Entry name="94" value="Sister-in-law"/>
+  <Entry name="95" value="Son"/>
+  <Entry name="96" value="Son-in-law"/>
+  <Entry name="97" value="Uncle"/>
+  <Entry name="98" value="Descendant"/>
+  <Entry name="99" value="Director"/>
+  <Entry name="AA" value="Principal Stockholder"/>
+  <Entry name="AB" value="Insured Entity"/>
+  <Entry name="AC" value="Allied Professional"/>
+  <Entry name="AD" value="Ancillary Referral"/>
+  <Entry name="AE" value="Contact"/>
+  <Entry name="AF" value="Contract"/>
+  <Entry name="AG" value="Health Care Facility Affiliation"/>
+  <Entry name="AH" value="Independent Physician/Practice Association (IPA) Affiliation"/>
+  <Entry name="AI" value="Referral Lab Provider"/>
+  <Entry name="AJ" value="Managed Care Organization Affiliation"/>
+  <Entry name="AK" value="Medical Director"/>
+  <Entry name="AL" value="Health Care Network Affiliation"/>
+  <Entry name="AM" value="Office Manager"/>
+  <Entry name="AN" value="On-call Physician"/>
+  <Entry name="AO" value="Physician Hospital Organization (PHO) Affiliation"/>
+  <Entry name="AP" value="Provider in Practice"/>
+  <Entry name="AQ" value="Referred by Provider"/>
+  <Entry name="AR" value="Referred to Provider"/>
+  <Entry name="AS" value="Referral X-ray Provider"/>
+  <Entry name="AT" value="Parent-in-law"/>
+  <Entry name="AU" value="Step Parent"/>
+  <Entry name="AV" value="Former Spouse"/>
+  <Entry name="AW" value="Ward"/>
+  <Entry name="CP" value="Custodial Parent"/>
+  <Entry name="OP" value="Obligated Parent"/>
+  <Entry name="PI" value="Principal"/>
+</Table>

@@ -1,0 +1,125 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T708.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T708">
+  <Entry name="1" value="Unacceptable Delivery"/>
+  <Entry name="2" value="Unacceptable Quality"/>
+  <Entry name="3" value="Unacceptable Delivery and Quality"/>
+  <Entry name="4" value="Satisfactory"/>
+  <Entry name="5" value="Unsatisfactory"/>
+  <Entry name="6" value="Not Evaluated"/>
+  <Entry name="7" value="Eligible for Award"/>
+  <Entry name="8" value="Not Eligible for Award"/>
+  <Entry name="9" value="Greatly Below Expectations"/>
+  <Entry name="A" value="Greatly Exceeds Expectations"/>
+  <Entry name="B" value="Exceeds Expectations"/>
+  <Entry name="C" value="Below Expectations"/>
+  <Entry name="D" value="Very Poor"/>
+  <Entry name="E" value="Excellent"/>
+  <Entry name="F" value="Fair"/>
+  <Entry name="G" value="Good"/>
+  <Entry name="H" value="As Agreed"/>
+  <Entry name="I" value="Business Reorganized - Surveillance Advised"/>
+  <Entry name="J" value="Cash Account"/>
+  <Entry name="K" value="Caution Recommended"/>
+  <Entry name="L" value="Cessation"/>
+  <Entry name="M" value="COD (Cash on Delivery)"/>
+  <Entry name="N" value="COD (Cash on Delivery) Due to Bad Experiences"/>
+  <Entry name="O" value="Continuation Plan"/>
+  <Entry name="P" value="Poor"/>
+  <Entry name="Q" value="Credit Guarantees Advised"/>
+  <Entry name="R" value="Credit Not Recommended"/>
+  <Entry name="S" value="Currently Regular"/>
+  <Entry name="T" value="Difficult to Judge"/>
+  <Entry name="U" value="Unacceptable"/>
+  <Entry name="V" value="Very Good"/>
+  <Entry name="W" value="Difficulties"/>
+  <Entry name="X" value="Difficult to Judge, Direction Change"/>
+  <Entry name="Y" value="Difficult to Judge, Started Recently"/>
+  <Entry name="01" value="Discount According to Business"/>
+  <Entry name="02" value="Extremely Slow"/>
+  <Entry name="03" value="Formerly Satisfactory"/>
+  <Entry name="04" value="Formerly Unsatisfactory"/>
+  <Entry name="05" value="High"/>
+  <Entry name="06" value="Low"/>
+  <Entry name="07" value="Insufficient Data"/>
+  <Entry name="08" value="Limited"/>
+  <Entry name="09" value="Loan Chargeoff"/>
+  <Entry name="10" value="Mainly Foreign Suppliers"/>
+  <Entry name="11" value="Matter of Confidence"/>
+  <Entry name="12" value="Medium"/>
+  <Entry name="13" value="Nationalized Company"/>
+  <Entry name="14" value="Nature of Business Precludes Need for Trade Credit"/>
+  <Entry name="15" value="No Complaints"/>
+  <Entry name="16" value="No Experiences, because Recent Start"/>
+  <Entry name="17" value="No Experiences, because Recent Incorporation"/>
+  <Entry name="18" value="Normal"/>
+  <Entry name="19" value="Not Yet Judged"/>
+  <Entry name="20" value="Other"/>
+  <Entry name="21" value="Paid Discount"/>
+  <Entry name="22" value="Paid Prompt"/>
+  <Entry name="23" value="Payment in Advance"/>
+  <Entry name="24" value="Placed for Collection"/>
+  <Entry name="25" value="Prorogations"/>
+  <Entry name="26" value="Protested Bills"/>
+  <Entry name="27" value="Recognized Bank"/>
+  <Entry name="28" value="Regular According to Business"/>
+  <Entry name="29" value="Relation can be Incurred"/>
+  <Entry name="30" value="Return Drafts"/>
+  <Entry name="31" value="Slow or Terms Exceeded"/>
+  <Entry name="32" value="Strong"/>
+  <Entry name="33" value="To be Monitored"/>
+  <Entry name="34" value="Unbalanced"/>
+  <Entry name="35" value="Unpaid"/>
+  <Entry name="36" value="Variable"/>
+  <Entry name="37" value="Very Limited"/>
+  <Entry name="38" value="Very Slow"/>
+  <Entry name="39" value="Non Sufficient Fund Checks"/>
+  <Entry name="40" value="Repayment not as Agreed"/>
+  <Entry name="41" value="Requested Amount Seems to be Too High"/>
+  <Entry name="42" value="Requested Amount Too High"/>
+  <Entry name="43" value="Requested Amount Too High but feasible with Guarantees"/>
+  <Entry name="44" value="Special Investigation Needed"/>
+  <Entry name="45" value="Payment Notes Exist"/>
+  <Entry name="46" value="Financial Information not Available"/>
+  <Entry name="47" value="Financial Information out of Date"/>
+  <Entry name="48" value="Comment Declined"/>
+  <Entry name="49" value="Extended"/>
+  <Entry name="50" value="Negative"/>
+  <Entry name="51" value="Dealings Done through Related Companies"/>
+  <Entry name="52" value="Fully Utilized"/>
+  <Entry name="53" value="Not an Active Seeker of Commercial Credit"/>
+  <Entry name="54" value="On Blacklist Due to Insufficient Fund Checks"/>
+  <Entry name="55" value="Payments on Letter of Credit Basis"/>
+  <Entry name="56" value="Refer to Other Parts of Report"/>
+  <Entry name="57" value="Somewhat Extended"/>
+  <Entry name="58" value="Slightly Slow"/>
+  <Entry name="59" value="Indication of Open Bankruptcy"/>
+  <Entry name="60" value="Discontinued at this Location"/>
+  <Entry name="61" value="Moderate"/>
+  <Entry name="62" value="Significant"/>
+  <Entry name="63" value="Minimal"/>
+  <Entry name="64" value="Negligible"/>
+</Table>

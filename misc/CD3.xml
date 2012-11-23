@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CD3.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CD3" comment="To transmit identifying codes, weights, and other related information related to an individual carton (package)">
+  <Field name="WeightQualifier" required="y" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="Zone" required="y" min="2" max="3" comment="To identify zone"/>
+  <Field name="ServiceStandard" type="double" required="y" min="1" max="4" comment="To report the time period of carrier's standard service for the shipment"/>
+  <Field name="ServiceLevelCode1" required="y" min="2" max="2" validation="T284" comment="Code indicating the level of transportation service or the billing service offered by the transportation carrier"/>
+  <Field name="PickUpOrDeliveryCode" required="y" min="1" max="2" validation="T108" comment="Specifies the location or type of pickup or delivery"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Charge1" type="double" required="y" min="1" max="12" comment="For a line item: freight or special charge; for the total invoice: the total charges -- expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Charge2" type="double" required="y" min="1" max="12" comment="For a line item: freight or special charge; for the total invoice: the total charges -- expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="ServiceLevelCode2" required="y" min="2" max="2" validation="T284" comment="Code indicating the level of transportation service or the billing service offered by the transportation carrier"/>
+  <Field name="ServiceLevelCode3" required="y" min="2" max="2" validation="T284" comment="Code indicating the level of transportation service or the billing service offered by the transportation carrier"/>
+  <Field name="PaymentMethodCode" required="y" min="3" max="3" validation="T591" comment="Code identifying the method for the movement of payment instructions"/>
+  <Field name="CountryCode" required="y" min="2" max="3" comment="Code identifying the country"/>
+</Segment>

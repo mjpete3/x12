@@ -1,0 +1,66 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1390.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1390">
+  <Entry name="1" value="Active Coverage"/>
+  <Entry name="2" value="Active - Full Risk Capitation"/>
+  <Entry name="3" value="Active - Services Capitated"/>
+  <Entry name="4" value="Active - Services Capitated to Primary Care Physician"/>
+  <Entry name="5" value="Active - Pending Investigation"/>
+  <Entry name="6" value="Inactive"/>
+  <Entry name="7" value="Inactive - Pending Eligibility Update"/>
+  <Entry name="8" value="Inactive - Pending Investigation"/>
+  <Entry name="A" value="Co-Insurance"/>
+  <Entry name="B" value="Co-Payment"/>
+  <Entry name="C" value="Deductible"/>
+  <Entry name="D" value="Benefit Description"/>
+  <Entry name="E" value="Exclusions"/>
+  <Entry name="F" value="Limitations"/>
+  <Entry name="G" value="Out of Pocket (Stop Loss)"/>
+  <Entry name="H" value="Unlimited"/>
+  <Entry name="I" value="Non-Covered"/>
+  <Entry name="J" value="Cost Containment"/>
+  <Entry name="K" value="Reserve"/>
+  <Entry name="L" value="Primary Care Provider"/>
+  <Entry name="M" value="Pre-existing Condition"/>
+  <Entry name="N" value="Services Restricted to Following Provider"/>
+  <Entry name="O" value="Not Deemed a Medical Necessity"/>
+  <Entry name="P" value="Benefit Disclaimer"/>
+  <Entry name="Q" value="Second Surgical Opinion Required"/>
+  <Entry name="R" value="Other or Additional Payor"/>
+  <Entry name="S" value="Prior Year(s) History"/>
+  <Entry name="T" value="Card(s) Reported Lost/Stolen"/>
+  <Entry name="U" value="Contact Following Entity for Eligibility or Benefit Information"/>
+  <Entry name="V" value="Cannot Process"/>
+  <Entry name="W" value="Other Source of Data"/>
+  <Entry name="X" value="Health Care Facility"/>
+  <Entry name="Y" value="Spend Down"/>
+  <Entry name="AA" value="Patient Reimbursement"/>
+  <Entry name="AB" value="Co-payment Maximum"/>
+  <Entry name="AC" value="Co-insurance Maximum"/>
+  <Entry name="CB" value="Coverage Basis"/>
+  <Entry name="MC" value="Managed Care Coordinator"/>
+  <Entry name="WV" value="Waiver"/>
+</Table>

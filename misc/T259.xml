@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T259.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T259">
+  <Entry name="A" value="Add Rate"/>
+  <Entry name="B" value="Original Price Change Transaction"/>
+  <Entry name="C" value="Cancel Previous Price Change Transaction"/>
+  <Entry name="D" value="Decrease Rate"/>
+  <Entry name="E" value="Eliminate/Expire"/>
+  <Entry name="F" value="Confirmation Of A Discussion Between Buyer And Sales Representative"/>
+  <Entry name="G" value="Add Items To A Previous Change Transaction"/>
+  <Entry name="H" value="Delete Items From A Previous Change Transaction"/>
+  <Entry name="I" value="Increase Rate"/>
+  <Entry name="J" value="Replace All Dates Shown In A Previous Change"/>
+  <Entry name="K" value="Replace Prices Shown In A Previous Change Transaction"/>
+  <Entry name="L" value="Replace Restrictions (Conditions) At An Item Level Shown In A Previous Change"/>
+  <Entry name="M" value="Replace Marketing Area Shown In A Previous Announcement"/>
+  <Entry name="N" value="Change Having No Effect on Rates"/>
+  <Entry name="O" value="Replace Restrictions (Conditions) At A Transaction Level Shown In A Previous Change"/>
+  <Entry name="P" value="Replace Price Area Shown In A Previous Change"/>
+  <Entry name="Q" value="Replace Previous Change Transaction Entirely Because of Multiple Kinds Of Changes Or To Make Changes Not Specifically Indicated By Another Code In This Data Element"/>
+  <Entry name="R" value="Replace Allowance Rates Shown In A Previous Announcement"/>
+  <Entry name="T" value="Modified"/>
+  <Entry name="W" value="New"/>
+  <Entry name="X" value="No Modification"/>
+</Table>

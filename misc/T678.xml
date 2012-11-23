@@ -1,0 +1,72 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T678.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T678">
+  <Entry name="1" value="1st Week of the Month"/>
+  <Entry name="2" value="2nd Week of the Month"/>
+  <Entry name="3" value="3rd Week of the Month"/>
+  <Entry name="4" value="4th Week of the Month"/>
+  <Entry name="5" value="5th Week of the Month"/>
+  <Entry name="6" value="1st &amp; 3rd Weeks of the Month"/>
+  <Entry name="7" value="2nd &amp; 4th Weeks of the Month"/>
+  <Entry name="8" value="1st Working Day of Period"/>
+  <Entry name="9" value="Last Working Day of Period"/>
+  <Entry name="A" value="Monday through Friday"/>
+  <Entry name="B" value="Monday through Saturday"/>
+  <Entry name="C" value="Monday through Sunday"/>
+  <Entry name="D" value="Monday"/>
+  <Entry name="E" value="Tuesday"/>
+  <Entry name="F" value="Wednesday"/>
+  <Entry name="G" value="Thursday"/>
+  <Entry name="H" value="Friday"/>
+  <Entry name="J" value="Saturday"/>
+  <Entry name="K" value="Sunday"/>
+  <Entry name="L" value="Monday through Thursday"/>
+  <Entry name="M" value="Immediately"/>
+  <Entry name="N" value="As Directed"/>
+  <Entry name="O" value="Daily Mon. through Fri."/>
+  <Entry name="P" value="1/2 Mon. &amp; 1/2 Thurs."/>
+  <Entry name="Q" value="1/2 Tues. &amp; 1/2 Thurs."/>
+  <Entry name="R" value="1/2 Wed. &amp; 1/2 Fri."/>
+  <Entry name="S" value="Once Anytime Mon. through Fri."/>
+  <Entry name="T" value="1/2 Tue. &amp; 1/2 Fri."/>
+  <Entry name="U" value="1/2 Mon. &amp; 1/2 Wed."/>
+  <Entry name="V" value="1/3 Mon., 1/3 Wed., 1/3 Fri."/>
+  <Entry name="W" value="Whenever Necessary"/>
+  <Entry name="X" value="1/2 By Wed., Bal. By Fri."/>
+  <Entry name="Y" value="None (Also Used to Cancel or Override a Previous Pattern)"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="SA" value="Sunday, Monday, Thursday, Friday, Saturday"/>
+  <Entry name="SB" value="Tuesday through Saturday"/>
+  <Entry name="SC" value="Sunday, Wednesday, Thursday, Friday, Saturday"/>
+  <Entry name="SD" value="Monday, Wednesday, Thursday, Friday, Saturday"/>
+  <Entry name="SG" value="Tuesday through Friday"/>
+  <Entry name="SL" value="Monday, Tuesday and Thursday"/>
+  <Entry name="SP" value="Monday, Tuesday and Friday"/>
+  <Entry name="SX" value="Wednesday and Thursday"/>
+  <Entry name="SY" value="Monday, Wednesday and Thursday"/>
+  <Entry name="SZ" value="Tuesday, Thursday and Friday"/>
+  <Entry name="WE" value="Weekend"/>
+</Table>

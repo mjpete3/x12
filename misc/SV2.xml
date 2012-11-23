@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: SV2.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="SV2" comment="To specify the claim service detail for a Health Care institution">
+  <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="y" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
+  <Field name="MonetaryAmount1" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="UnitRate" type="double" required="y" min="1" max="10" comment="The rate per unit of associate revenue for hospital accommodation"/>
+  <Field name="MonetaryAmount2" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="NursingHomeResidentialStatusCode" required="y" min="1" max="1" validation="T1345" comment="Code specifying the status of a nursing home resident at the time of service"/>
+  <Field name="LevelOfCareCode" required="y" min="1" max="1" validation="T1337" comment="Code specifying the level of care provided by a nursing home facility"/>
+</Segment>

@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LRQ.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LRQ" comment="To describe the characteristics of a mortgage requested by the applicant(s)">
+  <Field name="MonetaryAmount1" type="double" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="RateValueQualifier" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="MonetaryAmount2" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="TypeOfResidenceCode" required="y" min="1" max="1" validation="T1070" comment="Code identifying type of residence"/>
+  <Field name="ContactMethodCode" required="y" min="1" max="1" validation="T1079" comment="Code indicating the type of contact"/>
+  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="AssumptionTermsCode" required="y" min="1" max="1" validation="T1080" comment="Code indicating the terms for loan assumption"/>
+  <Field name="LoanPurposeCode" required="y" min="2" max="2" validation="T1081" comment="Code identifying the reason the loan is needed"/>
+  <Field name="CompositeUseOfProceeds" type="C048" required="y" min="0" max="inf" comment="To identify one or more uses of loan proceeds"/>
+  <Field name="MonetaryAmount3" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="MonetaryAmount4" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Description1" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Description2" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="RealEstateLoanTypeCode" required="y" min="1" max="1" validation="T1093" comment="Code identifying the loan product category"/>
+  <Field name="Description3" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="LoanPaymentTypeCode" required="y" min="2" max="2" validation="T1085" comment="Code identifying the nature of loan payment"/>
+  <Field name="Description4" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Number" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Description5" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="CodeCategory" required="y" min="2" max="2" validation="T1136" comment="Specifies the situation or category to which the code applies"/>
+</Segment>

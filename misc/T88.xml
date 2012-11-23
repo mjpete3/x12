@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T88.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T88">
+  <Entry name="L" value="Line Item Only"/>
+  <Entry name="R" value="Originator Assigned"/>
+  <Entry name="S" value="Entire Shipment"/>
+  <Entry name="W" value="Pallet Number"/>
+  <Entry name="X" value="Pallet Configuration Number"/>
+  <Entry name="AA" value="SSCC-18"/>
+  <Entry name="AI" value="UCC/EAN-128 Application Identifier (AI) and Data"/>
+  <Entry name="CA" value="Shipper-Assigned Case Number"/>
+  <Entry name="CP" value="Carrier-Assigned Package ID Number"/>
+  <Entry name="DZ" value="Receiver Assigned Drop Zone"/>
+  <Entry name="GM" value="SSCC-18 and Application Identifier"/>
+  <Entry name="MC" value="Master Carton Number"/>
+  <Entry name="MT" value="Marked Ticket Price"/>
+  <Entry name="PB" value="Premarked by Buyer"/>
+  <Entry name="SI" value="Self-Identifying Container via Radio Frequency ID Device"/>
+  <Entry name="SM" value="Shipper Assigned"/>
+  <Entry name="SR" value="Shipper Assigned Roll Number"/>
+  <Entry name="SS" value="Shipper Assigned Skid Number"/>
+  <Entry name="UC" value="U.P.C. Shipping Container Code"/>
+  <Entry name="UP" value="U.P.C. Consumer Package Code (1-5-5-1)"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: W27.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="W27" comment="To specify details of the transportation equipment and carrier routing details">
+  <Field name="TransportationMethodTypeCode" min="1" max="2" validation="T91" comment="Code specifying the method or type of transportation for the shipment"/>
+  <Field name="StandardCarrierAlphaCode" required="y" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="Routing" required="y" min="1" max="35" comment="Free-form description of the routing or requested routing for shipment, or the originating carrier's identity"/>
+  <Field name="ShipmentMethodOfPayment" required="y" min="2" max="2" validation="T146" comment="Code identifying payment terms for transportation charges"/>
+  <Field name="EquipmentDescriptionCode" required="y" min="2" max="2" validation="T40" comment="Code identifying type of equipment used for shipment"/>
+  <Field name="EquipmentInitial" required="y" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" required="y" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="ShipmentOrderStatusCode" required="y" min="2" max="2" validation="T368" comment="Code indicating the status of an order or shipment or the disposition of any difference between the quantity ordered and the quantity shipped for a line item or transaction"/>
+  <Field name="SpecialHandlingCode" required="y" min="2" max="3" validation="T152" comment="Code specifying special transportation handling instructions"/>
+  <Field name="CarrierRouteChangeReasonCode" required="y" min="2" max="2" validation="T890" comment="Code reflecting reason a requested carrier or route was changed"/>
+</Segment>

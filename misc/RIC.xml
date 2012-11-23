@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RIC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RIC" comment="To transmit information about the item being returned">
+  <Field name="PaymentMethodCode" min="3" max="3" validation="T591" comment="Code identifying the method for the movement of payment instructions"/>
+  <Field name="CodeListQualifierCode" min="1" max="3" validation="T1270" comment="Code identifying a specific industry code list"/>
+  <Field name="IndustryCode" min="1" max="30" comment="Code indicating a code from a specific industry code list"/>
+  <Field name="MonetaryAmount" type="double" min="1" max="18" comment="Monetary amount"/>
+  <Field name="CreditDebitFlagCode" min="1" max="1" validation="T478" comment="Code indicating whether amount is a credit or debit"/>
+  <Field name="AccountNumber1" required="y" min="1" max="35" comment="Account number assigned"/>
+  <Field name="AccountNumberQualifier1" required="y" min="1" max="3" validation="T569" comment="Code indicating the type of account"/>
+  <Field name="DFIIdNumberQualifier1" required="y" min="2" max="2" validation="T506" comment="Code identifying the type of identification number of Depository Financial Institution (DFI)"/>
+  <Field name="DFIIdentificationNumber1" required="y" min="3" max="12" comment="Depository Financial Institution (DFI) identification number"/>
+  <Field name="AccountNumber2" required="y" min="1" max="35" comment="Account number assigned"/>
+  <Field name="AccountNumberQualifier2" required="y" min="1" max="3" validation="T569" comment="Code indicating the type of account"/>
+  <Field name="DFIIdNumberQualifier2" required="y" min="2" max="2" validation="T506" comment="Code identifying the type of identification number of Depository Financial Institution (DFI)"/>
+  <Field name="DFIIdentificationNumber2" required="y" min="3" max="12" comment="Depository Financial Institution (DFI) identification number"/>
+  <Field name="AccountNumber3" required="y" min="1" max="35" comment="Account number assigned"/>
+  <Field name="AccountNumberQualifier3" required="y" min="1" max="3" validation="T569" comment="Code indicating the type of account"/>
+  <Field name="DFIIdNumberQualifier3" required="y" min="2" max="2" validation="T506" comment="Code identifying the type of identification number of Depository Financial Institution (DFI)"/>
+  <Field name="DFIIdentificationNumber3" required="y" min="3" max="12" comment="Depository Financial Institution (DFI) identification number"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+</Segment>

@@ -1,0 +1,44 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: MNC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="MNC" comment="To provide detailed characteristics information of a mortgage note">
+  <Field name="CodeCategory" required="y" min="2" max="2" validation="T1136" comment="Specifies the situation or category to which the code applies"/>
+  <Field name="RealEstateLoanTypeCode" required="y" min="1" max="1" validation="T1093" comment="Code identifying the loan product category"/>
+  <Field name="LienPriorityCode" required="y" min="1" max="1" validation="T1101" comment="Code identifying the rights and relationship of a loan to any other loan secured by the same property"/>
+  <Field name="LoanPaymentTypeCode" required="y" min="2" max="2" validation="T1085" comment="Code identifying the nature of loan payment"/>
+  <Field name="LoanRateTypeCode" required="y" min="1" max="1" validation="T1086" comment="Code indicating the characteristics of the loan rate"/>
+  <Field name="FrequencyCode" required="y" min="1" max="1" validation="T594" comment="Code indicating frequency or type of activities or actions being reported"/>
+  <Field name="InterestRateCalculationMethodCode" required="y" min="1" max="1" validation="T1626" comment="Code identifying the type of method used to calculate the interest rate"/>
+  <Field name="Number1" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="Number2" type="long" required="y" min="1" max="9" comment="A generic number"/>
+  <Field name="PaymentMethodCode" required="y" min="1" max="2" validation="T107" comment="Code identifying type of payment procedures"/>
+  <Field name="InterestPaymentCode" required="y" min="1" max="2" validation="T1265" comment="Code identifying the method of interest payment"/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductProcessCharacteristicCode" required="y" min="2" max="3" validation="T750" comment="Code identifying the general class of a product or process characteristic"/>
+  <Field name="ProductDescriptionCode" required="y" min="1" max="12" comment="A code from an industry code list which provides specific data about a product characteristic"/>
+  <Field name="TypeOfRealEstateAssetCode" required="y" min="2" max="2" validation="T1074" comment="Code identifying the nature of a real estate"/>
+  <Field name="RealEstateLoanSecurityInstrumentCode" required="y" min="1" max="1" validation="T1076" comment="Code indicating type of security instrument"/>
+</Segment>

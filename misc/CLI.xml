@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CLI.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CLI" comment="To identify the cost line items associated with a specific reporting structure reference (i.e., a work breakdown structure) or summary project level reference">
+  <Field name="EntityIdentifierCode" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+  <Field name="BreakdownStructureDetailCode" required="y" min="2" max="2" validation="T1196" comment="Codes identifying details relating to a reporting breakdown structure tree"/>
+  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+  <Field name="FreeFormDescription" required="y" min="1" max="45" comment="Free-form descriptive text"/>
+  <Field name="RateOrValueTypeCode" required="y" min="1" max="2" validation="T562" comment="Code identifying method used to determine the type of rate, value, or percent details"/>
+  <Field name="ContractTypeCode" required="y" min="2" max="2" validation="T1166" comment="Code identifying a contract type"/>
+</Segment>

@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1373.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1373">
+  <Entry name="BM" value="Bellows Meter"/>
+  <Entry name="BO" value="Based on 120 Days List to Contract"/>
+  <Entry name="DM" value="Displacement Meter"/>
+  <Entry name="FT" value="Flange Tap"/>
+  <Entry name="HN" value="Hubometer"/>
+  <Entry name="MA" value="Measured Over Six Months"/>
+  <Entry name="MM" value="Mercury Meter"/>
+  <Entry name="OM" value="Orifice Meter"/>
+  <Entry name="OU" value="Odometer"/>
+  <Entry name="PT" value="Pipe Tap"/>
+  <Entry name="TM" value="Turbine Meter"/>
+  <Entry name="VA" value="Valued at 90 Day Marketing Time Method"/>
+  <Entry name="VB" value="Valued at 120 Day Marketing Time Method"/>
+  <Entry name="VC" value="Valued at 180 Day Marketing Time Method"/>
+</Table>

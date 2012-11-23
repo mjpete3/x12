@@ -1,0 +1,98 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1089.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1089">
+  <Entry name="01" value="Treasury Bill - 1 Year"/>
+  <Entry name="02" value="Treasury Bill - 3 Year"/>
+  <Entry name="03" value="Treasury Bill - 6 Months"/>
+  <Entry name="04" value="Treasury Bill - 5 Year"/>
+  <Entry name="05" value="Treasury Bill: 3 Month Index (Weekly Auction)"/>
+  <Entry name="06" value="Treasury Bill: 6 Month Index (Weekly Auction)"/>
+  <Entry name="07" value="Treasury Bill: 6 Month Index (Monthly Auction)"/>
+  <Entry name="08" value="Treasury Bill: 6 Month (Invest) (Weekly)"/>
+  <Entry name="09" value="Treasury Bill: 6 Month (Invest) (Monthly)"/>
+  <Entry name="10" value="Cumulative Average Previous 4 Weeks of 6 Month T Bills"/>
+  <Entry name="11" value="Cumulative Average Previous 26 Weeks of 6 Month T Bills"/>
+  <Entry name="12" value="Cumulative Average Previous 12 Months of 6 Month T Bills"/>
+  <Entry name="13" value="Treasury Sec.: 1 Year (Weekly Average)"/>
+  <Entry name="14" value="Treasury Sec.: 2 Year (Weekly Average)"/>
+  <Entry name="15" value="Treasury Sec.: 3 Year (Weekly Average)"/>
+  <Entry name="16" value="Treasury Sec.: 5 Year (Weekly Average)"/>
+  <Entry name="17" value="Treasury Sec.: 7 year (Weekly Average)"/>
+  <Entry name="18" value="Treasury Sec.: 10 Year (Weekly Average)"/>
+  <Entry name="19" value="Treasury Sec.: 1 Year (Monthly Average)"/>
+  <Entry name="20" value="Treasury Sec.: 3 Year (Monthly Average)"/>
+  <Entry name="21" value="Treasury Sec.: 5 Year (Monthly Average)"/>
+  <Entry name="22" value="Cumulative Average Previous 12 Months of 1 Year Treasury Secretary"/>
+  <Entry name="23" value="Federal Home Loan Bank District 11 Index"/>
+  <Entry name="24" value="OTS: Average Contract Rate"/>
+  <Entry name="25" value="OTS: Series of Closed Loan Index"/>
+  <Entry name="26" value="OTS: Fixed Rate, Closed Loan All Lenders"/>
+  <Entry name="27" value="OTS: S &amp; L Average Quarterly Cost of Funds"/>
+  <Entry name="28" value="OTS: S &amp; L Median Monthly Cost of Funds"/>
+  <Entry name="29" value="OTS: 11th Dist. Cost of Funds (Monthly)"/>
+  <Entry name="30" value="OTS: 4th Dist. Cost of Funds (Monthly)"/>
+  <Entry name="31" value="OTS: 7th Dist. Cost of Funds (Monthly)"/>
+  <Entry name="32" value="OTS: 1 Year 1st Dist. Advance Rate (Daily)"/>
+  <Entry name="33" value="OTS: 11th Dist. Daily Guarantee 30 Day Comm 5 Year"/>
+  <Entry name="34" value="Federal Home Loan Bank Index"/>
+  <Entry name="35" value="OTS: 4 Year 2nd Dist. Advance Rate (Daily)"/>
+  <Entry name="36" value="OTS: 5 Year 2nd Dist. Advance Rate (Daily)"/>
+  <Entry name="37" value="OTS: Average Previous 12 Month Series Closed Loans"/>
+  <Entry name="38" value="OTS: Average Previous 12 Month 11th Dist. Cost of Funds"/>
+  <Entry name="39" value="OTS: Semi-Annual Cost of Funds for CA Members"/>
+  <Entry name="40" value="OTS: Nat. Mon. Median Cost of Funds Ratio"/>
+  <Entry name="41" value="OTS: Federal Cost of Funds"/>
+  <Entry name="42" value="OTS: Quarterly National Average Cost of Funds"/>
+  <Entry name="43" value="OTS: Semi-annual National Average Cost of Funds"/>
+  <Entry name="44" value="London Interbank Offered Rate (LIBOR)"/>
+  <Entry name="45" value="Libor: 1 Month Rate"/>
+  <Entry name="46" value="Libor.: 3 Month Rate"/>
+  <Entry name="47" value="Libor.: 6 Month Rate"/>
+  <Entry name="48" value="Libor.: 1 Year Rate"/>
+  <Entry name="49" value="Libor.: 1 Month Fannie Mae Index (Monthly)"/>
+  <Entry name="50" value="Libor: 3 Month Fannie Mae Index (Monthly)"/>
+  <Entry name="51" value="Libor.: 6 Month Fannie Mae Index (Monthly)"/>
+  <Entry name="52" value="Libor: 12 Month Fannie Mae Index (Monthly)"/>
+  <Entry name="53" value="Libor: 1 Month Wall Street Journal Rate"/>
+  <Entry name="54" value="Libor: 6 Month Wall Street Journal Rate"/>
+  <Entry name="56" value="National Cost of Funds"/>
+  <Entry name="57" value="Prime"/>
+  <Entry name="58" value="National Average Contract Rate on Previous Occ. Homes"/>
+  <Entry name="59" value="Wall Street Journal Prime Rate"/>
+  <Entry name="60" value="6 Month Certificate of Deposit Rate"/>
+  <Entry name="61" value="NY Federal Res. 6 Month Jumbo CD Rate (Daily)"/>
+  <Entry name="62" value="6 Month Money Market-Comml. Bank (Weekly)"/>
+  <Entry name="63" value="6 Month Treasury Bill Secondary Market"/>
+  <Entry name="64" value="6 Month CDS-Secondary Market (Weekly)"/>
+  <Entry name="65" value="6 Month CDS-Secondary Market (Monthly)"/>
+  <Entry name="66" value="Fannie Mae: Blend 50% Frm./50% 1 Year Treas."/>
+  <Entry name="67" value="Fannie Mae: Blend 75% Frm./25% 1 Year Treas."/>
+  <Entry name="68" value="Fannie Mae: 30 Day Frm. Yield Actual/Actl."/>
+  <Entry name="69" value="Fannie Mae: 30 Day Frm. Yield Schl./Actual"/>
+  <Entry name="70" value="Fannie Mae: 60 Day Frm. Yield Actual/Actl."/>
+  <Entry name="71" value="Fannie Mae: 60 Day Frm. Yield Schl./Actual"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

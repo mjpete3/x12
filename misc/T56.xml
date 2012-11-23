@@ -1,0 +1,46 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T56.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T56">
+  <Entry name="AA" value="Airport-to-Airport"/>
+  <Entry name="AI" value="Transport Mode Change"/>
+  <Entry name="BB" value="Breakbulk"/>
+  <Entry name="CS" value="Container Station"/>
+  <Entry name="CY" value="Container Yard"/>
+  <Entry name="DD" value="Door to Door"/>
+  <Entry name="DR" value="Door to Ramp"/>
+  <Entry name="HA" value="Haulage"/>
+  <Entry name="HH" value="House-to-house"/>
+  <Entry name="HL" value="Headload or Devanning"/>
+  <Entry name="HP" value="House-to-pier"/>
+  <Entry name="MC" value="Multi-country Consolidation"/>
+  <Entry name="MD" value="Mixed Delivery"/>
+  <Entry name="NC" value="Non-containerized cargo"/>
+  <Entry name="PH" value="Pier-to-house"/>
+  <Entry name="PP" value="Pier-to-pier"/>
+  <Entry name="RD" value="Ramp to Door"/>
+  <Entry name="RE" value="Ramp to Ramp"/>
+  <Entry name="RR" value="Roll-on Roll-off"/>
+</Table>

@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: DIS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="DIS" comment="To specify the exact type and terms of various discount information">
+  <Field name="DiscountTermsTypeCode" min="3" max="3" validation="T653" comment="Code to define the units in which the discount will be determined, i.e., dollars, case, truckload, etc."/>
+  <Field name="DiscountBaseQualifier" min="2" max="2" validation="T654" comment="Code to define unit of discount, i.e., dollars, cases, alternate products, etc."/>
+  <Field name="DiscountBaseValue" type="double" min="1" max="10" comment="A multiplier amount used in conjunction with discount base qualifier to determine the value of the discount"/>
+  <Field name="DiscountControlLimitQualifier" min="2" max="3" validation="T656" comment="Code to define the units of the limits for determining discount"/>
+  <Field name="DiscountControlLimit1" type="long" min="1" max="10" comment="Amount or time associated with application of the discount"/>
+  <Field name="DiscountControlLimit2" type="long" required="y" min="1" max="10" comment="Amount or time associated with application of the discount"/>
+</Segment>

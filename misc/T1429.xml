@@ -1,0 +1,76 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1429.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1429">
+  <Entry name="0" value="Adobe"/>
+  <Entry name="1" value="Aluminum Siding"/>
+  <Entry name="2" value="Asbestos Siding"/>
+  <Entry name="3" value="Cement"/>
+  <Entry name="4" value="Concrete"/>
+  <Entry name="5" value="Concrete Block"/>
+  <Entry name="6" value="Corrugated Metal"/>
+  <Entry name="7" value="Galvanized Plate"/>
+  <Entry name="8" value="Glass"/>
+  <Entry name="9" value="Granite"/>
+  <Entry name="A" value="Aluminum"/>
+  <Entry name="B" value="Brick"/>
+  <Entry name="C" value="Cement Block"/>
+  <Entry name="D" value="Cinder Block"/>
+  <Entry name="E" value="Grey Brick"/>
+  <Entry name="F" value="Fiberglass"/>
+  <Entry name="G" value="Hollow Tile"/>
+  <Entry name="H" value="Lava Stone"/>
+  <Entry name="I" value="Limestone"/>
+  <Entry name="J" value="Logs"/>
+  <Entry name="K" value="Marble"/>
+  <Entry name="L" value="Metal"/>
+  <Entry name="M" value="Frame"/>
+  <Entry name="N" value="Metal Coating"/>
+  <Entry name="O" value="Other"/>
+  <Entry name="P" value="Metallic"/>
+  <Entry name="Q" value="Plaster"/>
+  <Entry name="R" value="Plastic"/>
+  <Entry name="S" value="Steel"/>
+  <Entry name="T" value="Plate Ceiling"/>
+  <Entry name="U" value="Plywood"/>
+  <Entry name="V" value="Reinforced Concrete"/>
+  <Entry name="W" value="Rock"/>
+  <Entry name="X" value="Sandstone"/>
+  <Entry name="Y" value="Sheet Iron"/>
+  <Entry name="Z" value="Mutually Defined"/>
+  <Entry name="A0" value="Wood Metal Coating"/>
+  <Entry name="A1" value="Sheet Metal"/>
+  <Entry name="A2" value="Siding"/>
+  <Entry name="A3" value="Slate"/>
+  <Entry name="A4" value="Stucco"/>
+  <Entry name="A5" value="Teja"/>
+  <Entry name="A6" value="Tile"/>
+  <Entry name="A7" value="Tin"/>
+  <Entry name="A8" value="Veneer"/>
+  <Entry name="A9" value="Vinyl Siding"/>
+  <Entry name="AA" value="Wood Siding"/>
+  <Entry name="AB" value="Steel Frame"/>
+  <Entry name="AC" value="Steel Reinforced Concrete"/>
+</Table>

@@ -1,0 +1,77 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1166.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1166">
+  <Entry name="01" value="Diagnosis Related Group (DRG)"/>
+  <Entry name="02" value="Per Diem"/>
+  <Entry name="03" value="Variable Per Diem"/>
+  <Entry name="04" value="Flat"/>
+  <Entry name="05" value="Capitated"/>
+  <Entry name="06" value="Percent"/>
+  <Entry name="09" value="Other"/>
+  <Entry name="AB" value="Negotiated Growing Equity Mortgage (GEM)"/>
+  <Entry name="AC" value="Anticipated Contract"/>
+  <Entry name="AD" value="Federal Housing Authority Adjustable Rate Mortgage"/>
+  <Entry name="AE" value="Federal Housing Authority Veterans Affairs Fixed Rate Mortgage (including standard Growing Equity Mortgages)"/>
+  <Entry name="AF" value="Conventional Second Mortgages"/>
+  <Entry name="AG" value="Conventional Fixed Rate Mortgages"/>
+  <Entry name="AH" value="Federal Housing Authority Veterans Affairs Graduated Payment Mortgage"/>
+  <Entry name="AI" value="Negotiated Conventional, Graduated Payment, or Step Rate Mortgage"/>
+  <Entry name="AJ" value="Conventional Adjustable Rate Mortgage"/>
+  <Entry name="CA" value="Cost Plus Incentive Fee (With Performance Incentives)"/>
+  <Entry name="CB" value="Cost Plus Incentive Fee (Without Performance Incentives)"/>
+  <Entry name="CH" value="Cost Sharing"/>
+  <Entry name="CP" value="Cost Plus"/>
+  <Entry name="CS" value="Cost"/>
+  <Entry name="CW" value="Cost Plus Award Fee"/>
+  <Entry name="CX" value="Cost Plus Fixed Fee"/>
+  <Entry name="CY" value="Cost Plus Incentive Fee"/>
+  <Entry name="DI" value="Distributor"/>
+  <Entry name="EA" value="Exclusive Agency"/>
+  <Entry name="ER" value="Exclusive Right"/>
+  <Entry name="FA" value="Firm or Actual Contract"/>
+  <Entry name="FB" value="Fixed Price Incentive Firm Target (With Performance Incentive)"/>
+  <Entry name="FC" value="Fixed Price Incentive Firm Target (Without Performance Incentive)"/>
+  <Entry name="FD" value="Fixed Price Redetermination"/>
+  <Entry name="FE" value="Fixed Price with Escalation"/>
+  <Entry name="FF" value="Fixed Price Incentive Successive Target (With Performance Incentive)"/>
+  <Entry name="FG" value="Fixed Price Incentive Successive Target (Without Performance Incentive)"/>
+  <Entry name="FH" value="Fixed Price Award Fee"/>
+  <Entry name="FI" value="Fixed Price Incentive"/>
+  <Entry name="FJ" value="Fixed Price Level of Effort"/>
+  <Entry name="FK" value="No Cost"/>
+  <Entry name="FL" value="Flat Amount"/>
+  <Entry name="FM" value="Retroactive Fixed Price Redetermination"/>
+  <Entry name="FR" value="Firm Fixed Price"/>
+  <Entry name="FX" value="Fixed Price with Economic Price Adjustment"/>
+  <Entry name="LA" value="Labor"/>
+  <Entry name="LE" value="Level of Effort"/>
+  <Entry name="LH" value="Labor Hours"/>
+  <Entry name="OC" value="Other Contract Type"/>
+  <Entry name="PR" value="Prospect Reservation"/>
+  <Entry name="SP" value="Same Percentage as Film Rental Earned (SPFRE)"/>
+  <Entry name="TM" value="Time and Materials"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

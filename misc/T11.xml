@@ -1,0 +1,47 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T11.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T11">
+  <Entry name="A" value="Temporarily Articulated Load"/>
+  <Entry name="B" value="Straight Plan"/>
+  <Entry name="C" value="Average Agreement"/>
+  <Entry name="D" value="Switch Bill"/>
+  <Entry name="E" value="Storage"/>
+  <Entry name="F" value="Detention"/>
+  <Entry name="G" value="Store in Transit"/>
+  <Entry name="H" value="For Furtherance of Transit"/>
+  <Entry name="J" value="Flat Car Composite Billing"/>
+  <Entry name="M" value="Multiple Shipment Billing"/>
+  <Entry name="P" value="Paired Trailer Shipment"/>
+  <Entry name="Q" value="Multi-car Transit"/>
+  <Entry name="R" value="Rule 24 Lead and Trailer Equipment on Single Revenue Bill"/>
+  <Entry name="S" value="Single Shipment Billing"/>
+  <Entry name="T" value="Transit Billing"/>
+  <Entry name="U" value="Unit Train Billing"/>
+  <Entry name="V" value="Normal Bill of Lading"/>
+  <Entry name="W" value="Negotiable Bill of Lading"/>
+  <Entry name="X" value="Straight Consignment Bill of Lading"/>
+  <Entry name="Y" value="Route Code Bill of Lading"/>
+</Table>

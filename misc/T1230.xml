@@ -1,0 +1,87 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1230.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1230">
+  <Entry name="AF" value="Authorized Field Change"/>
+  <Entry name="CA" value="Campaign"/>
+  <Entry name="CB" value="Call Back"/>
+  <Entry name="CC" value="Customer Courtesy"/>
+  <Entry name="CG" value="Customer Goodwill Parts Adjustment"/>
+  <Entry name="CP" value="Customer Goodwill Policy Adjustment"/>
+  <Entry name="CR" value="Credit for In-house Repair - Labor and Material"/>
+  <Entry name="CS" value="Customer Goodwill Sales Adjustment"/>
+  <Entry name="CW" value="Customer Warranty"/>
+  <Entry name="DD" value="Dealer Demonstration Warranty"/>
+  <Entry name="DW" value="Dealer Warranty"/>
+  <Entry name="EC" value="Engineering Change Activity"/>
+  <Entry name="ED" value="Extended Dealer Warranty"/>
+  <Entry name="EE" value="Extended Equipment Coverage"/>
+  <Entry name="EF" value="Engineering Field Test"/>
+  <Entry name="EM" value="Emissions Warranty"/>
+  <Entry name="EW" value="Extended Vendor Warranty"/>
+  <Entry name="FC" value="Fleet Contract"/>
+  <Entry name="FW" value="Full Warranty"/>
+  <Entry name="GC" value="Government Contract"/>
+  <Entry name="GM" value="Government Mandated"/>
+  <Entry name="GR" value="Government Recall"/>
+  <Entry name="IO" value="Information Only"/>
+  <Entry name="LF" value="Lifetime Warranty"/>
+  <Entry name="LL" value="Lifetime Limited Warranty"/>
+  <Entry name="LO" value="Labor Only"/>
+  <Entry name="LP" value="Life Percentage"/>
+  <Entry name="LW" value="Limited Warranty"/>
+  <Entry name="MB" value="Money Back Guarantee"/>
+  <Entry name="MC" value="Military Contract"/>
+  <Entry name="MG" value="Maintenance Cost Guarantee/Warranty"/>
+  <Entry name="MI" value="Material Inspection"/>
+  <Entry name="MR" value="Manufacturer Recall"/>
+  <Entry name="MS" value="Manufacturer Standard"/>
+  <Entry name="NE" value="New Equipment Warranty"/>
+  <Entry name="OW" value="Option Warranty"/>
+  <Entry name="PD" value="Prior to Delivery"/>
+  <Entry name="PG" value="Performance Guarantee/Warranty"/>
+  <Entry name="PL" value="Parts and Labor"/>
+  <Entry name="PO" value="Parts Only"/>
+  <Entry name="PW" value="Purchase Warranty"/>
+  <Entry name="QP" value="Quality Problem Referral"/>
+  <Entry name="RC" value="Return for Warranty Claim"/>
+  <Entry name="RD" value="Received Damage"/>
+  <Entry name="RN" value="Recall Notice"/>
+  <Entry name="RP" value="Replacement Part Warranty"/>
+  <Entry name="RR" value="Return for Warranty Repair"/>
+  <Entry name="RS" value="Repeat Service"/>
+  <Entry name="RT" value="Return Warranty Replacement"/>
+  <Entry name="SB" value="Service Bulletin"/>
+  <Entry name="SC" value="Service Contract"/>
+  <Entry name="SD" value="Shipment Damage"/>
+  <Entry name="SP" value="Special Program"/>
+  <Entry name="SS" value="Special Sales Allowance"/>
+  <Entry name="ST" value="Standard Warranty"/>
+  <Entry name="SW" value="Software Warranty"/>
+  <Entry name="TC" value="Transportation Claim"/>
+  <Entry name="TP" value="Third Party Repair"/>
+  <Entry name="UE" value="Used Equipment Warranty"/>
+  <Entry name="WC" value="Warranty Concession"/>
+</Table>

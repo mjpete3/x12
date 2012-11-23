@@ -1,0 +1,51 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: LOC.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="LOC" comment="To describe the location in space and time of the axis of an item relative to an origin axis; Euclidean geometry has been assumed with orthogonal axes; the sequence of axes has been chosen in the customary sequence of X, Y, and Z, however, it is possible to just use two-dimensional space rather than three-dimensional space">
+  <Field name="ReferenceIdentificationQualifier1" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Description1" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Category" required="y" min="1" max="6" comment="An alphanumeric identifier to represent the category to which the item belongs"/>
+  <Field name="ReferenceIdentificationQualifier2" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification3" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Description2" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="ReferenceIdentification4" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="MeasurementValue1" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure1" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="MeasurementValue2" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure2" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="MeasurementValue3" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure3" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="MeasurementValue4" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure4" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="MeasurementValue5" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure5" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="MeasurementValue6" type="double" required="y" min="1" max="20" comment="The value of the measurement"/>
+  <Field name="CompositeUnitOfMeasure6" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="ReferenceIdentificationQualifier3" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification5" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Description3" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+</Segment>

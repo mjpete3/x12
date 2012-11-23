@@ -1,0 +1,81 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1691.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1691">
+  <Entry name="1" value="Computer Environment Type"/>
+  <Entry name="2" value="Computer Environment Version"/>
+  <Entry name="3" value="Computer Environment Release"/>
+  <Entry name="4" value="Computer Environment Status"/>
+  <Entry name="5" value="Computer Environment Name"/>
+  <Entry name="6" value="Non-ASC X12 Security Level Code"/>
+  <Entry name="7" value="Non-ASC X12 Security Version"/>
+  <Entry name="8" value="Non-ASC X12 Security Release"/>
+  <Entry name="9" value="Non-ASC X12 Security Technique"/>
+  <Entry name="10" value="Non-ASC X12 Security Free Text Information"/>
+  <Entry name="11" value="File Identification By Number"/>
+  <Entry name="12" value="File Identification By Name"/>
+  <Entry name="13" value="File Format"/>
+  <Entry name="14" value="File Version"/>
+  <Entry name="15" value="File Release"/>
+  <Entry name="16" value="File Status"/>
+  <Entry name="17" value="File Size"/>
+  <Entry name="18" value="File Description"/>
+  <Entry name="19" value="File Block Type"/>
+  <Entry name="20" value="File Block Length"/>
+  <Entry name="21" value="File Record Length"/>
+  <Entry name="22" value="Program Identification By Number"/>
+  <Entry name="23" value="Program Identification By Name"/>
+  <Entry name="24" value="Program Type"/>
+  <Entry name="25" value="Program Version"/>
+  <Entry name="26" value="Program Release"/>
+  <Entry name="27" value="Program Status"/>
+  <Entry name="28" value="Program Description"/>
+  <Entry name="29" value="Program Size"/>
+  <Entry name="35" value="Compression Technique Identification"/>
+  <Entry name="36" value="Compression Technique Version"/>
+  <Entry name="37" value="Compression Technique Release"/>
+  <Entry name="38" value="Drawing Identification By Name"/>
+  <Entry name="39" value="Drawing Identification By Number"/>
+  <Entry name="40" value="Drawing Type"/>
+  <Entry name="41" value="Drawing Format"/>
+  <Entry name="42" value="Drawing Version"/>
+  <Entry name="43" value="Drawing Release"/>
+  <Entry name="44" value="Drawing Status"/>
+  <Entry name="45" value="Drawing Size"/>
+  <Entry name="46" value="Drawing Description"/>
+  <Entry name="47" value="External Standard Requirement"/>
+  <Entry name="48" value="Character Set Repertoire Identification"/>
+  <Entry name="49" value="Character Set Encoding Technique"/>
+  <Entry name="50" value="Character Set Encoding Technique Code Page"/>
+  <Entry name="51" value="Certificate Type"/>
+  <Entry name="52" value="Certificate Version"/>
+  <Entry name="53" value="Certificate Release"/>
+  <Entry name="54" value="Certificate Status"/>
+  <Entry name="55" value="Certificate Level"/>
+  <Entry name="56" value="Certificate Identification By Name"/>
+  <Entry name="57" value="Certificate Identification By Number"/>
+  <Entry name="58" value="Certificate Format"/>
+  <Entry name="59" value="Certificate Code Page"/>
+</Table>

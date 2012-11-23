@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1093.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1093">
+  <Entry name="1" value="Conventional"/>
+  <Entry name="2" value="Veterans Administration Loan"/>
+  <Entry name="3" value="Federal Housing Administration Loan"/>
+  <Entry name="4" value="Farmers Home Administration Loan"/>
+  <Entry name="5" value="State Agency"/>
+  <Entry name="6" value="Local Agency"/>
+  <Entry name="7" value="Other Real Estate Loan"/>
+  <Entry name="8" value="Federal Housing Administration Multifamily Loan"/>
+  <Entry name="9" value="Conventional Uninsured"/>
+  <Entry name="A" value="Commercial"/>
+  <Entry name="B" value="U.S. Department of Housing and Urban Development"/>
+  <Entry name="C" value="Rural Housing Services"/>
+  <Entry name="D" value="Federal Housing Administration Title 1"/>
+  <Entry name="F" value="Contract for Deed or Land Contract"/>
+  <Entry name="G" value="Owner Financed"/>
+  <Entry name="I" value="Bond"/>
+  <Entry name="J" value="Residential"/>
+  <Entry name="Z" value="Mutually Defined"/>
+</Table>

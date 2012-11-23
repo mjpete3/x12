@@ -1,0 +1,82 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1596.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1596">
+  <Entry name="A1" value="Admiral"/>
+  <Entry name="A2" value="Airman"/>
+  <Entry name="A3" value="Airman First Class"/>
+  <Entry name="B1" value="Basic Airman"/>
+  <Entry name="B2" value="Brigadier General"/>
+  <Entry name="C1" value="Captain"/>
+  <Entry name="C2" value="Chief Master Sergeant"/>
+  <Entry name="C3" value="Chief Petty Officer"/>
+  <Entry name="C4" value="Chief Warrant"/>
+  <Entry name="C5" value="Colonel"/>
+  <Entry name="C6" value="Commander"/>
+  <Entry name="C7" value="Commodore"/>
+  <Entry name="C8" value="Corporal"/>
+  <Entry name="C9" value="Corporal Specialist 4"/>
+  <Entry name="E1" value="Ensign"/>
+  <Entry name="F1" value="First Lieutenant"/>
+  <Entry name="F2" value="First Sergeant"/>
+  <Entry name="F3" value="First Sergeant-Master Sergeant"/>
+  <Entry name="F4" value="Fleet Admiral"/>
+  <Entry name="G1" value="General"/>
+  <Entry name="G4" value="Gunnery Sergeant"/>
+  <Entry name="L1" value="Lance Corporal"/>
+  <Entry name="L2" value="Lieutenant"/>
+  <Entry name="L3" value="Lieutenant Colonel"/>
+  <Entry name="L4" value="Lieutenant Commander"/>
+  <Entry name="L5" value="Lieutenant General"/>
+  <Entry name="L6" value="Lieutenant Junior Grade"/>
+  <Entry name="M1" value="Major"/>
+  <Entry name="M2" value="Major General"/>
+  <Entry name="M3" value="Master Chief Petty Officer"/>
+  <Entry name="M4" value="Master Gunnery Sergeant Major"/>
+  <Entry name="M5" value="Master Sergeant"/>
+  <Entry name="M6" value="Master Sergeant Specialist 8"/>
+  <Entry name="P1" value="Petty Officer First Class"/>
+  <Entry name="P2" value="Petty Officer Second Class"/>
+  <Entry name="P3" value="Petty Officer Third Class"/>
+  <Entry name="P4" value="Private"/>
+  <Entry name="P5" value="Private First Class"/>
+  <Entry name="R1" value="Rear Admiral"/>
+  <Entry name="R2" value="Recruit"/>
+  <Entry name="S1" value="Seaman"/>
+  <Entry name="S2" value="Seaman Apprentice"/>
+  <Entry name="S3" value="Seaman Recruit"/>
+  <Entry name="S4" value="Second Lieutenant"/>
+  <Entry name="S5" value="Senior Chief Petty Officer"/>
+  <Entry name="S6" value="Senior Master Sergeant"/>
+  <Entry name="S7" value="Sergeant"/>
+  <Entry name="S8" value="Sergeant First Class Specialist 7"/>
+  <Entry name="S9" value="Sergeant Major Specialist 9"/>
+  <Entry name="SA" value="Sergeant Specialist 5"/>
+  <Entry name="SB" value="Staff Sergeant"/>
+  <Entry name="SC" value="Staff Sergeant Specialist 6"/>
+  <Entry name="T1" value="Technical Sergeant"/>
+  <Entry name="V1" value="Vice Admiral"/>
+  <Entry name="W1" value="Warrant Officer"/>
+</Table>

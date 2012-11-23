@@ -1,0 +1,1712 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T128.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T128">
+  <Entry name="00" value="Contracting District Number"/>
+  <Entry name="01" value="American Bankers Assoc. (ABA) Transit/Routing Number (Including Check Digit, 9 Digits)"/>
+  <Entry name="02" value="Society for Worldwide Interbank Financial Telecommunication (S.W.I.F.T.) Identification (8 or 11 Characters)"/>
+  <Entry name="03" value="Clearing House Interbank Payment System (CHIPS) Participant Number (3 or 4 Digits)"/>
+  <Entry name="04" value="Canadian Financial Institution Branch and Institution Number"/>
+  <Entry name="05" value="Clearing House Interbank Payment System (CHIPS) User Identification (6 digits)"/>
+  <Entry name="06" value="System Number"/>
+  <Entry name="07" value="Add-On System Number"/>
+  <Entry name="08" value="Carrier Assigned Package Identification Number"/>
+  <Entry name="09" value="Customs Bar Code Number"/>
+  <Entry name="0A" value="Supervisory Appraiser Certification Number"/>
+  <Entry name="0B" value="State License Number"/>
+  <Entry name="0D" value="Subject Property Verification Source"/>
+  <Entry name="0E" value="Subject Property Reference Number"/>
+  <Entry name="0F" value="Subscriber Number"/>
+  <Entry name="0G" value="Reviewer File Number"/>
+  <Entry name="0H" value="Comparable Property Pending Sale Reference Number"/>
+  <Entry name="0I" value="Comparable Property Sale Reference Number"/>
+  <Entry name="0J" value="Subject Property Non-Sale Reference Number"/>
+  <Entry name="0K" value="Policy Form Identifying Number"/>
+  <Entry name="0L" value="Referenced By"/>
+  <Entry name="0M" value="Mortgage Identification Number"/>
+  <Entry name="0N" value="Attached To"/>
+  <Entry name="0P" value="Real Estate Owned Property Identifier"/>
+  <Entry name="10" value="Account Managers Code"/>
+  <Entry name="11" value="Account Number"/>
+  <Entry name="12" value="Billing Account"/>
+  <Entry name="13" value="Horizontal Coordinate"/>
+  <Entry name="14" value="Master Account Number"/>
+  <Entry name="15" value="Vertical Coordinate"/>
+  <Entry name="16" value="Military Interdepartmental Purchase Request (MIPR) Number"/>
+  <Entry name="17" value="Client Reporting Category"/>
+  <Entry name="18" value="Plan Number"/>
+  <Entry name="19" value="Division Identifier"/>
+  <Entry name="1A" value="Blue Cross Provider Number"/>
+  <Entry name="1B" value="Blue Shield Provider Number"/>
+  <Entry name="1C" value="Medicare Provider Number"/>
+  <Entry name="1D" value="Medicaid Provider Number"/>
+  <Entry name="1E" value="Dentist License Number"/>
+  <Entry name="1F" value="Anesthesia License Number"/>
+  <Entry name="1G" value="Provider UPIN Number"/>
+  <Entry name="1H" value="CHAMPUS Identification Number"/>
+  <Entry name="1I" value="Department of Defense Identification Code (DoDIC)"/>
+  <Entry name="1J" value="Facility ID Number"/>
+  <Entry name="1K" value="Payor's Claim Number"/>
+  <Entry name="1L" value="Group or Policy Number"/>
+  <Entry name="1M" value="Preferred Provider Organization Site Number"/>
+  <Entry name="1N" value="Diagnosis Related Group (DRG) Number"/>
+  <Entry name="1O" value="Consolidation Shipment Number"/>
+  <Entry name="1P" value="Accessorial Status Code"/>
+  <Entry name="1Q" value="Error Identification Code"/>
+  <Entry name="1R" value="Storage Information Code"/>
+  <Entry name="1S" value="Ambulatory Patient Group (APG) Number"/>
+  <Entry name="1T" value="Resource Utilization Group (RUG) Number"/>
+  <Entry name="1U" value="Pay Grade"/>
+  <Entry name="1V" value="Related Vendor Order Number"/>
+  <Entry name="1W" value="Member Identification Number"/>
+  <Entry name="1X" value="Credit or Debit Adjustment Number"/>
+  <Entry name="1Y" value="Repair Action Number"/>
+  <Entry name="1Z" value="Financial Detail Code"/>
+  <Entry name="20" value="Repair Part Number"/>
+  <Entry name="21" value="American Gas Association Equation Number"/>
+  <Entry name="22" value="Special Charge or Allowance Code"/>
+  <Entry name="23" value="Client Number"/>
+  <Entry name="24" value="Short-term Disability Policy Number"/>
+  <Entry name="25" value="Reason Not Lowest Cost Code"/>
+  <Entry name="26" value="Union Number"/>
+  <Entry name="27" value="Insuror Pool Identification Number"/>
+  <Entry name="28" value="Employee Identification Number"/>
+  <Entry name="29" value="Foreclosure Account Number"/>
+  <Entry name="2A" value="Import License Number"/>
+  <Entry name="2B" value="Terminal Release Order Number"/>
+  <Entry name="2C" value="Long-term Disability Policy Number"/>
+  <Entry name="2D" value="Aeronautical Equipment Reference Number (AERNO)"/>
+  <Entry name="2E" value="Foreign Military Sales Case Number"/>
+  <Entry name="2F" value="Consolidated Invoice Number"/>
+  <Entry name="2G" value="Amendment"/>
+  <Entry name="2H" value="Assigned by transaction set sender"/>
+  <Entry name="2I" value="Tracking Number"/>
+  <Entry name="2J" value="Floor Number"/>
+  <Entry name="2K" value="Food and Drug Administration (FDA) Product Type"/>
+  <Entry name="2L" value="Association of American Railroads (AAR) Railway Accounting Rules"/>
+  <Entry name="2M" value="Federal Communications Commission (FCC) Identifier"/>
+  <Entry name="2N" value="Federal Communications Commission (FCC) Trade/Brand Identifier"/>
+  <Entry name="2O" value="Occupational Safety and Health Administration (OSHA) Claim Number"/>
+  <Entry name="2P" value="Subdivision Identifier"/>
+  <Entry name="2Q" value="Food and Drug Administration (FDA) Accession Number"/>
+  <Entry name="2R" value="Coupon Redemption Number"/>
+  <Entry name="2S" value="Catalog"/>
+  <Entry name="2T" value="Sub-subhouse Bill of Lading"/>
+  <Entry name="2U" value="Payer Identification Number"/>
+  <Entry name="2V" value="Special Government Accounting Classification Reference Number (ACRN)"/>
+  <Entry name="2W" value="Change Order Authority"/>
+  <Entry name="2X" value="Supplemental Agreement Authority"/>
+  <Entry name="2Y" value="Wage Determination"/>
+  <Entry name="2Z" value="U.S. Customs Service (USCS) Anti-dumping Duty Case Number"/>
+  <Entry name="30" value="United States Government Visa Number"/>
+  <Entry name="31" value="Docket Number"/>
+  <Entry name="32" value="Credit Repository Code"/>
+  <Entry name="33" value="Lender Case Number"/>
+  <Entry name="34" value="Loan Request Number"/>
+  <Entry name="35" value="Multifamily Project Number"/>
+  <Entry name="36" value="Underwriter Identification Number"/>
+  <Entry name="37" value="Condominium Identification Number"/>
+  <Entry name="38" value="Master Policy Number"/>
+  <Entry name="39" value="Proposal Number"/>
+  <Entry name="3A" value="Section of the National Housing Act Code"/>
+  <Entry name="3B" value="Supplemental Claim Number"/>
+  <Entry name="3C" value="Payee Loan Number"/>
+  <Entry name="3D" value="Servicer Loan Number"/>
+  <Entry name="3E" value="Investor Loan Number"/>
+  <Entry name="3F" value="Show Identification"/>
+  <Entry name="3G" value="Catastrophe Number"/>
+  <Entry name="3H" value="Case Number"/>
+  <Entry name="3I" value="Precinct Number"/>
+  <Entry name="3J" value="Office Number"/>
+  <Entry name="3K" value="Petroleum Pool Code"/>
+  <Entry name="3L" value="Branch Identifier"/>
+  <Entry name="3M" value="Federal Communications Commission (FCC) Condition Code"/>
+  <Entry name="3N" value="Gas Custodian Identification"/>
+  <Entry name="3O" value="U.S. Customs Service (USCS) Pre-approval Ruling Number"/>
+  <Entry name="3P" value="Third Party Originator Number"/>
+  <Entry name="3Q" value="Food and Drug Administration (FDA) Product Code"/>
+  <Entry name="3R" value="U.S. Customs Service (USCS) Binding Ruling Number"/>
+  <Entry name="3S" value="Provincial (Canadian) Sales Tax Exemption Number"/>
+  <Entry name="3T" value="U.S. Customs Service (USCS) Pre-classification Ruling Number"/>
+  <Entry name="3U" value="Protraction Number"/>
+  <Entry name="3V" value="Formation Identifier"/>
+  <Entry name="3W" value="U.S. Customs Service (USCS) Commercial Description"/>
+  <Entry name="3X" value="Subcontract Number"/>
+  <Entry name="3Y" value="Receiver Assigned Drop Zone"/>
+  <Entry name="3Z" value="Customs Broker Reference Number"/>
+  <Entry name="40" value="Lease Schedule Number - Replacement"/>
+  <Entry name="41" value="Lease Schedule Number - Prior"/>
+  <Entry name="42" value="Phone Calls"/>
+  <Entry name="43" value="Supporting Document Number"/>
+  <Entry name="44" value="End Use Number"/>
+  <Entry name="45" value="Old Account Number"/>
+  <Entry name="46" value="Old Meter Number"/>
+  <Entry name="47" value="Plate Number"/>
+  <Entry name="48" value="Agency's Student Number"/>
+  <Entry name="49" value="Family Unit Number"/>
+  <Entry name="4A" value="Personal Identification Number (PIN)"/>
+  <Entry name="4B" value="Shipment Origin Code"/>
+  <Entry name="4C" value="Shipment Destination Code"/>
+  <Entry name="4D" value="Shipping Zone"/>
+  <Entry name="4E" value="Carrier-assigned Consignee Number"/>
+  <Entry name="4F" value="Carrier-assigned Shipper Number"/>
+  <Entry name="4G" value="Provincial Tax Identification"/>
+  <Entry name="4H" value="Commercial Invoice Number"/>
+  <Entry name="4I" value="Balance-due Reference Number"/>
+  <Entry name="4J" value="Vehicle-related Services Reference Number"/>
+  <Entry name="4K" value="Accessorial Rail Diversion Reference Number"/>
+  <Entry name="4L" value="Location-specific Services Reference Number"/>
+  <Entry name="4M" value="Special Move Reference Number"/>
+  <Entry name="4N" value="Special Payment Reference Number"/>
+  <Entry name="4O" value="Canadian Goods &amp; Services or Quebec Sales Tax Reference Number"/>
+  <Entry name="4P" value="Affiliation Number"/>
+  <Entry name="4Q" value="Call Sign"/>
+  <Entry name="4R" value="Rule Section"/>
+  <Entry name="4S" value="Preferred Call Sign"/>
+  <Entry name="4T" value="North American Datum Standard (NADS)"/>
+  <Entry name="4U" value="Market Area"/>
+  <Entry name="4V" value="Emission Designator"/>
+  <Entry name="4W" value="Study"/>
+  <Entry name="4X" value="Log"/>
+  <Entry name="4Y" value="Subhouse Bill of Lading"/>
+  <Entry name="4Z" value="U.S. Customs Service (USCS) Countervailing Duty Case Number"/>
+  <Entry name="50" value="State Student Identification Number"/>
+  <Entry name="51" value="Picture Number"/>
+  <Entry name="52" value="SWIFT (MT 100)"/>
+  <Entry name="53" value="SWIFT (MT 202)"/>
+  <Entry name="54" value="FEDWIRE (Federal Wire Transfer)"/>
+  <Entry name="55" value="Sequence Number"/>
+  <Entry name="56" value="Corrected Social Security Number"/>
+  <Entry name="57" value="Prior Incorrect Social Security Number"/>
+  <Entry name="58" value="Corrected Batch Number"/>
+  <Entry name="59" value="Prior Incorrect Batch Number"/>
+  <Entry name="5A" value="Offense Tracking"/>
+  <Entry name="5B" value="Supplemental Account Number"/>
+  <Entry name="5C" value="Congressional District"/>
+  <Entry name="5D" value="Line of Credit Category"/>
+  <Entry name="5E" value="Consumer Identifier"/>
+  <Entry name="5F" value="Warrant"/>
+  <Entry name="5G" value="Complaint"/>
+  <Entry name="5H" value="Incident"/>
+  <Entry name="5I" value="Offender Tracking"/>
+  <Entry name="5J" value="Driver's License"/>
+  <Entry name="5K" value="Commercial Driver's License"/>
+  <Entry name="5L" value="Jurisdictional Community Number"/>
+  <Entry name="5M" value="Previous Sequence"/>
+  <Entry name="5N" value="Citation of Statute"/>
+  <Entry name="5O" value="Citation of Opinion"/>
+  <Entry name="5P" value="National Criminal Information Center Originating Agency Identification"/>
+  <Entry name="5Q" value="State Criminal History Repository Individual Identification"/>
+  <Entry name="5R" value="Federal Bureau of Investigation Individual Identification"/>
+  <Entry name="5S" value="Processing Area"/>
+  <Entry name="5T" value="Payment Location"/>
+  <Entry name="5U" value="Flood Data Identifier"/>
+  <Entry name="5V" value="Coupon Distribution Method"/>
+  <Entry name="5W" value="Original Uniform Commercial Code Filing Number"/>
+  <Entry name="5X" value="Amended Uniform Commercial Code Filing Number"/>
+  <Entry name="5Y" value="Continuation Uniform Commercial Code Filing Number"/>
+  <Entry name="5Z" value="Uniform Commercial Code Filing Collateral Number"/>
+  <Entry name="60" value="Account Suffix Code"/>
+  <Entry name="61" value="Taxing Authority Identification Number"/>
+  <Entry name="63" value="Prior Loan Number"/>
+  <Entry name="64" value="Jurisdictional Community Name Identifier"/>
+  <Entry name="65" value="Total Order Cycle Number"/>
+  <Entry name="66" value="Previous Policy Number"/>
+  <Entry name="67" value="Previous Claim History Identifier"/>
+  <Entry name="68" value="Dental Insurance Account Number"/>
+  <Entry name="69" value="Dental Insurance Policy Number"/>
+  <Entry name="6A" value="Consignee Reference Number"/>
+  <Entry name="6B" value="U.S. Customs Service (USCS) Entry Number"/>
+  <Entry name="6C" value="U.S. Customs Service (USCS) Entry Type Code"/>
+  <Entry name="6D" value="U.S. Customs Service (USCS) Statement Number"/>
+  <Entry name="6E" value="Map Reference"/>
+  <Entry name="6F" value="Appraiser License"/>
+  <Entry name="6G" value="Map Number"/>
+  <Entry name="6H" value="Comparable Property Verification Source"/>
+  <Entry name="6I" value="Comparable Property"/>
+  <Entry name="6J" value="Census Tract"/>
+  <Entry name="6K" value="Zone"/>
+  <Entry name="6L" value="Agent Contract Number"/>
+  <Entry name="6M" value="Application Number"/>
+  <Entry name="6N" value="Claimant Number"/>
+  <Entry name="6O" value="Cross Reference Number"/>
+  <Entry name="6P" value="Group Number"/>
+  <Entry name="6Q" value="Insurance License Number"/>
+  <Entry name="6R" value="Provider Control Number"/>
+  <Entry name="6S" value="Provider Order Ticket Number"/>
+  <Entry name="6T" value="Pilot License Number"/>
+  <Entry name="6U" value="Question Number"/>
+  <Entry name="6V" value="Reissue Cession Number"/>
+  <Entry name="6X" value="Specimen Identifier"/>
+  <Entry name="6Y" value="Equipment Initial"/>
+  <Entry name="6Z" value="Secretaria de Comercia y Famenta Industrial (SECOFI) Number"/>
+  <Entry name="70" value="Calendar Number"/>
+  <Entry name="71" value="(Working) Shift Number"/>
+  <Entry name="72" value="Schedule Reference Number"/>
+  <Entry name="73" value="Statement of Work (SOW)"/>
+  <Entry name="74" value="Work Breakdown Structure (WBS)"/>
+  <Entry name="75" value="Organization Breakdown Structure"/>
+  <Entry name="76" value="Milestone"/>
+  <Entry name="77" value="Work Package"/>
+  <Entry name="78" value="Planning Package"/>
+  <Entry name="79" value="Cost Account"/>
+  <Entry name="7A" value="Purchase Order Number Included in On-Order Position"/>
+  <Entry name="7B" value="Purchase Order Number of Shipment Received since Last Reporting Date"/>
+  <Entry name="7C" value="Purchase Order Number of Order Received since Last Reporting Date"/>
+  <Entry name="7D" value="Tester Identification"/>
+  <Entry name="7E" value="Collector Identification"/>
+  <Entry name="7F" value="Repeat Location"/>
+  <Entry name="7G" value="Data Quality Reject Reason"/>
+  <Entry name="7H" value="Environmental Protection Agency (EPA) Test Type Purpose Code"/>
+  <Entry name="7I" value="Subscriber Authorization Number"/>
+  <Entry name="7J" value="Toll Billing Telephone Reference Number"/>
+  <Entry name="7K" value="List of Materials"/>
+  <Entry name="7L" value="Qualified Materials List"/>
+  <Entry name="7M" value="Frame"/>
+  <Entry name="7N" value="Piggyback"/>
+  <Entry name="7O" value="Tripleback"/>
+  <Entry name="7P" value="Sheet"/>
+  <Entry name="7Q" value="Engineering Change Order"/>
+  <Entry name="7R" value="Representative Identification Number"/>
+  <Entry name="7S" value="Drawing Type"/>
+  <Entry name="7T" value="Master Contract"/>
+  <Entry name="7U" value="Related Transaction Reference Number"/>
+  <Entry name="7W" value="Interchange Train Identification"/>
+  <Entry name="7X" value="Home Mortgage Disclosure Act (HMDA) State Code"/>
+  <Entry name="7Y" value="Home Mortgage Disclosure Act (HMDA) County Code"/>
+  <Entry name="7Z" value="Home Mortgage Disclosure Act (HMDA) Metropolitan Statistical Area (MSA)"/>
+  <Entry name="80" value="Charge Number"/>
+  <Entry name="81" value="Symbol Number (for Milestone or LOB reports)"/>
+  <Entry name="82" value="Data Item Description (DID) Reference"/>
+  <Entry name="83" value="Extended (or Exhibit) Line Item Number (ELIN)"/>
+  <Entry name="84" value="Contractor Data Requirements List (CDRL)"/>
+  <Entry name="85" value="Subcontractor Data Requirements (SDRL)"/>
+  <Entry name="86" value="Operation Number"/>
+  <Entry name="87" value="Functional Category"/>
+  <Entry name="88" value="Work Center"/>
+  <Entry name="89" value="Assembly Number"/>
+  <Entry name="8A" value="Health Maintenance Organization (HMO) Authorization Number"/>
+  <Entry name="8B" value="Preferred Provider Organization (PPO) Authorization Number"/>
+  <Entry name="8C" value="Third-party Organization (TPO) Authorization Number"/>
+  <Entry name="8D" value="Chemical Abstract Service Registry Number"/>
+  <Entry name="8E" value="Guarantor Loan Number"/>
+  <Entry name="8F" value="School Loan Number"/>
+  <Entry name="8G" value="Automated Clearinghouse (ACH) Trace Number"/>
+  <Entry name="8H" value="Check List Number"/>
+  <Entry name="8I" value="FEDWIRE Confirmation Number"/>
+  <Entry name="8J" value="Society for Worldwide Interbank Financial Telecommunications (SWIFT) Confirmation Number"/>
+  <Entry name="8K" value="Dominion of Canada Code"/>
+  <Entry name="8L" value="International Standard Industry Classification Code (ISIC)"/>
+  <Entry name="8M" value="Originating Company Identifier"/>
+  <Entry name="8N" value="Receiving Company Identifier"/>
+  <Entry name="8O" value="Automated Clearing House (ACH) Entry Description"/>
+  <Entry name="8P" value="Originating Depository Financial Institution Identifier"/>
+  <Entry name="8Q" value="Receiving Depository Financial Institution Identifier"/>
+  <Entry name="8R" value="Security Type"/>
+  <Entry name="8S" value="Broker Identification"/>
+  <Entry name="8U" value="Bank Assigned Security Identifier"/>
+  <Entry name="8V" value="Credit Reference"/>
+  <Entry name="8W" value="Bank to Bank Information"/>
+  <Entry name="8X" value="Transaction Category or Type"/>
+  <Entry name="8Y" value="Safekeeping Account Number"/>
+  <Entry name="8Z" value="Alternate Clause Number"/>
+  <Entry name="90" value="Subassembly Number"/>
+  <Entry name="91" value="Cost Element"/>
+  <Entry name="92" value="Change Document Number"/>
+  <Entry name="93" value="Funds Authorization"/>
+  <Entry name="94" value="File Identification Number"/>
+  <Entry name="95" value="Committee on Uniform Security Identification Procedures (CUSIP) Number"/>
+  <Entry name="96" value="Stock Certificate Number"/>
+  <Entry name="97" value="Package Number"/>
+  <Entry name="98" value="Container/Packaging Specification Number"/>
+  <Entry name="99" value="Rate Conference ID Code"/>
+  <Entry name="9A" value="Repriced Claim Reference Number"/>
+  <Entry name="9B" value="Repriced Line Item Reference Number"/>
+  <Entry name="9C" value="Adjusted Repriced Claim Reference Number"/>
+  <Entry name="9D" value="Adjusted Repriced Line Item Reference Number"/>
+  <Entry name="9E" value="Replacement Claim Number"/>
+  <Entry name="9F" value="Referral Number"/>
+  <Entry name="9G" value="Department of Defense Form 250 Requirement Code"/>
+  <Entry name="9H" value="Packaging Group Number"/>
+  <Entry name="9I" value="Automated Clearing House (ACH) Standard Entry Class"/>
+  <Entry name="9J" value="Pension Contract"/>
+  <Entry name="9K" value="Servicer"/>
+  <Entry name="9L" value="Service Bureau"/>
+  <Entry name="9M" value="Clearing House Interbank Payments System (CHIPS) Sequence Number"/>
+  <Entry name="9N" value="Investor"/>
+  <Entry name="9P" value="Loan Type"/>
+  <Entry name="9Q" value="Pool Suffix"/>
+  <Entry name="9R" value="Job Order Number"/>
+  <Entry name="9S" value="Delivery Region"/>
+  <Entry name="9T" value="Tenor"/>
+  <Entry name="9U" value="Loan Feature Code"/>
+  <Entry name="9V" value="Payment Category"/>
+  <Entry name="9W" value="Payer Category"/>
+  <Entry name="9X" value="Account Category"/>
+  <Entry name="9Y" value="Bank Assigned Bankers Reference Number"/>
+  <Entry name="9Z" value="Chamber of Commerce Number"/>
+  <Entry name="A0" value="Advertiser Number"/>
+  <Entry name="A1" value="Analysis number/Test number"/>
+  <Entry name="A2" value="Disability Insurance Account Number"/>
+  <Entry name="A3" value="Assignment Number"/>
+  <Entry name="A4" value="Disability Insurance Policy Number"/>
+  <Entry name="A5" value="Educational Institution Identification Number"/>
+  <Entry name="A7" value="Flexible Spending Account (FSA) Insurance Account Number"/>
+  <Entry name="A8" value="Flexible Spending Account (FSA) Insurance Policy Number"/>
+  <Entry name="A9" value="Health Insurance Account Number"/>
+  <Entry name="AA" value="Accounts Receivable Statement Number"/>
+  <Entry name="AB" value="Acceptable Source Purchaser ID"/>
+  <Entry name="AC" value="Air Cargo Transfer Manifest"/>
+  <Entry name="AD" value="Acceptable Source DUNS Number"/>
+  <Entry name="AE" value="Authorization for Expense (AFE) Number"/>
+  <Entry name="AF" value="Airlines Flight Identification Number"/>
+  <Entry name="AG" value="Agent's Shipment Number"/>
+  <Entry name="AH" value="Agreement Number"/>
+  <Entry name="AI" value="Associated Invoices"/>
+  <Entry name="AJ" value="Accounts Receivable Customer Account"/>
+  <Entry name="AK" value="Sending Company Audit Number (Automated Clearinghouse Transfers)"/>
+  <Entry name="AL" value="Accounting (Equipment) Location Number"/>
+  <Entry name="AM" value="Adjustment Memo (Charge Back)"/>
+  <Entry name="AN" value="Associated Purchase Orders"/>
+  <Entry name="AO" value="Appointment Number"/>
+  <Entry name="AP" value="Accounts Receivable Number"/>
+  <Entry name="AQ" value="Access Code"/>
+  <Entry name="AR" value="Arrival Code"/>
+  <Entry name="AS" value="Acceptable Source Supplier ID"/>
+  <Entry name="AT" value="Appropriation Number"/>
+  <Entry name="AU" value="Authorization to Meet Competition Number"/>
+  <Entry name="AV" value="Health Insurance Rating Account Number"/>
+  <Entry name="AW" value="Air Waybill Number"/>
+  <Entry name="AX" value="Government Accounting Class Reference Number (ACRN)"/>
+  <Entry name="AY" value="Floor Plan Approval Number"/>
+  <Entry name="AZ" value="Health Insurance Policy Number"/>
+  <Entry name="B1" value="Lessee Bill Code Number"/>
+  <Entry name="B2" value="Axle Ratio"/>
+  <Entry name="B3" value="Preferred Provider Organization Number"/>
+  <Entry name="B4" value="Bilateral Car Service Agreements"/>
+  <Entry name="B5" value="Health Insurance Rating Suffix Code"/>
+  <Entry name="B6" value="Life Insurance Billing Account Number"/>
+  <Entry name="B7" value="Life Insurance Policy Number"/>
+  <Entry name="B8" value="Life Insurance Billing Suffix Code"/>
+  <Entry name="B9" value="Retirement Plan Account Number"/>
+  <Entry name="BA" value="Retirement Plan Policy Number"/>
+  <Entry name="BB" value="Authorization Number"/>
+  <Entry name="BC" value="Buyer's Contract Number"/>
+  <Entry name="BD" value="Bid Number"/>
+  <Entry name="BE" value="Business Activity"/>
+  <Entry name="BF" value="Billing Center Identification"/>
+  <Entry name="BG" value="Beginning Serial Number"/>
+  <Entry name="BH" value="Lease Schedule Number - Blanket"/>
+  <Entry name="BI" value="Bonded Carrier Internal Revenue Service Identification Number"/>
+  <Entry name="BJ" value="Carrier's Customs Bond Number"/>
+  <Entry name="BK" value="Broker's Order Number"/>
+  <Entry name="BL" value="Government Bill of Lading"/>
+  <Entry name="BM" value="Bill of Lading Number"/>
+  <Entry name="BN" value="Booking Number"/>
+  <Entry name="BO" value="Bin Location Number"/>
+  <Entry name="BP" value="Adjustment Control Number"/>
+  <Entry name="BQ" value="Health Maintenance Organization Code Number"/>
+  <Entry name="BR" value="Broker or Sales Office Number"/>
+  <Entry name="BS" value="Split Booking Number"/>
+  <Entry name="BT" value="Batch Number"/>
+  <Entry name="BU" value="Buyer's Approval Mark"/>
+  <Entry name="BV" value="Purchase Order Line Item Identifier (Buyer)"/>
+  <Entry name="BW" value="Blended With Batch Number"/>
+  <Entry name="BX" value="Buyer's Shipment Mark Number"/>
+  <Entry name="BY" value="Repair Category Number"/>
+  <Entry name="BZ" value="Complaint Code"/>
+  <Entry name="C0" value="Canadian Social Insurance Number"/>
+  <Entry name="C1" value="Customer material specification number"/>
+  <Entry name="C2" value="Customer process specification number"/>
+  <Entry name="C3" value="Customer specification number"/>
+  <Entry name="C4" value="Change Number"/>
+  <Entry name="C5" value="Customer Tracking Number For Loaned Materials"/>
+  <Entry name="C6" value="Carnet Number"/>
+  <Entry name="C7" value="Contract Line Item Number"/>
+  <Entry name="C8" value="Corrected Contract Number"/>
+  <Entry name="C9" value="Previous Credit/Debit Adjustment Number"/>
+  <Entry name="CA" value="Cost Allocation Reference"/>
+  <Entry name="CB" value="Combined Shipment"/>
+  <Entry name="CC" value="Contract Co-op Number"/>
+  <Entry name="CD" value="Credit Note Number"/>
+  <Entry name="CE" value="Class of Contract Code"/>
+  <Entry name="CF" value="Fleet Reference Number"/>
+  <Entry name="CG" value="Consignee's Order Number"/>
+  <Entry name="CH" value="Customer Catalog Number"/>
+  <Entry name="CI" value="Unique Consignment Identifier"/>
+  <Entry name="CJ" value="Clause Number"/>
+  <Entry name="CK" value="Check Number"/>
+  <Entry name="CL" value="Seller's Credit Memo"/>
+  <Entry name="CM" value="Buyer's Credit Memo"/>
+  <Entry name="CN" value="Carrier's Reference Number (PRO/Invoice)"/>
+  <Entry name="CO" value="Customer Order Number"/>
+  <Entry name="CP" value="Condition of Purchase Document Number"/>
+  <Entry name="CQ" value="Customshouse Broker License Number"/>
+  <Entry name="CR" value="Customer Reference Number"/>
+  <Entry name="CS" value="Condition of Sale Document Number"/>
+  <Entry name="CT" value="Contract Number"/>
+  <Entry name="CU" value="Clear Text Clause"/>
+  <Entry name="CV" value="Coil Number"/>
+  <Entry name="CW" value="Canadian Wheat Board Permit Number"/>
+  <Entry name="CX" value="Consignment Classification ID"/>
+  <Entry name="CY" value="Commercial Registration Number"/>
+  <Entry name="CZ" value="Contract Rider Number (Used in conjunction with contract number)"/>
+  <Entry name="D0" value="Data Reliability Code"/>
+  <Entry name="D1" value="Drug Enforcement Administration Order Blank Number"/>
+  <Entry name="D2" value="Supplier Document Identification Number"/>
+  <Entry name="D3" value="National Association of Boards of Pharmacy Number"/>
+  <Entry name="D4" value="Cut Number"/>
+  <Entry name="D5" value="Dye Lot Number"/>
+  <Entry name="D6" value="Duplicate Bill Number"/>
+  <Entry name="D7" value="Coverage Code"/>
+  <Entry name="D8" value="Loss Report Number"/>
+  <Entry name="D9" value="Claim Number"/>
+  <Entry name="DA" value="Domicile Branch Number"/>
+  <Entry name="DB" value="Buyer's Debit Memo"/>
+  <Entry name="DC" value="Dealer purchase order number"/>
+  <Entry name="DD" value="Document Identification Code"/>
+  <Entry name="DE" value="Depositor Number"/>
+  <Entry name="DF" value="Defense Federal Acquisition Regulations (DFAR)"/>
+  <Entry name="DG" value="Drawing Number"/>
+  <Entry name="DH" value="Drug Enforcement Administration Number"/>
+  <Entry name="DI" value="Distributor Invoice Number"/>
+  <Entry name="DJ" value="Delivery Ticket Number"/>
+  <Entry name="DK" value="Dock Number"/>
+  <Entry name="DL" value="Seller's Debit Memo"/>
+  <Entry name="DM" value="Associated Product Number"/>
+  <Entry name="DN" value="Draft Number"/>
+  <Entry name="DO" value="Delivery Order Number"/>
+  <Entry name="DP" value="Department Number"/>
+  <Entry name="DQ" value="Delivery Quote Number"/>
+  <Entry name="DR" value="Dock Receipt Number"/>
+  <Entry name="DS" value="Defense Priorities Allocation System (DPAS) Priority Rating"/>
+  <Entry name="DT" value="Downstream Shipper Contract Number"/>
+  <Entry name="DU" value="Dependents Information"/>
+  <Entry name="DV" value="Diversion Authority Number"/>
+  <Entry name="DW" value="Deposit Sequence Number"/>
+  <Entry name="DX" value="Department/Agency Number"/>
+  <Entry name="DY" value="Department of Defense Transportation Service Code Number (Household Goods)"/>
+  <Entry name="DZ" value="Certified Registered Nurse Anesthetist (CRNA) Provider Identification Number"/>
+  <Entry name="E1" value="Emergency Order Number"/>
+  <Entry name="E2" value="Part Causing Repair Number"/>
+  <Entry name="E3" value="Expansion on Effect of Change Number"/>
+  <Entry name="E4" value="Charge Card Number"/>
+  <Entry name="E5" value="Claimant's Claim Number"/>
+  <Entry name="E6" value="Backout Procedure Code"/>
+  <Entry name="E7" value="Service Bulletin Number"/>
+  <Entry name="E8" value="Service Contract (Coverage) Number"/>
+  <Entry name="E9" value="Attachment Code"/>
+  <Entry name="EA" value="Medical Record Identification Number"/>
+  <Entry name="EB" value="Embargo Permit Number"/>
+  <Entry name="EC" value="Circular"/>
+  <Entry name="ED" value="Export Declaration"/>
+  <Entry name="EE" value="Election District"/>
+  <Entry name="EF" value="Electronic Funds Transfer ID Number"/>
+  <Entry name="EG" value="Ending Serial Number"/>
+  <Entry name="EH" value="Financial Classification Code"/>
+  <Entry name="EI" value="Employer's Identification Number"/>
+  <Entry name="EJ" value="Patient Account Number"/>
+  <Entry name="EK" value="Healthcare Manpower Shortage Area (HMSA) Facility Identification Number"/>
+  <Entry name="EL" value="Electronic device pin number"/>
+  <Entry name="EM" value="Electronic Payment Reference Number"/>
+  <Entry name="EN" value="Embargo Number"/>
+  <Entry name="EO" value="Submitter Identification Number"/>
+  <Entry name="EP" value="Export Permit Number"/>
+  <Entry name="EQ" value="Equipment Number"/>
+  <Entry name="ER" value="Container or Equipment Receipt Number"/>
+  <Entry name="ES" value="Employer's Social Security Number"/>
+  <Entry name="ET" value="Excess Transportation"/>
+  <Entry name="EU" value="End User's Purchase Order Number"/>
+  <Entry name="EV" value="Receiver Identification Number"/>
+  <Entry name="EW" value="Mammography Certification Number"/>
+  <Entry name="EX" value="Estimate Number"/>
+  <Entry name="EY" value="Receiver Sub-identification Number"/>
+  <Entry name="EZ" value="Electronic Data Interchange Agreement Number"/>
+  <Entry name="F1" value="Version Code - National"/>
+  <Entry name="F2" value="Version Code - Local"/>
+  <Entry name="F3" value="Submission Number"/>
+  <Entry name="F4" value="Facility Certification Number"/>
+  <Entry name="F5" value="Medicare Version Code"/>
+  <Entry name="F6" value="Health Insurance Claim (HIC) Number"/>
+  <Entry name="F7" value="New Health Insurance Claim (HIC) Number"/>
+  <Entry name="F8" value="Original Reference Number"/>
+  <Entry name="F9" value="Freight Payor Reference Number"/>
+  <Entry name="FA" value="Federal Acquisition Regulations (FAR)"/>
+  <Entry name="FB" value="File Transfer Form Number"/>
+  <Entry name="FC" value="Filer Code Issued by Customs"/>
+  <Entry name="FD" value="Filer Code Issued by Bureau of Census"/>
+  <Entry name="FE" value="Failure mechanism number"/>
+  <Entry name="FF" value="Film Number"/>
+  <Entry name="FG" value="Fund Identification Number"/>
+  <Entry name="FH" value="Clinic Number"/>
+  <Entry name="FI" value="File Identifier"/>
+  <Entry name="FJ" value="Line Item Control Number"/>
+  <Entry name="FK" value="Finish Lot Number"/>
+  <Entry name="FL" value="Fine Line Classification"/>
+  <Entry name="FM" value="Federal Maritime Commission (FMC) Forwarders Number"/>
+  <Entry name="FN" value="Forwarder's/Agent's Reference Number"/>
+  <Entry name="FO" value="Drug Formulary Number"/>
+  <Entry name="FP" value="Forestry Permit Number"/>
+  <Entry name="FQ" value="Form Number"/>
+  <Entry name="FR" value="Freight Bill Number"/>
+  <Entry name="FS" value="Final Sequence Number"/>
+  <Entry name="FT" value="Foreign Trade Zone"/>
+  <Entry name="FU" value="Fund Code"/>
+  <Entry name="FV" value="Health Maintenance Organization (HMO) Reference Number"/>
+  <Entry name="FW" value="State License Identification Number"/>
+  <Entry name="FX" value="Failure Analysis Report Number"/>
+  <Entry name="FY" value="Claim Office Number"/>
+  <Entry name="FZ" value="Processor's Invoice Number"/>
+  <Entry name="G1" value="Prior Authorization Number"/>
+  <Entry name="G2" value="Provider Commercial Number"/>
+  <Entry name="G3" value="Predetermination of Benefits Identification Number"/>
+  <Entry name="G4" value="Peer Review Organization (PRO) Approval Number"/>
+  <Entry name="G5" value="Provider Site Number"/>
+  <Entry name="G6" value="Payer Assigned Resubmission Reference Number"/>
+  <Entry name="G7" value="Resubmission Reason Code"/>
+  <Entry name="G8" value="Resubmission Number"/>
+  <Entry name="G9" value="Secondary Employee Identification Number"/>
+  <Entry name="GA" value="Government Advance Progress"/>
+  <Entry name="GB" value="Grain Block Number"/>
+  <Entry name="GC" value="Government Contract Number"/>
+  <Entry name="GD" value="Return Goods Bill of Lading Number"/>
+  <Entry name="GE" value="Geographic Number"/>
+  <Entry name="GF" value="Specialty License Number"/>
+  <Entry name="GG" value="Gauge Ticket Number"/>
+  <Entry name="GH" value="Identification Card Serial Number"/>
+  <Entry name="GI" value="Secondary Provider Number"/>
+  <Entry name="GJ" value="Cornbore Certification Number"/>
+  <Entry name="GK" value="Third Party Reference Number"/>
+  <Entry name="GL" value="Geographic Destination Zone Number"/>
+  <Entry name="GM" value="Loan Acquisition Number"/>
+  <Entry name="GN" value="Folder Number"/>
+  <Entry name="GO" value="Exhibit Identifier"/>
+  <Entry name="GP" value="Government Priority Number"/>
+  <Entry name="GQ" value="Internal Purchase Order Release Number"/>
+  <Entry name="GR" value="Grain Order Reference Number"/>
+  <Entry name="GS" value="General Services Administration Regulations (GSAR)"/>
+  <Entry name="GT" value="Goods and Service Tax Registration Number"/>
+  <Entry name="GU" value="Internal Purchase Order Item Number"/>
+  <Entry name="GV" value="Third Party Purchase Order Number"/>
+  <Entry name="GW" value="Third Party Purchase Order Release Number"/>
+  <Entry name="GX" value="Third Party Purchase Order Item Number"/>
+  <Entry name="GY" value="Empty Repositioning Number"/>
+  <Entry name="GZ" value="General Ledger Account"/>
+  <Entry name="H1" value="High Fabrication Authorization Number"/>
+  <Entry name="H2" value="High Raw Material Authorization Number"/>
+  <Entry name="H3" value="Gravity Source Meter Number"/>
+  <Entry name="H5" value="Special Clause"/>
+  <Entry name="H6" value="Quality Clause"/>
+  <Entry name="H7" value="Standard Clause"/>
+  <Entry name="H8" value="Home Mortgage Disclosure Act (HMDA) Census Tract"/>
+  <Entry name="H9" value="Payment History Reference Number"/>
+  <Entry name="HA" value="Competent Authority"/>
+  <Entry name="HB" value="Bill &amp; Hold Invoice Number"/>
+  <Entry name="HC" value="Heat Code"/>
+  <Entry name="HD" value="Department of Transportation Hazardous Number"/>
+  <Entry name="HE" value="Hazardous Exemption Number"/>
+  <Entry name="HF" value="Engineering Data List"/>
+  <Entry name="HG" value="Civil Action Number"/>
+  <Entry name="HH" value="Fiscal Code"/>
+  <Entry name="HI" value="Health Industry Number (HIN)"/>
+  <Entry name="HJ" value="Identity Card Number"/>
+  <Entry name="HK" value="Judgment Number"/>
+  <Entry name="HL" value="SIREN Number"/>
+  <Entry name="HM" value="SIRET Number"/>
+  <Entry name="HN" value="Hazardous Certification Number"/>
+  <Entry name="HO" value="Shipper's Hazardous Number"/>
+  <Entry name="HP" value="Pack &amp; Hold Invoice Number"/>
+  <Entry name="HQ" value="Reinsurance Reference"/>
+  <Entry name="HR" value="Horsepower"/>
+  <Entry name="HS" value="Harmonized Code System (Canada)"/>
+  <Entry name="HT" value="Code of Federal Regulations"/>
+  <Entry name="HU" value="Type of Escrow Number"/>
+  <Entry name="HV" value="Escrow File Number"/>
+  <Entry name="HW" value="High/Wide File Number"/>
+  <Entry name="HX" value="Auto Loss Item Number"/>
+  <Entry name="HY" value="Property Loss Item Number"/>
+  <Entry name="HZ" value="Tax Agency Number (MERS [Mortgage Electronic Registration System] Federal Information Processing Standards [FIPS] Based Number)"/>
+  <Entry name="I1" value="Owning Bureau Identification Number"/>
+  <Entry name="I2" value="Interstate Commerce Commission (ICC) Account Number"/>
+  <Entry name="I3" value="Non-American Identification Number"/>
+  <Entry name="I4" value="Credit Counseling Identification Number"/>
+  <Entry name="I5" value="Invoice Identification"/>
+  <Entry name="I7" value="Credit Report Number"/>
+  <Entry name="I9" value="Pollutant"/>
+  <Entry name="IA" value="Internal Vendor Number"/>
+  <Entry name="IB" value="In Bond Number"/>
+  <Entry name="IC" value="Inbound-to Party"/>
+  <Entry name="ID" value="Insurance Certificate Number"/>
+  <Entry name="IE" value="Interchange Agreement Number"/>
+  <Entry name="IF" value="Issue Number"/>
+  <Entry name="IG" value="Insurance Policy Number"/>
+  <Entry name="IH" value="Initial Dealer Claim Number"/>
+  <Entry name="II" value="Initial Sample Inspection Report Number"/>
+  <Entry name="IJ" value="Standard Industry Classification (SIC) Code"/>
+  <Entry name="IK" value="Invoice Number"/>
+  <Entry name="IL" value="Internal Order Number"/>
+  <Entry name="IM" value="Intergovernmental Maritime Organization (IMO) Number"/>
+  <Entry name="IN" value="Consignee's Invoice Number"/>
+  <Entry name="IO" value="Inbound-to or Outbound-from Party"/>
+  <Entry name="IP" value="Inspection Report Number"/>
+  <Entry name="IQ" value="End Item"/>
+  <Entry name="IR" value="Intra Plant Routing"/>
+  <Entry name="IS" value="Invoice Number Suffix"/>
+  <Entry name="IT" value="Internal Customer Number"/>
+  <Entry name="IU" value="Barge Permit Number"/>
+  <Entry name="IV" value="Seller's Invoice Number"/>
+  <Entry name="IW" value="Part Interchangeability"/>
+  <Entry name="IX" value="Item Number"/>
+  <Entry name="IZ" value="Insured Parcel Post Number"/>
+  <Entry name="J0" value="Proceeding"/>
+  <Entry name="J1" value="Creditor"/>
+  <Entry name="J2" value="Attorney"/>
+  <Entry name="J3" value="Judge"/>
+  <Entry name="J4" value="Trustee"/>
+  <Entry name="J5" value="Originating Case"/>
+  <Entry name="J6" value="Adversary Case"/>
+  <Entry name="J7" value="Lead Case"/>
+  <Entry name="J8" value="Jointly Administered Case"/>
+  <Entry name="J9" value="Substantively Consolidated Case"/>
+  <Entry name="JA" value="Beginning Job Sequence Number"/>
+  <Entry name="JB" value="Job (Project) Number"/>
+  <Entry name="JC" value="Review"/>
+  <Entry name="JD" value="User Identification"/>
+  <Entry name="JE" value="Ending Job Sequence Number"/>
+  <Entry name="JF" value="Automated Underwriting Reference Number"/>
+  <Entry name="JH" value="Tag"/>
+  <Entry name="JI" value="Multiple Listing Service Area"/>
+  <Entry name="JK" value="Multiple Listing Service Sub-area"/>
+  <Entry name="JL" value="Packet"/>
+  <Entry name="JM" value="Multiple Listing Service Map X Coordinate"/>
+  <Entry name="JN" value="Multiple Listing Service Map Y Coordinate"/>
+  <Entry name="JO" value="Multiple Listing Number"/>
+  <Entry name="JP" value="Multiple Listing Service Book Type"/>
+  <Entry name="JQ" value="Elevation"/>
+  <Entry name="JR" value="Property Component Location"/>
+  <Entry name="JS" value="Job Sequence Number"/>
+  <Entry name="JT" value="Prior Tax Identification Number (TIN)"/>
+  <Entry name="JU" value="Prior Phone Number"/>
+  <Entry name="JV" value="Prior Health Industry Number"/>
+  <Entry name="JW" value="Prior Universal Provider Identification Number (UPIN)"/>
+  <Entry name="JX" value="Prior Postal Zip Code"/>
+  <Entry name="JY" value="Origin of Shipment Harmonized-Based Code"/>
+  <Entry name="JZ" value="Governing Class Code"/>
+  <Entry name="K0" value="Approval Code"/>
+  <Entry name="K1" value="Foreign Military Sales Notice Number"/>
+  <Entry name="K2" value="Certified Mail Number"/>
+  <Entry name="K3" value="Registered Mail Number"/>
+  <Entry name="K4" value="Criticality Designator"/>
+  <Entry name="K5" value="Task Order"/>
+  <Entry name="K6" value="Purchase Description"/>
+  <Entry name="K7" value="Paragraph Number"/>
+  <Entry name="K8" value="Project Paragraph Number"/>
+  <Entry name="K9" value="Inquiry Request Number"/>
+  <Entry name="KA" value="Distribution List"/>
+  <Entry name="KB" value="Beginning Kanban Serial Number"/>
+  <Entry name="KC" value="Exhibit Distribution List"/>
+  <Entry name="KD" value="Special Instructions Number"/>
+  <Entry name="KE" value="Ending Kanban Serial Number"/>
+  <Entry name="KG" value="Foreclosing Status"/>
+  <Entry name="KH" value="Type of Law Suit"/>
+  <Entry name="KI" value="Type of Outstanding Judgment"/>
+  <Entry name="KJ" value="Tax Lien Jurisdiction"/>
+  <Entry name="KK" value="Delivery Reference"/>
+  <Entry name="KL" value="Contract Reference"/>
+  <Entry name="KM" value="Rental Account Number"/>
+  <Entry name="KN" value="Census Automated Files ID"/>
+  <Entry name="KO" value="Customs Drawback Entry Number"/>
+  <Entry name="KP" value="Health Certificate Number"/>
+  <Entry name="KQ" value="Procuring Agency"/>
+  <Entry name="KR" value="Response to a Request for Quotation Reference"/>
+  <Entry name="KS" value="Solicitation"/>
+  <Entry name="KT" value="Request for Quotation Reference"/>
+  <Entry name="KU" value="Office Symbol"/>
+  <Entry name="KV" value="Distribution Statement Code"/>
+  <Entry name="KW" value="Certification"/>
+  <Entry name="KX" value="Representation"/>
+  <Entry name="KY" value="Site Specific Procedures, Terms, and Conditions"/>
+  <Entry name="KZ" value="Master Solicitation Procedures, Terms, and Conditions"/>
+  <Entry name="L0" value="Collision Industry Electronic Commerce Association (CIECA)"/>
+  <Entry name="L1" value="Letters or Notes"/>
+  <Entry name="L2" value="Location on Product Code"/>
+  <Entry name="L3" value="Labor Operation Number"/>
+  <Entry name="L4" value="Proposal Paragraph Number"/>
+  <Entry name="L5" value="Subexhibit Line Item Number"/>
+  <Entry name="L6" value="Subcontract Line Item Number"/>
+  <Entry name="L7" value="Customer's Release Number"/>
+  <Entry name="L8" value="Consignee's Release Number"/>
+  <Entry name="L9" value="Customer's Part Number"/>
+  <Entry name="LA" value="Shipping Label Serial Number"/>
+  <Entry name="LB" value="Lockbox"/>
+  <Entry name="LC" value="Lease Number"/>
+  <Entry name="LD" value="Loan Number"/>
+  <Entry name="LE" value="Lender Entity Number"/>
+  <Entry name="LF" value="Assembly Line Feed Location"/>
+  <Entry name="LG" value="Lease Schedule Number"/>
+  <Entry name="LH" value="Longitude Expressed in Seconds"/>
+  <Entry name="LI" value="Line Item Identifier (Seller's)"/>
+  <Entry name="LJ" value="Local Jurisdiction"/>
+  <Entry name="LK" value="Longitude expressed in Degrees, Minutes and Seconds"/>
+  <Entry name="LL" value="Latitude Expressed in Seconds"/>
+  <Entry name="LM" value="Product Period for which Labor Costs are Firm"/>
+  <Entry name="LN" value="Non pickup Limited Tariff Number"/>
+  <Entry name="LO" value="Load Planning Number"/>
+  <Entry name="LP" value="For Pickup Limited Freight Tariff Number"/>
+  <Entry name="LQ" value="Latitude Expressed in Degrees, Minutes and Seconds"/>
+  <Entry name="LR" value="Local Student Identification Number"/>
+  <Entry name="LS" value="Bar-Coded Serial Number"/>
+  <Entry name="LT" value="Lot Number"/>
+  <Entry name="LU" value="Location Number"/>
+  <Entry name="LV" value="License Plate Number"/>
+  <Entry name="LW" value="Location Within Equipment"/>
+  <Entry name="LX" value="Qualified Products List"/>
+  <Entry name="LY" value="Destination of Shipment Harmonized-Based Code"/>
+  <Entry name="LZ" value="Lender Account Number"/>
+  <Entry name="M1" value="Material Storage Location"/>
+  <Entry name="M2" value="Major Force Program"/>
+  <Entry name="M3" value="Crop Year"/>
+  <Entry name="M5" value="Lease Agreement Amendment Number - Master"/>
+  <Entry name="M6" value="Military Ordnance Security Risk Number"/>
+  <Entry name="M7" value="Medical Assistance Category"/>
+  <Entry name="M8" value="Limited Partnership Identification Number"/>
+  <Entry name="M9" value="Tax Shelter Number"/>
+  <Entry name="MA" value="Ship Notice/Manifest Number"/>
+  <Entry name="MB" value="Master Bill of Lading"/>
+  <Entry name="MC" value="Microfilm Number"/>
+  <Entry name="MD" value="Magazine Code"/>
+  <Entry name="ME" value="Message Address or ID"/>
+  <Entry name="MF" value="Manufacturers Part Number"/>
+  <Entry name="MG" value="Meter Number"/>
+  <Entry name="MH" value="Manufacturing Order Number"/>
+  <Entry name="MI" value="Mill Order Number"/>
+  <Entry name="MJ" value="Model Number"/>
+  <Entry name="MK" value="Manifest Key Number"/>
+  <Entry name="ML" value="Military Rank/Civilian Pay Grade Number"/>
+  <Entry name="MM" value="Master Lease Agreement Number"/>
+  <Entry name="MN" value="MICR Number"/>
+  <Entry name="MO" value="Manufacturing Operation Number"/>
+  <Entry name="MP" value="Multiple P.O.s of an Invoice"/>
+  <Entry name="MQ" value="Meter Proving Report Number"/>
+  <Entry name="MR" value="Merchandise Type Code"/>
+  <Entry name="MS" value="Manufacturer's Material Safety Data Sheet Number"/>
+  <Entry name="MT" value="Meter Ticket Number"/>
+  <Entry name="MU" value="Military Specification (MILSPEC) Number"/>
+  <Entry name="MV" value="Migrant Number"/>
+  <Entry name="MW" value="Military Call Number"/>
+  <Entry name="MX" value="Material Change Notice Number"/>
+  <Entry name="MY" value="Model year number"/>
+  <Entry name="MZ" value="Maintenance Request Number"/>
+  <Entry name="N0" value="Nomination Number"/>
+  <Entry name="N1" value="Local School Course Number"/>
+  <Entry name="N2" value="Local School District Course Number"/>
+  <Entry name="N3" value="Statewide Course Number"/>
+  <Entry name="N4" value="United States Department of Education, National Center for Education Statistics (NCES) Course Number"/>
+  <Entry name="N5" value="Provider Plan Network Identification Number"/>
+  <Entry name="N6" value="Plan Network Identification Number"/>
+  <Entry name="N7" value="Facility Network Identification Number"/>
+  <Entry name="N8" value="Secondary Health Insurance Identification Number"/>
+  <Entry name="N9" value="Data Authentication Number"/>
+  <Entry name="NA" value="North American Hazardous Classification Number"/>
+  <Entry name="NB" value="Letter of Credit Number"/>
+  <Entry name="NC" value="Secondary Coverage Company Number"/>
+  <Entry name="ND" value="Letter of Credit Draft Number"/>
+  <Entry name="NE" value="Lease Rider Number"/>
+  <Entry name="NF" value="National Association of Insurance Commissioners (NAIC) Code"/>
+  <Entry name="NG" value="Natural Gas Policy Act Category Code"/>
+  <Entry name="NH" value="Rate Card Number"/>
+  <Entry name="NI" value="Military Standard (MIL-STD) Number"/>
+  <Entry name="NJ" value="Technical Document Number"/>
+  <Entry name="NK" value="Prior Case"/>
+  <Entry name="NL" value="Technical Order Number"/>
+  <Entry name="NM" value="Discounter Registration Number"/>
+  <Entry name="NN" value="Nonconformance Report Number"/>
+  <Entry name="NO" value="No OT5 Authority-zero Mileage Rate"/>
+  <Entry name="NP" value="Partial Payment Number"/>
+  <Entry name="NQ" value="Medicaid Recipient Identification Number"/>
+  <Entry name="NR" value="Progress Payment Number"/>
+  <Entry name="NS" value="National Stock Number"/>
+  <Entry name="NT" value="Administrator's Reference Number"/>
+  <Entry name="NU" value="Pending Case"/>
+  <Entry name="NW" value="Associated Policy Number"/>
+  <Entry name="NX" value="Related Nonconformance Number"/>
+  <Entry name="NY" value="Agent Claim Number"/>
+  <Entry name="NZ" value="Critical Application"/>
+  <Entry name="O1" value="Outer Continental Shelf Area Code"/>
+  <Entry name="O2" value="Outer Continental Shelf Block Number"/>
+  <Entry name="O5" value="OT5 Authority-Condition or Restriction on Car Hire Rate"/>
+  <Entry name="O7" value="On-line Procurement and Accounting Control (OPAC) Transaction"/>
+  <Entry name="O8" value="Original Filing"/>
+  <Entry name="O9" value="Continuation Filing"/>
+  <Entry name="OA" value="Outlet Number"/>
+  <Entry name="OB" value="Ocean Bill of Lading"/>
+  <Entry name="OC" value="Ocean Container Number"/>
+  <Entry name="OD" value="Original Return Request Reference Number"/>
+  <Entry name="OE" value="Open and Prepaid Station List Number"/>
+  <Entry name="OF" value="Operator Identification Number"/>
+  <Entry name="OG" value="Termination Filing"/>
+  <Entry name="OH" value="Origin House"/>
+  <Entry name="OI" value="Original Invoice Number"/>
+  <Entry name="OJ" value="Amendment Filing"/>
+  <Entry name="OK" value="Offer Group"/>
+  <Entry name="OL" value="Original Shipper's Bill of Lading Number"/>
+  <Entry name="OM" value="Ocean Manifest"/>
+  <Entry name="ON" value="Dealer Order Number"/>
+  <Entry name="OP" value="Original Purchase Order"/>
+  <Entry name="OQ" value="Order Number"/>
+  <Entry name="OR" value="Order/Paragraph Number"/>
+  <Entry name="OS" value="Outbound-from Party"/>
+  <Entry name="OT" value="Sales Allowance Number"/>
+  <Entry name="OU" value="Tariff Supplement Number"/>
+  <Entry name="OV" value="Tariff Suffix Number"/>
+  <Entry name="OW" value="Service Order Number"/>
+  <Entry name="OX" value="Statement Number"/>
+  <Entry name="OZ" value="Product Number"/>
+  <Entry name="P1" value="Previous Contract Number"/>
+  <Entry name="P2" value="Previous Drug Enforcement Administration Number"/>
+  <Entry name="P3" value="Previous customer reference number"/>
+  <Entry name="P4" value="Project Code"/>
+  <Entry name="P5" value="Position Code"/>
+  <Entry name="P6" value="Pipeline Number"/>
+  <Entry name="P7" value="Product Line Number"/>
+  <Entry name="P8" value="Pickup Reference Number"/>
+  <Entry name="P9" value="Page Number"/>
+  <Entry name="PA" value="Price Area Number"/>
+  <Entry name="PB" value="Payer's Financial Institution Account Number for Check, Draft, or Wire Payments; Originating Company Account Number for ACH Transfers"/>
+  <Entry name="PC" value="Production Code"/>
+  <Entry name="PD" value="Promotion/Deal Number"/>
+  <Entry name="PE" value="Plant Number"/>
+  <Entry name="PF" value="Prime Contractor Contract Number"/>
+  <Entry name="PG" value="Product Group"/>
+  <Entry name="PH" value="Priority Rating"/>
+  <Entry name="PI" value="Price List Change or Issue Number"/>
+  <Entry name="PJ" value="Packer Number"/>
+  <Entry name="PK" value="Packing List Number"/>
+  <Entry name="PL" value="Price List Number"/>
+  <Entry name="PM" value="Part Number"/>
+  <Entry name="PN" value="Permit Number"/>
+  <Entry name="PO" value="Purchase Order Number"/>
+  <Entry name="PP" value="Purchase Order Revision Number"/>
+  <Entry name="PQ" value="Payee Identification"/>
+  <Entry name="PR" value="Price Quote Number"/>
+  <Entry name="PS" value="Purchase Order Number Suffix"/>
+  <Entry name="PT" value="Purchase Option Agreement"/>
+  <Entry name="PU" value="Previous Bill of Lading Number"/>
+  <Entry name="PV" value="Product change information number"/>
+  <Entry name="PW" value="Prior purchase order number"/>
+  <Entry name="PX" value="Previous Invoice Number"/>
+  <Entry name="PY" value="Payee's Financial Institution Account Number for Check, Draft or Wire Payments; Receiving Company Account Number for ACH Transfer"/>
+  <Entry name="PZ" value="Product Change Notice Number"/>
+  <Entry name="Q1" value="Quote Number"/>
+  <Entry name="Q2" value="Starting Package Number"/>
+  <Entry name="Q3" value="Ending Package Number"/>
+  <Entry name="Q4" value="Prior Identifier Number"/>
+  <Entry name="Q5" value="Property Control Number"/>
+  <Entry name="Q6" value="Recall Number"/>
+  <Entry name="Q7" value="Receiver Claim Number"/>
+  <Entry name="Q8" value="Registration Number"/>
+  <Entry name="Q9" value="Repair Order Number"/>
+  <Entry name="QA" value="Press Identifier"/>
+  <Entry name="QB" value="Press Form Identifier"/>
+  <Entry name="QC" value="Product Specification Document Number"/>
+  <Entry name="QD" value="Replacement Drug Enforcement Administration Number"/>
+  <Entry name="QE" value="Replacement Customer Reference Number"/>
+  <Entry name="QF" value="Quality Disposition Area Identifier"/>
+  <Entry name="QG" value="Replacement Assembly Model Number"/>
+  <Entry name="QH" value="Replacement Assembly Serial Number"/>
+  <Entry name="QI" value="Quality Inspection Area Identifier"/>
+  <Entry name="QJ" value="Return Material Authorization Number"/>
+  <Entry name="QK" value="Sales Program Number"/>
+  <Entry name="QL" value="Service Authorization Number"/>
+  <Entry name="QM" value="Quality Review Material Crib Identifier"/>
+  <Entry name="QN" value="Stop Sequence Number"/>
+  <Entry name="QO" value="Service Estimate Number"/>
+  <Entry name="QP" value="Substitute Part Number"/>
+  <Entry name="QQ" value="Unit Number"/>
+  <Entry name="QR" value="Quality Report Number"/>
+  <Entry name="QS" value="Warranty Coverage Code"/>
+  <Entry name="QT" value="Warranty Registration Number"/>
+  <Entry name="QU" value="Change Verification Procedure Code"/>
+  <Entry name="QV" value="Major System Affected Code"/>
+  <Entry name="QW" value="New Part Number"/>
+  <Entry name="QX" value="Old Part Number"/>
+  <Entry name="QY" value="Service Performed Code"/>
+  <Entry name="QZ" value="Reference Drawing Number"/>
+  <Entry name="R0" value="Regiristo Federal de Contribuyentes (Mexican Federal Tax ID Number)"/>
+  <Entry name="R1" value="Current Revision Number"/>
+  <Entry name="R2" value="Canceled Revision Number"/>
+  <Entry name="R3" value="Correction Number"/>
+  <Entry name="R4" value="Tariff Section Number"/>
+  <Entry name="R5" value="Tariff Page Number"/>
+  <Entry name="R6" value="Tariff Rule Number"/>
+  <Entry name="R7" value="Accounts Receivable Open Item"/>
+  <Entry name="R8" value="Rental Agreement Number"/>
+  <Entry name="R9" value="Rejection Number"/>
+  <Entry name="RA" value="Repetitive Cargo Shipment Number"/>
+  <Entry name="RB" value="Rate code number"/>
+  <Entry name="RC" value="Rail Routing Code"/>
+  <Entry name="RD" value="Reel Number"/>
+  <Entry name="RE" value="Release Number"/>
+  <Entry name="RF" value="Export Reference Number"/>
+  <Entry name="RG" value="Route Order Number-Domestic"/>
+  <Entry name="RH" value="Route Order Number-Export"/>
+  <Entry name="RI" value="Release invoice number for prior bill and hold"/>
+  <Entry name="RJ" value="Route Order Number-Emergency"/>
+  <Entry name="RK" value="Rack Type Number"/>
+  <Entry name="RL" value="Reserve Assembly Line Feed Location"/>
+  <Entry name="RM" value="Raw material supplier Dun &amp; Bradstreet number"/>
+  <Entry name="RN" value="Run Number"/>
+  <Entry name="RO" value="Repetitive Booking Number"/>
+  <Entry name="RP" value="Repetitive Pattern Code"/>
+  <Entry name="RQ" value="Purchase Requisition Number"/>
+  <Entry name="RR" value="Payer's Financial Institution Transit Routing Number for Check, Draft or Wire Payments. Originating Depository Financial Institution Routing Number for ACH Transfers"/>
+  <Entry name="RS" value="Returnable Container Serial Number"/>
+  <Entry name="RT" value="Payee's Financial Institution Transit Routing Number for Check, Draft or Wire Payments. Receiving Depository Financial Institution Transit Routing Number for ACH Transfers"/>
+  <Entry name="RU" value="Route Number"/>
+  <Entry name="RV" value="Receiving Number"/>
+  <Entry name="RW" value="Repetitive Waybill Code (Origin Carrier, Standard Point Location Code, Repetitive Waybill Code Number)"/>
+  <Entry name="RX" value="Resubmit number"/>
+  <Entry name="RY" value="Rebate Number"/>
+  <Entry name="RZ" value="Returned Goods Authorization Number"/>
+  <Entry name="S0" value="Special Approval"/>
+  <Entry name="S1" value="Engineering Specification Number"/>
+  <Entry name="S2" value="Data Source"/>
+  <Entry name="S3" value="Specification Number"/>
+  <Entry name="S4" value="Shippers Bond Number"/>
+  <Entry name="S5" value="Routing Instruction Number"/>
+  <Entry name="S6" value="Stock Number"/>
+  <Entry name="S7" value="Stack Train Identification"/>
+  <Entry name="S8" value="Seal Off Number"/>
+  <Entry name="S9" value="Seal On Number"/>
+  <Entry name="SA" value="Salesperson"/>
+  <Entry name="SB" value="Sales Region Number"/>
+  <Entry name="SC" value="Shipper Car Order Number"/>
+  <Entry name="SD" value="Subday Number"/>
+  <Entry name="SE" value="Serial Number"/>
+  <Entry name="SF" value="Ship From"/>
+  <Entry name="SG" value="Savings"/>
+  <Entry name="SH" value="Sender Defined Clause"/>
+  <Entry name="SI" value="Shipper's Identifying Number for Shipment (SID)"/>
+  <Entry name="SJ" value="Set Number"/>
+  <Entry name="SK" value="Service Change Number"/>
+  <Entry name="SL" value="Sales/Territory Code"/>
+  <Entry name="SM" value="Sales Office Number"/>
+  <Entry name="SN" value="Seal Number"/>
+  <Entry name="SO" value="Shipper's Order (Invoice Number)"/>
+  <Entry name="SP" value="Scan Line"/>
+  <Entry name="SQ" value="Container Sequence Number"/>
+  <Entry name="SR" value="Sales Responsibility"/>
+  <Entry name="SS" value="Split Shipment Number"/>
+  <Entry name="ST" value="Store Number"/>
+  <Entry name="SU" value="Special Processing Code"/>
+  <Entry name="SV" value="Service Charge Number"/>
+  <Entry name="SW" value="Seller's Sale Number"/>
+  <Entry name="SX" value="Service Interrupt Tracking Number"/>
+  <Entry name="SY" value="Social Security Number"/>
+  <Entry name="SZ" value="Specification Revision"/>
+  <Entry name="T0" value="Dealer Type Identification"/>
+  <Entry name="T1" value="Tax Exchange Code"/>
+  <Entry name="T2" value="Tax Form Code"/>
+  <Entry name="T3" value="Tax Schedule Code"/>
+  <Entry name="T4" value="Signal Code"/>
+  <Entry name="T5" value="Trailer Use Agreements"/>
+  <Entry name="T6" value="Tax Filing"/>
+  <Entry name="T7" value="Affected Subsystem Code"/>
+  <Entry name="T8" value="Description of Change Code"/>
+  <Entry name="T9" value="Documentation Affected Number"/>
+  <Entry name="TA" value="Telecommunication Circuit Supplemental ID"/>
+  <Entry name="TB" value="Trucker's Bill of Lading"/>
+  <Entry name="TC" value="Vendor Terms"/>
+  <Entry name="TD" value="Reason for Change"/>
+  <Entry name="TE" value="Federal Maritime Commission (FMC) Tariff Number"/>
+  <Entry name="TF" value="Transfer Number"/>
+  <Entry name="TG" value="Transportation Control Number (TCN)"/>
+  <Entry name="TH" value="Transportation Account Code (TAC)"/>
+  <Entry name="TI" value="TIR Number"/>
+  <Entry name="TJ" value="Federal Taxpayer's Identification Number"/>
+  <Entry name="TK" value="Tank Number"/>
+  <Entry name="TL" value="Tax License Exemption"/>
+  <Entry name="TM" value="Travel Manifest (ACI or OTR)"/>
+  <Entry name="TN" value="Transaction Reference Number"/>
+  <Entry name="TO" value="Terminal Operator Number"/>
+  <Entry name="TP" value="Test Specification Number"/>
+  <Entry name="TQ" value="Tracer Action Request Number"/>
+  <Entry name="TR" value="Government Transportation Request"/>
+  <Entry name="TS" value="Tariff Number"/>
+  <Entry name="TT" value="Terminal Code"/>
+  <Entry name="TU" value="Trial Location Code"/>
+  <Entry name="TV" value="Line of Business"/>
+  <Entry name="TW" value="Tax Worksheet"/>
+  <Entry name="TX" value="Tax Exempt Number"/>
+  <Entry name="TY" value="Policy Type"/>
+  <Entry name="TZ" value="Total Cycle Number"/>
+  <Entry name="U0" value="Consolidator's Receipt Number"/>
+  <Entry name="U1" value="Regional Account Number"/>
+  <Entry name="U2" value="Term"/>
+  <Entry name="U3" value="Unique Supplier Identification Number (USIN)"/>
+  <Entry name="U4" value="Unpaid Installment Reference Number"/>
+  <Entry name="U5" value="Successor Account"/>
+  <Entry name="U6" value="Predecessor Account"/>
+  <Entry name="U8" value="Mortgage Backed Security (MBS) Loan Number"/>
+  <Entry name="U9" value="Mortgage Backed Security (MBS) Pool Number"/>
+  <Entry name="UA" value="Mortgage Number"/>
+  <Entry name="UB" value="Unacceptable Source Purchaser ID"/>
+  <Entry name="UC" value="Mortgage Insurance Indicator Number"/>
+  <Entry name="UD" value="Unacceptable Source DUNS Number"/>
+  <Entry name="UE" value="Secondary Coverage Certificate Number"/>
+  <Entry name="UF" value="Mortgage Insurance Company Number"/>
+  <Entry name="UG" value="U.S. Government Transportation Control Number"/>
+  <Entry name="UH" value="Removal Number"/>
+  <Entry name="UI" value="Previous Course Number"/>
+  <Entry name="UJ" value="Current or Latest Course Number"/>
+  <Entry name="UK" value="Equivalent Course Number at Requesting Institution"/>
+  <Entry name="UL" value="Cross-listed Course Number"/>
+  <Entry name="UM" value="Quarter Quarter Section Number"/>
+  <Entry name="UN" value="United Nations Hazardous Classification Number"/>
+  <Entry name="UO" value="Quarter Quarter Spot Number"/>
+  <Entry name="UP" value="Upstream Shipper Contract Number"/>
+  <Entry name="UQ" value="Section Number"/>
+  <Entry name="UR" value="Unit Relief Number"/>
+  <Entry name="US" value="Unacceptable Source Supplier ID"/>
+  <Entry name="UT" value="Unit Train"/>
+  <Entry name="UU" value="Township Number"/>
+  <Entry name="UV" value="Range Number"/>
+  <Entry name="UW" value="State Senate District"/>
+  <Entry name="UX" value="State Assembly District"/>
+  <Entry name="UY" value="Federal National Mortgage Association (Fannie Mae) Loan Number"/>
+  <Entry name="UZ" value="State Legislative District"/>
+  <Entry name="V0" value="Version"/>
+  <Entry name="V1" value="Volume Purchase Agreement Number"/>
+  <Entry name="V2" value="Visa Type"/>
+  <Entry name="V3" value="Voyage Number"/>
+  <Entry name="V4" value="State Department I-20 Form Number"/>
+  <Entry name="V5" value="State Department IAP-66 Form Number"/>
+  <Entry name="V6" value="North American Free Trade Agreement (NAFTA) Compliance Number"/>
+  <Entry name="V7" value="Judicial District"/>
+  <Entry name="V8" value="Institution Number"/>
+  <Entry name="V9" value="Subservicer"/>
+  <Entry name="VA" value="Vessel Agent Number"/>
+  <Entry name="VB" value="Department of Veterans Affairs Acquisition Regulations (VAAR)"/>
+  <Entry name="VC" value="Vendor Contract Number"/>
+  <Entry name="VD" value="Volume Number"/>
+  <Entry name="VE" value="Vendor Abbreviation Code"/>
+  <Entry name="VF" value="Vendor Change Identification Code"/>
+  <Entry name="VG" value="Vendor Change Procedure Code"/>
+  <Entry name="VH" value="County Legislative District"/>
+  <Entry name="VI" value="Pool Number"/>
+  <Entry name="VJ" value="Investor Note Holder Identification"/>
+  <Entry name="VK" value="Institution Note Holder Identification"/>
+  <Entry name="VL" value="Third Party Note Holder Identification"/>
+  <Entry name="VM" value="Ward"/>
+  <Entry name="VN" value="Vendor Order Number"/>
+  <Entry name="VO" value="Institution Loan Number"/>
+  <Entry name="VP" value="Vendor Product Number"/>
+  <Entry name="VQ" value="Related Contract Line Item Number"/>
+  <Entry name="VR" value="Vendor ID Number"/>
+  <Entry name="VS" value="Vendor Order Number Suffix"/>
+  <Entry name="VT" value="Motor Vehicle ID Number"/>
+  <Entry name="VU" value="Preparer's Verification Number"/>
+  <Entry name="VV" value="Voucher"/>
+  <Entry name="VW" value="Standard"/>
+  <Entry name="VX" value="Value-Added Tax Registration Number (Europe)"/>
+  <Entry name="VY" value="Link Sequence Number"/>
+  <Entry name="VZ" value="Sponsor's Reference Number"/>
+  <Entry name="W1" value="Disposal Turn-In Document Number"/>
+  <Entry name="W2" value="Weapon System Number"/>
+  <Entry name="W3" value="Manufacturing Directive Number"/>
+  <Entry name="W4" value="Procurement Request Number"/>
+  <Entry name="W5" value="Inspector Identification Number"/>
+  <Entry name="W6" value="Federal Supply Schedule Number"/>
+  <Entry name="W7" value="Commercial and Government Entity (CAGE) Code"/>
+  <Entry name="W8" value="Suffix"/>
+  <Entry name="W9" value="Special Packaging Instruction Number"/>
+  <Entry name="WA" value="Labor or Affiliation Identification"/>
+  <Entry name="WB" value="American Petroleum Institute (API) Well"/>
+  <Entry name="WC" value="Contract Option Number"/>
+  <Entry name="WD" value="Review Period Number"/>
+  <Entry name="WE" value="Well Classification Code"/>
+  <Entry name="WF" value="Locally Assigned Control Number"/>
+  <Entry name="WG" value="Vendor's Previous Job Number"/>
+  <Entry name="WH" value="Master Reference (Link) Number"/>
+  <Entry name="WI" value="Waiver"/>
+  <Entry name="WJ" value="Pre-Award Survey"/>
+  <Entry name="WK" value="Type of Science Code"/>
+  <Entry name="WL" value="Federal Supply Classification Code"/>
+  <Entry name="WM" value="Weight Agreement Number"/>
+  <Entry name="WN" value="Well Number"/>
+  <Entry name="WO" value="Work Order Number"/>
+  <Entry name="WP" value="Warehouse Pick Ticket Number"/>
+  <Entry name="WQ" value="Interim Funding Organization Loan Number"/>
+  <Entry name="WR" value="Warehouse Receipt Number"/>
+  <Entry name="WS" value="Warehouse storage location number"/>
+  <Entry name="WT" value="Broker's Reference Number"/>
+  <Entry name="WU" value="Vessel"/>
+  <Entry name="WV" value="Dealer Identification"/>
+  <Entry name="WW" value="Depository Trust Company Identification"/>
+  <Entry name="WX" value="Distributor's Account Identification"/>
+  <Entry name="WY" value="Waybill Number"/>
+  <Entry name="WZ" value="Distributor's Representative Identification"/>
+  <Entry name="X0" value="Debtor's Account"/>
+  <Entry name="X1" value="Provider Claim Number"/>
+  <Entry name="X2" value="Specification Class Number"/>
+  <Entry name="X3" value="Defect Code Number"/>
+  <Entry name="X4" value="Clinical Laboratory Improvement Amendment Number"/>
+  <Entry name="X5" value="State Industrial Accident Provider Number"/>
+  <Entry name="X6" value="Original Voucher Number"/>
+  <Entry name="X7" value="Batch Sequence Number"/>
+  <Entry name="X8" value="Secondary Suffix Code Indicator"/>
+  <Entry name="X9" value="Internal Control Number"/>
+  <Entry name="XA" value="Substitute National Stock Number"/>
+  <Entry name="XB" value="Substitute Manufacturer's Part Number"/>
+  <Entry name="XC" value="Cargo Control Number"/>
+  <Entry name="XD" value="Subsistence Identification Number"/>
+  <Entry name="XE" value="Transportation Priority Number"/>
+  <Entry name="XF" value="Government Bill of Lading Office Code"/>
+  <Entry name="XG" value="Airline Ticket Number"/>
+  <Entry name="XH" value="Contract Auditor ID Number"/>
+  <Entry name="XI" value="Federal Home Loan Mortgage Corporation Loan Number"/>
+  <Entry name="XJ" value="Federal Home Loan Mortgage Corporation Default/Foreclosure Specialist Number"/>
+  <Entry name="XK" value="Mortgagee Loan Number"/>
+  <Entry name="XL" value="Insured's Loan Number"/>
+  <Entry name="XM" value="Issuer Number"/>
+  <Entry name="XN" value="Title XIX Identifier Number"/>
+  <Entry name="XO" value="Sample Number"/>
+  <Entry name="XP" value="Previous Cargo Control Number"/>
+  <Entry name="XQ" value="Pier Number"/>
+  <Entry name="XR" value="Railroad Commission Record Number"/>
+  <Entry name="XS" value="Gas Analysis Source Meter Number"/>
+  <Entry name="XT" value="Toxicology ID"/>
+  <Entry name="XU" value="Universal Transverse Mercator - North"/>
+  <Entry name="XV" value="Universal Transverse Mercator - East"/>
+  <Entry name="XW" value="Universal Transverse Mercator - Zone"/>
+  <Entry name="XX" value="Rating Period"/>
+  <Entry name="XY" value="Other Unlisted Type of Reference Number"/>
+  <Entry name="XZ" value="Pharmacy Prescription Number"/>
+  <Entry name="Y0" value="Debtor"/>
+  <Entry name="Y1" value="Claim Administrator Claim Number"/>
+  <Entry name="Y2" value="Third-Party Administrator Claim Number"/>
+  <Entry name="Y3" value="Contract Holder Claim Number"/>
+  <Entry name="Y4" value="Agency Claim Number"/>
+  <Entry name="Y5" value="Delivery Trailer Manifest"/>
+  <Entry name="Y6" value="Sort and Segregate"/>
+  <Entry name="Y8" value="User ID"/>
+  <Entry name="Y9" value="Current Certificate Number"/>
+  <Entry name="YA" value="Prior Certificate Number"/>
+  <Entry name="YB" value="Revision Number"/>
+  <Entry name="YC" value="Tract"/>
+  <Entry name="YD" value="Buyer Identification"/>
+  <Entry name="YE" value="Railroad Commission Oil Number"/>
+  <Entry name="YF" value="Lessee Identification"/>
+  <Entry name="YH" value="Operator Assigned Unit Number"/>
+  <Entry name="YI" value="Refiner Identification"/>
+  <Entry name="YJ" value="Revenue Source"/>
+  <Entry name="YK" value="Rent Payor Identification"/>
+  <Entry name="YL" value="Allowance Recipient Identification"/>
+  <Entry name="YM" value="Resource Screening Reference"/>
+  <Entry name="YN" value="Receiver ID Qualifier"/>
+  <Entry name="YO" value="Formation"/>
+  <Entry name="YP" value="Selling Arrangement"/>
+  <Entry name="YQ" value="Minimum Royalty Payor Identification"/>
+  <Entry name="YR" value="Operator Lease Number"/>
+  <Entry name="YS" value="Yard Position"/>
+  <Entry name="YT" value="Reporter Identification"/>
+  <Entry name="YV" value="Participating Area"/>
+  <Entry name="YW" value="Engineering Change Proposal"/>
+  <Entry name="YX" value="Geographic Score"/>
+  <Entry name="YY" value="Geographic Key"/>
+  <Entry name="YZ" value="Geographic Index"/>
+  <Entry name="Z1" value="Safety of Ship Certificate"/>
+  <Entry name="Z2" value="Safety of Radio Certificate"/>
+  <Entry name="Z3" value="Safety Equipment Certificate"/>
+  <Entry name="Z4" value="Civil Liabilities of Oil Certificate"/>
+  <Entry name="Z5" value="Load Line Certificate"/>
+  <Entry name="Z6" value="Derat Certificate"/>
+  <Entry name="Z7" value="Maritime Declaration of Health"/>
+  <Entry name="Z8" value="Federal Housing Administration Case Number"/>
+  <Entry name="Z9" value="Veterans Affairs Case Number"/>
+  <Entry name="ZA" value="Supplier"/>
+  <Entry name="ZB" value="Ultimate Consignee"/>
+  <Entry name="ZC" value="Connecting Carrier"/>
+  <Entry name="ZD" value="Family Member Identification"/>
+  <Entry name="ZE" value="Coal Authority Number"/>
+  <Entry name="ZG" value="Sales Representative Order Number"/>
+  <Entry name="ZH" value="Carrier Assigned Reference Number"/>
+  <Entry name="ZI" value="Reference Version Number"/>
+  <Entry name="ZJ" value="Universal Railroad Revenue Waybill Identified Number (URRWIN)"/>
+  <Entry name="ZK" value="Duplicate Waybill in Route"/>
+  <Entry name="ZL" value="Duplicate Waybill Not in Route"/>
+  <Entry name="ZM" value="Manufacturer Number"/>
+  <Entry name="ZN" value="Agency Case Number"/>
+  <Entry name="ZO" value="Makegood Commercial Line Number"/>
+  <Entry name="ZP" value="Spouse Tie"/>
+  <Entry name="ZQ" value="Non-Spouse Tie"/>
+  <Entry name="ZR" value="Supplier (Replacement)"/>
+  <Entry name="ZS" value="Software Application Number"/>
+  <Entry name="ZT" value="Milling in Transit"/>
+  <Entry name="ZU" value="Field"/>
+  <Entry name="ZV" value="Block"/>
+  <Entry name="ZW" value="Area"/>
+  <Entry name="ZX" value="County Code"/>
+  <Entry name="ZY" value="Referenced Pattern Identification"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="AAA" value="Distributor's Split Agent Number"/>
+  <Entry name="AAB" value="Fund Manager's Reference Number"/>
+  <Entry name="AAC" value="Agency Hierarchical Level"/>
+  <Entry name="AAD" value="Officer License Number"/>
+  <Entry name="AAE" value="Previous Distributor Number"/>
+  <Entry name="AAF" value="Interviewer ID"/>
+  <Entry name="AAG" value="Military ID"/>
+  <Entry name="AAH" value="Option Policy Number"/>
+  <Entry name="AAI" value="Payroll Account Number"/>
+  <Entry name="AAJ" value="Prior Contract Number"/>
+  <Entry name="AAK" value="Worksite Number"/>
+  <Entry name="AAL" value="Agent Number"/>
+  <Entry name="AAM" value="Treaty Identifier"/>
+  <Entry name="AAN" value="Associated Case Control Number"/>
+  <Entry name="AAO" value="Carrier Assigned Code"/>
+  <Entry name="AAP" value="Dealer Number"/>
+  <Entry name="AAQ" value="Directory Number"/>
+  <Entry name="AAR" value="Distributor Assigned Transaction Number"/>
+  <Entry name="AAS" value="Distributor Assigned Order Number"/>
+  <Entry name="AAT" value="Distributor's Account Number"/>
+  <Entry name="AAU" value="General Agency Number"/>
+  <Entry name="AAV" value="Laboratory Number"/>
+  <Entry name="AAW" value="Agency Assigned Number"/>
+  <Entry name="AAX" value="List Bill Number"/>
+  <Entry name="AAY" value="Accounting Period Reference"/>
+  <Entry name="AAZ" value="Paramedical ID Number"/>
+  <Entry name="ABA" value="Payroll Number"/>
+  <Entry name="ABB" value="Personal ID Number"/>
+  <Entry name="ABC" value="Policy Link Number"/>
+  <Entry name="ABD" value="Secondary Policy Number"/>
+  <Entry name="ABE" value="Special Quote Number"/>
+  <Entry name="ABF" value="National Property Registry System Level 1"/>
+  <Entry name="ABG" value="National Property Registry System Level 2"/>
+  <Entry name="ABH" value="Investor Assigned Identification Number"/>
+  <Entry name="ABI" value="Motor Fuel Certificate Number"/>
+  <Entry name="ABJ" value="Ginnie Mae (Government National Mortgage Association) Pool Package Number"/>
+  <Entry name="ABK" value="Mortgage Electronic Registration System Organization Identifier"/>
+  <Entry name="ABL" value="Seller Loan Number"/>
+  <Entry name="ABM" value="Sub-Servicer Loan Number"/>
+  <Entry name="ABN" value="National Property Registry System Level 3"/>
+  <Entry name="ABO" value="State Hazardous Waste Entity Identifier"/>
+  <Entry name="ABP" value="Bankruptcy Procedure Number"/>
+  <Entry name="ABQ" value="National Business Identification Number"/>
+  <Entry name="ABR" value="Prior Data Universal Number System (D-U-N-S) Number, Dun &amp; Bradstreet"/>
+  <Entry name="ABS" value="Vessel Name"/>
+  <Entry name="ABT" value="Security Instrument Number"/>
+  <Entry name="ABU" value="Assignment Recording Number"/>
+  <Entry name="ABV" value="Book Number"/>
+  <Entry name="ABW" value="Business Tax Number"/>
+  <Entry name="ABY" value="Health Care Financing Administration National Payer Identification Number"/>
+  <Entry name="ABZ" value="Employment Visa"/>
+  <Entry name="ACA" value="Growth Factor Reference"/>
+  <Entry name="ACB" value="Region"/>
+  <Entry name="ACC" value="Status"/>
+  <Entry name="ACD" value="Class Code"/>
+  <Entry name="ACE" value="Service Request Number"/>
+  <Entry name="ACF" value="Supplement Number"/>
+  <Entry name="ACG" value="Previous Ticket Number"/>
+  <Entry name="ACH" value="One Call Agency Ticket Number"/>
+  <Entry name="ACI" value="Ticket Number"/>
+  <Entry name="ACJ" value="Bill of Material Revision Number"/>
+  <Entry name="ACK" value="Drawing Revision Number"/>
+  <Entry name="ACL" value="Application Transaction Reference Number"/>
+  <Entry name="ACM" value="Related Object Identification Number"/>
+  <Entry name="ACN" value="Common Access Reference Number"/>
+  <Entry name="ACO" value="First Transfer Number"/>
+  <Entry name="ACP" value="Continuous Transfer Number"/>
+  <Entry name="ACQ" value="Last Transfer Number"/>
+  <Entry name="ACR" value="Automated Clearinghouse (ACH) Return/Notification of Change (NOC) Code"/>
+  <Entry name="ACS" value="Society of Property Information Compilers and Analysts"/>
+  <Entry name="ACT" value="Accounting Code"/>
+  <Entry name="ACU" value="Green Card"/>
+  <Entry name="ACV" value="Agency Assigned Employee ID"/>
+  <Entry name="ACW" value="Passport"/>
+  <Entry name="ACX" value="Unemployment Insurance Number"/>
+  <Entry name="ACY" value="North American Industrial Classification System Code"/>
+  <Entry name="ACZ" value="Occupation Code"/>
+  <Entry name="ADA" value="Agency for International Development Acquisition Regulation (AIDAR)"/>
+  <Entry name="ADB" value="Master Property Number"/>
+  <Entry name="ADC" value="Project Property Number"/>
+  <Entry name="ADD" value="Unit Property Number"/>
+  <Entry name="ADE" value="Associated Property Number"/>
+  <Entry name="ADF" value="Associated Number For Limited Common Element Parking"/>
+  <Entry name="ADG" value="Associated Number For Unit Parking"/>
+  <Entry name="ADH" value="Associated Number For Joined Unit not re-subdivided"/>
+  <Entry name="ADI" value="Processor Identification Number"/>
+  <Entry name="ADJ" value="Occupation Classification Code"/>
+  <Entry name="ADK" value="Employee Tax Filing Status Code"/>
+  <Entry name="ADL" value="Insured Location Identifier"/>
+  <Entry name="ADM" value="Air Dimension Code"/>
+  <Entry name="ADN" value="Self Insurance Identification Number"/>
+  <Entry name="ADO" value="Self Insurer Organization Type"/>
+  <Entry name="ADP" value="Self Insurer Authorization Type Code"/>
+  <Entry name="ADQ" value="County Business Registration Number"/>
+  <Entry name="ADR" value="Postal Template Identifier"/>
+  <Entry name="ADS" value="Reduced Earning Week Identifier"/>
+  <Entry name="ADT" value="Denial Reason Identifier"/>
+  <Entry name="ADU" value="Federal Energy Regulatory Commission Certificate of Public Convenience"/>
+  <Entry name="ADV" value="Suspension Identifier"/>
+  <Entry name="ADW" value="Managed Care Organization Code"/>
+  <Entry name="ADX" value="Managed Care Organization Identification Number"/>
+  <Entry name="ADY" value="Public Utilities Commission Certificate of Public Convenience"/>
+  <Entry name="ADZ" value="Retail Merchant's Certification Number"/>
+  <Entry name="AEA" value="Numero de Cedula de Identidad (CIN) Number"/>
+  <Entry name="AEB" value="Company's Registry Office (CRO) Number"/>
+  <Entry name="AEC" value="Government Registration Number"/>
+  <Entry name="AED" value="Judicial Number"/>
+  <Entry name="AEE" value="Numero de Identificacion Tributaria (NIT)"/>
+  <Entry name="AEF" value="Passport Number"/>
+  <Entry name="AEG" value="Patron Number"/>
+  <Entry name="AEH" value="Registro Informacion Fiscal (RIF)"/>
+  <Entry name="AEI" value="Registro Unico de Contribuyente (RUC)"/>
+  <Entry name="AEJ" value="Superintendencia de Inversiones Extranjeras (SIEX) Number"/>
+  <Entry name="AEK" value="Tokyo Shoko Research Business Identifier"/>
+  <Entry name="AEL" value="Registro Nacional de Contribuyente (RNC)"/>
+  <Entry name="AEM" value="Distribution Center Number"/>
+  <Entry name="AEN" value="Institute of Security and Future Market Development (ISFMD) Serial Number"/>
+  <Entry name="AEO" value="Public Deed Number"/>
+  <Entry name="AEP" value="Stock Exchange Code"/>
+  <Entry name="AEQ" value="Secretary of State Assigned Identification Number"/>
+  <Entry name="AER" value="Department Where Injury Occurred Identification"/>
+  <Entry name="AES" value="Bureau of Labor and Statistics Schedule Identifier"/>
+  <Entry name="AET" value="State Charter Number"/>
+  <Entry name="AEU" value="Employee/Non-Employee Classification Qualifier"/>
+  <Entry name="AEV" value="Full Time/Part Time Employee Classification Qualifier"/>
+  <Entry name="AEX" value="Premium Audit Priority Identifier"/>
+  <Entry name="AEY" value="Premium Audit Purpose Identifier"/>
+  <Entry name="AEZ" value="Premium Audit Type Identifier"/>
+  <Entry name="AFA" value="Split Premium Audit Change Identifier"/>
+  <Entry name="AFB" value="Subline of Insurance"/>
+  <Entry name="AFC" value="Verification Source Code"/>
+  <Entry name="AFD" value="Underwriting Alert Reference Code"/>
+  <Entry name="AFE" value="Commercial/Private Passenger Vehicle Qualifier"/>
+  <Entry name="AFF" value="Vehicle Business Use Qualifier"/>
+  <Entry name="AFG" value="Vehicle Size Class Qualifier"/>
+  <Entry name="AFH" value="Vehicle Radius of Operation Qualifier"/>
+  <Entry name="AFI" value="Trailer Type Qualifier"/>
+  <Entry name="AFJ" value="State Sales Tax Identification Number"/>
+  <Entry name="AFK" value="Card Issuer Transaction Code"/>
+  <Entry name="AFL" value="Card Billing Type Code"/>
+  <Entry name="AFM" value="Client Company Code"/>
+  <Entry name="AFN" value="Merchant Category Code (MCC)"/>
+  <Entry name="AFO" value="Card Account Type Code"/>
+  <Entry name="AFP" value="Card Account Status Code"/>
+  <Entry name="AFQ" value="Card Account Reporting Level"/>
+  <Entry name="AFR" value="Card Account Reporting Identifier"/>
+  <Entry name="AFS" value="American Osteopathic Association (AOA) Certification Number"/>
+  <Entry name="AFT" value="Fee Schedule Identifier"/>
+  <Entry name="AFU" value="United States Standard Metropolitan Statistical Area (MSA) Code"/>
+  <Entry name="AFV" value="State Controlled Substance License Number"/>
+  <Entry name="AFW" value="Point of Origination"/>
+  <Entry name="AFX" value="Point of Destination"/>
+  <Entry name="AFY" value="Assessment Number"/>
+  <Entry name="AFZ" value="Certificate Number"/>
+  <Entry name="AGA" value="State or Province Assigned Business Registry Number"/>
+  <Entry name="AGB" value="Municipality Assigned Business Registry Number"/>
+  <Entry name="AGC" value="Clave Unica de Identificacion Tributaria (CUIT)"/>
+  <Entry name="AGD" value="Registro Unico Tributario (RUT)"/>
+  <Entry name="AGH" value="Lender Use"/>
+  <Entry name="AGI" value="Guarantor Use"/>
+  <Entry name="AGJ" value="School Use"/>
+  <Entry name="AGK" value="Reservation System Code"/>
+  <Entry name="AGL" value="Order Origination Code"/>
+  <Entry name="AGM" value="Folio Number"/>
+  <Entry name="AGN" value="Corporate Identification Code"/>
+  <Entry name="AGO" value="Cadastro Geral do Contribuinte (CGC)"/>
+  <Entry name="AGP" value="Conjunction Travel Ticket"/>
+  <Entry name="AGQ" value="List Tracking Identifier"/>
+  <Entry name="AHC" value="Air Handling Code"/>
+  <Entry name="ALC" value="Agency Location Code"/>
+  <Entry name="ALG" value="Title Company Code Book Reference"/>
+  <Entry name="ALH" value="Title Document Schedule"/>
+  <Entry name="ALI" value="Recording Number"/>
+  <Entry name="ALJ" value="Title Policy Number"/>
+  <Entry name="ALT" value="Alteration Number"/>
+  <Entry name="API" value="American Petroleum Institute (API) Deduction Code"/>
+  <Entry name="ASL" value="Atomic Safety and Licensing Board Panel (ASLBP) Number"/>
+  <Entry name="ASP" value="Animal Species"/>
+  <Entry name="AST" value="Animal Strain"/>
+  <Entry name="ATC" value="Maintenance Availability Type"/>
+  <Entry name="BAA" value="Franchise Tax Account Number"/>
+  <Entry name="BAB" value="Certificate of Incorporation Number"/>
+  <Entry name="BAC" value="Beam Assembly Code"/>
+  <Entry name="BAD" value="State Tax Identification Number"/>
+  <Entry name="BAE" value="Charter Number"/>
+  <Entry name="BAF" value="Receipt Number"/>
+  <Entry name="BAG" value="Withdrawal Account Number"/>
+  <Entry name="BAH" value="Deposit Account Number"/>
+  <Entry name="BAI" value="Business Identification Number"/>
+  <Entry name="BAJ" value="United States Postal Service (USPS) PLANET (PostaL AlphaNumEric coding Technique) Code"/>
+  <Entry name="BAK" value="Address Correction Service (ACS) Participation Code"/>
+  <Entry name="BCI" value="Basic Contract Line Item Number"/>
+  <Entry name="BDG" value="Badge Number"/>
+  <Entry name="BKT" value="Bank Telegraphic Number"/>
+  <Entry name="BLT" value="Billing Type"/>
+  <Entry name="BMM" value="Begin Mile Marker"/>
+  <Entry name="BOI" value="Binary Object Identifier"/>
+  <Entry name="CAA" value="Accident History Identifier"/>
+  <Entry name="CAB" value="Chemical Identifier"/>
+  <Entry name="CAC" value="Discharge Point Identification"/>
+  <Entry name="CAD" value="Emission Unit Identification Number"/>
+  <Entry name="CAE" value="Facility Federal Identification Number"/>
+  <Entry name="CAF" value="Latitude Expressed in Decimal Degrees"/>
+  <Entry name="CAG" value="Longitude Expressed in Decimal Degrees"/>
+  <Entry name="CAH" value="Office of Regulatory Information Systems (ORIS) Code"/>
+  <Entry name="CAI" value="Process Identifier"/>
+  <Entry name="CAJ" value="Stack Identification Number"/>
+  <Entry name="CAK" value="Facility State Identification Number"/>
+  <Entry name="CAL" value="U.S. Environmental Protection Agency (EPA) Hazardous Waste Code"/>
+  <Entry name="CAM" value="U.S. Environmental Protection Agency (EPA) Identification Number"/>
+  <Entry name="CAT" value="Category Identifier"/>
+  <Entry name="CBG" value="Census Block Group"/>
+  <Entry name="CDN" value="Citizenship Document Number"/>
+  <Entry name="CDT" value="Contracting District Type Code"/>
+  <Entry name="CFR" value="Federal Regulation"/>
+  <Entry name="CID" value="Campus Identification Number"/>
+  <Entry name="CIR" value="Circuit Number"/>
+  <Entry name="CIT" value="Citation"/>
+  <Entry name="CMN" value="Continuous Move Number"/>
+  <Entry name="CMP" value="Customer Maintenance Period Sequence Number"/>
+  <Entry name="CMT" value="Component"/>
+  <Entry name="CNO" value="Commitment Number"/>
+  <Entry name="CNS" value="Canadian National Student Number"/>
+  <Entry name="COL" value="Collocation Indicator"/>
+  <Entry name="COT" value="Certificate of Transportation"/>
+  <Entry name="CPA" value="Canadian Province Operating Authority Number"/>
+  <Entry name="CPT" value="Current Procedural Terminology Code"/>
+  <Entry name="CRN" value="Casualty Report Number"/>
+  <Entry name="CRS" value="Casualty Report Serial Number"/>
+  <Entry name="CSC" value="CS54 Key Train Indicator Code"/>
+  <Entry name="CSG" value="CS54 Key Train Indicator Group Name"/>
+  <Entry name="CST" value="Census State Code"/>
+  <Entry name="CTS" value="Census Tract Suffix"/>
+  <Entry name="CUB" value="U.S. Customs Service (USCS) Bill of Lading Number"/>
+  <Entry name="CVS" value="Commercial Vehicle Safety Assurance Number"/>
+  <Entry name="CYC" value="Periodicity Code"/>
+  <Entry name="DAI" value="District Assigned ID"/>
+  <Entry name="DAN" value="Delivery Appointment Number"/>
+  <Entry name="DHH" value="Department of Health and Human Services Acquisition Regulation (HHSAR)"/>
+  <Entry name="DIS" value="District Number"/>
+  <Entry name="DNR" value="Deposit Number"/>
+  <Entry name="DNS" value="D-U-N-S+4, D-U-N-S Number with Four Character Suffix"/>
+  <Entry name="DOA" value="Department of Agriculture Acquisition Regulation (AGAR)"/>
+  <Entry name="DOC" value="Department of Commerce Acquisition Regulation (CAR)"/>
+  <Entry name="DOE" value="Department of Energy Acquisition Regulation (DEAR)"/>
+  <Entry name="DOI" value="Department of Interior Acquisition Regulation (DIAR)"/>
+  <Entry name="DOJ" value="Department of Justice Acquisition Regulation (JAR)"/>
+  <Entry name="DOL" value="Department of Labor Acquisition Regulation (DOLAR)"/>
+  <Entry name="DON" value="Density Order Number"/>
+  <Entry name="DOS" value="Department of State Acquisition Regulation (DOSAR)"/>
+  <Entry name="DOT" value="Department of Transportation Acquisition Regulation (TAR)"/>
+  <Entry name="DRN" value="Drainhole Number"/>
+  <Entry name="DSC" value="Departure from Specification Class Code"/>
+  <Entry name="DSI" value="Departure from Specification Number"/>
+  <Entry name="DST" value="Departure from Specification Type Code"/>
+  <Entry name="DTS" value="Department of the Treasury Acquisition/Procurement Regulation (TAPR)"/>
+  <Entry name="DUN" value="D-U-N-S Number Dun &amp; Bradstreet"/>
+  <Entry name="E00" value="Course Section Number"/>
+  <Entry name="E01" value="Non-Teaching Credential Field Codes"/>
+  <Entry name="E02" value="Classification of Instructional Programs (CIP) Codes"/>
+  <Entry name="ECA" value="Fund Identifier"/>
+  <Entry name="ECB" value="Ballot Identifier"/>
+  <Entry name="ECC" value="Legislative Identification Number"/>
+  <Entry name="ECD" value="Lobbied Activity Identifier"/>
+  <Entry name="ECE" value="Petition Number"/>
+  <Entry name="ECF" value="Related Form Number"/>
+  <Entry name="EDA" value="Department of Education Acquisition Regulation (EDAR)"/>
+  <Entry name="EMM" value="End Mile Marker"/>
+  <Entry name="END" value="Endorsement Number"/>
+  <Entry name="EPA" value="Environmental Protection Agency Acquisition Regulation (EPAAR)"/>
+  <Entry name="EPB" value="Environmental Protection Agency Transporter Identification Number"/>
+  <Entry name="ESN" value="Estimate Sequence Number"/>
+  <Entry name="EVI" value="Event Identification"/>
+  <Entry name="FAN" value="Fannie Mae Seller Servicer Number"/>
+  <Entry name="FCN" value="Assigned Contract Number"/>
+  <Entry name="FHC" value="Federal Housing Administration Computerized Homes Underwriting Management System (CHUMS) Identification Number"/>
+  <Entry name="FHO" value="Federal Housing Administration Originator Identification"/>
+  <Entry name="FLZ" value="Flood Zone"/>
+  <Entry name="FMP" value="Facility Measurement Point Number"/>
+  <Entry name="FND" value="Finder Number"/>
+  <Entry name="FRN" value="Freddie Mac Seller Servicer Number"/>
+  <Entry name="FSC" value="Fund Source Code"/>
+  <Entry name="FSN" value="Assigned Sequence Number"/>
+  <Entry name="FTN" value="Premarket Notification Number"/>
+  <Entry name="FTP" value="File Transfer Protocol (FTP) Locator"/>
+  <Entry name="FTZ" value="Foreign Trade Zone (FTZ) Admission Number"/>
+  <Entry name="FWC" value="Final Work Candidate Number"/>
+  <Entry name="GWS" value="Group Work Candidate Sequence Number"/>
+  <Entry name="HHT" value="Type of Household Goods Code"/>
+  <Entry name="HMB" value="Home Mortgage Disclosure Act Block Number Area"/>
+  <Entry name="HPI" value="Health Care Financing Administration National Provider Identifier"/>
+  <Entry name="HUD" value="Department of Housing and Urban Development Acquisition Regulation (HUDAR)"/>
+  <Entry name="ICD" value="ICD-9-CM (International Classification of Diseases)"/>
+  <Entry name="IFC" value="Initial Failure Claim"/>
+  <Entry name="IFT" value="International Fuel Tax Agreement Account Number"/>
+  <Entry name="IID" value="Image Identifier"/>
+  <Entry name="IMP" value="Integrated Master Plan (IMP)"/>
+  <Entry name="IMS" value="Integrated Master Schedule (IMS)"/>
+  <Entry name="IND" value="Investigatorial New Drug Number"/>
+  <Entry name="IRN" value="Importer's Reference Number to Letter of Credit"/>
+  <Entry name="IRP" value="International Registration Plan Account Number"/>
+  <Entry name="ISC" value="International Standard Industrial Classification (ISIC) Dominion of Canada Code (DCC)"/>
+  <Entry name="ISN" value="International Registration Plan Sticker Number"/>
+  <Entry name="ISS" value="Inspection and Survey Sequence Number"/>
+  <Entry name="ITI" value="Initial Trouble Indication"/>
+  <Entry name="JCS" value="Joint Credit Specification Number"/>
+  <Entry name="KAS" value="Associated Contract Identifier"/>
+  <Entry name="KCS" value="Confirmation Service Contract Identifier"/>
+  <Entry name="KSR" value="Service Requester Contract Identifier"/>
+  <Entry name="LAA" value="Lottery Authority Activation Number"/>
+  <Entry name="LAN" value="Lane Number"/>
+  <Entry name="LEN" value="Location Exception Order Number"/>
+  <Entry name="LIC" value="Health Industry Business Communications Council (HIBCC) Labeler Identification Code (LIC)"/>
+  <Entry name="LMI" value="Local Media Identifier"/>
+  <Entry name="LOI" value="Logical Observation Identifier Names and Codes (LOINC)"/>
+  <Entry name="LPK" value="Loan Prospector Key Number"/>
+  <Entry name="LSD" value="Logistics Support Documentation Type Code"/>
+  <Entry name="LVO" value="Levying Officer Identification"/>
+  <Entry name="MBX" value="Mailbox"/>
+  <Entry name="MCI" value="Motor Carrier Identification Number"/>
+  <Entry name="MCN" value="MORNETPlus Case Number"/>
+  <Entry name="MDN" value="Hazardous Waste Manifest Document Number"/>
+  <Entry name="MIN" value="MORNETPlus Institution Number"/>
+  <Entry name="MPN" value="Marketing Plan Identification Number"/>
+  <Entry name="MRC" value="Eligibility Category"/>
+  <Entry name="MRN" value="Mother's Medical Record Identification Number"/>
+  <Entry name="MSL" value="Mail Slot"/>
+  <Entry name="MUI" value="MORNETPlus User Identification"/>
+  <Entry name="MZO" value="Multiple Zone Order Number"/>
+  <Entry name="NAS" value="National Aeronautics and Space Administration FAR Supplement (NFS)"/>
+  <Entry name="NDA" value="Abbreviated New Drug Application Number"/>
+  <Entry name="NDB" value="New Drug Application Number"/>
+  <Entry name="NFC" value="National Flood Insurance Program Community Name"/>
+  <Entry name="NFD" value="National Flood Insurance Program County"/>
+  <Entry name="NFM" value="National Flood Insurance Program Map Number"/>
+  <Entry name="NFN" value="National Flood Insurance Program Community Number"/>
+  <Entry name="NFS" value="National Flood Insurance Program State"/>
+  <Entry name="NMT" value="Nomination Model Type"/>
+  <Entry name="NTP" value="Non-originating Third Party Number"/>
+  <Entry name="OIC" value="Object Identifier"/>
+  <Entry name="OOS" value="Out of Service Number"/>
+  <Entry name="OPE" value="National Center for Education Statistics Office of Postsecondary Education (OPE) Code"/>
+  <Entry name="OPF" value="National Center for Education Statistics Integrated Postsecondary Education Data System (IPEDS) Athletic Conference Code"/>
+  <Entry name="PAC" value="Patent Cooperation Treaty Application Number"/>
+  <Entry name="PAN" value="Nonprovisional Patent Application Number"/>
+  <Entry name="PAP" value="Provisional Patent Application Number"/>
+  <Entry name="PCC" value="Pool Contract Code"/>
+  <Entry name="PCN" value="Protocol Number"/>
+  <Entry name="PDL" value="Previous Driver's License"/>
+  <Entry name="PGC" value="Packing Group Code"/>
+  <Entry name="PGD" value="Downstream Package Identifier"/>
+  <Entry name="PGN" value="Plug Number"/>
+  <Entry name="PGS" value="Proposed Group Work Candidate Sequence Number"/>
+  <Entry name="PHC" value="Process Handling Code"/>
+  <Entry name="PID" value="Program Identification Number"/>
+  <Entry name="PIN" value="Platform Identification Number"/>
+  <Entry name="PJC" value="Previous Report Number"/>
+  <Entry name="PKG" value="Package Identifier"/>
+  <Entry name="PKU" value="Upstream Package Identifier"/>
+  <Entry name="PLA" value="Product Licensing Agreement Number"/>
+  <Entry name="PLN" value="Proposed Contract Number"/>
+  <Entry name="PMN" value="Premarket Application Number"/>
+  <Entry name="PNN" value="Patent Number"/>
+  <Entry name="POL" value="Policy Number"/>
+  <Entry name="POS" value="Position Title Number"/>
+  <Entry name="PPJ" value="Certificate of Purchase Number"/>
+  <Entry name="PPK" value="Tax Bill Identification Number"/>
+  <Entry name="PPL" value="Current Year Tax Bill Number"/>
+  <Entry name="PPM" value="Past Year Tax Bill Number"/>
+  <Entry name="PPN" value="Payment Plan Number"/>
+  <Entry name="PRS" value="Previously Reported Social Security Number"/>
+  <Entry name="PRT" value="Product Type"/>
+  <Entry name="PSI" value="Previous Shipment Identification Number - Continuous Move"/>
+  <Entry name="PSL" value="Next Shipment Identification Number - Continuous Move"/>
+  <Entry name="PSM" value="Credit Card"/>
+  <Entry name="PSN" value="Proposed Sequence Number"/>
+  <Entry name="PTC" value="Patent Type"/>
+  <Entry name="PUA" value="Pick Up Appointment Number"/>
+  <Entry name="PWC" value="Preliminary Work Candidate Number"/>
+  <Entry name="PWS" value="Proposed Work Candidate Sequence Number"/>
+  <Entry name="PYA" value="Payroll Activity Code"/>
+  <Entry name="PYR" value="Pay Range"/>
+  <Entry name="RAA" value="Restricted Availability Authorization"/>
+  <Entry name="RAN" value="Restricted Availability Number"/>
+  <Entry name="REC" value="Related Case"/>
+  <Entry name="RGI" value="Regulatory Guideline Identifier"/>
+  <Entry name="RIG" value="Rig Number"/>
+  <Entry name="RLI" value="Role Identification Number"/>
+  <Entry name="RPP" value="Relative Priority"/>
+  <Entry name="RPS" value="Regulation Primary Number"/>
+  <Entry name="RPT" value="Report Number"/>
+  <Entry name="RRC" value="Routing Request Control Number"/>
+  <Entry name="RRS" value="Reconciliation Report Section Identification Code"/>
+  <Entry name="RSN" value="Reservation Number"/>
+  <Entry name="RSS" value="Regulation Secondary Number"/>
+  <Entry name="SAL" value="Salary Step"/>
+  <Entry name="SBN" value="Surety Bond Number"/>
+  <Entry name="SCA" value="Standard Carrier Alpha Code (SCAC)"/>
+  <Entry name="SCN" value="Scale Number"/>
+  <Entry name="SDT" value="School District Type Code"/>
+  <Entry name="SEK" value="Search Key"/>
+  <Entry name="SES" value="Session"/>
+  <Entry name="SHL" value="Shelf Life Indicator"/>
+  <Entry name="SII" value="Salvage Instruction Identifier"/>
+  <Entry name="SNH" value="SNOMED, Systematized Nomenclature of Medicine"/>
+  <Entry name="SNV" value="State Non-Resident Violator Compact"/>
+  <Entry name="SPL" value="Standard Point Location Code (SPLC)"/>
+  <Entry name="SPN" value="Theater Screen Number"/>
+  <Entry name="SST" value="School System Type Code"/>
+  <Entry name="STB" value="Standard Transportation Commodity Code (STCC) Bridge Number"/>
+  <Entry name="STR" value="Standard Transportation Commodity Code (STCC) Replacement Code"/>
+  <Entry name="SUB" value="Title Reference"/>
+  <Entry name="SUC" value="Supervisory Union Code"/>
+  <Entry name="SUO" value="Spacing Unit Order Number"/>
+  <Entry name="TDT" value="Technical Documentation Type"/>
+  <Entry name="TFC" value="Time Failure"/>
+  <Entry name="TIP" value="Technical Information Package"/>
+  <Entry name="TOC" value="Type of Comment"/>
+  <Entry name="TPN" value="Transponder Number"/>
+  <Entry name="TSN" value="Template Sequence Number"/>
+  <Entry name="UCB" value="UCC Bill of Lading Number (17 Digits)"/>
+  <Entry name="UCM" value="UCC Master Bill of Lading Number (17 Digits)"/>
+  <Entry name="UIC" value="Unit Identification Code (UIC)"/>
+  <Entry name="URL" value="Uniform Resource Locator"/>
+  <Entry name="URP" value="Unit Report Period"/>
+  <Entry name="URQ" value="Unit Report Period ID"/>
+  <Entry name="VAO" value="Veterans Administration Originator Identification"/>
+  <Entry name="WCS" value="Work Candidate Sequence Number"/>
+  <Entry name="WDR" value="Withdrawal Record"/>
+  <Entry name="XX1" value="Special Program Code"/>
+  <Entry name="XX2" value="Service Area Code"/>
+  <Entry name="XX3" value="Function Code"/>
+  <Entry name="XX4" value="Object Code"/>
+  <Entry name="XX5" value="Organization Code"/>
+  <Entry name="XX6" value="Subject Area Code"/>
+  <Entry name="XX7" value="Schedule Type Code"/>
+  <Entry name="XX8" value="Alternating Schedule Identifier Code"/>
+  <Entry name="ZTS" value="Zone, Track, Spot Number (ZTS)"/>
+</Table>

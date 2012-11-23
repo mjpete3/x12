@@ -1,0 +1,1511 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T98.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T98">
+  <Entry name="00" value="Alternate Insurer"/>
+  <Entry name="01" value="Loan Applicant"/>
+  <Entry name="02" value="Loan Broker"/>
+  <Entry name="03" value="Dependent"/>
+  <Entry name="04" value="Asset Account Holder"/>
+  <Entry name="05" value="Tenant"/>
+  <Entry name="06" value="Recipient of Civil or Legal Liability Payment"/>
+  <Entry name="07" value="Titleholder"/>
+  <Entry name="08" value="Non-Mortgage Liability Account Holder"/>
+  <Entry name="09" value="Note Co-Signer"/>
+  <Entry name="0A" value="Comparable Rentals"/>
+  <Entry name="0B" value="Interim Funding Organization"/>
+  <Entry name="0D" value="Non-occupant Co-borrower"/>
+  <Entry name="0E" value="List Owner"/>
+  <Entry name="0F" value="List Mailer"/>
+  <Entry name="0G" value="Primary Electronic Business Contact"/>
+  <Entry name="0H" value="State Division"/>
+  <Entry name="0I" value="Alternate Electronic Business Contact"/>
+  <Entry name="0J" value="Primary Practice Location"/>
+  <Entry name="10" value="Conduit"/>
+  <Entry name="11" value="Party to be billed(AAR Accounting Rule 11)"/>
+  <Entry name="12" value="Regional Office"/>
+  <Entry name="13" value="Contracted Service Provider"/>
+  <Entry name="14" value="Wholly-Owned Subsidiary"/>
+  <Entry name="15" value="Accounts Payable Office"/>
+  <Entry name="16" value="Plant"/>
+  <Entry name="17" value="Consultant's Office"/>
+  <Entry name="18" value="Production"/>
+  <Entry name="19" value="Non-Production Supplier"/>
+  <Entry name="1A" value="Subgroup"/>
+  <Entry name="1B" value="Applicant"/>
+  <Entry name="1C" value="Group Purchasing Organization (GPO)"/>
+  <Entry name="1D" value="Co-operative"/>
+  <Entry name="1E" value="Health Maintenance Organization (HMO)"/>
+  <Entry name="1F" value="Alliance"/>
+  <Entry name="1G" value="Oncology Center"/>
+  <Entry name="1H" value="Kidney Dialysis Unit"/>
+  <Entry name="1I" value="Preferred Provider Organization (PPO)"/>
+  <Entry name="1J" value="Connection"/>
+  <Entry name="1K" value="Franchisor"/>
+  <Entry name="1L" value="Franchisee"/>
+  <Entry name="1M" value="Previous Group"/>
+  <Entry name="1N" value="Shareholder"/>
+  <Entry name="1O" value="Acute Care Hospital"/>
+  <Entry name="1P" value="Provider"/>
+  <Entry name="1Q" value="Military Facility"/>
+  <Entry name="1R" value="University, College or School"/>
+  <Entry name="1S" value="Outpatient Surgicenter"/>
+  <Entry name="1T" value="Physician, Clinic or Group Practice"/>
+  <Entry name="1U" value="Long Term Care Facility"/>
+  <Entry name="1V" value="Extended Care Facility"/>
+  <Entry name="1W" value="Psychiatric Health Facility"/>
+  <Entry name="1X" value="Laboratory"/>
+  <Entry name="1Y" value="Retail Pharmacy"/>
+  <Entry name="1Z" value="Home Health Care"/>
+  <Entry name="20" value="Foreign Supplier"/>
+  <Entry name="21" value="Small Business"/>
+  <Entry name="22" value="Minority-Owned Business, Small"/>
+  <Entry name="23" value="Minority-Owned Business, Large"/>
+  <Entry name="24" value="Woman-Owned Business, Small"/>
+  <Entry name="25" value="Woman-Owned Business, Large"/>
+  <Entry name="26" value="Socially Disadvantaged Business"/>
+  <Entry name="27" value="Small Disadvantaged Business"/>
+  <Entry name="28" value="Subcontractor"/>
+  <Entry name="29" value="Prototype Supplier"/>
+  <Entry name="2A" value="Federal, State, County or City Facility"/>
+  <Entry name="2B" value="Third-Party Administrator"/>
+  <Entry name="2C" value="Co-Participant"/>
+  <Entry name="2D" value="Miscellaneous Health Care Facility"/>
+  <Entry name="2E" value="Non-Health Care Miscellaneous Facility"/>
+  <Entry name="2F" value="State"/>
+  <Entry name="2G" value="Assigner"/>
+  <Entry name="2H" value="Hospital District or Authority"/>
+  <Entry name="2I" value="Church Operated Facility"/>
+  <Entry name="2J" value="Individual"/>
+  <Entry name="2K" value="Partnership"/>
+  <Entry name="2L" value="Corporation"/>
+  <Entry name="2M" value="Air Force Facility"/>
+  <Entry name="2N" value="Army Facility"/>
+  <Entry name="2O" value="Navy Facility"/>
+  <Entry name="2P" value="Public Health Service Facility"/>
+  <Entry name="2Q" value="Veterans Administration Facility"/>
+  <Entry name="2R" value="Federal Facility"/>
+  <Entry name="2S" value="Public Health Service Indian Service Facility"/>
+  <Entry name="2T" value="Department of Justice Facility"/>
+  <Entry name="2U" value="Other Not-for-profit Facility"/>
+  <Entry name="2V" value="Individual for-profit Facility"/>
+  <Entry name="2W" value="Partnership for-profit Facility"/>
+  <Entry name="2X" value="Corporation for-profit Facility"/>
+  <Entry name="2Y" value="General Medical and Surgical Facility"/>
+  <Entry name="2Z" value="Hospital Unit of an Institution (prison hospital, college infirmary, etc.)"/>
+  <Entry name="30" value="Service Supplier"/>
+  <Entry name="31" value="Postal Mailing Address"/>
+  <Entry name="32" value="Party to Receive Material Release"/>
+  <Entry name="33" value="Inquiry Address"/>
+  <Entry name="34" value="Material Change Notice Address"/>
+  <Entry name="35" value="Electronic Data Interchange (EDI) Coordinator Point Address"/>
+  <Entry name="36" value="Employer"/>
+  <Entry name="37" value="Previous Debt Holder"/>
+  <Entry name="38" value="Mortgage Liability Account Holder"/>
+  <Entry name="39" value="Appraisal Company"/>
+  <Entry name="3A" value="Hospital Unit Within an Institution for the Mentally Retarded"/>
+  <Entry name="3B" value="Psychiatric Facility"/>
+  <Entry name="3C" value="Tuberculosis and Other Respiratory Diseases Facility"/>
+  <Entry name="3D" value="Obstetrics and Gynecology Facility"/>
+  <Entry name="3E" value="Eye, Ear, Nose and Throat Facility"/>
+  <Entry name="3F" value="Rehabilitation Facility"/>
+  <Entry name="3G" value="Orthopedic Facility"/>
+  <Entry name="3H" value="Chronic Disease Facility"/>
+  <Entry name="3I" value="Other Specialty Facility"/>
+  <Entry name="3J" value="Children's General Facility"/>
+  <Entry name="3K" value="Children's Hospital Unit of an Institution"/>
+  <Entry name="3L" value="Children's Psychiatric Facility"/>
+  <Entry name="3M" value="Children's Tuberculosis and Other Respiratory Diseases Facility"/>
+  <Entry name="3N" value="Children's Eye, Ear, Nose and Throat Facility"/>
+  <Entry name="3O" value="Children's Rehabilitation Facility"/>
+  <Entry name="3P" value="Children's Orthopedic Facility"/>
+  <Entry name="3Q" value="Children's Chronic Disease Facility"/>
+  <Entry name="3R" value="Children's Other Specialty Facility"/>
+  <Entry name="3S" value="Institution for Mental Retardation"/>
+  <Entry name="3T" value="Alcoholism and Other Chemical Dependency Facility"/>
+  <Entry name="3U" value="General Inpatient Care for AIDS/ARC Facility"/>
+  <Entry name="3V" value="AIDS/ARC Unit"/>
+  <Entry name="3W" value="Specialized Outpatient Program for AIDS/ARC"/>
+  <Entry name="3X" value="Alcohol/Drug Abuse or Dependency Inpatient Unit"/>
+  <Entry name="3Y" value="Alcohol/Drug Abuse or Dependency Outpatient Services"/>
+  <Entry name="3Z" value="Arthritis Treatment Center"/>
+  <Entry name="40" value="Receiver"/>
+  <Entry name="41" value="Submitter"/>
+  <Entry name="42" value="Component Manufacturer"/>
+  <Entry name="43" value="Claimant Authorized Representative"/>
+  <Entry name="44" value="Data Processing Service Bureau"/>
+  <Entry name="45" value="Drop-off Location"/>
+  <Entry name="46" value="Invoicing Dealer"/>
+  <Entry name="47" value="Estimator"/>
+  <Entry name="48" value="In-service Source"/>
+  <Entry name="49" value="Initial Dealer"/>
+  <Entry name="4A" value="Birthing Room/LDRP Room"/>
+  <Entry name="4B" value="Burn Care Unit"/>
+  <Entry name="4C" value="Cardiac Catherization Laboratory"/>
+  <Entry name="4D" value="Open-Heart Surgery Facility"/>
+  <Entry name="4E" value="Cardiac Intensive Care Unit"/>
+  <Entry name="4F" value="Angioplasty Facility"/>
+  <Entry name="4G" value="Chronic Obstructive Pulmonary Disease Service Facility"/>
+  <Entry name="4H" value="Emergency Department"/>
+  <Entry name="4I" value="Trauma Center (Certified)"/>
+  <Entry name="4J" value="Extracorporeal Shock-Wave Lithotripter (ESWL) Unit"/>
+  <Entry name="4K" value="Fitness Center"/>
+  <Entry name="4L" value="Genetic Counseling/Screening Services"/>
+  <Entry name="4M" value="Adult Day Care Program Facility"/>
+  <Entry name="4N" value="Alzheimer's Diagnostic/Assessment Services"/>
+  <Entry name="4O" value="Comprehensive Geriatric Assessment Facility"/>
+  <Entry name="4P" value="Emergency Response (Geriatric) Unit"/>
+  <Entry name="4Q" value="Geriatric Acute Care Unit"/>
+  <Entry name="4R" value="Geriatric Clinics"/>
+  <Entry name="4S" value="Respite Care Facility"/>
+  <Entry name="4T" value="Senior Membership Program"/>
+  <Entry name="4U" value="Patient Education Unit"/>
+  <Entry name="4V" value="Community Health Promotion Facility"/>
+  <Entry name="4W" value="Worksite Health Promotion Facility"/>
+  <Entry name="4X" value="Hemodialysis Facility"/>
+  <Entry name="4Y" value="Home Health Services"/>
+  <Entry name="4Z" value="Hospice"/>
+  <Entry name="50" value="Manufacturer's Representative"/>
+  <Entry name="51" value="Parts Distributor"/>
+  <Entry name="52" value="Part Remanufacturer"/>
+  <Entry name="53" value="Registered Owner"/>
+  <Entry name="54" value="Order Writer"/>
+  <Entry name="55" value="Service Manager"/>
+  <Entry name="56" value="Servicing Dealer"/>
+  <Entry name="57" value="Servicing Organization"/>
+  <Entry name="58" value="Store Manager"/>
+  <Entry name="59" value="Party to Approve Specification"/>
+  <Entry name="5A" value="Medical Surgical or Other Intensive Care Unit"/>
+  <Entry name="5B" value="Hisopathology Laboratory"/>
+  <Entry name="5C" value="Blood Bank"/>
+  <Entry name="5D" value="Neonatal Intensive Care Unit"/>
+  <Entry name="5E" value="Obstetrics Unit"/>
+  <Entry name="5F" value="Occupational Health Services"/>
+  <Entry name="5G" value="Organized Outpatient Services"/>
+  <Entry name="5H" value="Pediatric Acute Inpatient Unit"/>
+  <Entry name="5I" value="Psychiatric Child/Adolescent Services"/>
+  <Entry name="5J" value="Psychiatric Consultation-Liaison Services"/>
+  <Entry name="5K" value="Psychiatric Education Services"/>
+  <Entry name="5L" value="Psychiatric Emergency Services"/>
+  <Entry name="5M" value="Psychiatric Geriatric Services"/>
+  <Entry name="5N" value="Psychiatric Inpatient Unit"/>
+  <Entry name="5O" value="Psychiatric Outpatient Services"/>
+  <Entry name="5P" value="Psychiatric Partial Hospitalization Program"/>
+  <Entry name="5Q" value="Megavoltage Radiation Therapy Unit"/>
+  <Entry name="5R" value="Radioactive Implants Unit"/>
+  <Entry name="5S" value="Therapeutic Radioisotope Facility"/>
+  <Entry name="5T" value="X-Ray Radiation Therapy Unit"/>
+  <Entry name="5U" value="CT Scanner Unit"/>
+  <Entry name="5V" value="Diagnostic Radioisotope Facility"/>
+  <Entry name="5W" value="Magnetic Resonance Imaging (MRI) Facility"/>
+  <Entry name="5X" value="Ultrasound Unit"/>
+  <Entry name="5Y" value="Rehabilitation Inpatient Unit"/>
+  <Entry name="5Z" value="Rehabilitation Outpatient Services"/>
+  <Entry name="60" value="Salesperson"/>
+  <Entry name="61" value="Performed At"/>
+  <Entry name="62" value="Applicant's Employer"/>
+  <Entry name="63" value="Reference's Employer"/>
+  <Entry name="64" value="Cosigner's Employer"/>
+  <Entry name="65" value="Applicant's Reference"/>
+  <Entry name="66" value="Applicant's Cosigner"/>
+  <Entry name="67" value="Applicant's Comaker"/>
+  <Entry name="68" value="Owner's Representative"/>
+  <Entry name="69" value="Repairing Outlet"/>
+  <Entry name="6A" value="Reproductive Health Services"/>
+  <Entry name="6B" value="Skilled Nursing or Other Long-Term Care Unit"/>
+  <Entry name="6C" value="Single Photon Emission Computerized Tomography (SPECT) Unit"/>
+  <Entry name="6D" value="Organized Social Work Service Facility"/>
+  <Entry name="6E" value="Outpatient Social Work Services"/>
+  <Entry name="6F" value="Emergency Department Social Work Services"/>
+  <Entry name="6G" value="Sports Medicine Clinic/Services"/>
+  <Entry name="6H" value="Hospital Auxiliary Unit"/>
+  <Entry name="6I" value="Patient Representative Services"/>
+  <Entry name="6J" value="Volunteer Services Department"/>
+  <Entry name="6K" value="Outpatient Surgery Services"/>
+  <Entry name="6L" value="Organ/Tissue Transplant Unit"/>
+  <Entry name="6M" value="Orthopedic Surgery Facility"/>
+  <Entry name="6N" value="Occupational Therapy Services"/>
+  <Entry name="6O" value="Physical Therapy Services"/>
+  <Entry name="6P" value="Recreational Therapy Services"/>
+  <Entry name="6Q" value="Respiratory Therapy Services"/>
+  <Entry name="6R" value="Speech Therapy Services"/>
+  <Entry name="6S" value="Women's Health Center/Services"/>
+  <Entry name="6T" value="Health Sciences Library"/>
+  <Entry name="6U" value="Cardiac Rehabilitation Program Facility"/>
+  <Entry name="6V" value="Non-Invasive Cardiac Assessment Services"/>
+  <Entry name="6W" value="Emergency Medical Technician"/>
+  <Entry name="6X" value="Disciplinary Contact"/>
+  <Entry name="6Y" value="Case Manager"/>
+  <Entry name="6Z" value="Advisor"/>
+  <Entry name="70" value="Prior Incorrect Insured"/>
+  <Entry name="71" value="Attending Physician"/>
+  <Entry name="72" value="Operating Physician"/>
+  <Entry name="73" value="Other Physician"/>
+  <Entry name="74" value="Corrected Insured"/>
+  <Entry name="75" value="Participant"/>
+  <Entry name="76" value="Secondary Warranter"/>
+  <Entry name="77" value="Service Location"/>
+  <Entry name="78" value="Service Requester"/>
+  <Entry name="79" value="Warranter"/>
+  <Entry name="7A" value="Premises"/>
+  <Entry name="7B" value="Bottler"/>
+  <Entry name="7C" value="Place of Occurrence"/>
+  <Entry name="7D" value="Contracting Officer Representative"/>
+  <Entry name="7E" value="Party Authorized to Definitize Contract Action"/>
+  <Entry name="7F" value="Filing Address"/>
+  <Entry name="7G" value="Hazardous Material Office"/>
+  <Entry name="7H" value="Government Furnished Property FOB Point"/>
+  <Entry name="7I" value="Project Name"/>
+  <Entry name="7J" value="Codefendant"/>
+  <Entry name="7K" value="Co-occupant"/>
+  <Entry name="7L" value="Preliminary Inspection Location"/>
+  <Entry name="7M" value="Inspection and Acceptance Location"/>
+  <Entry name="7N" value="Party to Receive Proposal"/>
+  <Entry name="7O" value="Federally Chartered Facility"/>
+  <Entry name="7P" value="Transportation Office"/>
+  <Entry name="7Q" value="Party to Whom Protest Submitted"/>
+  <Entry name="7R" value="Birthplace"/>
+  <Entry name="7S" value="Pipeline Segment"/>
+  <Entry name="7T" value="Home State Name"/>
+  <Entry name="7U" value="Liquidator"/>
+  <Entry name="7V" value="Petitioning Creditor's Attorney"/>
+  <Entry name="7W" value="Merged Name"/>
+  <Entry name="7X" value="Party Represented"/>
+  <Entry name="7Y" value="Professional Organization"/>
+  <Entry name="7Z" value="Referee"/>
+  <Entry name="80" value="Hospital"/>
+  <Entry name="81" value="Part Source"/>
+  <Entry name="82" value="Rendering Provider"/>
+  <Entry name="83" value="Subscriber's School"/>
+  <Entry name="84" value="Subscriber's Employer"/>
+  <Entry name="85" value="Billing Provider"/>
+  <Entry name="86" value="Conductor"/>
+  <Entry name="87" value="Pay-to Provider"/>
+  <Entry name="88" value="Approver"/>
+  <Entry name="89" value="Investor"/>
+  <Entry name="8A" value="Vacation Home"/>
+  <Entry name="8B" value="Primary Residence"/>
+  <Entry name="8C" value="Second Home"/>
+  <Entry name="8D" value="Permit Holder"/>
+  <Entry name="8E" value="Minority Institution"/>
+  <Entry name="8F" value="Bailment Warehouse"/>
+  <Entry name="8G" value="First Appraiser"/>
+  <Entry name="8H" value="Tax Exempt Organization"/>
+  <Entry name="8I" value="Service Organization"/>
+  <Entry name="8J" value="Emerging Small Business"/>
+  <Entry name="8K" value="Surplus Dealer"/>
+  <Entry name="8L" value="Polling Site"/>
+  <Entry name="8M" value="Socially Disadvantaged Individual"/>
+  <Entry name="8N" value="Economically Disadvantaged Individual"/>
+  <Entry name="8O" value="Disabled Individual"/>
+  <Entry name="8P" value="Producer"/>
+  <Entry name="8Q" value="Public or Private Organization for the Disabled"/>
+  <Entry name="8R" value="Consumer Service Provider (CSP) Customer"/>
+  <Entry name="8S" value="Consumer Service Provider (CSP)"/>
+  <Entry name="8T" value="Voter"/>
+  <Entry name="8U" value="Native Hawaiian Organization"/>
+  <Entry name="8V" value="Primary Intra-LATA (Local Access Transport Area) Carrier"/>
+  <Entry name="8W" value="Payment Address"/>
+  <Entry name="8X" value="Oil and Gas Custodian"/>
+  <Entry name="8Y" value="Registered Office"/>
+  <Entry name="90" value="Previous Business Partner"/>
+  <Entry name="91" value="Action Party"/>
+  <Entry name="92" value="Support Party"/>
+  <Entry name="93" value="Insurance Institute"/>
+  <Entry name="94" value="New Supply Source"/>
+  <Entry name="95" value="Research Institute"/>
+  <Entry name="96" value="Debtor Company"/>
+  <Entry name="97" value="Party Waiving Requirements"/>
+  <Entry name="98" value="Freight Management Facilitator"/>
+  <Entry name="99" value="Outer Continental Shelf (OCS) Area Location"/>
+  <Entry name="9A" value="Debtor Individual"/>
+  <Entry name="9B" value="Country of Export"/>
+  <Entry name="9C" value="Country of Destination"/>
+  <Entry name="9D" value="New Service Provider"/>
+  <Entry name="9E" value="Sub-servicer"/>
+  <Entry name="9F" value="Loss Payee"/>
+  <Entry name="9G" value="Nickname"/>
+  <Entry name="9H" value="Assignee"/>
+  <Entry name="9I" value="Registered Principal"/>
+  <Entry name="9J" value="Additional Debtor"/>
+  <Entry name="9K" value="Key Person"/>
+  <Entry name="9L" value="Incorporated By"/>
+  <Entry name="9N" value="Party to Lease"/>
+  <Entry name="9O" value="Party to Contract"/>
+  <Entry name="9P" value="Investigator"/>
+  <Entry name="9Q" value="Last Supplier"/>
+  <Entry name="9R" value="Downstream First Supplier"/>
+  <Entry name="9S" value="Co-Investigator"/>
+  <Entry name="9T" value="Telephone Answering Service Bureau"/>
+  <Entry name="9U" value="Author"/>
+  <Entry name="9V" value="First Supplier"/>
+  <Entry name="9W" value="Ultimate Parent Company"/>
+  <Entry name="9X" value="Contractual Receipt Meter"/>
+  <Entry name="9Y" value="Contractual Delivery Meter"/>
+  <Entry name="9Z" value="Co-debtor"/>
+  <Entry name="A1" value="Adjuster"/>
+  <Entry name="A2" value="Woman-Owned Business"/>
+  <Entry name="A3" value="Labor Surplus Area Firm"/>
+  <Entry name="A4" value="Other Disadvantaged Business"/>
+  <Entry name="A5" value="Veteran-Owned Business"/>
+  <Entry name="A6" value="Section 8(a) Program Participant Firm"/>
+  <Entry name="A7" value="Sheltered Workshop"/>
+  <Entry name="A8" value="Nonprofit Institution"/>
+  <Entry name="A9" value="Sales Office"/>
+  <Entry name="AA" value="Authority For Shipment"/>
+  <Entry name="AB" value="Additional Pick Up Address"/>
+  <Entry name="AC" value="Air Cargo Company"/>
+  <Entry name="AD" value="Party to be advised (Written orders)"/>
+  <Entry name="AE" value="Additional Delivery Address"/>
+  <Entry name="AF" value="Authorized Accepting Official"/>
+  <Entry name="AG" value="Agent/Agency"/>
+  <Entry name="AH" value="Advertiser"/>
+  <Entry name="AI" value="Airline"/>
+  <Entry name="AJ" value="Alleged Debtor"/>
+  <Entry name="AK" value="Party to Whom Acknowledgment Should Be Sent"/>
+  <Entry name="AL" value="Allotment Customer"/>
+  <Entry name="AM" value="Assistant U.S. Trustee"/>
+  <Entry name="AN" value="Authorized From"/>
+  <Entry name="AO" value="Account Of"/>
+  <Entry name="AP" value="Account of (Origin Party)"/>
+  <Entry name="AQ" value="Account of (Destination Party)"/>
+  <Entry name="AR" value="Armed Services Location Designation"/>
+  <Entry name="AS" value="Postsecondary Education Sender"/>
+  <Entry name="AT" value="Postsecondary Education Recipient"/>
+  <Entry name="AU" value="Party Authorizing Disposition"/>
+  <Entry name="AV" value="Authorized To"/>
+  <Entry name="AW" value="Accountant"/>
+  <Entry name="AX" value="Plaintiff"/>
+  <Entry name="AY" value="Clearinghouse"/>
+  <Entry name="AZ" value="Previous Name"/>
+  <Entry name="B1" value="Construction Firm"/>
+  <Entry name="B2" value="Other Unlisted Type of Organizational Entity"/>
+  <Entry name="B3" value="Previous Name of Firm"/>
+  <Entry name="B4" value="Parent Company"/>
+  <Entry name="B5" value="Affiliated Company"/>
+  <Entry name="B6" value="Registering Parent Party"/>
+  <Entry name="B7" value="Registering Nonparent Party"/>
+  <Entry name="B8" value="Regular Dealer"/>
+  <Entry name="B9" value="Large Business"/>
+  <Entry name="BA" value="Battery"/>
+  <Entry name="BB" value="Business Partner"/>
+  <Entry name="BC" value="Broadcaster"/>
+  <Entry name="BD" value="Bill-to Party for Diversion Charges"/>
+  <Entry name="BE" value="Beneficiary"/>
+  <Entry name="BF" value="Billed From"/>
+  <Entry name="BG" value="Buying Group"/>
+  <Entry name="BH" value="Interim Trustee"/>
+  <Entry name="BI" value="Trustee's Attorney"/>
+  <Entry name="BJ" value="Co-Counsel"/>
+  <Entry name="BK" value="Bank"/>
+  <Entry name="BL" value="Party to Receive Bill of Lading"/>
+  <Entry name="BM" value="Brakeman"/>
+  <Entry name="BN" value="Beneficial Owner"/>
+  <Entry name="BO" value="Broker or Sales Office"/>
+  <Entry name="BP" value="Special Counsel"/>
+  <Entry name="BQ" value="Attorney for Defendant Private"/>
+  <Entry name="BR" value="Broker"/>
+  <Entry name="BS" value="Bill and Ship To"/>
+  <Entry name="BT" value="Bill-to-Party"/>
+  <Entry name="BU" value="Place of Business"/>
+  <Entry name="BV" value="Billing Service"/>
+  <Entry name="BW" value="Borrower"/>
+  <Entry name="BX" value="Attorney for Plaintiff"/>
+  <Entry name="BY" value="Buying Party (Purchaser)"/>
+  <Entry name="BZ" value="Business Associate"/>
+  <Entry name="C1" value="In Care Of Party no. 1"/>
+  <Entry name="C2" value="In Care Of Party no. 2"/>
+  <Entry name="C3" value="Circuit Location Identifier"/>
+  <Entry name="C4" value="Contract Administration Office"/>
+  <Entry name="C5" value="Party Submitting Quote"/>
+  <Entry name="C6" value="Municipality"/>
+  <Entry name="C7" value="County"/>
+  <Entry name="C8" value="City"/>
+  <Entry name="C9" value="Contract Holder"/>
+  <Entry name="CA" value="Carrier"/>
+  <Entry name="CB" value="Customs Broker"/>
+  <Entry name="CC" value="Claimant"/>
+  <Entry name="CD" value="Consignee (To Receive Mail and Small Parcels)"/>
+  <Entry name="CE" value="Consignee (To receive large parcels and freight)"/>
+  <Entry name="CF" value="Subsidiary/Division"/>
+  <Entry name="CG" value="Carnet Issuer"/>
+  <Entry name="CH" value="Chassis Provider"/>
+  <Entry name="CI" value="Consignor"/>
+  <Entry name="CJ" value="Automated Data Processing (ADP) Point"/>
+  <Entry name="CK" value="Pharmacist"/>
+  <Entry name="CL" value="Container Location"/>
+  <Entry name="CM" value="Customs"/>
+  <Entry name="CN" value="Consignee"/>
+  <Entry name="CO" value="Ocean Tariff Conference"/>
+  <Entry name="CP" value="Party to Receive Cert. of Compliance"/>
+  <Entry name="CQ" value="Corporate Office"/>
+  <Entry name="CR" value="Container Return Company"/>
+  <Entry name="CS" value="Consolidator"/>
+  <Entry name="CT" value="Country of Origin"/>
+  <Entry name="CU" value="Coating or Paint Supplier"/>
+  <Entry name="CV" value="Converter"/>
+  <Entry name="CW" value="Accounting Station"/>
+  <Entry name="CX" value="Claim Administrator"/>
+  <Entry name="CY" value="Country"/>
+  <Entry name="CZ" value="Admitting Surgeon"/>
+  <Entry name="D1" value="Driver"/>
+  <Entry name="D2" value="Commercial Insurer"/>
+  <Entry name="D3" value="Defendant"/>
+  <Entry name="D4" value="Debtor"/>
+  <Entry name="D5" value="Debtor-In-Possession"/>
+  <Entry name="D6" value="Consolidated Debtor"/>
+  <Entry name="D7" value="Petitioning Creditor"/>
+  <Entry name="D8" value="Dispatcher"/>
+  <Entry name="D9" value="Creditor's Attorney"/>
+  <Entry name="DA" value="Delivery Address"/>
+  <Entry name="DB" value="Distributor Branch"/>
+  <Entry name="DC" value="Destination Carrier"/>
+  <Entry name="DD" value="Assistant Surgeon"/>
+  <Entry name="DE" value="Depositor"/>
+  <Entry name="DF" value="Material Disposition Authorization Location"/>
+  <Entry name="DG" value="Design Engineering"/>
+  <Entry name="DH" value="Doing Business As"/>
+  <Entry name="DI" value="Different Premise Address (DPA)"/>
+  <Entry name="DJ" value="Consulting Physician"/>
+  <Entry name="DK" value="Ordering Physician"/>
+  <Entry name="DL" value="Dealer"/>
+  <Entry name="DM" value="Destination Mail Facility"/>
+  <Entry name="DN" value="Referring Provider"/>
+  <Entry name="DO" value="Dependent Name"/>
+  <Entry name="DP" value="Party to Provide Discount"/>
+  <Entry name="DQ" value="Supervising Physician"/>
+  <Entry name="DR" value="Destination Drayman"/>
+  <Entry name="DS" value="Distributor"/>
+  <Entry name="DT" value="Destination Terminal"/>
+  <Entry name="DU" value="Resale Dealer"/>
+  <Entry name="DV" value="Division"/>
+  <Entry name="DW" value="Downstream Party"/>
+  <Entry name="DX" value="Distiller"/>
+  <Entry name="DY" value="Default/Foreclosure Specialist"/>
+  <Entry name="DZ" value="Delivery Zone"/>
+  <Entry name="E1" value="Person or Other Entity Legally Responsible for a Child"/>
+  <Entry name="E2" value="Person or Other Entity With Whom a Child Resides"/>
+  <Entry name="E3" value="Person or Other Entity Legally Responsible for and With Whom a Child Resides"/>
+  <Entry name="E4" value="Other Person or Entity Associated with Student"/>
+  <Entry name="E5" value="Examiner"/>
+  <Entry name="E6" value="Engineering"/>
+  <Entry name="E7" value="Previous Employer"/>
+  <Entry name="E8" value="Inquiring Party"/>
+  <Entry name="E9" value="Participating Laboratory"/>
+  <Entry name="EA" value="Study Submitter"/>
+  <Entry name="EB" value="Eligible Party To The Contract"/>
+  <Entry name="EC" value="Exchanger"/>
+  <Entry name="ED" value="Excluded Party"/>
+  <Entry name="EE" value="Location of Goods for Customs Examination Before Clearance"/>
+  <Entry name="EF" value="Electronic Filer"/>
+  <Entry name="EG" value="Engineer"/>
+  <Entry name="EH" value="Exhibitor"/>
+  <Entry name="EI" value="Executor of Estate"/>
+  <Entry name="EJ" value="Principal Person"/>
+  <Entry name="EK" value="Animal Source"/>
+  <Entry name="EL" value="Established Location"/>
+  <Entry name="EM" value="Party to Receive Electronic Memo of Invoice"/>
+  <Entry name="EN" value="End User"/>
+  <Entry name="EO" value="Limited Liability Partnership"/>
+  <Entry name="EP" value="Eligible Party to the Rate"/>
+  <Entry name="EQ" value="Old Debtor"/>
+  <Entry name="ER" value="New Debtor"/>
+  <Entry name="ET" value="Plan Administrator"/>
+  <Entry name="EU" value="Old Secured Party"/>
+  <Entry name="EV" value="Selling Agent"/>
+  <Entry name="EW" value="Servicing Broker"/>
+  <Entry name="EX" value="Exporter"/>
+  <Entry name="EY" value="Employee Name"/>
+  <Entry name="EZ" value="New Secured Party"/>
+  <Entry name="F1" value="Company - Owned Oil Field"/>
+  <Entry name="F2" value="Energy Information Administration (Department of Energy) - Owned Oil Field"/>
+  <Entry name="F3" value="Specialized Mobile Radio Service (SMRS) Licensee"/>
+  <Entry name="F4" value="Former Residence"/>
+  <Entry name="F5" value="Radio Control Station Location"/>
+  <Entry name="F6" value="Small Control Station Location"/>
+  <Entry name="F7" value="Small Base Station Location"/>
+  <Entry name="F8" value="Antenna Site"/>
+  <Entry name="F9" value="Area of Operation"/>
+  <Entry name="FA" value="Facility"/>
+  <Entry name="FB" value="First Break Terminal"/>
+  <Entry name="FC" value="Customer Identification File (CIF) Customer Identifier"/>
+  <Entry name="FD" value="Physical Address"/>
+  <Entry name="FE" value="Mail Address"/>
+  <Entry name="FF" value="Foreign Language Synonym"/>
+  <Entry name="FG" value="Trade Name Synonym"/>
+  <Entry name="FH" value="Party to Receive Limitations of Heavy Elements Report"/>
+  <Entry name="FI" value="Name Variation Synonym"/>
+  <Entry name="FJ" value="First Contact"/>
+  <Entry name="FL" value="Primary Control Point Location"/>
+  <Entry name="FM" value="Fireman"/>
+  <Entry name="FN" value="Filer Name"/>
+  <Entry name="FO" value="Field or Branch Office"/>
+  <Entry name="FP" value="Name on Credit Card"/>
+  <Entry name="FQ" value="Pier Name"/>
+  <Entry name="FR" value="Message From"/>
+  <Entry name="FS" value="Final Scheduled Destination"/>
+  <Entry name="FT" value="New Assignee"/>
+  <Entry name="FU" value="Old Assignee"/>
+  <Entry name="FV" value="Vessel Name"/>
+  <Entry name="FW" value="Forwarder"/>
+  <Entry name="FX" value="Closed Door Pharmacy"/>
+  <Entry name="FY" value="Veterinary Hospital"/>
+  <Entry name="FZ" value="Children's Day Care Center"/>
+  <Entry name="G0" value="Dependent Insured"/>
+  <Entry name="G1" value="Bankruptcy Trustee"/>
+  <Entry name="G2" value="Annuitant"/>
+  <Entry name="G3" value="Clinic"/>
+  <Entry name="G5" value="Contingent Beneficiary"/>
+  <Entry name="G6" value="Entity Holding the Information"/>
+  <Entry name="G7" value="Entity Providing the Service"/>
+  <Entry name="G8" value="Entity Responsible for Follow-up"/>
+  <Entry name="G9" value="Family Member"/>
+  <Entry name="GA" value="Gas Plant"/>
+  <Entry name="GB" value="Other Insured"/>
+  <Entry name="GC" value="Previous Credit Grantor"/>
+  <Entry name="GD" value="Guardian"/>
+  <Entry name="GE" value="General Agency"/>
+  <Entry name="GF" value="Inspection Company"/>
+  <Entry name="GG" value="Intermediary"/>
+  <Entry name="GH" value="Motor Vehicle Report Provider Company"/>
+  <Entry name="GI" value="Paramedic"/>
+  <Entry name="GJ" value="Paramedical Company"/>
+  <Entry name="GK" value="Previous Insured"/>
+  <Entry name="GL" value="Previous Residence"/>
+  <Entry name="GM" value="Spouse Insured"/>
+  <Entry name="GN" value="Garnishee"/>
+  <Entry name="GO" value="Primary Beneficiary"/>
+  <Entry name="GP" value="Gateway Provider"/>
+  <Entry name="GQ" value="Proposed Insured"/>
+  <Entry name="GR" value="Reinsurer"/>
+  <Entry name="GS" value="Garaged Location"/>
+  <Entry name="GT" value="Credit Grantor"/>
+  <Entry name="GU" value="Guarantee Agency"/>
+  <Entry name="GV" value="Gas Transaction Ending Point"/>
+  <Entry name="GW" value="Group"/>
+  <Entry name="GX" value="Retrocessionaire"/>
+  <Entry name="GY" value="Treatment Facility"/>
+  <Entry name="GZ" value="Grandparent"/>
+  <Entry name="H1" value="Representative"/>
+  <Entry name="H2" value="Sub-Office"/>
+  <Entry name="H3" value="District"/>
+  <Entry name="H5" value="Paying Agent"/>
+  <Entry name="H6" value="School District"/>
+  <Entry name="H7" value="Group Affiliate"/>
+  <Entry name="H9" value="Designer"/>
+  <Entry name="HA" value="Owner"/>
+  <Entry name="HB" value="Historically Black College or University"/>
+  <Entry name="HC" value="Joint Annuitant"/>
+  <Entry name="HD" value="Contingent Annuitant"/>
+  <Entry name="HE" value="Contingent Owner"/>
+  <Entry name="HF" value="Healthcare Professional Shortage Area (HPSA) Facility"/>
+  <Entry name="HG" value="Broker Opinion or Analysis Requester"/>
+  <Entry name="HH" value="Home Health Agency"/>
+  <Entry name="HI" value="Listing Company"/>
+  <Entry name="HJ" value="Automated Underwriting System"/>
+  <Entry name="HK" value="Subscriber"/>
+  <Entry name="HL" value="Document Custodian"/>
+  <Entry name="HM" value="Competitive Property Listing"/>
+  <Entry name="HN" value="Competing Property"/>
+  <Entry name="HO" value="Comparable Property Listing"/>
+  <Entry name="HP" value="Closed Sale"/>
+  <Entry name="HQ" value="Source Party of Information"/>
+  <Entry name="HR" value="Subject of Inquiry"/>
+  <Entry name="HS" value="High School"/>
+  <Entry name="HT" value="State Chartered Facility"/>
+  <Entry name="HU" value="Subsidiary"/>
+  <Entry name="HV" value="Tax Address"/>
+  <Entry name="HW" value="Designated Hazardous Waste Facility"/>
+  <Entry name="HX" value="Transporter of Hazardous Waste"/>
+  <Entry name="HY" value="Charity"/>
+  <Entry name="HZ" value="Hazardous Waste Generator"/>
+  <Entry name="I1" value="Interested Party"/>
+  <Entry name="I3" value="Independent Physicians Association (IPA)"/>
+  <Entry name="I4" value="Intellectual Property Owner"/>
+  <Entry name="I9" value="Interviewer"/>
+  <Entry name="IA" value="Installed At"/>
+  <Entry name="IB" value="Industry Bureau"/>
+  <Entry name="IC" value="Intermediate Consignee"/>
+  <Entry name="ID" value="Issuer of Debit or Credit Memo"/>
+  <Entry name="IE" value="Other Individual Disability Carrier"/>
+  <Entry name="IF" value="International Freight Forwarder"/>
+  <Entry name="II" value="Issuer of Invoice"/>
+  <Entry name="IJ" value="Injection Point"/>
+  <Entry name="IK" value="Intermediate Carrier"/>
+  <Entry name="IL" value="Insured or Subscriber"/>
+  <Entry name="IM" value="Importer"/>
+  <Entry name="IN" value="Insurer"/>
+  <Entry name="IO" value="Inspector"/>
+  <Entry name="IP" value="Independent Adjuster"/>
+  <Entry name="IQ" value="In-patient Pharmacy"/>
+  <Entry name="IR" value="Self Insured"/>
+  <Entry name="IS" value="Party to Receive Certified Inspection Report"/>
+  <Entry name="IT" value="Installation on Site"/>
+  <Entry name="IU" value="Issuer"/>
+  <Entry name="IV" value="Renter"/>
+  <Entry name="J1" value="Associate General Agent"/>
+  <Entry name="J2" value="Authorized Entity"/>
+  <Entry name="J3" value="Broker's Assistant"/>
+  <Entry name="J4" value="Custodian"/>
+  <Entry name="J5" value="Irrevocable Beneficiary"/>
+  <Entry name="J6" value="Power of Attorney"/>
+  <Entry name="J7" value="Trust Officer"/>
+  <Entry name="J8" value="Broker Dealer"/>
+  <Entry name="J9" value="Community Agent"/>
+  <Entry name="JA" value="Dairy Department"/>
+  <Entry name="JB" value="Delicatessen Department"/>
+  <Entry name="JC" value="Dry Grocery Department"/>
+  <Entry name="JD" value="Judge"/>
+  <Entry name="JE" value="Frozen Department"/>
+  <Entry name="JF" value="General Merchandise Department"/>
+  <Entry name="JG" value="Health &amp; Beauty Department"/>
+  <Entry name="JH" value="Alcohol Beverage Department"/>
+  <Entry name="JI" value="Meat Department"/>
+  <Entry name="JJ" value="Produce Department"/>
+  <Entry name="JK" value="Bakery Department"/>
+  <Entry name="JL" value="Video Department"/>
+  <Entry name="JM" value="Candy and Confections Department"/>
+  <Entry name="JN" value="Cigarettes and Tobacco Department"/>
+  <Entry name="JO" value="In-Store Bakery Department"/>
+  <Entry name="JP" value="Floral Department"/>
+  <Entry name="JQ" value="Pharmacy Department"/>
+  <Entry name="JR" value="Bidder"/>
+  <Entry name="JS" value="Joint Debtor Attorney"/>
+  <Entry name="JT" value="Joint Debtor"/>
+  <Entry name="JU" value="Jurisdiction"/>
+  <Entry name="JV" value="Joint Owner"/>
+  <Entry name="JW" value="Joint Venture"/>
+  <Entry name="JX" value="Closing Agent"/>
+  <Entry name="JY" value="Financial Planner"/>
+  <Entry name="JZ" value="Managing General Agent"/>
+  <Entry name="K1" value="Contractor Cognizant Security Office"/>
+  <Entry name="K2" value="Subcontractor Cognizant Security Office"/>
+  <Entry name="K3" value="Place of Performance Cognizant Security Office"/>
+  <Entry name="K4" value="Party Authorizing Release of Security Information"/>
+  <Entry name="K5" value="Party To Receive Contract Security Classification Specification"/>
+  <Entry name="K6" value="Policy Writing Agent"/>
+  <Entry name="K7" value="Radio Station"/>
+  <Entry name="K8" value="Filing Location"/>
+  <Entry name="K9" value="Previous Distributor"/>
+  <Entry name="KA" value="Item Manager"/>
+  <Entry name="KB" value="Customer for Whom Same or Similar Work Was Performed"/>
+  <Entry name="KC" value="Party That Received Disclosure Statement"/>
+  <Entry name="KD" value="Proposer"/>
+  <Entry name="KE" value="Contact Office"/>
+  <Entry name="KF" value="Audit Office"/>
+  <Entry name="KG" value="Project Manager"/>
+  <Entry name="KH" value="Organization Having Source Control"/>
+  <Entry name="KI" value="United States Overseas Security Administration Office"/>
+  <Entry name="KJ" value="Qualifying Officer"/>
+  <Entry name="KK" value="Registering Party"/>
+  <Entry name="KL" value="Clerk of Court"/>
+  <Entry name="KM" value="Coordinator"/>
+  <Entry name="KN" value="Former Address"/>
+  <Entry name="KO" value="Plant Clearance Officer"/>
+  <Entry name="KP" value="Name Under Which Filed"/>
+  <Entry name="KQ" value="Licensee"/>
+  <Entry name="KR" value="Pre-kindergarten to Grade 12 Recipient"/>
+  <Entry name="KS" value="Pre-kindergarten to Grade 12 Sender"/>
+  <Entry name="KT" value="Court"/>
+  <Entry name="KU" value="Receiver Site"/>
+  <Entry name="KV" value="Disbursing Officer"/>
+  <Entry name="KW" value="Bid Opening Location"/>
+  <Entry name="KX" value="Free on Board Point"/>
+  <Entry name="KY" value="Technical Office"/>
+  <Entry name="KZ" value="Acceptance Location"/>
+  <Entry name="L1" value="Inspection Location"/>
+  <Entry name="L2" value="Location of Principal Assets"/>
+  <Entry name="L3" value="Loan Correspondent"/>
+  <Entry name="L5" value="Contact"/>
+  <Entry name="L8" value="Head Office"/>
+  <Entry name="L9" value="Information Provider"/>
+  <Entry name="LA" value="Attorney"/>
+  <Entry name="LB" value="Last Break Terminal"/>
+  <Entry name="LC" value="Location of Spot for Storage"/>
+  <Entry name="LD" value="Liability Holder"/>
+  <Entry name="LE" value="Lessor"/>
+  <Entry name="LF" value="Limited Partner"/>
+  <Entry name="LG" value="Location of Goods"/>
+  <Entry name="LH" value="Pipeline"/>
+  <Entry name="LI" value="Independent Lab"/>
+  <Entry name="LJ" value="Limited Liability Company"/>
+  <Entry name="LK" value="Juvenile Owner"/>
+  <Entry name="LL" value="Location of Load Exchange (Export)"/>
+  <Entry name="LM" value="Lending Institution"/>
+  <Entry name="LN" value="Lender"/>
+  <Entry name="LO" value="Loan Originator"/>
+  <Entry name="LP" value="Loading Party"/>
+  <Entry name="LQ" value="Law Firm"/>
+  <Entry name="LR" value="Legal Representative"/>
+  <Entry name="LS" value="Lessee"/>
+  <Entry name="LT" value="Long-term Disability Carrier"/>
+  <Entry name="LU" value="Master Agent"/>
+  <Entry name="LV" value="Loan Servicer"/>
+  <Entry name="LW" value="Customer"/>
+  <Entry name="LY" value="Labeler"/>
+  <Entry name="LZ" value="Local Chain"/>
+  <Entry name="M1" value="Source Meter Location"/>
+  <Entry name="M2" value="Receipt Location"/>
+  <Entry name="M3" value="Upstream Meter Location"/>
+  <Entry name="M4" value="Downstream Meter Location"/>
+  <Entry name="M5" value="Migrant Health Clinic"/>
+  <Entry name="M6" value="Landlord"/>
+  <Entry name="M7" value="Foreclosing Lender"/>
+  <Entry name="M8" value="Educational Institution"/>
+  <Entry name="M9" value="Manufacturing"/>
+  <Entry name="MA" value="Party for whom Item is Ultimately Intended"/>
+  <Entry name="MB" value="Company Interviewer Works For"/>
+  <Entry name="MC" value="Motor Carrier"/>
+  <Entry name="MD" value="Veterans Administration Loan Guaranty Authority"/>
+  <Entry name="ME" value="Veterans Administration Loan Authorized Supplier"/>
+  <Entry name="MF" value="Manufacturer of Goods"/>
+  <Entry name="MG" value="Government Loan Agency Sponsor or Agent"/>
+  <Entry name="MH" value="Mortgage Insurer"/>
+  <Entry name="MI" value="Planning Schedule/Material Release Issuer"/>
+  <Entry name="MJ" value="Financial Institution"/>
+  <Entry name="MK" value="Loan Holder for Real Estate Asset"/>
+  <Entry name="ML" value="Consumer Credit Account Company"/>
+  <Entry name="MM" value="Mortgage Company"/>
+  <Entry name="MN" value="Authorized Marketer"/>
+  <Entry name="MO" value="Release Drayman"/>
+  <Entry name="MP" value="Manufacturing Plant"/>
+  <Entry name="MQ" value="Delivery Location"/>
+  <Entry name="MR" value="Medical Insurance Carrier"/>
+  <Entry name="MS" value="Bureau of Land Management (Minerals Management Service) Property Unit"/>
+  <Entry name="MT" value="Material"/>
+  <Entry name="MU" value="Meeting Location"/>
+  <Entry name="MV" value="Mainline"/>
+  <Entry name="MW" value="Marine Surveyor"/>
+  <Entry name="MX" value="Juvenile Witness"/>
+  <Entry name="MY" value="Master General Agent"/>
+  <Entry name="MZ" value="Minister"/>
+  <Entry name="N1" value="Notify Party no. 1"/>
+  <Entry name="N2" value="Notify Party no. 2"/>
+  <Entry name="N3" value="Ineligible Party"/>
+  <Entry name="N4" value="Price Administration"/>
+  <Entry name="N5" value="Party Who Signed the Delivery Receipt"/>
+  <Entry name="N6" value="Nonemployment Income Source"/>
+  <Entry name="N7" value="Previous Neighbor"/>
+  <Entry name="N8" value="Relative"/>
+  <Entry name="N9" value="Neighborhood"/>
+  <Entry name="NA" value="New Address"/>
+  <Entry name="NB" value="Neighbor"/>
+  <Entry name="NC" value="Cross-Town Switch"/>
+  <Entry name="ND" value="Next Destination"/>
+  <Entry name="NE" value="Newspaper"/>
+  <Entry name="NF" value="Owner Annuitant"/>
+  <Entry name="NG" value="Administrator"/>
+  <Entry name="NH" value="Association"/>
+  <Entry name="NI" value="Non-insured"/>
+  <Entry name="NJ" value="Trust or Estate"/>
+  <Entry name="NK" value="National Chain"/>
+  <Entry name="NL" value="Non-railroad Entity"/>
+  <Entry name="NM" value="Physician - Specialists"/>
+  <Entry name="NN" value="Network Name"/>
+  <Entry name="NP" value="Notify Party for Shipper's Order"/>
+  <Entry name="NQ" value="Pipeline Segment Boundary"/>
+  <Entry name="NR" value="Gas Transaction Starting Point"/>
+  <Entry name="NS" value="Non-Temporary Storage Facility"/>
+  <Entry name="NT" value="Magistrate Judge"/>
+  <Entry name="NU" value="Formerly Known As"/>
+  <Entry name="NV" value="Formerly Doing Business As"/>
+  <Entry name="NW" value="Maiden Name"/>
+  <Entry name="NX" value="Primary Owner"/>
+  <Entry name="NY" value="Birth Name"/>
+  <Entry name="NZ" value="Primary Physician"/>
+  <Entry name="O1" value="Originating Bank"/>
+  <Entry name="O2" value="Originating Company"/>
+  <Entry name="O3" value="Receiving Company"/>
+  <Entry name="O4" value="Factor"/>
+  <Entry name="O5" value="Merchant Banker"/>
+  <Entry name="O6" value="Non Registered Business Name"/>
+  <Entry name="O7" value="Registered Business Name"/>
+  <Entry name="O8" value="Registrar"/>
+  <Entry name="OA" value="Electronic Return Originator"/>
+  <Entry name="OB" value="Ordered By"/>
+  <Entry name="OC" value="Origin Carrier"/>
+  <Entry name="OD" value="Doctor of Optometry"/>
+  <Entry name="OE" value="Booking Office"/>
+  <Entry name="OF" value="Offset Operator"/>
+  <Entry name="OG" value="Co-owner"/>
+  <Entry name="OH" value="Other Departments"/>
+  <Entry name="OI" value="Outside Inspection Agency"/>
+  <Entry name="OL" value="Officer"/>
+  <Entry name="OM" value="Origin Mail Facility"/>
+  <Entry name="ON" value="Product Position Holder"/>
+  <Entry name="OO" value="Order Of (Shippers Orders) - (Transportation)"/>
+  <Entry name="OP" value="Operator of property or unit"/>
+  <Entry name="OR" value="Origin Drayman"/>
+  <Entry name="OS" value="Override Institution; this is not the institution sending the record, but another institution the student previously attended or is currently attending"/>
+  <Entry name="OT" value="Origin Terminal"/>
+  <Entry name="OU" value="Outside Processor"/>
+  <Entry name="OV" value="Owner of Vessel"/>
+  <Entry name="OW" value="Owner of Property or Unit"/>
+  <Entry name="OX" value="Oxygen Therapy Facility"/>
+  <Entry name="OY" value="Owner of Vehicle"/>
+  <Entry name="OZ" value="Outside Testing Agency"/>
+  <Entry name="P0" value="Patient Facility"/>
+  <Entry name="P1" value="Preparer"/>
+  <Entry name="P2" value="Primary Insured or Subscriber"/>
+  <Entry name="P3" value="Primary Care Provider"/>
+  <Entry name="P4" value="Prior Insurance Carrier"/>
+  <Entry name="P5" value="Plan Sponsor"/>
+  <Entry name="P6" value="Third Party Reviewing Preferred Provider Organization (PPO)"/>
+  <Entry name="P7" value="Third Party Repricing Preferred Provider Organization (PPO)"/>
+  <Entry name="P8" value="Personnel Office"/>
+  <Entry name="P9" value="Primary Interexchange Carrier (PIC)"/>
+  <Entry name="PA" value="Party to Receive Inspection Report"/>
+  <Entry name="PB" value="Paying Bank"/>
+  <Entry name="PC" value="Party to Receive Cert. of Conformance (C.A.A.)"/>
+  <Entry name="PD" value="Purchaser's Department Buyer"/>
+  <Entry name="PE" value="Payee"/>
+  <Entry name="PF" value="Party to Receive Freight Bill"/>
+  <Entry name="PG" value="Prime Contractor"/>
+  <Entry name="PH" value="Printer"/>
+  <Entry name="PI" value="Publisher"/>
+  <Entry name="PJ" value="Party to Receive Correspondence"/>
+  <Entry name="PK" value="Party to Receive Copy"/>
+  <Entry name="PL" value="Party to Receive Purchase Order"/>
+  <Entry name="PM" value="Party to receive paper Memo of Invoice"/>
+  <Entry name="PN" value="Party to Receive Shipping Notice"/>
+  <Entry name="PO" value="Party to Receive Invoice for Goods or Services"/>
+  <Entry name="PP" value="Property"/>
+  <Entry name="PQ" value="Party to Receive Invoice for Lease Payments"/>
+  <Entry name="PR" value="Payer"/>
+  <Entry name="PS" value="Previous Station"/>
+  <Entry name="PT" value="Party to Receive Test Report"/>
+  <Entry name="PU" value="Party at Pick-up Location"/>
+  <Entry name="PV" value="Party performing certification"/>
+  <Entry name="PW" value="Pick Up Address"/>
+  <Entry name="PX" value="Party Performing Count"/>
+  <Entry name="PY" value="Party to File Personal Property Tax"/>
+  <Entry name="PZ" value="Party to Receive Equipment"/>
+  <Entry name="Q1" value="Conductor Pilot"/>
+  <Entry name="Q2" value="Engineer Pilot"/>
+  <Entry name="Q3" value="Retail Account"/>
+  <Entry name="Q4" value="Cooperative Buying Group"/>
+  <Entry name="Q5" value="Advertising Group"/>
+  <Entry name="Q6" value="Interpreter"/>
+  <Entry name="Q7" value="Partner"/>
+  <Entry name="Q8" value="Base Period Employer"/>
+  <Entry name="Q9" value="Last Employer"/>
+  <Entry name="QA" value="Pharmacy"/>
+  <Entry name="QB" value="Purchase Service Provider"/>
+  <Entry name="QC" value="Patient"/>
+  <Entry name="QD" value="Responsible Party"/>
+  <Entry name="QE" value="Policyholder"/>
+  <Entry name="QF" value="Passenger"/>
+  <Entry name="QG" value="Pedestrian"/>
+  <Entry name="QH" value="Physician"/>
+  <Entry name="QI" value="Party in Possession"/>
+  <Entry name="QJ" value="Most Recent Employer (Chargeable)"/>
+  <Entry name="QK" value="Managed Care"/>
+  <Entry name="QL" value="Chiropractor"/>
+  <Entry name="QM" value="Dialysis Centers"/>
+  <Entry name="QN" value="Dentist"/>
+  <Entry name="QO" value="Doctor of Osteopathy"/>
+  <Entry name="QP" value="Principal Borrower"/>
+  <Entry name="QQ" value="Quality Control"/>
+  <Entry name="QR" value="Buyer's Quality Review Board"/>
+  <Entry name="QS" value="Podiatrist"/>
+  <Entry name="QT" value="Psychiatrist"/>
+  <Entry name="QU" value="Veterinarian"/>
+  <Entry name="QV" value="Group Practice"/>
+  <Entry name="QW" value="Government"/>
+  <Entry name="QX" value="Home Health Corporation"/>
+  <Entry name="QY" value="Medical Doctor"/>
+  <Entry name="QZ" value="Co-borrower"/>
+  <Entry name="R0" value="Royalty Owner"/>
+  <Entry name="R1" value="Party to Receive Scale Ticket"/>
+  <Entry name="R2" value="Reporting Officer"/>
+  <Entry name="R3" value="Next Scheduled Destination"/>
+  <Entry name="R4" value="Regulatory (State) District"/>
+  <Entry name="R5" value="Regulatory (State) Entity"/>
+  <Entry name="R6" value="Requester"/>
+  <Entry name="R7" value="Consumer Referral Contact"/>
+  <Entry name="R8" value="Credit Reporting Agency"/>
+  <Entry name="R9" value="Requested Lender"/>
+  <Entry name="RA" value="Alternate Return Address"/>
+  <Entry name="RB" value="Receiving Bank"/>
+  <Entry name="RC" value="Receiving Location"/>
+  <Entry name="RD" value="Destination Intermodal Ramp"/>
+  <Entry name="RF" value="Refinery"/>
+  <Entry name="RG" value="Responsible Installation, Origin"/>
+  <Entry name="RH" value="Responsible Installation, Destination"/>
+  <Entry name="RI" value="Remit To"/>
+  <Entry name="RJ" value="Residence or Domicile"/>
+  <Entry name="RK" value="Refinery Operator"/>
+  <Entry name="RL" value="Reporting Location"/>
+  <Entry name="RM" value="Party that remits payment"/>
+  <Entry name="RN" value="Repair or Refurbish Location"/>
+  <Entry name="RO" value="Original Intermodal Ramp"/>
+  <Entry name="RP" value="Receiving Point for Customer Samples"/>
+  <Entry name="RQ" value="Resale Customer"/>
+  <Entry name="RR" value="Railroad"/>
+  <Entry name="RS" value="Receiving Facility Scheduler"/>
+  <Entry name="RT" value="Returned to"/>
+  <Entry name="RU" value="Receiving Sub-Location"/>
+  <Entry name="RV" value="Reservoir"/>
+  <Entry name="RW" value="Rural Health Clinic"/>
+  <Entry name="RX" value="Responsible Exhibitor"/>
+  <Entry name="RY" value="Specified Repository"/>
+  <Entry name="RZ" value="Receipt Zone"/>
+  <Entry name="S0" value="Sole Proprietor"/>
+  <Entry name="S1" value="Parent"/>
+  <Entry name="S2" value="Student"/>
+  <Entry name="S3" value="Custodial Parent"/>
+  <Entry name="S4" value="Skilled Nursing Facility"/>
+  <Entry name="S5" value="Secured Party"/>
+  <Entry name="S6" value="Agency Granting Security Clearance"/>
+  <Entry name="S7" value="Secured Party Company"/>
+  <Entry name="S8" value="Secured Party Individual"/>
+  <Entry name="S9" value="Sibling"/>
+  <Entry name="SA" value="Salvage Carrier"/>
+  <Entry name="SB" value="Storage Area"/>
+  <Entry name="SC" value="Store Class"/>
+  <Entry name="SD" value="Sold To and Ship To"/>
+  <Entry name="SE" value="Selling Party"/>
+  <Entry name="SF" value="Ship From"/>
+  <Entry name="SG" value="Store Group"/>
+  <Entry name="SH" value="Shipper"/>
+  <Entry name="SI" value="Shipping Schedule Issuer"/>
+  <Entry name="SJ" value="Service Provider"/>
+  <Entry name="SK" value="Secondary Location Address (SLA)"/>
+  <Entry name="SL" value="Origin Sublocation"/>
+  <Entry name="SM" value="Party to Receive Shipping Manifest"/>
+  <Entry name="SN" value="Store"/>
+  <Entry name="SO" value="Sold To If Different From Bill To"/>
+  <Entry name="SP" value="Party filling Shipper's Order"/>
+  <Entry name="SQ" value="Service Bureau"/>
+  <Entry name="SR" value="Samples to be Returned To"/>
+  <Entry name="SS" value="Steamship Company"/>
+  <Entry name="ST" value="Ship To"/>
+  <Entry name="SU" value="Supplier/Manufacturer"/>
+  <Entry name="SV" value="Service Performance Site"/>
+  <Entry name="SW" value="Sealing Company"/>
+  <Entry name="SX" value="School-based Service Provider"/>
+  <Entry name="SY" value="Secondary Taxpayer"/>
+  <Entry name="SZ" value="Supervisor"/>
+  <Entry name="T1" value="Operator of the Transfer Point"/>
+  <Entry name="T2" value="Operator of the Source Transfer Point"/>
+  <Entry name="T3" value="Terminal Location"/>
+  <Entry name="T4" value="Transfer Point"/>
+  <Entry name="T6" value="Terminal Operator"/>
+  <Entry name="T8" value="Previous Title Company"/>
+  <Entry name="T9" value="Prior Title Evidence Holder"/>
+  <Entry name="TA" value="Title Insurance Services Provider"/>
+  <Entry name="TB" value="Tooling"/>
+  <Entry name="TC" value="Tool Source"/>
+  <Entry name="TD" value="Tooling Design"/>
+  <Entry name="TE" value="Theatre"/>
+  <Entry name="TF" value="Tank Farm"/>
+  <Entry name="TG" value="Tooling Fabrication"/>
+  <Entry name="TH" value="Theater Circuit"/>
+  <Entry name="TI" value="Tariff Issuer"/>
+  <Entry name="TJ" value="Cosigner"/>
+  <Entry name="TK" value="Test Sponsor"/>
+  <Entry name="TL" value="Testing Laboratory"/>
+  <Entry name="TM" value="Transmitter"/>
+  <Entry name="TN" value="Tradename"/>
+  <Entry name="TO" value="Message To"/>
+  <Entry name="TP" value="Primary Taxpayer"/>
+  <Entry name="TQ" value="Third Party Reviewing Organization (TPO)"/>
+  <Entry name="TR" value="Terminal"/>
+  <Entry name="TS" value="Party to Receive Certified Test Results"/>
+  <Entry name="TT" value="Transfer To"/>
+  <Entry name="TU" value="Third Party Repricing Organization (TPO)"/>
+  <Entry name="TV" value="Third Party Administrator (TPA)"/>
+  <Entry name="TW" value="Transit Authority"/>
+  <Entry name="TX" value="Tax Authority"/>
+  <Entry name="TY" value="Trustee"/>
+  <Entry name="TZ" value="Significant Other"/>
+  <Entry name="U1" value="Gas Transaction Point 1"/>
+  <Entry name="U2" value="Gas Transaction Point 2"/>
+  <Entry name="U3" value="Servicing Agent"/>
+  <Entry name="U4" value="Team"/>
+  <Entry name="U5" value="Underwriter"/>
+  <Entry name="U6" value="Title Underwriter"/>
+  <Entry name="U7" value="Psychologist"/>
+  <Entry name="U8" value="Reference"/>
+  <Entry name="U9" value="Non-Registered Investment Advisor"/>
+  <Entry name="UA" value="Place of Bottling"/>
+  <Entry name="UB" value="Place of Distilling"/>
+  <Entry name="UC" value="Ultimate Consignee"/>
+  <Entry name="UD" value="Region"/>
+  <Entry name="UE" value="Testing Service"/>
+  <Entry name="UF" value="Health Miscellaneous"/>
+  <Entry name="UG" value="Nursing Home Chain"/>
+  <Entry name="UH" value="Nursing Home"/>
+  <Entry name="UI" value="Registered Investment Advisor"/>
+  <Entry name="UJ" value="Sales Assistant"/>
+  <Entry name="UK" value="System"/>
+  <Entry name="UL" value="Special Account"/>
+  <Entry name="UM" value="Current Employer (Primary)"/>
+  <Entry name="UN" value="Union"/>
+  <Entry name="UO" value="Current Employer (Secondary)"/>
+  <Entry name="UP" value="Unloading Party"/>
+  <Entry name="UQ" value="Subsequent Owner"/>
+  <Entry name="UR" value="Surgeon"/>
+  <Entry name="US" value="Upstream Party"/>
+  <Entry name="UT" value="U.S. Trustee"/>
+  <Entry name="UU" value="Annuitant Payor"/>
+  <Entry name="UW" value="Unassigned Agent"/>
+  <Entry name="UX" value="Base Jurisdiction"/>
+  <Entry name="UY" value="Vehicle"/>
+  <Entry name="UZ" value="Signer"/>
+  <Entry name="V1" value="Surety"/>
+  <Entry name="V2" value="Grantor"/>
+  <Entry name="V3" value="Well Pad Construction Contractor"/>
+  <Entry name="V4" value="Oil and Gas Regulatory Agency"/>
+  <Entry name="V5" value="Surface Discharge Agency"/>
+  <Entry name="V6" value="Well Casing Depth Authority"/>
+  <Entry name="V8" value="Market Timer"/>
+  <Entry name="V9" value="Owner Annuitant Payor"/>
+  <Entry name="VA" value="Second Contact"/>
+  <Entry name="VB" value="Candidate"/>
+  <Entry name="VC" value="Vehicle Custodian"/>
+  <Entry name="VD" value="Multiple Listing Service"/>
+  <Entry name="VE" value="Board of Realtors"/>
+  <Entry name="VF" value="Selling Office"/>
+  <Entry name="VG" value="Listing Agent"/>
+  <Entry name="VH" value="Showing Agent"/>
+  <Entry name="VI" value="Contact Person"/>
+  <Entry name="VJ" value="Owner Joint Annuitant Payor"/>
+  <Entry name="VK" value="Property or Building Manager"/>
+  <Entry name="VL" value="Builder Name"/>
+  <Entry name="VM" value="Occupant"/>
+  <Entry name="VN" value="Vendor"/>
+  <Entry name="VO" value="Elementary School"/>
+  <Entry name="VP" value="Party with Power to Vote Securities"/>
+  <Entry name="VQ" value="Middle School"/>
+  <Entry name="VR" value="Junior High School"/>
+  <Entry name="VS" value="Vehicle Salvage Assignment"/>
+  <Entry name="VT" value="Listing Office"/>
+  <Entry name="VU" value="Second Contact Organization"/>
+  <Entry name="VV" value="Owner Payor"/>
+  <Entry name="VW" value="Winner"/>
+  <Entry name="VX" value="Production Manager"/>
+  <Entry name="VY" value="Organization Completing Configuration Change"/>
+  <Entry name="W1" value="Work Team"/>
+  <Entry name="W2" value="Supplier Work Team"/>
+  <Entry name="W3" value="Third Party Investment Advisor"/>
+  <Entry name="W4" value="Trust"/>
+  <Entry name="W8" value="Interline Service Commitment Customer"/>
+  <Entry name="W9" value="Sampling Location"/>
+  <Entry name="WA" value="Writing Agent"/>
+  <Entry name="WB" value="Appraiser Name"/>
+  <Entry name="WC" value="Comparable Property"/>
+  <Entry name="WD" value="Storage Facility at Destination"/>
+  <Entry name="WE" value="Subject Property"/>
+  <Entry name="WF" value="Tank Farm Owner"/>
+  <Entry name="WG" value="Wage Earner"/>
+  <Entry name="WH" value="Warehouse"/>
+  <Entry name="WI" value="Witness"/>
+  <Entry name="WJ" value="Supervisory Appraiser Name"/>
+  <Entry name="WL" value="Wholesaler"/>
+  <Entry name="WN" value="Company Assigned Well"/>
+  <Entry name="WO" value="Storage Facility at Origin"/>
+  <Entry name="WP" value="Witness for Plaintiff"/>
+  <Entry name="WR" value="Withdrawal Point"/>
+  <Entry name="WS" value="Water System"/>
+  <Entry name="WT" value="Witness for Defendant"/>
+  <Entry name="WU" value="Primary Support Organization"/>
+  <Entry name="WV" value="Preliminary Maintenance Period Designating Organization"/>
+  <Entry name="WW" value="Preliminary Maintenance Organization"/>
+  <Entry name="WX" value="Preliminary Referred To Organization"/>
+  <Entry name="WY" value="Final Maintenance Period Designating Organization"/>
+  <Entry name="WZ" value="Final Maintenance Organization"/>
+  <Entry name="X1" value="Mail to"/>
+  <Entry name="X2" value="Party to Perform Packaging"/>
+  <Entry name="X3" value="Utilization Management Organization"/>
+  <Entry name="X4" value="Spouse"/>
+  <Entry name="X5" value="Durable Medical Equipment Supplier"/>
+  <Entry name="X6" value="International Organization"/>
+  <Entry name="X7" value="Inventor"/>
+  <Entry name="X8" value="Hispanic Service Institute"/>
+  <Entry name="XA" value="Creditor"/>
+  <Entry name="XC" value="Debtor's Attorney"/>
+  <Entry name="XD" value="Alias"/>
+  <Entry name="XE" value="Claim Recipient"/>
+  <Entry name="XF" value="Auctioneer"/>
+  <Entry name="XG" value="Event Location"/>
+  <Entry name="XH" value="Final Referred To Organization"/>
+  <Entry name="XI" value="Original Claimant"/>
+  <Entry name="XJ" value="Actual Referred By Organization"/>
+  <Entry name="XK" value="Actual Referred To Organization"/>
+  <Entry name="XL" value="Borrower's Employer"/>
+  <Entry name="XM" value="Maintenance Organization Used for Estimate"/>
+  <Entry name="XN" value="Planning/Maintenance Organization"/>
+  <Entry name="XO" value="Preliminary Customer Organization"/>
+  <Entry name="XP" value="Party to Receive Solicitation"/>
+  <Entry name="XQ" value="Canadian Customs Broker"/>
+  <Entry name="XR" value="Mexican Customs Broker"/>
+  <Entry name="XS" value="S Corporation"/>
+  <Entry name="XT" value="Final Customer Organization"/>
+  <Entry name="XU" value="United States Customs Broker"/>
+  <Entry name="XV" value="Cross Claimant"/>
+  <Entry name="XW" value="Counter Claimant"/>
+  <Entry name="XX" value="Business Area"/>
+  <Entry name="XY" value="Tribal Government"/>
+  <Entry name="XZ" value="American Indian-Owned Business"/>
+  <Entry name="Y2" value="Managed Care Organization"/>
+  <Entry name="YA" value="Affiant"/>
+  <Entry name="YB" value="Arbitrator"/>
+  <Entry name="YC" value="Bail Payor"/>
+  <Entry name="YD" value="District Justice"/>
+  <Entry name="YE" value="Third Party"/>
+  <Entry name="YF" value="Witness for Prosecution"/>
+  <Entry name="YG" value="Expert Witness"/>
+  <Entry name="YH" value="Crime Victim"/>
+  <Entry name="YI" value="Juvenile Victim"/>
+  <Entry name="YJ" value="Juvenile Defendant"/>
+  <Entry name="YK" value="Bondsman"/>
+  <Entry name="YL" value="Court Appointed Attorney"/>
+  <Entry name="YM" value="Complainant's Attorney"/>
+  <Entry name="YN" value="District Attorney"/>
+  <Entry name="YO" value="Attorney for Defendant, Public"/>
+  <Entry name="YP" value="Pro Bono Attorney"/>
+  <Entry name="YQ" value="Pro Se Counsel"/>
+  <Entry name="YR" value="Party to Appear Before"/>
+  <Entry name="YS" value="Appellant"/>
+  <Entry name="YT" value="Appellee"/>
+  <Entry name="YU" value="Arresting Officer"/>
+  <Entry name="YV" value="Hostile Witness"/>
+  <Entry name="YW" value="Discharge Point"/>
+  <Entry name="YX" value="Flood Certifier"/>
+  <Entry name="YY" value="Flood Determination Provider"/>
+  <Entry name="YZ" value="Electronic Registration Utility"/>
+  <Entry name="Z1" value="Party to Receive Status"/>
+  <Entry name="Z2" value="Unserviceable Material Consignee"/>
+  <Entry name="Z3" value="Potential Source of Supply"/>
+  <Entry name="Z4" value="Owning Inventory Control Point"/>
+  <Entry name="Z5" value="Management Control Activity"/>
+  <Entry name="Z6" value="Transferring Party"/>
+  <Entry name="Z7" value="Mark-for Party"/>
+  <Entry name="Z8" value="Last Known Source of Supply"/>
+  <Entry name="Z9" value="Banker"/>
+  <Entry name="ZA" value="Corrected Address"/>
+  <Entry name="ZB" value="Party to Receive Credit"/>
+  <Entry name="ZC" value="Rent Payor"/>
+  <Entry name="ZD" value="Party to Receive Reports"/>
+  <Entry name="ZE" value="End Item Manufacturer"/>
+  <Entry name="ZF" value="Break Bulk Point"/>
+  <Entry name="ZG" value="Present Address"/>
+  <Entry name="ZH" value="Child"/>
+  <Entry name="ZJ" value="Branch"/>
+  <Entry name="ZK" value="Reporter"/>
+  <Entry name="ZL" value="Party Passing the Transaction"/>
+  <Entry name="ZM" value="Lease Location"/>
+  <Entry name="ZN" value="Losing Inventory Manager"/>
+  <Entry name="ZO" value="Minimum Royalty Payor"/>
+  <Entry name="ZP" value="Gaining Inventory Manager"/>
+  <Entry name="ZQ" value="Screening Point"/>
+  <Entry name="ZR" value="Validating Party"/>
+  <Entry name="ZS" value="Monitoring Party"/>
+  <Entry name="ZT" value="Participating Area"/>
+  <Entry name="ZU" value="Formation"/>
+  <Entry name="ZV" value="Allowable Recipient"/>
+  <Entry name="ZW" value="Field"/>
+  <Entry name="ZX" value="Attorney of Record"/>
+  <Entry name="ZY" value="Amicus Curiae"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+  <Entry name="001" value="Pumper"/>
+  <Entry name="002" value="Surface Management Entity"/>
+  <Entry name="003" value="Application Party"/>
+  <Entry name="004" value="Site Operator"/>
+  <Entry name="005" value="Construction Contractor"/>
+  <Entry name="006" value="Drilling Contractor"/>
+  <Entry name="007" value="Spud Contractor"/>
+  <Entry name="008" value="Lien Holder"/>
+  <Entry name="AA1" value="Chief Executive Officer (CEO)"/>
+  <Entry name="AA2" value="Financial Aid Office"/>
+  <Entry name="AA3" value="Respondent"/>
+  <Entry name="AA4" value="Admission Office"/>
+  <Entry name="AA5" value="Multi-Campus Administrative Unit"/>
+  <Entry name="AA6" value="Headmaster"/>
+  <Entry name="AA7" value="Business Officer"/>
+  <Entry name="AA8" value="Superintendent"/>
+  <Entry name="AA9" value="School Principal"/>
+  <Entry name="AAA" value="Sub-account"/>
+  <Entry name="AAB" value="Management Non-Officer"/>
+  <Entry name="AAC" value="Incorporated Location"/>
+  <Entry name="AAD" value="Name not to be Confused with"/>
+  <Entry name="AAE" value="Lot"/>
+  <Entry name="AAF" value="Previous Occupant"/>
+  <Entry name="AAG" value="Ground Ambulance Services"/>
+  <Entry name="AAH" value="Air Ambulance Services"/>
+  <Entry name="AAI" value="Water Ambulance Services"/>
+  <Entry name="AAJ" value="Admitting Services"/>
+  <Entry name="AAK" value="Primary Surgeon"/>
+  <Entry name="AAL" value="Medical Nurse"/>
+  <Entry name="AAM" value="Cardiac Rehabilitation Services"/>
+  <Entry name="AAN" value="Skilled Nursing Services"/>
+  <Entry name="AAO" value="Observation Room Services"/>
+  <Entry name="AAP" value="Employee"/>
+  <Entry name="AAQ" value="Anesthesiology Services"/>
+  <Entry name="AAS" value="Prior Base Jurisdiction"/>
+  <Entry name="AAT" value="Incorporation Jurisdiction"/>
+  <Entry name="AAU" value="Marker Owner"/>
+  <Entry name="AAV" value="Reclamation Center"/>
+  <Entry name="AAW" value="Party Providing Financing"/>
+  <Entry name="AB1" value="Private School System"/>
+  <Entry name="AB2" value="State Operated School System"/>
+  <Entry name="AB3" value="Vocational Regions School System"/>
+  <Entry name="AB4" value="Chartered School District"/>
+  <Entry name="AB5" value="Schooling of Indian Children School System"/>
+  <Entry name="AB6" value="Unorganized Territories School System"/>
+  <Entry name="AB7" value="State Administered District"/>
+  <Entry name="AB8" value="Towns in Unions School System"/>
+  <Entry name="AB9" value="Agent Towns School System"/>
+  <Entry name="ABB" value="Master Property"/>
+  <Entry name="ABC" value="Project Property"/>
+  <Entry name="ABD" value="Unit Property"/>
+  <Entry name="ABE" value="Additional Address"/>
+  <Entry name="ABF" value="Society of Property Information Compilers and Analysts"/>
+  <Entry name="ABG" value="Organization"/>
+  <Entry name="ABH" value="Joint Owner Annuitant"/>
+  <Entry name="ABI" value="Joint Annuitant Owner"/>
+  <Entry name="ABJ" value="Joint Owner Annuitant Payor"/>
+  <Entry name="ABK" value="Joint Owner Joint Annuitant"/>
+  <Entry name="ABL" value="Joint Owner Joint Annuitant Payor"/>
+  <Entry name="ABM" value="Joint Owner Payor"/>
+  <Entry name="ABN" value="Acronym"/>
+  <Entry name="ABO" value="New Address"/>
+  <Entry name="ABP" value="Chairperson"/>
+  <Entry name="ABQ" value="Decision Maker"/>
+  <Entry name="ABR" value="Former President"/>
+  <Entry name="ABS" value="Founder"/>
+  <Entry name="ABT" value="Imported from Location"/>
+  <Entry name="ABU" value="Literally Translated Name"/>
+  <Entry name="ABV" value="Original Location"/>
+  <Entry name="ABW" value="President"/>
+  <Entry name="ABX" value="Rating Organization"/>
+  <Entry name="AC1" value="Regional Center"/>
+  <Entry name="AC2" value="Local Education Agency (LEA)"/>
+  <Entry name="AC3" value="State Education Agency"/>
+  <Entry name="ACB" value="Initial Medical Provider"/>
+  <Entry name="ACC" value="Concurrent Employer"/>
+  <Entry name="ACE" value="Routing Point"/>
+  <Entry name="ACF" value="Border Crossing"/>
+  <Entry name="ACG" value="Bobtail Service Point"/>
+  <Entry name="ACH" value="Auditor"/>
+  <Entry name="ACI" value="Insured Location"/>
+  <Entry name="ACJ" value="Referral Provider"/>
+  <Entry name="ACK" value="Affiliate"/>
+  <Entry name="ACL" value="Allied Health Professional"/>
+  <Entry name="ACM" value="Emergency Provider"/>
+  <Entry name="ACN" value="Federal Government"/>
+  <Entry name="ACO" value="Fellowship Institution"/>
+  <Entry name="ACP" value="Government - Combined Control"/>
+  <Entry name="ACQ" value="Government - Federal - Military"/>
+  <Entry name="ACR" value="Government - Federal - Other"/>
+  <Entry name="ACS" value="Government - Federal - Veterans"/>
+  <Entry name="ACT" value="Government - Local"/>
+  <Entry name="ACU" value="Group Affiliation"/>
+  <Entry name="ACV" value="Information Source"/>
+  <Entry name="ACW" value="Internship Entity"/>
+  <Entry name="ACX" value="Medical School"/>
+  <Entry name="ACY" value="National Organization"/>
+  <Entry name="ACZ" value="Non-Profit Health Care Provider See U.S. Internal Revenue Code Chapter 1, Subchapter F, Part 1, Section 501(c)"/>
+  <Entry name="ADA" value="Not for Profit Health Care Provider See U.S. Internal Revenue Code Chapter 1, Subchapter F, Part 1, Section 501(c)"/>
+  <Entry name="ADB" value="For Profit Health Care Provider"/>
+  <Entry name="ADC" value="Office Manager"/>
+  <Entry name="ADD" value="On-call Provider"/>
+  <Entry name="ADE" value="Physician Hospital Organization (PHO)"/>
+  <Entry name="ADF" value="Point of Service (POS)"/>
+  <Entry name="ADH" value="Residency Institution"/>
+  <Entry name="ADJ" value="Shared Service"/>
+  <Entry name="ADK" value="Supporting Personnel"/>
+  <Entry name="ADL" value="Training Institution"/>
+  <Entry name="ADM" value="Public School"/>
+  <Entry name="ADN" value="Private School"/>
+  <Entry name="ADO" value="Public Pre-K Education"/>
+  <Entry name="ADP" value="Private Pre-K Education"/>
+  <Entry name="ADQ" value="Pre-K Day Care"/>
+  <Entry name="ADR" value="Charter School"/>
+  <Entry name="ADS" value="Home School"/>
+  <Entry name="ADT" value="Public Alternative School"/>
+  <Entry name="ADU" value="Neglected/Delinquent Institution"/>
+  <Entry name="ADV" value="Post-Secondary Institution"/>
+  <Entry name="ADW" value="Food Service Operator"/>
+  <Entry name="ADX" value="Future Address"/>
+  <Entry name="ADY" value="Former Registered Address"/>
+  <Entry name="ADZ" value="Top Parent Company in Same Country"/>
+  <Entry name="AEA" value="Second Level Parent Company"/>
+  <Entry name="AEB" value="Airport Authority"/>
+  <Entry name="AEC" value="Council of Governments"/>
+  <Entry name="AED" value="Foundation"/>
+  <Entry name="AEE" value="Port Authority"/>
+  <Entry name="AEF" value="Planning Commission"/>
+  <Entry name="AEG" value="Car Rental Location"/>
+  <Entry name="AEI" value="Lodging Facility"/>
+  <Entry name="AEJ" value="Party to Receive Transportation Credit"/>
+  <Entry name="AEK" value="Party to Receive Packing, Crating, and Handling Credit"/>
+  <Entry name="AEL" value="Primary International Telecom Carrier"/>
+  <Entry name="ALA" value="Alternative Addressee"/>
+  <Entry name="ALO" value="Activity Location"/>
+  <Entry name="APR" value="Activity Provider"/>
+  <Entry name="ATA" value="Alternate Tax Authority"/>
+  <Entry name="AUO" value="Authorizing Official"/>
+  <Entry name="BAL" value="Bailiff"/>
+  <Entry name="BKR" value="Bookkeeper"/>
+  <Entry name="BLD" value="Building"/>
+  <Entry name="BLT" value="Structure"/>
+  <Entry name="BOW" value="Body of Water"/>
+  <Entry name="BRN" value="Brand Name"/>
+  <Entry name="BUS" value="Business"/>
+  <Entry name="CHA" value="Changed Address"/>
+  <Entry name="CLT" value="Building Cluster"/>
+  <Entry name="CMW" value="Company Merged With"/>
+  <Entry name="CNP" value="Confirming Party"/>
+  <Entry name="CNR" value="Confirmation Requester"/>
+  <Entry name="CNS" value="Confirmation Service Identifier Code"/>
+  <Entry name="COD" value="Co-Driver"/>
+  <Entry name="COL" value="Collateral Assignee"/>
+  <Entry name="COM" value="Complainant"/>
+  <Entry name="COR" value="Corrected Name"/>
+  <Entry name="DCC" value="Chief Deputy Clerk of Court"/>
+  <Entry name="DIR" value="Distribution Recipient"/>
+  <Entry name="EAA" value="Assistant"/>
+  <Entry name="EAB" value="Campaign Manager"/>
+  <Entry name="EAD" value="Client"/>
+  <Entry name="EAE" value="Commissioner"/>
+  <Entry name="EAF" value="Committee"/>
+  <Entry name="EAG" value="Contestant"/>
+  <Entry name="EAH" value="Contributor"/>
+  <Entry name="EAI" value="Deputy Chairperson"/>
+  <Entry name="EAJ" value="Deputy Treasurer"/>
+  <Entry name="EAK" value="Donor"/>
+  <Entry name="EAL" value="Endorser"/>
+  <Entry name="EAM" value="Guarantor"/>
+  <Entry name="EAN" value="Headquarters"/>
+  <Entry name="EAO" value="Independent Contractor"/>
+  <Entry name="EAP" value="Leader"/>
+  <Entry name="EAQ" value="Party Performing Liaison"/>
+  <Entry name="EAR" value="Lobbying Firm"/>
+  <Entry name="EAS" value="Lobbyist"/>
+  <Entry name="EAT" value="Media Contact"/>
+  <Entry name="EAU" value="Office Holder"/>
+  <Entry name="EAV" value="Party Authorized to Administer Oaths"/>
+  <Entry name="EAW" value="Party to Benefit"/>
+  <Entry name="EAX" value="Party Holding Interest"/>
+  <Entry name="EAY" value="Party Making Pledge"/>
+  <Entry name="EAZ" value="Party Returning Contribution"/>
+  <Entry name="EBA" value="Party Returning Transfer"/>
+  <Entry name="EBB" value="Lobbied Party"/>
+  <Entry name="EBC" value="Political Action Committee"/>
+  <Entry name="EBD" value="Political Party"/>
+  <Entry name="EBE" value="Proponent"/>
+  <Entry name="EBF" value="Public Official"/>
+  <Entry name="EBG" value="Receiving Committee"/>
+  <Entry name="EBH" value="Affiliated Committee"/>
+  <Entry name="EBI" value="Source"/>
+  <Entry name="EBJ" value="Sponsor"/>
+  <Entry name="EBK" value="Sponsored Committee"/>
+  <Entry name="EBL" value="Designee"/>
+  <Entry name="EBM" value="Temporary Residence"/>
+  <Entry name="EBN" value="Treasurer"/>
+  <Entry name="EBO" value="Vice-Chairperson"/>
+  <Entry name="EBP" value="Slate Mailer Organization"/>
+  <Entry name="EBQ" value="Lodging Location"/>
+  <Entry name="EBR" value="Independent Expenditure Committee"/>
+  <Entry name="EBS" value="Major Donor"/>
+  <Entry name="ENR" value="Enroller"/>
+  <Entry name="EXS" value="Ex-spouse"/>
+  <Entry name="FGT" value="Foreign Government"/>
+  <Entry name="FRL" value="Foreign Registration Location"/>
+  <Entry name="FSR" value="Financial Statement Recipient"/>
+  <Entry name="GBA" value="Alternate Government Business Contact"/>
+  <Entry name="GBP" value="Primary Government Business Contact"/>
+  <Entry name="GIR" value="Gift Recipient"/>
+  <Entry name="HMI" value="Material Safety Data Sheet (MSDS) Recipient"/>
+  <Entry name="HOM" value="Home Office"/>
+  <Entry name="HON" value="Honorary Society"/>
+  <Entry name="IAA" value="Business Entity"/>
+  <Entry name="IAC" value="Principal Executive Office"/>
+  <Entry name="IAD" value="Foreign Office"/>
+  <Entry name="IAE" value="Member"/>
+  <Entry name="IAF" value="Executive Committee Member"/>
+  <Entry name="IAG" value="Director"/>
+  <Entry name="IAH" value="Clerk"/>
+  <Entry name="IAI" value="Party with Knowledge of Affairs of the Company"/>
+  <Entry name="IAK" value="Party to Receive Statement of Fees Due"/>
+  <Entry name="IAL" value="Company in which Interest Held"/>
+  <Entry name="IAM" value="Company which Holds Interest"/>
+  <Entry name="IAN" value="Notary"/>
+  <Entry name="IAO" value="Manager"/>
+  <Entry name="IAP" value="Alien Affiliate"/>
+  <Entry name="IAQ" value="Incorporation State Principal Office"/>
+  <Entry name="IAR" value="Incorporation State Place of Business"/>
+  <Entry name="IAS" value="Out-of-State Principal Office"/>
+  <Entry name="IAT" value="Party Executing and Verifying"/>
+  <Entry name="IAU" value="Felon"/>
+  <Entry name="IAV" value="Other Related Party"/>
+  <Entry name="IAW" value="Record-Keeping Address"/>
+  <Entry name="IAY" value="Initial Subscriber"/>
+  <Entry name="IAZ" value="Original Jurisdiction"/>
+  <Entry name="ICP" value="Inventory Control Point"/>
+  <Entry name="IMM" value="Integrated Material Manager"/>
+  <Entry name="INT" value="Interviewee"/>
+  <Entry name="INV" value="Investment Advisor"/>
+  <Entry name="LCN" value="Gas Nomination Location"/>
+  <Entry name="LGS" value="Local Government Sponsor"/>
+  <Entry name="LYM" value="Amended Name"/>
+  <Entry name="LYN" value="Stockholder"/>
+  <Entry name="LYO" value="Managing Agent"/>
+  <Entry name="LYP" value="Organizer"/>
+  <Entry name="MSC" value="Mammography Screening Center"/>
+  <Entry name="NCT" value="Name Changed To"/>
+  <Entry name="NPC" value="Notary Public"/>
+  <Entry name="ORI" value="Original Name"/>
+  <Entry name="OSH" value="Off-Site Handler"/>
+  <Entry name="OUC" value="Other Unlisted Type of Corporation"/>
+  <Entry name="PIC" value="Primary Inventory Control Activity"/>
+  <Entry name="PLC" value="Law Enforcement Agency"/>
+  <Entry name="PLR" value="Payer of Last Resort"/>
+  <Entry name="PMC" value="Prior Mortgage Company"/>
+  <Entry name="PMF" value="Party Manufactured For"/>
+  <Entry name="PPC" value="Past Performance Contact"/>
+  <Entry name="PPS" value="Person for Whose Benefit Property was Seized"/>
+  <Entry name="PRE" value="Previous Owner"/>
+  <Entry name="PRO" value="Prospect Service"/>
+  <Entry name="PRP" value="Primary Payer"/>
+  <Entry name="PUR" value="Purchased Company"/>
+  <Entry name="RCR" value="Recovery Room"/>
+  <Entry name="REC" value="Receiver Manager"/>
+  <Entry name="RGA" value="Responsible Government Agency"/>
+  <Entry name="SEP" value="Secondary Payer"/>
+  <Entry name="SIC" value="Secondary Inventory Control Activity"/>
+  <Entry name="SUS" value="Supply Source"/>
+  <Entry name="TEC" value="Tax Exempt Corporation"/>
+  <Entry name="TOW" value="Towing Agency"/>
+  <Entry name="TPM" value="Third Party Marketer"/>
+  <Entry name="TSD" value="Treatment, Storage or Disposal Facility"/>
+  <Entry name="TSE" value="Consignee Courier Transfer Station"/>
+  <Entry name="TSR" value="Consignor Courier Transfer Station"/>
+  <Entry name="TTP" value="Tertiary Payer"/>
+  <Entry name="VER" value="Party Performing Verification"/>
+  <Entry name="VIC" value="Victim"/>
+</Table>

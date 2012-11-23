@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RA" comment="To indicate a route code and other codes which define the use of the RB and FK segments which follow">
+  <Field name="RouteCode" min="1" max="13" comment="Mutually defined route code"/>
+  <Field name="RateValueQualifier1" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="AlternationPrecedenceCode" required="y" min="1" max="1" validation="T629" comment="Code identifying the priority of rate application when two or more rates apply to a given movement; if rate application includes two or more rates of the same value for this element, individual carrier rules and procedures shall govern"/>
+  <Field name="NumberOfRates" type="long" required="y" min="1" max="1" comment="Number of RB segments that are in the given loop iteration"/>
+  <Field name="UnitConversionFactor" type="double" required="y" min="1" max="9" comment="Identifies the weight in pounds of units specified by data element 122 Applicable to Rates"/>
+  <Field name="RateLevelQualifierCode" required="y" min="1" max="1" validation="T856" comment="Code identifying the type of rate level used"/>
+  <Field name="RateLevel" required="y" min="1" max="5" comment="Identifies the broad tariff change which is reflected in the rate amounts and need not be separately applied; when a rail carrier's cost recovery (RCCR) change is not applicable, then &quot;N/A&quot; will appear in this element"/>
+  <Field name="Date1" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+</Segment>

@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: RU1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="RU1" comment="To communicate information (from the United States Railroad Retirement Board to the employing carrier) pertinent to the processing of retirement claims">
+  <Field name="RailRetirementActivityCode" min="1" max="1" validation="T535" comment="Code used to identify the activity being conveyed"/>
+  <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Name" min="1" max="60" comment="Free-form name"/>
+  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="Date1" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="EmploymentCode" required="y" min="1" max="1" validation="T537" comment="Code indicating the type of last employer"/>
+  <Field name="UnemployedReasonCode" required="y" min="1" max="1" validation="T545" comment="Code indicating reason reported by claimant for not now working"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ClaimProfile" required="y" min="14" max="14" comment="A series of code entries which identify the claimed status of an employee for each day in the 14-day claim cycle for unemployment or sickness benefits"/>
+</Segment>

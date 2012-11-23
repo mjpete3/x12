@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BAU.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BAU" comment="To identify the beginning of the Debit Authorization Transaction Set; the BAU segment is used to identify the financial institution and account of the payer (i.e., the party authorizing the debit against its account)">
+  <Field name="ReferenceIdentification" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="PaymentMethodCode" min="3" max="3" validation="T591" comment="Code identifying the method for the movement of payment instructions"/>
+  <Field name="DFIIdNumberQualifier" min="2" max="2" validation="T506" comment="Code identifying the type of identification number of Depository Financial Institution (DFI)"/>
+  <Field name="DFIIdentificationNumber" min="3" max="12" comment="Depository Financial Institution (DFI) identification number"/>
+  <Field name="AccountNumber" min="1" max="35" comment="Account number assigned"/>
+  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
+</Segment>

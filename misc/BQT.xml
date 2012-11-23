@@ -1,0 +1,38 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: BQT.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="BQT" comment="To indicate the beginning of a Request for Quotation Transaction Set and transmit identifying numbers and dates">
+  <Field name="TransactionSetPurposeCode" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+  <Field name="RequestForQuoteReferenceNumber" min="1" max="45" comment="Number assigned by the purchaser to identify his request for quote"/>
+  <Field name="Date1" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="DateTimeQualifier" required="y" min="3" max="3" validation="T374" comment="Code specifying type of date or time, or both date and time"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="PurchaseOrderTypeCode" required="y" min="2" max="2" validation="T92" comment="Code specifying the type of Purchase Order"/>
+  <Field name="RequestForQuoteTypeCode" required="y" min="2" max="2" validation="T960" comment="Code specifying the type of request for quote"/>
+  <Field name="ContractTypeCode" required="y" min="2" max="2" validation="T1166" comment="Code identifying a contract type"/>
+  <Field name="SecurityLevelCode" required="y" min="2" max="2" validation="T786" comment="Code indicating the level of confidentiality assigned by the sender to the information following"/>
+  <Field name="PurchaseCategory" required="y" min="2" max="2" validation="T1232" comment="Code identifying the broad category of products or services being acquired"/>
+  <Field name="ChangeOrderSequenceNumber" required="y" min="1" max="8" comment="Number assigned by the orderer identifying a specific change or revision to a previously transmitted transaction set"/>
+</Segment>

@@ -1,0 +1,68 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1029.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1029">
+  <Entry name="1" value="Processed as Primary"/>
+  <Entry name="2" value="Processed as Secondary"/>
+  <Entry name="3" value="Processed as Tertiary"/>
+  <Entry name="4" value="Denied"/>
+  <Entry name="5" value="Pended"/>
+  <Entry name="6" value="Approved as amended"/>
+  <Entry name="7" value="Approved as submitted"/>
+  <Entry name="8" value="Cancelled due to inactivity"/>
+  <Entry name="9" value="Pending - under investigation"/>
+  <Entry name="I" value="Initial"/>
+  <Entry name="10" value="Received, but not in process"/>
+  <Entry name="11" value="Rejected, duplicate claim"/>
+  <Entry name="12" value="Rejected, please resubmit with corrections"/>
+  <Entry name="13" value="Suspended"/>
+  <Entry name="14" value="Suspended - incomplete claim"/>
+  <Entry name="15" value="Suspended - investigation with field"/>
+  <Entry name="16" value="Suspended - return with material"/>
+  <Entry name="17" value="Suspended - review pending"/>
+  <Entry name="18" value="Suspended Product Registration"/>
+  <Entry name="19" value="Processed as Primary, Forwarded to Additional Payer(s)"/>
+  <Entry name="20" value="Processed as Secondary, Forwarded to Additional Payer(s)"/>
+  <Entry name="21" value="Processed as Tertiary, Forwarded to Additional Payer(s)"/>
+  <Entry name="22" value="Reversal of Previous Payment"/>
+  <Entry name="23" value="Not Our Claim, Forwarded to Additional Payer(s)"/>
+  <Entry name="24" value="Transferred to Proper Carrier"/>
+  <Entry name="25" value="Predetermination Pricing Only - No Payment"/>
+  <Entry name="26" value="Documentation Claim - No Payment Associated"/>
+  <Entry name="27" value="Reviewed"/>
+  <Entry name="28" value="Repriced"/>
+  <Entry name="29" value="Audited"/>
+  <Entry name="30" value="Processed as Conditional"/>
+  <Entry name="AD" value="Additional"/>
+  <Entry name="AP" value="Appealed"/>
+  <Entry name="CC" value="Weekly Certification"/>
+  <Entry name="CL" value="Closed"/>
+  <Entry name="CP" value="Open"/>
+  <Entry name="RA" value="Reaudited"/>
+  <Entry name="RB" value="Reissue"/>
+  <Entry name="RC" value="Reopened and Closed"/>
+  <Entry name="RD" value="Redetermination"/>
+  <Entry name="RO" value="Reopened"/>
+</Table>

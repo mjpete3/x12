@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G19.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G19" comment="To specify details when differences exist between 1) Quantities ordered/quantities shipped 2) Units of measurement 3) Pricing 4) Coupons redeemed/validated">
+  <Field name="NumberOfUnitsShipped" type="double" required="y" min="1" max="10" comment="Numeric value of units shipped in manufacturer's shipping units for a line item or transaction set"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="QuantityDifference" type="double" required="y" min="1" max="9" comment="Numeric value of variance between ordered and shipped quantities"/>
+  <Field name="ShipmentOrderStatusCode" required="y" min="2" max="2" validation="T368" comment="Code indicating the status of an order or shipment or the disposition of any difference between the quantity ordered and the quantity shipped for a line item or transaction"/>
+  <Field name="PriceReasonCode" required="y" min="1" max="1" validation="T381" comment="Code identifying reason for differences in price or coupons redeemed"/>
+  <Field name="TermsExceptionCode" required="y" min="2" max="2" validation="T445" comment="Code specifying the type of terms exception"/>
+  <Field name="UPCCaseCode" required="y" min="12" max="12" comment="Code (Universal Product Code - U.P.C.) including two high order digits identifying the &quot;system&quot; (U.S. Grocery = 00, 06 or 07; U.S. Drug = 03); using the U.S. Grocery system, the next ten digits are: Manufacturer (5) Case Code (5)"/>
+  <Field name="ProductServiceIdQualifier" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+</Segment>

@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: G07.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="G07" comment="To identify carrier equipment and condition of shipment">
+  <Field name="EquipmentInitial" required="y" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" required="y" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="SealNumber1" required="y" min="2" max="15" comment="Unique number on seal used to close a shipment"/>
+  <Field name="SealNumber2" required="y" min="2" max="15" comment="Unique number on seal used to close a shipment"/>
+  <Field name="SealStatusCode" required="y" min="2" max="2" validation="T407" comment="Code indicating condition of door seal upon arrival"/>
+  <Field name="Temperature" type="double" required="y" min="1" max="4" comment="Temperature"/>
+</Segment>

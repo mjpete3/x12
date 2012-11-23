@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TMD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TMD" comment="To describe the nature of the test performed">
+  <Field name="ProductProcessCharacteristicCode" required="y" min="2" max="3" validation="T750" comment="Code identifying the general class of a product or process characteristic"/>
+  <Field name="AgencyQualifierCode" required="y" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+  <Field name="ProductDescriptionCode" required="y" min="1" max="12" comment="A code from an industry code list which provides specific data about a product characteristic"/>
+  <Field name="TestAdministrationMethodCode" required="y" min="2" max="2" validation="T937" comment="Code specifying the method of administering the test"/>
+  <Field name="TestMediumCode" required="y" min="2" max="2" validation="T938" comment="Code specifying organism on which the test was performed"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="SourceSubqualifier" required="y" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+</Segment>

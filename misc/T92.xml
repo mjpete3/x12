@@ -1,0 +1,98 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T92.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T92">
+  <Entry name="AB" value="Assortment Against Blanket"/>
+  <Entry name="AC" value="AOG (Aircraft on Ground) Critical"/>
+  <Entry name="AO" value="AOG (Aircraft on Ground) Service"/>
+  <Entry name="BD" value="Bidding"/>
+  <Entry name="BE" value="Blanket Order/Estimated Quantities (Not firm Commitment)"/>
+  <Entry name="BH" value="Bill and Hold"/>
+  <Entry name="BK" value="Blanket Order (Quantity Firm)"/>
+  <Entry name="BL" value="Bailment"/>
+  <Entry name="BQ" value="Budgetary Quote"/>
+  <Entry name="BY" value="Buying"/>
+  <Entry name="CA" value="Contract Award Notification"/>
+  <Entry name="CC" value="Change to Contract"/>
+  <Entry name="CF" value="Confirmation"/>
+  <Entry name="CN" value="Consigned Order"/>
+  <Entry name="CO" value="Catalog Order"/>
+  <Entry name="CP" value="Change to Purchase Order"/>
+  <Entry name="CR" value="Change to Release"/>
+  <Entry name="DR" value="Direct Ship"/>
+  <Entry name="DS" value="Dropship"/>
+  <Entry name="EO" value="Emergency Order"/>
+  <Entry name="FF" value="Formula Funds"/>
+  <Entry name="FH" value="Fabricate and Hold"/>
+  <Entry name="IN" value="Information Copy"/>
+  <Entry name="JL" value="Job Lot"/>
+  <Entry name="KA" value="Agreement"/>
+  <Entry name="KB" value="Blanket Purchase Agreement"/>
+  <Entry name="KC" value="Contract"/>
+  <Entry name="KD" value="Basic Agreement"/>
+  <Entry name="KE" value="Basic Ordering Agreement"/>
+  <Entry name="KG" value="Grant"/>
+  <Entry name="KI" value="Indefinite Delivery Indefinite Quantity"/>
+  <Entry name="KN" value="Purchase Order"/>
+  <Entry name="KO" value="Close Out"/>
+  <Entry name="KP" value="Authority to Proceed"/>
+  <Entry name="KQ" value="Indefinite Delivery Definite Quantity"/>
+  <Entry name="KR" value="Requirements"/>
+  <Entry name="KS" value="Letter Contract"/>
+  <Entry name="KT" value="Task Order"/>
+  <Entry name="LB" value="Lease (Blanket Agreement)"/>
+  <Entry name="LN" value="Loan"/>
+  <Entry name="LS" value="Lease"/>
+  <Entry name="NE" value="New Order"/>
+  <Entry name="NO" value="Not for Sale"/>
+  <Entry name="NP" value="New Product Introduction"/>
+  <Entry name="NS" value="New Store Opening"/>
+  <Entry name="OS" value="Special Order"/>
+  <Entry name="PR" value="Promotion"/>
+  <Entry name="RA" value="Release Against Assortment"/>
+  <Entry name="RC" value="Retailer Pre-commitment"/>
+  <Entry name="RE" value="Reorder"/>
+  <Entry name="RL" value="Release or Delivery Order"/>
+  <Entry name="RN" value="Renewal Order"/>
+  <Entry name="RO" value="Rush Order"/>
+  <Entry name="RR" value="Repair and Return"/>
+  <Entry name="RT" value="Rental"/>
+  <Entry name="RU" value="Record Update Service"/>
+  <Entry name="RW" value="Resume Work Order"/>
+  <Entry name="SA" value="Stand-alone Order"/>
+  <Entry name="SO" value="Shipped Order"/>
+  <Entry name="SP" value="Sample"/>
+  <Entry name="SS" value="Supply or Service Order"/>
+  <Entry name="ST" value="Standing Order"/>
+  <Entry name="SW" value="Stop Work"/>
+  <Entry name="TC" value="Toll Conversion Order"/>
+  <Entry name="TM" value="Time &amp; Materials"/>
+  <Entry name="TR" value="Termination"/>
+  <Entry name="UD" value="Unit Down"/>
+  <Entry name="UE" value="Unit Exchange"/>
+  <Entry name="US" value="Urgent Service Request"/>
+  <Entry name="WO" value="Warranty Order"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

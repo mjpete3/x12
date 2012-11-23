@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TXN.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TXN" comment="To indicate EDI transaction capabilities">
+  <Field name="ActionCode1" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="ResponsibleAgencyCode" required="y" min="1" max="2" validation="T455" comment="Code identifying the issuer of the standard; this code is used in conjunction with Data Element 480"/>
+  <Field name="TransactionSetIdentifierCode" required="y" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
+  <Field name="VersionReleaseIndustryIdentifierCode" required="y" min="1" max="12" validation="T480" comment="Code indicating the version, release, subrelease, and industry identifier of the EDI standard being used, including the GS and GE segments; if code in DE455 in GS segment is X, then in DE 480 positions 1-3 are the version number; positions 4-6 are the release and subrelease, level of the version; and positions 7-12 are the industry or trade association identifiers (optionally assigned by user); if code in DE455 in GS segment is T, then other formats are allowed"/>
+  <Field name="ActionCode2" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
+  <Field name="ApplicationReceiversCode" required="y" min="2" max="15" comment="Code identifying party receiving transmission; codes agreed to by trading partners"/>
+  <Field name="ApplicationSendersCode" required="y" min="2" max="15" comment="Code identifying party sending transmission; codes agreed to by trading partners"/>
+  <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="Time" required="y" min="4" max="8" comment="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"/>
+  <Field name="StandardsInformation" type="C053" required="y" min="0" max="inf" comment="To identify the EDI standard, version, release and any applicable industry guideline"/>
+</Segment>

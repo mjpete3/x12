@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1729.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1729">
+  <Entry name="1" value="Certification"/>
+  <Entry name="2" value="License"/>
+  <Entry name="3" value="Degree"/>
+  <Entry name="4" value="Registration"/>
+  <Entry name="5" value="Endorsement"/>
+  <Entry name="6" value="Postsecondary"/>
+  <Entry name="7" value="Reference Verification"/>
+  <Entry name="8" value="Publication"/>
+  <Entry name="9" value="Other Formal Training"/>
+  <Entry name="Y" value="Other"/>
+  <Entry name="10" value="Personal Development"/>
+  <Entry name="11" value="Performance"/>
+  <Entry name="12" value="High School"/>
+  <Entry name="13" value="Membership"/>
+  <Entry name="14" value="Activity"/>
+  <Entry name="15" value="Full Credential"/>
+  <Entry name="16" value="Permit"/>
+  <Entry name="17" value="Background Verification"/>
+  <Entry name="18" value="Security Verification"/>
+  <Entry name="19" value="Staff Development"/>
+  <Entry name="20" value="Display"/>
+</Table>

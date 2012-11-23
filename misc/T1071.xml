@@ -1,0 +1,104 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1071.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1071">
+  <Entry name="01" value="Hazard Insurance"/>
+  <Entry name="02" value="Mortgage Insurance"/>
+  <Entry name="03" value="Renters Insurance"/>
+  <Entry name="04" value="Flood Insurance"/>
+  <Entry name="05" value="Homeowners Insurance"/>
+  <Entry name="06" value="Homeowners Association Dues"/>
+  <Entry name="07" value="Termite Insurance"/>
+  <Entry name="08" value="Gas"/>
+  <Entry name="09" value="Electricity"/>
+  <Entry name="10" value="Sewers"/>
+  <Entry name="11" value="Septic Tank"/>
+  <Entry name="12" value="Ground Rent"/>
+  <Entry name="13" value="Water"/>
+  <Entry name="14" value="Real Estate Tax"/>
+  <Entry name="15" value="Front Foot Tax"/>
+  <Entry name="16" value="Sewer Tax"/>
+  <Entry name="17" value="Garbage, School and Other Service Taxes"/>
+  <Entry name="18" value="Easement Tax"/>
+  <Entry name="19" value="Surcharges"/>
+  <Entry name="20" value="Condominium Fee"/>
+  <Entry name="21" value="Principal, Interest, Taxes, and Insurance (PITI)"/>
+  <Entry name="22" value="Other Financing Principal and Interest"/>
+  <Entry name="23" value="Other General Expenses"/>
+  <Entry name="24" value="Total Proposed Housing"/>
+  <Entry name="25" value="Rent"/>
+  <Entry name="26" value="First Mortgage Principal and Interest"/>
+  <Entry name="27" value="Total Present Housing Expense"/>
+  <Entry name="28" value="Estimated Taxes"/>
+  <Entry name="29" value="Special Assessment"/>
+  <Entry name="30" value="Actual Real Estate Taxes"/>
+  <Entry name="31" value="Estimated Real Estate Taxes"/>
+  <Entry name="32" value="Tax Rate per $100"/>
+  <Entry name="33" value="Other Taxes or Assessment"/>
+  <Entry name="34" value="Licenses"/>
+  <Entry name="35" value="Fuel"/>
+  <Entry name="36" value="Water and Sewer"/>
+  <Entry name="37" value="Trash Removal"/>
+  <Entry name="38" value="Pest Control"/>
+  <Entry name="39" value="Building Maintenance and Repair"/>
+  <Entry name="40" value="Interior and Exterior Decorating"/>
+  <Entry name="41" value="Cleaning Expenses"/>
+  <Entry name="42" value="Supplies"/>
+  <Entry name="43" value="Elevator Maintenance"/>
+  <Entry name="44" value="Pool Maintenance"/>
+  <Entry name="45" value="Parking Area Maintenance and Snow Removal"/>
+  <Entry name="46" value="Gardening"/>
+  <Entry name="47" value="Nonresident Manager"/>
+  <Entry name="48" value="Resident Manager's Apartment Allowance"/>
+  <Entry name="49" value="Custodian's Apartment Allowance"/>
+  <Entry name="50" value="Advertising"/>
+  <Entry name="51" value="Telephone"/>
+  <Entry name="52" value="Leased Furniture"/>
+  <Entry name="53" value="Carpeting and Drapes"/>
+  <Entry name="54" value="Ranges and Refrigerators"/>
+  <Entry name="55" value="Dishwashers and Disposals"/>
+  <Entry name="56" value="Individual Heating and Air Conditioning Units"/>
+  <Entry name="57" value="Association Fee"/>
+  <Entry name="58" value="Club House Fee"/>
+  <Entry name="59" value="Pool Usage Fee"/>
+  <Entry name="60" value="Dockage Fee"/>
+  <Entry name="61" value="Optional Services Fee"/>
+  <Entry name="62" value="Total"/>
+  <Entry name="63" value="Management"/>
+  <Entry name="64" value="Net Operating"/>
+  <Entry name="65" value="Build-out Allowance"/>
+  <Entry name="66" value="Maintenance Fee"/>
+  <Entry name="67" value="Unit Charge"/>
+  <Entry name="68" value="Earthquake Insurance"/>
+  <Entry name="69" value="Leasehold Payments"/>
+  <Entry name="91" value="Insurance - Total"/>
+  <Entry name="92" value="Public Utility - Total"/>
+  <Entry name="93" value="Taxes - Total"/>
+  <Entry name="94" value="Community Fees - Total"/>
+  <Entry name="95" value="Total Monthly Debt"/>
+  <Entry name="96" value="First Mortgage Monthly Principal and Interest"/>
+  <Entry name="97" value="Second Mortgage Monthly Principal and Interest"/>
+  <Entry name="98" value="Other Principal and Interest"/>
+</Table>

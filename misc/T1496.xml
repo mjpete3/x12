@@ -1,0 +1,81 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1496.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1496">
+  <Entry name="01" value="Map Cover &amp; Sublot Number"/>
+  <Entry name="02" value="Metes &amp; Bounds"/>
+  <Entry name="03" value="Section, Lot, and Block"/>
+  <Entry name="04" value="Tax Identification"/>
+  <Entry name="05" value="Parcel Identification Number"/>
+  <Entry name="06" value="Lot or Unit Number"/>
+  <Entry name="07" value="Block or Building"/>
+  <Entry name="08" value="Subdivision"/>
+  <Entry name="09" value="Section"/>
+  <Entry name="10" value="Arbitrary Number"/>
+  <Entry name="11" value="Book (Liber)"/>
+  <Entry name="12" value="Page (Folio)"/>
+  <Entry name="13" value="Outlot"/>
+  <Entry name="14" value="Baseline"/>
+  <Entry name="15" value="Survey Description"/>
+  <Entry name="16" value="Torrens Property Number"/>
+  <Entry name="17" value="Legal"/>
+  <Entry name="18" value="Appraisal Description"/>
+  <Entry name="19" value="Neighborhood or Project Name"/>
+  <Entry name="20" value="Multiple Listing Service Area or District"/>
+  <Entry name="21" value="Multiple Listing Service Sub-Area or Sub-District"/>
+  <Entry name="22" value="Property Identification"/>
+  <Entry name="23" value="Mobile Home Park"/>
+  <Entry name="26" value="Tract Number"/>
+  <Entry name="27" value="Square"/>
+  <Entry name="28" value="City"/>
+  <Entry name="29" value="Range"/>
+  <Entry name="30" value="Lot"/>
+  <Entry name="31" value="Unit Number"/>
+  <Entry name="32" value="Land Lot"/>
+  <Entry name="33" value="County"/>
+  <Entry name="34" value="Township"/>
+  <Entry name="35" value="Acreage"/>
+  <Entry name="36" value="Record of Survey"/>
+  <Entry name="37" value="Plat Map"/>
+  <Entry name="38" value="Parcel Map"/>
+  <Entry name="39" value="Licensed Survey"/>
+  <Entry name="40" value="Subdivision Map"/>
+  <Entry name="41" value="Official Record"/>
+  <Entry name="42" value="Deed"/>
+  <Entry name="43" value="Miscellaneous Map"/>
+  <Entry name="44" value="Miscellaneous Record"/>
+  <Entry name="45" value="State"/>
+  <Entry name="46" value="Country"/>
+  <Entry name="47" value="Block"/>
+  <Entry name="48" value="Building"/>
+  <Entry name="49" value="Real Estate Development Project"/>
+  <Entry name="50" value="Master Real Estate Development Project"/>
+  <Entry name="51" value="Phase"/>
+  <Entry name="52" value="Ward"/>
+  <Entry name="53" value="District"/>
+  <Entry name="54" value="Borough"/>
+  <Entry name="55" value="Village"/>
+  <Entry name="56" value="Parish"/>
+</Table>

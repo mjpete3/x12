@@ -1,0 +1,59 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T345.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T345">
+  <Entry name="AA" value="From date of PO receipt to sample ready"/>
+  <Entry name="AB" value="From date of tooling authorization to sample ready"/>
+  <Entry name="AC" value="From date of receipt of tooling aids to sample ready"/>
+  <Entry name="AD" value="From date of sample approval to first product shipment"/>
+  <Entry name="AE" value="From date of PO receipt to shipment"/>
+  <Entry name="AF" value="From date of PO receipt to delivery"/>
+  <Entry name="AG" value="From last booked order to delivery"/>
+  <Entry name="AH" value="From Date of Receipt of First Article to First Article Approval"/>
+  <Entry name="AI" value="From Date of a Specified Event to Delivery"/>
+  <Entry name="AJ" value="From Date of First Delivery to Date of Subsequent Delivery(ies)"/>
+  <Entry name="AK" value="From Date Of Latest Delivery To Final Delivery"/>
+  <Entry name="AL" value="From Date Of Purchase Order or Contract Receipt To Product Ready"/>
+  <Entry name="AM" value="From Date Of Previous Delivery To Date Of Subsequent Delivery"/>
+  <Entry name="AP" value="From Date of Award to Midpoint of Effort"/>
+  <Entry name="AR" value="From Date of Award to Government Receipt of Bond"/>
+  <Entry name="AS" value="Before inventory is replenished based on stock check"/>
+  <Entry name="AT" value="From Bid Opening to Expiration of Bid"/>
+  <Entry name="AU" value="From Required-By Date to Expiration Date"/>
+  <Entry name="AV" value="From Date of Award to Date of Latest Delivery"/>
+  <Entry name="AW" value="From Date of Award to Date of Earliest Delivery"/>
+  <Entry name="AX" value="From Date of Award to Date of Completion"/>
+  <Entry name="AY" value="From Date of Award to Date of Delivery"/>
+  <Entry name="AZ" value="From Date of Receipt of Item to Date of Approval of Item"/>
+  <Entry name="BA" value="From Date of Award to Expiration Date of Authorization"/>
+  <Entry name="BB" value="From Date of Order Preparation to Date of Order Placement"/>
+  <Entry name="BC" value="From Date of Award to Commencement of Performance"/>
+  <Entry name="BD" value="From Date of Award to Date of Option Exercise"/>
+  <Entry name="BE" value="From Date of Option Exercise to Date of Completion"/>
+  <Entry name="BF" value="From Date of Option Exercise to Date of Delivery"/>
+  <Entry name="BG" value="From Date of a Specified Event to Date of Option Exercise"/>
+  <Entry name="BH" value="From Date of Notice to Proceed to Commencement of Performance"/>
+  <Entry name="BI" value="From Date of Notice to Proceed to Completion"/>
+</Table>

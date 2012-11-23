@@ -1,0 +1,103 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T422.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T422">
+  <Entry name="01" value="Product Allocation"/>
+  <Entry name="02" value="Number of Buy Restriction"/>
+  <Entry name="03" value="Promotion Period Restriction"/>
+  <Entry name="04" value="Special Promotional Discount Terms"/>
+  <Entry name="05" value="Number of Shipment Restrictions"/>
+  <Entry name="06" value="Minimum Order Quantity Required"/>
+  <Entry name="07" value="Minimum Order Quantity Required - Any Combination of Products"/>
+  <Entry name="08" value="Maximum Retail Price"/>
+  <Entry name="10" value="Ad, Size Not Specified"/>
+  <Entry name="11" value="Ad, 1 Col Inch"/>
+  <Entry name="12" value="Ad, 2 Col Inch"/>
+  <Entry name="13" value="Ad, 3 Col Inch"/>
+  <Entry name="14" value="Ad, 4 Col Inch"/>
+  <Entry name="15" value="Ad, 5 Col Inch"/>
+  <Entry name="16" value="Ad, 6 Col Inch or Greater"/>
+  <Entry name="17" value="Ad, Full Page"/>
+  <Entry name="18" value="Ad, Half Page"/>
+  <Entry name="19" value="Ad, Quarter Page"/>
+  <Entry name="20" value="Ad, Coupon"/>
+  <Entry name="21" value="Ad, Color"/>
+  <Entry name="22" value="Ad, Product Illustration"/>
+  <Entry name="23" value="Ad, National Line Rate"/>
+  <Entry name="25" value="Ad, Roto"/>
+  <Entry name="26" value="Ad, Free Standing"/>
+  <Entry name="28" value="Ad, Window Signs"/>
+  <Entry name="32" value="Ad, Price Reduction"/>
+  <Entry name="33" value="Ad, Circulars"/>
+  <Entry name="34" value="Ad, Television"/>
+  <Entry name="35" value="Ad, Radio"/>
+  <Entry name="36" value="Ad, Handbill"/>
+  <Entry name="37" value="Ad, Newspaper Insert"/>
+  <Entry name="39" value="Ad, See Free Form Message"/>
+  <Entry name="40" value="Display"/>
+  <Entry name="41" value="Display, End Aisle"/>
+  <Entry name="42" value="Display, Aisle Stack"/>
+  <Entry name="44" value="Display, Cases per Store"/>
+  <Entry name="45" value="Display, Number of Days"/>
+  <Entry name="46" value="Display, Shelf Extender"/>
+  <Entry name="49" value="Display, Number of Stores"/>
+  <Entry name="51" value="Display, Price Reduction"/>
+  <Entry name="59" value="Display, See Free Form Message"/>
+  <Entry name="60" value="Reduced Price"/>
+  <Entry name="61" value="Reduced Price, Number of Days"/>
+  <Entry name="62" value="Reduced Price With Shelf Sign"/>
+  <Entry name="63" value="Reduced Price, In Price/Order Guide"/>
+  <Entry name="64" value="Reduced Price, In Store Coupons"/>
+  <Entry name="69" value="Reduced Price, See Free Form Message"/>
+  <Entry name="70" value="Retail Distribution (One Case per Store)"/>
+  <Entry name="71" value="Retail Distribution (X Cases per Store)"/>
+  <Entry name="72" value="Retail Distribution (X Number of Stores)"/>
+  <Entry name="73" value="Committed Purchases"/>
+  <Entry name="74" value="Growth Over Last Year"/>
+  <Entry name="75" value="Growth Over Last Month"/>
+  <Entry name="76" value="Resale"/>
+  <Entry name="77" value="Growth Over Last Quarter"/>
+  <Entry name="79" value="Retail Distribution"/>
+  <Entry name="81" value="Accrual Limit"/>
+  <Entry name="82" value="Flat Limit"/>
+  <Entry name="83" value="Number of Required Promotion Performances"/>
+  <Entry name="84" value="Product Scanning Report Required"/>
+  <Entry name="88" value="Advertisement or Display or Reduced Price"/>
+  <Entry name="99" value="See Free Form Text"/>
+  <Entry name="A1" value="Ad, Size A"/>
+  <Entry name="A2" value="Ad, Size B"/>
+  <Entry name="A3" value="Ad, Size C"/>
+  <Entry name="A4" value="In-Store Electronics"/>
+  <Entry name="A5" value="Ad, Double Page"/>
+  <Entry name="B1" value="Every Day Low Pricing"/>
+  <Entry name="B2" value="Demonstration Required"/>
+  <Entry name="B3" value="Ad, Predominant With Reduced Price"/>
+  <Entry name="C1" value="Value Pack Program"/>
+  <Entry name="C2" value="Educational Program"/>
+  <Entry name="C3" value="Freestanding Shipper Display"/>
+  <Entry name="C4" value="Refrigerated Table"/>
+  <Entry name="WR" value="Warehouse Withdrawal Report Required"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>

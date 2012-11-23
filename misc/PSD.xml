@@ -1,0 +1,36 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: PSD.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="PSD" comment="To define the physical sample parameters associated with a test resulting in discrete measurements">
+  <Field name="SampleProcessStatusCode" required="y" min="2" max="2" validation="T939" comment="Code specifying the stage in the product development cycle at which the specimen was selected for testing"/>
+  <Field name="SampleSelectionMethodCode" required="y" min="2" max="2" validation="T940" comment="Code denoting the method of selecting the specimen"/>
+  <Field name="SampleFrequencyValuePerUnitOfMeasurementCode" type="long" required="y" min="1" max="9" comment="The number of samples collected"/>
+  <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+  <Field name="SampleDescriptionCode" required="y" min="2" max="2" validation="T943" comment="Code describing the physical configuration or condition of the test specimen"/>
+  <Field name="SampleDirectionCode" required="y" min="2" max="2" validation="T944" comment="Code specifying the direction in which the sample was collected or tested"/>
+  <Field name="PositionCode" required="y" min="2" max="2" validation="T945" comment="Code specifying the position of an item such as the location, within a specimen, from which the sample was taken; the position of a coupon within an advertisement; etc"/>
+  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="SampleSelectionModulus" type="double" required="y" min="1" max="6" comment="To specify the sampling frequency in terms of a modulus of the Unit of Measure, e.g., every fifth bag, every 1.5 minutes"/>
+</Segment>

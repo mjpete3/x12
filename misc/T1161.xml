@@ -1,0 +1,57 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1161.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1161">
+  <Entry name="1" value="Pretax"/>
+  <Entry name="2" value="Post-tax"/>
+  <Entry name="3" value="Qualified"/>
+  <Entry name="4" value="Non-qualified"/>
+  <Entry name="5" value="401K"/>
+  <Entry name="6" value="Individual Retirement Account"/>
+  <Entry name="7" value="Keogh"/>
+  <Entry name="8" value="Simplified Employee Pension"/>
+  <Entry name="9" value="Single Premium"/>
+  <Entry name="A" value="First to Die"/>
+  <Entry name="B" value="Last to Die"/>
+  <Entry name="C" value="Child Rider"/>
+  <Entry name="D" value="Discontinue One-Bill Submission"/>
+  <Entry name="N" value="Benefit Continuation"/>
+  <Entry name="O" value="One-Bill Submission"/>
+  <Entry name="S" value="Salary Continuation"/>
+  <Entry name="10" value="Flexible Premium"/>
+  <Entry name="11" value="Variable Premium"/>
+  <Entry name="12" value="Fixed Premium"/>
+  <Entry name="13" value="Registered under the Income Tax Act of Canada"/>
+  <Entry name="14" value="Non-Registered under the Income Tax Act of Canada"/>
+  <Entry name="15" value="Registered Spousal Case"/>
+  <Entry name="28" value="Exclusive"/>
+  <Entry name="29" value="Shopped"/>
+  <Entry name="30" value="Lead Reinsurer"/>
+  <Entry name="31" value="Facultative Excess"/>
+  <Entry name="BA" value="Bank Account"/>
+  <Entry name="GA" value="Government Allocation"/>
+  <Entry name="NC" value="One-Bill Submission Not Chosen"/>
+  <Entry name="PD" value="Payroll Deduction"/>
+</Table>

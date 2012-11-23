@@ -1,0 +1,48 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T988.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T988">
+  <Entry name="KD" value="Data Key"/>
+  <Entry name="KK" value="Key - Encrypting Key"/>
+  <Entry name="CTA" value="Count, &quot;A&quot;"/>
+  <Entry name="CTB" value="Count, &quot;B&quot;"/>
+  <Entry name="CTP" value="Count, Pair"/>
+  <Entry name="CTR" value="Count, &quot;R&quot;"/>
+  <Entry name="EDC" value="Error Detection Code"/>
+  <Entry name="ERF" value="Error Field"/>
+  <Entry name="IDA" value="Identity of Key for Authentication"/>
+  <Entry name="IDC" value="Identity of Key Distribution Center (CKD) or Key Translation Center (CKT)"/>
+  <Entry name="IDD" value="Discontinued Key Name"/>
+  <Entry name="IDU" value="Identity of Ultimate Recipient (the Security Recipient)"/>
+  <Entry name="KDU" value="Data Key, Notarized"/>
+  <Entry name="KKU" value="Key - Encrypting Key Notarized"/>
+  <Entry name="MAC" value="Message Authentication Code"/>
+  <Entry name="NOS" value="Notarization Flag"/>
+  <Entry name="PKK" value="Key - Encrypting Key Pair (*KK)"/>
+  <Entry name="SVR" value="Service Request"/>
+  <Entry name="TID" value="Transaction Identification Number"/>
+  <Entry name="PKKU" value="Key - Encrypting Key Pair, Notarized (*KKU)"/>
+  <Entry name="SUBF" value="Subfield of Previous Field Tag"/>
+</Table>

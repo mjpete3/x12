@@ -1,0 +1,37 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: L5.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="L5" comment="To specify the line item in terms of description, quantity, packaging, and marks and numbers">
+  <Field name="LadingLineItemNumber" type="long" required="y" min="1" max="3" comment="Sequential line number for a lading item"/>
+  <Field name="LadingDescription" required="y" min="1" max="50" comment="Description of an item as required for rating and billing purposes"/>
+  <Field name="CommodityCode1" required="y" min="1" max="30" comment="Code describing a commodity or group of commodities"/>
+  <Field name="CommodityCodeQualifier1" required="y" min="1" max="1" validation="T23" comment="Code identifying the commodity coding system used for Commodity Code"/>
+  <Field name="PackagingCode" required="y" min="3" max="5" validation="T103.2" comment="Code identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required"/>
+  <Field name="MarksAndNumbers" required="y" min="1" max="48" comment="Marks and numbers used to identify a shipment or parts of a shipment"/>
+  <Field name="MarksAndNumbersQualifier" required="y" min="1" max="2" validation="T88" comment="Code specifying the application or source of Marks and Numbers (87)"/>
+  <Field name="CommodityCodeQualifier2" required="y" min="1" max="1" validation="T23" comment="Code identifying the commodity coding system used for Commodity Code"/>
+  <Field name="CommodityCode2" required="y" min="1" max="30" comment="Code describing a commodity or group of commodities"/>
+  <Field name="CompartmentIdCode" required="y" min="1" max="1" validation="T595" comment="Code identifying the compartment in a compartmentalized tank car"/>
+</Segment>

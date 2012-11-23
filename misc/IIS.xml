@@ -1,0 +1,41 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: IIS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="IIS" comment="To uniquely identify interchange control structures">
+  <Field name="ReportedStartSegmentId" required="y" min="2" max="3" comment="This contains the start segment ID of the original interchange, functional group or transaction set"/>
+  <Field name="ReportedControlNumber" required="y" min="1" max="14" comment="This is the control number value of the original interchange, functional group or transaction set"/>
+  <Field name="ReportedDate" required="y" min="1" max="8" comment="This is the date value of original interchange or functional group"/>
+  <Field name="ReportedTime" required="y" min="1" max="8" comment="This is the time value of original interchange or functional group"/>
+  <Field name="ReportedInterchangeSenderIdQualifier" required="y" min="1" max="4" comment="This is the sender ID qualifier value appearing in original interchange"/>
+  <Field name="ReportedSenderId" required="y" min="1" max="35" comment="This is the sender ID value of original interchange or functional group"/>
+  <Field name="ReportedInterchangeReceiverIdQualifier" required="y" min="1" max="4" comment="This is the receiver ID qualifier value appearing in original interchange"/>
+  <Field name="ReportedReceiverId" required="y" min="1" max="35" comment="This is the receiver ID value of original interchange or functional group"/>
+  <Field name="FirstReferenceIdQualifier" required="y" min="1" max="4" comment="This is the ID qualifier value appearing in the original interchange"/>
+  <Field name="FirstReferenceId" required="y" min="1" max="14" comment="This contains the value of the original interchange, as defined by the First Reference ID Qualifier value"/>
+  <Field name="SecondReferenceIdQualifier" required="y" min="1" max="4" comment="This is the ID qualifier value appearing in the original interchange"/>
+  <Field name="SecondReferenceId" required="y" min="1" max="14" comment="This contains the value of the original interchange, as defined by the Second Reference ID Qualifier value"/>
+  <Field name="MessageDirectionCode" required="y" min="1" max="1" validation="TI61" comment="Code identifying whether the reported transactions have been sent and/or received by Data Status Tracking report recipient"/>
+  <Field name="ReportedGroupOrTransactionIdentifier" required="y" min="2" max="6" comment="This contains the functional group or transaction set identifier code of the reported functional group or transaction set"/>
+</Segment>

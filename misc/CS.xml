@@ -1,0 +1,45 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CS.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CS" comment="To provide information about a contract">
+  <Field name="ContractNumber" required="y" min="1" max="30" comment="Contract number"/>
+  <Field name="ChangeOrderSequenceNumber" required="y" min="1" max="8" comment="Number assigned by the orderer identifying a specific change or revision to a previously transmitted transaction set"/>
+  <Field name="ReleaseNumber" required="y" min="1" max="30" comment="Number identifying a release against a Purchase Order previously placed by the parties involved in the transaction"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="PurchaseOrderNumber" required="y" min="1" max="22" comment="Identifying number for Purchase Order assigned by the orderer/purchaser"/>
+  <Field name="SpecialServicesCode1" required="y" min="2" max="10" validation="T560" comment="Code identifying the special service"/>
+  <Field name="FOBPointCode" required="y" min="2" max="2" validation="T433" comment="Code identifying type of F.O.B. point"/>
+  <Field name="Percent1" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="Percent2" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
+  <Field name="TermsTypeCode1" required="y" min="2" max="2" validation="T336" comment="Code identifying type of payment terms"/>
+  <Field name="SpecialServicesCode2" required="y" min="2" max="10" validation="T560" comment="Code identifying the special service"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="TermsTypeCode2" required="y" min="2" max="2" validation="T336" comment="Code identifying type of payment terms"/>
+  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+</Segment>

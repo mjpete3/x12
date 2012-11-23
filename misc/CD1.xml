@@ -1,0 +1,58 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: CD1.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="CD1" comment="To transmit cargo detail information">
+  <Field name="EquipmentInitial" min="1" max="4" comment="Prefix or alphabetic part of an equipment unit's identifying number"/>
+  <Field name="EquipmentNumber" min="1" max="15" comment="Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)"/>
+  <Field name="EquipmentType" required="y" min="4" max="4" comment="Code identifying equipment type"/>
+  <Field name="BillOfLadingWaybillNumber" min="1" max="25" comment="Identification number assigned to the shipment by the carrier or consolidator"/>
+  <Field name="TypeOfServiceCode" min="2" max="2" validation="T56" comment="Code specifying extent of transportation service requested"/>
+  <Field name="HazardousMaterialCodeQualifier" required="y" min="1" max="1" validation="T208" comment="Code which qualifies the Hazardous Material Class Code (209)"/>
+  <Field name="HazardousMaterialClassCode" required="y" min="1" max="4" comment="Code specifying the kind of hazard for a material"/>
+  <Field name="Date1" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="LocationIdentifier" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="Quantity" type="double" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="PackagingCode" min="3" max="5" validation="T103.2" comment="Code identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required"/>
+  <Field name="DispositionCode1" min="2" max="2" comment="Code advising the carrier or port authority about postings to a bill of lading"/>
+  <Field name="DispositionCode2" required="y" min="2" max="2" comment="Code advising the carrier or port authority about postings to a bill of lading"/>
+  <Field name="DispositionCode3" required="y" min="2" max="2" comment="Code advising the carrier or port authority about postings to a bill of lading"/>
+  <Field name="RateClassCode1" required="y" min="1" max="3" validation="T121" comment="Code identifying specifically designated class of goods; Note: For international air shipments, see IATA Resolution 600k"/>
+  <Field name="RateValueQualifier1" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Rate1" type="double" required="y" min="1" max="9" comment="Rate expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateClassCode2" required="y" min="1" max="3" validation="T121" comment="Code identifying specifically designated class of goods; Note: For international air shipments, see IATA Resolution 600k"/>
+  <Field name="RateValueQualifier2" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Rate2" type="double" required="y" min="1" max="9" comment="Rate expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="RateClassCode3" required="y" min="1" max="3" validation="T121" comment="Code identifying specifically designated class of goods; Note: For international air shipments, see IATA Resolution 600k"/>
+  <Field name="RateValueQualifier3" required="y" min="2" max="2" validation="T122" comment="Code qualifying how to extend charges or interpret value"/>
+  <Field name="Rate3" type="double" required="y" min="1" max="9" comment="Rate expressed in the standard monetary denomination for the currency specified"/>
+  <Field name="DateTimeQualifier" required="y" min="3" max="3" validation="T374" comment="Code specifying type of date or time, or both date and time"/>
+  <Field name="Date2" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
+  <Field name="ShipmentStatusCode" required="y" min="1" max="2" validation="T157" comment="Code indicating the status of a shipment"/>
+  <Field name="StandardCarrierAlphaCode" min="2" max="4" comment="Standard Carrier Alpha Code"/>
+  <Field name="ReferenceIdentificationQualifier1" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReferenceIdentificationQualifier2" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentification2" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+</Segment>

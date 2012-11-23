@@ -1,0 +1,116 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2009 APP Design, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: T1009.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Table name="T1009">
+  <Entry name="A" value="U.S. Circuit Court of Appeals"/>
+  <Entry name="B" value="U.S. Bankruptcy Court"/>
+  <Entry name="C" value="U.S. Claims Court"/>
+  <Entry name="D" value="U.S. District Court"/>
+  <Entry name="F" value="Federal Bureau of Investigation"/>
+  <Entry name="I" value="International Trade Court"/>
+  <Entry name="J" value="U.S. Attorney"/>
+  <Entry name="M" value="U.S. Military Appeals Court"/>
+  <Entry name="P" value="Probation"/>
+  <Entry name="S" value="U.S. Supreme Court"/>
+  <Entry name="T" value="U.S. Department of Transportation"/>
+  <Entry name="U" value="U.S. Commissioner"/>
+  <Entry name="V" value="U.S. Veteran's Appeals Court"/>
+  <Entry name="X" value="Multi District Litigation Panel"/>
+  <Entry name="AB" value="Atomic Safety and Licensing Board Panel (ASLBP)"/>
+  <Entry name="AD" value="Administrative Court"/>
+  <Entry name="AG" value="State Attorney General"/>
+  <Entry name="AJ" value="Administrative Law Court"/>
+  <Entry name="AL" value="Alderman's Court"/>
+  <Entry name="AM" value="American Association of Motor Vehicle Administrators (AAMVA)"/>
+  <Entry name="AS" value="Associate Court"/>
+  <Entry name="CA" value="Court of Criminal Appeals"/>
+  <Entry name="CB" value="Corporation Court"/>
+  <Entry name="CH" value="Chancery Court"/>
+  <Entry name="CI" value="Circuit Court"/>
+  <Entry name="CL" value="County Court at Law"/>
+  <Entry name="CM" value="Court of Claims"/>
+  <Entry name="CN" value="Conciliation Court"/>
+  <Entry name="CO" value="Common Claims Court"/>
+  <Entry name="CP" value="Court of Common Pleas"/>
+  <Entry name="CQ" value="Commission"/>
+  <Entry name="CR" value="Criminal Court"/>
+  <Entry name="CS" value="Constitutional County Court"/>
+  <Entry name="CT" value="County Court"/>
+  <Entry name="CV" value="Civil Court"/>
+  <Entry name="CY" value="City Court"/>
+  <Entry name="DA" value="District Attorney"/>
+  <Entry name="DI" value="District Court"/>
+  <Entry name="DJ" value="District Justice Court"/>
+  <Entry name="DM" value="State Department of Motor Vehicles"/>
+  <Entry name="DO" value="Domestic Court"/>
+  <Entry name="DS" value="District Judge System Court"/>
+  <Entry name="FC" value="Family Court"/>
+  <Entry name="GS" value="General Session Court"/>
+  <Entry name="HO" value="Housing Court"/>
+  <Entry name="HP" value="Highway Patrol"/>
+  <Entry name="HU" value="Hustings Court"/>
+  <Entry name="IC" value="Inferior Court"/>
+  <Entry name="JC" value="Justice Court"/>
+  <Entry name="JP" value="Justice of the Peace"/>
+  <Entry name="JU" value="Juvenile Court"/>
+  <Entry name="LA" value="Land Court"/>
+  <Entry name="LE" value="Law and Equity Court"/>
+  <Entry name="M1" value="General Court Martial"/>
+  <Entry name="M2" value="Special Court Martial"/>
+  <Entry name="M3" value="Summary Court Martial"/>
+  <Entry name="MA" value="Magistrate Court"/>
+  <Entry name="MC" value="Magisterial Court"/>
+  <Entry name="MP" value="Military Police"/>
+  <Entry name="MU" value="Municipal Court"/>
+  <Entry name="MY" value="Mayor's Court"/>
+  <Entry name="OR" value="Orphan's Court"/>
+  <Entry name="OT" value="Other Unlisted Administration of Justice Organization Type"/>
+  <Entry name="PC" value="Parish Court"/>
+  <Entry name="PK" value="U.S. Park Police"/>
+  <Entry name="PL" value="Police"/>
+  <Entry name="PO" value="Police Court"/>
+  <Entry name="PP" value="Park Police"/>
+  <Entry name="PR" value="Probate Court"/>
+  <Entry name="PS" value="Prosecutor"/>
+  <Entry name="SA" value="State Appellate Court"/>
+  <Entry name="SB" value="State Bureau of Investigation"/>
+  <Entry name="SC" value="Small Claims Court"/>
+  <Entry name="SD" value="Appellate Division of Superior Court"/>
+  <Entry name="SH" value="Sheriff"/>
+  <Entry name="SJ" value="Special Justice Court"/>
+  <Entry name="SO" value="Single Presiding Officer"/>
+  <Entry name="SP" value="State Police"/>
+  <Entry name="SR" value="Surrogate Court"/>
+  <Entry name="SS" value="State Supreme Court"/>
+  <Entry name="ST" value="State Court"/>
+  <Entry name="SU" value="Superior Court"/>
+  <Entry name="TA" value="Tax Court"/>
+  <Entry name="TB" value="Tribal Court"/>
+  <Entry name="TJ" value="Trial Justice Court"/>
+  <Entry name="TO" value="Town Court"/>
+  <Entry name="TR" value="Traffic Court"/>
+  <Entry name="WA" value="Water Court"/>
+  <Entry name="ZZ" value="Mutually Defined"/>
+</Table>
