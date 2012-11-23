@@ -24,6 +24,7 @@
 # $Id: X12.rb 91 2009-05-13 22:11:10Z ikk $
 #
 # Package implementing direct manipulation of X12 structures using Ruby syntax.
+
 require "x12/version"
 require 'x12/base'
 require 'x12/empty'
