@@ -46,7 +46,7 @@ EOT
 
   def setup
     unless @@p
-      @@p = X12::Parser.new('misc/270.xml')
+      @@p = X12::Parser.new('270.xml')
     end
   end # setup
 

@@ -27,7 +27,7 @@ require 'test/unit'
 class Test270ParseInterchange < Test::Unit::TestCase
 
   @@p = nil
-  @@parser = X12::Parser.new('misc/270interchange.xml')
+  @@parser = X12::Parser.new('270interchange.xml')
 
   def setup
     unless @@p

@@ -49,7 +49,7 @@ EOT
   def setup
     unless @@p
       # @@p = X12::Parser.new('misc/997single.xml')
-      @@p = X12::Parser.new('misc/997.xml')
+      @@p = X12::Parser.new('997.xml')
     end
   end # setup
 

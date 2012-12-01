@@ -37,7 +37,7 @@
   <Field name="InterchangeControlStandardsIdentifier"   required="y" min="1"  max="1"   validation="TI10" comment="Code to identify the agency responsible for the control standard used by the message that is enclosed by the interchange header and trailer"/>
   <Field name="InterchangeControlVersionNumber"         required="y" min="5"  max="5"   validation="TI11" comment="This version number covers the interchange control segments"/>
   <Field name="InterchangeControlNumber" type="int"     required="y" min="9"  max="9"                     comment="A control number assigned by the interchange sender"/>
-  <Field name="AcknowledgmentRuested"                   required="y" min="1"  max="1"   validation="TI13" comment="Code sent by the sender to request an interchange acknowledgment (TA1)"/>
+  <Field name="AcknowledgmentRequested"                 required="y" min="1"  max="1"   validation="TI13" comment="Code sent by the sender to request an interchange acknowledgment (TA1)"/>
   <Field name="UsageIndicator"                          required="y" min="1"  max="1"   validation="TI14" comment="Code to indicate whether data enclosed by this interchange envelope is test, production or information"/>
   <Field name="ComponentElementSeparator"               required="y" min="1"  max="1"                     comment="Type is not applicable; the component element separator is a delimiter and not a data element; this field provides the delimiter used to separate component data elements within a composite data structure; this value must be different than the data element separator and the segment terminator"/>
 </Segment>

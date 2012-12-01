@@ -24,13 +24,13 @@
 -->
 
 <Segment name="PER" comment="To identify a person or office to whom administrative communications should be directed">
-  <Field name="ContactFunctionCode" min="2" max="2" validation="T366" comment="Code identifying the major duty or responsibility of the person or group named"/>
-  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
+  <Field name="ContactFunctionCode" required="y" min="2" max="2" validation="T366" comment="Code identifying the major duty or responsibility of the person or group named"/>
+  <Field name="Name" required="n" min="1" max="60" comment="Free-form name"/>
   <Field name="CommunicationNumberQualifier1" required="y" min="2" max="2" validation="T365" comment="Code identifying the type of communication number"/>
   <Field name="CommunicationNumber1" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
-  <Field name="CommunicationNumberQualifier2" required="y" min="2" max="2" validation="T365" comment="Code identifying the type of communication number"/>
-  <Field name="CommunicationNumber2" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
-  <Field name="CommunicationNumberQualifier3" required="y" min="2" max="2" validation="T365" comment="Code identifying the type of communication number"/>
-  <Field name="CommunicationNumber3" required="y" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
-  <Field name="ContactInquiryReference" required="y" min="1" max="20" comment="Additional reference number or description to clarify a contact number"/>
+  <Field name="CommunicationNumberQualifier2" min="2" max="2" validation="T365" comment="Code identifying the type of communication number"/>
+  <Field name="CommunicationNumber2" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
+  <Field name="CommunicationNumberQualifier3" min="2" max="2" validation="T365" comment="Code identifying the type of communication number"/>
+  <Field name="CommunicationNumber3" min="1" max="256" comment="Complete communications number including country or area code when applicable"/>
+  <Field name="ContactInquiryReference" min="1" max="20" comment="Additional reference number or description to clarify a contact number"/>
 </Segment>

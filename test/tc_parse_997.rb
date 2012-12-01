@@ -28,7 +28,7 @@ class Test997Parse < Test::Unit::TestCase
 
   @@p = nil
 #  @@parser = X12::Parser.new('misc/997single.xml')
-  @@parser = X12::Parser.new('misc/997.xml')
+  @@parser = X12::Parser.new('997.xml')
 
   def setup
     unless @@p

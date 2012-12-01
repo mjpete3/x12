@@ -25,10 +25,10 @@
 
 <Segment name="N4" comment="To specify the geographic place of the named party">
   <Field name="CityName" required="y" min="2" max="30" comment="Free-form text for city name"/>
-  <Field name="StateOrProvinceCode" required="y" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
-  <Field name="PostalCode" required="y" min="3" max="15" comment="Code defining international postal zone code excluding punctuation and blanks (zip code for United States)"/>
-  <Field name="CountryCode" required="y" min="2" max="3" comment="Code identifying the country"/>
-  <Field name="LocationQualifier" required="y" min="1" max="2" validation="T309" comment="Code identifying type of location"/>
-  <Field name="LocationIdentifier" required="y" min="1" max="30" comment="Code which identifies a specific location"/>
-  <Field name="CountrySubdivisionCode" required="y" min="1" max="3" comment="Code identifying the country subdivision"/>
+  <Field name="StateOrProvinceCode" min="2" max="2" comment="Code (Standard State/Province) as defined by appropriate government agency"/>
+  <Field name="PostalCode" min="3" max="15" comment="Code defining international postal zone code excluding punctuation and blanks (zip code for United States)"/>
+  <Field name="CountryCode" min="2" max="3" comment="Code identifying the country"/>
+  <Field name="LocationQualifier" min="1" max="2" validation="T309" comment="Code identifying type of location"/>
+  <Field name="LocationIdentifier" min="1" max="30" comment="Code which identifies a specific location"/>
+  <Field name="CountrySubdivisionCode" min="1" max="3" comment="Code identifying the country subdivision"/>
 </Segment>

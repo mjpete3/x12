@@ -55,6 +55,11 @@ module X12
       save_definition = @x12_definition
 
       # Deal with Microsoft devices
+      # get the current working directory
+      @dir_name = Dir.pwd + "/misc/" 
+      file_name = @dir_name + file_name
+      
+      
       base_name = File.basename(file_name, '.xml')
       if MS_DEVICES.find{|i| i == base_name}
         file_name = File.join(File.dirname, "#{base_name}_.xml")
@@ -63,7 +68,7 @@ module X12
 
       # Read and parse the definition
       str = File.open(file_name, 'r').read
-      @dir_name = File.dirname(File.expand_path(file_name)) # to look up other files if needed
+      #@dir_name = File.dirname(File.expand_path(file_name)) # to look up other files if needed
       @x12_definition = X12::XMLDefinitions.new(str)
 
       # Populate fields in all segments found in all the loops
@@ -123,7 +128,7 @@ module X12
       #puts "Trying to process segment #{segment.inspect}"
       unless @x12_definition[X12::Segment] && @x12_definition[X12::Segment][segment.name]
         # Try to find it in a separate file if missing from the @x12_definition structure
-        initialize(File.join(@dir_name, segment.name+'.xml'))
+        initialize(segment.name+'.xml')
         segment_definition = @x12_definition[X12::Segment][segment.name]
         throw Exception.new("Cannot find a definition for segment #{segment.name}") unless segment_definition
       else
@@ -135,7 +140,7 @@ module X12
         table = segment.nodes[i].validation
         if table
           unless @x12_definition[X12::Table] && @x12_definition[X12::Table][table]
-            initialize(File.join(@dir_name, table+'.xml'))
+            initialize(table+'.xml')
             throw Exception.new("Cannot find a definition for table #{table}") unless @x12_definition[X12::Table] && @x12_definition[X12::Table][table]
           end
         end

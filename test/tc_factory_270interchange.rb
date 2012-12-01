@@ -114,7 +114,7 @@ EOT
 
   def setup
     unless @@p
-      @@p = X12::Parser.new('misc/270interchange.xml')
+      @@p = X12::Parser.new('270interchange.xml')
     end
   end # setup
 
@@ -265,7 +265,7 @@ EOT
       isa.InterchangeControlStandardsIdentifier = 'U'
       isa.InterchangeControlVersionNumber = '00401'
       isa.InterchangeControlNumber = '230623206'
-      isa.AcknowledgmentRuested = '0'
+      isa.AcknowledgmentRequested = '0'
       isa.UsageIndicator = 'T'
       isa.ComponentElementSeparator = ':'
     }

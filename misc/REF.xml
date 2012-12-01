@@ -24,8 +24,8 @@
 -->
 
 <Segment name="REF" comment="To specify identifying information">
-  <Field name="ReferenceIdentificationQualifier" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
+  <Field name="ReferenceIdentificationQualifier" required="y" min="2" max="3" validation="T128" comment="Code qualifying the Reference Identification"/>
   <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
-  <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
-  <Field name="ReferenceIdentifier" type="C040" required="y" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
+  <Field name="Description" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+  <Field name="ReferenceIdentifier" type="C040" min="0" max="inf" comment="To identify one or more reference numbers or identification numbers as specified by the Reference Qualifier"/>
 </Segment>

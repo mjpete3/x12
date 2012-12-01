@@ -24,16 +24,16 @@
 -->
 
 <Segment name="HI" comment="To supply information related to the delivery of health care">
-  <Field name="HealthCareCodeInformation1" type="C022" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation2" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation3" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation4" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation5" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation6" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation7" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation8" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation9" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation10" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation11" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
-  <Field name="HealthCareCodeInformation12" type="C022" required="y" min="0" max="inf" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation1" type="C022" required="y" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation2" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation3" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation4" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation5" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation6" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation7" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation8" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation9" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation10" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation11" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation12" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
 </Segment>

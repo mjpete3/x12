@@ -24,6 +24,6 @@
 -->
 
 <Segment name="N3" comment="To specify the location of the named party">
-  <Field name="AddressInformation1" min="1" max="55" comment="Address information"/>
-  <Field name="AddressInformation2" required="y" min="1" max="55" comment="Address information"/>
+  <Field name="AddressInformation1" required="y" min="1" max="55" comment="Address information"/>
+  <Field name="AddressInformation2" min="1" max="55" comment="Address information"/>
 </Segment>

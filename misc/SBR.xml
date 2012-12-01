@@ -24,13 +24,13 @@
 -->
 
 <Segment name="SBR" comment="To record information specific to the primary insured and the insurance carrier for that insured">
-  <Field name="PayerResponsibilitySequenceNumberCode" min="1" max="1" validation="T1138" comment="Code identifying the insurance carrier's level of responsibility for a payment of a claim"/>
-  <Field name="IndividualRelationshipCode" required="y" min="2" max="2" validation="T1069" comment="Code indicating the relationship between two individuals or entities"/>
-  <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
-  <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
-  <Field name="InsuranceTypeCode" required="y" min="1" max="3" validation="T1336" comment="Code identifying the type of insurance policy within a specific insurance program"/>
-  <Field name="CoordinationOfBenefitsCode" required="y" min="1" max="1" validation="T1143" comment="Code identifying whether there is a coordination of benefits"/>
-  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
-  <Field name="EmploymentStatusCode" required="y" min="2" max="2" validation="T584" comment="Code showing the general employment status of an employee/claimant"/>
-  <Field name="ClaimFilingIndicatorCode" required="y" min="1" max="2" validation="T1032" comment="Code identifying type of claim"/>
+  <Field name="PayerResponsibilitySequenceNumberCode" required="y" min="1" max="1" validation="T1138" comment="Code identifying the insurance carrier's level of responsibility for a payment of a claim"/>
+  <Field name="IndividualRelationshipCode" required="n" min="2" max="2" validation="T1069" comment="Code indicating the relationship between two individuals or entities"/>
+  <Field name="InsuredGroupOrPolicyNumber" required="n" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="InsuredGroupName" required="n" min="1" max="60" comment="Free-form name"/>
+  <Field name="InsuranceTypeCode" required="n" min="1" max="3" validation="T1336" comment="Code identifying the type of insurance policy within a specific insurance program"/>
+  <Field name="CoordinationOfBenefitsCode" required="n" min="1" max="1" validation="T1143" comment="Code identifying whether there is a coordination of benefits"/>
+  <Field name="YesNoConditionOrResponseCode" required="n" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="EmploymentStatusCode" required="n" min="2" max="2" validation="T584" comment="Code showing the general employment status of an employee/claimant"/>
+  <Field name="ClaimFilingIndicatorCode" required="n" min="1" max="2" validation="T1032" comment="Code identifying type of claim"/>
 </Segment>
