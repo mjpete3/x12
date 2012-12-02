@@ -47,7 +47,7 @@ N3*P O BOX 12312~
 N4*DURHAM*NC*27715~
 DMG*D8*19670807*F~
 NM1*PR*2*BCBSNC*****PI*987654321~
-CLM*PTACCT2235057*100.5***11::1*Y*A*Y*N~
+CLM*PTACCT2235057*100.5***11::1*Y*A*Y*N**********~
 REF*EA*MEDREC11111~
 HI*BK:78901~
 LX*1~
@@ -134,7 +134,7 @@ EOT
     loop.SBR {|s|
       s.PayerResponsibilitySequenceNumberCode = "P"
       s.IndividualRelationshipCode = "18"
-      s.ReferenceIdentification = "ABC123101"      
+      s.InsuredGroupOrPolicyNumber = "ABC123101"      
       s.ClaimFilingIndicatorCode = "BL"
     }
     
@@ -158,11 +158,11 @@ EOT
   
   def loop_l2300(loop)
     loop.CLM {|c|
-      c.ClaimSubmittersIdentifier = "PTACCT2235057"
+      c.PatientAccountNumber = "PTACCT2235057"
       c.MonetaryAmount = "100.5"
       c.HealthCareServiceLocationInformation = "11::1"          
       c.ProviderOrSupplierSignatureIndicator = "Y"
-      c.ProviderAcceptMedicareAssignmentCode = "A"
+      c.MedicareAssignmentCode = "A"
       c.BenefitsAssignmentCertificationIndicator = "Y"
       c.ReleaseOfInformationCode = "N"
     }

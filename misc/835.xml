@@ -65,16 +65,16 @@
 				<Segment name="DTM" max="4" required="n" />
 				<Segment name="PER" max="2" required="n" />
 				<Segment name="AMT" max="13" required="n" />
-				<Segment name="QTY" max="14" required="n" />
-			</Loop>
-			<Loop name="L2110" max="999" required="n" comment="Service Payment Information">
-				<Segment name="SVC" max="1" required="n" />
-				<Segment name="DTM" max="2" required="n" />
-				<Segment name="CAS" max="99" required="n" />
-				<Segment name="REF" max="24" required="n" />
-				<Segment name="AMT" max="9" required="n" />
-				<Segment name="QTY" max="6" required="n" />
-				<Segment name="LQ" max="99" required="n" />
+				<Segment name="QTY" max="14" required="n" />			
+				<Loop name="L2110" max="999" required="n" comment="Service Payment Information">
+					<Segment name="SVC" max="1" required="n" />
+					<Segment name="DTM" max="2" required="n" />
+					<Segment name="CAS" max="99" required="n" />
+					<Segment name="REF" max="24" required="n" />
+					<Segment name="AMT" max="9" required="n" />
+					<Segment name="QTY" max="6" required="n" />
+					<Segment name="LQ" max="99" required="n" />
+				</Loop>
 			</Loop>
 			<Segment name="PLB" required="n" comment="Provider Level Adjustment" />			
 			<Segment name="SE" required="y" />
