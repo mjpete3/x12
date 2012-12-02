@@ -34,8 +34,10 @@ Or install it yourself as:
 
     $ gem install PD_x12
 
+## Documentation
+### Wiki Page: https://github.com/mjpete3/x12/wiki
 
-# Major deficiencies
+## Major deficiencies
 
     Validation is not implemented.
     Field types and sizes are ignored.
