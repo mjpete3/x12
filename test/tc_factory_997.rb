@@ -28,6 +28,8 @@ class Test997Factory < Test::Unit::TestCase
 
   @@p = nil
 tmp=<<-EOT
+ISA****************~
+GS********~
 ST*997*2878~
 AK1*HS*293328532~
 AK2*270*~
@@ -42,6 +44,8 @@ AK4*1**1~
 AK5*E****999~
 AK9****~
 SE**~
+GE**~
+IEA**~
 EOT
 
   @@result = tmp.gsub!(/\n/,'')

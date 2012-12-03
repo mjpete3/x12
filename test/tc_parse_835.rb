@@ -43,7 +43,6 @@ class Test835Parse < Test::Unit::TestCase
   def test_ISA_IEA
      assert_equal('ISA*00*          *00*          *ZZ*5010TEST       *ZZ*835RECVR       *110930*1105*^*00501*000004592*0*T*:~', @r.ISA.to_s)
      assert_equal('5010TEST       ', @r.ISA.InterchangeSenderId)
-     puts @r.IEA.to_s
      assert_equal('1', @r.IEA.NumberOfIncludedFunctionalGroups)
   end # test_ST
 

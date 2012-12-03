@@ -20,7 +20,7 @@
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-   $Id: 997.xml 85 2009-05-13 19:17:51Z ikk $
+
 -->
 
 <!--
@@ -31,6 +31,8 @@
 
 <Definition>
   <Loop name="997" comment="This X12 Transaction Set contains the format and establishes the data contents of the Functional Acknowledgment Transaction Set (997) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to define the control structures for a set of acknowledgments to indicate the results of the syntactical analysis of the electronically encoded documents. The encoded documents are the transaction sets, which are grouped in functional groups, used in defining transactions for business data interchange. This standard does not cover the semantic meaning of the information encoded in the transaction sets.">
+  	<Segment name="ISA" max="1" required="y" />
+	<Segment name="GS"  max="1" required="y" />
     <Segment name="ST"  max="1">
       <Field name="TransactionSetIdentifierCode" const="997" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
       <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
@@ -46,5 +48,8 @@
     </Loop>
     <Segment name="AK9" max="1" required="y"/>
     <Segment name="SE"  max="1" required="y"/>
+    <Segment name="GE"  max="1" required="y"/>
+	<Segment name="IEA" max="1" required="y"/>
   </Loop>
+  
 </Definition>
