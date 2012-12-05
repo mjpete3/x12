@@ -40,7 +40,7 @@ class Test999Parse < Test::Unit::TestCase
   #parse a simple accepted message
   def test_simple
     @r = @parser.parse('999', @msg[0])
-        
+                     
     assert_equal(@r.GS.ApplicationSendersCode, "PPPPPP")
     assert_equal(@r.GS.ApplicationReceiversCode, "XXXXXX")
     
@@ -57,7 +57,7 @@ class Test999Parse < Test::Unit::TestCase
   #parse a multiple transaction with 1 accepted and 2 rejected claims
   def test_all
     @r = @parser.parse('999', @msg[1])           
-    #@r.show
+    
     
     assert_equal(3, @r.L1000.size)  
     assert_equal("A", @r.L1000[0].IK5.TransactionSetAcknowledgmentCode)
