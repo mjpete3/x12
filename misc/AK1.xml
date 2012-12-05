@@ -26,4 +26,5 @@
 <Segment name="AK1" comment="To start acknowledgment of a functional group">
   <Field name="FunctionalIdentifierCode" min="2" max="2" validation="T479" comment="Code identifying a group of application related transaction sets"/>
   <Field name="GroupControlNumber" type="long" min="1" max="9" comment="Assigned number originated and maintained by the sender"/>
+  <Field name="VersionReleaseIndustryIdentifierCode" required="n" min="1" max="12" commnet="Code indicating the version, release, subrelease and industry identifierof the EDI standard being used." />
 </Segment>

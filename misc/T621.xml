@@ -4,7 +4,7 @@
 
    http://x12parser.rubyforge.org 
    
-   Copyright (C) 2012 P & D Technology Solutions, LLC.
+   Copyright (C) 2009 APP Design, Inc.
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Lesser General Public
@@ -19,10 +19,11 @@
    You should have received a copy of the GNU Lesser General Public
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-   
+
+   $Id: T723.xml 78 2009-05-12 22:27:26Z ikk $
 -->
 
-<Table name="T723">
+<Table name="T621">
   <Entry name="1" value="Mandatory data element missing"/>
   <Entry name="2" value="Conditional required data element missing."/>
   <Entry name="3" value="Too many data elements."/>
@@ -35,10 +36,4 @@
   <Entry name="10" value="Exclusion Condition Violated"/>
   <Entry name="12" value="Too Many Repetitions"/>
   <Entry name="13" value="Too Many Components"/>
-  <Entry name="I6" value="Code value not used in Implementation"/>
-  <Entry name="I9" value="Implememtation dependent data element missing"/>
-  <Entry name="I10" value="Implementation 'not used' data element present"/>
-  <Entry name="I11" value="Implementation too few repetitions"/>
-  <Entry name="I12" value="Implementation pattern match failure"/>
-  <Entry name="I13" value="Implementation dependent 'not used' data element present"/>
 </Table>

@@ -73,6 +73,14 @@ module X12
         ''
       end
     end # render
+    
+    
+    def each
+      res = self.to_a
+      0.upto(res.length - 1) do |x|
+        yield res[x]
+      end
+    end
 
   end # Loop
 end # X12

@@ -76,6 +76,7 @@ EOT
 
       @@p = @@parser.parse('997', @@m997)
     end
+    #@@p.show
     @r = @@p
   end # setup
 

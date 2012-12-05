@@ -51,7 +51,7 @@ EOT
       # @@p.show
     end
     @r = @@p
-
+    
   end # setup
 
   def teardown

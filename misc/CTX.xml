@@ -1,0 +1,33 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2012 P & D Technology Solutions, LLC.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+   
+-->
+
+<Segment name="CTX" comment="Context Information">
+  <Field name="ContextIdentification" type="C998" required="y" comment="Holds information to identify a context"/>
+  <Field name="SegmentIdCode" required="n" min="2" max="3" comment="Code defining the segment id of the data segment in error"/>
+  <Field name="SegmentPositionInTransactionSet" required="n" min="1" max="10" comment="The numerical position of this data segment from the start of the transaction set."/>
+  <Field name="LoopIdentifierCode" required="n" min="1" max="4" comment="The loop id number given on teh transaction set diagram"/>
+  <Field name="PositionInSegment" type="C030" required="n" comment="Code indicating the relative segment position of the simple data element or composite data structure in error within a segment."/>
+  <Field name="ReferenceInSegment" type="C999" required="n" comment="To hold the reference number of a data element and optionally a component data element within a composite."/>
+</Segment>
+

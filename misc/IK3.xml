@@ -4,7 +4,7 @@
 
    http://x12parser.rubyforge.org 
    
-   Copyright (C) 2009 APP Design, Inc.
+   Copyright (C) 2012 P & D Technology Solutions, LLC
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Lesser General Public
@@ -19,12 +19,12 @@
    You should have received a copy of the GNU Lesser General Public
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-
-   $Id: AK2.xml 78 2009-05-12 22:27:26Z ikk $
+   
 -->
 
-<Segment name="AK2" comment="To start acknowledgment of a single transaction set">
-  <Field name="TransactionSetIdentifierCode" required="y" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
-  <Field name="TransactionSetControlNumber"  required="y" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
-  <Field name="ImplementationConventionReference" required="n" min="1" max="35" comment="Reference assigned to identify implmentation convention" />
+<Segment name="IK3" comment="To report errors in a data segment and identify the location of the data segment">
+  <Field name="SegmentIdCode" required="y" min="2" max="3" comment="Code defining the segment ID of the data segment in error (See Appendix A - Number 77)"/>
+  <Field name="SegmentPositionInTransactionSet" required="y" min="1" max="10" comment="The numerical count position of this data segment from the start of the transaction set: the transaction set header is count position 1"/>
+  <Field name="LoopIdentifierCode" required="n" min="1" max="4" comment="The loop ID number given on the transaction set diagram is the value for this data element in segments LS and LE"/>
+  <Field name="SegmentSyntaxErrorCode" required="n" min="1" max="3" validation="T620" comment="Code indicating error found based on the syntax editing of a segment"/>
 </Segment>

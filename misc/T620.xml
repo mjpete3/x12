@@ -4,7 +4,7 @@
 
    http://x12parser.rubyforge.org 
    
-   Copyright (C) 2009 APP Design, Inc.
+   Copyright (C) 2012 P & D Technology Solutions, LLC.
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Lesser General Public
@@ -20,11 +20,20 @@
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-   $Id: AK2.xml 78 2009-05-12 22:27:26Z ikk $
 -->
 
-<Segment name="AK2" comment="To start acknowledgment of a single transaction set">
-  <Field name="TransactionSetIdentifierCode" required="y" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
-  <Field name="TransactionSetControlNumber"  required="y" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
-  <Field name="ImplementationConventionReference" required="n" min="1" max="35" comment="Reference assigned to identify implmentation convention" />
-</Segment>
+<Table name="T620">
+  <Entry name="1" value="Unrecognized segment ID"/>
+  <Entry name="2" value="Unexpected segment"/>
+  <Entry name="3" value="Mandatory segment missing"/>
+  <Entry name="4" value="Loop Occurs Over Maximum Times"/>
+  <Entry name="5" value="Segment Exceeds Maximum Use"/>
+  <Entry name="6" value="Segment Not in Defined Transaction Set"/>
+  <Entry name="7" value="Segment Not in Proper Sequence"/>
+  <Entry name="8" value="Segment Has Data Element Errors"/>
+  <Entry name="I4" value="Implementation 'not used' segment present"/>
+  <Entry name="I6" value="Implementation dependet segment missing"/>
+  <Entry name="I7" value="Implementation loop occurs under minimum times"/>
+  <Entry name="I8" value="Implementation segment below minimum use"/>
+  <Entry name="I9" value="Implementation dependent 'not used' segment present"/>
+</Table>
