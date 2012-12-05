@@ -35,16 +35,20 @@ module X12
     # Parse definitions out of XML file
     def initialize(str)
       doc = REXML::Document.new(str)
-      definitions = doc.root.name =~ /^Definition$/i ? doc.root.elements.to_a : [doc.root]
+      definitions = doc.root.name =~ /^Definition$/i ? doc.root.elements.to_a : [doc.root]      
+      
       definitions.each { |element|
         #puts element.name
         syntax_element = case element.name
-                         when /table/i     then parse_table(element)
-                         when /segment/i   then parse_segment(element)
-                         when /composite/i then parse_composite(element)
-                         when /loop/i      then parse_loop(element)
+                         when /table/i     
+                           parse_table(element)
+                         when /segment/i 
+                           parse_segment(element)
+                         when /composite/i 
+                           parse_composite(element)
+                         when /loop/i
+                           parse_loop(element)
                          end
-
         self[syntax_element.class] ||= {}
         self[syntax_element.class][syntax_element.name]=syntax_element
       }
@@ -54,10 +58,14 @@ module X12
 
     def parse_boolean(s)
       return case s
-             when nil then false
-             when "" then false
-             when /(^y(es)?$)|(^t(rue)?$)|(^1$)/i then true
-             when /(^no?$)|(^f(alse)?$)|(^0$)/i then false
+             when nil
+               false
+             when "" 
+               false
+             when /(^y(es)?$)|(^t(rue)?$)|(^1$)/i 
+               true
+             when /(^no?$)|(^f(alse)?$)|(^0$)/i 
+               false
              else
                nil
              end # case
@@ -65,12 +73,18 @@ module X12
 
     def parse_type(s)
       return case s
-             when nil then 'string'
-             when /^C.+$/ then s
-             when /^i(nt(eger)?)?$/i then 'int'
-             when /^l(ong)?$/i then 'long'
-             when /^d(ouble)?$/i then 'double'
-             when /^s(tr(ing)?)?$/i then 'string'
+             when nil
+               'string'
+             when /^C.+$/ 
+               s
+             when /^i(nt(eger)?)?$/i
+               'int'
+             when /^l(ong)?$/i
+               'long'
+             when /^d(ouble)?$/i
+               'double'
+             when /^s(tr(ing)?)?$/i
+               'string'
              else
                nil
              end # case
@@ -146,8 +160,10 @@ module X12
 
       components = e.elements.to_a.inject([]){|r, element|
         r << case element.name
-             when /loop/i    then parse_loop(element)
-             when /segment/i then parse_segment(element)
+             when /loop/i
+               parse_loop(element)
+             when /segment/i
+               parse_segment(element)
              else
                throw Exception.new("Cannot recognize syntax for: #{element.inspect} in loop #{e.inspect}")
              end # case
