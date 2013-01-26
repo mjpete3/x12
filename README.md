@@ -34,6 +34,8 @@ Or install it yourself as:
 
     $ gem install PD_x12
 
+To initialize in Rails 3.2 application, in your config/initializers directory, create a file called x12.rb and add the line: require 'x12' to it.
+ 
 ## Documentation
 ### Wiki Page: https://github.com/mjpete3/x12/wiki
 

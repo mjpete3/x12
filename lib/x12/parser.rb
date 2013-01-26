@@ -56,18 +56,14 @@ module X12
 
       # Deal with Microsoft devices
       # get the current working directory
-      @dir_name = Dir.pwd + "/misc/" 
-      file_name = @dir_name + file_name
-      
-      
       base_name = File.basename(file_name, '.xml')
       if MS_DEVICES.find{|i| i == base_name}
         file_name = File.join(File.dirname, "#{base_name}_.xml")
       end
-      #puts "Reading definition from #{file_name}"
-
+      file_location = File.join(File.dirname(__FILE__), "../../misc", file_name) 
+      
       # Read and parse the definition
-      str = File.open(file_name, 'r').read
+      str = File.open(file_location, 'r').read
       #@dir_name = File.dirname(File.expand_path(file_name)) # to look up other files if needed
       @x12_definition = X12::XMLDefinitions.new(str)
 
