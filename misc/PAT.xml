@@ -24,13 +24,13 @@
 -->
 
 <Segment name="PAT" comment="To supply patient information">
-  <Field name="IndividualRelationshipCode" required="y" min="2" max="2" validation="T1069" comment="Code indicating the relationship between two individuals or entities"/>
-  <Field name="PatientLocationCode" required="y" min="1" max="1" validation="T1384" comment="Code identifying the location where patient is receiving medical treatment"/>
-  <Field name="EmploymentStatusCode" required="y" min="2" max="2" validation="T584" comment="Code showing the general employment status of an employee/claimant"/>
-  <Field name="StudentStatusCode" required="y" min="1" max="1" validation="T1220" comment="Code indicating the student status of the patient if 19 years of age or older, not handicapped and not the insured"/>
-  <Field name="DateTimePeriodFormatQualifier" required="y" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
-  <Field name="DateTimePeriod" required="y" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
-  <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
-  <Field name="Weight" type="double" required="y" min="1" max="10" comment="Numeric value of weight"/>
-  <Field name="YesNoConditionOrResponseCode" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="IndividualRelationshipCode"    required="y" min="2" max="2" validation="T1069" comment="Code indicating the relationship between two individuals or entities"/>
+  <Field name="PatientLocationCode"           required="n" min="1" max="1" validation="T1384" comment="Code identifying the location where patient is receiving medical treatment"/>
+  <Field name="EmploymentStatusCode"          required="n" min="2" max="2" validation="T584" comment="Code showing the general employment status of an employee/claimant"/>
+  <Field name="StudentStatusCode"             required="n" min="1" max="1" validation="T1220" comment="Code indicating the student status of the patient if 19 years of age or older, not handicapped and not the insured"/>
+  <Field name="DateTimePeriodFormatQualifier" required="n" min="2" max="3" validation="T1250" comment="Code indicating the date format, time format, or date and time format"/>
+  <Field name="DateTimePeriod"                required="n" min="1" max="35" comment="Expression of a date, a time, or range of dates, times or dates and times"/>
+  <Field name="UnitOrBasisForMeasurementCode" required="n" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+  <Field name="Weight"          type="double" required="n" min="1" max="10" comment="Numeric value of weight"/>
+  <Field name="YesNoConditionOrResponseCode"  required="n" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
 </Segment>
