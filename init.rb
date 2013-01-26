@@ -1,1 +1,1 @@
-require 'X12'
+require x12'
