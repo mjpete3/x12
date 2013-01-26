@@ -81,7 +81,7 @@
 						<Segment name="REF" max="5"  required="n" />			
 					</Loop>
 					<Loop name="L2000C" required="n">
-						<Segment name="HL"  required="n" comment="Patient heirarchical level"/>
+						<Segment name="HL"  required="y" comment="Patient heirarchical level"/>
 						<Segment name="PAT" required="y" comment="Patient information"/>
 						<Loop name="L2010CA" max="1" required="n">
 							<Segment name="NM1" max="1"  required="y" comment="Patient name"/>
