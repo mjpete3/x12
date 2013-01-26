@@ -39,4 +39,14 @@ require 'x12/parser'
 module X12
   EMPTY = Empty.new()
   TEST_REPEAT = 100
+  
+  
+  class Railtie < Rails::Railtie
+    initializer "application_controller.initialize_X12" do
+      ActiveSupport.on_load(:action_controller) do
+        include X12
+      end
+    end
+  end
+
 end
