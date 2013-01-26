@@ -56,6 +56,10 @@ The authors of the project were inspired by the following works:
 
 
 # Change Log
+1/26/13 - relesase 1.3.6
+* changed the referencing of the misc directory so that local copies of the xml definitions are not required
+* added an init.rb file in the root 
+ 
 12/2/12 - release 1.3.2
 * Added the 835 transaction
 
