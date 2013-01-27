@@ -125,7 +125,7 @@
 							<Segment name="N3"  max="1"  required="y" comment="Service facility address"/>
 							<Segment name="N4"  max="1"  required="y" comment="Service facility city/state/zip"/>
 							<Segment name="REF" max="3"  required="n" comment="Service facility location secondary id"/>	
-							<Segment name="PER" max="1"  required="y" comment="Service facility contact information"/>
+							<Segment name="PER" max="1"  required="n" comment="Service facility contact information"/>
 						</Loop>
 						<Loop name="L2310D" max="1" required="n">
 							<Segment name="NM1" max="1"  required="n" comment="Supervising provider name"/>
