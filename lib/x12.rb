@@ -39,4 +39,5 @@ require 'x12/parser'
 module X12
   EMPTY = Empty.new()
   TEST_REPEAT = 100
+  
 end
