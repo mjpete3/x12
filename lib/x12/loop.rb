@@ -23,7 +23,6 @@
 #
 module X12
 
-  # $Id: Loop.rb 59 2009-03-19 22:32:13Z ikk $
   #
   # Implements nested loops of segments
 
@@ -74,7 +73,7 @@ module X12
       end
     end # render
     
-    
+    # Provides looping through repeats of a message    
     def each
       res = self.to_a
       0.upto(res.length - 1) do |x|

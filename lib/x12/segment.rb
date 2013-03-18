@@ -103,5 +103,13 @@ module X12
       return self.nodes[field_num]
     end
 
+    # provides loopong through multiple segments within the loop
+    def each
+      res = self.to_a
+      0.upto(res.length - 1) do |x|
+        yield res[x]
+      end
+    end
+
   end # Segment
 end # X12

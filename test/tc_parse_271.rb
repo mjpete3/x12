@@ -1,0 +1,115 @@
+#--
+#     This file is part of the X12Parser library that provides tools to
+#     manipulate X12 messages using Ruby native syntax.
+#
+#     http://x12parser.rubyforge.org 
+#     
+#     Copyright (C) 2012 P&D Technical Solutions, LLC.
+#
+#     This library is free software; you can redistribute it and/or
+#     modify it under the terms of the GNU Lesser General Public
+#     License as published by the Free Software Foundation; either
+#     version 2.1 of the License, or (at your option) any later version.
+#
+#     This library is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#     Lesser General Public License for more details.
+#
+#     You should have received a copy of the GNU Lesser General Public
+#     License along with this library; if not, write to the Free Software
+#     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+#++
+#
+
+require 'x12'
+require 'test/unit'
+
+class Test271Parse < Test::Unit::TestCase
+  
+  MESSAGE = "ISA*00* *00* *ZZ*6175910AAC21T *ZZ*54503516A *061130*1445*U*00401*309242122*0*T*:~
+GS*HB*617591011C21T*545035165*20030924*21000083*309001*X*004010X092A1~
+ST*271*COMP1420~
+BHT*0022*11**20030924*21000083~
+HL*1**20*1~
+NM1*PR*2*Texas Medicaid/Healthcare Services*****PI*617591011C21T~
+HL*2*1*21*1~
+NM1*1P*1******XX*1234567890~
+HL*3*2*22*0~
+TRN*1*COMPASS 21*3617591011~
+TRN*2*109834652831*9877281234*RADIOLOGY~
+TRN*2*98175-012547*9877281234*RADIOLOGY~
+NM1*IL*1*LASTNAME*FIRSTNAME*M**SUFFIX*MI*444115555~
+REF*SY*123456789~
+REF*F6*123456789012~
+REF*Q4*999888777~
+REF*EJ*111222333444555~
+N3*123 STREET~
+N4*DALLAS*TX*75024**CY*85~
+DMG*D8*19850201*M~
+INS*Y*18*001*25~
+EB*1*IND*30**PLANABBVDE~
+EB*R*IND*30*OT*CC~
+REF*6P*G123456*EMPLOYERNAME~
+DTP*193*D8*20000501~
+DTP*194*D8*20000601~
+LS*2120~
+NM1*PR*2*INCOMPANYNAME~
+N3*123 STREET~
+N4*DALLAS*TX*75024~
+PER*IC**WP*2145551212~
+LE*2120~
+EB*R*IND*30*OT*CC~
+REF*6P*G123456*EMPLOYERNAME~
+DTP*193*D8*20000501~
+DTP*194*D8*20000601~
+LS*2120~
+NM1*IL*1*LASTNAME*FIRST*M**SUFFIX*MI*123456789~
+LE*2120~
+EB*R*IND*30*OT*EE~
+REF*6P*G345678 *EMPLOYERNAME~
+DTP*193*D8*20000701~
+DTP*194*D8*20000801~
+LS*2120~
+NM1*IL*1*LASTNAME*THIRD*M**SUFFIX*MI*345678901~
+LE*2120~
+SE*45*COMP1420~
+GE*1*309001~
+IEA*1*309242122~"
+
+
+  def setup    
+    @message = MESSAGE
+    # make the result usable in the tests
+    @message.gsub!(/\n/,'')
+
+#    @parser = X12::Parser.new('271.xml')    
+#    @r = @parser.parse('271', @message)       
+  end
+  
+  
+  def teardown
+    #nothing
+  end
+  
+  
+  def test_header
+    
+  end
+  
+  
+  def test_number_of_segments
+    
+  end
+  
+  def test_each_loop
+    # each loop for Loops
+    # each loop for Segments
+  end
+  
+  def test_various_fields
+    
+  end
+  
+end
+
