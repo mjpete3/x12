@@ -27,5 +27,5 @@
   <Field name="TraceTypeCode" min="1" max="2" validation="T481" comment="Code identifying which transaction is being referenced"/>
   <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
   <Field name="OriginatingCompanyIdentifier" required="y" min="10" max="10" comment="A unique identifier designating the company initiating the funds transfer instructions. The first character is one-digit ANSI identification code designation (ICD) followed by the nine-digit identification number which may be an IRS employer identification number (EIN), data universal numbering system (DUNS), or a user assigned number; the ICD for an EIN is 1, DUNS is 3, user assigned number is 9"/>
-  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="ReferenceIdentification2" required="n" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
 </Segment>

@@ -26,5 +26,5 @@
 <Segment name="ST" comment="To indicate the start of a transaction set and to assign a control number">
   <Field name="TransactionSetIdentifierCode" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
   <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
-  <Field name="ImplementationConventionReference" required="y" min="1" max="35" comment="Reference assigned to identify Implementation Convention"/>
+  <Field name="ImplementationConventionReference" required="n" min="1" max="35" comment="Reference assigned to identify Implementation Convention"/>
 </Segment>

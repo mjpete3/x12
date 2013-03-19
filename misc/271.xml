@@ -28,49 +28,28 @@
 		<Loop name="L271" max="1" comment="This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (271) for use within the context of an Electronic Data Interchange (EDI) environment.">
 			<Segment name="ST"  max="1" required="y" />
 			<Segment name="BHT" max="1" required="y" comment="" />
-			<Loop name="2000A" max="inf" comment="Information Source Level">
+			<Loop name="L2000A" max="inf" comment="Information Source Level">
 				<Segment name="HL" max="1" required="y" comment="Information Source Level" />
 				<Segment name="AAA" max="9" comment="Request Validation" />	
-				segment=HL:3:20:Information Source Level:R:1
-				segment=AAA:::Request Validation:S:9
 				<Loop name="L2100A" max="1" comment="Information Source Name">
 					<Segment name="NM1" max="1" required="y" commnet="Information Source Name" />
 					<Segment name="REF" max="9" comment="Information Source Additional Identification" />
-					<Segment name="PER" max="3" commnet="Information Source Contact Information" />
-					<Segment name="AAA" max="9" commnet="Request Validation" />
-					segment=NM1:1:2B,36,GP,P5,PR:Information Source Name:R:1
-					segment=REF:::Information Source Additional Identification:S:9
-					segment=PER:::Information Source Contact Information:S:3
-					segment=AAA:::Request Validation:S:9					
+					<Segment name="PER" max="3" comment="Information Source Contact Information" />
+					<Segment name="AAA" max="9" comment="Request Validation" />
 				</Loop>
 			</Loop>
-			<Loop name="2000B" max="inf" comment="Information Receiver Level">				
-				segment=HL:3:21:Information Receiver Level:S:1
+			<Loop name="L2000B" max="inf" comment="Information Receiver Level">								
 				<Segment name="HL" max="1" comment="Information Receiver Level" />
 				<Loop name="L2100B" max="1" comment="Information Receiver Name">
-					segment=NM1:1:1P,2B,36,80,FA,GP,P5,PR:Information Receiver Name:R:1
-					segment=REF:::Information Receiver Additional Identification:S:9
-					segment=AAA:::Information Receiver Request Validation:S:9
 					<Segment name="NM1" max="1" required="y" comment="Information Receiver Name" />
-					<Segment name="REF" max="1" comment="Information Receiver Additional Identification" />
+					<Segment name="REF" max="9" comment="Information Receiver Additional Identification" />
 					<Segment name="AAA" max="9" comment="Information Receiver Request Validation" />					
 				</Loop>
 			</Loop>
-			<Loop name="2000C" max="inf" comment="Subscriber Level">
-				segment=HL:3:22:Subscriber Level:S:1
-				segment=TRN:::Subscriber Trace Number:S:3
+			<Loop name="L2000C" max="inf" comment="Subscriber Level">
 				<Segment name="HL" max="1"  comment="Subscriber Level" />
-				<Segment name="TRN" max="1" comment="Subscriber Trace Number" />
-				<Loop name="2100C" max="1" comment="Subscriber Name">
-					segment=NM1:1:IL:Subscriber Name:R:1
-					segment=REF:::Subscriber Additional Identification:S:9
-					segment=N3:::Subscriber Address:S:1
-					segment=N4:::Subscriber City/State/ZIP Code:S:1
-					segment=PER:::Subscriber Contact Information:S:3
-					segment=AAA:::Subscriber Request Validation:S:9
-					segment=DMG:::Subscriber Demographic Information:S:1
-					segment=INS:::Subscriber Relationship:S:1
-					segment=DTP:::Subscriber Date:S:9
+				<Segment name="TRN" max="3" comment="Subscriber Trace Number" />
+				<Loop name="L2100C" max="1" comment="Subscriber Name">
 					<Segment name="NM1" max="1" required="y" comment="Subscriber Name" />
 					<Segment name="REF" max="9" comment="Subscriber Additional Identification" />
 					<Segment name="N3"  max="1" comment="Subscriber Address" />
@@ -81,56 +60,31 @@
 					<Segment name="INS" max="1" comment="Subscriber Relationship" />
 					<Segment name="DTP" max="9" comment="Subscriber Date" />
 					<Loop name="L2110C" max="inf" comment="Subscriber Eligibility or Benefit Information">
-						segment=EB:::Subscriber Eligibility or Benefit Information:S:1
-						segment=HSD:::Health Care Services Delivery:S:9
-						segment=REF:::Subscriber Additional Identification:S:9
-						segment=DTP:::Subscriber Eligibility/Benefit Date:S:20
-						segment=AAA:::Subscriber Request Validation:S:9
-						segment=MSG:::Message Text:S:10
 						<Segment name="EB"  max="1"  comment="Subscriber Eligibility or Benefit Information" />
 						<Segment name="HSD" max="9"  comment="Health Care Services Delivery" />
 						<Segment name="REF" max="9"  comment="Subscriber Additional Identification" />
 						<Segment name="DTP" max="20" comment="Subscriber Eligibility/Benefit Date" />
 						<Segment name="AAA" max="9"  comment="Subscriber Request Validation" />
 						<Segment name="MSG" max="10" comment="Message Text" />
-						<Loop name="L2115C" max="10" comment="Subscriber Eligibility or Benefit Additional Information">
-							segment=III:::Subscriber Eligibility or Benefit Additional Information:S:1
-							segment=LS:::Loop Header:S:1		
-							<Segment name="III" max="1" comment="Subscriber Eligibility or Benefit Additional Information" />
-							<Segment name="LS"  max="1" comment="Loop Header" />					
+						<Loop name="L2115C" max="10" comment="Subscriber Eligibility or Benefit Additional Information">		
+							<Segment name="III" max="1" comment="Subscriber Eligibility or Benefit Additional Information" />												
 						</Loop>
+						<Segment name="LS"  max="1" comment="Loop Header" />
 						<Loop name="L2120C" max="1" comment="Subscriber Benefit Related Entity Name">
-							segment=NM1:1:1P,2B,36,73,FA,GP,IL,LR,P3,P4,P5,PR,PRP,SEP,TTP,VN,X3:Subscriber Benefit Related Entity Name:S:1
-							segment=N3:::Subscriber Benefit Related Entity Address:S:1
-							segment=N4:::Subscriber Benefit Related City/State/ZIP Code:S:1
-							segment=PER:::Subscriber Benefit Related Entity Contact Information:S:3
-							segment=PRV:::Subscriber Benefit Related Provider Information:S:1
-							segment=LE:::Loop Trailer:S:1
 							<Segment name="NM1" max="1" comment="Subscriber Benefit Related Entity Name" />
 							<Segment name="N3"  max="1" comment="Subscriber Benefit Related Entity Address" />
 							<Segment name="N4"  max="1" comment="Subscriber Benefit Related City/State/ZIP Code" />
 							<Segment name="PER" max="3" comment="Subscriber Benefit Related Entity Contact Information" />
-							<Segment name="PRV" max="1" comment="Subscriber Benefit Related Provider Information" />
-							<Segment name="LE"  max="1" comment="Loop Trailer" />				
-						</Loop>						
+							<Segment name="PRV" max="1" comment="Subscriber Benefit Related Provider Information" />											
+						</Loop>
+						<Segment name="LE"  max="1" comment="Loop Trailer" />						
 					</Loop>					
 				</Loop>								
 			</Loop>
-			<Loop name="2000D" max="inf" comment="Dependent Level">				
-				segment=HL:3:23:Dependent Level:S:1
-				segment=TRN:::Dependent Trace Number:S:3
+			<Loop name="L2000D" max="inf" comment="Dependent Level">				
 				<Segment name="HL"  max="1" comment="Dependent Level" />
-				<Segment name="TRN" max="1" comment="Dependent Trace Number" />
-				<Loop name="2100D" max="1" comment="Dependent Name">
-					segment=NM1:1:03:Dependent Name:R:1
-					segment=REF:::Dependent Additional Identification:S:9
-					segment=N3:::Dependent Address:S:1
-					segment=N4:::Dependent City/State/ZIP Code:S:1
-					segment=PER:::Dependent Contact Information:S:3
-					segment=AAA:::Dependent Request Validation:S:9
-					segment=DMG:::Dependent Demographic Information:S:1
-					segment=INS:::Dependent Relationship:S:1
-					segment=DTP:::Dependent Date:S:9
+				<Segment name="TRN" max="3" comment="Dependent Trace Number" />
+				<Loop name="L2100D" max="1" comment="Dependent Name">
 					<Segment name="NM1" max="1" required="y" comment="Dependent Name" />
 					<Segment name="REF" max="9" comment="Dependent Additional Identification" />
 					<Segment name="N3"  max="1" comment="Dependent Address" />
@@ -141,12 +95,6 @@
 					<Segment name="INS" max="1" comment="Dependent Relationship" />
 					<Segment name="DTP" max="9" comment="Dependent Date" />
 					<Loop name="L2110D" max="inf" comment="Depenent Eligibility or Benefit Information">
-						segment=EB:::Dependent Eligibility or Benefit Information:S:1
-						segment=HSD:::Health Care Services Delivery:S:9
-						segment=REF:::Dependent Additional Identification:S:9
-						segment=DTP:::Dependent Eligibility/Benefit Date:S:20
-						segment=AAA:::Dependent Request Validation:S:9
-						segment=MSG:::Message Text:S:10
 						<Segment name="EB"  max="1"  comment="Dependent Eligibility or Benefit Information" />
 						<Segment name="HSD" max="9"  comment="Health Care Services Delivery" />
 						<Segment name="REF" max="9"  comment="Dependent Additional Identification" />
@@ -154,25 +102,18 @@
 						<Segment name="AAA" max="9"  comment="Dependent Request Validation" />
 						<Segment name="MSG" max="10" comment="Message Text" />
 						<Loop name="L2115D" max="10" comment="Dependent Eligibility or Benefit Additional Information">
-							segment=III:::Dependent Eligibility or Benefit Additional Information:S:1
-							segment=LS:::Dependent Eligibility or Benefit Information:S:1
 							<Segment name="III" max="1" comment="Dependent Eligibility or Benefit Additional Information" />
-							<Segment name="LS"  max="1" comment="Dependent Eligibility or Benefit Information" />							
 						</Loop>
+						<Segment name="LS"  max="1" comment="Dependent Eligibility or Benefit Information" />
 						<Loop name="L2120D" max="1" comment="Dependent Benefit Related Entity Name">
-							segment=NM1:1:1P,2B,36,73,FA,GP,IL,LR,P3,P4,P5,PR,PRP,SEP,TTP,VN,X3:Dependent Benefit Related Entity Name:S:1
-							segment=N3:::Dependent Benefit Related Entity Address:S:1
-							segment=N4:::Dependent Benefit Related Entity City/State/ZIP Code:S:1
-							segment=PER:::Dependent Benefit Related Entity Contact Information:S:3
-							segment=PRV:::Dependent Benefit Related Provider Information:S:1
-							segment=LE:::Loop Trailer:S:1
 							<Segment name="NM1" max="1" comment="Dependent Benefit Related Entity Name" />
 							<Segment name="N3"  max="1" comment="Dependent Benefit Related Entity Address" />
 							<Segment name="N4"  max="1" comment="Dependent Benefit Related Entity City/State/ZIP Code" />
 							<Segment name="PER" max="3" comment="Dependent Benefit Related Entity Contact Information" />
 							<Segment name="PRV" max="1" comment="Dependent Benefit Related Provider Information" />
-							<Segment name="LE"  max="1" comment="Loop Trailer" />				
-						</Loop>						
+											
+						</Loop>
+						<Segment name="LE"  max="1" comment="Loop Trailer" />						
 					</Loop>					
 				</Loop>
 			</Loop>

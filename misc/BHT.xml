@@ -29,5 +29,5 @@
   <Field name="ReferenceIdentification" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
   <Field name="Date" required="y" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
   <Field name="Time" required="y" min="4" max="8" comment="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"/>
-  <Field name="TransactionTypeCode" required="y" min="2" max="2" validation="T640" comment="Code specifying the type of transaction"/>
+  <Field name="TransactionTypeCode" required="n" min="2" max="2" validation="T640" comment="Code specifying the type of transaction"/>
 </Segment>

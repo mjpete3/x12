@@ -27,14 +27,14 @@
   <Field name="EligibilityOrBenefitInformation" min="1" max="2" validation="T1390" comment="Code identifying eligibility or benefit information"/>
   <Field name="CoverageLevelCode" required="y" min="3" max="3" validation="T1207" comment="Code indicating the level of coverage being provided for this insured"/>
   <Field name="ServiceTypeCode" required="y" min="1" max="2" validation="T1365" comment="Code identifying the classification of service"/>
-  <Field name="InsuranceTypeCode" required="y" min="1" max="3" validation="T1336" comment="Code identifying the type of insurance policy within a specific insurance program"/>
-  <Field name="PlanCoverageDescription" required="y" min="1" max="50" comment="A description or number that identifies the plan or coverage"/>
-  <Field name="TimePeriodQualifier" required="y" min="1" max="2" validation="T615" comment="Code defining periods"/>
-  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Percent" type="double" required="y" min="1" max="10" comment="Percentage expressed as a decimal"/>
-  <Field name="QuantityQualifier" required="y" min="2" max="2" validation="T673" comment="Code specifying the type of quantity"/>
-  <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="YesNoConditionOrResponseCode1" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
-  <Field name="YesNoConditionOrResponseCode2" required="y" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
-  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="y" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
+  <Field name="InsuranceTypeCode" required="n" min="1" max="3" validation="T1336" comment="Code identifying the type of insurance policy within a specific insurance program"/>
+  <Field name="PlanCoverageDescription" required="n" min="1" max="50" comment="A description or number that identifies the plan or coverage"/>
+  <Field name="TimePeriodQualifier" required="n" min="1" max="2" validation="T615" comment="Code defining periods"/>
+  <Field name="MonetaryAmount" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Percent" type="double" required="n" min="1" max="10" comment="Percentage expressed as a decimal"/>
+  <Field name="QuantityQualifier" required="n" min="2" max="2" validation="T673" comment="Code specifying the type of quantity"/>
+  <Field name="Quantity" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="YesNoConditionOrResponseCode1" required="n" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="YesNoConditionOrResponseCode2" required="n" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="n" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
 </Segment>
