@@ -133,6 +133,12 @@ IEA*1*000004592~"
     
   end
   
+  def test_L2000_loop
+    assert_equal("1", @r.L2000.LX.AssignedNumber)
+    assert_equal("CLP*EDI DENIAL*1*1088*0*1088*HM*CLAIMNUMBER1*21~", @r.L2000.L2100[0].CLP.to_s)
+    assert_equal("CLP*EDI PAID*1*100*57.44*30*12*CLAIMNUMBER2*11~", @r.L2000[0].L2100[1].CLP.to_s)
+  end
+  
   
   def test_timing
     start = Time::now

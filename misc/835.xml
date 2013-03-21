@@ -1,8 +1,6 @@
 <!--
    This file is part of the X12Parser library that provides tools to
-   manipulate X12 messages using Ruby native syntax.
-
-   http://x12parser.rubyforge.org 
+   manipulate X12 messages using Ruby native syntax.   
    
    Copyright (C) 2012 P&D Technical Solutions, LLC
 
@@ -20,7 +18,7 @@
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-   $Id: 837p.xml 2012-11-23 mjp using version 5010 $  
+   $Id: 835.xml 2012-11-23 mjp using version 5010 $  
 -->
 
 <Definition>
@@ -39,44 +37,44 @@
 				<Segment name="N3" max="1" required="y" />
 				<Segment name="N4" max="1" required="y" />
 				<Segment name="REF" max="4" required="n" />
-				<Segment name="PER" min="1" max="inf" required="y" />
+				<Segment name="PER" min="1" max="inf" required="y" comment="4010 allows for 1 segment, 5010 allows for more than 1 segment"/>
 			</Loop>
 			<Loop name="L1000B" max="1" required="y" comment="Payee Identification" >
 				<Segment name="N1" max="1" required="y" />
 				<Segment name="N3" max="1" required="n" />
 				<Segment name="N4" max="1" required="y" />
-				<Segment name="REF" required="n" />
+				<Segment name="REF" max="inf" required="n" />
 				<Segment name="RDM" max="1" required="n" />
 			</Loop>
 			<Loop name="L2000" required="n" comment="Claim Payment Information" >
 				<Segment name="LX" max="1" required="n" />
 				<Segment name="TS3" max="1" required="n" />
-				<Segment name="TS2" max="1" required="n" />
-			</Loop>
-			<Loop name="L2100" min="1" comment="The Loop 2100 CLP Claim Payment Information Segment begins data on each individual claim for a service provider within the 835 Transaction." >
-				<Segment name="CLP" max="1" required="y" />
-				<Segment name="CAS" max="99" required="n" />
-				<Segment name="CLP" max="1" required="y" />
-				<Segment name="NM1" max="1" required="y" />
-				<Segment name="NM1" max="6" required="n" />
-				<Segment name="MIA" max="1" required="n" />
-				<Segment name="MOA" max="1" required="n" />
-				<Segment name="REF" max="15" required="n" />
-				<Segment name="DTM" max="4" required="n" />
-				<Segment name="PER" max="2" required="n" />
-				<Segment name="AMT" max="13" required="n" />
-				<Segment name="QTY" max="14" required="n" />			
-				<Loop name="L2110" max="999" required="n" comment="Service Payment Information">
-					<Segment name="SVC" max="1" required="n" />
-					<Segment name="DTM" max="2" required="n" />
+				<Segment name="TS2" max="1" required="n" />		
+				<Loop name="L2100" min="1" comment="The Loop 2100 CLP Claim Payment Information Segment begins data on each individual claim for a service provider within the 835 Transaction." >
+					<Segment name="CLP" max="1" required="y" />
 					<Segment name="CAS" max="99" required="n" />
-					<Segment name="REF" max="24" required="n" />
-					<Segment name="AMT" max="9" required="n" />
-					<Segment name="QTY" max="6" required="n" />
-					<Segment name="LQ" max="99" required="n" />
+					<Segment name="CLP" max="1" required="y" />
+					<Segment name="NM1" max="1" required="y" />
+					<Segment name="NM1" max="6" required="n" />
+					<Segment name="MIA" max="1" required="n" />
+					<Segment name="MOA" max="1" required="n" />
+					<Segment name="REF" max="15" required="n" />
+					<Segment name="DTM" max="4" required="n" />
+					<Segment name="PER" max="2" required="n" />
+					<Segment name="AMT" max="13" required="n" />
+					<Segment name="QTY" max="14" required="n" />			
+					<Loop name="L2110" max="999" required="n" comment="Service Payment Information">
+						<Segment name="SVC" max="1" required="n" />
+						<Segment name="DTM" max="2" required="n" />
+						<Segment name="CAS" max="99" required="n" />
+						<Segment name="REF" max="24" required="n" />
+						<Segment name="AMT" max="9" required="n" />
+						<Segment name="QTY" max="6" required="n" />
+						<Segment name="LQ" max="99" required="n" />
+					</Loop>
 				</Loop>
 			</Loop>
-			<Segment name="PLB" required="n" comment="Provider Level Adjustment" />			
+			<Segment name="PLB" max="inf" required="n" comment="Provider Level Adjustment" />			
 			<Segment name="SE" required="y" />
 		</Loop>
 		<Segment name="GE"  max="1" required="y"/>
