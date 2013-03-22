@@ -24,7 +24,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 Add this line to your application's Gemfile:
 
-    gem 'PD_x12'
+    gem 'pd_x12'
 
 And then execute:
 
@@ -32,9 +32,9 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install PD_x12
+    $ gem install pd_x12
 
-To initialize in Rails 3.2 application, in your config/initializers directory, create a file called x12.rb and add the line: require 'x12' to it.
+
  
 ## Documentation
 ### Wiki Page: https://github.com/mjpete3/x12/wiki
@@ -52,10 +52,19 @@ The authors of the project were inspired by the following works:
     * The Perl X12 parser by Prasad Poruporuthan, search.cpan.org/~prasad/X12-0.09/lib/X12/Parser.pm
     * The Ruby port of the above by Chris Parker, rubyforge.org/projects/x12-parser/
     * This project originated from App Design's X12 parser.  
-	* Project was forked by Sean Walberg, creating version 1.2.0 in April 2012. 
+	* Project was forked by Sean Walberg, creating version 1.2.0 in April 2012.
+	* Project was forked by Marty Petersen in November 2012, creating pd_x12. 
 
 
 # Change Log
+3/22/13 - releases 1.4.1 - 1.4.3
+* Fix errors in the 835.xml file
+
+3/11/13 - release 1.4.0
+* Added X12 definitions for 271 transaction
+* Renamed the gem to be all lower case so Rails and other frameworks autoload the project as a gem
+* Added an each method to segments to simplify looping through repeating segments
+
 1/26/13 - relesase 1.3.6
 * changed the referencing of the misc directory so that local copies of the xml definitions are not required
 * added an init.rb file in the root 
