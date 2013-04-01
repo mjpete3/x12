@@ -2,8 +2,8 @@
     This file is part of the X12Parser library that provides tools to
     manipulate X12 messages using Ruby native syntax.
 
-    http://x12parser.rubyforge.org 
-    
+    http://x12parser.rubyforge.org
+
     Copyright (C) 2009 APP Design, Inc.
 
     This library is free software; you can redistribute it and/or
@@ -33,6 +33,7 @@
       <Segment name="ST" required="y" max="1">
         <Field name="TransactionSetIdentifierCode" const="270" comment="Code uniquely identifying a Transaction Set"/>
         <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+        <Field name="ImplementationConventionReference" required="n" min="1" max="35" comment="Reference assigned to identify Implementation Convention"/>
       </Segment>
       <Segment name="BHT" required="y" max="1" comment="To define the business hierarchical structure of the transaction set and identify the business application purpose and reference data, i.e., number, date, and time">
         <Field name="HierarchicalStructureCode" required="y" const="0022"                       comment="Code indicating the hierarchical application structure of a transaction set that utilizes the HL segment to define the structure of the transaction set"/>
