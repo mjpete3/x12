@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2012 P&D Technical Solutions, LLC.
 #
 #     This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ require 'x12'
 require 'test/unit'
 
 class Test271Parse < Test::Unit::TestCase
-  
+
   MESSAGE = "ISA*00* *00* *ZZ*6175910AAC21T *ZZ*54503516A *061130*1445*U*00401*309242122*0*T*:~
 GS*HB*617591011C21T*545035165*20030924*21000083*309001*X*004010X092A1~
 ST*271*COMP1420~
@@ -78,30 +78,30 @@ GE*1*309001~
 IEA*1*309242122~"
 
 
-  def setup    
+  def setup
     @message = MESSAGE
     # make the result usable in the tests
     @message.gsub!(/\n/,'')
 
-    @parser = X12::Parser.new('271.xml')    
-    @r = @parser.parse('271', @message)       
+    @parser = X12::Parser.new('271.xml')
+    @r = @parser.parse('271', @message)
   end
-  
-  
+
+
   def teardown
     #nothing
   end
-  
-  
+
+
   def test_header
     assert_equal("00", @r.ISA.AuthorizationInformationQualifier)
-    assert_equal(" ", @r.ISA.AuthorizationInformation)    
+    assert_equal("          ", @r.ISA.AuthorizationInformation)
     assert_equal("00", @r.ISA.SecurityInformationQualifier)
-    assert_equal(" ", @r.ISA.SecurityInformation)
+    assert_equal("          ", @r.ISA.SecurityInformation)
     assert_equal("ZZ", @r.ISA.InterchangeIdQualifier1)
-    assert_equal("6175910AAC21T ", @r.ISA.InterchangeSenderId)
+    assert_equal("6175910AAC21T  ", @r.ISA.InterchangeSenderId)
     assert_equal("ZZ", @r.ISA.InterchangeIdQualifier2)
-    assert_equal("54503516A ", @r.ISA.InterchangeReceiverId)
+    assert_equal("54503516A      ", @r.ISA.InterchangeReceiverId)
     assert_equal("061130", @r.ISA.InterchangeDate)
     assert_equal("1445", @r.ISA.InterchangeTime)
     assert_equal("U", @r.ISA.InterchangeControlStandardsIdentifier)
@@ -110,7 +110,7 @@ IEA*1*309242122~"
     assert_equal("0", @r.ISA.AcknowledgmentRequested)
     assert_equal("T", @r.ISA.UsageIndicator)
     assert_equal(":", @r.ISA.ComponentElementSeparator)
-    
+
     assert_equal("HB", @r.GS.FunctionalIdentifierCode)
     assert_equal("617591011C21T", @r.GS.ApplicationSendersCode)
     assert_equal("545035165", @r.GS.ApplicationReceiversCode)
@@ -119,31 +119,31 @@ IEA*1*309242122~"
     assert_equal("309001", @r.GS.GroupControlNumber)
     assert_equal("X", @r.GS.ResponsibleAgencyCode)
     assert_equal("004010X092A1", @r.GS.VersionReleaseIndustryIdentifierCode)
-    
+
     assert_equal("271", @r.ST.TransactionSetIdentifierCode)
     assert_equal("COMP1420", @r.ST.TransactionSetControlNumber)
   end
-  
-  
+
+
   def test_trailer
-    assert_equal("45", @r.SE.NumberOfIncludedSegments)    
+    assert_equal("45", @r.SE.NumberOfIncludedSegments)
     assert_equal("COMP1420", @r.SE.TransactionSetControlNumber)
     assert_equal("1", @r.GE.NumberOfTransactionSetsIncluded)
     assert_equal("309001", @r.GE.GroupControlNumber)
     assert_equal("1", @r.IEA.NumberOfIncludedFunctionalGroups)
-    assert_equal("309242122", @r.IEA.InterchangeControlNumber)    
+    assert_equal("309242122", @r.IEA.InterchangeControlNumber)
   end
-  
+
   def test_each_loop
     # each loop for Loops
     # each loop for Segments
   end
-  
+
   def test_various_fields
-    
+
   end
-  
-    
+
+
   def test_timing
     start = Time::now
     X12::TEST_REPEAT.times do
@@ -153,6 +153,6 @@ IEA*1*309242122~"
     puts sprintf("Parses per second, 271: %.2f, elapsed: %.1f", X12::TEST_REPEAT.to_f/(finish-start), finish-start)
   end # test_timing
 
-  
+
 end
 

@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -28,13 +28,13 @@ class Test997Factory < Test::Unit::TestCase
 
   @@p = nil
 tmp=<<-EOT
-ISA****************~
-GS********~
+ISA*  *          *  *          *  *               *  *               *      *    * *     *         * * * ~
+GS*  *  *  *        *    * * * ~
 ST*997*2878~
 AK1*HS*293328532~
-AK2*270*~
-AK3*NM1**L1000D~
-AK4***55*Bad element~
+AK2*270*    ~
+AK3*NM1* *L1000D~
+AK4* **55*Bad element~
 AK5*A~
 AK3*DMG*0*L1010*22~
 AK4*0**0~
@@ -42,10 +42,10 @@ AK4*0**1~
 AK4*1**0~
 AK4*1**1~
 AK5*E****999~
-AK9****~
-SE**~
-GE**~
-IEA**~
+AK9* * * * ~
+SE* *    ~
+GE* * ~
+IEA* *         ~
 EOT
 
   @@result = tmp.gsub!(/\n/,'')
@@ -85,7 +85,7 @@ EOT
       l.AK4 {|s|
         #s.PositionInSegment =
         #s.DataElementReferenceNumber =
-        #s.DataElementSyntaxErrorCode = 
+        #s.DataElementSyntaxErrorCode =
         s.CopyOfBadDataElement       = 'Bad element'
       }
     }
@@ -109,7 +109,7 @@ EOT
           (0..1).each {|ak4_repeat| # Two repeats of the segment AK4
             l1010.AK4.repeat {|s|
               s.PositionInSegment          = loop_repeat
-              #s.DataElementReferenceNumber = 
+              #s.DataElementReferenceNumber =
               s.DataElementSyntaxErrorCode = ak4_repeat
               #s.CopyOfBadDataElement       =
             } # s
