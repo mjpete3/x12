@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -33,11 +33,11 @@ module X12
 
     # Create a new field with given parameters
     def initialize(name, type, required, min_length, max_length, validation)
-      @name       = name       
-      @type       = type       
+      @name       = name
+      @type       = type
       @required   = required
       @min_length = min_length.to_i
-      @max_length = max_length.to_i 
+      @max_length = max_length.to_i
       @validation = validation
       @content = nil
     end
@@ -56,7 +56,9 @@ module X12
       unless @content
         @content = $1 if self.type =~ /"(.*)"/ # If it's a constant
       end
-      @content || ''
+      rendered = @content || ''
+      rendered = rendered.ljust(@min_length) if @required
+      rendered
     end # render
 
     # Check if it's been set yet and it's not a constant

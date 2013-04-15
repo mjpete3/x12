@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2012 P&D Technical Solutions, LLC.
 #
 #     This library is free software; you can redistribute it and/or
@@ -25,15 +25,15 @@ require 'x12'
 require 'test/unit'
 
 class Test837pFactory < Test::Unit::TestCase
-  
-  RESULT = "ISA*00*          *00*          *01*9012345720000 *01*9088877320000*100822*1134*U*00200*000000007*0*T*:~
+
+  RESULT = "ISA*00*          *00*          *01*9012345720000  *01*9088877320000  *100822*1134*U*00200*000000007*0*T*:~
 GS*HC*901234572000*908887732000*20100822*1615*7*X*005010X222~
 ST*837*0007*005010X222~
 BHT*0019*00*123BATCH*20100822*1615*CH~
 NM1*41*2*ABC CLEARINGHOUSE*****46*123456789~
 PER*IC*WILMA FLINSTONE*TE*9195551111~
 NM1*40*2*BCBSNC*****46*987654321~
-HL*1**20*1~
+HL*1* *20*1~
 NM1*85*1*SMITH*ELIZABETH*A**M.D.*XX*0123456789~
 N3*123 MUDD LANE~
 N4*DURHAM*NC*27701~
@@ -58,14 +58,14 @@ IEA*1*000000007~"
   def setup
     @result = RESULT
     @result.gsub!(/\n/,'')
-    
+
     @parser = X12::Parser.new('837p.xml')
-  end  
-  
+  end
+
   def teardown
     #nothing
   end
-  
+
   def segment_nm1(nm1, code1, code2, code3, code4, code5, code6, code7, code8, code9)
     nm1.EntityIdentifierCode1 = code1
     nm1.EntityTypeQualifier = code2
@@ -77,20 +77,20 @@ IEA*1*000000007~"
     nm1.IdentificationCodeQualifier = code8
     nm1.IdentificationCode = code9
   end
-  
+
   def segment_n3(n3, code1, code2)
     n3.AddressInformation1 = code1
     if code2 != ""
       n3.AddressInformation2 = code2
     end
   end
-  
+
   def segment_n4(n4, code1, code2, code3)
     n4.CityName = code1
     n4.StateOrProvinceCode = code2
     n4.PostalCode = code3
   end
-  
+
   def loop_l1000a(loop)
     segment_nm1(loop.NM1,"41","2","ABC CLEARINGHOUSE","","","","","46","123456789")
     loop.PER {|p|
@@ -100,46 +100,46 @@ IEA*1*000000007~"
       p.CommunicationNumber1 = "9195551111"
       }
   end
-  
+
   def loop_l1000b(loop)
     segment_nm1(loop.NM1,"40","2","BCBSNC","","","","","46","987654321")
   end
-  
+
   def loop_l2000a(loop)
     loop.HL { |h|
-      h.HierarchicalIdNumber = "1"      
+      h.HierarchicalIdNumber = "1"
       h.HierarchicalLevelCode = "20"
       h.HierarchicalChildCode = "1"
     }
   end
-  
+
   def loop_l2010aa(loop)
     segment_nm1(loop.NM1,"85","1","SMITH","ELIZABETH","A","","M.D.","XX","0123456789")
     segment_n3(loop.N3,"123 MUDD LANE","")
     segment_n4(loop.N4,"DURHAM","NC","27701")
-  
+
     loop.REF {|r|
       r.ReferenceIdentificationQualifier = "EI"
       r.ReferenceIdentification = "123456789"
-  } 
+  }
   end
 
   def loop_l2000b(loop)
     loop.HL { |h|
-      h.HierarchicalIdNumber = "2"     
-      h.HierarchicalParentIdNumber = "1" 
+      h.HierarchicalIdNumber = "2"
+      h.HierarchicalParentIdNumber = "1"
       h.HierarchicalLevelCode = "22"
       h.HierarchicalChildCode = "0"
     }
     loop.SBR {|s|
       s.PayerResponsibilitySequenceNumberCode = "P"
       s.IndividualRelationshipCode = "18"
-      s.InsuredGroupOrPolicyNumber = "ABC123101"      
+      s.InsuredGroupOrPolicyNumber = "ABC123101"
       s.ClaimFilingIndicatorCode = "BL"
     }
-    
+
   end
-  
+
   def loop_l2010ba(loop)
     segment_nm1(loop.NM1,"IL","1","DOUGH","MARY","B","","","MI","24670389600")
     segment_n3(loop.N3, "P O BOX 12312", "")
@@ -149,52 +149,52 @@ IEA*1*000000007~"
       d.DateTimePeriod = "19670807"
       d.GenderCode = "F"
     }
-  
+
   end
- 
+
   def loop_l2010bb(loop)
     segment_nm1(loop.NM1,"PR","2","BCBSNC","","","","","PI","987654321")
   end
-  
+
   def loop_l2300(loop)
     loop.CLM {|c|
       c.PatientAccountNumber = "PTACCT2235057"
       c.MonetaryAmount = "100.5"
-      c.HealthCareServiceLocationInformation = "11::1"          
+      c.HealthCareServiceLocationInformation = "11::1"
       c.ProviderOrSupplierSignatureIndicator = "Y"
       c.MedicareAssignmentCode = "A"
       c.BenefitsAssignmentCertificationIndicator = "Y"
       c.ReleaseOfInformationCode = "N"
     }
-  
+
     loop.REF {|r|
       r.ReferenceIdentificationQualifier = "EA"
       r.ReferenceIdentification = "MEDREC11111"
-    } 
+    }
 
-    loop.HI.HealthCareCodeInformation1 = "BK:78901"    
+    loop.HI.HealthCareCodeInformation1 = "BK:78901"
   end
-  
+
   def loop_l2400(loop)
     loop.LX.AssignedNumber = "1"
     loop.SV1 {|s|
-      s.CompositeMedicalProcedureIdentifier = "HC:99212"      
+      s.CompositeMedicalProcedureIdentifier = "HC:99212"
       s.LineItemChargeAmount = "100.5"
       s.UnitOrBasisForMeasurementCode = "UN"
       s.ServiceUnitAmount = "1"
-      s.PlaceOfServiceCode = "12"      
-      s.CompositeDiagnosisCodePointer = "1"      
+      s.PlaceOfServiceCode = "12"
+      s.CompositeDiagnosisCodePointer = "1"
       s.EmergencyIndicator = "N"
     }
-    
+
     loop.DTP {|d|
       d.DateTimeQualifier = "472"
       d.DateTimePeriodFormatQualifier = "D8"
       d.DateTimePeriod = "20100801"
     }
   end
-  
-  
+
+
   def test_all
     @r = @parser.factory('837p')
     count = 0
@@ -217,8 +217,8 @@ IEA*1*000000007~"
       isa.UsageIndicator = 'T'
       isa.ComponentElementSeparator = ':'
     }
-    
-    @r.GS {|gs|      
+
+    @r.GS {|gs|
       gs.FunctionalIdentifierCode = 'HC'
       gs.ApplicationSendersCode = '901234572000'
       gs.ApplicationReceiversCode = '908887732000'
@@ -228,12 +228,12 @@ IEA*1*000000007~"
       gs.ResponsibleAgencyCode = 'X'
       gs.VersionReleaseIndustryIdentifierCode = '005010X222'
       }
-    
+
     @r.ST.TransactionSetIdentifierCode = '837'
     @r.ST.TransactionSetControlNumber  = '0007'
     @r.ST.ImplementationConventionReference = '005010X222'
     count += 1
-    
+
     @r.BHT.HierarchicalStructureCode = '0019'
     @r.BHT.TransactionSetPurposeCode = '00'
     @r.BHT.ReferenceIdentification = '123BATCH'
@@ -260,19 +260,19 @@ IEA*1*000000007~"
     count += 3
     loop_l2400(@r.L2400)
     count += 3
-    
+
     @r.SE.NumberOfIncludedSegments = count + 1
     @r.SE.TransactionSetControlNumber  = '0007'
-    
+
     @r.GE.NumberOfTransactionSetsIncluded = 1
     @r.GE.GroupControlNumber = 7
-    
+
     @r.IEA.NumberOfIncludedFunctionalGroups = '1'
     @r.IEA.InterchangeControlNumber = '000000007'
-    
-    assert_equal(@result, @r.render)    
+
+    assert_equal(@result, @r.render)
   end
-  
+
   def test_timing
     start = Time::now
     X12::TEST_REPEAT.times do
@@ -281,5 +281,5 @@ IEA*1*000000007~"
     finish = Time::now
     puts sprintf("Factories per second, 837p: %.2f, elapsed: %.1f", X12::TEST_REPEAT.to_f/(finish-start), finish-start)
   end # test_timing
-  
+
 end
