@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -28,14 +28,14 @@ class Test270FactoryInterchange < Test::Unit::TestCase
 
   @@p = nil
 @@result=<<-EOT
-ISA*03*user      *01*password  *ZZ*0000000Eliginet*ZZ*CHICAGO BLUES*070724*1726*U*00401*230623206*0*T*:~
+ISA*03*user      *01*password  *ZZ*0000000Eliginet*ZZ*CHICAGO BLUES  *070724*1726*U*00401*230623206*0*T*:~
 GS*HS*0000000Eliginet*CHICAGO BLUES*20070724*1726*000*X*004010X092A1~
 ST*270*0000~
 BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -47,7 +47,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -59,7 +59,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -73,7 +73,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -85,7 +85,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -99,7 +99,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*RED CROSS*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*LastName*FirstName~
 DMG*D8*19700725~
@@ -165,7 +165,7 @@ EOT
         hl.HierarchicalChildCode='1'
       }
       count += 1
-      
+
       l2000B.L2100B {|l2100B|
         l2100B.NM1 {|nm1|
           nm1.EntityIdentifierCode1='1P'
@@ -248,7 +248,7 @@ EOT
       ge.GroupControlNumber=groupControlNumber
     }
   end # create_fg
-  
+
   def test_all
     @r = @@p.factory('270interchange')
     @r.ISA {|isa|

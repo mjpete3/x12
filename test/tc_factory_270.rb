@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -33,7 +33,7 @@ BHT*0022*13*LNKJNFGRWDLR*20070724*1726~
 HL*1**20*1~
 NM1*PR*2*BIG PAYOR*****PI*CHICAGO BLUES~
 HL*2*1*21*1~
-NM1*1P*1******SV*daw~
+NM1*1P*1* *****SV*daw~
 HL*3*2*22*0~
 NM1*IL*1*Doe*Joe~
 DMG*D8*19700725~
@@ -97,7 +97,7 @@ EOT
         hl.HierarchicalChildCode='1'
       }
       count += 1
-      
+
       l2000B.L2100B {|l2100B|
         l2100B.NM1 {|nm1|
           nm1.EntityIdentifierCode1='1P'

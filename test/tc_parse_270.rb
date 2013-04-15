@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -51,7 +51,7 @@ EOT
       # @@p.show
     end
     @r = @@p
-    
+
   end # setup
 
   def teardown
@@ -78,7 +78,7 @@ EOT
   def test_absent
     assert_equal(X12::EMPTY, @r.L2000D.HHH)
     assert_equal(X12::EMPTY, @r.L2000B.L2111)
-    assert_equal('', @r.L2000C.L2100C.N3.AddressInformation1)
+    assert_equal(' ', @r.L2000C.L2100C.N3.AddressInformation1)
   end # test_absent
 
   def test_timing
