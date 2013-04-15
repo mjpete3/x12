@@ -42,7 +42,7 @@ Or install it yourself as:
 ## Major deficiencies
 
     Validation is not implemented.
-    Field types and sizes are ignored.
+    Field types are ignored.
     No access methods for composites’ fields.
 
 # Acknowledgments
@@ -57,6 +57,11 @@ The authors of the project were inspired by the following works:
 
 
 # Change Log
+4/15/13 - release 1.4.5
+* Facotires now enforce minimum sizes - wbajzek contributed
+* 270Interchnage.xml updated ST segment's field list - wbajzek contributed
+* Test updated for minimum size - wbajzek contributed
+
 3/22/13 - releases 1.4.1 - 1.4.3
 * Fix errors in the 835.xml file
 
