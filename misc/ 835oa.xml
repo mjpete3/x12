@@ -19,8 +19,8 @@
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
    $Id: 835OA.xml 2013-06-08 mjp using version 5010 $  
-   ** Non-standard implementation of the 835 transaction **
-   ** Allows for multiple ST/SE segments ** 
+    Non-standard implementation of the 835 transaction 
+    Allows for multiple ST/SE segments 
 -->
 
 <Definition>
