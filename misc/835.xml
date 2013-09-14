@@ -18,17 +18,20 @@
    License along with this library; if not, write to the Free Software
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-   $Id: 835.xml 2012-11-23 mjp using version 5010 $  
+   $Id: 835OA.xml 2013-06-08 mjp using version 5010 $  
+    Non-standard implementation of the 835 transaction 
+    Allows for multiple ST/SE segments 
 -->
 
 <Definition>
 	<Loop name="835" required="y">
 		<Segment name="ISA" max="1" required="y" />
 		<Segment name="GS"  max="1" required="y" />	
-		<Loop name="L835" max="1" comment="This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (837p) for use within the context of an Electronic Data Interchange (EDI) environment.">
+		<Loop name="L835" max="inf" comment="This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (837p) for use within the context of an Electronic Data Interchange (EDI) environment.">
 			<Segment name="ST"  max="1" required="y" />
-			<Segment name="BPR" max="1" required="y" comment="Fianancial Information" />
-			<Segment name="TRN" max="1" required="y" comment="Re-association Trace Number" />
+			<Segment name="BPR" max="1" required="y"   comment="Fianancial Information" />
+			<Segment name='NTE' max='inf' required='n' comment="Note / Special Instruction" />
+			<Segment name="TRN" max="1" required="y"   comment="Re-association Trace Number" />
 			<Segment name="CUR" max="1" required="n" />
 			<Segment name="REF" max="2" required="n" />
 			<Segment name="DTM" max="1" required="n" comment="Production Date" />
@@ -37,14 +40,13 @@
 				<Segment name="N3" max="1" required="y" />
 				<Segment name="N4" max="1" required="y" />
 				<Segment name="REF" max="4" required="n" />
-				<Segment name="PER" min="1" max="inf" required="y" comment="4010 allows for 1 segment, 5010 allows for more than 1 segment"/>
+				<Segment name="PER" max="inf" required="n" comment="4010 allows for 1 segment, 5010 allows for more than 1 segment"/>
 			</Loop>
 			<Loop name="L1000B" max="1" required="y" comment="Payee Identification" >
 				<Segment name="N1" max="1" required="y" />
 				<Segment name="N3" max="1" required="n" />
-				<Segment name="N4" max="1" required="y" />
+				<Segment name="N4" max="1" required="n" />
 				<Segment name="REF" max="inf" required="n" />
-				<Segment name="RDM" max="1" required="n" />
 			</Loop>
 			<Loop name="L2000" required="n" comment="Claim Payment Information" >
 				<Segment name="LX" max="1" required="n" />
@@ -54,21 +56,21 @@
 					<Segment name="CLP" max="1" required="y" />
 					<Segment name="CAS" max="99" required="n" />					
 					<Segment name="NM1" min="1" max="7" required="y" />					
-					<Segment name="MIA" max="1" required="n" />
-					<Segment name="MOA" max="1" required="n" />
+					<Segment name="MIA" max="1"  required="n" />
+					<Segment name="MOA" max="1"  required="n" />
 					<Segment name="REF" max="15" required="n" />
-					<Segment name="DTM" max="4" required="n" />
-					<Segment name="PER" max="2" required="n" />
-					<Segment name="AMT" max="13" required="n" />
-					<Segment name="QTY" max="14" required="n" />			
+					<Segment name="DTM" max="4"  required="n" />
+					<Segment name="PER" max="3"  required="n" />
+					<Segment name="AMT" max="14" required="n" />
+					<Segment name="QTY" max="15" required="n" />			
 					<Loop name="L2110" max="999" required="n" comment="Service Payment Information">
-						<Segment name="SVC" max="1" required="n" />
-						<Segment name="DTM" max="2" required="n" />
+						<Segment name="SVC" max="1"  required="n" />
+						<Segment name="DTM" max="3"  required="n" />
 						<Segment name="CAS" max="99" required="n" />
 						<Segment name="REF" max="24" required="n" />
-						<Segment name="AMT" max="9" required="n" />
-						<Segment name="QTY" max="6" required="n" />
-						<Segment name="LQ" max="99" required="n" />
+						<Segment name="AMT" max="12" required="n" />
+						<Segment name="QTY" max="6"  required="n" />
+						<Segment name="LQ" max="99"  required="n" />
 					</Loop>
 				</Loop>
 			</Loop>

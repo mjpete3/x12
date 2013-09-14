@@ -57,9 +57,13 @@ The authors of the project were inspired by the following works:
 
 
 # Change Log
+9/14/13 - release 1.4.7
+* Added 276 / 277 transaction messages 
+* Fixed issue with 835.xml file
+
 4/15/13 - release 1.4.5
-* Facotires now enforce minimum sizes - wbajzek contributed
-* 270Interchnage.xml updated ST segment's field list - wbajzek contributed
+* Factories now enforce minimum sizes - wbajzek contributed
+* 270Interchange.xml updated ST segment's field list - wbajzek contributed
 * Test updated for minimum size - wbajzek contributed
 
 3/22/13 - releases 1.4.1 - 1.4.3

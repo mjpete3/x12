@@ -1,0 +1,93 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.   
+   
+   Copyright (C) 2012, 2013 P&D Technical Solutions, LLC
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 835.xml 2013-06-08 mjp using version 5010 $  
+    Non-standard implementation of the 835 transaction 
+    Allows for multiple ST/SE segments 
+-->
+
+<Definition>
+	<Loop name="276" required="y">
+		<Segment name="ISA" max="1" required="y"/>
+		<Segment name="GS"  max="1" required="y"/>
+		<Loop name="L276" max="inf" comment="This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Status Request and Response (276) for use within the context of an Electronic Data Interchange (EDI) environment.">
+			<Segment name="ST"  max="1" required="y"/>
+			<Segment name="BHT" max="1" required="y" comment="Beginning Hierarchical Transaction"/>
+			<Loop name="L2000A" max="inf" required="y" comment="Information Source Level">
+				<Segment name="HL" max="1" required="y" comment="Information Source Level"/>
+				<Loop name="L2100A" max="1" required="y" comment="Payer Name">
+					<Segment name="NM1" max="1" required="y" comment="Payer Name" />
+					<Segment name="PER" max="1" required="n" comment="Payer Contact information" />
+				</Loop>
+			</Loop>
+			<Loop name="L2000B" max="inf" comment="Information Receiver Level">
+				<Segment name="HL" max="1" required="y" comment="Information Receiver Level" />
+				<Loop name="L2100B" max="inf" comment="Information Receiver Name">
+					<Segment name="NM1" max="1" required="y" comment="Information Receiver Name" />
+				</Loop>
+			</Loop>
+			<Loop name="L2000C" max="inf" comment="Service Provider Level">
+				<Segment name="HL" max="1" required="y" comment="Service Provider Level" />
+				<Loop name="L2100C" max="inf" comment="Provider Name" >
+					<Segment name="NM1" max="1" required="y" comment="Provider Name" />
+				</Loop>
+			</Loop>
+			<Loop name="L2000D" max="inf" comment="Subscriber Level">
+				<Segment name="HL" max="1" required="y" comment="Subscriber Level" />
+				<Segment name="DMG" max="1" required="n" comment="Subscriber Demographic Information" />
+				<Loop name="L2100D" max="inf" comment="Subscriber Name">
+					<Segment name="NM1" max="1" required="y" comment="Subscriber Name" />
+				</Loop>
+				<Loop name="L2200D" max="inf" comment="Claim Submitter Trace">
+					<Segment name="TRN" max="1" required="y" comment="Claim Submitter Trace Number" />
+					<Segment name="REF" max="3" required="n" />
+					<Segment name="AMT" max="1" required="n" comment="Claim Submitted Charges" />
+					<Segment name="DTP" max="1" required="n" comment="Claim Service Date" />
+					<Loop name="L2210D" max="inf" comment="Service Line Information">
+						<Segment name="SVC" max="1" required="n" comment="Service Line Information" />
+						<Segment name="REF" max="1" required="n" comment="Service Line Item Identifiaction" />
+						<Segment name="DTP" max="1" required="Y" comment="Service Line Date" />
+					</Loop>
+				</Loop>	
+			</Loop>
+			<Loop name="L2000E" max="inf" comment="Dependent Level">
+				<Segment name="HL" max="1" required="y" comment="Dependent Level" />
+				<Segment name="DMG" max="1" required="n" comment="Dependent Demographic Information" />
+				<Loop name="L2100E" max="inf" comment="Dependent Name">
+					<Segment name="NM1" max="1" required="y" comment="Dependent Name" />
+				</Loop>
+				<Loop name="L2200E" max="inf" comment="Claim Submitter Trace Number">
+					<Segment name="TRN" max="1" required="y" comment="Claim Subimtter Trace Number" />
+					<Segment name="REF" max="3" required="n" />
+					<Segment name="AMT" max="1" required="n" comment="Claim Submitted Charges" />
+					<Segment name="DTP" max="1" required="n" comment="CLaim Service Date" />
+					<Loop name="L2210E" max="inf" comment="Service Line Information">
+						<Segment name="SVC" max="1" required="n" comment="Service Line Information" />
+						<Segment name="REF" max="1" required="n" comment="Service Line Item Identification" />
+						<Segment name="DTP" max="1" required="y" comment="Service Line Date" />
+					</Loop>
+				</Loop>
+			</Loop>
+			<Segment name="SE" required="y" />
+		</Loop>
+		<Segment name="GE"  max="1" required="y"/>
+		<Segment name="IEA" max="1" required="y"/>
+	</Loop>
+</Definition>
