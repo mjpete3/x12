@@ -1,0 +1,32 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org
+
+   Copyright (C) 2014 P&D Technologies, LLC
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: TA.xml 78 2009-05-12 22:27:26Z ikk $
+-->
+
+<Segment name="TA1" comment="Interchange Acknowledgment Segment">
+  <Field name="InterchangeControlNumber" type="int"     required="y" min="9"  max="9"   comment="A control number assigned by the interchange sender"/>
+  <Field name="InterchangeDate"                         required="y" min="6"  max="6"   comment="Date of the interchange"/>
+  <Field name="InterchangeTime"                         required="y" min="4"  max="4"   comment="Time of the interchange"/>
+  <Field name="InterchangeAcknowledgmentCode"           required="y" min="1"  max="1"   comment="Code sent by the reciever acknowledging the file"/>
+  <Field name="InterchangeNoteCode"                     required="y" min="1"  max="1"   comment="3-digit number corresponds to the note"/>
+</Segment>

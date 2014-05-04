@@ -2,8 +2,8 @@
    This file is part of the X12Parser library that provides tools to
    manipulate X12 messages using Ruby native syntax.
 
-   http://x12parser.rubyforge.org 
-   
+   http://x12parser.rubyforge.org
+
    Copyright (C) 2012 P & D Technology Solutions, LLC.
 
    This library is free software; you can redistribute it and/or
@@ -26,6 +26,7 @@
 <Definition>
   <Loop name="999" required="y" >
   	<Segment name="ISA" max="1" required="y" />
+  	<Segment name="TA1" max="1" required="n" />
 	<Segment name="GS"  max="1" required="y" />
     <Segment name="ST"  max="1" required="y" >
       <Field name="TransactionSetIdentifierCode" const="999" min="3" max="3" validation="T143" comment="Code uniquely identifying a Transaction Set"/>
@@ -34,10 +35,10 @@
     </Segment>
     <Segment name="AK1" required="y" max="1" comment="Functional Group Response"/>
     <Loop name="L1000" max="999999" required="y">
-      <Segment name="AK2" max="1" required="n" comment="Transaction Set Response Header"/>      
+      <Segment name="AK2" max="1" required="n" comment="Transaction Set Response Header"/>
       <Loop name="L1010" max="999999" required="n">
       	<Segment name="IK3" max="1" required="n" comment="Error Identification"/>
-        <Segment name="CTX" max="10" required="n" comment="Segment Context"/>        
+        <Segment name="CTX" max="10" required="n" comment="Segment Context"/>
         <Loop name="L1020" required="n">
         	<Segment name="IK4" max="1" required="n" comment="Implementation Data Element Note"/>
         	<Segment name="CTX" max="10" required="n" comment="Element Context"/>
