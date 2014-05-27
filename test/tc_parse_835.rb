@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2012 P&D Technical Solutions, LLC.
 #
 #     This library is free software; you can redistribute it and/or
@@ -75,21 +75,74 @@ SE*45*0001~
 GE*1*45920001~
 IEA*1*000004592~"
 
-  
-  def setup    
+  MESSAGE1 = "ISA*00*          *00*          *ZZ*330897513      *ZZ*ASSOCIATEDBC   *140514*1605*^*00501*188915716*0*P*:~
+GS*HP*330897513*ASSOCIATEDBC*20140514*1605*188915716*X*005010X221A1~
+ST*835*0001~
+BPR*I*280.56*C*ACH*CCP*01*011900445*DA*0000009046*1066033492**01*031201360*DA*7869322623*20140519~
+TRN*1*814133500000415*1066033492~
+REF*EV*330897513~
+DTM*405*20140514~
+N1*PR*AETNA~
+N3*151 FARMINGTON AVENUE~
+N4*HARTFORD*CT*06156~
+PER*BL*PROVIDER SERVICE~
+N1*PE*CENTER FOR PSYCHOLOGICAL SERVICES OF SOMERSET COUN*XX*1457686560~
+N3*143 WILLIAM ST~
+N4*SOUTH RIVER*NJ*088821072~
+REF*PQ*149850620~
+REF*TJ*263895688~
+CLP*687400A140313*22*-150*-45**13*E7TWCV68K0000*11*1~
+NM1*QC*1*SMALLEY*ELIZABETH****MI*W193272207~
+NM1*82*1*HURT*DEBBIE****XX*1457686560~
+REF*1L*0701087-022-00002-UA~
+REF*CE*AETNA CHOICE  POS II NET 01449~
+DTM*050*20140314~
+DTM*232*20140308~
+DTM*233*20140308~
+PER*CX**TE*8886323862~
+SVC*HC:90834*-150*-45**1~
+DTM*472*20140308~
+CAS*CO*45*-90~
+CAS*PR*3*-15~
+CLP*652000A140307*22*-150*-45**13*ECABDCJH40000*11*1~
+NM1*QC*1*VANDERBEEK*JOHN RYAN~
+NM1*IL*1*CROFTS*FRANCIS****MI*W142202122~
+NM1*74*1**FRANCES*G~
+NM1*82*1*HOUSER*MEGAN****XX*1457686560~
+REF*1L*0701087-022-00003-UA~
+REF*CE*AETNA CHOICE  POS II NET 01449~
+DTM*050*20140310~
+DTM*232*20140306~
+DTM*233*20140306~
+PER*CX**TE*8886323862~
+SVC*HC:90834*-150*-45**1~
+DTM*472*20140306~
+CAS*CO*45*-90~
+CAS*PR*3*-15~
+AMT*B6*60~
+SE*44*0001~
+GE*7*188915716~
+IEA*1*188915716~"
+
+  def setup
     # readable format
     @message = MESSAGE
     # make the result usable in the tests
     @message.gsub!(/\n/,'')
-    
-    @parser = X12::Parser.new('835.xml')    
-    @r = @parser.parse('835', @message)       
+
+    @parser = X12::Parser.new('835.xml')
+    @r = @parser.parse('835', @message)
+
+    # second message for testing negatives
+    @message1 = MESSAGE1
+    @message1.gsub!(/\n/,'')
+    @r1 = @parser.parse('835', @message1)
   end
-  
+
   def teardown
     #nothing
   end
-  
+
   def test_ISA_IEA
      assert_equal('ISA*00*          *00*          *ZZ*5010TEST       *ZZ*835RECVR       *110930*1105*^*00501*000004592*0*T*:~', @r.ISA.to_s)
      assert_equal('5010TEST       ', @r.ISA.InterchangeSenderId)
@@ -101,17 +154,17 @@ IEA*1*000004592~"
     assert_equal("45920001", @r.GS.GroupControlNumber)
     assert_equal(@r.GS.GroupControlNumber, @r.GE.GroupControlNumber)
   end
-  
+
   def test_segment_each0
     assert_equal(3, @r.L1000A.PER.size)
-    
+
     # loop through the PER segment and find the CX record
     @r.L1000A.PER.each do |per|
       if per.ContactFunctionCode == "CX"
         assert_equal("TE", per.CommunicationNumberQualifier1)
       end
-    end  
-    
+    end
+
     #loop through the PER segment anf find the BL record
     @r.L1000A.PER.each do |per|
       if per.ContactFunctionCode == "BL"
@@ -119,27 +172,37 @@ IEA*1*000004592~"
         assert_equal("TECHNICAL CONTACT", per.Name)
         assert_equal("EM", per.CommunicationNumberQualifier2)
         assert_equal("PAYER@PAYER.COM", per.CommunicationNumber2)
-        
+
       end
-    end  
-    
+    end
+
     #loop through and find the IC record
     @r.L1000A.PER.each do |per|
       if per.ContactFunctionCode == "IC"
         assert_equal("UR", per.CommunicationNumberQualifier1)
         assert_equal("WWW.PAYER.COM", per.CommunicationNumber1)
       end
-    end  
-    
+    end
+
   end
-  
+
   def test_L2000_loop
     assert_equal("1", @r.L2000.LX.AssignedNumber)
     assert_equal("CLP*EDI DENIAL*1*1088*0*1088*HM*CLAIMNUMBER1*21~", @r.L2000.L2100[0].CLP.to_s)
     assert_equal("CLP*EDI PAID*1*100*57.44*30*12*CLAIMNUMBER2*11~", @r.L2000[0].L2100[1].CLP.to_s)
   end
-  
-  
+
+
+  def test_negative
+    # puts @r1.L2000[0].L2100[1].CLP.inspect
+    assert_equal("-150", @r1.L2000[0].L2100[1].CLP.MonetaryAmount1)
+    m1 = @r1.L2000[0].L2100[1].CLP.MonetaryAmount1
+    assert_equal(-150, m1.to_i)
+
+    assert_equal("-45", @r1.L2000[0].L2100[1].CLP.MonetaryAmount2)
+    assert_equal(-45, @r1.L2000[0].L2100[1].CLP.MonetaryAmount2.to_i)
+  end
+
   def test_timing
     start = Time::now
     X12::TEST_REPEAT.times do
