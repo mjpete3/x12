@@ -22,8 +22,6 @@
 #++
 #
 
-require "rexml/document"
-require 'pp'
 
 module X12
 
@@ -34,20 +32,7 @@ module X12
   class Parser
 
     # These constitute prohibited file names under Microsoft
-    MS_DEVICES = [   
-                  'CON',
-                  'PRN',
-                  'AUX',
-                  'CLOCK$',
-                  'NUL',
-                  'COM1',
-                  'LPT1',
-                  'LPT2',
-                  'LPT3',
-                  'COM2',
-                  'COM3',
-                  'COM4',
-                 ]
+    MS_DEVICES = ['CON',  'PRN',  'AUX',  'CLOCK$', 'NUL', 'COM1', 'LPT1', 'LPT2', 'LPT3', 'COM2', 'COM3', 'COM4']
 
     # Creates a parser out of a definition
     def initialize(file_name)

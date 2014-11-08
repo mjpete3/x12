@@ -22,11 +22,11 @@
 #++
 #
 module X12
-
-  # $Id: Table.rb 35 2008-11-13 18:33:44Z ikk $
+  
   #
   # This just a named hash to store validation tables.
-
+  #
+  
   class Table < Hash
     attr_reader :name
 

@@ -22,20 +22,18 @@
 #++
 #
 
-require "rexml/document"
 
 module X12
-
-  # $Id: XMLDefinitions.rb 90 2009-05-13 19:51:27Z ikk $
   #
   # A class for parsing X12 message definition expressed in XML format.
-
+  #
+  
   class XMLDefinitions < Hash
 
     # Parse definitions out of XML file
     def initialize(str)
-      doc = REXML::Document.new(str)
-      definitions = doc.root.name =~ /^Definition$/i ? doc.root.elements.to_a : [doc.root]      
+      doc = LibXML::XML::Document.string(str)
+      definitions = doc.root.name =~ /^Definition$/i ? doc.root.find('*').to_a : [doc.root]      
       
       definitions.each { |element|
         #puts element.name
@@ -130,7 +128,7 @@ module X12
     def parse_table(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
-      content = e.get_elements("Entry").inject({}) {|t, entry|
+      content = e.find("Entry").inject({}) {|t, entry|
         t[entry.attributes["name"]] = entry.attributes["value"]
         t
       }
@@ -140,7 +138,7 @@ module X12
     def parse_segment(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
-      fields = e.get_elements("Field").inject([]) {|f, field|
+      fields = e.find("Field").inject([]) {|f, field|
         f << parse_field(field)
       }
       Segment.new(name, fields, Range.new(min, max))
@@ -149,7 +147,7 @@ module X12
     def parse_composite(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
-      fields = e.get_elements("Field").inject([]) {|f, field|
+      fields = e.find("Field").inject([]) {|f, field|
         f << parse_field(field)
       }
       Composite.new(name, fields)
@@ -158,7 +156,7 @@ module X12
     def parse_loop(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
-      components = e.elements.to_a.inject([]){|r, element|
+      components = e.find('*').to_a.inject([]){|r, element|
         r << case element.name
              when /loop/i
                parse_loop(element)

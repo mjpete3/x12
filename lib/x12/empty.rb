@@ -22,11 +22,11 @@
 #++
 #
 module X12
-
-  # $Id: Empty.rb 35 2008-11-13 18:33:44Z ikk $
+  
   #
   # Class indicating the absense of any X12 element, be it loop, segment, or anything else like that.
-
+  #
+  
   class Empty < Base
 
     # Create a new empty

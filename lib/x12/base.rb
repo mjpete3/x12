@@ -23,16 +23,16 @@
 #
 module X12
 
-  # $Id: Base.rb 70 2009-03-26 19:25:39Z ikk $
   #
   # Base class for Segment, Composite, and Loop. Contains setable
   # segment_separator, field_separator, and composite_separator fields.
-
+  #
+  
   class Base
 
-    attr_reader :name, :repeats
-    attr_reader :segment_separator, :field_separator, :composite_separator, :next_repeat, :parsed_str, :nodes
-    attr_writer :segment_separator, :field_separator, :composite_separator, :next_repeat, :parsed_str, :nodes
+    attr_reader   :name, :repeats
+    attr_accessor :segment_separator, :field_separator, :composite_separator, :next_repeat, :parsed_str, :nodes
+    
 
     # Creates a new base element with a given name, array of sub-elements, and array of repeats if any.
     def initialize(name, arr, repeats = nil)

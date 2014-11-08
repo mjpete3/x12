@@ -23,9 +23,9 @@
 #
 module X12
 
-  # $Id: Composite.rb 35 2008-11-13 18:33:44Z ikk $
   #
   # Class implementing a composite field.
+  #
 
   class Composite < Base
 

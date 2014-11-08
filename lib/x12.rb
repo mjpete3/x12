@@ -25,6 +25,9 @@
 #
 # Package implementing direct manipulation of X12 structures using Ruby syntax.
 
+require "libxml"
+require 'pp'
+
 require "x12/version"
 require 'x12/base'
 require 'x12/empty'
@@ -37,6 +40,8 @@ require 'x12/xmldefinitions'
 require 'x12/parser'
 
 module X12
+  include LibXML
+  
   EMPTY = Empty.new()
   TEST_REPEAT = 100
   

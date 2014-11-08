@@ -22,11 +22,11 @@
 #++
 #
 module X12
-
-  # $Id: Field.rb 90 2009-05-13 19:51:27Z ikk $
+  
   #
   # Class to represent a segment field. Please note, it's not a descendant of Base.
-
+  #
+  
   class Field
     attr_reader :name, :type, :required, :min_length, :max_length, :validation
     attr_writer :content

@@ -22,10 +22,10 @@
 #++
 #
 module X12
-
-  # $Id: Segment.rb 82 2009-05-13 18:07:22Z ikk $
+  
   #
   # Implements a segment containing fields or composites
+  #
     
   class Segment < Base
 
