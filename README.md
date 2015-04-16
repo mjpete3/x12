@@ -57,6 +57,10 @@ The authors of the project were inspired by the following works:
 
 
 # Change Log
+4/16/15 - release 1.5.1
+* Added inpsect method to loop class to resolve infinite loop due to changes with inspect and to_s methods in ruby 2.0.0
+* Thank you to Wylan for troubleshooting and providing the fix 
+
 11/8/14 - release 1.5.0
 * converted from ReXML to LibXML for speed improvement on XML parsing 
 
