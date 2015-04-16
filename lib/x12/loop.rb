@@ -72,7 +72,15 @@ module X12
         ''
       end
     end # render
-    
+
+  
+    # Formats a printable string containing the loops element's content 
+    # added to provide compatability with ruby > 2.0.0 
+    def inspect
+      "#{self.class.to_s.sub(/^.*::/, '')} (#{name}) #{repeats} =<#{parsed_str}, #{next_repeat.inspect}> ".gsub(/\\*\"/, '"')
+    end 
+
+
     # Provides looping through repeats of a message    
     def each
       res = self.to_a
