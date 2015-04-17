@@ -56,18 +56,15 @@ module X12
 
     def parse_boolean(s)
       return case s
-             when nil
-               false
-             when "" 
-               false
              when /(^y(es)?$)|(^t(rue)?$)|(^1$)/i 
                true
-             when /(^no?$)|(^f(alse)?$)|(^0$)/i 
+             when nil, "", /(^no?$)|(^f(alse)?$)|(^0$)/i 
                false
              else
                nil
              end # case
     end #parse_boolean
+
 
     def parse_type(s)
       return case s
@@ -87,6 +84,7 @@ module X12
                nil
              end # case
     end #parse_type
+    
 
     def parse_int(s)
       return case s
@@ -112,6 +110,7 @@ module X12
       return name, min, max, type, required, validation
     end # parse_attributes
 
+
     def parse_field(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
@@ -125,6 +124,7 @@ module X12
       Field.new(name, type, required, min, max, validation)
     end # parse_field
 
+
     def parse_table(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
@@ -133,16 +133,27 @@ module X12
         t
       }
       Table.new(name, content)
-    end
+    end  # parse_table
+
 
     def parse_segment(e)
       name, min, max, type, required, validation = parse_attributes(e)
 
-      fields = e.find("Field").inject([]) {|f, field|
-        f << parse_field(field)
-      }
+      fields = e.inject([]) do |f, field|
+        #puts "f: #{f.inspect}, field: #{field}, field name #{field.name}"
+        case field.name
+          when /field/i
+            f << parse_field(field)
+          when /composite/i
+            f << parse_composite(field) 
+          else
+            f  # return the array f back to inject
+        end           
+      end
+            
       Segment.new(name, fields, Range.new(min, max))
-    end
+    end # parse_segemtn
+
 
     def parse_composite(e)
       name, min, max, type, required, validation = parse_attributes(e)
@@ -150,8 +161,9 @@ module X12
       fields = e.find("Field").inject([]) {|f, field|
         f << parse_field(field)
       }
-      Composite.new(name, fields)
-    end
+      Composite.new(name, fields, Range.new(min, max))
+    end # parse_composite
+
 
     def parse_loop(e)
       name, min, max, type, required, validation = parse_attributes(e)
@@ -167,7 +179,7 @@ module X12
              end # case
       }
       Loop.new(name, components, Range.new(min, max))
-    end
+    end # parse_loop
 
   end # Parser
 end

@@ -25,9 +25,9 @@
 
 module X12
 
-  # $Id: Parser.rb 89 2009-05-13 19:36:20Z ikk $
   #
   # Main class for creating X12 parsers and factories.
+  #
 
   class Parser
 
@@ -41,7 +41,7 @@ module X12
       # Deal with Microsoft devices
       # get the current working directory
       base_name = File.basename(file_name, '.xml')
-      if MS_DEVICES.find{|i| i == base_name}
+      if MS_DEVICES.find { |i| i == base_name}
         file_name = File.join(File.dirname, "#{base_name}_.xml")
       end
       file_location = File.join(File.dirname(__FILE__), "../../misc", file_name) 
@@ -52,23 +52,22 @@ module X12
       @x12_definition = X12::XMLDefinitions.new(str)
 
       # Populate fields in all segments found in all the loops
-      @x12_definition[X12::Loop].each_pair{|k, v|
+      @x12_definition[X12::Loop].each_pair do |k, v|
         #puts "Populating definitions for loop #{k}"
         process_loop(v)
-      } if @x12_definition[X12::Loop]
+      end if @x12_definition[X12::Loop]
 
       # Merge the newly parsed definition into a saved one, if any.
       if save_definition
-        @x12_definition.keys.each{|t|
+        @x12_definition.keys.each do |t|
           save_definition[t] ||= {}
-          @x12_definition[t].keys.each{|u|
+          @x12_definition[t].keys.each do |u|
             save_definition[t][u] = @x12_definition[t][u] 
-          }
+          end
           @x12_definition = save_definition
-        }
+        end
       end
-
-      #puts PP.pp(self, '')
+    
     end # initialize
 
     # Parse a loop of a given name out of a string. Throws an exception if the loop name is not defined.
@@ -81,6 +80,7 @@ module X12
       return loop
     end # parse
 
+
     # Make an empty loop to be filled out with information
     def factory(loop_name)
       loop = @x12_definition[X12::Loop][loop_name]
@@ -89,32 +89,35 @@ module X12
       return loop
     end # factory
 
+
     private
 
     # Recursively scan the loop and instantiate fields' definitions for all its
     # segments
     def process_loop(loop)
-      loop.nodes.each{|i|
+      loop.nodes.each do |i|
+        #puts "Loop Node: #{i.inspect}"
         case i
-          when X12::Loop then process_loop(i)
-          when X12::Segment then process_segment(i) unless i.nodes.size > 0
+          when X12::Loop      then process_loop(i)
+          when X12::Segment   then process_segment(i)   unless i.nodes.size > 0
           else return
         end
-      }
+      end
     end
+
 
     # Instantiate segment's fields as previously defined
     def process_segment(segment)
       #puts "Trying to process segment #{segment.inspect}"
       unless @x12_definition[X12::Segment] && @x12_definition[X12::Segment][segment.name]
         # Try to find it in a separate file if missing from the @x12_definition structure
-        initialize(segment.name+'.xml')
+        initialize(segment.name + '.xml')
         segment_definition = @x12_definition[X12::Segment][segment.name]
         throw Exception.new("Cannot find a definition for segment #{segment.name}") unless segment_definition
       else
         segment_definition = @x12_definition[X12::Segment][segment.name]
       end
-      segment_definition.nodes.each_index{|i|
+      segment_definition.nodes.each_index do |i|
         segment.nodes[i] = segment_definition.nodes[i] 
         # Make sure we have the validation table if any for this field. Try to read one in if missing.
         table = segment.nodes[i].validation
@@ -124,8 +127,32 @@ module X12
             throw Exception.new("Cannot find a definition for table #{table}") unless @x12_definition[X12::Table] && @x12_definition[X12::Table][table]
           end
         end
-      }
+      end
+    end
+
+
+    def process_composite(composite)
+      #puts "Trying to process composite #{composite.inspect}"
+      unless @x12_definition[X12::Composite] && @x12_definition[X12::Composite][composite.name]
+        # Try to find it in a separate file if missing from the @x12_definition structure
+        initialize(composite.nam + '.xml')
+        composite_definition = @x12_definition[X12::Composite][composite.name]
+        throw Exception.new("Cannot find a definition for segment #{composite.name}") unless composite_definition
+      else
+        composite_definition = @x12_definition[X12::Composite][composite.name]
+      end
+      composite_definition.nodes.each_index do |i|
+        composite.nodes[i] = composite_definition.nodes[i] 
+        # Make sure we have the validation table if any for this field. Try to read one in if missing.
+        table = composite.nodes[i].validation
+        if table
+          unless @x12_definition[X12::Table] && @x12_definition[X12::Table][table]
+            initialize(table+'.xml')
+            throw Exception.new("Cannot find a definition for table #{table}") unless @x12_definition[X12::Table] && @x12_definition[X12::Table][table]
+          end
+        end
+      end
     end
 
   end # Parser
-end
+end # X12

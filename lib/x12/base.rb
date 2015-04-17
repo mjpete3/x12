@@ -49,30 +49,34 @@ module X12
       #puts "Created #{name} #{object_id} #{self.class}  "
     end
 
+
     # Formats a printable string containing the base element's content
     def inspect
       "#{self.class.to_s.sub(/^.*::/, '')} (#{name}) #{repeats} #{super.inspect[1..-2]} =<#{parsed_str}, #{next_repeat.inspect}> ".gsub(/\\*\"/, '"')
     end
 
+
     # Prints a tree-like representation of the element
     def show(ind = '')
-      count = 0
-      self.to_a.each{|i|
+      count = 0      
+      self.to_a.each do |i|
         #puts "#{ind}#{i.name} #{i.object_id} #{i.super.object_id} [#{count}]: #{i.parsed_str} #{i.super.class}"
         puts "#{ind}#{i.name} [#{count}]: #{i.to_s.sub(/^(.{30})(.*?)(.{30})$/, '\1...\3')}"
         # Force parsing a segment
         if i.kind_of?(X12::Segment) && i.nodes[0]
           i.find_field(i.nodes[0].name)
         end
-        i.nodes.each{|j|
+        i.nodes.each do |j|
           case 
-          when j.kind_of?(X12::Base)  then j.show(ind+'  ')
-          when j.kind_of?(X12::Field) then puts "#{ind+'  '}#{j.name} -> '#{j.to_s}'"
+            when j.kind_of?(X12::Base)  then j.show(ind + '  ')
+            when j.kind_of?(X12::Field) then puts "#{ind + '  '}#{j.name} -> '#{j.to_s}'"
           end
-        } 
+        end
         count += 1
-      }
-    end
+      end
+      return # return nil 
+    end 
+
 
     # Try to parse the current element one more time if required. Returns the rest of the string
     # or the same string if no more repeats are found or required.
@@ -88,6 +92,7 @@ module X12
       s
     end # do_repeats
 
+
     # Empty out the current element
     def set_empty!
       @next_repeat = nil
@@ -95,37 +100,48 @@ module X12
       self
     end
 
+
     # Make a deep copy of the element
     def dup
       n = clone
       n.set_empty!
       n.nodes = n.nodes.dup
-      n.nodes.each_index{|i|
+      n.nodes.each_index do |i|
         n.nodes[i] = n.nodes[i].dup
         n.nodes[i].set_empty!
-      }
+      end
       #puts "Duped #{self.class} #{self.name} #{self.object_id} #{super.object_id} -> #{n.name} #{n.super.object_id} #{n.object_id} "
-      n
+      return n
     end # dup
+
 
     # Recursively find a sub-element, which also has to be of type Base.
     def find(e)
       #puts "Finding [#{e}] in #{self.class} #{name}"
       case self
         when X12::Loop
-        # Breadth first
-        res = nodes.find{|i| e==i.name }
-        return res if res
-        # Depth now
-        nodes.each{|i| 
-          res = i.find(e) if i.kind_of?(X12::Loop)
-          return res unless res.nil? or EMPTY==res # otherwise keep looping
-        }
+          # Breadth first
+          res = nodes.find { |i| e==i.name }
+          return res if res
+          # Depth now
+          nodes.each do |i| 
+            res = i.find(e) if i.kind_of?(X12::Loop)
+            return res unless res.nil? or EMPTY==res # otherwise keep looping
+          end
         when X12::Segment
-        return find_field(e).to_s
+          # look for composite
+          res = nodes.find { |i| e==i.name }
+          #puts "in find(e) res: #{res.class} #{res.name}, #{res.inspect}"
+          return res if res && res.class == X12::Composite  #return the composite to recursively call find(e)
+          # else return the field
+          return find_field(e).to_s
+        when X12::Composite
+          # return the field
+          return find_field(e).to_s
       end # case
       return EMPTY
     end
+    
     
     # Present self and all repeats as an array with self being #0
     def to_a
@@ -138,10 +154,12 @@ module X12
       res
     end
 
+
     # Returns a parsed string representation of the element
     def to_s
       @parsed_str || ''
     end
+
 
     # The main method implementing Ruby-like access methods for nested elements
     def method_missing(meth, *args, &block)
@@ -153,13 +171,18 @@ module X12
         str.chop!
         #puts str
         case self
-        when X12::Segment
-          res = find_field(str)
-          throw Exception.new("No field '#{str}' in segment '#{self.name}'") if EMPTY == res
-          res.content = args[0].to_s
-          #puts res.inspect
-        else
-          throw Exception.new("Illegal assignment to #{meth} of #{self.class}")
+          when X12::Segment
+            res = find_field(str)
+            throw Exception.new("No field '#{str}' in segment '#{self.name}'") if EMPTY == res
+            res.content = args[0].to_s
+            #puts res.inspect
+          when X12::Composite
+            res = find_field(str)
+            throw Exception.new("No field '#{str}' in composite '#{self.name}'") if EMPTY == res
+            res.content = args[0].to_s
+            #puts res.inspect
+          else
+            throw Exception.new("Illegal assignment to #{meth} of #{self.class}")
         end # case
       else
         # Retrieval
@@ -168,12 +191,14 @@ module X12
         res
       end # if assignment
     end
+
     
     # The main method implementing Ruby-like access methods for repeating elements
     def [](*args)
-      #puts "squares #{args.inspect}"
+      puts "squares #{args.inspect}"
       return self.to_a[args[0]] || EMPTY
     end
+
 
     # Yields to accompanying block passing self as a parameter.
     def with(&block)
@@ -183,11 +208,13 @@ module X12
         throw Exception.new("Method 'with' requires a block.")
       end
     end
+
     
     # Returns number of repeats
     def size
       return self.to_a.size
     end
+
 
     # Check if any of the fields has been set yet
     def has_content?
@@ -195,6 +222,12 @@ module X12
     end
 
 
+    # rails method to see if any fields have been set yet
+    def blank?
+      self.nodes.find{|i| i.blank?}
+    end    
+    
+    
     # Adds a repeat to a segment or loop. Returns a new segment/loop or self if empty.
     def repeat
       res = if self.has_content? # Do not repeat an empty segment
@@ -208,4 +241,4 @@ module X12
     end
 
   end # Base
-end
+end # X12

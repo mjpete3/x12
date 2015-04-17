@@ -2,7 +2,7 @@
 require File.expand_path('../lib/x12/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = "pd_x12"
+  gem.name          = "pd_x12_v2"
   gem.version       = X12::VERSION
   gem.authors       = ["Marty Petersen"]
   gem.email         = ["themooseman@comcast.net"]

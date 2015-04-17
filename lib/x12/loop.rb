@@ -28,50 +28,37 @@ module X12
 
   class Loop < Base
 
-#     def regexp
-#       @regexp ||= 
-#         Regexp.new(inject(''){|s, i|
-#                      puts i.class
-#                      s += case i
-#                           when X12::Segment: "(#{i.regexp.source}){#{i.repeats.begin},#{i.repeats.end}}"
-#                           when X12::Loop:    "(.*?)"
-#                           else
-#                             ''
-#                           end
-#                    })
-#     end
-
     # Parse a string and fill out internal structures with the pieces of it. Returns 
     # an unparsed portion of the string or the original string if nothing was parsed out.
     def parse(str)
-      #puts "Parsing loop #{name}: "+str
+      puts "Parsing loop #{name}: " + str
       s = str
-      nodes.each{|i|
+      nodes.each do |i|
         m = i.parse(s)
         s = m if m
-      } 
+      end
       if str == s
-        return nil
+        return nil  # not able to parse out anything 
       else
         self.parsed_str = str[0..-s.length-1]
         s = do_repeats(s)
       end
-      #puts 'Parsed loop '+self.inspect
+      puts 'Parsed loop ' + self.inspect
       return s
     end # parse
+
 
     # Render all components of this loop as string suitable for EDI
     def render
       if self.has_content?
-        self.to_a.inject(''){|loop_str, i|
-          loop_str += i.nodes.inject(''){|nodes_str, j|
-            nodes_str += j.render
-          } 
-        }
+        self.to_a.inject('') do |loop_str, i|
+          loop_str += i.nodes.inject('') { |nodes_str, j| nodes_str += j.render }           
+        end
       else
         ''
       end
     end # render
+
     
     # Provides looping through repeats of a message    
     def each

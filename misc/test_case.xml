@@ -1,0 +1,39 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org 
+   
+   Copyright (C) 2014 P&D Technology Solutions, Inc.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+   
+   test_case.xml
+   Provides artificial edi transaction for testing loops, segment, composites and fields 
+   
+-->
+
+<Loop name="TEST" comment="This X12 Transaction Set contains the format and establishes the data contents of the Eligibility, Coverage or Benefit Inquiry Transaction Set (270) for use within the context of an Electronic Data Interchange (EDI) environment. This transaction set can be used to inquire about the eligibility, coverages or benefits associated with a benefit plan, employer, plan sponsor, subscriber or a dependent under the subscriber's policy. The transaction set is intended to be used by all lines of insurance such as Health, Life, and Property and Casualty."> 
+  <Segment name="CLM" comment="To specify basic data about the claim">
+	  <Field name="First"  required="y" min="1" max="38" comment="Identifier used to track a claim from creation by the health care provider through payment"/>
+	  <Field name="Second" required="y" min="1" max="18" comment="Monetary amount"/>
+	  <Composite name='COMP' required='y' max='1' comment="test composite">
+		  <Field name="CFirst"  required="y" min="1" max="1" comment="Code indicating a Yes or No condition or response"/>
+		  <Field name="CSecond" required="y" min="1" max="1" comment="Code indicating whether the provider accepts assignment"/>
+		  <Field name="CThird"  required="y" min="1" max="1" comment="Code indicating a Yes or No condition or response"/>
+	  </Composite>
+	  <Field name="Third" required="n" min="0" max="inf" comment="To identify one or more related causes and associated state or country information"/>
+  </Segment>
+</Loop>
