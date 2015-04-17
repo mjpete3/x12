@@ -25,7 +25,7 @@
 
 <Segment name="CL1" comment="To supply information specific to hospital claims">
   <Field name="AdmissionTypeCode" required="y" min="1" max="1" comment="Code indicating the priority of this admission"/>
-  <Field name="AdmissionSourceCode" required="y" min="1" max="1" comment="Code indicating the source of this admission"/>
-  <Field name="PatientStatusCode" required="y" min="1" max="2" comment="Code indicating patient status as of the &quot;statement covers through date&quot;"/>
-  <Field name="NursingHomeResidentialStatusCode" required="y" min="1" max="1" validation="T1345" comment="Code specifying the status of a nursing home resident at the time of service"/>
+  <Field name="AdmissionSourceCode" required="n" min="1" max="1" comment="Code indicating the source of this admission"/>
+  <Field name="PatientStatusCode" required="n" min="1" max="2" comment="Code indicating patient status as of the &quot;statement covers through date&quot;"/>
+  <Field name="NursingHomeResidentialStatusCode" required="n" min="1" max="1" validation="T1345" comment="Code specifying the status of a nursing home resident at the time of service"/>
 </Segment>
