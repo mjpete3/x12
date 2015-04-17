@@ -113,7 +113,7 @@
 
 				<Loop name="L2310A" max="1" required="y">
 					<Segment name="NM1" max="1"  required="n" comment="Attending Physician provider name"/>
-					<Segment name="PRV" max="1"  required="y" comment="Attending Physician specialty information"/>
+					<Segment name="PRV" max="1"  required="n" comment="Attending Physician specialty information"/>
 					<Segment name="REF" max="5"  required="n" comment="Attending Physician secondary id"/>
 				</Loop>
 				<Loop name="L2310B" max="1" required="n" comment="Operating Physician">
@@ -123,7 +123,7 @@
 				</Loop>
 				<Loop name="L2310C" required="n" comment="Other Operating Physician">
 					<Segment name="NM1" max="1"  required="n" comment="Other Operating Physician location"/>
-					<Segment name="PRV" max="1"  required="y" comment="Operating Physician specialty information"/>
+					<Segment name="PRV" max="1"  required="n" comment="Operating Physician specialty information"/>
 					<Segment name="REF" max="3"  required="n" comment="Other Operating Physician location secondary id"/>
 				</Loop>
 				<Loop name="L2310D" max="1" required="n" comment="Rendering Physician">

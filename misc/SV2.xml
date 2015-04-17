@@ -2,8 +2,8 @@
    This file is part of the X12Parser library that provides tools to
    manipulate X12 messages using Ruby native syntax.
 
-   http://x12parser.rubyforge.org 
-   
+   http://x12parser.rubyforge.org
+
    Copyright (C) 2009 APP Design, Inc.
 
    This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 
 <Segment name="SV2" comment="To specify the claim service detail for a Health Care institution">
   <Field name="ProductServiceId" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="y" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
+  <Field name="CompositeMedicalProcedureIdentifier" type="C003" required="n" min="0" max="inf" comment="To identify a medical procedure by its standardized codes and applicable modifiers"/>
   <Field name="MonetaryAmount1" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
   <Field name="UnitOrBasisForMeasurementCode" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
   <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
