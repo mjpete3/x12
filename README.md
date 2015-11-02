@@ -57,8 +57,9 @@ The authors of the project were inspired by the following works:
 
 
 # Change Log
-11/2/15 - release 1.5.2
+11/2/15 - release 1.5.3, 1.5.2
 * Updated 837p.xml Loop 20102AB to include REF segments
+* fixed misspelling
 
 4/16/15 - release 1.5.1
 * Added inpsect method to loop class to resolve infinite loop due to changes with inspect and to_s methods in ruby 2.0.0
