@@ -53,7 +53,7 @@
 					<Segment name="NM1" max="1"  required="y" comment="Pay-to address name"/>
 					<Segment name="N3"  max="1"  required="y" comment="Pay-to provider address"/>
 					<Segment name="N4"  max="1"  required="y" comment="Pay-to provider city/state/zip code"/>
-					<Segment name="PER" max="5"  required="n" comment="Pay-to provider contact information"/>
+					<Segment name="REF" max="5"  required="n" comment="Pay-to provider contact information"/>
 				</Loop>
 				<Loop name="L2010AC" max="1" required="n">
 					<Segment name="NM1" max="1"  required="y" comment="Pay-to plan name"/>
