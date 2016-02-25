@@ -1,0 +1,127 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   Copyright (C) 2016 P&D Technical Solutions, LLC
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 832.xml 2016-02-24 mjp using version 5010 $
+    Non-standard implementation of the 835 transaction
+    Allows for multiple ST/SE segments
+-->
+
+<Definition>
+  <Loop name="832"
+        comment="This X12 Transaction Set contains the format and establishes the data contents of the Price/Sales Catalog Transaction Set (832) for use within the context of an Electronic Data Interchange (EDI) environment. The transaction set can be used to provide for customary and established business and industry practice relative to furnishing or requesting the price of goods or services in the form of a catalog.">
+    <Segment name="ISA" max="1" required="y"/>
+    <Segment name="GS" max="1" required="y"/>
+    <Segment name="ST" max="1" required="y">
+      <Field name="TransactionSetIdentifierCode" const="850" min="3" max="3" comment="Code uniquely identifying a Transaction Set"/>
+      <Field name="TransactionSetControlNumber" min="4" max="9" comment="Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set"/>
+    </Segment>
+    <Segment name="BCT" max="1" required="y" comment="Beginning segment for Price/Sales Catalog">
+      <Field name="CatalogPurposeCode" min="2" max="2" validation="T683" comment="Code indicating purpose of catalog"/>
+      <Field name="CatalogNumber1" required="y" min="1" max="15" comment="Identifying number for catalog or superseded catalog"/>
+      <Field name="CatalogVersionNumber1" required="n" min="1" max="15" comment="Identifying version number of catalog or superseded catalog"/>
+      <Field name="CatalogRevisionNumber1" required="n" min="1" max="6" comment="Identifying revision number of catalog or superseded catalog"/>
+      <Field name="UnitOrBasisForMeasurementCode" required="n" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+      <Field name="CatalogNumber2" required="n" min="1" max="15" comment="Identifying number for catalog or superseded catalog"/>
+      <Field name="CatalogVersionNumber2" required="n" min="1" max="15" comment="Identifying version number of catalog or superseded catalog"/>
+      <Field name="CatalogRevisionNumber2" required="n" min="1" max="6" comment="Identifying revision number of catalog or superseded catalog"/>
+      <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+      <Field name="TransactionSetPurposeCode" required="y" min="2" max="2" validation="T353" comment="Code identifying purpose of transaction set"/>
+    </Segment>
+    <Segment name="PER" max="3" required="n" comment="Administrative communication contact"/>
+    <Loop name="LIN" required="n" max="700000" comment="To specify basic item identification data">
+      <Segment name="LIN" max="1" required="n" comment="Item Identification">
+        <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+        <Field name="ProductServiceIdQualifier1" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+        <Field name="ProductServiceId1" min="1" max="48" comment="Identifying number for a product or service"/>
+      </Segment>
+      <Segment name="G53" max="1" required="n" comment="Maintenance Type"/>
+      <Segment name="SLN" max="100" required="n" comment="Subline Item Detail"/>
+      <Segment name="DTM" max="10" required="n" comment="Date/Time Reference"/>
+      <Segment name="CTB" max="25" required="n" comment="Restrictions/ Conditions"/>
+      <Segment name="PID" max="200" required="n" comment="Product/Item Description">
+        <Field name="ItemDescriptionType" min="1" max="1" validation="T349" comment="Code indicating the format of a description"/>
+        <Field name="ProductProcessCharacteristicCode" required="n" min="2" max="3" validation="T750" comment="Code identifying the general class of a product or process characteristic"/>
+        <Field name="AgencyQualifierCode" required="n" min="2" max="2" validation="T559" comment="Code identifying the agency assigning the code values"/>
+        <Field name="ProductDescriptionCode" required="n" min="1" max="12" comment="A code from an industry code list which provides specific data about a product characteristic"/>
+        <Field name="Description" required="y" min="1" max="80" comment="A free-form description to clarify the related data elements and their content"/>
+        <Field name="SurfaceLayerPositionCode" required="n" min="2" max="2" validation="T752" comment="Code indicating the product surface, layer or position that is being described"/>
+        <Field name="SourceSubqualifier" required="n" min="1" max="15" comment="A reference that indicates the table or text maintained by the Source Qualifier"/>
+        <Field name="YesNoConditionOrResponseCode" required="n" min="1" max="1" validation="T1073" comment="Code indicating a Yes or No condition or response"/>
+        <Field name="LanguageCode" required="n" min="2" max="3" comment="Code designating the language used in text, from a standard code list maintained by the International Standards Organization (ISO 639)"/>
+      </Segment>
+      <Segment name="PO4" max="1" required="n" comment="Item Physical Details">
+        <Field name="Pack" type="long" required="y" min="1" max="6" comment="The number of inner containers, or number of eaches if there are no inner containers, per outer container"/>
+        <Field name="Size" type="double" required="n" min="1" max="8" comment="Size of supplier units in pack"/>
+        <Field name="UnitOrBasisForMeasurementCode1" required="y" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+        <Field name="PackagingCode" required="n" min="3" max="5" validation="T103.2" comment="Code identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required"/>
+        <Field name="WeightQualifier" required="n" min="1" max="2" validation="T187" comment="Code defining the type of weight"/>
+        <Field name="GrossWeightPerPack" type="double" required="n" min="1" max="9" comment="Numeric value of gross weight per pack"/>
+        <Field name="UnitOrBasisForMeasurementCode2" required="n" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+        <Field name="GrossVolumePerPack" type="double" required="n" min="1" max="9" comment="Numeric value of gross volume per pack"/>
+        <Field name="UnitOrBasisForMeasurementCode3" required="n" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+        <Field name="Length" type="double" required="n" min="1" max="8" comment="Largest horizontal dimension of an object measured when the object is in the upright position"/>
+        <Field name="Width" type="double" required="n" min="1" max="8" comment="Shorter measurement of the two horizontal dimensions measured with the object in the upright position"/>
+        <Field name="Height" type="double" required="n" min="1" max="8" comment="Vertical dimension of an object measured when the object is in the upright position"/>
+        <Field name="UnitOrBasisForMeasurementCode4" required="n" min="2" max="2" validation="T355" comment="Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken"/>
+        <Field name="InnerPack" type="long" required="n" min="1" max="6" comment="The number of eaches per inner container"/>
+        <Field name="SurfaceLayerPositionCode" required="n" min="2" max="2" validation="T752" comment="Code indicating the product surface, layer or position that is being described"/>
+        <Field name="AssignedIdentification1" required="n" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+        <Field name="AssignedIdentification2" required="n" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+        <Field name="Number" type="long" required="n" min="1" max="9" comment="A generic number"/>
+      </Segment>
+      <Loop name="CTP" max="100" required="n">
+        <Segment name="CTP" max="1" required="n" comment="Pricing Information">
+          <Field name="ClassOfTradeCode" required="n" min="2" max="2" validation="T687" comment="Code indicating class of trade"/>
+          <Field name="PriceIdentifierCode" required="y" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
+          <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+          <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+          <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
+          <Field name="PriceMultiplierQualifier" required="n" min="3" max="3" validation="T648" comment="Code indicating the type of price multiplier"/>
+          <Field name="Multiplier" type="double" required="n" min="1" max="10" comment="Value to be used as a multiplier to obtain a new value"/>
+          <Field name="MonetaryAmount" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+          <Field name="BasisOfUnitPriceCode" required="n" min="2" max="2" validation="T639" comment="Code identifying the type of unit price for an item"/>
+          <Field name="ConditionValue" required="n" min="1" max="10" comment="Identifies rate restrictions or provisions"/>
+          <Field name="MultiplePriceQuantity" type="long" required="n" min="1" max="2" comment="Quantity of units for a given price, e.g., 3 for $10.00"/>
+        </Segment>
+        <Segment name="G40" max="99" required="n" comment="Bracket Price"/>
+        <Segment name="DTM" max="10" required="n" comment="Date/Time Reference"/>
+        <Segment name="CUR" max="5" required="n" comment="Currency">
+          <Field name="EntityIdentifierCode1" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+          <Field name="CurrencyCode1" min="3" max="3" comment="Code (Standard ISO) for country in whose currency the charges are specified"/>
+        </Segment>
+        <Segment name="REF" max="inf" required="n" comment="Reference Identification"/>
+        <Segment name="G43" max="9999" required="n" comment="Promotion/Price List Area"/>
+      </Loop>
+    </Loop>
+    <Loop name="N1" max="200" required="n"
+          comment="The 'N1' segment should be used to specify the name and SAN of the source (agent / distributor / wholesaler). If the SAN is not available then segments 'N2', 'N3', and 'N4' should be used to specify the source's address.">
+      <Segment name="N1" max="1" required="n" comment="Name"/>
+      <Segment name="N2" max="2" required="n" comment="Additional Name Information"/>
+      <Segment name="N3" max="2" required="n" comment="Address Information"/>
+      <Segment name="N4" max="1" required="n" comment="Geographic location"/>
+    </Loop>
+    <Segment name="CTT" max="1" required="n" comment="Transaction totals">
+      <Field name="NumberOfLineItems" type="long" min="1" max="6" comment="Total number of line items in the transaction set"/>
+    </Segment>
+    <Segment name="SE" max="1" required="y"/>
+    <Segment name="GE" max="1" required="y"/>
+    <Segment name="IEA" max="1" required="y"/>
+  </Loop>
+</Definition>
