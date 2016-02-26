@@ -32,7 +32,7 @@
 			<Segment name="BHT" max="1" required="y" comment="Beginning Hierarchical Transaction"/>
 			<Loop name="L2000A" max="inf" required="y" comment="Information Source Level">
 				<Segment name="HL" max="1" required="y" comment="Information Source Level"/>
-				<Loop name="L2100A" max="1" required="y" comment="Payer Name">
+				<Loop name="L2100A" max="inf" required="y" comment="Payer Name">
 					<Segment name="NM1" max="1" required="y" comment="Payer Name" />
 					<Segment name="PER" max="1" required="n" comment="Payer Contact information" />
 				</Loop>
