@@ -22,6 +22,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 ## Installation
 
+If running Ubuntu, you may need to install libxml2-dev
+
 Add this line to your application's Gemfile:
 
     gem 'pd_x12'

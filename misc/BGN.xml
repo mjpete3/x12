@@ -2,8 +2,8 @@
    This file is part of the X12Parser library that provides tools to
    manipulate X12 messages using Ruby native syntax.
 
-   http://x12parser.rubyforge.org 
-   
+   http://x12parser.rubyforge.org
+
    Copyright (C) 2009 APP Design, Inc.
 
    This library is free software; you can redistribute it and/or
@@ -28,9 +28,9 @@
   <Field name="ReferenceIdentification1" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
   <Field name="Date" min="8" max="8" comment="Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year"/>
   <Field name="Time" required="y" min="4" max="8" comment="Time expressed in 24-hour clock time as follows: HHMM, or HHMMSS, or HHMMSSD, or HHMMSSDD, where H = hours (00-23), M = minutes (00-59), S = integer seconds (00-59) and DD = decimal seconds; decimal seconds are expressed as follows: D = tenths (0-9) and DD = hundredths (00-99)"/>
-  <Field name="TimeCode" required="y" min="2" max="2" validation="T623" comment="Code identifying the time. In accordance with International Standards Organization standard 8601, time can be specified by a + or - and an indication in hours in relation to Universal Time Coordinate (UTC) time; since + is a restricted character, + and - are substituted by P and M in the codes that follow"/>
-  <Field name="ReferenceIdentification2" required="y" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
-  <Field name="TransactionTypeCode" required="y" min="2" max="2" validation="T640" comment="Code specifying the type of transaction"/>
+  <Field name="TimeCode" required="n" min="2" max="2" validation="T623" comment="Code identifying the time. In accordance with International Standards Organization standard 8601, time can be specified by a + or - and an indication in hours in relation to Universal Time Coordinate (UTC) time; since + is a restricted character, + and - are substituted by P and M in the codes that follow"/>
+  <Field name="ReferenceIdentification2" required="n" min="1" max="50" comment="Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier"/>
+  <Field name="TransactionTypeCode" required="n" min="2" max="2" validation="T640" comment="Code specifying the type of transaction"/>
   <Field name="ActionCode" required="y" min="1" max="2" validation="T306" comment="Code indicating type of action"/>
-  <Field name="SecurityLevelCode" required="y" min="2" max="2" validation="T786" comment="Code indicating the level of confidentiality assigned by the sender to the information following"/>
+  <Field name="SecurityLevelCode" required="n" min="2" max="2" validation="T786" comment="Code indicating the level of confidentiality assigned by the sender to the information following"/>
 </Segment>

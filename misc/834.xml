@@ -1,0 +1,85 @@
+
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   Copyright (C) 2016 P&D Technical Solutions, LLC
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 834OA.xml 2016-11-01 mjp using version 5010A $
+-->
+
+<Definition>
+	<Loop name="834" required="y">
+		<Segment name="ISA" max="1" required="y" />
+		<Segment name="GS"  max="1" required="y" />
+		<Loop name="L834" max="inf" comment="This X12 Transaction Set contains the format and establishes the data contents of the Benefit Enrollment and Maintenance Transaction Set (834) for use within the context of an Electronic Data Interchange (EDI) environment.">
+				<Segment name="ST"  max="1" required="y" />
+				<Segment name="BGN" max="1" required="y" />
+				<Segment name="REF" max="1" required="n" />
+				<Loop name="L1000A" max="1" required="y" comment="Payer Identification">
+					<Segment name="N1" max="1" required="y" />
+				</Loop>
+				<Loop name="L1000B" max="1" required="y" comment="Payee Identification" >
+					<Segment name="N1" max="1" required="y" />
+	      </Loop>
+				<Loop name="L1000C" max="1" required="n" comment="TPA Broker Identification" >
+					<Segment name="N1" max="1" required="n" />
+				</Loop>
+				<Loop name="L2000" required="y" comment="2000 Loop Member Level Detail" >
+					<Segment name="INS" max="1" required="y" />
+					<Segment name="REF" max="1" required="y" />
+	        <!-- <Segment name="REF" max="1" required="y" comment="Subscriber Identifier"/> -->
+	        <!-- <Segment name="REF" max="1" required="y" comment="Member Policy Number"/>
+	        <Segment name="REF" max="13" required="y" comment="Member Supplemental Identifier"/> -->
+	        <Segment name="DTP" max="24" required="n" comment="Member Level Dates. Required for most vendors."/>
+	      </Loop>
+	      <Loop name="L2100A" max="1" required="n" comment="2100A" >
+	        <Segment name="NM1" max="1" required="y" comment="Member Name"/>
+	        <Segment name="PER" max="1" required="n" comment="Member Communications Numbers"/>
+	        <Segment name="N3" max="1" required="n" comment="Member Residence Street Address"/>
+	        <Segment name="N4" max="1" required="n" comment="Member City, State, Zip Code"/>
+	        <Segment name="DMG" max="1" required="n" comment="Member Demographics"/>
+	        <Segment name="LUI" max="1" required="n" comment="Member Language"/>
+	      </Loop>
+        <Loop name="L2100C" max="1" required="n" comment="2100C" >
+          <Segment name="NM1" max="1" required="n" comment="Member Name"/>
+          <Segment name="N3" max="1" required="n" comment="Member Redidence Street Address"/>
+          <Segment name="N4" max="1" required="n" comment="Member City, State, Zip Code"/>
+        </Loop>
+        <Loop name="L2100D" max="3" required="n" comment="2100D" >
+          <Segment name="NM1" max="1" required="n" comment="Employer Name"/>
+          <Segment name="PER" max="1" required="n" comment="Employer Communications Numbers"/>
+          <Segment name="N3" max="1" required="n" comment="Member Residence Street Address"/>
+          <Segment name="N4" max="1" required="n" comment="Member City, State, Zip Code"/>
+        </Loop>
+        <Loop name="L2100G" max="13" required="n" comment="2100G" >
+          <Segment name="NM1" max="1" required="n" comment="Member Name. For Dependent Records only."/>
+          <Segment name="PER" max="1" required="n" comment="Member Communications Numbers. For Dependent Records only."/>
+          <Segment name="N3" max="1" required="n" comment="Member Residence Street Address. For Dependent Records only."/>
+          <Segment name="N4" max="1" required="n" comment="Member City, State, Zip Code. For Dependent Records only."/>
+        </Loop>
+        <Loop name="L2300" max="99" required="y" comment="2300" >
+          <Segment name="HD" max="1" required="y" comment="Health Coverage"/>
+          <Segment name="DTP" max="1" required="y" comment="Health Coverage Dates"/>
+          <Segment name="REF" max="1" required="n" comment="Health Coverage Policy Number"/>
+        </Loop>
+	    <Segment name="SE" max="1" required="y" comment="Transaction Set Trailer"/>
+    </Loop>
+		<Segment name="GE"  max="1" required="y"/>
+		<Segment name="IEA" max="1" required="y"/>
+	</Loop>
+</Definition>

@@ -2,8 +2,8 @@
    This file is part of the X12Parser library that provides tools to
    manipulate X12 messages using Ruby native syntax.
 
-   http://x12parser.rubyforge.org 
-   
+   http://x12parser.rubyforge.org
+
    Copyright (C) 2009 APP Design, Inc.
 
    This library is free software; you can redistribute it and/or
@@ -28,6 +28,6 @@
   <Field name="Name" required="y" min="1" max="60" comment="Free-form name"/>
   <Field name="IdentificationCodeQualifier" required="y" min="1" max="2" validation="T66" comment="Code designating the system/method of code structure used for Identification Code (67)"/>
   <Field name="IdentificationCode" required="y" min="2" max="80" comment="Code identifying a party or other code"/>
-  <Field name="EntityRelationshipCode" required="y" min="2" max="2" validation="T706" comment="Code describing entity relationship"/>
-  <Field name="EntityIdentifierCode2" required="y" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
+  <Field name="EntityRelationshipCode" required="n" min="2" max="2" validation="T706" comment="Code describing entity relationship"/>
+  <Field name="EntityIdentifierCode2" required="n" min="2" max="3" validation="T98" comment="Code identifying an organizational entity, a physical location, property or an individual"/>
 </Segment>

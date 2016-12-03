@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -22,11 +22,11 @@
 #++
 #
 module X12
-  
+
   #
   # Implements a segment containing fields or composites
   #
-    
+
   class Segment < Base
 
     # Parses this segment out of a string, puts the match into value, returns the rest of the string - nil
@@ -36,7 +36,7 @@ module X12
       #puts "Parsing segment #{name} from #{s} with regexp [#{regexp.source}]"
       m = regexp.match(s)
       #puts "Matched #{m ? m[0] : 'nothing'}"
-      
+
       return nil unless m
 
       s = m.post_match
@@ -103,7 +103,7 @@ module X12
       return self.nodes[field_num]
     end
 
-    # provides loopong through multiple segments within the loop
+    # provides looping through multiple segments within the loop
     def each
       res = self.to_a
       0.upto(res.length - 1) do |x|
