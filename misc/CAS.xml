@@ -2,8 +2,8 @@
    This file is part of the X12Parser library that provides tools to
    manipulate X12 messages using Ruby native syntax.
 
-   http://x12parser.rubyforge.org 
-   
+   http://x12parser.rubyforge.org
+
    Copyright (C) 2009 APP Design, Inc.
 
    This library is free software; you can redistribute it and/or
@@ -27,20 +27,20 @@
   <Field name="ClaimAdjustmentGroupCode" min="1" max="2" validation="T1033" comment="Code identifying the general category of payment adjustment"/>
   <Field name="ClaimAdjustmentReasonCode1" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
   <Field name="MonetaryAmount1" type="double" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity1" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="ClaimAdjustmentReasonCode2" required="y" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
-  <Field name="MonetaryAmount2" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity2" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="ClaimAdjustmentReasonCode3" required="y" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
-  <Field name="MonetaryAmount3" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity3" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="ClaimAdjustmentReasonCode4" required="y" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
-  <Field name="MonetaryAmount4" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity4" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="ClaimAdjustmentReasonCode5" required="y" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
-  <Field name="MonetaryAmount5" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity5" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
-  <Field name="ClaimAdjustmentReasonCode6" required="y" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
-  <Field name="MonetaryAmount6" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="Quantity6" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="Quantity1" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="ClaimAdjustmentReasonCode2" required="n" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
+  <Field name="MonetaryAmount2" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Quantity2" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="ClaimAdjustmentReasonCode3" required="n" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
+  <Field name="MonetaryAmount3" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Quantity3" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="ClaimAdjustmentReasonCode4" required="n" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
+  <Field name="MonetaryAmount4" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Quantity4" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="ClaimAdjustmentReasonCode5" required="n" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
+  <Field name="MonetaryAmount5" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Quantity5" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
+  <Field name="ClaimAdjustmentReasonCode6" required="n" min="1" max="5" comment="Code identifying the detailed reason the adjustment was made"/>
+  <Field name="MonetaryAmount6" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="Quantity6" type="double" required="n" min="1" max="15" comment="Numeric value of quantity"/>
 </Segment>
