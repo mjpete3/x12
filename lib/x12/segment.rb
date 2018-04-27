@@ -65,7 +65,7 @@ module X12
 
     # Returns a regexp that matches this particular segment
     def regexp
-      unless @regexp
+      unless defined? @regexp
         if self.nodes.find{|i| i.type =~ /^".+"$/ }
           # It's a very special regexp if there are constant fields
           re_str = self.nodes.inject("^#{name}#{Regexp.escape(field_separator)}"){|s, i|
@@ -95,7 +95,7 @@ module X12
       #puts field_num
 
       # Parse the segment if not parsed already
-      unless @fields
+      unless defined? @fields
         @fields = self.to_s.chop.split(Regexp.new(Regexp.escape(field_separator)))
         self.nodes.each_index{|i| self.nodes[i].content = @fields[i+1] }
       end
