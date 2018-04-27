@@ -23,9 +23,9 @@
 #
 
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test271Parse < Test::Unit::TestCase
+class Test271Parse < MiniTest::Test
 
   MESSAGE = "ISA*00* *00* *ZZ*6175910AAC21T *ZZ*54503516A *061130*1445*U*00401*309242122*0*T*:~
 GS*HB*617591011C21T*545035165*20030924*21000083*309001*X*004010X092A1~

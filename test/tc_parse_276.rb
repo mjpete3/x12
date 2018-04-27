@@ -23,9 +23,9 @@
 #
 
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test276Parse < Test::Unit::TestCase
+class Test276Parse < MiniTest::Test
   
   # patient is the subscriber
   MESSAGE1 = "ISA*00*0000000000*00*0000000000*ZZ*610017         *ZZ*T0001799       *030430*1700*U*00401*000000157*0*P*:~

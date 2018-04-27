@@ -22,9 +22,9 @@
 #++
 #
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test270FactoryInterchange < Test::Unit::TestCase
+class Test270FactoryInterchange < MiniTest::Test
 
   @@p = nil
 @@result=<<-EOT

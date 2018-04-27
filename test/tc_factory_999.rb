@@ -22,9 +22,9 @@
 #++
 #
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test999Factory < Test::Unit::TestCase
+class Test999Factory < MiniTest::Test
   
   def setup
     @parser = X12::Parser.new('999.xml')
