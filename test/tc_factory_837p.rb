@@ -22,9 +22,9 @@
 #++
 #
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test837pFactory < Test::Unit::TestCase
+class Test837pFactory < MiniTest::Test
 
   RESULT = "ISA*00*          *00*          *01*9012345720000  *01*9088877320000  *100822*1134*U*00200*000000007*0*T*:~
 GS*HC*901234572000*908887732000*20100822*1615*7*X*005010X222~

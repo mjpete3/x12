@@ -22,9 +22,9 @@
 #++
 #
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test270Parse < Test::Unit::TestCase
+class Test270Parse < MiniTest::Test
 
   @@p = nil
   @@parser = X12::Parser.new('270.xml')
