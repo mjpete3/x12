@@ -23,9 +23,9 @@
 #
 
 require 'x12'
-require 'test/unit'
+require 'minitest/autorun'
 
-class Test277Factory < Test::Unit::TestCase
+class Test277Factory < MiniTest::Test
   
   def setup
     #nothing

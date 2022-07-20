@@ -2,8 +2,8 @@
 #     This file is part of the X12Parser library that provides tools to
 #     manipulate X12 messages using Ruby native syntax.
 #
-#     http://x12parser.rubyforge.org 
-#     
+#     http://x12parser.rubyforge.org
+#
 #     Copyright (C) 2008 APP Design, Inc.
 #
 #     This library is free software; you can redistribute it and/or
@@ -27,22 +27,22 @@ module X12
   #
   # A class for parsing X12 message definition expressed in XML format.
   #
-  
+
   class XMLDefinitions < Hash
 
     # Parse definitions out of XML file
     def initialize(str)
       doc = LibXML::XML::Document.string(str)
-      definitions = doc.root.name =~ /^Definition$/i ? doc.root.find('*').to_a : [doc.root]      
-      
+      definitions = doc.root.name =~ /^Definition$/i ? doc.root.find('*').to_a : [doc.root]
+
       definitions.each { |element|
         #puts element.name
         syntax_element = case element.name
-                         when /table/i     
+                         when /table/i
                            parse_table(element)
-                         when /segment/i 
+                         when /segment/i
                            parse_segment(element)
-                         when /composite/i 
+                         when /composite/i
                            parse_composite(element)
                          when /loop/i
                            parse_loop(element)
@@ -58,11 +58,11 @@ module X12
       return case s
              when nil
                false
-             when "" 
+             when ""
                false
-             when /(^y(es)?$)|(^t(rue)?$)|(^1$)/i 
+             when /(^y(es)?$)|(^t(rue)?$)|(^1$)/i
                true
-             when /(^no?$)|(^f(alse)?$)|(^0$)/i 
+             when /(^no?$)|(^f(alse)?$)|(^0$)/i
                false
              else
                nil
@@ -73,7 +73,7 @@ module X12
       return case s
              when nil
                'string'
-             when /^C.+$/ 
+             when /^C.+$/
                s
              when /^i(nt(eger)?)?$/i
                'int'
@@ -99,12 +99,12 @@ module X12
     end #parse_int
 
     def parse_attributes(e)
-      throw Exception.new("No name attribute found for : #{e.inspect}")          unless name = e.attributes["name"] 
+      throw Exception.new("No name attribute found for : #{e.inspect}")          unless name = e.attributes["name"]
       throw Exception.new("Cannot parse attribute 'min' for: #{e.inspect}")      unless min = parse_int(e.attributes["min"])
       throw Exception.new("Cannot parse attribute 'max' for: #{e.inspect}")      unless max = parse_int(e.attributes["max"])
       throw Exception.new("Cannot parse attribute 'type' for: #{e.inspect}")     unless type = parse_type(e.attributes["type"])
       throw Exception.new("Cannot parse attribute 'required' for: #{e.inspect}") if (required = parse_boolean(e.attributes["required"])).nil?
-      
+
       validation = e.attributes["validation"]
       min = 1 if required and min < 1
       max = 999999 if max == 0
@@ -126,7 +126,7 @@ module X12
     end # parse_field
 
     def parse_table(e)
-      name, min, max, type, required, validation = parse_attributes(e)
+      name, _min, _max, _type, _required, _validation = parse_attributes(e)
 
       content = e.find("Entry").inject({}) {|t, entry|
         t[entry.attributes["name"]] = entry.attributes["value"]
@@ -136,7 +136,7 @@ module X12
     end
 
     def parse_segment(e)
-      name, min, max, type, required, validation = parse_attributes(e)
+      name, min, max, _type, _required, _validation = parse_attributes(e)
 
       fields = e.find("Field").inject([]) {|f, field|
         f << parse_field(field)
@@ -145,7 +145,7 @@ module X12
     end
 
     def parse_composite(e)
-      name, min, max, type, required, validation = parse_attributes(e)
+      name, _min, _max, _type, _required, _validation = parse_attributes(e)
 
       fields = e.find("Field").inject([]) {|f, field|
         f << parse_field(field)
@@ -154,7 +154,7 @@ module X12
     end
 
     def parse_loop(e)
-      name, min, max, type, required, validation = parse_attributes(e)
+      name, min, max, _type, _required, _validation = parse_attributes(e)
 
       components = e.find('*').to_a.inject([]){|r, element|
         r << case element.name
